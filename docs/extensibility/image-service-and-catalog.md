@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912734"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082125"
 ---
 # <a name="image-service-and-catalog"></a>Service d’images et catalogue
 Ce livre de recettes contient des conseils et des pratiques recommandées pour l’adoption du service d’images Visual Studio et du catalogue d’images introduit dans Visual Studio 2015.
@@ -103,7 +103,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Symbols>
 ```
 
-|**Sous-élément**|**Definition**|
+|**Sous-élément**|**Définition**|
 |-|-|
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID|
@@ -143,7 +143,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Image>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |id|Souhaitée La partie ID du moniker d’image|
@@ -159,14 +159,14 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
  </Source>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native|
 |Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight* ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
 Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
-|**Element**|**Attributs (tous obligatoires)**|**Definition**|
+|**Element**|**Attributs (tous obligatoires)**|**Définition**|
 |-|-|-|
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|
@@ -179,7 +179,7 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|
 |id|Souhaitée La partie ID d’entier de la ressource native|
@@ -195,7 +195,7 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
  </ImageList>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |id|Souhaitée La partie ID du moniker d’image|
@@ -738,7 +738,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  L’outil visionneuse de la bibliothèque d’images peut charger des manifestes d’image et permet à l’utilisateur de les manipuler de la même façon que Visual Studio pour s’assurer que le manifeste est correctement créé. L’utilisateur peut modifier les paramètres de l’arrière-plan, des tailles, du paramètre ppp, du contraste élevé et d’autres paramètres. Il affiche également les informations de chargement pour rechercher les erreurs dans les manifestes et affiche les informations relatives à la source de chaque image dans le manifeste.
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 - Existe-t-il des dépendances que vous devez inclure lors du chargement \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ?
 
@@ -1011,7 +1011,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Référence|
+    |GlyphAssembly||Informations de référence|
     |GlyphLibrary||Bibliothèque|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

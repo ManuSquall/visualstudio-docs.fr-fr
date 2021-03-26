@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0ccac9c260619b21079c6a277d842d322750cbc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149874"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065487"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Cette interface représente un module qui prend en charge d’autres emplacements de symboles et d’États JustMyCode.
@@ -48,7 +48,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>Notes
  Visual Studio est l’utilisateur classique de cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

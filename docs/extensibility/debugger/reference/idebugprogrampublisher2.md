@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deac68ba693bd9e4f827fef5610e3c9d2c3c26f6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c51fac369ed91f00c91482dd7069362d758b7346
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166968"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065097"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Cette interface permet à un moteur de débogage (DE) ou à des fournisseurs de ports personnalisés d’inscrire des programmes pour le débogage.
@@ -49,7 +49,7 @@ Cette interface implémente les méthodes suivantes :
 ## <a name="remarks"></a>Notes
 Cette interface rend les programmes et les nœuds de programme disponibles (autrement dit, les « publie ») pour une utilisation par DEs et le gestionnaire de débogage de session (SDM). Pour accéder aux programmes publiés et aux nœuds de programme, utilisez l’interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . C’est la seule façon pour laquelle Visual Studio peut reconnaître qu’un programme est en cours de débogage.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

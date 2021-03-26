@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67b2eff1ca7c1871eacad7608b56b6916e3cc8e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94e5680f8e8635c969e25555463a21bba069284a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914364"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055815"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Guide pratique pour étendre le processus de génération Visual Studio
 
@@ -76,23 +76,23 @@ L’exemple suivant montre comment utiliser l' `AfterTargets` attribut pour ajou
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
-   <TargetFramework>netcoreapp3.1</TargetFramework>
-   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
-</PropertyGroup>
+  <PropertyGroup>
+     <TargetFramework>netcoreapp3.1</TargetFramework>
+     <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
 
-<Target Name="CustomAfterBuild" AfterTargets="Build">
-  <ItemGroup>
-    <_FilesToCopy Include="$(OutputPath)**\*"/>
-  </ItemGroup>
-  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+  <Target Name="CustomAfterBuild" AfterTargets="Build">
+    <ItemGroup>
+      <_FilesToCopy Include="$(OutputPath)**\*"/>
+    </ItemGroup>
+    <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
 
-  <Message Text="DestFiles:
-      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+    <Message Text="DestFiles:
+        @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
 
-  <Copy SourceFiles="@(_FilesToCopy)"
-        DestinationFiles=
-        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+    <Copy SourceFiles="@(_FilesToCopy)"
+          DestinationFiles=
+          "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
   </Target>
 
   <Target Name="CustomClean" BeforeTargets="CoreClean">
@@ -112,7 +112,7 @@ L’exemple suivant montre comment utiliser l' `AfterTargets` attribut pour ajou
 
 La substitution de cibles prédéfinies est un moyen simple d’étendre le processus de génération, mais comme MSBuild évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de remplacer les cibles que vous avez déjà remplacées. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
 
-Vous pouvez vous protéger contre les substitutions involontaires de cibles en substituant les propriétés DependsOn utilisées dans `DependsOnTargets` les attributs dans les cibles courantes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Considérez les aspects suivants :
+Vous pouvez vous protéger contre les substitutions involontaires de cibles en substituant les propriétés DependsOn utilisées dans `DependsOnTargets` les attributs dans les cibles courantes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Vous devez :
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -177,16 +177,16 @@ Dans cet exemple, il s’agit d’un projet de type SDK. Comme mentionné dans l
 
 ```xml
 <Project>
-<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk"/>
 
-<PropertyGroup>
-   <TargetFramework>netcoreapp3.1</TargetFramework>
-</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
 
-<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
 
-<PropertyGroup>
-   <BuildDependsOn>
+  <PropertyGroup>
+    <BuildDependsOn>
       $(BuildDependsOn);CustomAfterBuild
     </BuildDependsOn>
 
@@ -197,26 +197,25 @@ Dans cet exemple, il s’agit d’un projet de type SDK. Comme mentionné dans l
     <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
   </PropertyGroup>
 
-<Target Name="CustomAfterBuild">
-  <ItemGroup>
-    <_FilesToCopy Include="$(OutputPath)**\*"/>
-  </ItemGroup>
-  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+  <Target Name="CustomAfterBuild">
+    <ItemGroup>
+      <_FilesToCopy Include="$(OutputPath)**\*"/>
+    </ItemGroup>
+    <Message Importance="high" Text="_FilesToCopy: @(_FilesToCopy)"/>
 
-  <Message Text="DestFiles:
-      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+    <Message Text="DestFiles:
+      @(_FilesToCopy-&gt;'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
 
-  <Copy SourceFiles="@(_FilesToCopy)"
-        DestinationFiles=
-        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+    <Copy SourceFiles="@(_FilesToCopy)"
+          DestinationFiles="@(_FilesToCopy-&gt;'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
   </Target>
 
   <Target Name="CustomClean">
-    <Message Text="Inside Custom Clean" Importance="high"/>
+    <Message Importance="high" Text="Inside Custom Clean"/>
     <ItemGroup>
       <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
     </ItemGroup>
-    <Delete Files='@(_CustomFilesToDelete)'/>
+    <Delete Files="@(_CustomFilesToDelete)"/>
   </Target>
 </Project>
 ```

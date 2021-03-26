@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883270"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082138"
 ---
 # <a name="icon-element"></a>Icon, élément
 L’attribut Guid de la balise Icon est le GUID d’une image bitmap définie. L' `id` attribut sélectionne l’emplacement dans la bande bitmap. Cet élément est facultatif. Si cet élément n’est pas inclus, la valeur de **guidOfficeIcon : msotcidNoIcon** sera implicite.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a58bcbad79191f54a7b4eeb2aa12e90d8a6e44
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966381"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073285"
 ---
 # <a name="load-vspackages"></a>Charger les VSPackages
 Les VSPackages sont chargés dans Visual Studio uniquement lorsque leurs fonctionnalités sont requises. Par exemple, un VSPackage est chargé quand Visual Studio utilise une fabrique de projet ou un service que le VSPackage implémente. Cette fonctionnalité est appelée chargement différé, qui est utilisée chaque fois que cela est possible pour améliorer les performances.

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970216"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082073"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID des barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses dans l’environnement de développement intégré (IDE) de Visual Studio et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers *. vsct* installés dans le cadre du kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [commandes, menus et groupes définis par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -42,7 +42,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 
 |Barre d’outils|id|
 |-------------|--------|
-|standard|IDM_VS_TOOL_STANDARD|
+|Standard|IDM_VS_TOOL_STANDARD|
 |Build|IDM_VS_TOOL_BUILD|
 |Éditeur de texte|IDM_VS_TOOL_TEXTEDITOR|
 |Débogage|guidVSDebugGroup : IDM_DEBUG_TOOLBAR|
@@ -56,7 +56,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |Add, commande|IDM_VS_TOOL_ADDCOMMAND|
 |Indéfini|IDM_VS_TOOL_UNDEFINED|
 |schéma XML|IDM_VS_TOOL_SCHEMA|
-|données XML|IDM_VS_TOOL_DATA|
+|Données XML|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Groupes sur les barres d’outils de l’IDE
  Pour ajouter un bouton à une barre d’outils standard, définissez l’un des groupes suivants en tant que parent. Les groupes sont triés par barre d’outils parente.
@@ -121,7 +121,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |Affichage de classes|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |Explorateur d'objets|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
 |Explorateur d'objets|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
-|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
+|Sortie|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |Rechercher et remplacer|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
 |Résultats de la recherche 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |Résultats de la recherche 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|

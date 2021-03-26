@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f97d60fe319ee19cf74c7a5e3a3f3d7ef13b921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895360"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055997"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID, élément (modèles Visual Studio)
 Spécifie le genre de projet dans lequel les modèles d'élément doivent s'afficher. Cet élément est significatif quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `false` . Quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `true` , un modèle d’élément est disponible dans tous les types de projets.
@@ -55,7 +55,7 @@ Spécifie le genre de projet dans lequel les modèles d'élément doivent s'affi
 
  Le texte spécifie un identificateur pour une catégorie de modèles d'élément.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `TemplateGroupID` est un élément.
 
  La valeur de l' `TemplateGroupID` élément est utilisée avec l’inscription du système de projet (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \projets \\ ) pour filtrer les modèles qui s’affichent dans la boîte de dialogue **Ajouter un nouvel élément** .

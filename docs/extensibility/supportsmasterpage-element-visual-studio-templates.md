@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b779b3626c4ff47fe798fa9f4ff2e7bc9c7ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839374"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056036"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage, élément (modèles Visual Studio)
 Spécifie si la case à cocher **Sélectionner la page maître** est activée ou non dans la boîte de dialogue **Ajouter un nouvel élément** .
@@ -55,7 +55,7 @@ Spécifie si la case à cocher **Sélectionner la page maître** est activée ou
 
  Le texte doit être `true` ou `false` , indiquant si la case à cocher **Sélectionner la page maître** est activée ou non dans la boîte de dialogue **Ajouter un nouvel élément** .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `SupportsMasterPage` est un élément facultatif. La valeur par défaut est `false`.
 
  L' `SupportsMasterPage` élément est uniquement disponible pour les modèles d’élément Web.

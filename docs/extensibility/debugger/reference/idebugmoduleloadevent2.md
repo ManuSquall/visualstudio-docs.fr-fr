@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6030e5962c0544a63b7b9658622447324a15792
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065357"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsqu’un module est chargé ou déchargé.
@@ -45,7 +45,7 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio utilise cet événement pour maintenir la fenêtre **modules** à jour.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

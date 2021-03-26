@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884973"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055750"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Créer et gérer des boîtes de dialogue modales
 Quand vous créez une boîte de dialogue modale dans Visual Studio, vous devez vous assurer que la fenêtre parente de la boîte de dialogue est désactivée pendant que la boîte de dialogue est affichée, puis réactiver la fenêtre parente après la fermeture de la boîte de dialogue. Si vous ne le faites pas, vous risquez de recevoir le message d’erreur : *Microsoft Visual Studio ne peut pas s’arrêter, car une boîte de dialogue modale est active. Fermez la boîte de dialogue active, puis réessayez.*
@@ -40,7 +40,7 @@ Si votre boîte de dialogue n’est pas WPF ou si vous ne pouvez pas dériver vo
 
     - *System.Xaml*
 
-3. Dans *OpenDialog.cs*, ajoutez l' `using` instruction suivante :
+3. Dans *OpenDialog. cs*, ajoutez l' `using` instruction suivante :
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

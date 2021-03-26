@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c28c175d53fb37cf890dad4240a84fb132f6af35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090120"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Fonctions d’API du plug-in de contrôle de code source
 L’API de plug-in de contrôle de code source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in de contrôle de code source conformément à cette API. Les signatures de chaque fonction et la sémantique associée aux indicateurs binaires et à d’autres paramètres sont décrites en détail dans cette référence.
@@ -82,7 +82,7 @@ L’API de plug-in de contrôle de code source fournit les fonctions suivantes, 
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examine une liste de répertoires et de fichiers dans un projet ou des projets qui sont sous contrôle de code source. Chaque nom de répertoire et de fichier trouvé est passé à une fonction de rappel.|
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Examine les modifications de nom apportées à une liste de fichiers. Chaque nom de fichier est passé à une fonction de rappel avec son état de modification.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SCC. h
 
  (Fourni dans le dossier Common includes du kit de développement logiciel (SDK) Environment, par défaut *[lecteur]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]* \Program Files\VSIP 8.0 \ MSSCCI).

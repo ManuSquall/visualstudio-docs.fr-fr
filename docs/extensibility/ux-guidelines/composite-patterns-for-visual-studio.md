@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952094"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090055"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants dans Visual Studio en ce qui concerne la cohérence :
@@ -70,7 +70,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 ### <a name="other-charting-considerations"></a>Autres considérations relatives aux graphiques
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>Couleur
  Une palette spécifique de couleurs de graphiques est définie pour être utilisée dans Visual Studio. La palette est accessible pour les principaux types de cécité des couleurs, et les couleurs peuvent être différenciées même si elles sont utilisées comme des secteurs de couleur très étroits. Vous pouvez utiliser ces couleurs dans n’importe quelle combinaison pour n’importe quel type de graphique ou graphique dans votre interface utilisateur. Vous n’avez pas besoin d’utiliser les sept couleurs si vous n’avez pas besoin de nombreuses couleurs distinctes. Ces couleurs n’ont pas été conçues pour être utilisées avec des éléments de premier plan, par conséquent, ne placez pas de texte ou de glyphes par-dessus ces couleurs. Ces teintes doivent être codées en dur et exposées à la personnalisation utilisateur sous **outils > options** (voir [exposition des couleurs pour les utilisateurs finaux](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Echantillon|Hex|RGB|
@@ -437,7 +437,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
  Les sélections dans les listes peuvent être contiguës, disjointes ou régionales. Lorsque plusieurs sélections sont autorisées, la sélection contiguë et disjointe doit toujours être prise en charge, tandis que la prise en charge des sélections de région (zone) est facultative. Les sélections de régions sont lancées en faisant glisser l’espace blanc du corps de la liste.
 
-| Object | d’un certificat SSTP |
+| Object | Sélection |
 |--------|------------|
 | List | Contiguë |
 | List | Disjoint |
@@ -484,7 +484,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 |Boîte de dialogue|Emplacement de la boîte de dialogue, si elle a été déplacée<br /><br /> Affichage que l’utilisateur a utilisé en dernier dans la boîte de dialogue|Quand la boîte de dialogue se ferme<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre dans **HKEY_CURRENT_USER**|
 |Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> En cas de modification du mode Visual Studio<br /><br /> À la fin de la session Visual Studio|Fichier d' **options utilisateur (. suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
 |Document|Sélection actuelle dans le document<br /><br /> Vue du document<br /><br /> Les derniers emplacements visités par l’utilisateur|Lors de l’enregistrement du document|Fichier d' **options utilisateur (. suo)** pour le projet|
-|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Composants<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
+|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
 |Solution|Références aux projets<br /><br /> Références aux fichiers|Lors de l’enregistrement du projet ou de la solution|Fichier **solution (. sln)**|
 |Paramètres dans **outils > options**|Personnalisations du clavier<br /><br /> Personnalisations de la barre d’outils<br /><br /> Modèles de couleurs|Quand la boîte de dialogue **outils > options** se ferme<br /><br /> À la fin de la session Visual Studio|Registre dans **HKEY_CURRENT_USER**|
 
@@ -523,7 +523,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 ||Expérience de base|Expérience optimisée|Expérience élevée|
 |-|----------------------|--------------------------|-------------------------|
 |**Permet aux utilisateurs de...**|Correction du code et de la solution/de la lecture au niveau du projet sans les fins mortes|Effectuer des tâches de maintenance, de refactorisation et de navigation|Travaillez dans une expérience cohérente, intuitive et fluide en toute confiance|
-|**Éditeur**|Panoramique tactile et sélection<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Zoom de pince<br /><br /> Défilement rapide<br /><br /> d’un certificat SSTP<br /><br /> Utilisation facile du menu contextuel||
+|**Éditeur**|Panoramique tactile et sélection<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Zoom de pince<br /><br /> Défilement rapide<br /><br /> Sélection<br /><br /> Utilisation facile du menu contextuel||
 |**Fenêtres d’outils principales**|Afficher le panorama<br /><br /> Sélection d’élément<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Défilement et sélection faciles des éléments||
 |**Fenêtrage**||Redimensionner la fenêtre<br /><br /> Accès rapide||
 |**Barre d’outils document**||Navigation facile entre les fichiers ouverts||

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e014d72fb3ae2b691f4a6eed28f14ff21656ef64
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952172"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073181"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -63,7 +63,7 @@ Type de message. Le tableau suivant répertorie les valeurs prises en charge pou
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indique à l’IDE à propos d’un fichier après qu’il a été récupéré à partir du contrôle de version. Le `display_string` paramètre est casté en une structure [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) , qui est fournie par le plug-in de contrôle de code source.|
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indique à l’IDE l’état actuel d’une opération d’arrière-plan. Le `display_string` paramètre est casté en une structure [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) , qui est fournie par le plug-in de contrôle de code source.|
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
 
 |Valeur|Description|
 |-----------|-----------------|

@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fced03b190ab46885c5d786b8374a05c3bd043b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3241457fc23a0df369c1ebc78546a5045e89975
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883296"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082151"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon, élément (modèles Visual Studio)
 Spécifie le chemin d’accès et le nom du fichier image qui sert d’icône, qui apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** , pour le modèle.
@@ -64,7 +64,7 @@ Spécifie le chemin d’accès et le nom du fichier image qui sert d’icône, q
 
  Le texte fournit le chemin d’accès et le nom de fichier de l’icône de modèle qui s’affichera dans la boîte de dialogue **nouveau projet** .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `Icon` est un élément enfant obligatoire de `TemplateData`.
 
 ## <a name="example"></a>Exemple

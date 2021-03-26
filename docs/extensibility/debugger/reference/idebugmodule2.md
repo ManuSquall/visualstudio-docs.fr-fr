@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cc14d4f33924a04b25344c4c624a633b97ff7b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 848aa60ad7b8343d84489f460cfcb5fb6ec2d77d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065552"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Cette interface représente un module, c’est-à-dire une unité exécutable d’un programme, tel qu’une DLL.
@@ -50,7 +50,7 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>Notes
  Les informations de module peuvent être affichées dans la fenêtre **modules** de l’IDE.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
