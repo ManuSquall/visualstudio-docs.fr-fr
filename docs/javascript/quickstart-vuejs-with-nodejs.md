@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad2892ab7c605ba25902ac2c4c24e68236a5d740
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950638"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616972"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Vue.js
 
@@ -47,7 +47,7 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
     
     En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés** et définir le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Vous allez d’abord créer un projet d’application web Vue.js.
 
@@ -140,6 +140,8 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espéro
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Parcourir l’article pour [Vue.js](create-application-with-vuejs.md)
-- Suivre le [tutoriel pour Node.js et Express](tutorial-nodejs.md)
-- [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)
+> [!div class="nextstepaction"]
+> [Créer une application Vue.js](create-application-with-vuejs.md)
+
+> [!div class="nextstepaction"]
+> [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

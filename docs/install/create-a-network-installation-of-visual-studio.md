@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e76c5346230b6991f238384a4852938dcc540f6c
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850168"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616933"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -55,7 +55,7 @@ Les autres programmes d’amorçage pris en charge incluent **vs_feedbackclient.
 
 L’exécutable de votre programme d’installation &mdash; ou pour être plus précis, un fichier de programme d’amorçage &mdash; doit correspondre ou être similaire à l’un des éléments suivants.
 
-|Édition | Téléchargement|
+|Édition | Télécharger|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -70,7 +70,7 @@ Les autres programmes d’amorçage pris en charge incluent [vs_teamexplorer.exe
 
 ## <a name="create-an-offline-installation-folder"></a>Créer un dossier d’installation hors connexion
 
-Vous devez avoir une connexion Internet pour terminer cette étape. Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une commande similaire à l’un des exemples suivants.
+Vous devez avoir une connexion Internet pour terminer cette étape. Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une commande similaire à l’un des exemples suivants. Ce dossier doit rester statique et toutes les mises à jour de la disposition doivent être incluses dans ce dossier. 
 
    > [!IMPORTANT]
    > Une mise en page complète pour un seul paramètre régional de langue nécessite environ 35 Go d’espace disque pour Visual Studio Community et 42 Go pour Visual Studio Enterprise. Les [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) supplémentaires nécessitent environ deux Go chacun. Pour plus d’informations, consultez la section [personnaliser la disposition du réseau](#customize-the-network-layout) .

@@ -1,7 +1,7 @@
 ---
 title: Créer une application ASP.NET Core avec TypeScript
 description: Dans ce didacticiel, vous allez créer une application à l’aide de ASP.NET Core et de la machine à écrire
-ms.date: 03/16/2020
+ms.date: 03/25/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672837"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616985"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -287,7 +287,10 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous souhaiterez peut-être en savoir plus sur l’utilisation de la fonction de machine à ASP.NET Core.
+Vous souhaiterez peut-être en savoir plus sur l’utilisation de la fonction de machine à ASP.NET Core. Si vous êtes intéressé par la programmation AngularJS dans Visual Studio, vous pouvez utiliser l' [extension du service de langage AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) pour Visual Studio.
 
 > [!div class="nextstepaction"]
 > [ASP.NET Core et la machine à écrire](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+
+> [!div class="nextstepaction"]
+> [Extension du service de langage AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)

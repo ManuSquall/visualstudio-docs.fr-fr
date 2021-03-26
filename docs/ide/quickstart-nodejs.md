@@ -2,7 +2,7 @@
 title: Créer votre première application Node.js
 ms.custom: SEO-VS-2020
 description: Dans ce guide de démarrage rapide, vous créez une application Node.js dans Visual Studio
-ms.date: 06/27/2018
+ms.date: 03/25/2021
 ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecd65c0348ac16a2097061726e3896961ae04482
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932616"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105617050"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js
 
@@ -46,7 +46,7 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
     
     En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés** et définir le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Vous allez d’abord créer un projet d’application web Node.js.
 
@@ -115,5 +115,8 @@ Félicitations, vous avez terminé ce guide de démarrage rapide. Vous en savez 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)
 
-- [Tutoriel pour Node.js et Express](../javascript/tutorial-nodejs.md)
-- [Tutoriel pour Node.js et React](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Tutoriel pour Node.js et Express](../javascript/tutorial-nodejs.md)
+
+> [!div class="nextstepaction"]
+> [Tutoriel pour Node.js et React](../javascript/tutorial-nodejs-with-react-and-jsx.md)

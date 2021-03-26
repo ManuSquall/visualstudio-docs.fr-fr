@@ -1,45 +1,46 @@
 ---
 title: Page d’aide par défaut F1 pour l’éditeur de texte
 description: Page par défaut pour les demandes d’aide F1 pour l’éditeur de texte Visual Studio
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d22a07e29b45362324074329aabfddf2b247a6b
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961649"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616907"
 ---
-# <a name="f1-help-for-the-text-editor"></a>Aide F1 pour l’éditeur de texte
+# <a name="code-editor-f1-help"></a>Aide (F1) de l’éditeur de code
 
 Nous n’avons apparemment pas trouvé ce que vous recherchiez ; nous en sommes désolés. Vous pouvez nous aider à améliorer en laissant des commentaires via les boutons situés en bas de cette page, ou essayer l’une des suggestions suivantes.
 
-## <a name="cursor-position"></a>Position du curseur
+## <a name="get-help-for-your-programming-language"></a>Obtenir de l’aide pour votre langage de programmation ?
 
-Si vous recherchez de l’aide via la touche F1 sur un mot clé ou un nom d’API, veillez à positionner le curseur à l’intérieur ou juste à droite du mot avant d’appuyer sur **F1**. Si cela ne résout pas le problème, essayez l’une des suggestions suivantes.
+- [Guide de programmation C#](/dotnet/csharp/programming-guide/) ou [Référence du langage](/dotnet/csharp/language-reference/).
+- [Fonctionnalités de langage Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) ou [Référence du langage](/dotnet/visual-basic/language-reference/).
+- [Documentation python](https://docs.python.org/).
+- [Guide de référence du langage C/C++ et des bibliothèques standard](/cpp/cpp/c-cpp-language-and-standard-libraries).
+- [Guide F #](/dotnet/fsharp/).
+- [Documentation](https://www.typescriptlang.org/docs)d’une machine à écrire.
 
-## <a name="find-help-on-a-keyword-or-api"></a>Rechercher de l’aide sur un mot clé ou une API
-
-- Pour obtenir de l’aide sur C#, consultez le [Guide de programmation c#](/dotnet/csharp/programming-guide/) ou [Référence du langage](/dotnet/csharp/language-reference/).
-- Pour Visual Basic d’aide, consultez les [fonctionnalités de langage Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) ou [Référence du langage](/dotnet/visual-basic/language-reference/).
-- Pour obtenir de l’aide sur Python, consultez [la documentation python](https://docs.python.org/).
-- Pour obtenir de l’aide sur C++, consultez [Guide de référence du langage C/c++ et des bibliothèques standard](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- Pour de l’aide sur F#, consultez le [Guide de F#](/dotnet/fsharp/).
-- Pour obtenir de l’aide sur la machine à écrire, consultez la [documentation de machine à écrire](https://www.typescriptlang.org/docs).
-
-## <a name="search-for-help-on-a-keyword-or-api-name"></a>Rechercher de l’aide sur un mot clé ou un nom d’API
+## <a name="search-for-help-on-keyword-api-name-file-type-or-ui-settings"></a>Rechercher de l’aide sur le mot clé, le nom de l’API, le type de fichier ou les paramètres d’interface utilisateur
 
 Si vous recherchez de l’aide via la touche F1 sur un mot clé ou un nom d’API :
+
 - Essayez de rechercher sur [docs.Microsoft.com](/)
 - Essayez d’effectuer une recherche à l’aide d’un moteur de recherche.
 - Recherchez la documentation de référence sur le [navigateur de l’API .NET](/dotnet/api/).
+
+## <a name="cursor-position"></a>Position du curseur
+
+Si vous recherchez de l’aide via la touche F1 sur un mot clé ou un nom d’API, veillez à positionner le curseur à l’intérieur ou juste à droite du mot avant d’appuyer sur **F1**.
 
 ## <a name="find-the-source-code-for-an-api"></a>Rechercher le code source d’une API
 
