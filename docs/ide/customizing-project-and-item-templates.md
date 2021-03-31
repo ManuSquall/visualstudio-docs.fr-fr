@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des modèles de projet et d’élément
 description: Découvrez comment personnaliser vos modèles de projet et d’élément une fois qu’ils ont été créés.
-ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.custom: SEO-VS-2021
+ms.date: 03/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 332e894372c05361ec162a3e046bd675a54b04a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954408"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933782"
 ---
 # <a name="customize-project-and-item-templates"></a>Personnaliser des modèles de projet et d’élément
 
@@ -45,3 +45,5 @@ Par exemple, il est possible de réaliser les tâches suivantes :
 - [Comment : créer des modèles d’élément](../ide/how-to-create-item-templates.md)
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [Personnaliser les modèles à l’aide de la `dotnet new` commande](/dotnet/core/tools/custom-templates/)
+- [Répertorier ou modifier des projets dans un fichier solution .NET à l’aide de la `dotnet sln` commande](/dotnet/core/tools/dotnet-sln/)
