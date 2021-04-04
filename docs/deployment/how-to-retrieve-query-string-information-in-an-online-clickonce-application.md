@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f53d2d005ad9b706f318ec82d48898f73ce0f07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885129"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213925"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
 La *chaîne de requête* est la partie d’une URL commençant par un point d’interrogation ( ?) qui contient des informations arbitraires sous la forme *nom=valeur*. Supposez que vous avez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nommée `WindowsApp1` que vous hébergez sur `servername`, et que vous souhaitez passer une valeur pour la variable `username` quand l’application démarre. Votre code peut ressembler à ce qui suit :
@@ -50,8 +50,9 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
 
 1. Placez le code suivant dans votre projet. Pour que ce code fonctionne, vous devez disposer d’une référence à System. Web et d’ajouts `using` ou `Imports` de directives pour System. Web, System. Collections. Specialized et System. Deployment. application.
 
-     [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
-     [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb" id="Snippet1":::
+
 
 2. Appelez la fonction précédemment définie pour récupérer un <xref:System.Collections.DictionaryBase.Dictionary%2A> des paramètres de chaîne de requête, indexés par nom.
 

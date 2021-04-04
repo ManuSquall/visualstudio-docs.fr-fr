@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 42c9f2d2a91b90cab31dd225d0ace081988135fb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074273"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213639"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procédure pas à pas : création d’un service de langage hérité
 L’utilisation des classes de langage de Managed package Framework (MPF) pour implémenter un service de langage dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] est simple. Vous avez besoin d’un VSPackage pour héberger le service de langage, le service de langage lui-même et un analyseur pour votre langue.
@@ -74,13 +74,13 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
 6. Dans le fichier MyLanguageService. cs, ajoutez les `using` directives suivantes.
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguageservice.cs" id="Snippet1":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguageservice.vb" id="Snippet1":::
 
 7. Modifiez la `MyLanguageService` classe pour qu’elle dérive de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe :
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguageservice.cs" id="Snippet2":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguageservice.vb" id="Snippet2":::
 
 8. Placez le curseur sur « LanguageService » et, dans le menu **Edit**, **IntelliSense** , sélectionnez **implement abstract class**. Cela ajoute les méthodes minimales nécessaires pour implémenter une classe de service de langage.
 
@@ -90,8 +90,8 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
 1. Ouvrez le fichier MyLanguagePackagePackage. cs et ajoutez les `using` directives suivantes :
 
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguagepackagepackage.vb" id="Snippet3":::
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguagepackagepackage.cs" id="Snippet3":::
 
 2. Inscrivez votre classe de service de langage comme décrit dans [inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md). Cela comprend les attributs ProvideXX et les sections « proffering the Language Service ». Utilisez MyLanguageService là où cette rubrique utilise TestLanguageService.
 
@@ -114,8 +114,8 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
 3. Dans le nouveau fichier de classe, ajoutez les `using` directives suivantes.
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mysource.cs" id="Snippet4":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mysource.vb" id="Snippet4":::
 
 4. Modifiez la classe pour qu’elle dérive de la classe MPF souhaitée.
 
@@ -123,8 +123,8 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
      Par exemple, le constructeur d’une classe dérivée de la <xref:Microsoft.VisualStudio.Package.Source> classe peut se présenter comme suit :
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mysource.cs" id="Snippet5":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mysource.vb" id="Snippet5":::
 
 6. Dans le menu **modifier**, **IntelliSense** , sélectionnez **implémenter une classe abstraite** si la classe de base a des méthodes abstraites qui doivent être implémentées.
 

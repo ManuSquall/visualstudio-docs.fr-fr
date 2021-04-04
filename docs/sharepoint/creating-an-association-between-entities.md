@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7efd3d622e40c21574c0aa9e39263d53979706ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d40c4e5c5d61b9da3cdbdd3fe96f45c4a0cff929
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213964"
 ---
 # <a name="create-an-association-between-entities"></a>Créer une association entre des entités
   Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent aux consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par des composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations de données dans une interface utilisateur (IU).
@@ -53,13 +53,13 @@ ms.locfileid: "99949192"
 
  Ajoutez du code à la méthode du navigateur d’associations de l’entité source qui retourne une collection d’entités de destination. L’exemple suivant retourne les commandes client pour un contact.
 
- [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)]
- [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet7":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet7":::
 
  Ajoutez du code à la méthode du navigateur d’associations de l’entité de destination qui retourne une entité source. L’exemple suivant retourne le contact associé à la commande client.
 
- [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
- [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet8":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet8":::
 
 ### <a name="foreign-keyless-association"></a>Association de clé étrangère étrangère
  Vous pouvez créer une association sans mapper d’identificateurs aux descripteurs de type de champ. Créez ce type d’association lorsque l’entité source n’a pas de relation directe avec l’entité de destination. Par exemple, une `SalesOrderDetail` table n’a pas de clé étrangère qui est mappée à une clé primaire dans une `Contact` table.
@@ -70,13 +70,13 @@ ms.locfileid: "99949192"
 
  L’exemple suivant retourne les détails de toutes les commandes en joignant les tables.
 
- [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
- [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet9":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet9":::
 
  Dans la méthode de navigation d’association de l' `SalesOrderDetail` entité, retournez le associé `Contact` . l’exemple ci-dessous illustre ce cas de figure.
-
- [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
- [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
+                                                                            
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet10":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet10":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)

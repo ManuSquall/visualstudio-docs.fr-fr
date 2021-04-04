@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db82151b7fd4dbe894cecf8fbf5f5b64cb2f5919
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888444"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213938"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Guide pratique pour vérifier la disponibilité de mises à jour des applications par programmation à l’aide de l’API du déploiement ClickOnce
 ClickOnce offre deux moyens de mettre à jour une application une fois qu’elle est déployée. Dans la première méthode, vous pouvez configurer le déploiement ClickOnce pour vérifier automatiquement les mises à jour à certains intervalles. Dans la deuxième méthode, vous pouvez écrire du code qui utilise la <xref:System.Deployment.Application.ApplicationDeployment> classe pour rechercher les mises à jour en fonction d’un événement, tel qu’une demande de l’utilisateur.
@@ -40,9 +40,9 @@ ClickOnce offre deux moyens de mettre à jour une application une fois qu’elle
 
 2. Créez le bouton, l’élément de menu ou tout autre élément d’interface utilisateur que vous souhaitez que vos utilisateurs sélectionnent pour rechercher les mises à jour. À partir du gestionnaire d’événements de cet élément, appelez la méthode suivante pour rechercher et installer les mises à jour.
 
-     [!code-csharp[ClickOnceAPI#6](../deployment/codesnippet/CSharp/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cs)]
-     [!code-cpp[ClickOnceAPI#6](../deployment/codesnippet/CPP/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cpp)]
-     [!code-vb[ClickOnceAPI#6](../deployment/codesnippet/VisualBasic/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs" id="Snippet6":::
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp" id="Snippet6":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb" id="Snippet6":::
 
 3. Compilez votre application.
 

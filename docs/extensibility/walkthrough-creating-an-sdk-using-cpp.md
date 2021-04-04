@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 743759896bf1de104825825d450be081ab2cc666
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080409"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217422"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procédure pas à pas : création d’un SDK à l’aide de C++
 Cette procédure pas à pas montre comment créer un kit de développement logiciel (SDK) de bibliothèque mathématique C++ natif, empaqueter le kit de développement logiciel (SDK) en tant qu’extension Visual Studio (VSIX), puis l’utiliser pour créer une application. La procédure pas à pas est divisée en étapes :
@@ -37,11 +37,11 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 3. Mettez à jour *NativeMath. h* pour qu’il corresponde au code suivant.
 
-     [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h" id="Snippet1":::
 
 4. Mettez à jour *NativeMath. cpp* pour qu’il corresponde à ce code :
 
-     [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
 5. Dans **Explorateur de solutions**, ouvrez le menu contextuel de la **solution’NativeMath'**, puis choisissez **Ajouter**  >  **un nouveau projet**.
 
@@ -49,11 +49,11 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 7. Mettez à jour *Class1. h* pour qu’il corresponde à ce code :
 
-     [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h" id="Snippet3":::
 
 8. Mettez à jour *Class1. cpp* pour qu’il corresponde à ce code :
 
-     [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp" id="Snippet4":::
 
 9. Dans la barre de menus, choisissez **générer**  >  **générer la solution**.
 
@@ -67,7 +67,8 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 4. Utilisez le code XML suivant pour remplacer le XML existant.
 
-    [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+
 
 5. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **NativeMathVSIX** , puis choisissez **Ajouter**  >  **un nouvel élément**.
 
@@ -75,7 +76,7 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 7. Utilisez ce code XML pour remplacer le contenu du fichier :
 
-     [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
 8. Dans **Explorateur de solutions**, sous le projet **NativeMathVSIX** , créez la structure de dossiers suivante :
 
@@ -108,8 +109,21 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
      Copiez *$SolutionRoot $ \Debug\NativeMathWRT\NativeMathWRT.pri* et collez-le dans le dossier *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* .
 
 11. Dans le dossier *$SolutionRoot $ \\ \NativeMathVSIX\DesignTime\Debug\x86* , créez un fichier texte nommé *NativeMathSDK. props*, puis collez-y le contenu suivant :
-
-    [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
+   
+    ```xml
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <PropertyGroup>
+        <NativeMathSDKPath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\NativeMathSDK\1.0\</NativeMathSDKPath>
+        <IncludePath>$(NativeMathSDKPath)DesignTime\CommonConfiguration\Neutral\Include;$(IncludePath)</IncludePath>
+        <LibraryPath>$(NativeMathSDKPath)DesignTime\Debug\x86;$(LibraryPath)</LibraryPath>
+      </PropertyGroup>
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+         <Link>
+           <AdditionalDependencies>NativeMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+         </Link>
+      </ItemDefinitionGroup>
+    </Project>
+    ```
 
 12. Dans la barre de menus, choisissez **Afficher** les  >  **autres** fenêtres  >  **Propriétés** Windows (clavier : Appuyez sur la touche **F4** ).
 
@@ -155,15 +169,15 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 6. Dans **Explorateur de solutions**, ouvrez **MainPage. Xaml**, puis utilisez le code XAML suivant pour remplacer son contenu :
 
-    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml" id="Snippet1":::
 
 7. Mettez à jour *MainPage. Xaml. h* pour qu’il corresponde à ce code :
 
-    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h" id="Snippet2":::
 
 8. Mettez à jour *MainPage. Xaml. cpp* pour qu’il corresponde à ce code :
 
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.cpp" id="Snippet3":::
 
 9. Appuyez sur la touche **F5** pour exécuter l’application.
 

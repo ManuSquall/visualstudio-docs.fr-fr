@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885610"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213977"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Comment : gérer les conflits de déploiement
   Vous pouvez fournir votre propre code pour gérer les conflits de déploiement pour un élément de projet SharePoint. Par exemple, vous pouvez déterminer si des fichiers dans l’élément de projet actuel existent déjà à l’emplacement de déploiement, puis supprimer les fichiers déployés avant le déploiement de l’élément de projet actuel. Pour plus d’informations sur les conflits de déploiement, consultez extension de l' [empaquetage et du déploiement SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -44,8 +44,8 @@ ms.locfileid: "99885610"
 
  Par souci de simplicité, le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Gestionnaire d’événements dans cet exemple suppose qu’il existe un conflit de déploiement (autrement dit, il ajoute toujours un nouvel <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objet), et la `Resolve` méthode retourne simplement **true** pour indiquer que le conflit a été résolu. Dans un scénario réel, votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> Gestionnaire d’événements détermine d’abord s’il existe un conflit entre un fichier dans l’élément de projet actif et un fichier à l’emplacement de déploiement, puis ajoute un <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objet uniquement en cas de conflit. Par exemple, vous pouvez utiliser la `e.ProjectItem.Files` propriété dans le gestionnaire d’événements pour analyser les fichiers dans l’élément de projet, et vous pouvez appeler une commande SharePoint pour analyser les fichiers à l’emplacement de déploiement. De même, dans un scénario réel, la `Resolve` méthode peut appeler une commande SharePoint pour résoudre le conflit sur le site SharePoint. Pour plus d’informations sur la création de commandes SharePoint, consultez [procédure : créer une commande SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite des références aux assemblys suivants :

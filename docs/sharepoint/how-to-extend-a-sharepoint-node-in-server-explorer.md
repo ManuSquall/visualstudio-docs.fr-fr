@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4983930a7c16edef826a5912abf0870598b1f906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e38f1d18736c18f5273eb2e202de52af81e73f85
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943794"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217448"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Procédure : étendre un nœud SharePoint dans Explorateur de serveurs
   Vous pouvez étendre des nœuds sous le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez ajouter de nouveaux nœuds enfants, des éléments de menu contextuel ou des propriétés à un nœud existant. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -64,8 +64,8 @@ ms.locfileid: "99943794"
 
 - Extension qui ajoute une propriété personnalisée nommée **ContosoExampleProperty** à chaque nœud qui représente un champ nommé **Body**.
 
-  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
-  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs" id="Snippet9":::
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb" id="Snippet9":::
 
   Cette extension ajoute une propriété de chaîne modifiable aux nœuds. Vous pouvez également créer des propriétés personnalisées qui affichent des données en lecture seule à partir du serveur SharePoint. Pour obtenir un exemple qui montre comment procéder, consultez [procédure pas à pas : étendre Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 

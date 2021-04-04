@@ -3,17 +3,17 @@ title: Installer Visual Studio 2019 pour Mac
 description: Instructions sur l’installation de Visual Studio 2019 pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 03/04/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727565"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273412"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
 
@@ -28,7 +28,8 @@ Pour commencer à développer des applications .NET natives multiplateformes sur
 
 Pour générer des applications Xamarin pour iOS ou macOS, vous devez également disposer des éléments suivants :
 
-- Xcode 10.0 ou ultérieur. La dernière version stable est généralement recommandée.
+- Un Mac compatible avec la dernière version de Xcode. Consultez [la documentation sur la configuration minimale requise pour](https://developer.apple.com/support/xcode/) Apple
+- La dernière version de [Xcode](https://developer.apple.com/xcode). Il peut être possible d' [utiliser une version antérieure de Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode) si votre Mac n’est pas compatible avec la version la plus récente.
 - un ID Apple. Si vous n’avez pas encore d’identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
 ## <a name="installation-instructions"></a>Instructions d’installation
@@ -53,7 +54,7 @@ Pour générer des applications Xamarin pour iOS ou macOS, vous devez également
 
    Si vous ne souhaitez pas installer toutes les plateformes, utilisez le guide ci-dessous pour vous aider à choisir les plateformes à installer :
 
-   |Type d’application  |Cible  |Sélection  |Notes  |
+   |Type d’application  |Cible  |d’un certificat SSTP  |Notes  |
    |---------|---------|---------|---------|
    |**Applications utilisant Xamarin**| Xamarin.Forms|Sélectionner des plateformes **Android** et **iOS** |Vous devez installer [ **Xcode**](https://developer.apple.com/xcode/) |
    ||iOS uniquement|Sélectionner une plateforme **iOS**|Vous devez installer [ **Xcode**](https://developer.apple.com/xcode/)|
@@ -96,14 +97,21 @@ L’installation de Visual Studio pour Mac vous permet de commencer à écrire d
 
 ### <a name="ios"></a>iOS
 
-1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [Approvisionnement d’appareil](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(pour exécuter votre application sur l’appareil).
+1. [Hello, iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
+2. [Approvisionnement d’appareil](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/)(pour exécuter votre application sur l’appareil).
 
 ### <a name="android"></a>Android
 
-1. [Utilisation de Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Émulateur du kit Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Configurer un appareil pour le développement](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [Hello, Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
+2. [Utilisation de Xamarin Android SDK Manager](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Émulateur du kit Android SDK](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
+4. [Configurer un appareil pour le développement](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+
+### <a name="xamarinforms"></a>Xamarin.Forms
+
+Générez des applications multiplateformes natives avec Xamarin. Forms :
+
+1. [Démarrages rapides Xamarin. Forms](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
 

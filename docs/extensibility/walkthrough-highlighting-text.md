@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f9e69f635b18d4ed67b78751ac6179cad04f002c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078459"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217526"
 ---
 # <a name="walkthrough-highlight-text"></a>Procédure pas à pas : texte en surbrillance
 Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance chaque occurrence du mot actuel dans un fichier texte. Si un mot apparaît plusieurs fois dans un fichier texte et que vous placez le signe insertion dans une occurrence, chaque occurrence est mise en surbrillance.
@@ -201,8 +201,9 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
 
 5. Vous devez également ajouter un `TagsChanged` événement qui est appelé par la méthode de mise à jour.
 
-     [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
-     [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs" id="Snippet10":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb" id="Snippet10":::
+
 
 6. La `UpdateAtCaretPosition()` méthode recherche dans la mémoire tampon de texte chaque mot identique au mot où le curseur est positionné et construit une liste d' <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets qui correspondent aux occurrences du mot. Il appelle ensuite `SynchronousUpdate` , qui déclenche l' `TagsChanged` événement.
 

@@ -1,19 +1,19 @@
 ---
 title: Écrire des tests unitaires pour C/C++
 description: Écrivez des tests unitaires C++ dans Visual Studio à l’aide de différents frameworks de test, notamment CTest, Boost. test et Google Test.
-ms.date: 02/08/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729364"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217461"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -92,7 +92,7 @@ Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruc
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 
 > [!NOTE]
-> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Il est documenté ici : informations de référence sur l' [API Microsoft. VisualStudio. TestTools. CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour Google Test de la documentation, consultez [Google test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Pour Boost. test, consultez [Boost test bibliothèque : infrastructure de tests unitaires](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Il est documenté ici : informations de référence sur l' [API Microsoft. VisualStudio. TestTools. CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour Google Test de la documentation, consultez [Google test Primer](https://github.com/google/googletest/blob/master/docs/primer.md). Pour Boost. test, consultez [Boost test bibliothèque : infrastructure de tests unitaires](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Le fichier *. cpp* de votre projet de test a une classe stub et une méthode définie pour vous. Ils montrent un exemple d’écriture de code de test. Les signatures utilisent les macros TEST_CLASS et TEST_METHOD, qui rendent les méthodes détectables à partir de la fenêtre de l' **Explorateur de tests** .
 

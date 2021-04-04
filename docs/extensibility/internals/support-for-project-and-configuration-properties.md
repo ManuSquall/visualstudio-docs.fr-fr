@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c5ac6cf82d39790fa2d7762fea6b711a546da24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6f3932658442774ad6f54bd5e6243fe73679b38f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080747"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214029"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Prise en charge des propriétés de configuration et de projet
 La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) peut afficher les propriétés de projet et de configuration. Vous pouvez fournir une page de propriétés pour votre propre type de projet afin que l’utilisateur puisse définir des propriétés pour votre application.
@@ -72,8 +72,8 @@ La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includ
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute et chemin du Registre
  Les classes dérivées de `SettingsPage` sont conçues pour être partagées entre les VSPackages. Pour permettre à un VSPackage de créer une classe dérivée de `SettingsPage` , ajoutez un `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` à une classe dérivée de `Microsoft.VisualStudio.Shell.Package` .
 
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)]
- [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb" id="Snippet1":::
 
  Le VSPackage auquel est attaché l’attribut n’a pas d’importance. Lorsqu’un VSPackage est inscrit auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l’ID de classe (CLSID) de tout objet pouvant être créé est inscrit pour qu’un appel à <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> puisse le créer.
 
@@ -87,8 +87,8 @@ La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includ
 
  Prenons le fragment de code suivant :
 
- [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb" id="Snippet2":::
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs" id="Snippet2":::
 
  La `MyConfigProp` propriété de configuration s’affiche sur la page de propriétés de configuration comme **ma propriété config** dans la catégorie, **ma catégorie**. Si l’option est sélectionnée, la description, **ma description**, s’affiche dans le volet Description.
 

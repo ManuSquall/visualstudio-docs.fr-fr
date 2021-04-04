@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b676fe015f5f513a069ffaf6ae4fac59c1a5fa68
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964886"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213899"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
 
@@ -36,19 +36,19 @@ Vous pouvez adopter deux approches lors de l’implémentation d’un enregistre
 
 L’objectif d’un enregistreur d’événements consiste à rassembler des informations sur la progression de la génération telles que signalées par le moteur de génération, puis à signaler ces informations de manière utile. Tous les enregistreurs d’événements doivent substituer la méthode <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, où l’enregistreur d’événements enregistre les événements. Dans cet exemple, l’enregistreur d’événements enregistre les événements <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> et <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet2":::
 
 ## <a name="respond-to-events"></a>Répondre aux événements
 
 Maintenant que l’enregistreur d’événements est inscrit pour des événements spécifiques, il doit gérer ces événements quand ils se produisent. Pour les événements <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> et <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>, l’enregistreur d’événements écrit simplement une courte expression et le nom du fichier projet impliqué dans l’événement. Tous les messages de l’enregistreur d’événements sont écrits dans la fenêtre de console.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet3":::
 
 ## <a name="respond-to-logger-verbosity-values"></a>Répondre aux valeurs de détails de l’enregistreur d’événements
 
 Dans certains cas, vous souhaiterez peut-être enregistrer uniquement les informations d’un événement si le commutateur MSBuild.exe **-verbosity** contient une certaine valeur. Dans cet exemple, le <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> Gestionnaire d’événements enregistre un message uniquement si la <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> propriété, définie par le commutateur **-verbosity** , est égale à <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
 
-[!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet4":::
 
 ## <a name="specify-a-logger"></a>Spécifier un enregistreur d’événements
 
@@ -74,7 +74,7 @@ L’exemple suivant contient le code complet pour l’enregistreur d’événeme
 
 ### <a name="code"></a>Code
 
-[!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet1":::
 
 ## <a name="example-2"></a>Exemple 2
 
@@ -84,7 +84,7 @@ L’exemple suivant montre comment implémenter un enregistreur d’événements
 
 ### <a name="code"></a>Code
 
-[!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Voir aussi
 

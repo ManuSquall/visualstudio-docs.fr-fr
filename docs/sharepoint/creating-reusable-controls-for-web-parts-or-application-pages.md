@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949127"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213912"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application
   Dans Visual Studio, vous pouvez créer des contrôles personnalisés et réutilisables qui peuvent être utilisés par les pages d’application et les WebParts qui s’exécutent dans SharePoint. Ces contrôles sont appelés contrôles utilisateur. Un contrôle utilisateur est un type de contrôle composite qui fonctionne très bien comme une page Web ASP.NET. vous pouvez ajouter des contrôles serveur Web existants et des balises à un contrôle utilisateur, et définir des propriétés et des méthodes pour le contrôle. Vous pouvez ensuite les incorporer dans des pages Web ASP.NET, où elles jouent le rôle d’unité.
@@ -47,8 +47,8 @@ ms.locfileid: "99949127"
 
  Pour inclure un contrôle utilisateur dans un composant WebPart, ajoutez le contrôle utilisateur à la collection de composants WebPart <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> dans le fichier de code du composant WebPart. L’exemple suivant ajoute un contrôle utilisateur à la <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> collection d’un composant WebPart.
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>Déboguer un contrôle utilisateur
  Pour déboguer un contrôle utilisateur, assurez-vous que le contrôle utilisateur est inclus dans une page d’application ou un composant WebPart dans votre projet SharePoint. Vous pouvez ensuite déboguer le code dans le contrôle utilisateur de la même façon que vous déboguez le code dans n’importe quel projet Visual Studio.
@@ -61,6 +61,6 @@ ms.locfileid: "99949127"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Comment : créer un contrôle utilisateur pour une page d’application SharePoint ou un composant WebPart](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Montre comment créer des contrôles personnalisés et réutilisables qui peuvent être utilisés par les pages d’application et les WebParts qui s’exécutent dans SharePoint.|

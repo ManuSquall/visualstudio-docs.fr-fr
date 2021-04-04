@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 03/16/2021
+ms.date: 03/30/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 90d28d2658bba70ffc45a0b52beaee06f2ba97da
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: b2a03cee81d817f89d6ab79da10578dc707b288f
+ms.sourcegitcommit: d1e51dd407ec2b51e5954a000501de85e9fcd3d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622619"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106069251"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,10 +29,11 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.3 | Libérer | Le 30 mars 2021 | 16.9.31129.286 |
 | 16.9.2 | Libérer | 16 mars, 2021 | 16.9.31112.23 |
-| 16.4.20 | Libérer | 9 mars, 2021 | 16.4.31026.101 |
-| 16.7.13 | Libérer | 9 mars, 2021 | 16.7.31026.100 |
-| 16.9.1 | Libérer | 9 mars, 2021 | 16.9.31105.61 |
+| 16.4.20 | Libérer | 9 mars 2021 | 16.4.31026.101 |
+| 16.7.13 | Libérer | 9 mars 2021 | 16.7.31026.100 |
+| 16.9.1 | Libérer | 9 mars 2021 | 16.9.31105.61 |
 | 16.10.0 | Preview 1 | 2 mars, 2021 | 16.10.31025.218 |
 | 16.9.0 | Libérer | 2 mars, 2021 | 16.9.31025.194 |
 | 16.9.0 | Préversion 5 | 23 février 2021 | 16.9.31019.194 |
@@ -175,7 +176,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.1.2 | Libérer | 5 juin 2019 | 16.1.29001.49 |
 | 16.1.1 | Libérer | 24 mai 2019 | 16.1.28922.388 |
 | 16.1.0 | Libérer | 21 mai 2019 | 16.1.28917.181 |
-| 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
+| 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
 | 16.0.4 | Libérer | 14 mai 2019 | 16.0.28803.452 |
 | 16.1.0 | Preview 3 | 6 mai 2019 | 16.1.28902.138 |
 | 16.0.3 | Libérer | 30 avril 2019 | 16.0.28803.352 |
@@ -212,13 +213,13 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 ::: moniker range="vs-2017"
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.34 | Libérer | 9 mars, 2021 | 15.9.28307.1440 |
+| 15.9.34 | Libérer | 9 mars 2021 | 15.9.28307.1440 |
 | 15.9.33 | Libérer | 10 février 2021 | 15.9.28307.1401 |
 | 15.9.32 | Libérer | Le 9 février 2021 | 15.9.28307.1382 |
 | 15.9.31 | Libérer | 12 janvier 2021 | 15.9.28307.1342 |
@@ -363,7 +364,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.3.1  | Libérer | 18 août 2017 | 15.0.26730.08 |
 | 15.4 préversion 1 | Préversion | 24 août 2017 | 15.0.26823.1 |
 | 15.3.0 | Libérer | 14 août 2017 | 15.0.26730.3 |
-| 15.3 préversion 7.1 | Préversion | 11 août 2017 | 15.0.26730.3 |
+| 15.3 préversion 7.1 | Préversion | 11 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7 | Préversion | 1er août 2017 | 15.0.26730.0 |
 | 15.3 préversion 6 | Préversion | 26 juillet 2017 | 15.0.26724.1 |
 | 15.3 préversion 5 | Préversion | 24 juillet 2017 | 15.0.26720.02 |

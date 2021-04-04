@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837812"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217487"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accéder aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.
@@ -55,8 +55,8 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 
  Une fois que votre application dispose de ces autorisations, elle peut accéder au répertoire de données en appelant des méthodes sur les classes dans le <xref:System.IO>. Vous pouvez obtenir le chemin d'accès au répertoire de données dans une application Windows Forms [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide de la propriété <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> définie sur la propriété <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> de <xref:System.Deployment.Application.ApplicationDeployment>. Il s'agit de la façon la plus pratique et recommandée pour accéder à vos données. L’exemple de code suivant montre comment procéder pour un fichier texte nommé *CSV.txt* que vous avez inclus dans votre déploiement en tant que fichier de données.
 
- [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
- [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
+ :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs" id="Snippet1":::
+ :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb" id="Snippet1":::
 
  Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 

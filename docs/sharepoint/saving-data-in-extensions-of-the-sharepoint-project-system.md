@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87e05ba763095a818cc5db6f92828e6259d30e73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881566"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217435"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Enregistrer des données dans les extensions du système de projet SharePoint
   Lorsque vous étendez le système de projet SharePoint, vous pouvez enregistrer les données de chaîne qui persistent après la fermeture d’un projet SharePoint. Les données sont généralement associées à un élément de projet particulier ou au projet lui-même.
@@ -32,8 +32,8 @@ ms.locfileid: "99881566"
 
  L’exemple de code suivant montre comment utiliser la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propriété pour enregistrer la valeur d’une propriété de type chaîne qui est définie dans un type d’élément de projet SharePoint personnalisé. Pour voir cet exemple dans le contexte d’un exemple plus complet, consultez [Comment : ajouter une propriété à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet14":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet14":::
 
 ## <a name="save-data-that-is-associated-with-a-project"></a>Enregistrer les données associées à un projet
  Quand vous avez des données au niveau du projet, telles que la valeur d’une propriété que vous ajoutez aux projets SharePoint, vous pouvez enregistrer les données dans le fichier projet (fichier *. csproj* ou *. vbproj* ) ou dans le fichier d’options utilisateur du projet (fichier *. csproj. User* ou *. vbproj. User* ). Le fichier dans lequel vous choisissez d’enregistrer les données dépend de la façon dont vous souhaitez utiliser les données :
@@ -45,16 +45,16 @@ ms.locfileid: "99881566"
 ### <a name="save-data-to-the-project-file"></a>Enregistrer des données dans le fichier projet
  Pour enregistrer des données dans le fichier projet, convertissez un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objet en <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> objet, puis utilisez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode. L’exemple de code suivant montre comment utiliser cette méthode pour enregistrer la valeur d’une propriété de projet dans le fichier projet. Pour voir cet exemple dans le contexte d’un exemple plus complet, consultez [Comment : ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
 
- [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
- [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet3":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet3":::
 
  Pour plus d’informations sur <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> la conversion d’objets en d’autres types dans le modèle objet Automation Visual Studio ou le modèle objet d’intégration, consultez [conversion entre des types système de projet SharePoint et d’autres types de projets Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 ### <a name="save-data-to-the-project-user-option-file"></a>Enregistrer des données dans le fichier d’options utilisateur du projet
  Pour enregistrer des données dans le fichier d’options utilisateur du projet, utilisez la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriété d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objet. L’exemple de code suivant montre comment utiliser cette propriété pour enregistrer la valeur d’une propriété de projet dans le fichier d’options utilisateur du projet. Pour voir cet exemple dans le contexte d’un exemple plus complet, consultez [Comment : ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
 
- [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
- [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet2":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
