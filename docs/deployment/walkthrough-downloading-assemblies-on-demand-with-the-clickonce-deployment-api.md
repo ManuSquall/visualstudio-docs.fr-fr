@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917335"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216902"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce
 Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application sont téléchargés lors de la première exécution de l’application. Toutefois, vous pouvez avoir des parties de votre application qui sont utilisées par un petit ensemble d’utilisateurs. Dans ce cas, vous souhaiterez sans doute télécharger un assembly uniquement quand vous créez l’un de ses types. La procédure suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et comment les télécharger à l’aide de classes dans l’espace de noms <xref:System.Deployment.Application> quand le Common Language Runtime en a besoin.
@@ -56,10 +56,10 @@ Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deploy
 
 5. À l’aide du bloc-notes ou d’un autre éditeur de texte, définissez une classe nommée `DynamicClass` avec une propriété unique nommée `Message` .
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. Enregistrez le texte sous la forme d’un fichier nommé *ClickOnceLibrary.cs* ou *ClickOnceLibrary. vb*, selon le langage que vous utilisez, dans le répertoire *ClickOnceOnDemand* .
+6. Enregistrez le texte sous la forme d’un fichier nommé *ClickOnceLibrary. cs* ou *ClickOnceLibrary. vb*, selon le langage que vous utilisez, dans le répertoire *ClickOnceOnDemand* .
 
 7. Compilez le fichier dans un assembly.
 
@@ -79,14 +79,14 @@ Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deploy
 
 9. Créez un nouveau fichier à l’aide de votre éditeur de texte et entrez le code suivant. Ce code crée une application Windows Forms qui télécharge l’assembly ClickOnceLibrary lorsqu’il est requis.
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. Dans le code, recherchez l’appel à <xref:System.Reflection.Assembly.LoadFile%2A> .
 
 11. Définissez `PublicKeyToken` sur la valeur que vous avez récupérée précédemment.
 
-12. Enregistrez le fichier en tant que *Form1.cs* ou *Form1. vb*.
+12. Enregistrez le fichier en tant que *Form1. cs* ou *Form1. vb*.
 
 13. Compilez-le dans un fichier exécutable à l’aide de la commande suivante.
 

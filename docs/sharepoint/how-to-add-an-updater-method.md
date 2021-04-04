@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6337ac237c2a030593b90b29af5e8474052de99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967499"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216733"
 ---
 # <a name="how-to-add-an-updater-method"></a>Comment : ajouter une méthode de mise à jour
   Vous pouvez permettre aux utilisateurs de mettre à jour des données d’entreprise dans une liste externe SharePoint en créant une méthode de mise *à jour.* Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -63,8 +63,8 @@ ms.locfileid: "99967499"
    > [!NOTE]
    > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
-    [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
-    [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet5":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet5":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5b44566e4a8df323af6132128a8881b54c6f493f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080396"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217292"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un kit de développement logiciel à l’aide de C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement logiciel (SDK) de bibliothèque mathématique simple à l’aide de Visual C#, puis à empaqueter le kit de développement logiciel en tant qu’extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :
@@ -43,8 +43,8 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 5. Renommez **Class1. cs** en **Arithmetic. cs** et mettez-le à jour pour qu’il corresponde au code suivant :
 
-    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrt/cs/winrtmath/arithmetic.cs" id="Snippet3":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrt/vb/winrtmath/arithmetic.vb" id="Snippet3":::
 
 6. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud **« SimpleMath »** de la Solution, puis choisissez **Configuration Manager**.
 
@@ -73,7 +73,27 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 6. Remplacez le code XML existant par le code XML suivant :
 
-     [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
+   ```xml
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Metadata>
+       <Identity Id="SimpleMath" Version="1.0" Language="en-US" Publisher="[YourName]" />
+       <DisplayName>SimpleMath Library</DisplayName>
+       <Description xml:space="preserve">Basic arithmetic operations in a WinRT-compatible library. Implemented in C#.</Description>
+     </Metadata>
+     <Installation Scope="Global" AllUsers="true">
+       <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.0" SdkName="SimpleMath" SdkVersion="1.0" />
+     </Installation>
+     <Prerequisites>
+       <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[14.0,16.0]" />
+     </Prerequisites>
+     <Dependencies>
+       <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+     </Dependencies>
+     <Assets>
+       <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+     </Assets>
+   </PackageManifest>
+   ```
 
 7. Dans **Explorateur de solutions**, choisissez le projet **SimpleMathVSIX** .
 
@@ -236,8 +256,164 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 11. Mettez à jour **MainPage. Xaml. cs** pour qu’elle corresponde au code suivant :
 
-     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]
+```csharp
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+
+namespace ArithmeticUI
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
+    {
+        public static string operation = null;
+
+        public MainPage()
+        {
+            this.InitializeComponent();
+        }
+
+        /// <summary>
+        /// Invoked when this page is about to be displayed in a Frame.
+        /// </summary>
+        /// <param name="e">Event data that describes how this page was reached.  The Parameter
+        /// property is typically used to configure the page.</param>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+        }
+
+        /// <summary>
+        /// Sets the operator chosen by the user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnOperatorClick(object sender, RoutedEventArgs e)
+        {
+            operation = (sender as Button).Content.ToString();
+        }
+
+        /// <summary>
+        /// Calls the SimpleMath SDK to do simple arithmetic
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnResultsClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                float firstNumber = float.Parse(this._firstNumber.Text);
+                float secondNumber = float.Parse(this._secondNumber.Text);
+
+                SimpleMath.Arithmetic math = new SimpleMath.Arithmetic();
+
+                switch (operation)
+                {
+                    case "+":
+                        this._result.Text = (math.add(firstNumber, secondNumber)).ToString();
+                        break;
+                    case "-":
+                        this._result.Text = (math.subtract(firstNumber, secondNumber)).ToString();
+                        break;
+                    case "*":
+                        this._result.Text = (math.multiply(firstNumber, secondNumber)).ToString();
+                        break;
+                    case "/":
+                        this._result.Text = (math.divide(firstNumber, secondNumber)).ToString();
+                        break;
+                    default:
+                        this._result.Text = "Choose operator";
+                        break;
+                }
+            }
+            catch
+            {
+                this._result.Text = "Enter valid #";
+            }
+        }
+    }
+}
+```
+
+```vb
+' The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+
+''' <summary>
+''' An empty page that can be used on its own or navigated to within a Frame.
+''' </summary>
+Public NotInheritable Class MainPage
+    Inherits Page
+
+    ''' <summary>
+    ''' Invoked when this page is about to be displayed in a Frame.
+    ''' </summary>
+    ''' <param name="e">Event data that describes how this page was reached.  The Parameter
+    ''' property is typically used to configure the page.</param>
+    Protected Overrides Sub OnNavigatedTo(e As Navigation.NavigationEventArgs)
+    
+    End Sub
+
+    Public Shared operation As String = Nothing
+
+    ''' <summary>
+    ''' Sets the operator chosen by the user
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub OnOperatorClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        operation = If(TypeOf sender Is Button, CType(sender, Button), Nothing).Content.ToString()
+    End Sub
+
+
+    ''' <summary>
+    ''' Calls the SimpleMath SDK to do simple arithmetic
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub OnResultsClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+        Try
+
+            Dim firstNumber As Single = Single.Parse(Me._firstNumber.Text)
+            Dim secondNumber As Single = Single.Parse(Me._secondNumber.Text)
+
+            Dim math As New SimpleMath.Arithmetic()
+
+            Select Case (operation)
+
+                Case "+"
+                    Me._result.Text = (math.Add(firstNumber, secondNumber)).ToString()
+
+                Case "-"
+                    Me._result.Text = (math.Subtract(firstNumber, secondNumber)).ToString()
+                Case "*"
+                    Me._result.Text = (math.Multiply(firstNumber, secondNumber)).ToString()
+                Case "/"
+                    Me._result.Text = (math.Divide(firstNumber, secondNumber)).ToString()
+                Case Else
+                    Me._result.Text = "Choose operator"
+
+            End Select
+
+        Catch
+            Me._result.Text = "Enter valid #"
+        End Try
+    End Sub
+End Class
+```
 
 12. Appuyez sur la touche **F5** pour exécuter l’application.
 

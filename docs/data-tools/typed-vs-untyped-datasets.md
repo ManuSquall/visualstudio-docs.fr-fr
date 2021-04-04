@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: daf4f722eb51a08e7a6ddb287e5b54956ecdfe73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866331"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216018"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 Un DataSet typé est un DataSet qui est dérivé d’abord de la classe de base, <xref:System.Data.DataSet> puis qui utilise les informations de la **Concepteur de DataSet**, qui est stockée dans un fichier. xsd, pour générer une nouvelle classe DataSet fortement typée. Les informations du schéma (tables, colonnes, etc.) sont générées et compilées dans cette nouvelle classe DataSet sous la forme d’un ensemble d’objets et de propriétés de première classe. Étant donné qu’un DataSet typé hérite de la classe de base <xref:System.Data.DataSet> , la classe typée utilise toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisée avec les méthodes qui prennent une instance d’une <xref:System.Data.DataSet> classe comme paramètre.
@@ -28,13 +28,13 @@ En revanche, un DataSet non typé n’a pas de schéma intégré correspondant. 
 ## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Contraste de l’accès aux données dans les datasets typés et non typés
 La classe d’un DataSet typé possède un modèle d’objet dans lequel ses propriétés prennent les noms réels des tables et des colonnes. Par exemple, si vous utilisez un DataSet typé, vous pouvez référencer une colonne à l’aide d’un code tel que le suivant :
 
-[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
-[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet4":::
 
 En revanche, si vous utilisez un DataSet non typé, le code équivalent est le suivant :
 
-[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
-[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet5":::
 
 L’accès typé n’est pas seulement plus facile à lire, mais également entièrement pris en charge par IntelliSense dans l' **éditeur de code** Visual Studio. En plus de faciliter l’utilisation de, la syntaxe du DataSet typé fournit la vérification de type au moment de la compilation, ce qui réduit considérablement les risques d’erreurs lors de l’affectation de valeurs aux membres d’un jeu de données. Si vous modifiez le nom d’une colonne dans votre <xref:System.Data.DataSet> classe et que vous compilez ensuite votre application, vous recevez une erreur de Build. En double-cliquant sur l’erreur de build dans le **liste des tâches**, vous pouvez accéder directement à la ligne ou aux lignes de code qui font référence à l’ancien nom de colonne. L’accès aux tables et aux colonnes d’un DataSet typé est également légèrement plus rapide au moment de l’exécution, car l’accès est déterminé au moment de la compilation, et non pas au moment de l’exécution.
 

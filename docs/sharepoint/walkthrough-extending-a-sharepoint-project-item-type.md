@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a91cbd863ed613804418cd5d1666412a01f8f542
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952679"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217695"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser l’élément de projet **modèle de connectivité de données métiers** pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données du modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.
@@ -43,7 +43,7 @@ ms.locfileid: "99952679"
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et Visual Studio.
 
-- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Le [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   La connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
@@ -136,8 +136,8 @@ ms.locfileid: "99952679"
     > [!NOTE]
     > Après avoir ajouté ce code, le projet comportera des erreurs de compilation. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
 
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb" id="Snippet1":::
 
 ## <a name="create-the-external-data-lists"></a>Créer les listes de données externes
  Ajoutez une définition partielle de la `GenerateExternalDataListsExtension` classe qui crée une liste de données externes pour chaque entité dans le modèle BDC. Pour créer la liste de données externes, ce code lit d’abord les données d’entité dans le modèle BDC en analysant les données XML dans le fichier de modèle BDC. Ensuite, il crée une instance de liste basée sur le modèle BDC et ajoute cette instance de liste au projet.
@@ -146,8 +146,8 @@ ms.locfileid: "99952679"
 
 1. Collez le code suivant dans le fichier de code GenerateExternalDataLists.
 
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  À ce stade de la procédure pas à pas, tout le code de l’extension d’élément de projet se trouve maintenant dans le projet. Générez la solution pour vous assurer que le projet se compile sans erreur.

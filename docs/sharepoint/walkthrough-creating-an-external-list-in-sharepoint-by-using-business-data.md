@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847711"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217682"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : création d’une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -114,9 +114,9 @@ Le projet de **modèle de connectivité de données métiers** ajoute une entit�
 
 3. Dans le concepteur, ouvrez le menu contextuel de **Entity1**, puis choisissez **supprimer**.
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour *Entity1. vb* (dans Visual Basic) ou *Entity1.cs* (en C#), puis choisissez **supprimer**.
+4. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour *Entity1. vb* (dans Visual Basic) ou *Entity1. cs* (en C#), puis choisissez **supprimer**.
 
-5. Ouvrez le menu contextuel pour *Entity1Service. vb* (dans Visual Basic) ou *Entity1Service.cs* (en C#), puis choisissez **supprimer**.
+5. Ouvrez le menu contextuel pour *Entity1Service. vb* (dans Visual Basic) ou *Entity1Service. cs* (en C#), puis choisissez **supprimer**.
 
 ## <a name="add-an-entity-to-the-model"></a>Ajouter une entité au modèle
 
@@ -126,7 +126,7 @@ Ajoutez une entité au modèle. Vous pouvez ajouter des entités à partir de la
 
 2. Sous l’onglet **BusinessDataConnectivity** de la **boîte à outils**, ajoutez une **entité** sur le concepteur BDC.
 
-     La nouvelle entité s’affiche sur le concepteur. Visual Studio ajoute un fichier nommé *EntityService. vb* (dans Visual Basic) ou *EntityService.cs* (en C#) au projet.
+     La nouvelle entité s’affiche sur le concepteur. Visual Studio ajoute un fichier nommé *EntityService. vb* (dans Visual Basic) ou *EntityService. cs* (en C#) au projet.
 
 3. Dans la barre de menus, choisissez **Afficher** la  >    >  **fenêtre** propriétés.
 
@@ -208,8 +208,8 @@ Ajoutez une méthode de recherche spécifique à l’entité contact à l’aide
     > [!NOTE]
     > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>Ajouter une méthode de recherche
 
@@ -236,8 +236,8 @@ Pour permettre au service BDC d’afficher les contacts dans une liste, vous dev
      > [!NOTE]
      > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>Tester le projet
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c49f091477d204b7ed81a6f89fb24a56b2d60669
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c58de345400c7b724a755839cb8baa1afc3cfce2
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945108"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217188"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Comment : obtenir des données pour un nœud SharePoint intégré dans Explorateur de serveurs
   Pour chaque nœud SharePoint intégré dans **Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent représenté par le nœud. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -29,8 +29,8 @@ ms.locfileid: "99945108"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment obtenir des données pour la liste SharePoint sous-jacente représentée par un nœud de liste dans **Explorateur de serveurs**. Par défaut, les nœuds liste disposent d’un élément de menu contextuel **afficher dans le navigateur** sur lequel vous pouvez cliquer pour ouvrir les listes dans un navigateur Web. Cet exemple étend la liste des nœuds en ajoutant un affichage dans l’élément de menu contextuel **de Visual Studio** qui ouvre les listes directement dans Visual Studio. Le code accède aux données de liste pour le nœud afin d’obtenir l’URL de la liste à ouvrir dans Visual Studio.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet10":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet10":::
 
  Cet exemple utilise le service de projet SharePoint pour obtenir l' <xref:EnvDTE.DTE> objet utilisé pour ouvrir des listes dans Visual Studio. Pour plus d’informations sur le service de projet SharePoint, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 

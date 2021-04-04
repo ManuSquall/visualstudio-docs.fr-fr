@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a1f115dfff92b1c5e5979e62af257cde6a92360
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883049"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216590"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -85,15 +85,15 @@ Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation
 
 7. Cliquez sur **OK** pour fermer la boîte de dialogue et créer le fichier.
 
-8. Dans **Explorateur de solutions**, examinez le nœud du projet **GFUDemo_VB** ou **GFUDemo_CS** pour vérifier que le nouveau fichier *automobile. vb* ou *automobile.cs* est présent. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
+8. Dans **Explorateur de solutions**, recherchez le nœud du projet **GFUDemo_VB** ou **GFUDemo_CS** pour vérifier que le nouveau fichier *automobile. vb* ou *automobile. cs* est présent. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
 
 ### <a name="generate-a-property-stub"></a>Générer un stub de propriété
 Supposez que la spécification de produit indique que la classe `Automobile` a deux propriétés publiques nommées `Model` et `TopSpeed`. Ces propriétés doivent être initialisées avec les valeurs par défaut `"Not specified"` et `-1` par le constructeur par défaut. Le test unitaire suivant vérifie que le constructeur par défaut affecte les valeurs par défaut correctes aux propriétés.
 
 1. Ajoutez la ligne de code suivante à la méthode de test `DefaultAutomobileIsInitializedCorrectly`.
 
-     [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet1":::
 
 2. Du fait que le code fait référence à deux propriétés non définies sur `Automobile`, une ligne ondulée s’affiche sous `Model` et `TopSpeed`. Pointez sur `Model` et choisissez l’ampoule d’erreur **Actions rapides**, puis choisissez **Générer la propriété « Automobile.Model »**.
 
@@ -106,8 +106,8 @@ Maintenant, nous allons créer une méthode de test qui génère un stub de cons
 
 1. Ajoutez la méthode de test supplémentaire suivante à votre classe `AutomobileTest` .
 
-     [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/intermediate.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/intermediate.vb" id="Snippet2":::
 
 2. Cliquez sur l’ampoule d’erreur **Actions rapides** sous la ligne ondulée rouge, puis cliquez sur **Générer un constructeur dans « Automobile »**.
 
@@ -120,8 +120,8 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
 1. Ajoutez les lignes suivantes à la méthode `AutomobileWithModelNameCanStart` .
 
-     [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet3":::
 
 2. Cliquez sur l’ampoule d’erreur **Actions rapides** pour l’appel de la méthode `myAuto.Start`, puis cliquez sur **Générer une méthode « Automobile.Start »**.
 
@@ -145,13 +145,13 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
 1. Ajoutez le code suivant au constructeur par défaut pour que les propriétés `Model`, `TopSpeed` et `IsRunning` soient toutes initialisées à leurs valeurs par défaut `"Not specified"`, `-1` et `False` (ou `false` pour C#).
 
-     [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet5":::
 
 2. Quand la méthode `Start` est appelée, elle doit affecter la valeur true à l’indicateur `IsRunning` uniquement si les propriétés `Model` ou `TopSpeed` ont des valeurs autres que leurs valeurs par défaut. Supprimez `NotImplementedException` du corps de la méthode et ajoutez le code suivant.
 
-     [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet6":::
 
 ### <a name="run-the-tests-again"></a>Réexécuter des tests
 

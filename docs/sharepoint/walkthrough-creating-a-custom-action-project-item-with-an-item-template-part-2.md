@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b6fad27342c086e551320977cdf712f816b383c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839083"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217942"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : création d’un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
   Une fois que vous avez défini un type personnalisé d’élément de projet SharePoint et que vous l’avez associé à un modèle d’élément dans Visual Studio, vous pouvez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour ajouter une nouvelle instance de l’élément de projet à un projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.
@@ -115,8 +115,8 @@ ms.locfileid: "99839083"
 
 2. Dans le projet **ItemTemplateWizard** , remplacez le code dans le fichier de code Strings par le code suivant.
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb" id="Snippet6":::
 
 ## <a name="create-the-wizard-ui"></a>Créer l’interface utilisateur de l’Assistant
  Ajoutez du code XAML pour définir l’interface utilisateur de l’Assistant et ajoutez du code pour lier certains des contrôles de l’Assistant aux chaînes d’ID. L’Assistant que vous créez ressemble à l’Assistant intégré pour les projets SharePoint dans Visual Studio.
@@ -130,7 +130,7 @@ ms.locfileid: "99839083"
     > [!NOTE]
     > Votre projet comportera des erreurs de compilation après l’ajout de ce code. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
 
-     [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml" id="Snippet9":::
 
     > [!NOTE]
     > La fenêtre créée dans ce XAML est dérivée de la <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe de base. Quand vous ajoutez une boîte de dialogue WPF personnalisée à Visual Studio, nous vous recommandons de dériver votre boîte de dialogue à partir de cette classe de manière à ce qu’elle ait un style cohérent avec d’autres boîtes de dialogue dans Visual Studio et pour éviter des problèmes qui pourraient se produire avec des boîtes de dialogue modales. Pour plus d’informations, consultez [création et gestion de boîtes de dialogue modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).
@@ -143,8 +143,8 @@ ms.locfileid: "99839083"
 
 4. Dans le fichier code-behind du fichier WizardWindow. xaml, remplacez le code actuel par le code suivant.
 
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs" id="Snippet7":::
 
 ## <a name="implement-the-wizard"></a>Implémenter l’Assistant
  Définissez les fonctionnalités de l’Assistant en implémentant l' <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.
@@ -153,8 +153,8 @@ ms.locfileid: "99839083"
 
 1. Dans le projet **ItemTemplateWizard** , ouvrez le fichier de code **CustomActionWizard** , puis remplacez le code actuel dans ce fichier par le code suivant :
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs" id="Snippet8":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  À ce stade de la procédure pas à pas, tout le code de l’Assistant se trouve maintenant dans le projet. Générez le projet pour vous assurer qu’il se compile sans erreur.

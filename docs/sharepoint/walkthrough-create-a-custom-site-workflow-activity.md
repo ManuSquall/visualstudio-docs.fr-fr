@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29a3cd6fe37ec824a3db3a2c83aad7434d0018cb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937717"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218046"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procédure pas à pas : créer une activité de flux de travail de site personnalisé
   Cette procédure pas à pas montre comment créer une activité personnalisée pour un flux de travail au niveau du site à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Les flux de travail au niveau du site s’appliquent à l’ensemble du site, pas seulement à une liste sur le site.) L’activité personnalisée crée une liste d’annonces de sauvegarde et y copie le contenu de la liste d’annonces.
@@ -91,8 +91,8 @@ ms.locfileid: "99937717"
 
 3. Remplacez tout le code de Class1 par ce qui suit :
 
-     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
-     [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb" id="Snippet1":::
 
 4. Enregistrez le projet, puis, dans la barre de menus, choisissez **générer**  >  **générer la solution**.
 

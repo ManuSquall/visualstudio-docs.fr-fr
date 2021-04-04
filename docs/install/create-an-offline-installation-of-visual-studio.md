@@ -1,7 +1,7 @@
 ---
 title: Créer une installation hors connexion
 description: Découvrez comment installer Visual Studio hors connexion quand vous avez une connexion Internet non fiable ou une bande passante faible.
-ms.date: 10/22/2019
+ms.date: 3/29/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2e4a7e0f9335971bb026ccc1c6b977680d9e3121
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c4815540a5911ca0193a89a237a3c4d690c4dba
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949556"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981301"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
 ::: moniker range="vs-2017"
 
-Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads) &mdash; , qui est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents &mdash; que vous ne pourrez peut-être pas.
+Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads), qui &mdash; est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents que &mdash; vous ne pourrez peut-être pas.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/downloads) &mdash; , qui est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents &mdash; que vous ne pourrez peut-être pas.
+Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/downloads), qui &mdash; est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents que &mdash; vous ne pourrez peut-être pas.
 
 ::: moniker-end
 
@@ -63,13 +63,20 @@ Après avoir téléchargé le programme d’installation web, sélectionnez la n
 Nous avons conçu la fonctionnalité « Tout télécharger, puis installer » pour vous permettre de télécharger Visual Studio en une seule installation pour le même ordinateur que celui utilisé pour le téléchargement. De cette façon, vous pouvez en toute sécurité vous déconnecter du web avant d’installer Visual Studio.
 
 > [!IMPORTANT]
-> N’utilisez pas la fonctionnalité « Tout télécharger, puis installer » pour créer un cache hors connexion que vous souhaitez transférer vers un autre ordinateur. Cela n’est pas conçu pour fonctionner de cette façon. <br><br>Si vous souhaitez créer un cache hors connexion pour installer Visual Studio sur un autre ordinateur, consultez la section [Utiliser la ligne de commande pour créer un cache local](#use-the-command-line-to-create-a-local-cache) de cette page pour plus d’informations sur la création d’un cache local, ou la page [Créer une installation réseau de Visual Studio](../install/create-a-network-installation-of-visual-studio.md) pour plus d’informations sur la création d’un cache réseau.
+> N’utilisez pas la fonctionnalité « Tout télécharger, puis installer » pour créer un cache hors connexion que vous souhaitez transférer vers un autre ordinateur. Cela n’est pas conçu pour fonctionner de cette façon. <br><br>Si vous souhaitez créer un cache hors connexion sur l’ordinateur local que vous pouvez ensuite utiliser pour installer Visual Studio, consultez la section [utiliser la ligne de commande pour créer un cache local](#use-the-command-line-to-create-a-local-cache) ci-dessous.  La page [créer une installation réseau de Visual Studio](../install/create-a-network-installation-of-visual-studio.md) fournit également des informations sur la création d’un cache sur le réseau.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Utiliser la ligne de commande pour créer un cache local
+::: moniker range="vs-2017"
 
-Après avoir téléchargé un petit programme d’amorçage, utilisez la ligne de commande pour créer un cache local. Utilisez ensuite le cache local pour installer Visual Studio. (Ce processus remplace les fichiers ISO disponibles pour les versions précédentes.)
+Après avoir téléchargé un petit programme d’amorçage, utilisez la ligne de commande pour créer un cache local. Utilisez ensuite le cache local pour installer Visual Studio. (Ce processus remplace les fichiers ISO qui étaient disponibles pour les versions précédentes). 
 
-Voici comment faire.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Après avoir téléchargé un petit fichier de programme d’amorçage, utilisez la ligne de commande pour créer un cache local. Utilisez ensuite le cache local pour installer Visual Studio.
+
+::: moniker-end
 
 ### <a name="step-1---download-the-visual-studio-bootstrapper"></a>Étape 1 : Télécharger le programme d’amorçage de Visual Studio
 
@@ -77,22 +84,19 @@ Vous devez avoir une connexion Internet pour terminer cette étape.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
-
-L’exécutable de votre programme d’installation &mdash; ou pour être plus précis, le fichier du programme d’amorçage &mdash; doit correspondre ou être similaire à l’un des éléments suivants.
+Pour obtenir le dernier programme d’amorçage pour Visual Studio 2017 version 15,9, accédez à la page [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) et téléchargez l’un des fichiers de programme d’amorçage suivants : 
 
 | Édition | Nom de fichier |
 |-------------|-----------------------|
-|Communauté Visual Studio | vs_community.exe |
-|Visual Studio Professional | vs_professional.exe |
-|Visual Studio Enterprise | vs_enterprise.exe |
-|Visual Studio Build Tools   | vs_buildtools.exe |
+|Visual Studio Professional 2017 version 15,9 | vs_professional.exe |
+|Visual Studio Enterprise 2017 version 15,9 | vs_enterprise.exe |
+|Visual Studio Build Tools 2017 version 15,9  | vs_buildtools.exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Commencez par télécharger le programme d’amorçage de Visual Studio pour l’édition de Visual Studio que vous avez choisie. Votre fichier d’installation &mdash;ou programme d’amorçage&mdash; correspond ou est similaire à l’une des valeurs suivantes.
+Commencez par Télécharger le programme d’amorçage de Visual Studio 2019 à partir de la [page téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) ou de la page [versions de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) pour la version et l’édition de Visual Studio que vous avez choisies. Votre fichier d’installation &mdash; ou programme d’amorçage &mdash; correspond à l’un des éléments suivants :
 
 | Édition                    | Fichier                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
@@ -103,17 +107,25 @@ Commencez par télécharger le programme d’amorçage de Visual Studio pour l�
 
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
 >[!TIP]
->Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier la version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+>[!TIP]
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page des [versions de Visual studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history) .
+
+::: moniker-end
 
 ### <a name="step-2---create-a-local-install-cache"></a>Étape 2 : Créer un cache d’installation local
 
 Vous devez avoir une connexion Internet pour terminer cette étape.
 
-> [!IMPORTANT]
-> Si vous installez Visual Studio Community, vous devez l’activer dans les 30 jours suivant l’installation. Une connexion Internet est requise.
-
-Ouvrez une invite de commandes et utilisez l’une des commandes des exemples suivants. Les exemples listés ici supposent que vous utilisez l’édition Community de Visual Studio. Changez la commande en fonction de votre édition.
+Ouvrez une invite de commandes et utilisez les paramètres du programme d’amorçage tels que définis dans la page [utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md) afin de créer votre cache d’installation local. Des exemples courants d’utilisation du programme d’amorçage d’entreprise sont illustrés ci-dessous et dans la page [exemples de paramètres de ligne de commande](command-line-parameter-examples.md) . Vous pouvez installer une autre langue que l’anglais en modifiant `en-US` les paramètres régionaux dans la [liste des paramètres régionaux de langue](#list-of-language-locales), et vous pouvez utiliser la [liste des composants et des charges de travail](workload-and-component-ids.md) pour personnaliser davantage votre cache.
 
 > [!TIP]
 > Pour éviter toute erreur, vérifiez que votre chemin d’installation complet fait moins de 80 caractères.
@@ -121,70 +133,68 @@ Ouvrez une invite de commandes et utilisez l’une des commandes des exemples su
 - Pour le développement d’applications de bureau .NET et web .NET, exécutez :
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - Pour le développement d’applications de bureau .NET et Office, exécutez :
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - Pour le développement d’applications de bureau C++, exécutez :
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- Pour créer une disposition locale complète avec toutes les fonctionnalités (cela prendra un certain temps &mdash; nous avons _beaucoup_ de fonctionnalités !), exécutez ceci :
+- Pour créer une disposition locale complète, en anglais uniquement, avec toutes les fonctionnalités (cela prend beaucoup de temps, &mdash; nous avons _beaucoup_ de fonctionnalités !), exécutez :
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
 ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/productinfo/vs2017-system-requirements-vs/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/productinfo/vs2017-system-requirements-vs/). 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
    > [!NOTE]
-   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/).
 
 ::: moniker-end
 
-Si vous souhaitez installer une autre langue que l’anglais, remplacez `en-US` par l’un des paramètres régionaux de la [liste des paramètres régionaux de langue](#list-of-language-locales). Utilisez ensuite la [liste des composants et charges de travail disponibles](workload-and-component-ids.md) pour personnaliser davantage votre cache d’installation.
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Étape 3 : Installer Visual Studio à partir du cache local
+Quand vous installez Visual Studio à partir d’un cache d’installation local, le programme d’installation de Visual Studio utilise les versions en cache local des fichiers. Toutefois, si vous sélectionnez des composants au cours de l’installation qui ne se trouvent pas dans le cache, le programme d’installation de Visual Studio tente de les télécharger à partir d’Internet. Pour vous assurer que vous installez uniquement les fichiers que vous avez téléchargés précédemment, utilisez les mêmes [options de ligne de commande](use-command-line-parameters-to-install-visual-studio.md) que celles que vous avez utilisées pour créer le cache de disposition. 
 
-> [!TIP]
-> Quand vous procédez à l’exécution à partir d’un cache d’installation local, le programme d’installation utilise les versions locales de chacun de ces fichiers. Toutefois, si durant l’installation, vous sélectionnez des composants qui ne sont pas dans le cache, le programme d’installation tente de les télécharger à partir d’Internet.
-
-::: moniker range="vs-2019"
-> [!IMPORTANT]
-> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le `--noweb` commutateur avec la version 16.3.5 ou ultérieure.
->
-::: moniker-end
-
-Pour vérifier que vous installez uniquement les fichiers que vous avez téléchargés, utilisez les mêmes options de ligne de commande que celles ayant servi à créer le cache de disposition. Par exemple, si vous avez créé un cache de disposition avec la commande suivante :
+Par exemple, si vous avez créé un cache d’installation local à l’aide de la commande suivante :
 
 ```cmd
-vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 Utilisez ensuite cette commande pour exécuter l’installation :
 
 ```cmd
-c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
-Pour obtenir plus d’exemples d’utilisation des [paramètres de ligne de commande](use-command-line-parameters-to-install-visual-studio.md), consultez la page d’installation des [exemples de paramètres de ligne de commande pour Visual Studio](command-line-parameter-examples.md) . 
+> [!IMPORTANT]
+> Si vous utilisez Visual Studio Community, vous devez l’activer en vous connectant au produit dans les 30 jours suivant l’installation. L’activation requiert une connexion Internet.
 
 > [!NOTE]
-> Si vous obtenez une erreur indiquant qu’une signature n’est pas valide, vous devez installer les certificats mis à jour. Ouvrez le dossier des certificats dans votre cache hors connexion. Double-cliquez sur chacun des fichiers de certificat, puis suivez les étapes de l’Assistant du Gestionnaire de certificats. Si un mot de passe vous est demandé, n’indiquez rien.
+> Si vous recevez une erreur indiquant qu’une signature n’est pas valide, vous devez [installer les certificats mis à jour](install-certificates-for-visual-studio-offline.md). Ouvrez le dossier des certificats dans votre cache hors connexion. Double-cliquez sur chacun des fichiers de certificat, puis suivez les étapes de l’Assistant du Gestionnaire de certificats. Si un mot de passe vous est demandé, n’indiquez rien.
+
+::: moniker range="vs-2019"
+> [!TIP]
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le `--noweb` commutateur avec la version 16.3.5 ou ultérieure.
+
+::: moniker-end
 
 ### <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 

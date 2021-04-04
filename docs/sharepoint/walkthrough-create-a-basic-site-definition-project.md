@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a505ff059b347c6adbef15a8fe8bcfe7b274eaa4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937704"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218020"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : création d’un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base contenant un composant Visual Web part avec des contrôles. Par souci de clarté, le composant Visual Web part que vous créez n’a que quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent davantage de fonctionnalités.
@@ -112,10 +112,10 @@ ms.locfileid: "99937704"
     </table>
     ```
 
-6. Sous *VisualWebPart1. ascx*, ouvrez le fichier *VisualWebPart1.ascx.cs* (pour [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) ou *VisualWebPart1. ascx. vb* (pour [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), puis ajoutez le code suivant :
+6. Sous *VisualWebPart1. ascx*, ouvrez le fichier *VisualWebPart1. ascx. cs* (pour [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) ou *VisualWebPart1. ascx. vb* (pour [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), puis ajoutez le code suivant :
 
-     [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
-     [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs" id="Snippet1":::
 
      Ce code ajoute des fonctionnalités pour le clic de bouton du composant WebPart.
 

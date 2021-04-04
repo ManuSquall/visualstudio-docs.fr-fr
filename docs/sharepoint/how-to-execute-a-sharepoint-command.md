@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e22ade9b2414e1d598065bb9e417c4706f75a07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943820"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217175"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Comment : exécuter une commande SharePoint
   Si vous souhaitez utiliser le modèle d’objet serveur dans une extension d’outils SharePoint, vous devez créer une *commande SharePoint* personnalisée pour appeler l’API. Une fois que vous avez défini la commande et que vous l’avez déployée avec votre extension d’outils SharePoint, votre extension peut exécuter la commande pour appeler le modèle d’objet serveur SharePoint. Pour exécuter la commande, utilisez l’une des méthodes ExecuteCommand d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objet.
@@ -56,8 +56,8 @@ ms.locfileid: "99943820"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment utiliser la <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> surcharge pour appeler la `Contoso.Commands.UpgradeSolution` commande décrite dans [How to : Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet6":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet6":::
 
  La `Execute` méthode illustrée dans cet exemple est une implémentation de la <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> méthode de l' <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface dans une étape de déploiement personnalisée. Pour voir ce code dans le contexte d’un exemple plus complet, consultez [procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 

@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056832"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217240"
 ---
 # <a name="create-options-pages"></a>Créer des pages d’options
 Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastructure de package managée, les classes dérivées de <xref:Microsoft.VisualStudio.Shell.DialogPage> étendent l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE en ajoutant des pages d' **options** dans le menu **Outils** .
@@ -65,15 +65,15 @@ Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastruct
  La classe suivante définit une page d’options minimale « Hello World ». Lorsqu’il est ouvert, l’utilisateur peut définir la `HelloWorld` propriété publique dans une grille des propriétés.
 
 ### <a name="code"></a>Code
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>Description
  L’application de l’attribut suivant à la classe de package rend la page Options disponible lors du chargement du package. Les nombres sont des ID de ressource arbitraires pour la catégorie et la page, et la valeur booléenne à la fin spécifie si la page prend en charge l’Automation.
 
 ### <a name="code"></a>Code
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>Description
  Le gestionnaire d’événements suivant affiche un résultat en fonction de la valeur de la propriété définie dans la page Options. Elle utilise la <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> méthode avec le résultat explicitement converti en type de page d’options personnalisé pour accéder aux propriétés exposées par la page.
@@ -81,8 +81,8 @@ Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastruct
  Dans le cas d’un projet généré par le modèle de package, appelez cette fonction à partir de la `MenuItemCallback` fonction pour l’attacher à la commande par défaut ajoutée au menu **Outils** .
 
 ### <a name="code"></a>Code
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre les paramètres et les options utilisateur](../../extensibility/extending-user-settings-and-options.md)

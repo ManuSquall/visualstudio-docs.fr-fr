@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859188"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216057"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
@@ -130,9 +130,9 @@ Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup 
 
      ![Faire glisser les classes Orders en tant que Grid](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio a généré tout le code de liaison qui connecte les contrôles d’interface utilisateur aux événements du modèle. Pour voir certaines données, il vous suffit d’écrire du code pour remplir le modèle. Tout d’abord, accédez à *MainWindow.Xaml.cs* et ajoutez un membre de données à la classe MainWindow pour le contexte de données. Cet objet, qui a été généré pour vous, agit comme un contrôle qui effectue le suivi des modifications et des événements dans le modèle. Vous ajouterez également des membres de données CollectionViewSource pour les clients et les commandes, ainsi que la logique d’initialisation du constructeur associé. La partie supérieure de la classe doit ressembler à ceci :
+7. Visual Studio a généré tout le code de liaison qui connecte les contrôles d’interface utilisateur aux événements du modèle. Pour voir certaines données, il vous suffit d’écrire du code pour remplir le modèle. Tout d’abord, accédez à *MainWindow. Xaml. cs* et ajoutez un membre de données à la classe MainWindow pour le contexte de données. Cet objet, qui a été généré pour vous, agit comme un contrôle qui effectue le suivi des modifications et des événements dans le modèle. Vous ajouterez également des membres de données CollectionViewSource pour les clients et les commandes, ainsi que la logique d’initialisation du constructeur associé. La partie supérieure de la classe doit ressembler à ceci :
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      Ajoutez une `using` directive pour System. Data. Entity pour placer la méthode d’extension de charge dans la portée :
 
@@ -142,7 +142,8 @@ Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup 
 
      À présent, faites défiler le gestionnaire d’événements et recherchez-le `Window_Loaded` . Notez que Visual Studio a ajouté un objet CollectionViewSource. Cela représente l’objet NorthwindEntities que vous avez sélectionné lors de la création du modèle. Vous l’avez déjà ajoutée, donc vous n’en avez pas besoin ici. Remplaçons le code dans `Window_Loaded` afin que la méthode ressemble maintenant à ceci :
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. Appuyez sur **F5**. Vous devez voir les détails pour le premier client qui a été récupéré dans le CollectionViewSource. Vous devez également voir leurs commandes dans la grille de données. La mise en forme n’est pas très intéressante. nous allons donc résoudre le problème. Vous pouvez également créer un moyen d’afficher les autres enregistrements et d’effectuer des opérations CRUD de base.
 
@@ -421,9 +422,10 @@ La logique de commande comprend quatre parties : (1) les commandes, (2) les lia
 
 Le code-behind est minimal, à l’exception des méthodes d’ajout et de suppression. La navigation est effectuée en appelant des méthodes sur la propriété View du CollectionViewSource. `DeleteOrderCommandHandler`Indique comment effectuer une suppression en cascade sur une commande. Nous devons tout d’abord supprimer les Order_Details qui y sont associés. Le `UpdateCommandHandler` ajoute un nouveau client ou une commande au regroupement, ou simplement met à jour un client existant ou une commande avec les modifications apportées par l’utilisateur dans les zones de texte.
 
-Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow.Xaml.cs*. Si votre CollectionViewSource pour la table Customers a un nom différent, vous devez ajuster le nom dans chacune de ces méthodes :
+Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow. Xaml. cs*. Si votre CollectionViewSource pour la table Customers a un nom différent, vous devez ajuster le nom dans chacune de ces méthodes :
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>Exécution de l'application
 

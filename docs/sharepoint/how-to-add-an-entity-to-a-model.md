@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1d900639463f727a23c4fafab6f077f787c5ca04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94d34e6a623438cd0e2d63d74ee2321841a0582a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959972"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216772"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Comment : ajouter une entité à un modèle
   Pour créer une entité, ajoutez un contrôle d’entité à partir de la **boîte à outils** Visual Studio sur le concepteur de connectivité de données métiers (BDC).
@@ -46,8 +46,8 @@ ms.locfileid: "99959972"
 
 4. Définissez les champs de l’entité dans une classe. Vous pouvez ajouter une nouvelle classe au projet ou utiliser une classe existante créée à l’aide d’autres outils tels que le Concepteur Objet Relationnel (Concepteur O/R). L’exemple suivant montre une classe d’entité nommée contact.
 
-     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
-     [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs" id="Snippet1":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb" id="Snippet1":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : ajouter une méthode Creator](../sharepoint/how-to-add-a-creator-method.md)

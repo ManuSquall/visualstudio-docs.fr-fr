@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839134"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217929"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio comprend de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -151,8 +151,8 @@ ms.locfileid: "99839134"
     > [!NOTE]
     > Une fois que vous avez ajouté ce code, le projet rencontre des erreurs de compilation, mais il disparaît lorsque vous ajoutez du code dans les étapes ultérieures.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Créer une configuration de déploiement incluant l’étape de déploiement personnalisée
  Créez une extension de projet pour la nouvelle configuration de déploiement, qui comprend plusieurs étapes de déploiement intégrées et la nouvelle étape de déploiement de mise à niveau. En créant cette extension, vous aidez les développeurs SharePoint à utiliser l’étape de déploiement de mise à niveau dans les projets SharePoint.
@@ -163,8 +163,8 @@ ms.locfileid: "99839134"
 
 1. Dans le projet **DeploymentStepExtension** , ouvrez le fichier de code DeploymentConfigurationExtension, puis collez-y le code suivant.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Créer les commandes SharePoint personnalisées
  Créez deux commandes personnalisées qui appellent le modèle d’objet serveur pour SharePoint. Une commande détermine si une solution est déjà déployée ; l’autre commande met à niveau une solution.
@@ -173,8 +173,8 @@ ms.locfileid: "99839134"
 
 1. Dans le projet **SharePointCommands** , ouvrez le fichier de code Commands, puis collez le code suivant dans celui-ci.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  À ce stade de la procédure pas à pas, tout le code de l’étape de déploiement personnalisée et les commandes SharePoint se trouvent maintenant dans les projets. Générez-les pour vous assurer qu’elles se compilent sans erreur.

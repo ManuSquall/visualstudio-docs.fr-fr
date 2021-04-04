@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851528"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217032"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procédure pas à pas : ajout de récepteurs d’événements de fonctionnalité
 Les récepteurs d’événements de fonctionnalité sont des méthodes qui s’exécutent lorsque l’un des événements suivants liés aux fonctionnalités se produit dans SharePoint :
@@ -85,16 +85,16 @@ Cette procédure pas à pas montre comment ajouter un récepteur d’événement
 
 2. Sous le nœud **fonctionnalités** , ouvrez le menu contextuel pour **Feature1**, puis choisissez **Ajouter un récepteur** d’événements pour ajouter un récepteur d’événements à la fonctionnalité.
 
-     Cela ajoute un fichier de code sous Feature1. Dans ce cas, il est nommé *Feature1.EventReceiver.cs* ou *Feature1. EventReceiver. vb*, selon le langage de développement de votre projet.
+     Cela ajoute un fichier de code sous Feature1. Dans ce cas, il est nommé *Feature1. EventReceiver. cs* ou *Feature1. EventReceiver. vb*, selon le langage de développement de votre projet.
 
 3. Si votre projet est écrit dans [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , ajoutez le code suivant en haut du récepteur d’événements s’il n’est pas déjà présent :
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. La classe de récepteur d’événements contient plusieurs méthodes commentées qui jouent le rôle d’événements. Remplacez la méthode **FeatureDeactivating** par le code suivant :
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>Tester le récepteur d’événements de fonctionnalité
  Ensuite, désactivez la fonctionnalité pour tester si la méthode **FeatureDeactivating** génère une annonce dans la liste des annonces SharePoint.

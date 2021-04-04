@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96cfbf8693ce23dbc0b0584c7742607224aeab4f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915750"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216941"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : Créer un programme d’amorçage personnalisé avec une invite de confidentialité
 Vous pouvez configurer des applications ClickOnce pour qu’elles soient automatiquement mises à jour lorsque des assemblys avec des versions de fichiers et des versions d’assembly plus récentes deviennent disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité. Ils peuvent ensuite choisir d’accorder ou non l’autorisation de mise à jour automatique à l’application. Si l’application n’est pas autorisée à se mettre à jour automatiquement, elle ne s’installe pas.
@@ -81,32 +81,33 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
 18. Dans le fichier de code Form1, ajoutez le code suivant pour le gestionnaire d’événements CheckedChanged.
 
-     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
-     [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet1":::
 
 19. Mettez à jour le constructeur de classe pour désactiver le bouton **Continuer** par défaut.
 
-     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
-     [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet6":::
 
 20. Dans le fichier de code Form1, ajoutez le code suivant pour une variable booléenne afin de déterminer si l’utilisateur final a consenti à des mises à jour en ligne.
 
-     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
-     [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet3":::
 
 21. Dans le concepteur, double-cliquez sur le bouton **Continuer** pour générer le gestionnaire d’événements Click.
 
 22. Dans le fichier de code Form1, ajoutez le code suivant au gestionnaire d’événements Click pour le bouton **Continuer** .
 
-     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
-     [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet2":::
+
 
 23. Dans le concepteur, double-cliquez sur le bouton **Annuler** pour générer le gestionnaire d’événements Click.
 
 24. Dans le fichier de code Form1, ajoutez le code suivant pour le gestionnaire d’événements Click pour le bouton **Annuler** .
 
-     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
-     [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet4":::
 
 25. Mettez à jour l’application pour qu’elle retourne une erreur si l’utilisateur final n’accepte pas les mises à jour en ligne.
 
@@ -118,7 +119,7 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
     3. Dans le fichier de code *Module1. vb* , ajoutez le code suivant.
 
-        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
+       :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb" id="Snippet7":::
 
     4. Dans le menu **projet** , cliquez sur **Propriétés de ConsentDialog**, puis cliquez sur l’onglet **application** .
 
@@ -131,9 +132,9 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
        Pour les développeurs Visual C# uniquement :
 
-       Ouvrez le fichier de code *Program.cs* , puis ajoutez le code suivant.
+       Ouvrez le fichier de code *Program. cs* , puis ajoutez le code suivant.
 
-       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
+       :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs" id="Snippet5":::
 
 26. Dans le menu **générer** , cliquez sur **BuildSolution**.
 

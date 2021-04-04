@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c6d60d9d6a0eb83f8b5d357f202a4f2f29ac509
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061990"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217201"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : utiliser une commande d’interpréteur de commandes avec une extension d’éditeur
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que des commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à une vue de texte dans l’éditeur en appelant une commande de menu.
@@ -271,8 +271,8 @@ ms.locfileid: "105061990"
 
 3. Déclarez une classe qui implémente <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> et exportez-la avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de type « text » et un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> . L’attribut de type de contenu spécifie le type de contenu auquel le composant s’applique. Le type de texte est le type de base pour tous les types de fichiers non binaires. Par conséquent, presque chaque affichage de texte créé sera de ce type. L’attribut de rôle d’affichage de texte spécifie le type de vue de texte à laquelle le composant s’applique. Les rôles d’affichage de texte de document affichent généralement du texte composé de lignes et stockées dans un fichier.
 
-     [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
-     [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs" id="Snippet11":::
 
 4. Implémentez la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> méthode afin qu’elle appelle l' `Create()` événement statique du `CommentAdornmentManager` .
 
@@ -389,8 +389,8 @@ ms.locfileid: "105061990"
 
 8. Ajoutez le `OnBufferChanged` Gestionnaire d’événements.
 
-     [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
-     [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentprovider.cs" id="Snippet21":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentprovider.vb" id="Snippet21":::
 
 9. Ajoutez une déclaration pour un `CommentsChanged` événement.
 
@@ -600,8 +600,8 @@ ms.locfileid: "105061990"
 
 10. Ajoutez la méthode privée qui dessine le commentaire.
 
-     [!code-csharp[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]
-     [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentmanager.cs" id="Snippet35":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentmanager.vb" id="Snippet35":::
 
 ## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Utilisez la commande de menu pour ajouter l’ornement de commentaire
  Vous pouvez utiliser la commande de menu pour créer un ornement de commentaire en implémentant la `MenuItemCallback` méthode du VSPackage.

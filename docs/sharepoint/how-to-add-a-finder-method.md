@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bd75c94e2f0f557b85d945d141f952950abb2eb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879681"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216343"
 ---
 # <a name="how-to-add-a-finder-method"></a>Comment : ajouter une méthode de recherche
   Pour permettre au service BDC (Business Data Connectivity) d’afficher une liste d’entités dans un composant WebPart ou une liste, vous devez créer une méthode de *recherche* . Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -61,8 +61,8 @@ ms.locfileid: "99879681"
    > [!NOTE]
    > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
-    [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-    [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)

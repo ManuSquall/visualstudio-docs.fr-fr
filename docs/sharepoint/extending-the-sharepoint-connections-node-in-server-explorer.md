@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889692"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218033"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Étendre le nœud Connexions SharePoint dans Explorateur de serveurs
   Dans Visual Studio, vous pouvez vous connecter à des sites SharePoint locaux sur l’ordinateur de développement à l’aide du nœud **Connexions SharePoint** dans la fenêtre **Explorateur de serveurs** . Ce nœud affiche un grand nombre des composants des sites SharePoint locaux dans une arborescence hiérarchique. Par exemple, vous pouvez afficher les listes, les bibliothèques de documents et les types de contenu sur les sites locaux. Pour plus d’informations sur l’utilisation de **Explorateur de serveurs** pour se connecter à des sites SharePoint locaux, consultez [Parcourir les connexions SharePoint à l’aide de Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -50,8 +50,8 @@ ms.locfileid: "99889692"
 
  L’exemple de code suivant montre comment obtenir l’objet de données pour un nœud de liste. Pour voir cet exemple dans le contexte d’un exemple plus complet, consultez [Comment : obtenir des données pour un nœud SharePoint intégré dans Explorateur de serveurs](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  Le tableau suivant répertorie les types d’objets de données pour chaque type de nœud intégré.
 

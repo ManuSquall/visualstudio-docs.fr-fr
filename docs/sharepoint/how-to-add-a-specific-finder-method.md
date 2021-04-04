@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87f5b0cf86178b88b1611f4b0ce8a4bbacde780e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882685"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216798"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
   Vous pouvez retourner une instance d’entité unique en créant une méthode de *recherche spécifique* . Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart de données métier ou une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -84,8 +84,8 @@ ms.locfileid: "99882685"
      > [!NOTE]
      > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)

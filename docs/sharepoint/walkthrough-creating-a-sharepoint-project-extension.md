@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918760"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217787"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : créer une extension de projet SharePoint
   Cette procédure pas à pas illustre la création d’une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet, par exemple lors de l’ajout, de la suppression ou du changement de nom d’un projet. Vous pouvez également ajouter des propriétés personnalisées ou répondre en cas de modification d’une valeur de propriété. Contrairement aux extensions d’élément de projet, les extensions de projet ne peuvent pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension est chargée lorsque l’un des types de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -47,7 +47,7 @@ ms.locfileid: "99918760"
 
 - Éditions prises en charge de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] , SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-- L’[!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] pour créer un package VSIX pour déployer l’extension de propriété de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Le [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] pour créer un package VSIX pour déployer l’extension de propriété de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer deux projets :
@@ -113,8 +113,8 @@ ms.locfileid: "99918760"
 
 1. Collez le code suivant dans le fichier de code CustomProperty.
 
-     [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
-     [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs" id="Snippet1":::
 
 ## <a name="build-the-solution"></a>Générez la solution.
  Ensuite, générez la solution pour vous assurer qu’elle est compilée sans erreur.

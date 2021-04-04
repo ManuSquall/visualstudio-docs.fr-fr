@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7ae131026a94fa368d55bad1d8cd2164b6f960b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917289"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216928"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : créer un programme d’installation personnalisé pour une application ClickOnce
 Toutes les applications ClickOnce basées sur un fichier *. exe* peuvent être installées sans assistance et mises à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée au cours de l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de sécurité et de maintenance. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe silencieusement une application ClickOnce.
@@ -57,8 +57,8 @@ Toutes les applications ClickOnce basées sur un fichier *. exe* peuvent être i
     > [!NOTE]
     > Les autorisations affectées par l’approbation préalable ne peuvent pas dépasser les autorisations du code du programme d’installation personnalisé.
 
-     [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
-     [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs" id="Snippet1":::
 
 5. Pour tenter une installation à partir de votre code, appelez la `InstallApplication` méthode. Par exemple, si vous avez nommé votre classe `MyInstaller` , vous pouvez appeler `InstallApplication` de la façon suivante.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918623"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217708"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint
 
@@ -82,14 +82,14 @@ Ajoutez un élément **WebPart** au projet. L’élément **WebPart** ajoute le 
 
 Vous pouvez spécifier les contrôles que vous souhaitez voir apparaître dans le composant WebPart en les ajoutant à la collection Controls de la classe WebPart.
 
-1. Dans **Explorateur de solutions**, ouvrez *WebPart1. vb* (dans Visual Basic) ou *WebPart1.cs* (en C#).
+1. Dans **Explorateur de solutions**, ouvrez *WebPart1. vb* (dans Visual Basic) ou *WebPart1. cs* (en C#).
 
      Le fichier de code du composant WebPart s’ouvre dans l’éditeur de code.
 
 2. Ajoutez les directives suivantes en haut du fichier de code du composant WebPart.
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. Ajoutez le code suivant à la classe `WebPart1` . Ce code déclare les champs suivants :
 
@@ -101,13 +101,13 @@ Vous pouvez spécifier les contrôles que vous souhaitez voir apparaître dans l
 
    - Chaîne qui contient le chemin d’accès du fichier de données de l’employé.
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. Ajoutez le code suivant à la classe `WebPart1` . Ce code ajoute une propriété personnalisée nommée `DataFilePath` au composant WebPart. Une propriété personnalisée est une propriété qui peut être définie dans SharePoint par l’utilisateur. Cette propriété obtient et définit l’emplacement d’un fichier de données XML utilisé pour remplir la grille de données.
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. Remplacez la méthode `CreateChildControls` par le code suivant. Ce code effectue les tâches suivantes :
 
@@ -115,8 +115,8 @@ Vous pouvez spécifier les contrôles que vous souhaitez voir apparaître dans l
 
    - Lie la grille de données à un fichier XML qui contient les données des employés.
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. Ajoutez la méthode suivante à la classe `WebPart1`. Ce code effectue les tâches suivantes :
 
@@ -124,8 +124,8 @@ Vous pouvez spécifier les contrôles que vous souhaitez voir apparaître dans l
 
    - Il gère l'événement qui est déclenché lorsque l'utilisateur sélectionne le verbe dans le menu d'actions verbales. Ce code filtre la liste des employés qui s’affichent dans la grille de données.
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>Tester le composant WebPart
 

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c499e36b7ee6bb15980fe89c6185a105681d4d05
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867189"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216499"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -162,8 +162,8 @@ Double-cliquez sur les trois boutons du formulaire de navigation pour créer des
 
 Dans la page de codes du formulaire de navigation, complétez les corps des méthodes pour les trois gestionnaires d’événements Click du bouton, comme indiqué dans le code suivant.
 
-[!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
-[!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs" id="Snippet1":::
+:::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb" id="Snippet1":::
 
 ### <a name="newcustomer-form"></a>Formulaire NewCustomer
 
@@ -189,13 +189,13 @@ Pour terminer la logique du formulaire NewCustomer, procédez comme suit.
 
 2. Ajoutez des variables et des méthodes d’assistance à la classe, comme indiqué dans le code suivant.
 
-     [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
-     [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet1":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet1":::
 
 3. Complétez les corps des méthodes pour les gestionnaires d’événements Click du bouton à quatre, comme indiqué dans le code suivant.
 
-     [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
-     [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet2":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet2":::
 
 ### <a name="fillorcancel-form"></a>Formulaire FillOrCancel
 
@@ -223,13 +223,13 @@ Pour terminer la logique du formulaire FillOrCancel, procédez comme suit.
 
 2. Ajoutez une variable et une méthode d’assistance à la classe, comme indiqué dans le code suivant.
 
-     [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
-     [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet1":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet1":::
 
 3. Complétez les corps des méthodes pour les gestionnaires d’événements Click du bouton à quatre, comme indiqué dans le code suivant.
 
-     [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
-     [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet2":::
+     :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet2":::
 
 ## <a name="test-your-application"></a>Tester votre application
 

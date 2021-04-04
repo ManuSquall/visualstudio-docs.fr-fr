@@ -37,12 +37,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45ff4336859fe0294232e9ca1d99513665d8e975
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866123"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216473"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
@@ -64,13 +64,13 @@ Le modèle de programmation WCF repose sur la communication entre deux entités�
 
 Un service WCF est basé sur une interface qui définit un contrat entre le service et le client. Elle est marquée avec un <xref:System.ServiceModel.ServiceContractAttribute> attribut, comme illustré dans le code suivant :
 
-[!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
-[!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet6":::
 
 Vous définissez des fonctions ou des méthodes qui sont exposées par un service WCF en les marquant avec un <xref:System.ServiceModel.OperationContractAttribute> attribut.
 
-[!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
-[!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
 En outre, vous pouvez exposer des données sérialisées en marquant un type composite avec un <xref:System.Runtime.Serialization.DataContractAttribute> attribut. Cela active la liaison de données dans un client.
 
@@ -88,8 +88,8 @@ Un client WCF se compose d’un *proxy* qui permet à une application de communi
 
 Après la création d’un client WCF, vous référencez le service dans votre code comme vous le feriez pour tout autre objet. Par exemple, pour appeler la `GetData` méthode indiquée précédemment, vous écrivez du code qui ressemble à ce qui suit :
 
-[!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
-[!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb" id="Snippet3":::
 
 ## <a name="wcf-tools-in-visual-studio"></a>Outils WCF dans Visual Studio
 
@@ -254,7 +254,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-| Titre | Description |
+| Intitulé | Description |
 | - | - |
 | [Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fournit une démonstration pas à pas de la création et de l’utilisation des services WCF dans Visual Studio. |
 | [Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fournit une démonstration pas à pas de la création et de l’utilisation de Services de données WCF dans Visual Studio. |
@@ -265,7 +265,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 | [Procédure pas à pas : création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets. |
 | [Configurer la référence de service, boîte de dialogue](../data-tools/configure-service-reference-dialog-box.md) | Décrit les éléments de l’interface utilisateur de la boîte de dialogue **configurer la référence de service** . |
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

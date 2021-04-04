@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918732"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217794"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 1
   Les projets SharePoint sont des conteneurs pour un ou plusieurs éléments de projet SharePoint. Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet SharePoint, puis en les associant à un modèle de projet. Dans cette procédure pas à pas, vous allez définir un type d’élément de projet pour la création d’une colonne de site, puis vous allez créer un modèle de projet qui peut être utilisé pour créer un projet qui contient un élément de projet de colonne de site.
@@ -48,7 +48,7 @@ ms.locfileid: "99918732"
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Le [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   La connaissance du concept suivant est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
@@ -150,8 +150,8 @@ ms.locfileid: "99918732"
 
 1. Dans le fichier de code **SiteColumnProjectItemTypeProvider** , remplacez le code par défaut par le code suivant, puis enregistrez le fichier.
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>Créer un modèle de projet Visual Studio
  En créant un modèle de projet, vous permettez à d’autres développeurs de créer des projets SharePoint qui contiennent des éléments de projet de colonne de site. Un modèle de projet SharePoint comprend des fichiers qui sont requis pour tous les projets dans Visual Studio, tels que les fichiers. *csproj* ou *. vbproj* et *. vstemplate* , ainsi que les fichiers spécifiques aux projets SharePoint. Pour plus d’informations, consultez [créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -225,7 +225,7 @@ ms.locfileid: "99918732"
 ## <a name="edit-the-project-template-files"></a>Modifier les fichiers de modèle de projet
  Dans le projet SiteColumnProjectTemplate, modifiez les fichiers suivants pour définir le comportement du modèle de projet :
 
-- *AssemblyInfo.cs* ou *AssemblyInfo. vb*
+- *AssemblyInfo. cs* ou *AssemblyInfo. vb*
 
 - *Elements.xml*
 
@@ -241,9 +241,9 @@ ms.locfileid: "99918732"
 
   Dans les procédures suivantes, vous allez ajouter des paramètres remplaçables à certains de ces fichiers. Un paramètre remplaçable est un jeton qui commence et se termine par le caractère dollar ($). Quand un utilisateur utilise ce modèle de projet pour créer un projet, Visual Studio remplace automatiquement ces paramètres dans le nouveau projet par des valeurs spécifiques. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Pour modifier le fichier AssemblyInfo.cs ou AssemblyInfo. vb
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Pour modifier le fichier AssemblyInfo. cs ou AssemblyInfo. vb
 
-1. Dans le projet SiteColumnProjectTemplate, ouvrez le fichier *AssemblyInfo.cs* ou *AssemblyInfo. vb* , puis ajoutez l’instruction suivante en haut de celui-ci :
+1. Dans le projet SiteColumnProjectTemplate, ouvrez le fichier *AssemblyInfo. cs* ou *AssemblyInfo. vb* , puis ajoutez l’instruction suivante en haut de celui-ci :
 
     ```vb
     Imports System.Security

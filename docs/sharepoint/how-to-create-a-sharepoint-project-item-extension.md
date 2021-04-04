@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f01d3c15490a19c8cb5071cf7677fcf2b2a5384
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873604"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216616"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Comment : créer une extension d’élément de projet SharePoint
   Créez une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un élément de projet SharePoint qui est déjà installé dans Visual Studio. Pour plus d’informations, consultez [étendre les éléments de projet SharePoint](../sharepoint/extending-sharepoint-project-items.md).
@@ -49,8 +49,8 @@ ms.locfileid: "99873604"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment créer une extension simple pour l’élément de projet récepteur d’événements. Chaque fois que l’utilisateur ajoute un élément de projet de récepteur d’événements à un projet SharePoint, cette extension écrit un message dans la fenêtre **sortie** et dans la fenêtre de **liste d’erreurs** .
 
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb" id="Snippet1":::
 
  Cet exemple utilise le service de projet SharePoint pour écrire le message dans la fenêtre **sortie** et dans la fenêtre de **liste d’erreurs** . Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 

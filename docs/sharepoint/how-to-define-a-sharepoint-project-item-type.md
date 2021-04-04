@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f94a93e8797922ef7629853e8261383984bb3ef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16e7070769edf3ee65ee425a7f9cb5062da315cd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885623"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216824"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Comment : définir un type d’élément de projet SharePoint
   Définissez un type d’élément de projet lorsque vous souhaitez créer un élément de projet SharePoint personnalisé. Pour plus d’informations, consultez [définition de types d’éléments de projet SharePoint personnalisés](../sharepoint/defining-custom-sharepoint-project-item-types.md).
@@ -51,8 +51,8 @@ ms.locfileid: "99885623"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment définir un type d’élément de projet simple. Ce type d’élément de projet écrit un message dans la fenêtre **sortie** et **liste d’erreurs** fenêtre lorsqu’un utilisateur ajoute un élément de projet de ce type à un projet.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb#2)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs" id="Snippet2":::
 
  Cet exemple utilise le service de projet SharePoint pour écrire le message dans la fenêtre **sortie** et dans la fenêtre de **liste d’erreurs** . Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 

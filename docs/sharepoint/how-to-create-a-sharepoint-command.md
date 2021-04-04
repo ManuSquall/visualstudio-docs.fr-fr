@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cc3d29d4991b6cfb712e4754f066edbb66f0b71
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923347"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216681"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Comment : créer une commande SharePoint
   Si vous souhaitez utiliser le modèle d’objet serveur dans une extension d’outils SharePoint, vous devez créer une *commande SharePoint* personnalisée pour appeler l’API. Vous définissez la commande SharePoint dans un assembly qui peut appeler directement le modèle d’objet serveur.
@@ -64,8 +64,8 @@ ms.locfileid: "99923347"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant illustre une commande SharePoint avec l’identificateur `Contoso.Commands.UpgradeSolution` . Cette commande utilise des API dans le modèle objet serveur pour effectuer une mise à niveau vers une solution déployée.
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet5":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet5":::
 
  En plus du premier paramètre implicite <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> , cette commande a également un paramètre de chaîne personnalisé qui contient le chemin d’accès complet du fichier. wsp qui est mis à niveau vers le site SharePoint. Pour voir ce code dans le contexte d’un exemple plus complet, consultez [procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 

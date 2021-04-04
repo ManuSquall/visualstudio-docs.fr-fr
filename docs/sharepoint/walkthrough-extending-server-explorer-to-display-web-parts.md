@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952666"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217669"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart
   Dans Visual Studio, vous pouvez utiliser le nœud **Connexions SharePoint** de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
@@ -216,8 +216,8 @@ ms.locfileid: "99952666"
     > [!NOTE]
     > Une fois que vous avez ajouté ce code, le projet rencontre des erreurs de compilation, mais il disparaît lorsque vous ajoutez du code dans les étapes ultérieures.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Définir un type de nœud qui représente un composant WebPart
  Créez une classe qui définit un nouveau type de nœud qui représente un composant WebPart. Visual Studio utilise ce nouveau type de nœud pour afficher les nœuds enfants sous le nœud **Galerie de composants WebPart** . Chaque nœud enfant représente un composant WebPart unique sur le site SharePoint.
@@ -228,8 +228,8 @@ ms.locfileid: "99952666"
 
 1. Dans le projet WebPartNodeExtension, ouvrez le fichier de code WebPartNodeTypeProvder, puis collez-y le code suivant.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>Définir la classe de données WebPart
  Définissez une classe qui contient des données relatives à un composant WebPart unique sur le site SharePoint. Plus loin dans cette procédure pas à pas, vous allez créer une commande SharePoint personnalisée qui récupère les données relatives à chaque composant WebPart sur le site, puis assigne les données aux instances de cette classe.
@@ -238,8 +238,8 @@ ms.locfileid: "99952666"
 
 1. Dans le projet WebPartNodeExtension, ouvrez le fichier de code WebPartNodeInfo, puis collez-y le code suivant.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>Définir les ID des commandes SharePoint
  Définissez plusieurs chaînes qui identifient les commandes SharePoint personnalisées. Vous allez implémenter ces commandes plus loin dans cette procédure pas à pas.
@@ -248,8 +248,8 @@ ms.locfileid: "99952666"
 
 1. Dans le projet WebPartNodeExtension, ouvrez le fichier de code WebPartCommandIds, puis collez-y le code suivant.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Créer les commandes SharePoint personnalisées
  Créez des commandes personnalisées qui appellent le modèle objet serveur pour SharePoint pour récupérer des données sur le WebParts sur le site SharePoint. Chaque commande est une méthode à laquelle est <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> appliqué.
@@ -258,8 +258,8 @@ ms.locfileid: "99952666"
 
 1. Dans le projet WebPartCommands, ouvrez le fichier de code WebPartCommands, puis collez le code suivant dans celui-ci.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  À ce stade de la procédure pas à pas, tout le code pour le nœud de la **Galerie de composants WebPart** et les commandes SharePoint se trouvent maintenant dans les projets. Générez la solution pour vous assurer que les deux projets se compilent sans erreur.
