@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858915"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215901"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 Vous pouvez modifier des données dans des tables de données de la même façon que vous modifiez les données d’une table dans une base de données. Le processus peut inclure l’insertion, la mise à jour et la suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier les champs modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère l’ensemble du suivi des modifications afin que les modifications puissent être renvoyées ultérieurement à la base de données. Si vous apportez par programmation des modifications aux données et que vous envisagez de les envoyer à la base de données, vous devez utiliser les objets et méthodes qui effectuent le suivi des modifications pour vous.
@@ -33,21 +33,21 @@ Pour modifier une ligne existante dans un <xref:System.Data.DataTable> , vous de
 
 Si vous ne connaissez pas l’index de la ligne que vous souhaitez modifier, utilisez la `FindBy` méthode pour effectuer une recherche à l’aide de la clé primaire :
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 Si vous connaissez l’index de ligne, vous pouvez accéder aux lignes et les modifier comme suit :
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Pour insérer de nouvelles lignes dans un jeu de données
 Les applications qui utilisent des contrôles liés aux données ajoutent généralement de nouveaux enregistrements par le biais du bouton **Ajouter un nouveau** sur un [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).
 
 Pour ajouter manuellement de nouveaux enregistrements à un DataSet, créez une nouvelle ligne de données en appelant la méthode sur le DataTable. Ensuite, ajoutez la ligne à la <xref:System.Data.DataRow> collection ( <xref:System.Data.DataTable.Rows%2A> ) du <xref:System.Data.DataTable> :
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 Afin de conserver les informations dont le DataSet a besoin pour envoyer des mises à jour à la source de données, utilisez la <xref:System.Data.DataRow.Delete%2A> méthode pour supprimer des lignes dans une table de données. Par exemple, si votre application utilise un TableAdapter (ou <xref:System.Data.Common.DataAdapter> ), la méthode du TableAdapter `Update` supprime les lignes de la base de données qui ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted> .
 
@@ -64,8 +64,8 @@ Si votre application n’a pas besoin d’envoyer des mises à jour à une sourc
 
 L’exemple suivant montre comment appeler la <xref:System.Data.DataRow.Delete%2A> méthode pour marquer la première ligne de la `Customers` table comme supprimée :
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>Déterminer si des lignes ont été modifiées
 Lorsque des modifications sont apportées aux enregistrements d’un jeu de données, les informations relatives à ces modifications sont stockées jusqu’à ce que vous les validiez. Vous validez les modifications lorsque vous appelez la `AcceptChanges` méthode d’un DataSet ou d’une table de données, ou lorsque vous appelez la `Update` méthode d’un TableAdapter ou d’un adaptateur de données.
@@ -84,8 +84,8 @@ La <xref:System.Data.DataSet.HasChanges%2A> méthode d’un DataSet retourne `tr
 
 L’exemple suivant montre comment vérifier la valeur de retour de la <xref:System.Data.DataSet.HasChanges%2A> méthode pour déterminer s’il existe des lignes modifiées dans un dataset nommé `NorthwindDataset1` :
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>Déterminer le type de modifications
 Vous pouvez également vérifier le type de modifications apportées à un DataSet en passant une valeur de l' <xref:System.Data.DataRowState> énumération à la <xref:System.Data.DataSet.HasChanges%2A> méthode.
@@ -96,8 +96,8 @@ Vous pouvez également vérifier le type de modifications apportées à un DataS
 
 L’exemple suivant montre comment vérifier un dataset nommé `NorthwindDataset1` pour déterminer si de nouvelles lignes y ont été ajoutées :
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>Pour rechercher les lignes qui contiennent des erreurs
 Lorsque vous utilisez des colonnes et des lignes de données individuelles, vous pouvez rencontrer des erreurs. Vous pouvez vérifier la `HasErrors` propriété pour déterminer si des erreurs existent dans un <xref:System.Data.DataSet> , <xref:System.Data.DataTable> ou <xref:System.Data.DataRow> .
@@ -106,8 +106,8 @@ Lorsque vous utilisez des colonnes et des lignes de données individuelles, vous
 
 2. Si la `HasErrors` propriété a la valeur `true` , effectuez une itération dans les collections de tables, puis sur les lignes, pour rechercher la ligne contenant l’erreur.
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>Voir aussi
 

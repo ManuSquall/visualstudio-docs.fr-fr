@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b39112a696611103828d862c7f7adf04784e6222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ee11ec012ae0f104f5fefff7302d3982e43721a
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860995"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083653"
 ---
 # <a name="extract-a-method-refactoring"></a>Extraire une méthode (refactorisation)
 
@@ -40,7 +40,7 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-       ! Capture d’écran montrant le code C# de la classe Program. Dans la fonction main de cette classe, une ligne de code est mise en surbrillance.] (média/extractmethod-highlight-cs.png)
+       ![Capture d’écran montrant le code C# de la classe Program. Dans la fonction main de cette classe, une ligne de code est mise en surbrillance.](media/extractmethod-highlight-cs.png)
 
    - Visual Basic :
 

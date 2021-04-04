@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851712"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215316"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associer des données personnalisées à des extensions d’outils SharePoint
   Vous pouvez ajouter des données personnalisées à certains objets dans les extensions des outils SharePoint. Cela est utile lorsque vous disposez de données dans une partie de votre extension auxquelles vous souhaitez accéder ultérieurement à partir d’un autre code dans votre extension. Au lieu d’implémenter une méthode personnalisée pour stocker des données et y accéder, vous pouvez associer les données à un objet dans votre extension, puis récupérer ultérieurement les données du même objet.
@@ -79,8 +79,8 @@ ms.locfileid: "99851712"
 
   L’exemple de code suivant détermine si un objet de données est déjà associé à un élément de projet. Si l’objet de données n’est pas déjà associé à l’élément de projet, le code ajoute l’objet à la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété de l’élément de projet. Pour voir cet exemple dans le contexte d’un exemple plus complet, consultez [Comment : ajouter une propriété à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
 
-  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
-  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Concepts et fonctionnalités de programmation pour les extensions des outils SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

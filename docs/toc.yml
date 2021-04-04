@@ -906,6 +906,7 @@
 - name: Déboguer >>
   href: debugger/index.yml
 - name: Gestion de versions
+  expanded: true
   items:
     - name: Nouvelle expérience git dans Visual Studio
       href: ide/git-with-visual-studio.md
@@ -990,7 +991,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informations de référence
+- name: Référence
   items:
     - name: Raccourcis clavier
       items:

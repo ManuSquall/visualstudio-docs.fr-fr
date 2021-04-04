@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841716"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082563"
 ---
 # <a name="use-docker-compose"></a>Utiliser Docker Compose
 
@@ -168,7 +168,7 @@ docker run -d \
         image: mysql:5.7
     ```
 
-1. Ensuite, définissez le mappage du volume. Lorsque vous avez exécuté le conteneur avec `docker run` , le volume nommé a été créé automatiquement. Toutefois, cela ne se produit pas lors de l’exécution de avec compose. Vous devez définir le volume dans la section de niveau supérieur `volumes:` , puis spécifier le point de montage dans la configuration du service. En fournissant simplement le nom du volume, les options par défaut sont utilisées. Toutefois, de [nombreuses autres options sont disponibles](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) .
+1. Ensuite, définissez le mappage du volume. Lorsque vous avez exécuté le conteneur avec `docker run` , le volume nommé a été créé automatiquement. Toutefois, cela ne se produit pas lors de l’exécution de avec compose. Vous devez définir le volume dans la section de niveau supérieur `volumes:` , puis spécifier le point de montage dans la configuration du service. En fournissant simplement le nom du volume, les options par défaut sont utilisées. Toutefois, de [nombreuses autres options sont disponibles](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element) .
 
     ```yaml hl_lines="8 9 10 11 12"
     version: "3.7"

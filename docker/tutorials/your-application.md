@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841664"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082576"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Générer et exécuter l’exemple d’application TODO
 
@@ -30,7 +30,7 @@ Avant de pouvoir exécuter l’application, vous devez récupérer le code sourc
 
 1. Assurez-vous que Docker pour Windows ou l’édition Community de l’Ancrable est installé sur l’ordinateur local. Consultez [docker pour Windows documentation sur l’installation](https://docs.docker.com/docker-for-windows/install/). Le processus d’installation rend le fichier ZIP contenant l’exemple disponible à l’adresse localhost.
 
-1. [Téléchargez le fichier zip](http://localhost/assets/app.zip). Ouvrez le fichier ZIP et veillez à extraire le contenu.
+1. [Téléchargez le fichier zip](https://github.com/docker/getting-started/tree/master/app). Ouvrez le fichier ZIP et veillez à extraire le contenu.
 
 1. Une fois l’extraction effectuée, utilisez votre éditeur de code favori pour ouvrir le projet. Si vous avez besoin d’un éditeur, vous pouvez utiliser [Visual Studio code](https://code.visualstudio.com/). Vous devez voir le `package.json` et les deux sous-répertoires ( `src` et `spec` ).
 

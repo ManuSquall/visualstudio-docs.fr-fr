@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806054"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110608"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Question : Comment Flask fonctionne-t-il avec les routes d’URL et les paramètres de requête des variables ?
 
-Réponse : Dans une route, vous marquez toutes les variables avec `<variable_name>`, et Flask passe la variable à la fonction en utilisant un argument nommé. La variable peut faire partie du chemin de l’URL ou d’un paramètre de requête. Par exemple, une route sous la forme `'/hello/<name>` génère un argument de chaîne appelé `name` pour la fonction, et l’utilisation de `?message=<msg>` dans la route analyse la valeur donnée pour le paramètre de requête "message=" et le passe à la fonction en tant que `msg` :
+Réponse : dans un itinéraire, vous marquez une variable avec `<variable_name>` , et la fiole passe la variable à la fonction à l’aide d’un argument nommé dans le chemin d’accès de l’URL. Par exemple, un itinéraire sous la forme `/hello/<name>` génère un argument de chaîne appelé `name` à la fonction. Les paramètres de requête sont disponibles par le biais de la `request.args` propriété, en particulier par le biais de la `request.args.get` méthode. Pour plus d’informations, consultez [L’objet Request](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object) dans la documentation de Flask.
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 Pour changer the type, préfixez la variable avec `int`, `float`, `path` (qui accepte des barres obliques pour délimiter les noms de dossier) et `uuid`. Pour plus d’informations, consultez [Règles des variables](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) dans la documentation de Flask.
-
-Les paramètres de requête sont également disponibles via la propriété `request.args`, en particulier via la méthode`request.args.get`. Pour plus d’informations, consultez [L’objet Request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) dans la documentation de Flask.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
 

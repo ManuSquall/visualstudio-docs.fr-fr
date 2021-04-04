@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6c5810cd95b50a63f32cfaa6123e81e35a4be9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32bcb32c4fc80a5806c9007c3119a2ba3de62427
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063030"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214510"
 ---
 # <a name="options-and-options-pages"></a>Options et pages Options
 Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogue **options** . Les options de cette boîte de dialogue sont collectivement appelées pages d’options. Le contrôle d’arborescence dans le volet de navigation inclut des catégories d’options, et chaque catégorie possède des pages d’options. Lorsque vous sélectionnez une page, ses options s’affichent dans le volet droit. Ces pages vous permettent de modifier les valeurs des options qui déterminent l’état d’un VSPackage.
@@ -36,8 +36,8 @@ Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogu
 ## <a name="options-page-registry-path"></a>Page d’options chemin du Registre
  Par défaut, le chemin d’accès au registre des propriétés gérées par une page Options est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , le mot DialogPage et le nom de type de la classe de la page Options. Par exemple, une classe de page Options peut être définie comme suit.
 
- [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet1":::
 
  Si le <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> est HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, les paires nom de la propriété et valeur sont des sous-clés de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
 
@@ -46,8 +46,8 @@ Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogu
 ## <a name="toolsoptions-page-attributes-and-layout"></a>Mise en page et attributs des pages outils/options
  L' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut détermine le regroupement des pages d’options personnalisées en catégories dans l’arborescence de navigation de la boîte de dialogue **options** . L' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut associe une page d’options au VSPackage qui fournit l’interface. Prenons le fragment de code suivant :
 
- [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet2":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet2":::
 
  Cela déclare que MyPackage fournit deux pages d’options, OptionsPageGeneral et OptionsPageCustom. Dans la boîte de dialogue **options** , les deux pages options s’affichent dans la catégorie **mes pages** d’options comme **général** et **personnalisé**, respectivement.
 
@@ -65,21 +65,21 @@ Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogu
 
   Prenons le fragment de code suivant :
 
-  [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
-  [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs" id="Snippet3":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb" id="Snippet3":::
 
   L’option OptionInteger s’affiche sur la page options sous forme d' **entier** dans la catégorie **mes options** . Si l’option est sélectionnée, l’option Description, **mon entier**, s’affiche dans la zone Description.
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Accès aux pages d’options à partir d’un autre VSPackage
  Un VSPackage qui héberge et gère une page d’options peut être accessible par programmation à partir d’un autre VSPackage à l’aide du modèle Automation. Par exemple, dans le code suivant, un VSPackage est inscrit comme hébergeant une page d’options.
 
- [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet4":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet4":::
 
  Le fragment de code suivant obtient la valeur de OptionInteger à partir de MyOptionPage :
 
- [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet5":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet5":::
 
  Lorsque l' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut inscrit une page d’options, la page est inscrite sous la clé AutomationProperties si l' `SupportsAutomation` argument de l’attribut est `true` . Automation examine cette entrée du Registre pour trouver le VSPackage associé et l’automatisation accède ensuite à la propriété via la page Options hébergées, dans le cas présent, ma page de grille.
 

@@ -2,7 +2,7 @@
 title: Débogage à partir d’un projet DLL | Microsoft Docs
 description: Vous pouvez démarrer le débogage d’un projet DLL à partir du projet lui-même, en spécifiant l’application appelante dans les propriétés du projet. Pour plus d’informations, voir cet article.
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160432"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083640"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -81,7 +81,13 @@ Les projets DLL natifs et managés ont des paramètres différents pour spécifi
 
 1. Assurez-vous que le champ **Configuration des solutions** a la valeur **Déboguer**. Appuyez sur **F5**, cliquez sur la flèche verte de **démarrage** ou sélectionnez **Déboguer**  >  **Démarrer le débogage**.
 
-Si le débogage n’atteint pas vos points d’arrêt, assurez-vous que la sortie de votre DLL (par défaut, le dossier *\<project> \Debug.* ) est l’emplacement appelé par l’application appelante.
+Conseils supplémentaires :
+
+- Si le débogage n’atteint pas vos points d’arrêt, assurez-vous que la sortie de votre DLL (par défaut, le dossier *\<project> \Debug.* ) est l’emplacement appelé par l’application appelante.
+
+- Si vous souhaitez vous arrêter dans le code d’une application appelante managée à partir d’une DLL native, ou vice versa, activez le [débogage en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
+
+- Dans certains scénarios, vous devrez peut-être indiquer au débogueur où trouver le code source. Pour plus d’informations, consultez [utiliser les pages aucun symbole chargé/aucune source chargée](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages).
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de projets DLL](../debugger/debugging-dll-projects.md)

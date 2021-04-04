@@ -4,17 +4,17 @@ description: Découvrez les journaux générés par le système de Visual Studio
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894658"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171834"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
 
@@ -70,7 +70,7 @@ Les auteurs d’extensions doivent limiter l’exposition des informations priv�
 
 ## <a name="opt-out-of-data-collection"></a>Refuser la collecte de données
 
-Compte tenu de la finalité des données que nous collectons et des contraintes liées à leur accès et leur rétention, nous vous recommandons d’utiliser les paramètres de confidentialité par défaut pour Visual Studio et Windows. Toutefois, vous pouvez [refuser](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) de participer au Programme d’amélioration de l’expérience utilisateur Visual Studio. Pour refuser la collecte des journaux générés par le système pour tous les programmes, consultez [Diagnostics, commentaires et confidentialité dans Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Les options peuvent varier en fonction de la version de Windows que vous utilisez.
+Compte tenu de la finalité des données que nous collectons et des contraintes liées à leur accès et leur rétention, nous vous recommandons d’utiliser les paramètres de confidentialité par défaut pour Visual Studio et Windows. Toutefois, vous pouvez [refuser](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) de participer au Programme d’amélioration de l’expérience utilisateur Visual Studio. Lorsque vous désabonnez, vous désabonnez de la collection de données de diagnostic **facultative** . Une collecte de données de diagnostic est **nécessaire** pour s’assurer que Visual Studio est sécurisé, à jour et qu’il fonctionne comme prévu. La collecte de données de diagnostic requise n’est pas affectée par votre choix pour refuser l’VSCEIP. Pour refuser la collecte des journaux générés par le système pour tous les programmes, consultez [Diagnostics, commentaires et confidentialité dans Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Les options peuvent varier en fonction de la version de Windows que vous utilisez.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939654"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082537"
 ---
 # <a name="how-msbuild-builds-projects"></a>Comment MSBuild génère des projets
 
@@ -139,7 +139,7 @@ Le fichier *Microsoft. Common. props* définit les valeurs par défaut que vous 
 
 Le fichier *Microsoft. Common. targets* et les fichiers cibles qu’il importe définissent le processus de génération standard pour les projets .net. Il fournit également des points d’extension que vous pouvez utiliser pour personnaliser la Build.
 
-Dans l’implémentation, *Microsoft. Common. targets* est un wrapper léger qui importe *Microsoft. Common. CurrentVersion. targets*. Ce fichier contient des paramètres pour les propriétés standard et définit les cibles réelles qui définissent le processus de génération. La `Build` cible est définie ici, mais elle est elle-même vide. Toutefois, la `Build` cible contient l' `DependsOn` attribut qui spécifie les cibles individuelles qui composent les étapes de génération réelles, qui sont `BeforeBuild` , `CoreBuild` et `AfterBuild` . La `Build` cible est définie comme suit :
+Dans l’implémentation, *Microsoft. Common. targets* est un wrapper léger qui importe *Microsoft. Common. CurrentVersion. targets*. Ce fichier contient des paramètres pour les propriétés standard et définit les cibles réelles qui définissent le processus de génération. La `Build` cible est définie ici, mais elle est elle-même vide. Toutefois, la `Build` cible contient l' `DependsOnTargets` attribut qui spécifie les cibles individuelles qui composent les étapes de génération réelles, qui sont `BeforeBuild` , `CoreBuild` et `AfterBuild` . La `Build` cible est définie comme suit :
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ Dans l’implémentation, *Microsoft. Common. targets* est un wrapper léger qui
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` et `AfterBuild` sont des points d’extension. Elles sont vides dans le fichier *Microsoft. Common. CurrentVersion. targets* , mais les projets peuvent fournir leurs propres `BeforeBuild` et `AfterBuild` cibles avec des tâches qui doivent être effectuées avant ou après le processus de génération principal. `AfterBuild` est exécuté avant la cible de non-opération, `Build` , car `AfterBuild` apparaît dans l' `DependsOn` attribut sur la `Build` cible, mais il se produit après `CoreBuild` .
+`BeforeBuild` et `AfterBuild` sont des points d’extension. Elles sont vides dans le fichier *Microsoft. Common. CurrentVersion. targets* , mais les projets peuvent fournir leurs propres `BeforeBuild` et `AfterBuild` cibles avec des tâches qui doivent être effectuées avant ou après le processus de génération principal. `AfterBuild` est exécuté avant la cible de non-opération, `Build` , car `AfterBuild` apparaît dans l' `DependsOnTargets` attribut sur la `Build` cible, mais il se produit après `CoreBuild` .
 
 La `CoreBuild` cible contient les appels aux outils de génération, comme suit :
 

@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82cfcf1ce030cfe597c3ae7bfe85c528184c548a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858239"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215667"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 La validation des données est le processus qui consiste à confirmer que les valeurs entrées dans les objets de données sont conformes aux contraintes dans le schéma d’un DataSet. Le processus de validation confirme également que ces valeurs suivent les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -66,7 +66,7 @@ Si votre application utilise un DataSet typé, vous pouvez créer des gestionnai
 
 ## <a name="data-update-events"></a>Événements de mise à jour des données
 
-|Événement|Description|
+|événement|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur d’une colonne est en cours de modification. L’événement passe la ligne et la colonne à vous, ainsi que la nouvelle valeur proposée.|
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur d’une colonne a été modifiée. L’événement passe la ligne et la colonne à vous, ainsi que la valeur proposée.|
@@ -106,7 +106,7 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous souhaitez
     > [!TIP]
     > Double-cliquez à gauche du nom de la table pour créer le gestionnaire d’événements de modification de ligne. Si vous double-cliquez sur le nom de la table, vous pouvez le modifier.
 
-     [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb" id="Snippet3":::
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne est modifiée (C#)
 
@@ -155,8 +155,8 @@ Utilisez l' <xref:System.Data.DataRowVersion> énumération pour accéder aux di
 
      L’exemple suivant crée un nouveau DataSet appelé `changedRecords` et le remplit avec tous les enregistrements modifiés d’un autre DataSet appelé `dataSet1` .
 
-     [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>Pour obtenir tous les enregistrements modifiés d’une table de données
 
@@ -164,8 +164,8 @@ Utilisez l' <xref:System.Data.DataRowVersion> énumération pour accéder aux di
 
      L’exemple suivant crée une nouvelle table de données appelée `changedRecordsTable` et la remplit avec tous les enregistrements modifiés d’une autre table de données appelée `dataTable1` .
 
-     [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Pour obtenir tous les enregistrements qui ont un état de ligne spécifique
 
@@ -173,13 +173,13 @@ Utilisez l' <xref:System.Data.DataRowVersion> énumération pour accéder aux di
 
      L’exemple suivant montre comment créer un jeu de données appelé `addedRecords` et le remplir uniquement avec les enregistrements qui ont été ajoutés au `dataSet1` jeu de données.
 
-     [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
-     [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
      L’exemple suivant montre comment retourner tous les enregistrements qui ont été récemment ajoutés à la `Customers` table :
 
-     [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
-     [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
 ## <a name="access-the-original-version-of-a-datarow"></a>Accéder à la version d’origine d’un DataRow
 Lorsque des modifications sont apportées aux lignes de données, le DataSet conserve à la fois les versions d’origine ( <xref:System.Data.DataRowVersion.Original> ) et New ( <xref:System.Data.DataRowVersion.Current> ) de la ligne. Par exemple, avant d’appeler la `AcceptChanges` méthode, votre application peut accéder aux différentes versions d’un enregistrement (tel que défini dans l' <xref:System.Data.DataRowVersion> énumération) et traiter les modifications en conséquence.
@@ -195,8 +195,8 @@ Le passage de la <xref:System.Data.DataRowVersion> valeur avec l’index de colo
 
      L’exemple suivant montre comment utiliser une <xref:System.Data.DataRowVersion> valeur pour obtenir la valeur d’origine d’un `CompanyName` champ dans un <xref:System.Data.DataRow> :
 
-     [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
-     [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
 
 ## <a name="access-the-current-version-of-a-datarow"></a>Accéder à la version actuelle d’un DataRow
 
@@ -206,8 +206,8 @@ Le passage de la <xref:System.Data.DataRowVersion> valeur avec l’index de colo
 
      L’exemple suivant montre comment utiliser une <xref:System.Data.DataRowVersion> valeur pour obtenir la valeur actuelle d’un `CompanyName` champ dans un <xref:System.Data.DataRow> :
 
-     [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
-     [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858837"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215810"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 
@@ -93,8 +93,8 @@ Le code d'enregistrement généré contient également une ligne de code qui app
 
 2. Ajoutez une ligne de code pour appeler la méthode `OrdersBindingSource.EndEdit` après la ligne appelant la méthode `CustomersBindingSource.EndEdit`. Le code de l’événement Click du bouton **Enregistrer** doit ressembler à ce qui suit :
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 Outre la validation des modifications d'une table enfant associée avant l'enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d'ajouter de nouveaux enregistrement enfants à un dataset. En d’autres termes, vous devrez peut-être ajouter le nouvel enregistrement parent ( `Customer` ) au jeu de données avant que les contraintes de clé étrangère n’autorisent l’ajout de nouveaux enregistrements enfants ( `Orders` ) au jeu de données. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.
 
@@ -109,8 +109,8 @@ Outre la validation des modifications d'une table enfant associée avant l'enreg
 
 2. Ajoutez une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` méthode. Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>Référence TableAdapterManager
 

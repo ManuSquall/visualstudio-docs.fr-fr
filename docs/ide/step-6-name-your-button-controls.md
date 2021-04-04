@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f69a87d923eebaea03c9c8a38496c4c379db8aba
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868879"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214211"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
@@ -43,15 +43,15 @@ Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **butto
 1. Renommez les trois autres boutons en **backgroundButton**, **clearButton** et **showButton**.
 Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
 
-1. Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également cliquer sur le bouton **afficher une image** sur le formulaire, puis appuyer sur la touche **entrée** . Dans ce cas, l’IDE ouvre un onglet supplémentaire dans la fenêtre principale nommée **Form1.cs**. (Si vous utilisez Visual Basic, l’onglet est nommé **Form1. vb**).
+1. Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également cliquer sur le bouton **afficher une image** sur le formulaire, puis appuyer sur la touche **entrée** . Dans ce cas, l’IDE ouvre un onglet supplémentaire dans la fenêtre principale nommée **Form1. cs**. (Si vous utilisez Visual Basic, l’onglet est nommé **Form1. vb**).
 
    Cet onglet affiche le fichier de code derrière le formulaire, comme illustré dans la capture d’écran suivante.
 
     ![Onglet Form1.cs avec code Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-***Form1.cs** _ _tab avec code C# *
+***Form1. cs** _ _tab avec le code C# *
 
     > [!NOTE]
-    > Votre onglet Form1.cs ou Form1. vb peut afficher **showButton** comme **showButton** à la place.
+    > Votre onglet Form1. cs ou Form1. vb peut afficher **showButton** comme **showButton** à la place.
 
 1. Examinez attentivement cette partie du code.
 
@@ -71,18 +71,18 @@ Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélect
 
    Vous examinez le code appelé `showButton_Click()` (ou `ShowButton_Click()` ). L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code, connu sous le nom de *méthode*, s’exécute lorsque vous exécutez votre application et choisissez le contrôle (dans ce cas, le bouton **afficher une image** ).
 
-1. Cliquez de nouveau sur l’onglet **Concepteur Windows Forms** (**Form1.cs [Design]**), puis ouvrez le fichier de code du bouton **effacer l’image** pour créer une méthode pour celui-ci dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.
+1. Cliquez à nouveau sur l’onglet **Concepteur Windows Forms** (**Form1. cs [Design]**), puis ouvrez le fichier de code du bouton **effacer l’image** pour créer une méthode pour celui-ci dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.
 
 1. Pour ajouter une méthode supplémentaire, ouvrez le fichier de code pour le contrôle de **case à cocher** dans **Concepteur Windows Forms** pour que l’IDE ajoute une `checkBox1_CheckedChanged()` méthode. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
    > [!TIP]
-   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur *Form1.cs* dans C# ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez Concepteur de **vues**  >  .
+   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur *Form1. cs* en C# ou *Formulaire1. vb* dans Visual Basic, ou dans la barre de menus, choisissez Concepteur de **vues**  >  .
 
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
-    [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs" id="Snippet2":::
 
-    [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb" id="Snippet2":::
 
     > [!NOTE]
     > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ».

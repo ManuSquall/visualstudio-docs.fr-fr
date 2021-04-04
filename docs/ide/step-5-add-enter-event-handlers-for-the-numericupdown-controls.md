@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 876cdb3639c93e9a67316f5aaea4139f061efb17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b37b3883f6d55cc32b023d6d050a1e872311a33a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869009"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214263"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown
 
@@ -59,8 +59,8 @@ Dans la cinquième partie de ce tutoriel, vous allez ajouter des gestionnaires d
 
 3. Dans la méthode du gestionnaire d’événements **answer_Enter**, ajoutez le code suivant :
 
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
-     [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs" id="Snippet11":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 

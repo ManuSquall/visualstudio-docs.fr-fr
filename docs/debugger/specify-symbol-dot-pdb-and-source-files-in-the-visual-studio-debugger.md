@@ -2,7 +2,7 @@
 title: Définir les fichiers de symboles (. pdb) et les fichiers sources dans le débogueur
 description: Découvrez comment configurer et gérer les fichiers de symboles et les fichiers sources dans Visual Studio
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903575"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083682"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier des fichiers de symboles (. pdb) et sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -246,9 +246,10 @@ Dans ce cas, le débogueur affiche les pages **aucun symbole chargé** ou **aucu
 
 - Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné ou sélectionnez **nouveau chemin d'** accès ou **nouveau chemin d’accès VSTS** , puis entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour rechercher à nouveau les chemins d’accès et charger le fichier de symboles s’il est trouvé.
 - Pour remplacer toutes les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<executable-name>**. Le fichier de symboles est chargé s’il est trouvé, ou l' **Explorateur de fichiers** s’ouvre pour vous permettre de sélectionner manuellement le fichier de symboles.
-- Pour ouvrir la page **options** de  >  **débogage**  >   des options, sélectionnez **modifier les paramètres des symboles**.
-- Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine** ou sélectionnez **boîte de dialogue Options** pour définir l’option permettant d’afficher toujours le code machine lorsque les fichiers sources ou de symboles sont introuvables.
+- Pour ouvrir la page Paramètres de symbole pour configurer le comportement, sélectionnez **modifier les paramètres de symbole** (ou choisissez **options** de  >  **débogage**  >  **symboles**).
+- Détaillées Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine** ou sélectionnez **boîte de dialogue Options** pour définir l’option permettant d’afficher toujours le code machine lorsque les fichiers sources ou de symboles sont introuvables. Pour plus d’informations, consultez [afficher le code machine](../debugger/how-to-use-the-disassembly-window.md).
 - Pour afficher les emplacements recherchés et le résultat, développez **informations sur le chargement des symboles**.
+- Pour le code C#, vous pouvez également choisir de [décompiler le code source](../debugger/decompilation.md) des pages **aucun symbole chargé** ou **aucune source chargée** .
 
 Si le débogueur trouve le fichier *. pdb* après l’exécution de l’une des options et peut récupérer le fichier source à l’aide des informations contenues dans le fichier *. pdb* , il affiche la source. Dans le cas contraire, il affiche une page **aucune source chargée** qui décrit le problème, avec des liens vers des actions susceptibles de résoudre le problème.
 
@@ -259,6 +260,8 @@ Vous pouvez spécifier les emplacements où le débogueur recherche les fichiers
 1. Sélectionnez la solution dans **Explorateur de solutions**, puis sélectionnez l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et sélectionnez **Propriétés**.
 
 1. Sélectionnez **fichiers sources pour le débogage**.
+
+   ![Page fichiers sources pour le débogage](../debugger/media/dbg-source-files.png)
 
 1. Sous **répertoires contenant du code source**, tapez ou sélectionnez les emplacements de code source à rechercher. Utilisez l’icône **nouvelle ligne** pour ajouter d’autres emplacements, les icônes de direction **haut** et **bas** pour les réorganiser, ou l’icône **X** pour les supprimer.
 

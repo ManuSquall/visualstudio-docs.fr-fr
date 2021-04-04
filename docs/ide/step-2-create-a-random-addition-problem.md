@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7ee88f53fc9ce30467bd42a271d39cc912ec1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c33294f90839185d3b857eaec54d667c6575258
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950911"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214328"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
 
@@ -39,8 +39,8 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 3. Créez un objet <xref:System.Random> en ajoutant une instruction `new` dans la partie supérieure du code, comme suit :
 
-     [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
-     [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet1":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -57,13 +57,13 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      Utilisez une syntaxe similaire pour ajouter une variable de type entier de la même manière que vous avez ajouté l'objet aléatoire, à mesure que le code suivant s'affiche.
 
-     [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
-     [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet2":::
 
 5. Ajoutez une méthode nommée `StartTheQuiz()` et qui utilise la méthode <xref:System.Random.Next> de l'objet aléatoire pour afficher les nombres aléatoires dans les étiquettes. Ajoutez un commentaire pour indiquer que par la suite, `StartTheQuiz()` renseignera tous les problèmes, puis démarrera la minuterie. La fonction doit se présenter comme suit.
 
-     [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
-     [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet3":::
 
      Notez que quand vous entrez un point (.) après `randomizer` dans le code, une fenêtre IntelliSense s’ouvre et affiche les méthodes d’objet aléatoire que vous pouvez appeler. Par exemple, IntelliSense propose la méthode `Next()`, comme suit.
 
@@ -77,8 +77,8 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      Examinez attentivement ces instructions.
 
-     [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
-     [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet18":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet18":::
 
      Les instructions ont défini les propriétés **Text** de **plusLeftLabel** et **plusRightLabel** pour qu’elles affichent les deux nombres aléatoires. Vous devez utiliser la méthode `ToString()` de l'entier pour convertir les nombres en texte. (En programmation, chaîne signifie texte. Les contrôles Label n'affichent que le texte, pas les nombres.
 
@@ -88,8 +88,8 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 7. Ajoutez les deux instructions suivantes.
 
-     [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
-     [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet4":::
 
      La première instruction appelle la nouvelle méthode `StartTheQuiz()`. La deuxième instruction affecte à la propriété **Enabled** du contrôle **startButton** la valeur **False** pour que la personne interrogée ne puisse pas choisir le bouton durant le questionnaire.
 

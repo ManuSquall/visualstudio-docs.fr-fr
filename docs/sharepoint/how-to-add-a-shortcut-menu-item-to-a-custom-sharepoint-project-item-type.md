@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0679233a727e716debe5d925a22cd256d250a28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e4523d0f992ed72c9af2eb7e542f902578f9338
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923693"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215381"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Comment : ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez ajouter un élément de menu contextuel à l’élément de projet. L’élément de menu s’affiche lorsqu’un utilisateur clique avec le bouton droit sur l’élément de projet dans **Explorateur de solutions**.
@@ -40,8 +40,8 @@ ms.locfileid: "99923693"
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment ajouter un élément de menu contextuel à un type d’élément de projet personnalisé. Lorsque l’utilisateur ouvre le menu contextuel à partir de l’élément de projet dans **Explorateur de solutions** et choisit l’élément de menu **écrire le message dans fenêtre Sortie** , Visual Studio affiche un message dans la fenêtre **sortie** .
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb#4)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs" id="Snippet4":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb" id="Snippet4":::
 
  Cet exemple utilise le service de projet SharePoint pour écrire le message dans la fenêtre **sortie** . Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 

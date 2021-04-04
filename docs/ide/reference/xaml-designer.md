@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836187"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082524"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
 
@@ -64,6 +64,17 @@ Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la mod
 
 Ces paramètres déterminent le comportement du concepteur pendant la modification d’un document XAML.
 
+## <a name="default-zoom-setting"></a>Paramètre de zoom par défaut
+
+Utilisez ce paramètre pour déterminer la valeur de zoom par défaut pour l’affichage du document XAML.
+
+|Nom|Description|
+|-|-|
+|**Dernière utilisation**|Utilisez la dernière valeur de zoom utilisée pour tous les documents XAML par défaut. Lorsqu’un document XAML est ouvert pour la première fois, il utilise le paramètre « ajuster tout » pour la première fois uniquement.|
+|**Ajuster tout**|Utilisez cette option pour définir la valeur de zoom sur « ajuster tout » pour le concepteur XAML. Quand un document XAML est fermé et rouvert, la dernière valeur de l’ensemble est conservée pour cette session, mais pour les sessions différentes, l’option ajuster tout est utilisée par défaut.|
+
+Ces paramètres déterminent le comportement du concepteur lorsque vous modifiez un document XAML.
+
 |Nom|Description|
 |-|-|
 |**Nommer automatiquement les éléments interactifs à la création**|Spécifie si un nom par défaut est fourni pour un nouvel élément interactif quand vous l’ajoutez au concepteur.|
@@ -99,7 +110,7 @@ Utilisez ces paramètres pour déterminer le comportement du concepteur XAML pen
 
 Utilisez ce paramètre pour déterminer si un avertissement s’affiche quand des animations dépendantes (non accélérées) sont activées dans Blend.
 
-### <a name="effects"></a>Effects (Effets)
+### <a name="effects"></a>Effets
 
 Utilisez ces paramètres pour déterminer si des effets sont affichés pendant la modification de fichiers XAML dans le concepteur XAML à l’aide de Blend.
 

@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d38ccb600894cec523bd06d46f0aee071af8796
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950885"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214341"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Étape 2 : ajouter un objet aléatoire et une liste d'icônes
 
@@ -28,14 +28,14 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>Pour ajouter un objet aléatoire et une liste d'icônes
 
-1. Dans **Explorateur de solutions**, choisissez *Form1.cs* si vous utilisez C#, ou *Form1. vb* si vous utilisez Visual Basic, puis, dans la barre de menus, choisissez **Afficher** le  >  **code**. Vous pouvez aussi appuyer sur la touche **F7** ou double-cliquer sur **Form1** dans l’**Explorateur de solutions**.
+1. Dans **Explorateur de solutions**, choisissez *Form1. cs* si vous utilisez C#, ou *Form1. vb* si vous utilisez Visual Basic, puis, dans la barre de menus, choisissez **Afficher** le  >  **code**. Vous pouvez aussi appuyer sur la touche **F7** ou double-cliquer sur **Form1** dans l’**Explorateur de solutions**.
 
      Cela affiche le module de code derrière Form1.
 
 2. Dans le code existant, ajoutez le code suivant :
 
-     [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet1":::
 
       > [!IMPORTANT]
       > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher l’extrait de code C# ou l’extrait de code Visual Basic.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)

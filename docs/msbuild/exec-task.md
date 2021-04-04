@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877159"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083566"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 
@@ -49,11 +49,12 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 |`Outputs`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments de sortie de la tâche. La tâche `Exec` ne les définit pas elle-même. Au lieu de cela, vous pouvez les fournir comme si elle les définissait, pour qu’ils puissent être utilisés ultérieurement dans le projet.|
 |`StdErrEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux d’erreurs standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|
+|`UseUtf8Encoding`|Paramètre `String` facultatif.<br /><br /> Spécifie s’il faut utiliser la page de codes UTF8 lors du traitement de la ligne de commande pour les commandes exécutées. Les valeurs valides sont `Always`, `Never` ou `Detect`. La valeur par défaut est `Detect` , ce qui signifie utiliser la page de codes UTF8 uniquement lorsque des caractères non ANSI sont présents.|
 |`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.<br /><br />Par défaut : le répertoire de travail actif du projet.|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Cette tâche est utile quand une tâche MSBuild spécifique pour le travail que vous souhaitez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 
