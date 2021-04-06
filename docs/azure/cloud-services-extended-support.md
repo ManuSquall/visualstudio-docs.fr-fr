@@ -1,5 +1,5 @@
 ---
-title: Utiliser Cloud Services (support étendu) (préversion)
+title: Utiliser cloud services (prise en charge étendue)
 description: En savoir plus sur la création et le déploiement d’un service Cloud (prise en charge étendue) à l’aide de Azure Resource Manager avec Visual Studio
 author: ghogen
 manager: jmartens
@@ -9,32 +9,26 @@ ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 289bc88d9aef40fdc260ce84395b1c4b9237c689
+ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841131"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381597"
 ---
-# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Créer et déployer des services Cloud (prise en charge étendue) dans Visual Studio (version préliminaire)
+# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio"></a>Créer et déployer des services Cloud (prise en charge étendue) dans Visual Studio
 
-À compter de [Visual Studio 2019 version 16,9 (actuellement en préversion](https://visualstudio.microsoft.com/vs/preview) ), vous pouvez travailler avec des services Cloud à l’aide de Azure Resource Manager, ce qui simplifie et modernise grandement la maintenance et la gestion des ressources Azure. Cette option est activée par un nouveau service Azure appelé *services Cloud (prise en charge étendue)*. Vous pouvez publier un service cloud existant dans Cloud Services (support étendu). Pour plus d’informations sur ce service Azure, consultez la [documentation de Cloud Services (support étendu)](/azure/cloud-services-extended-support/overview).
+À compter de [Visual Studio 2019 version 16,9](https://visualstudio.microsoft.com/vs/), vous pouvez travailler avec des services Cloud à l’aide de Azure Resource Manager, ce qui simplifie et modernise grandement la maintenance et la gestion des ressources Azure. Cette option est activée par un nouveau service Azure appelé *services Cloud (prise en charge étendue)*. Vous pouvez publier un service cloud existant dans Cloud Services (support étendu). Pour plus d’informations sur ce service Azure, consultez la [documentation de Cloud Services (support étendu)](/azure/cloud-services-extended-support/overview).
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Publier dans cloud services (prise en charge étendue)
 
-Lorsque vous publiez votre projet de service Cloud Azure existant dans cloud services (prise en charge étendue), vous conservez toujours la possibilité de publier sur un service Cloud Azure classique. Dans Visual Studio 2019 version 16,9 Preview 3 et versions ultérieures, les projets de service Cloud classiques disposent d’une version spéciale de la commande **Publish** , **Publish (prise en charge étendue)**. Cette commande s’affiche dans le menu contextuel de **Explorateur de solutions**.
+Lorsque vous publiez votre projet de service Cloud Azure existant dans cloud services (prise en charge étendue), vous conservez toujours la possibilité de publier sur un service Cloud Azure classique. Dans Visual Studio 2019 version 16,9 et versions ultérieures, les projets de service Cloud classiques disposent d’une version spéciale de la commande **publier** , **publication (prise en charge étendue)**. Cette commande s’affiche dans le menu contextuel de **Explorateur de solutions**.
 
-Il existe quelques différences lors de la publication vers les services Cloud (prise en charge étendue). Par exemple, vous n’êtes pas invité à effectuer des publications dans un environnement **intermédiaire** ou de **production**, car ces emplacements de déploiement ne font pas partie du modèle de publication de prise en charge étendue. Au lieu de cela, avec cloud services (prise en charge étendue), vous pouvez configurer plusieurs déploiements et permuter les déploiements dans le Portail Azure. Bien que les outils Visual Studio permettent de définir ce paramètre dans 16,9 Preview 3, la fonctionnalité d’échange n’est pas activée jusqu’à une version ultérieure des services Cloud (prise en charge étendue) et peut entraîner un échec au moment du déploiement pendant la version préliminaire.
+Il existe quelques différences lors de la publication vers les services Cloud (prise en charge étendue). Par exemple, vous n’êtes pas invité à effectuer des publications dans un environnement **intermédiaire** ou de **production**, car ces emplacements de déploiement ne font pas partie du modèle de publication de prise en charge étendue. Au lieu de cela, avec cloud services (prise en charge étendue), vous pouvez configurer plusieurs déploiements et permuter les déploiements dans le Portail Azure. Bien que les outils Visual Studio permettent de définir ce paramètre dans 16,9, la fonctionnalité d’échange n’est pas activée jusqu’à une version ultérieure des services Cloud (prise en charge étendue) et peut entraîner un échec au moment du déploiement pendant la version préliminaire.
 
 Avant de publier un service Cloud Azure classique dans cloud services (prise en charge étendue), vérifiez les comptes de stockage que votre projet utilise et assurez-vous qu’il s’agit de comptes de stockage v1 ou Storage v2. Les types de comptes de stockage classiques échouent avec un message d’erreur au moment du déploiement. Veillez à vérifier le compte de stockage utilisé par les Diagnostics. Pour vérifier le compte de stockage des diagnostics, consultez [configurer les diagnostics pour les services Cloud et les machines virtuelles Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Si votre service utilise un compte de stockage classique, vous pouvez le mettre à niveau. consultez [mise à niveau vers un compte de stockage à usage général v2](/azure/storage/common/storage-account-upgrade?tabs=azure-portal).  Pour obtenir des informations générales sur les types de comptes de stockage, consultez [vue d’ensemble du compte de stockage](/azure/storage/common/storage-account-overview).
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>Pour publier un projet de service Cloud Azure classique dans cloud services (prise en charge étendue)
-
-1. Cloud Services (support étendu) est actuellement en préversion. Inscrivez la fonctionnalité pour votre abonnement comme suit :
-
-   ```azurepowershell-interactive
-   Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
-   ```
 
 1. Cliquez avec le bouton droit sur le nœud du projet dans votre projet Azure Cloud service (Classic), puis choisissez **publier (support étendu)..**.. L' **Assistant Publication** s’ouvre sur le premier écran.
 
@@ -89,7 +83,7 @@ Avant de publier un service Cloud Azure classique dans cloud services (prise en 
 
 1. Une fois que vous avez configuré tous les paramètres de déploiement de votre projet, sélectionnez **Publier** en bas de la boîte de dialogue. Vous pouvez superviser l’état du processus dans la fenêtre de sortie **Journal d’activité Azure** dans Visual Studio. Choisissez le lien **ouvrir dans le portail** pour 
 
-Félicitations ! Vous avez publié votre projet de service de Cloud Computing (support étendu) sur Azure. Pour effectuer une nouvelle publication avec les mêmes paramètres, vous pouvez réutiliser le profil de publication ou répéter ces étapes pour en créer un nouveau. Le modèle et les paramètres Azure Resource Manager (ARM) qui sont utilisés pour le déploiement sont enregistrés dans le dossier *bin/ \<configuration\> /Publish* .
+Félicitations ! Vous avez publié votre projet de service de Cloud Computing (support étendu) sur Azure. Pour effectuer une nouvelle publication avec les mêmes paramètres, vous pouvez réutiliser le profil de publication ou répéter ces étapes pour en créer un nouveau. Le modèle et les paramètres Azure Resource Manager (ARM) qui sont utilisés pour le déploiement sont enregistrés dans le dossier *bin/ \<configuration\> /Publish* .
 
 ## <a name="clean-up-azure-resources"></a>Nettoyage des ressources Azure
 
