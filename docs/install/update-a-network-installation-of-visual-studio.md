@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959153"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547399"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -33,17 +33,7 @@ Il est possible de mettre à jour une disposition d’installation réseau de Vi
 
 Pour actualiser le partage d’installation réseau et inclure les dernières mises à jour, exécutez la commande `--layout` pour télécharger de manière incrémentielle les packages mis à jour.
 
-::: moniker range="vs-2017"
-
-**Nouveauté de 15,3**: Si vous avez sélectionné une disposition partielle lorsque vous avez [créé la disposition du réseau](create-a-network-installation-of-visual-studio.md), ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 Si vous avez sélectionné une disposition partielle lorsque vous avez [créé la disposition du réseau](create-a-network-installation-of-visual-studio.md), ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.
-
-::: moniker-end
 
 Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\VSLayout), puis, une fois que tout le contenu mis à jour est téléchargé, copiez-le dans votre partage de fichiers (par exemple, \\ server\products\VS). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
 

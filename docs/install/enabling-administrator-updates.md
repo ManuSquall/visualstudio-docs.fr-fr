@@ -2,7 +2,7 @@
 title: Activation des mises à jour de l’administrateur pour Visual Studio avec le point de terminaison Microsoft Configuration Manager
 titleSuffix: ''
 description: En savoir plus sur le déploiement des mises à jour de l’administrateur vers Visual Studio.
-ms.date: 03/04/2021
+ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae0bdde60cbf4c4c1eed00847c76ee797809b8db
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9ca14e1f4e84777fd1781249dd54a6646fb2c72a
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617326"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547477"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>Activation des mises à jour de l’administrateur pour Visual Studio avec le point de terminaison Microsoft Configuration Manager
 
@@ -63,7 +63,7 @@ Pour permettre à un ordinateur client d’accepter les mises à jour de l’Adm
 
 ### <a name="visual-studio-client-detector-utility"></a>Utilitaire de détection du client Visual Studio 
 
-L’utilitaire de détection du client Visual Studio doit être installé sur les ordinateurs clients pour que les mises à jour de l’administrateur soient correctement reçues. Cet utilitaire a été inclus avec toutes les versions récentes de Visual Studio.  
+L' [utilitaire de détection du client Visual Studio](https://support.microsoft.com/help/5001148) doit être installé sur les ordinateurs clients afin que les mises à jour de l’administrateur soient correctement reconnues et reçues. Cet utilitaire a été inclus avec toutes les mises à jour de produit Visual Studio 2017 et Visual Studio 2019 publiées le 12 mai, ou après le 2020 12 mai, il est inclus comme condition préalable à l’ensemble des mises à jour de l’Administrateur Visual Studio. il est également disponible sur le [catalogue Microsoft Update](https://catalog.update.microsoft.com) pour une installation indépendante. 
 
 ### <a name="encoding-administrator-intent-on-the-client-machines"></a>Encodage de l’intention de l’administrateur sur les ordinateurs clients 
 
@@ -79,14 +79,14 @@ La clé **AdministratorUpdatesEnabled**   est conçue pour permettre à l’
 
 Vous pouvez utiliser les méthodes suivantes pour fournir des commentaires sur les mises à jour de l’Administrateur Visual Studio ou pour signaler des problèmes qui affectent les mises à jour :
 * Reportez-vous à la [résolution des problèmes d’installation et de mise à niveau de Visual Studio](../install/troubleshooting-installation-issues.md) .
-* Posez des questions à la Communauté lors de la [configuration visuelle Q&un forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
+* Posez des questions à la Communauté lors du [programme d’installation de Visual Studio Q&Forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
 * Accédez à la [page de support de Visual Studio](https://visualstudio.microsoft.com/vs/support/)et vérifiez si votre problème est mentionné dans le Forum aux questions.  Vous pouvez également sélectionner le bouton de [lien support](https://visualstudio.microsoft.com/vs/support/#talktous) pour l’aide de conversation.
-* [Fournissez des commentaires sur les fonctionnalités ou signalez un problème](https://aka.ms/vs/wsus/feedback) à l’équipe Visual Studio pour cette expérience.
+* [Fournissez des commentaires sur les fonctionnalités ou signalez un problème](https://aka.ms/vs/wsus/feedback) à l’équipe Visual Studio en ce qui concerne l’activation des mises à jour de l’administrateur.
 * Contactez le responsable technique de votre organisation pour Microsoft.
 
 ## <a name="see-also"></a>Voir aussi
 * [Application des mises à jour de l’administrateur](../install/applying-administrator-updates.md)
-* [Guide de l’Administrateur Visual Studio](../install/visual-studio-administrator-guide.md)
+* [Guide de l’administrateur Visual Studio](../install/visual-studio-administrator-guide.md)
 * [Cycle de vie et maintenance des produits Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)
 * [Notes de publication de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/release-notes)
 * [Notes de publication de Visual Studio 2017](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes)

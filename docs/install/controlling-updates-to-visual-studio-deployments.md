@@ -1,7 +1,7 @@
 ---
 title: Contrôler les mises à jour applicables aux déploiements
 description: Découvrez comment changer l’emplacement où Visual Studio recherche une mise à jour dans le cas d’une installation à partir d’un réseau.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,22 +15,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ffa088de8852b0d5884cd4d9db5e65e1c179164b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868541"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547490"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau
 
-Les administrateurs d’entreprise créent souvent une disposition qu’ils hébergent sur un partage de fichiers réseau en vue d’un déploiement pour les utilisateurs finaux.
+Les administrateurs d’entreprise créent souvent une disposition et l’hébergent sur un partage de fichiers réseau pour le déploiement sur leurs utilisateurs finaux. Cette page explique comment configurer correctement les options de disposition du réseau. 
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>Contrôle de l’emplacement où Visual Studio recherche des mises à jour
 
-Par défaut, Visual Studio continue de rechercher en ligne des mises à jour même si l’installation a été déployée à partir d’un partage réseau. Si une mise à jour est disponible, l’utilisateur peut l’installer. Tout contenu mis à jour qui ne se trouve pas dans la disposition en mode hors connexion est téléchargée à partir du web.
+**Scénario 1 : le client a été installé à l’origine à partir d’une disposition, mais il est configuré pour recevoir des mises à jour à partir de l’emplacement de la disposition du réseau ou du Web**
 
-Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio recherche les mises à jour, vous pouvez changer l’emplacement où il effectue sa recherche. Vous pouvez également déterminer la version avec laquelle vos utilisateurs sont mis à jour. Pour ce faire, procédez comme suit :
+Par défaut, Visual Studio continue de rechercher en ligne les mises à jour même si l’installation a été déployée à l’origine à partir d’un partage réseau. Si une mise à jour est disponible sur le Web, l’utilisateur peut l’installer. Bien que le cache de présentation réseau soit examiné en premier pour tous les bits de produit mis à jour, s’ils ne sont pas trouvés là, Visual Studio recherchera et téléchargera les bits du produit mis à jour à partir du Web.
+
+**Scénario 2 : le client a installé à l’origine et doit recevoir uniquement les mises à jour de la disposition du réseau**
+
+Si vous souhaitez contrôler l’endroit où le client Visual Studio recherche des mises à jour, par exemple, si votre ordinateur client n’a pas accès à Internet et que vous souhaitez vous assurer qu’il est installé uniquement et qu’il s’installe toujours à partir de la disposition, vous pouvez configurer l’emplacement où le programme d’installation du client recherche les bits du produit mis à jour. Il est préférable de s’assurer que ce paramètre est correctement configuré avant que le client effectue l’installation initiale à partir de la disposition. 
 
 1. Créez une disposition en mode hors connexion :
 
@@ -44,7 +48,7 @@ Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio rech
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
-3. Modifiez le fichier response.json dans la disposition et modifiez la valeur `channelUri` pour qu’elle pointe vers une copie de channelManifest.json que contrôle l’administrateur.
+3. Modifiez le `response.json` fichier dans la disposition et modifiez la `channelUri` valeur pour qu’elle pointe vers une copie de l' channelManifest.jssur ce contrôle d’administration.
 
    Veillez à placer une séquence d’échappement avec les barres obliques inverses dans la valeur, comme dans l’exemple suivant :
 
@@ -52,7 +56,7 @@ Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio rech
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Les utilisateurs finaux peuvent maintenant exécuter le programme d’installation à partir de ce partage pour installer Visual Studio.
+   Désormais, les utilisateurs finaux peuvent exécuter le programme d’installation à partir de ce partage pour installer Visual Studio.
 
    ```cmd
    \\server\share\VS\vs_enterprise.exe
@@ -66,15 +70,20 @@ Quand un administrateur d’entreprise détermine que le moment est venu pour le
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
-2. Vérifiez que le fichier response.json de la disposition mise à jour contient toujours vos personnalisations, en particulier la modification de channelUri, comme suit :
+2. Assurez-vous que le `response.json` fichier dans la disposition mise à jour contient toujours vos personnalisations, en particulier la modification channelUri, comme suit :
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Les installations existantes de Visual Studio à partir de cette disposition recherchent les mises à jour sur `\\server\share\VS\ChannelManifest.json`. Si le fichier channelManifest.json est plus récent que celui que l’utilisateur a installé, Visual Studio informe l’utilisateur qu’une mise à jour est disponible.
+Les installations existantes de Visual Studio à partir de cette disposition recherchent les mises à jour sur `\\server\share\VS\ChannelManifest.json`. Si le fichier channelManifest.json est plus récent que celui que l’utilisateur a installé, Visual Studio informe l’utilisateur qu’une mise à jour est disponible.
 
-   Les nouvelles installations installent automatiquement la version mise à jour de Visual Studio, directement à partir de la disposition.
+Toute mise à jour d’installation lancée à partir du client installera automatiquement la version mise à jour de Visual Studio directement à partir de la disposition.
+
+**Scénario 3 : le client a été installé à l’origine à partir du Web, mais ne doit recevoir des mises à jour qu’à partir d’une disposition réseau**
+
+Dans certains cas, l’ordinateur client a peut-être déjà installé Visual Studio à partir du Web, mais l’administrateur souhaite à présent que toutes les mises à jour ultérieures proviennent d’une disposition gérée. La seule méthode prise en charge pour cela consiste à créer une disposition réseau avec la version souhaitée du produit, puis sur l’ordinateur client, à exécuter le programme _d’amorçage à partir de l’emplacement_ de la disposition (par exemple, `\\network\share\vs_enterprise.exe` ). Dans l’idéal, l’installation originale du client s’est produite à l’aide du programme d’amorçage de la disposition du réseau avec le ChannelURI correctement configuré, mais l’exécution du programme d’amorçage mis à jour à partir de l’emplacement de la disposition du réseau fonctionne également. L’une de ces actions entraînerait l’incorporation, sur l’ordinateur client, d’une connexion avec cet emplacement de disposition particulier. Le seul inconvénient de ce scénario est que le « ChannelURI » dans le fichier de la disposition `response.json` doit être le même que le ChannelURI défini sur l’ordinateur du client lors de l’installation d’origine. Cette valeur a probablement été définie à l’origine sur le [canal de publication](https://aka.ms/vs/16/release/channel)Internet. 
+
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Contrôle des notifications dans l’IDE de Visual Studio
 
@@ -125,8 +134,9 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer Visual Studio](install-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+* [Activation des mises à jour de l’administrateur](enabling-administrator-updates.md)
+* [Application des mises à jour de l’administrateur](applying-administrator-updates.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Outils de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Maintenance et cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing/)

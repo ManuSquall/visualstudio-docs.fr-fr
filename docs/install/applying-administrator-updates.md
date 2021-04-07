@@ -2,7 +2,7 @@
 title: Application des mises à jour de l’administrateur à Visual Studio avec le point de terminaison Microsoft Configuration Manager
 titleSuffix: ''
 description: Découvrez comment appliquer les mises à jour de l’administrateur à Visual Studio.
-ms.date: 03/10/2021
+ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 78c2de8b1d1ffb28cc536b770bf6bd9a4ab0aa35
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617327"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547451"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Application des mises à jour de l’administrateur qui utilisent le point de terminaison Microsoft Configuration Manager
 
@@ -44,52 +44,70 @@ Il existe trois types de mises à jour de l’administrateur pour Visual Studio�
 
 Le titre de chaque mise à jour d’administrateur décrit la plage de versions applicable et la version résultante de la mise à jour.Par exemple,
 
-* La **version 16.7.0 de Visual studio 2019 à 16.7.12 mise à jour** classifiée comme une « mise à jour de sécurité » s’applique à toute édition de Visual Studio sur le client entre les versions 16.7.0 à 16.7.12, et elle met à jour ces éditions clientes vers 16.7.12.  
+::: moniker range="vs-2017"
 
-* La **version 16.0.0 de Visual studio 2019 vers 16.9.0 mise à jour** classifiée comme un « Feature Pack » s’applique à certaines éditions de Visual Studio sur le client entre la totalité de la plage de versions de produit de 16.0.0 à 16.9.0, et elle mettra à jour ces éditions client (qui n’ont pas été configurées pour rester sur une ligne de base de maintenance antérieure) vers 16.9.0. 
+* La **version 15.9.0 de Visual studio 2017 à 15.9.35 mise à jour** classifiée comme une « mise à jour de sécurité » s’applique à toute édition de visual studio 2017 sur le client entre les versions 15.9.0 à 15.9.35, et elle mettra à jour ces éditions clientes vers 15.9.35.
 
-* La **version 16.8.0 de Visual studio 2019 à 16.8.7 mise à jour** classée comme simple « mises à jour » s’applique à certaines éditions de Visual Studio sur le client entre les versions 16.8.0 à 16.8.7 et met à jour ces éditions clientes vers 16.8.7. 
+* La **version 15.0.0 de Visual studio 2017 vers 15.9.0 mise à jour** classifiée comme un « Feature Pack » s’applique aux éditions de visual studio 2017 sous licence pour une utilisation en entreprise sur le client entre la plage de versions de produit entière de 15.0.0 à 15.9.0, et elle met à jour ces éditions clientes vers 15.9.0. L’application de ce pack de fonctionnalités permet aux clients de recevoir des mises à jour de sécurité. 
+
+* La **version 15.9.0 de Visual studio 2017 à la mise à jour 15.9.37** classée comme simple « mises à jour » s’applique aux éditions de visual studio 2017 sous licence pour une utilisation en entreprise sur le client entre les versions 15.9.0 à 15.9.37, et elle met à jour ces éditions clientes vers 15.9.37. 
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* La **version 16.7.0 de Visual studio 2019 à 16.7.12 mise à jour** classifiée comme une « mise à jour de sécurité » s’applique à toute édition de visual studio 2019 sur le client entre les versions 16.7.0 à 16.7.12, et elle mettra à jour ces éditions clientes vers 16.7.12.  
+
+* La **version 16.0.0 de Visual studio 2019 vers 16.9.0 mise à jour** classifiée comme un « Feature Pack » s’applique aux éditions de visual studio 2019 sous licence pour une utilisation en entreprise sur le client entre la plage de versions de produit entière de 16.0.0 à 16.9.0, et elle met à jour les éditions clientes (qui n’ont pas été configurées pour rester sur une ligne de base de maintenance antérieure) 
+
+* La **version 16.8.0 de Visual studio 2019 à la mise à jour 16.8.7** classée comme simple « mises à jour » s’applique aux éditions de visual studio 2019 sous licence pour une utilisation en entreprise sur le client entre les versions 16.8.0 à 16.8.7, et elle met à jour ces éditions clientes vers 16.8.7. 
+
+::: moniker-end
 
 ## <a name="using-configuration-manager-to-deploy-visual-studio-updates"></a>Utilisation de Configuration Manager pour déployer des mises à jour de Visual Studio
 
 ### <a name="understanding-configuration-options"></a>Comprendre les options de configuration
 
-Certaines options de configuration peuvent être utilisées pour adapter les mises à jour de l’Administrateur Visual Studio afin qu’elles soient compatibles et alignées avec les exigences de déploiement de votre organisation. Les options les plus courantes sont répertoriées ci-dessous.  Pour obtenir une liste exhaustive de tous les paramètres de ligne de commande pris en charge par les mises à jour de l’administrateur, reportez-vous à la [documentation utiliser les paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) et ne prêter attention qu’à ceux qui correspondent à l’action « mettre à jour ».
+Certaines options de configuration peuvent être utilisées pour adapter les mises à jour de l’Administrateur Visual Studio afin qu’elles soient compatibles et alignées avec les préférences et exigences de déploiement de votre organisation. Les options de configuration les plus courantes sont répertoriées ci-dessous. Pour obtenir une liste exhaustive de tous les comportements de mise à jour administrateur pris en charge, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) et faire attention uniquement à ceux qui correspondent à l’action « mettre à jour ».
 
-* **Abonnement à la mise à jour des administrateurs**: cette clé de Registre décrite dans [activation des mises à jour](../install/enabling-administrator-updates.md) de l’administrateur est requise pour que l’ordinateur client reçoive les mises à jour de l’administrateur. Il s’agit d’une clé à l’ensemble de l’ordinateur, ce qui signifie qu’elle s’applique à toutes les instances de Visual Studio installées sur la boîte. 
+* **[Abonnement à la mise à jour des administrateurs](../install/enabling-administrator-updates.md#encoding-administrator-intent-on-the-client-machines)**: cette clé de Registre est nécessaire pour que l’ordinateur client reçoive les mises à jour de l’administrateur. Il s’agit d’une clé à l’ensemble de l’ordinateur, ce qui signifie qu’elle s’applique à toutes les instances de Visual Studio installées sur la boîte. 
  
-* **Désactivation du développeur**: les développeurs peuvent utiliser une clé de **AdministratorUpdatesOptOut** à l’ensemble de l’ordinateur   pour refuser de recevoir *les* mises à jour de l’Administrateur Visual Studio. L’objectif de cette clé est d’encoder l’intention de l’utilisateur Visual Studio. Pour configurer l’ordinateur client de façon à bloquer les mises à jour de l’administrateur, affectez la valeur 1 à la clé **AdministratorUpdatesOptOut**   REG_DWORD. **** L’absence de clé ou une valeur définie égale à **0** signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio.
+* Désactivation de l' **utilisateur Visual Studio**: les utilisateurs de Visual Studio peuvent utiliser une clé de Registre **AdministratorUpdatesOptOut** à l’ensemble de l’ordinateur pour refuser de recevoir *les* mises à jour de l’Administrateur Visual Studio. L’objectif de cette clé est de permettre à l’utilisateur de Visual Studio de contrôler que des mises à jour sont appliquées automatiquement à l’ordinateur. Pour configurer l’ordinateur client de façon à bloquer les mises à jour de l’administrateur, affectez la valeur 1 à la clé **AdministratorUpdatesOptOut**   REG_DWORD. **** L’absence de clé ou une valeur définie égale à **0** signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio.
 
-    Notez que la ****   clé AdministratorUpdatesOptOut (pour l’encodage de l’intention du développeur) est hiérarchisée par rapport à la clé **AdministratorUpdatesEnabled**   , qui encode l’intention de l’administrateur informatique. Si **AdministratorUpdatesOptOut**   a la valeur **1**, la mise à jour est bloquée sur le client, même si la clé **AdministratorUpdatesEnabled**   est également définie sur **1**.Cette action suppose que les administrateurs informatiques peuvent accéder et surveiller les développeurs qui choisissent de se désabonner, et que les deux parties peuvent ensuite discuter des besoins les plus importants.Les administrateurs informatiques peuvent toujours modifier l’une ou l’autre clé chaque fois qu’ils le souhaitent.
+    Notez que la clé **AdministratorUpdatesOptOut**   pour l’encodage de la préférence utilisateur est prioritaire par rapport à la clé **AdministratorUpdatesEnabled**   , qui encode l’intention de l’administrateur informatique. Si **AdministratorUpdatesOptOut**   a la valeur **1**, la mise à jour est bloquée sur le client, même si la clé **AdministratorUpdatesEnabled**   est également définie sur **1**.Cette action suppose que les administrateurs informatiques peuvent accéder et surveiller les développeurs qui choisissent de se désabonner, et que les deux parties peuvent ensuite discuter des besoins les plus importants.Les administrateurs informatiques peuvent toujours modifier l’une ou l’autre clé chaque fois qu’ils le souhaitent.
  
-* **Emplacement des bits du produit mis à jour**: la plupart du temps, les ordinateurs clients téléchargent les bits du produit mis à jour à partir d’Internet via le CDN Microsoft. Ce scénario requiert que les ordinateurs clients aient accès à Internet. Certaines entreprises, toutefois, limitent les ordinateurs clients pour installer et mettre à jour uniquement les bits à partir d’un emplacement de disposition réseau interne. Pour vous assurer que les mises à jour de l’administrateur peuvent être appliquées à partir d’un emplacement réseau interne, les conditions suivantes doivent être remplies : 
+* **Emplacement des bits du produit mis à jour**: la plupart du temps, les ordinateurs clients téléchargent les bits du produit mis à jour à partir d’Internet via le CDN Microsoft. Ce scénario requiert que les ordinateurs clients aient accès à Internet. Certaines entreprises, toutefois, limitent les ordinateurs clients pour installer et mettre à jour uniquement les bits à partir d’un emplacement de disposition réseau interne. Pour vous assurer que les mises à jour de l’administrateur peuvent être appliquées à l’aide de bits mis à jour qui se trouvent sur un emplacement réseau interne, les conditions suivantes doivent être remplies pour que la mise à jour de l’administrateur puisse être déployée correctement : 
 
-  - L’ordinateur client doit avoir installé à l’origine le produit à partir d’un emplacement de disposition réseau (c’est-à-dire un cache d’installation local). 
-  - Cet emplacement de disposition réseau (où le client installé à l’origine) a été [mis à jour pour contenir les bits du produit mis à jour](../install/update-a-network-installation-of-visual-studio.md) spécifiés par la mise à jour de l’administrateur. 
- 
-* **Forcer la mise à jour, même si Visual Studio est en cours d’utilisation**: Visual Studio doit être fermé avant l’installation de la mise à jour. Si Visual Studio est ouvert ou en cours d’utilisation, l’installation de la mise à jour sera abandonnée. Un moyen simple de s’assurer que Visual Studio est fermé consiste à configurer le gestionnaire de confirmation pour qu’il applique la mise à jour juste après le redémarrage de l’ordinateur. Vous pouvez également utiliser le `--force` paramètre pour forcer l’arrêt de Visual Studio. Le fait de forcer la fermeture de Visual Studio peut entraîner une perte de travail. Utilisez-le avec précaution. L’exécution d’une mise à jour d’administrateur dans le contexte système par défaut ignorera l' `–-force` indicateur. vous devrez donc configurer la mise à jour de l’administrateur pour qu’elle soit exécutée dans le contexte de l’utilisateur.
- 
+  - L’ordinateur client doit avoir, à un moment donné, déjà exécuté le programme d’amorçage à partir de cet emplacement de disposition réseau. Dans l’idéal, l’installation du client d’origine aurait été effectuée à l’aide du programme d’amorçage à partir de la disposition du réseau, mais il est également possible d’installer une mise à jour à l’aide d’un programme d’amorçage mis à jour situé dans le même emplacement réseau. L’une de ces actions entraînerait l’incorporation, sur l’ordinateur client, d’une connexion avec cet emplacement de disposition particulier.   
+  - L’emplacement de la disposition réseau (à laquelle le client est connecté) doit être [mis à jour pour contenir les bits du produit mis à jour](../install/update-a-network-installation-of-visual-studio.md) que la mise à jour de l’administrateur souhaite déployer. 
+
+::: moniker range="vs-2019"
+
 * **Adhérence** de la ligne de base de maintenance : comme décrit ci-dessus, les mises à jour d’administrateur qui sont des mises à jour de fonctionnalités font progresser une installation de Visual Studio vers une version mineure plus récente du produit. Toutefois, les équipes de développement doivent parfois conserver un niveau de ligne de base de maintenance stable et sécurisé particulier, et elles souhaitent contrôler le moment où leurs clients avancent vers une version mineure plus récente. Pour configurer un ordinateur client de façon à ce qu’il reste sur une ligne de base de maintenance et ignorer les mises à jour de fonctionnalités d’administrateur indésirables qui lui sont envoyées, vous devez créer et définir la valeur de données **BaselineStickinessVersions2019** REG_SZ sur une chaîne qui représente les lignes de base autorisées que l’ordinateur client peut aligner et rester.  La chaîne peut contenir une séquence de versions de ligne de base de maintenance, séparées par des virgules, telles que **16.4.0, 16.7.0**. N’importe quel nombre de versions de ligne de base de maintenance peuvent être incluses dans la chaîne, et le mot **tout**, qui est un raccourci pour référencer toutes les lignes de base de maintenance prises en charge, est également pris en charge. 
 
      Si la `BaselineStickinessVersions2019` valeur de Registre est incorrecte, l’installation de toutes les mises à jour de fonctionnalités sera bloquée sur l’ordinateur. Veuillez également prêter attention aux [délais pris en charge pour les mises à jour des fonctionnalités Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Bien qu’il soit techniquement possible d’appliquer des mises à jour de fonctionnalités qui ont atteint la fin de leur durée de vie, nous ne le recommandons pas, car ils ne seront plus pris en charge et, par conséquent, potentiellement non sécurisés.
+
+::: moniker-end
+
+* **Forcer la mise à jour, même si Visual Studio est en cours d’utilisation**: Visual Studio doit être fermé avant l’installation de la mise à jour. Si Visual Studio est ouvert ou en cours d’utilisation, l’installation de la mise à jour sera abandonnée. Un moyen simple de s’assurer que Visual Studio est fermé consiste à configurer le gestionnaire de confirmation pour qu’il applique la mise à jour juste après le redémarrage de l’ordinateur. Vous pouvez également utiliser le `--force` paramètre pour forcer l’arrêt de Visual Studio. Le fait de forcer la fermeture de Visual Studio peut entraîner une perte de travail. Utilisez-le avec précaution. L’exécution d’une mise à jour d’administrateur dans le contexte système par défaut ignorera l' `–-force` indicateur. vous devrez donc configurer la mise à jour de l’administrateur pour qu’elle soit exécutée dans le contexte de l’utilisateur.
 
 ### <a name="methods-for-configuring-an-administrator-update"></a>Méthodes de configuration d’une mise à jour d’administrateur
 
 Il existe trois méthodes principales de configuration des mises à jour de l’administrateur : une clé de Registre, un fichier de configuration sur l’ordinateur client ou une modification du package de déploiement Configuration Manager lui-même.   
 
-* **Clé de Registre**: les mises à jour de l’administrateur recherchent des clés de Registre spécifiques dans l’un des emplacements Visual Studio standard, comme décrit dans la documentation [définir les valeurs par défaut pour les déploiements d’entreprise]. Les options contrôlées par les clés de Registre sont des éléments tels que **AdministratorUpdatesOptOut** REG_DWORD, **AdministratorUpdatesOptOut**   REG_DWORD et **BaselineStickinessVersions2019** REG_SZ. L’accès administrateur sur l’ordinateur client est requis pour créer et définir la valeur des clés de registre. 
+* **Clé de Registre**: les mises à jour de l’administrateur recherchent des clés de Registre spécifiques dans l’un des emplacements Visual Studio standard, comme décrit dans [définir des valeurs par défaut pour les déploiements d’entreprise](../install/set-defaults-for-enterprise-deployments.md). Les options contrôlées par les clés de Registre sont des éléments tels que **AdministratorUpdatesOptOut** REG_DWORD, **AdministratorUpdatesOptOut**   REG_DWORD et **BaselineStickinessVersions2019** REG_SZ. L’accès administrateur sur l’ordinateur client est requis pour créer et définir la valeur des clés de registre. 
  
 * **Fichier de configuration**: certains paramètres peuvent être conservés sur l’ordinateur client dans un fichier de configuration facultatif, ce qui vous permet de les configurer une seule fois et de les appliquer à toutes les futures mises à jour de l’administrateur. L’approche du fichier de configuration se comporte comme une clé de Registre et est une machine à l’ensemble de l’ordinateur, ce qui signifie qu’elle s’appliquera à toutes les installations de Visual Studio installées sur l’ordinateur client. L’emplacement standard du fichier de configuration est `C:\ProgramData\Microsoft\VisualStudio\updates.config` . Toutefois, si vous souhaitez utiliser un autre emplacement pour stocker le fichier, vous pouvez le faire en créant une clé de Registre Reg_SZ appelée **UpdateConfigurationFile** et en définissant la valeur de cette clé sur le chemin d’accès de votre fichier de configuration. Cette clé de Registre peut être placée dans l’un des emplacements de registre de Visual Studio, comme décrit dans [définir les valeurs par défaut pour les déploiements d’entreprise](../install/set-defaults-for-enterprise-deployments.md). Si vous choisissez d’ajouter une valeur de Registre pour un emplacement de fichier de configuration personnalisé, il recherchera ce fichier ; Si le fichier n’existe pas, une exception est levée et la mise à jour échoue.    
  
-Le fichier de configuration, au format JSON, prend en charge l’option `installerUpdateArgs` qui est un tableau de chaînes séparées par des virgules qui spécifient d’autres commutateurs que vous pouvez passer dans le programme d’installation de Visual Studio. Si le contenu du fichier contient un champ non valide ou une option qui n’est pas prise en charge, la mise à jour échoue. Pour plus d’informations, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md).
+     Le fichier de configuration, au format JSON, prend en charge l’option `installerUpdateArgs` qui est un tableau de chaînes séparées par des virgules qui spécifient d’autres commutateurs que vous pouvez passer dans le programme d’installation de Visual Studio. Si le contenu du fichier contient un champ non valide ou une option qui n’est pas prise en charge, la mise à jour échoue. Pour plus d’informations, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md).
  
-Voici un exemple de fichier de configuration : 
+   Voici un exemple de fichier de configuration : 
 
-```
-“installerUpdateArgs” : [“--quiet”, “--noWeb”], 
+   ```
+   “installerUpdateArgs” : [“--quiet”, “--noWeb”], 
 
-“checkPendingReboot” :  “true” 
-```
+   “checkPendingReboot” :  “true” 
+   ```
 
 * **Mise à jour manuelle du package de mises à jour de l’administrateur dans SCCM**: les paramètres de ligne de commande d’un package de mise à jour d’administrateur individuel dans SCCM peuvent également être modifiés manuellement.
 
@@ -124,7 +142,7 @@ Les mises à jour administratives peuvent renvoyer les codes de retour suivants�
 | 1007 | Le Visual Studio Installer n’est pas installé. |
 | 1008 | La valeur de Registre **BaselineStickinessVersions2019** n’est pas dans un format lisible. La valeur de registre doit inclure **toutes les** versions ou des versions valides avec le numéro de build défini sur 0 explicitement, par exemple, X. Y. 0. |
 | 3010 | Le système nécessite un redémarrage.La mise à jour a peut-être été appliquée ou non. Redémarrez l’ordinateur et réessayez d’effectuer la mise à jour. |
-| Autre | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
+| Autres | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
 
 Pour obtenir une liste exhaustive des codes d’erreur du client, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). 
 
@@ -133,14 +151,14 @@ Pour obtenir une liste exhaustive des codes d’erreur du client, consultez [u
 
 Vous pouvez utiliser les méthodes suivantes pour fournir des commentaires sur les mises à jour de l’Administrateur Visual Studio ou pour signaler des problèmes qui affectent les mises à jour :
 * Reportez-vous à la [résolution des problèmes d’installation et de mise à niveau de Visual Studio](../install/troubleshooting-installation-issues.md) .
-* Posez des questions à la Communauté lors de la [configuration visuelle Q&un forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
+* Posez des questions à la Communauté lors du [programme d’installation de Visual Studio Q&Forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
 * Accédez à la [page de support de Visual Studio](https://visualstudio.microsoft.com/vs/support/)et vérifiez si votre problème est mentionné dans le Forum aux questions.  Vous pouvez également sélectionner le bouton de [lien support](https://visualstudio.microsoft.com/vs/support/#talktous) pour l’aide de conversation.
-* [Fournissez des commentaires sur les fonctionnalités ou signalez un problème](https://aka.ms/vs/wsus/feedback) à l’équipe Visual Studio pour cette expérience.
+* [Fournissez des commentaires sur les fonctionnalités ou signalez un problème](https://aka.ms/vs/wsus/feedback) à l’équipe Visual Studio en ce qui concerne l’application des mises à jour de l’administrateur.
 * Contactez le responsable technique de votre organisation pour Microsoft.
 
 ## <a name="see-also"></a>Voir aussi
 * [Activation des mises à jour de l’administrateur](../install/enabling-administrator-updates.md)    
-* [Guide de l’Administrateur Visual Studio](../install/visual-studio-administrator-guide.md)
+* [Guide de l’administrateur Visual Studio](../install/visual-studio-administrator-guide.md)
 * [Cycle de vie et maintenance des produits Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)
 * [Notes de publication de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/release-notes)
 * [Notes de publication de Visual Studio 2017](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes)

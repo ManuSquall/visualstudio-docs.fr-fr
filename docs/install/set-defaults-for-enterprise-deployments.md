@@ -1,7 +1,7 @@
 ---
 title: Définir les valeurs par défaut des déploiements d’entreprise
 description: Découvrez les stratégies de domaine et autres opérations de configuration disponibles pour les déploiements en entreprise de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fd5e96246778e1a8fd4ec1d87221ff04e8647cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959270"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547464"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio
 
@@ -50,12 +50,30 @@ Certaines valeurs de Registre sont définies automatiquement la première fois q
 
 Vous pouvez définir les valeurs de Registre suivantes :
 
+::: moniker range="vs-2017"
 | **Nom** | **Type** | **Par défaut** | **Description** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez la page [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez la page [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
-| `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affectera que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
+| `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affecte que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
+| `UpdateConfigurationFile` | `REG_SZ` ou `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Chemin d’accès de fichier pour la configuration des mises à jour administratives. Pour plus d’informations, consultez [méthodes de configuration d’une mise à jour d’administrateur](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
+::: moniker-end
+
+::: moniker range="vs-2019"
+| **Nom** | **Type** | **Par défaut** | **Description** |
+| -------- | -------- | ----------- | --------------- |
+| `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affecte que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
+| `UpdateConfigurationFile` | `REG_SZ` ou `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Chemin d’accès de fichier pour la configuration des mises à jour administratives. Pour plus d’informations, consultez [méthodes de configuration d’une mise à jour d’administrateur](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
+| `BaselineStickinessVersions2019` | `REG_SZ` ou `REG_EXPAND_SZ` | `ALL` ou `16.4.0,16.7.0,16.9.0` | Les versions autorisant les mises à jour à rester sur les lignes de base de maintenance spécifiées. Pour plus d’informations, consultez la page [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options) de l’administrateur. | 
+::: moniker-end
 
 > [!IMPORTANT]
 > Si vous modifiez la stratégie de Registre `CachePath` après une installation, vous devez déplacer le cache du package existant vers le nouvel emplacement et vérifier qu’il est sécurisée pour que `SYSTEM` et `Administrators` disposent d’un contrôle total et `Everyone` d’un accès en lecture.
@@ -66,5 +84,6 @@ Vous pouvez définir les valeurs de Registre suivantes :
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer Visual Studio](install-visual-studio.md)
+- [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 - [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md)
 - [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
