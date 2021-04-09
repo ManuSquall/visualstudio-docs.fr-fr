@@ -2,7 +2,7 @@
 title: Application des mises à jour de l’administrateur à Visual Studio avec le point de terminaison Microsoft Configuration Manager
 titleSuffix: ''
 description: Découvrez comment appliquer les mises à jour de l’administrateur à Visual Studio.
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547451"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031604"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Application des mises à jour de l’administrateur qui utilisent le point de terminaison Microsoft Configuration Manager
 
@@ -83,9 +83,9 @@ Certaines options de configuration peuvent être utilisées pour adapter les mis
 
 ::: moniker range="vs-2019"
 
-* **Adhérence** de la ligne de base de maintenance : comme décrit ci-dessus, les mises à jour d’administrateur qui sont des mises à jour de fonctionnalités font progresser une installation de Visual Studio vers une version mineure plus récente du produit. Toutefois, les équipes de développement doivent parfois conserver un niveau de ligne de base de maintenance stable et sécurisé particulier, et elles souhaitent contrôler le moment où leurs clients avancent vers une version mineure plus récente. Pour configurer un ordinateur client de façon à ce qu’il reste sur une ligne de base de maintenance et ignorer les mises à jour de fonctionnalités d’administrateur indésirables qui lui sont envoyées, vous devez créer et définir la valeur de données **BaselineStickinessVersions2019** REG_SZ sur une chaîne qui représente les lignes de base autorisées que l’ordinateur client peut aligner et rester.  La chaîne peut contenir une séquence de versions de ligne de base de maintenance, séparées par des virgules, telles que **16.4.0, 16.7.0**. N’importe quel nombre de versions de ligne de base de maintenance peuvent être incluses dans la chaîne, et le mot **tout**, qui est un raccourci pour référencer toutes les lignes de base de maintenance prises en charge, est également pris en charge. 
+* **Adhérence** de la ligne de base de maintenance : comme décrit ci-dessus, les mises à jour des fonctionnalités d’administration font progresser une installation de Visual Studio vers une version mineure plus récente du produit. Toutefois, les utilisateurs de Visual Studio doivent parfois conserver un niveau de ligne de base de maintenance stable et sécurisé particulier et ils souhaitent contrôler le moment où leur ordinateur passe à une version mineure plus récente. Pour configurer un ordinateur client de façon à ce qu’il reste sur une ligne de base de maintenance et ignorer les mises à jour de fonctionnalités d’administrateur indésirables qui lui sont envoyées, vous devez créer et définir la valeur de données **BaselineStickinessVersions2019** REG_SZ sur une chaîne qui représente la ligne de base préférée à laquelle l’ordinateur client doit s’aligner et rester. La chaîne peut contenir une version de ligne de base de maintenance autorisée, telle que **16.7.0**.  
 
-     Si la `BaselineStickinessVersions2019` valeur de Registre est incorrecte, l’installation de toutes les mises à jour de fonctionnalités sera bloquée sur l’ordinateur. Veuillez également prêter attention aux [délais pris en charge pour les mises à jour des fonctionnalités Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Bien qu’il soit techniquement possible d’appliquer des mises à jour de fonctionnalités qui ont atteint la fin de leur durée de vie, nous ne le recommandons pas, car ils ne seront plus pris en charge et, par conséquent, potentiellement non sécurisés.
+     Si la `BaselineStickinessVersions2019` valeur de Registre est incorrecte, l’installation de toutes les mises à jour de fonctionnalités d’administrateur sera bloquée sur l’ordinateur. Veillez à prendre en considération les [délais pris en charge pour les mises à jour des fonctionnalités Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). En outre, quelle que soit la présence ou la valeur de la `BaselineStickinessVersions2019` clé, bien qu’il soit techniquement possible d’appliquer des mises à jour de fonctionnalités d’administration qui ont atteint la fin de leur durée de vie, nous ne le recommandons pas, car ils ne seront plus pris en charge et, par conséquent, potentiellement non sécurisés.
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ Les mises à jour administratives peuvent renvoyer les codes de retour suivants�
 | 1007 | Le Visual Studio Installer n’est pas installé. |
 | 1008 | La valeur de Registre **BaselineStickinessVersions2019** n’est pas dans un format lisible. La valeur de registre doit inclure **toutes les** versions ou des versions valides avec le numéro de build défini sur 0 explicitement, par exemple, X. Y. 0. |
 | 3010 | Le système nécessite un redémarrage.La mise à jour a peut-être été appliquée ou non. Redémarrez l’ordinateur et réessayez d’effectuer la mise à jour. |
-| Autres | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
+| Autre | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
 
 Pour obtenir une liste exhaustive des codes d’erreur du client, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). 
 

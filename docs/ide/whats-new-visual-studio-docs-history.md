@@ -15,16 +15,62 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622567"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031591"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
-Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents avant le 2021 du 1er février (à partir du 2020 juillet). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2021 mars (à compter du 1er juillet 2020). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+
+## <a name="february-2021"></a>Février 2021
+
+### <a name="debugger"></a>Débogueur
+
+**Articles mis à jour**
+
+- [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -mises à jour pour l’accessibilité
+
+### <a name="get-started"></a>Bien démarrer
+
+**Articles mis à jour**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -Update voir également des liens dans VS2017 ouvrir un projet à partir d’un référentiel
+- [Didacticiel : ouvrir un projet à partir d’un lien référentiel](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) -ajouter à la version VS2017 de la page « ouvrir un projet à partir d’un référentiel »
+
+### <a name="ide"></a>IDE
+
+**Articles mis à jour**
+
+- [Dépanner et créer des journaux pour les problèmes MSBuild](./msbuild-logs.md) : ajouter des instructions sur l’utilisation de l’extension outils système de projet
+
+### <a name="install"></a>Installer
+
+**Articles mis à jour**
+
+- [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md)
+  - Ajouter 2017 exemple dans le tableau d’options
+  - Ajouter des exemples pour VS2017
+
+### <a name="msbuild"></a>MSBuild
+
+**Nouveaux articles**
+
+- [MSB3644 : les assemblys de référence pour’frameworkVersion’sont introuvables](../msbuild/errors/msb3644.md) -Erreurs MSBuild
+- [MSB8036 : la SDK Windows’version’est introuvable](../msbuild/errors/msb8036.md) -Erreurs MSBuild
+
+### <a name="test"></a>Tester
+
+**Articles mis à jour**
+
+- [Utiliser l’infrastructure de tests unitaires Microsoft pour C++ dans Visual Studio](../test/how-to-use-microsoft-test-framework-for-cpp.md) -actualisation et modification de petits contenus
+- [Écrire des tests unitaires pour des dll C++ dans Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) -actualisation et modification de petits contenus
+- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) -mises à jour pour l’accessibilité
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -mises à jour pour l’accessibilité
+- [Isolez le code testé avec Microsoft simulations](../test/isolating-code-under-test-with-microsoft-fakes.md) : mentionnez explicitement .net 5,0 dans les documents de simulation
 
 ## <a name="january-2021"></a>Janvier 2021
 ### <a name="azure"></a>Azure
@@ -125,7 +171,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Réorganiser la table des matières pour les analyseurs .NET
 - [Migrer des analyseurs FxCop vers des analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter plus de clarté aux documents de migration pour FxCopAnalyzers vers les analyseurs
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -191,7 +237,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Vue d’ensemble](../code-quality/use-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -321,7 +367,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 **Articles mis à jour**
 - [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -511,7 +557,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
