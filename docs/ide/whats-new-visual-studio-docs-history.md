@@ -171,7 +171,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Réorganiser la table des matières pour les analyseurs .NET
 - [Migrer des analyseurs FxCop vers des analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter plus de clarté aux documents de migration pour FxCopAnalyzers vers les analyseurs
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -237,7 +237,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Vue d’ensemble](../code-quality/use-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -367,7 +367,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 **Articles mis à jour**
 - [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -557,7 +557,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 

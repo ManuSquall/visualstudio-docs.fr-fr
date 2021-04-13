@@ -142,7 +142,7 @@ Les mises à jour administratives peuvent renvoyer les codes de retour suivants�
 | 1007 | Le Visual Studio Installer n’est pas installé. |
 | 1008 | La valeur de Registre **BaselineStickinessVersions2019** n’est pas dans un format lisible. La valeur de registre doit inclure **toutes les** versions ou des versions valides avec le numéro de build défini sur 0 explicitement, par exemple, X. Y. 0. |
 | 3010 | Le système nécessite un redémarrage.La mise à jour a peut-être été appliquée ou non. Redémarrez l’ordinateur et réessayez d’effectuer la mise à jour. |
-| Autre | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
+| Autres | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
 
 Pour obtenir une liste exhaustive des codes d’erreur du client, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). 
 

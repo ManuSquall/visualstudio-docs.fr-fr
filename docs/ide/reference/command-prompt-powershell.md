@@ -1,8 +1,8 @@
 ---
-title: Interpréteurs de ligne de commande pour les développeurs
-description: Découvrez comment rechercher et utiliser Visual Studio Invite de commandes développeur, Visual Studio Developer PowerShell et Visual Studio terminal, qui vous permettent d’utiliser plus facilement les outils .NET et C++.
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: Interpréteurs de ligne de commande & demander aux développeurs
+description: Démarrez à partir des outils > menu ligne de commande. Visual Studio Invite de commandes développeur, Developer PowerShell et terminal vous permettent d’utiliser plus facilement les outils .NET et C++.
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672323"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221729"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>Invite de commandes développeur et Developer PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio Invite de commandes développeur et Developer PowerShell
 
 Visual Studio 2019 comprend deux interpréteurs de ligne de commande pour les développeurs :
 
 - **Visual Studio invite de commandes développeur** : une invite de commandes standard avec certaines variables d’environnement définies pour faciliter l’utilisation des outils de développement en ligne de commande. Disponible depuis Visual Studio 2015.
+
 - **Visual Studio Developer PowerShell** -plus puissant qu’une invite de commandes. Par exemple, vous pouvez passer la sortie d’une commande (appelée *cmdlet* ) à une autre cmdlet . Ce Shell a les mêmes variables d’environnement que Invite de commandes développeur. Disponible depuis Visual Studio 2019.
 
-Les deux shells ont des variables d’environnement spécifiques qui vous permettent d’utiliser plus facilement les outils de développement en ligne de commande. Après avoir ouvert l’un de ces shells, vous pouvez entrer les commandes de différents utilitaires sans savoir où ils se trouvent. Les commandes que vous pouvez exécuter sont les suivantes :
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md), pour générer un projet ou une solution.
-- [Outils de .NET Framework](/dotnet/framework/tools/index), tels que [`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) et [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler) .
-- Outils de compilation C/C++, tels que [`CL`](/cpp/build/reference/compiler-command-line-syntax) et [`NMAKE`](/cpp/build/reference/running-nmake) .
-- Outils de génération C/C++ supplémentaires, tels que [`LIB`](/cpp/build/reference/lib-reference) et [`DUMPBIN`](/cpp/build/reference/dumpbin-reference) .
-- Les [commandes CLI .net](/dotnet/core/tools/index), telles [`dotnet`](/dotnet/core/tools/dotnet) que [`dotnet run`](/dotnet/core/tools/dotnet-run) et. (Ces commandes sont également disponibles à partir d’une invite de commandes standard).
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="Invite de commandes développeur pour Visual Studio avec l’outil CLRVer":::
 
@@ -41,7 +35,22 @@ Les deux shells ont des variables d’environnement spécifiques qui vous permet
 
 Lorsque vous ouvrez l’un des shells de développement à partir de Visual Studio, soit en tant qu’application distincte, soit dans la fenêtre de terminal, il s’ouvre dans le répertoire de votre solution actuelle (si vous avez une solution chargée). Ce comportement permet d’exécuter des commandes sur la solution ou ses projets.
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>Démarrer l’interpréteur de commandes à partir de Visual Studio
+Les deux shells ont des variables d’environnement spécifiques qui vous permettent d’utiliser plus facilement les outils de développement en ligne de commande. Après avoir ouvert l’un de ces shells, vous pouvez entrer les commandes de différents utilitaires sans savoir où ils se trouvent. 
+
+|Commandes populaires|Description|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Générer un projet ou une solution|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| [Outils de .NET Framework](/dotnet/framework/tools/index) pour CLR.|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|[Outil .NET Framework](/dotnet/framework/tools/index) pour le désassembleur.|
+|[`dotnet`](/dotnet/core/tools/dotnet)|[Commande CLI .net](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[Commande CLI .net](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|Outil de compilation C/C++|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|Outil de compilation C/C++|
+|[`LIB`](/cpp/build/reference/lib-reference)| Outil de génération C/C++|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| Outil de génération C/C++|
+
+
+## <a name="start-in-visual-studio"></a>Démarrer dans Visual Studio
 
 Pour ouvrir Invite de commandes développeur ou Developer PowerShell dans Visual Studio, procédez comme suit :
 
@@ -51,9 +60,9 @@ Pour ouvrir Invite de commandes développeur ou Developer PowerShell dans Visual
 
    ![Élément de menu d’invite de commandes dans Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>Utiliser le menu Démarrer de Windows
+## <a name="start-from-windows-menu"></a>Démarrer à partir du menu Windows
 
-Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Visual Studio et de tous les kits de développement logiciel (SDK) et charges de travail supplémentaires que vous avez installés. Si les étapes suivantes ne fonctionnent pas, vous pouvez essayer de [localiser manuellement les fichiers sur votre ordinateur](#manually-locate-the-file) ou [de démarrer l’interpréteur de commandes à partir de Visual Studio](#start-the-shell-from-inside-visual-studio).
+Vous pouvez également démarrer les shells à partir du menu Démarrer. Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Visual Studio et de tous les kits de développement logiciel (SDK) et charges de travail supplémentaires que vous avez installés. 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Vi
 
 Si vous avez installé d’autres kits de [développement logiciel (SDK) Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) ou [versions antérieures](https://developer.microsoft.com/windows/downloads/sdk-archive), vous pouvez voir des invites de commandes supplémentaires. Consultez la documentation relatives aux divers outils afin de déterminer la version de l'invite de commandes que vous devez utiliser.
 
-## <a name="manually-locate-the-file"></a>Localiser manuellement le fichier
+## <a name="start-from-file-browser"></a>Démarrer à partir de l’Explorateur de fichiers 
 
 En règle générale, les raccourcis des shells que vous avez installés sont placés dans le dossier **menu Démarrer** de Visual Studio, par exemple dans *%ProgramData%\Microsoft\Windows\Start c:\ProgramData\Microsoft\Windows\Menu Studio 2019 \ Visual Studio Tools*. Toutefois, si la recherche de l’invite de commandes ne produit pas les résultats attendus, vous pouvez essayer de localiser manuellement les fichiers sur votre ordinateur.
 

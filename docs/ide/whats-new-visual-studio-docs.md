@@ -33,7 +33,7 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2021 m
 - [Comment : exécuter manuellement l’analyse du code hérité pour le code managé](../code-quality/how-to-run-legacy-code-analysis-manually-for-managed-code.md) -confirmer la fusion à partir de la branche de travail
 - [Activer ou installer les analyseurs .net internes](../code-quality/install-net-analyzers.md) -correctifs GitHub
 
-## <a name="containers"></a>Containers
+## <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 

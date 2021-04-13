@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971321"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221716"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
@@ -68,7 +68,7 @@ Quand vous sélectionnez un membre dans la zone **Liste des membres**, l’info-
 
 ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Vous pouvez appeler manuellement Info Express en choisissant **modifier**  >    >  **Info Express** IntelliSense, en appuyant sur **CTRL** + **I** ou en cliquant sur le bouton **Info Express** dans la barre d’outils de l’éditeur.
+Vous pouvez appeler manuellement Info Express en choisissant **modifier**  >    >  **Info Express** IntelliSense, en appuyant sur **CTRL** + **K**, **CTRL** + **I** ou en cliquant sur le bouton **Info Express** dans la barre d’outils de l’éditeur.
 
 Si une fonction est surchargée, il est possible que la fonctionnalité IntelliSense n'affiche pas les informations de toutes les formes de la surcharge.
 
@@ -93,7 +93,7 @@ Les icônes dans IntelliSense peuvent indiquer une signification supplémentaire
 | ![Modificateur d’icône « Interne »](../ide/media/intellisenseInternalModifier.png)       |    Classe interne    |    L’accès est limité à l’assembly actuel.    |
 |![Modificateur d’icône « Privé »](../ide/media/intellisensePrivateModifier.png)        |    Classe privée    |    L’accès est limité à la classe conteneur ou aux types dérivés de la classe conteneur dans l’assembly actuel. (Disponible depuis C# 7.2.)    |
 
-## <a name="troubleshoot-intellisense"></a>Résoudre les problèmes liés à IntelliSense
+## <a name="troubleshoot-intellisense&quot;></a>Résoudre les problèmes liés à IntelliSense
 
 Dans certains cas, les options IntelliSense ne fonctionneront peut-être pas comme vous l'attendez.
 
@@ -104,7 +104,7 @@ Dans certains cas, les options IntelliSense ne fonctionneront peut-être pas com
 **Le curseur se trouve dans un littéral de chaîne.** Vous ne pouvez pas utiliser IntelliSense si le curseur se trouve entre les guillemets entourant un littéral de chaîne, comme dans l'exemple suivant :
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **Les options automatiques ne sont pas activées.** Par défaut, IntelliSense est automatiquement utilisé, mais vous pouvez le désactiver. Même lorsque la saisie semi-automatique des instructions est désactivée, vous pouvez appeler une fonctionnalité IntelliSense.
