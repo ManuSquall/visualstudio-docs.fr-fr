@@ -2,19 +2,19 @@
 title: Personnaliser l’IDE
 description: Découvrez comment personnaliser l’IDE de Visual Studio de la manière la mieux adaptée à votre propre style de développement et à vos exigences.
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909024"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373165"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -40,7 +40,7 @@ Beaucoup d’options de personnalisation sont également exposées dans la boît
 
 ## <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement
 
-Pour modifier le thème de couleur entre clair, foncé et bleu, tapez **environnement** dans la zone de recherche, puis choisissez **environnement > général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
+Pour modifier le thème de couleur entre foncé, clair, bleu et bleu (contraste supplémentaire), tapez **Theme** dans la zone de recherche, puis choisissez **environnement > général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
 
 Pour modifier les options de colorisation dans l’éditeur, tapez **environnement** dans la zone de recherche, puis choisissez **environnement > polices et couleurs**. Consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
