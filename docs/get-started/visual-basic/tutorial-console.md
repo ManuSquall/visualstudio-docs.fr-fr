@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682653"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295492"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Tout d’abord, nous allons créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -115,7 +115,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ## <a name="create-a-what-is-your-name-application"></a>Créer une application « Quel est votre nom »
 
-Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment faire :
+Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment procéder :
 
  ::: moniker range="vs-2017"
 

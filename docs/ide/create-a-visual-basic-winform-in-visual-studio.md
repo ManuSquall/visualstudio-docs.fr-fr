@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970918"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297130"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Créer une application Windows Forms dans Visual Studio avec Visual Basic
 
@@ -90,7 +90,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre fichier, Visual Studio ouvre un formulaire. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 

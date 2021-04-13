@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 341d0e54af991390a3ff5146a29d9e66ad7c737e
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 68da08d84ea05c999a1678df4591737eb793daa6
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214146"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297013"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Étape 7 : Garder les paires visibles
 Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode <xref:System.Windows.Forms.Timer.Start>), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.

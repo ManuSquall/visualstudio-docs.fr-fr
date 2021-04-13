@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 316db91ac00ca9e18b9c0875340d2358b8955bed
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 393f71c3360371122e86dc078aaa97c6963db325
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214224"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296272"
 ---
 # <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux étiquettes
 Le programme doit effectuer le suivi des contrôles d’étiquette choisis par le joueur. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.

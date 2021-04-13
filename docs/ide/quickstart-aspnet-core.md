@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684048"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296935"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -27,7 +27,7 @@ Dans cette introduction de 5 à 10 minutes à l’utilisation de Visual Studio, 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installer Visual Studio
+### <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -45,7 +45,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](quickstart-personalize-the-ide.md) pour savoir comment faire.
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Le type de projet s’accompagne d’entrée de jeu de tous les modèles de fichiers permettant de créer une application web.
 
@@ -144,7 +144,7 @@ Peu après, Visual Studio ouvre votre fichier projet.
 
 1. Dans **l’Explorateur de solutions**, développez **About.cshtml**, puis choisissez **About.cshtml.cs**. (Ce fichier correspond également à la page **À propos de** d’un navigateur web.)
 
-   ![Capture d’écran de Visual Studio Explorateur de solutions montrant les fichiers dans le projet HelloWorld. About. cshtml est développé et About.cshtml.cs est sélectionné.](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Capture d’écran de Visual Studio Explorateur de solutions montrant les fichiers dans le projet HelloWorld. About. cshtml est développé et about. cshtml. cs est sélectionné.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    L’éditeur affiche le code C# comportant le texte de la zone « application description » de la page **À propos de**.
 

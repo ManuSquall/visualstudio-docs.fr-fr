@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944366"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295427"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 
@@ -259,13 +259,13 @@ Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Gr
 
  Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
 
-### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
+### <a name="debug-with-breakpoints&quot;></a>Déboguer à l’aide de points d’arrêt
 
 Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le **point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
 
-#### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
+#### <a name=&quot;add-breakpoints&quot;></a>Ajouter des points d’arrêt
 
-1. Ouvrez *Greetings. Xaml. vb*, puis sélectionnez la ligne suivante : `MessageBox.Show("Hello.")`
+1. Ouvrez *Greetings. Xaml. vb*, puis sélectionnez la ligne suivante : `MessageBox.Show(&quot;Hello.")`
 
 2. Ajoutez un point d’arrêt en appuyant sur **F9** ou à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d’arrêt**.
 

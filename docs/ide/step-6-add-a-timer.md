@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f59375e9e64e6a7302d65b8c940d82b63adef54f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2b983108793b07e1752b88afed90346cd5ff017f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214198"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297104"
 ---
 # <a name="step-6-add-a-timer"></a>Étape 6 : Ajouter un minuteur
 Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.

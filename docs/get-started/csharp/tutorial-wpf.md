@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682874"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295570"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Didacticiel : créer une application simple avec C\#
 
@@ -293,13 +293,13 @@ Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Gr
 
 Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
 
-### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
+### <a name="debug-with-breakpoints&quot;></a>Déboguer à l’aide de points d’arrêt
 
 Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le **point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
 
-#### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
+#### <a name=&quot;add-breakpoints&quot;></a>Ajouter des points d’arrêt
 
-1. Ouvrez *Greetings.xaml.cs*, puis sélectionnez la ligne suivante : `MessageBox.Show("Hello.")`
+1. Ouvrez *Greetings.xaml.cs*, puis sélectionnez la ligne suivante : `MessageBox.Show(&quot;Hello.")`
 
 1. Ajoutez un point d'arrêt à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d'arrêt**.
 

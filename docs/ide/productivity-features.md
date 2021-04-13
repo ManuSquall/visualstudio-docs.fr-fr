@@ -1,20 +1,20 @@
 ---
-title: " Guide de productivité"
+title: Guide de productivité
 description: Découvrez les raccourcis clavier et les fonctionnalités de productivité de Visual Studio qui peuvent vous aider à écrire efficacement du code, à déboguer le code et à gérer les erreurs.
 ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 181ce2071d780c9ef481d281f543c49d65262078
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951158"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296779"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guide de productivité pour Visual Studio
 

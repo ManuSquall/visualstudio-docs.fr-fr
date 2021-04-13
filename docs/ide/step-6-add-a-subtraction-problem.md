@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2631f87d17604136fa888a0501ae60b326939d6
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 511158cba039f83cadcb469511eb24fdd58375b1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214237"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296337"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : Ajouter un problème de soustraction
 Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de soustraction et apprendre à effectuer les tâches suivantes :

@@ -7,20 +7,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 12f00bedba6078fc5c471d02b92630b49dd35afa
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682800"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295622"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -38,7 +38,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Commençons par créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -55,7 +55,7 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 
 ### <a name="add-a-workload-optional"></a>Ajouter une charge de travail (facultatif)
 
-Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment faire.
+Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment procéder.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
@@ -112,7 +112,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ::: moniker-end
 
-## <a name="create-the-app"></a>Créer l'application
+## <a name="create-the-app"></a>Créer l’application
 
 Tout d’abord, nous allons découvrir certaines notions mathématiques de base relatives aux entiers en C#. Nous ajouterons ensuite du code pour créer une calculatrice de base. Après cela, nous allons déboguer l’application pour rechercher et corriger les erreurs. Enfin, nous affinerons le code pour le rendre plus efficace.
 
@@ -331,7 +331,7 @@ Plutôt que de nous appuyer sur la classe `program` pour gérer tout le code, no
 
 La classe `Calculator` gérera le gros du travail de calcul et la classe `Program` gèrera l’interface utilisateur et le travail de capture d’erreur.
 
-C’est parti !
+Commençons.
 
 1. Supprimez tout ce qui se trouve dans l' `Calculator` espace de noms entre ses accolades ouvrantes et fermantes :
 

@@ -8,20 +8,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295795"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296922"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Bien démarrer avec C# et ASP.NET Core dans Visual Studio
 
@@ -29,7 +29,7 @@ Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Vis
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installer Visual Studio
+### <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -51,7 +51,7 @@ Si vous avez déjà installé Visual Studio, veillez à exécuter la version la 
 
 Ce tutoriel contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment faire.
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Tout d’abord, nous allons créer un projet ASP.NET Core. Le type de projet inclut tous les fichiers de modèles nécessaires à un site web parfaitement fonctionnel, avant même d’avoir ajouté quoi que ce soit !
 
@@ -168,7 +168,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
  1. Affichez le fichier **About.cshtml.cs** dans l’éditeur de code.
 
-     ![Capture d’écran montrant les 18 premières lignes du fichier About.cshtml.cs dans l’éditeur de code Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Capture d’écran montrant les 18 premières lignes du fichier about. cshtml. cs dans l’éditeur de code Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Le projet contient un dossier **wwwroot** qui représente la racine de votre site web. Développez le dossier pour voir son contenu.
 
@@ -265,11 +265,11 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
      ![Afficher le fichier index. cshtml dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. Chaque fichier. cshtml est associé à un fichier de code. Pour ouvrir le fichier de code dans l’éditeur, développez le nœud **index. cshtml** dans Explorateur de solutions, puis choisissez le fichier **index.cshtml.cs** .
+ 1. Chaque fichier. cshtml est associé à un fichier de code. Pour ouvrir le fichier de code dans l’éditeur, développez le nœud **index. cshtml** dans Explorateur de solutions, puis choisissez le fichier **index. cshtml. cs** .
 
-     ![Choisir le fichier Index.cshtml.cs dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Choisir le fichier index. cshtml. cs dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. Affichez le fichier **index.cshtml.cs** dans l’éditeur de code.
+ 1. Affichez le fichier **index. cshtml. cs** dans l’éditeur de code.
 
      ![Afficher le fichier About.cshtml dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
@@ -308,11 +308,11 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
     ![Modifier le texte dans le fichier privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. À présent, nous allons modifier le code. Choisissez **privacy.cshtml.cs**. Ensuite, nettoyez les directives `using` en haut du fichier à l’aide du raccourci suivant :
+1. À présent, nous allons modifier le code. Choisissez **privacy. cshtml. cs**. Ensuite, nettoyez les directives `using` en haut du fichier à l’aide du raccourci suivant :
 
    Choisissez l’une des directives `using` grisées. Une ampoule [Actions rapides](../../ide/quick-actions.md) apparaît alors juste au-dessous du signe insertion ou dans la marge de gauche. Choisissez l’ampoule, puis pointez sur **Supprimer les utilisations inutiles**.
 
-   ![Supprimer les using inutiles dans le fichier Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![Supprimer les using inutiles dans le fichier privacy. cshtml. cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
    Choisissez maintenant **aperçu des modifications** pour voir ce qui va changer.
 

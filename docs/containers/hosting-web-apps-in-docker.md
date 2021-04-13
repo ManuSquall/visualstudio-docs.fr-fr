@@ -7,14 +7,14 @@ ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-azure
-ms.date: 03/14/2019
+ms.date: 03/15/2021
 ms.author: ghogen
-ms.openlocfilehash: 74a74e17dcc909b529a0afad1d66959000c80455
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d549a3097416f499adc9d03f83d7b4ef4c953442
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859539"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315964"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Déployer un conteneur ASP.NET dans un registre de conteneurs à l’aide de Visual Studio
 
@@ -62,7 +62,7 @@ La procédure suivante vous accompagne dans la création d’une application ASP
     | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[Référence (SKU)](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -88,7 +88,7 @@ La procédure suivante vous accompagne dans la création d’une application ASP
     | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[Référence (SKU)](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)

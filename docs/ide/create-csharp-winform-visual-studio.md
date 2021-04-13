@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: CSharp
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956930"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297117"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Créer une application Windows Forms dans Visual Studio avec C\#
 
@@ -90,7 +90,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 Une fois que vous avez sélectionné votre modèle de projet C# et que vous avez nommé votre fichier, Visual Studio ouvre un formulaire pour vous. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 
@@ -133,11 +133,11 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 ### <a name="add-code-to-the-form"></a>Ajouter du code au formulaire
 
-1. Dans la fenêtre **Form1.cs &#91;&#93;de conception** , double-cliquez sur le bouton **cliquez sur ce** bouton pour ouvrir la fenêtre **Form1.cs** .
+1. Dans la fenêtre **Form1. cs &#91;&#93;de conception** , double-cliquez sur le bouton **cliquez sur ce** bouton pour ouvrir la fenêtre **Form1. cs** .
 
-      (Vous pouvez également développer **Form1.cs** dans **Explorateur de solutions**, puis choisir **Form1**.)
+      (Vous pouvez également développer **Form1. cs** dans **Explorateur de solutions**, puis choisir **Form1**.)
 
-1. Dans la fenêtre **Form1.cs** , après la ligne **void privée** , tapez ou entrez `lblHelloWorld.Text = "Hello World!";` comme indiqué dans la capture d’écran suivante :
+1. Dans la fenêtre **Form1. cs** , après la ligne **void privée** , tapez ou entrez `lblHelloWorld.Text = "Hello World!";` comme indiqué dans la capture d’écran suivante :
 
      ![Ajouter du code au formulaire](../get-started/csharp/media/csharp-winforms-add-code.png)
 

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b1452976a2710026b71e89614e776134e8a36ae1
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: e30354d55d6ec7ebe70c19e07208aee99ae69109
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884120"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296246"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -65,7 +65,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 #### <a name="non-microsoft-domains"></a>Domaines non-Microsoft
 
-| Domain | Installe ces charges de travail |
+| Domaine | Installe ces charges de travail |
 | - | - |
 | archive.apache.org | Développement mobile avec JavaScript (Cordova) |
 | cocos2d-x.org | Développement de jeux avec C++ (Cocos) |

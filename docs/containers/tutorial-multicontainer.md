@@ -4,15 +4,15 @@ author: ghogen
 description: Découvrez comment utiliser plusieurs conteneurs avec Docker Compose
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 01/10/2020
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: eca1d66ddef1a0f89a3971a4867254549118e2a1
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295717"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315977"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : Créer une application multiconteneur avec Docker Compose
 
@@ -67,7 +67,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
 
 ## <a name="add-code-to-call-the-web-api"></a>Ajouter du code pour appeler l’API Web
 
-1. Dans le `WebFrontEnd` projet, ouvrez le fichier *index.cshtml.cs* et remplacez la `OnGet` méthode par le code suivant.
+1. Dans le `WebFrontEnd` projet, ouvrez le fichier *index. cshtml. cs* et remplacez la `OnGet` méthode par le code suivant.
 
    ```csharp
     public async Task OnGet()
@@ -118,7 +118,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
         }
       ```
 
-    Avec .NET Core 3,1, vous n’avez pas besoin de cela, car vous pouvez utiliser l’API WeatherForecast qui est déjà présente. Toutefois, vous devez commenter l’appel à <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>  dans la `Configure` méthode de *Startup.cs*, car ce code utilise HTTP, et non HTTPS, pour appeler l’API Web.
+    Avec .NET Core 3,1, vous n’avez pas besoin de cela, car vous pouvez utiliser l’API WeatherForecast qui est déjà présente. Toutefois, vous devez commenter l’appel à <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>  dans la `Configure` méthode dans *Startup. cs*, car ce code utilise HTTP, et non HTTPS, pour appeler l’API Web.
 
     ```csharp
                 //app.UseHttpsRedirection();
