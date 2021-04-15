@@ -1,7 +1,7 @@
 ---
 title: Définir les valeurs par défaut des déploiements d’entreprise
 description: Découvrez les stratégies de domaine et autres opérations de configuration disponibles pour les déploiements en entreprise de Visual Studio.
-ms.date: 04/06/2021
+ms.date: 04/13/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -11,40 +11,37 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: b32c56e418631bfc8f5435d0eb113c9da2296ae9
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547464"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386001"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio
 
-Vous pouvez définir des stratégies de Registre qui affectent le déploiement de Visual Studio. Ces stratégies sont globales pour le nouveau programme d’installation et affectent :
+Vous pouvez définir des stratégies de Registre qui affectent le déploiement de Visual Studio. Ces stratégies sont globales pour l’ordinateur et affectent :
 
 - l’emplacement où certains packages partagés avec d’autres versions ou instances sont installés ;
-- l’emplacement où les packages sont mis en cache ;
-- l’emplacement où tous les packages sont mis en cache.
+- Où et si les packages sont mis en cache
+- Procédure d’application des mises à jour de l’administrateur
 
 Vous pouvez définir certaines de ces stratégies à l’aide des [options de ligne de commande](use-command-line-parameters-to-install-visual-studio.md), définir des valeurs de Registre sur votre ordinateur ou même les distribuer à l’aide d’une stratégie de groupe dans une organisation.
 
 ## <a name="registry-keys"></a>les clés de Registre
 
-Il existe plusieurs emplacements où vous pouvez définir des valeurs par défaut d’entreprise pour permettre leur contrôle via une stratégie de groupe ou directement dans le Registre. Visual Studio effectue des recherches dans l’ordre pour déterminer si des stratégies d’entreprise ont été définies ; dès qu’une valeur de stratégie est détectée dans l’ordre ci-dessous, les clés restantes sont ignorées.
+Il existe plusieurs emplacements dans lesquels vous pouvez définir les valeurs par défaut de l’entreprise pour activer leur contrôle soit par stratégie de groupe soit directement dans le registre. Visual Studio effectue des recherches dans l’ordre pour déterminer si des stratégies d’entreprise ont été définies ; dès qu’une valeur de stratégie est détectée dans l’ordre ci-dessous, les clés restantes sont ignorées.
 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
 3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (sur les systèmes d’exploitation 64 bits)
-
-> [!IMPORTANT]
-> Si vous ne définissez pas la clé `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`, mais l’une des autres clés, vous devez définir les deux clés restantes sur les systèmes d’exploitation 64 bits. Ce problème sera corrigé dans une prochaine mise à jour.
 
 Certaines valeurs de Registre sont définies automatiquement la première fois qu’elles sont utilisées (si elles n’ont pas été déjà définies). De cette façon, les installations suivantes utiliseront les mêmes valeurs. Ces valeurs sont stockées dans la deuxième clé de Registre (`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`).
 
@@ -56,9 +53,9 @@ Vous pouvez définir les valeurs de Registre suivantes :
 | `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
 | `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affecte que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
-| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
-| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
-| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 0 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 0 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 0 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
 | `UpdateConfigurationFile` | `REG_SZ` ou `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Chemin d’accès de fichier pour la configuration des mises à jour administratives. Pour plus d’informations, consultez [méthodes de configuration d’une mise à jour d’administrateur](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
 ::: moniker-end
 
@@ -68,11 +65,11 @@ Vous pouvez définir les valeurs de Registre suivantes :
 | `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez [la page désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md) . |
 | `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affecte que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
-| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
-| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
-| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 0 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 0 | Permet d’appliquer les mises à jour de l’administrateur à l’ordinateur client. Si cette valeur est manquante ou si elle est définie sur 0, les mises à jour de l’administrateur seront bloquées. Cette valeur est utilisée à des fins d’administration. Pour plus d’informations, consultez [activation des mises à jour de l’administrateur](enabling-administrator-updates.md). | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 0 | Indique que l’utilisateur ne souhaite pas recevoir de mises à jour de l’administrateur pour Visual Studio. L’absence de la valeur de registre ou une valeur définie égale à 0 signifie que l’utilisateur Visual Studio souhaite recevoir des mises à jour de l’administrateur pour Visual Studio. Il s’agit de l’utilisateur du développeur (s’il dispose des autorisations d’administrateur sur l’ordinateur client). Pour plus d’informations, consultez [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options)de l’administrateur. | 
 | `UpdateConfigurationFile` | `REG_SZ` ou `REG_EXPAND_SZ` | % ProgramData% \Microsoft\VisualStudio\updates.config | Chemin d’accès de fichier pour la configuration des mises à jour administratives. Pour plus d’informations, consultez [méthodes de configuration d’une mise à jour d’administrateur](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update). | 
-| `BaselineStickinessVersions2019` | `REG_SZ` ou `REG_EXPAND_SZ` | `ALL` ou `16.4.0,16.7.0,16.9.0` | Les versions autorisant les mises à jour à rester sur les lignes de base de maintenance spécifiées. Pour plus d’informations, consultez la page [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options) de l’administrateur. | 
+| `BaselineStickinessVersions2019` | `REG_SZ` ou `REG_EXPAND_SZ` | `16.7.0` | Version mineure de la ligne de base de maintenance que le client doit conserver. Pour plus d’informations, consultez la page [application des mises à jour](../install/applying-administrator-updates.md#understanding-configuration-options) de l’administrateur. | 
 ::: moniker-end
 
 > [!IMPORTANT]
@@ -85,5 +82,6 @@ Vous pouvez définir les valeurs de Registre suivantes :
 
 - [Installer Visual Studio](install-visual-studio.md)
 - [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+- [Application des mises à jour de l’administrateur](applying-administrator-updates.md)
 - [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md)
 - [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

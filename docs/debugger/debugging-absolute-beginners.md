@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684217"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386035"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -70,7 +70,7 @@ Si aucune exception ne s’est produite, vous avez probablement une bonne idée 
 
 Dans Visual Studio, vous pouvez rapidement définir un point d’arrêt en cliquant dans la marge de gauche en regard d’une ligne de code, ou en plaçant le curseur sur une ligne et en appuyant sur **F9**.
 
-Pour illustrer ces concepts, nous allons vous guider à travers un exemple de code qui a déjà plusieurs bogues. Nous utilisons C#, mais les fonctionnalités de débogage s’appliquent à Visual Basic, C++, JavaScript, Python et d’autres langages pris en charge.
+Pour illustrer ces concepts, nous allons vous guider à travers un exemple de code qui a déjà plusieurs bogues. Nous utilisons C#, mais les fonctionnalités de débogage s’appliquent à Visual Basic, C++, JavaScript, Python et d’autres langages pris en charge. Des exemples de code pour Visual Basic sont également fournis, mais les captures d’écran sont en C#.
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>Créer un exemple d’application (avec des bogues)
 
@@ -85,19 +85,21 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 1. Ouvrez Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Tapez **console** dans la zone de recherche, sélectionnez **C#** comme langue, puis choisissez **application console** pour .net core. Choisissez **Suivant**. Tapez un nom de projet comme **ConsoleApp-FirstApp** , puis cliquez sur **suivant**.
+    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Tapez **console** dans la zone de recherche, sélectionnez **C#** ou **Visual Basic** comme langage, puis choisissez **application console** pour .net core. Choisissez **Suivant**. Tapez un nom de projet comme **ConsoleApp_FirstApp** , puis cliquez sur **suivant**.
 
     Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , sous **Visual C#**, choisissez **application console**, puis dans le volet central, choisissez l' **application console (.net Core)**. Tapez un nom comme **ConsoleApp-FirstApp**, puis cliquez sur **OK**.
+    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , sous **Visual C#** ou **Visual Basic**, choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)**. Tapez un nom comme **ConsoleApp_FirstApp** , puis cliquez sur **OK**.
     ::: moniker-end
 
     Si vous ne voyez pas le modèle de projet d' **application console** pour .net Core, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités** pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 
-1. Dans *Program.cs*, remplacez tout le code par défaut par le code suivant :
+1. Dans *Program. cs* (ou *Program. vb*), remplacez tout le code par défaut par le code suivant. (Sélectionnez d’abord l’onglet de langue approprié, C# ou Visual Basic.)
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,6 +180,109 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     }
     ```
 
+   #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     Notre intention pour ce code consiste à afficher le nom de la galaxie, sa distance et son type dans une même liste. Pour déboguer, il est important de comprendre l’intention du code. Voici le format d’une ligne de la liste que nous souhaitons afficher dans la sortie :
 
     *nom de la galaxie*, *distance*, *type de galaxie*.
@@ -214,6 +319,8 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Avec l’application en cours d’exécution, définissez un point d’arrêt en cliquant dans la marge de gauche à côté de l’appel de méthode `Console.WriteLine` sur cette ligne de code.
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,6 +328,15 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     }
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     Quand vous définissez le point d’arrêt, un point rouge apparaît dans la marge de gauche.
 
     Puisque nous constatons la présence d’un problème dans la sortie, nous allons commencer le débogage en examinant le code précédent qui définit la sortie dans le débogueur.
@@ -235,9 +351,12 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     « Spiral » est la valeur correcte que vous attendiez dans la console. Un bon point de départ consiste donc à pouvoir accéder à cette valeur dans ce code pendant l’exécution de l’application. Dans ce scénario, nous n’utilisons pas la bonne API. Nous allons voir si nous pouvons corriger cela pendant l’exécution du code dans le débogueur.
 
-1. Dans le même code, toujours pendant le débogage, placez votre curseur à la fin de `theGalaxy.GalaxyType` et remplacez-le par `theGalaxy.GalaxyType.MyGType`. Bien que vous puissiez effectuer cette modification, l’éditeur de code signale une erreur indiquant qu’il ne peut pas compiler ce code.
+1. Dans le même code, toujours pendant le débogage, placez votre curseur à la fin de `theGalaxy.GalaxyType` et remplacez-le par `theGalaxy.GalaxyType.MyGType`. Bien que vous puissiez effectuer cette modification, l’éditeur de code signale une erreur indiquant qu’il ne peut pas compiler ce code. (Dans Visual Basic, vous ne verrez pas l’erreur et cette section de code fonctionne)
 
     ![Capture d’écran du débogueur Visual Studio avec une ligne de code mise en surbrillance en rouge et une zone de message modifier & continuer avec le bouton modifier sélectionné.](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > Pour déboguer l’exemple de code Visual Basic, ignorez les étapes suivantes jusqu’à ce que vous soyez invité à cliquer sur le bouton **redémarrer** l' ![application](../debugger/media/dbg-tour-restart.png "RestartApp") de redémarrage.
 
 1. Cliquez sur **Modifier** dans la boîte de message **Modifier et Continuer**. Un message d’erreur s’affiche maintenant dans la fenêtre **Liste d’erreurs**. L’erreur indique que `'object'` ne contient pas de définition pour `MyGType`.
 
@@ -274,11 +393,21 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     Maffei 1,  Elliptical
     ```
 
-1. Définissez un point d’arrêt sur cette ligne de code.
+1. Définissez un point d’arrêt sur cette ligne de code avant l’instruction switch (avant l’instruction SELECT dans Visual Basic).
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
+
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
 
     Ce code étant celui où le type de galaxie est défini, nous devons l’examiner plus en détail.
 
@@ -296,7 +425,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     **F11** fait avancer le débogueur (et exécute le code) une seule instruction à la fois. **F10** (**Pas à pas principal**) est une commande similaire, et toutes deux sont extrêmement utiles pour apprendre à utiliser le débogueur.
 
-1. Appuyez sur **F11** jusqu’à vous arrêter sur une ligne de code dans l’instruction `switch` pour une valeur « I ». Vous constatez ici un problème évident résultant d’une faute de frappe. Vous vous attendiez à ce que le code accède à l’emplacement où il définit `MyGType` comme type de galaxie Irregular, mais au lieu de cela le débogueur ignore complètement ce code et s’arrête à la section `default` de l’instruction `switch`.
+1. Appuyez sur **F11** jusqu’à ce que vous arrêtiez sur la ligne de code dans l' `switch` instruction pour la valeur’I' ( `Select` instruction pour Visual Basic). Vous constatez ici un problème évident résultant d’une faute de frappe. Vous vous attendiez à ce que le code avance jusqu’à l’endroit où il est défini `MyGType` comme un type Galaxy irrégulier, mais le débogueur ignore ce code complètement et s’interrompt sur la `default` section de l' `switch` instruction ( `Else` instruction dans Visual Basic).
 
     ![Rechercher une faute de frappe](../debugger/media/beginners-typo.png)
 
