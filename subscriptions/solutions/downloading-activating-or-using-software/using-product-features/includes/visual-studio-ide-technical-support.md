@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291318"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107512269"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Support technique de l’IDE Visual Studio  
 
 La prise en charge des abonnements Visual Studio fournit de l’aide pour les ventes, les abonnements, les comptes et la facturation. Si vous avez une question ou un problème technique de l’IDE Visual Studio, votre question doit être dirigée vers le [support technique de Visual Studio](https://visualstudio.microsoft.com/vs/support/). Avant d’utiliser vos [incidents de support technique Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) limités qui peuvent être inclus dans votre abonnement Visual Studio, nous vous suggérons d’essayer d’autres ressources en ligne.
 
-Pour plus d’informations sur les problèmes d’installation de Visual Studio, consultez [résoudre les problèmes d’installation et de mise à niveau de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019) pour obtenir des instructions pas à pas. Vous pouvez également essayer [l'](https://visualstudio.microsoft.com/vs/support/#talktous) option de prise en charge de l’installation de chat (en anglais uniquement) pour les problèmes liés à l’installation.
+Pour plus d’informations sur les problèmes d’installation de Visual Studio, consultez [résoudre les problèmes d’installation et de mise à niveau de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) pour obtenir des instructions pas à pas. Vous pouvez également essayer [l'](https://visualstudio.microsoft.com/vs/support/#talktous) option de prise en charge de l’installation de chat (en anglais uniquement) pour les problèmes liés à l’installation.
 
 
 ## <a name="developer-community--visual-studio-ide"></a>Communauté des développeurs | IDE Visual Studio

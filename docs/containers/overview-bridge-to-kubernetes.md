@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571543"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526152"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -26,6 +26,8 @@ Bridge to Kubernetes redirige le trafic entre votre cluster Kubernetes connecté
 
 > [!WARNING]
 > Bridge vers Kubernetes est destiné à être utilisé uniquement dans les scénarios de développement et de test. Il n’est pas prévu ou pris en charge pour une utilisation avec des clusters de production ou des services actifs en cours d’utilisation.
+
+Vous trouverez des informations sur les fonctionnalités actuellement prises en charge et une future feuille de route pour Bridge to Kubernetes dans la feuille [de route Bridge to Kubernetes](https://github.com/microsoft/mindaro/projects/1).
 
 ## <a name="using-bridge-to-kubernetes"></a>Utilisation de Bridge pour Kubernetes
 
@@ -53,7 +55,7 @@ En outre, Bridge to Kubernetes permet de répliquer des variables d’environnem
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuration supplémentaire avec KubernetesLocalProcessConfig. YAML
 
-Le `KubernetesLocalProcessConfig.yaml` fichier vous permet de répliquer des variables d’environnement et des fichiers montés disponibles pour vos Pod dans votre cluster. Pour plus d’informations sur les options de configuration supplémentaires, voir [configure Bridge to Kubernetes][using-config-yaml].
+Le `KubernetesLocalProcessConfig.yaml` fichier vous permet de répliquer des variables d’environnement et des fichiers montés disponibles pour vos Pod dans votre cluster. Lors de l’utilisation du développement de Visual Studio pour Bridge vers Kubernetes, le fichier KubernetesLocalConfig. YAML doit se trouver dans le même répertoire que le fichier projet pour le service que vous redirigez. Pour plus d’informations sur les options de configuration supplémentaires, voir [configure Bridge to Kubernetes][using-config-yaml].
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Utilisation des fonctionnalités de routage pour le développement en isolation
 
