@@ -5,38 +5,29 @@ ms.topic: include
 ms.assetid: 4fa47dc5-3791-45c8-afba-9e01693ce45a
 author: caitybuschlen
 ms.author: cabuschl
-ms.date: 01/25/2021
+ms.date: 04/16/2021
 user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
-ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
+ms.openlocfilehash: db64286603313dc9448114070437377f22c04fc4
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "107512269"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107589950"
 ---
-## <a name="visual-studio-ide-technical-support"></a>Support technique de l’IDE Visual Studio  
+## <a name="visual-studio-ide-technical-support"></a>Support technique de l’IDE Visual Studio 
 
-La prise en charge des abonnements Visual Studio fournit de l’aide pour les ventes, les abonnements, les comptes et la facturation. Si vous avez une question ou un problème technique de l’IDE Visual Studio, votre question doit être dirigée vers le [support technique de Visual Studio](https://visualstudio.microsoft.com/vs/support/). Avant d’utiliser vos [incidents de support technique Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) limités qui peuvent être inclus dans votre abonnement Visual Studio, nous vous suggérons d’essayer d’autres ressources en ligne.
+La prise en charge des abonnements Visual Studio fournit de l’aide pour les ventes, les abonnements, les comptes et la facturation. Les problèmes ou questions techniques de l’IDE Visual Studio doivent être dirigés vers le [support technique de Visual Studio](https://visualstudio.microsoft.com/vs/support/). Avant d’utiliser le nombre limité d' [incidents de support technique Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support) qui peuvent être inclus dans votre abonnement Visual Studio, nous vous suggérons d’essayer d’autres ressources en ligne.
 
-Pour plus d’informations sur les problèmes d’installation de Visual Studio, consultez [résoudre les problèmes d’installation et de mise à niveau de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) pour obtenir des instructions pas à pas. Vous pouvez également essayer [l'](https://visualstudio.microsoft.com/vs/support/#talktous) option de prise en charge de l’installation de chat (en anglais uniquement) pour les problèmes liés à l’installation.
+- Pour plus d’informations sur les problèmes d’installation de Visual Studio, consultez [résoudre les problèmes d’installation et de mise à niveau de Visual Studio](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues) pour obtenir des instructions pas à pas. Vous pouvez également essayer l’option de prise en charge de la [conversation d’installation](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement).
 
+- Passez en revue les didacticiels, les guides de dépannage et les ressources utiles dans [la documentation de l’IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/). 
 
-## <a name="developer-community--visual-studio-ide"></a>Communauté des développeurs | IDE Visual Studio
+- Recherchez dans la [communauté de développeurs](https://developercommunity.visualstudio.com/) en ligne et recevez des réponses d’experts sur un forum de la communauté. Vous pouvez rechercher des mots clés et lire, voter, commenter tout sans vous connecter. Si vous ne trouvez pas ce dont vous avez besoin avec une recherche, vous pouvez suggérer une fonctionnalité ou signaler un problème dans le menu de navigation. Pour soumettre une demande de fonctionnalité, vous devez vous connecter pour remplir le rapport et le poster. Pour signaler un problème ou un bogue, une instance en cours d’exécution de Visual Studio est requise pour signaler des commentaires.  
 
-Recherchez dans la [communauté de développeurs](https://developercommunity.visualstudio.com/) en ligne et recevez des réponses d’experts sur un forum de la communauté. Vous pouvez rechercher des mots clés et lire, voter, commenter tout sans vous connecter.  
-
-Si vous ne trouvez pas ce dont vous avez besoin avec une recherche, vous pouvez suggérer une fonctionnalité ou signaler un problème dans le menu de navigation. Pour soumettre une demande de fonctionnalité, vous devez vous connecter pour remplir le rapport et le poster. Pour signaler un problème ou un bogue, une instance en cours d’exécution de Visual Studio est requise pour signaler des commentaires.   
-
-## <a name="stack-overflow--visual-studio-ide"></a>Dépassement de capacité de la pile | IDE Visual Studio
-
-Communauté ouverte pour toute personne qui code. Recherchez dans le [&public Q un balisage avec Visual Studio](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) pour obtenir des réponses aux questions déjà posées ou vous inscrire pour obtenir un compte et poser une nouvelle question.  
-
-## <a name="documentation--visual-studio-ide"></a>Documentation | IDE Visual Studio
-
-Passez en revue les didacticiels, les guides de dépannage, les ressources utiles et une gamme d’autres rubriques dans [la documentation de l’IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/). 
+- Recherchez dans le Stack Overflow [public Q&un balisé avec Visual Studio](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) pour obtenir des réponses aux questions déjà posées ou pour vous inscrire à un compte et poser une nouvelle question.  
 
 ## <a name="technical-support-incidents"></a>Incidents de support technique 
 

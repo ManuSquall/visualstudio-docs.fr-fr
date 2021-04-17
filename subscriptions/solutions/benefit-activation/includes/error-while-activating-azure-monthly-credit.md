@@ -5,21 +5,23 @@ ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541095"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590194"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>J’obtiens une erreur lors de la tentative d’activation de mon crédit mensuel Azure.
 
-Vous ne pouvez avoir qu’un seul avantage de développement/test Azure pour chaque abonnement Azure associé à votre abonnement Visual Studio. Vous risquez d’être confronté à une erreur si vous avez déjà activé le crédit Azure mensuel. Si vous ne savez pas si vous avez activé le crédit, connectez-vous à l' [portail Azure](https://portal.azure.com/) pour le vérifier. 
+Vous ne pouvez avoir qu’un seul avantage mensuel de développement/test Azure pour chaque abonnement Azure associé à votre abonnement Visual Studio. Vous risquez d’être confronté à une erreur si vous avez déjà activé le crédit Azure mensuel. Si vous ne savez pas si vous avez activé le crédit, connectez-vous à l' [portail Azure](https://portal.azure.com/) pour le vérifier. 
+
+Si vous avez un nouvel abonnement Visual Studio et que vous recevez l’erreur « vous ne pouvez pas activer cet avantage Visual Studio plus d’une fois » lorsque vous tentez d’activer l’avantage de crédit Azure mensuel, contactez le support des abonnements Visual Studio en cliquant sur le bouton « créer un ticket de support » en bas de cette solution. 
 
 ## <a name="verify-your-email"></a>Vérifier votre adresse e-mail 
 

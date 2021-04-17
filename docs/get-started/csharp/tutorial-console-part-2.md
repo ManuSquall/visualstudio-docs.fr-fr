@@ -2,7 +2,7 @@
 title: 'Didacticiel : étendre une application console C# simple'
 description: Découvrez comment développer une application console C# dans Visual Studio, étape par étape.
 ms.custom: get-started
-ms.date: 07/09/2020
+ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909318"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107584128"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Didacticiel : étendre une application console C# simple
 
@@ -39,15 +39,15 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    ![Capture d’écran de la sélection du modèle de projet de bibliothèque de classes](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Tapez le nom du projet **CalculatorLibrary**, puis choisissez **créer**. Visual Studio crée le projet et l’ajoute à la solution.
+1. Tapez le nom du projet **CalculatorLibrary**, puis choisissez **créer**. Là encore, choisissez .NET 3,1 quand vous y êtes invité. Visual Studio crée le projet et l’ajoute à la solution.
 
    ![Capture d’écran de Explorateur de solutions avec le projet de bibliothèque de classes CalculatorLibrary ajouté](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Au lieu d’avoir *Class1.cs*, renommez le fichier **CalculatorLibrary.cs**. Vous pouvez cliquer sur le nom dans **Explorateur de solutions** pour le renommer, ou cliquer avec le bouton droit et choisir **Renommer**, ou appuyer sur la touche **F2** .
+1. Au lieu d’avoir *Class1. cs*, renommez le fichier **CalculatorLibrary. cs**. Vous pouvez cliquer sur le nom dans **Explorateur de solutions** pour le renommer, ou cliquer avec le bouton droit et choisir **Renommer**, ou appuyer sur la touche **F2** .
 
    Vous pouvez être invité à indiquer si vous souhaitez renommer toutes les références à `Class1` dans le fichier. Peu importe la façon dont vous répondez, puisque vous allez remplacer le code dans une étape ultérieure.
 
-1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  Cliquez avec le bouton droit sur le nœud **références** dans le premier projet, puis choisissez **Ajouter une référence de projet**.
+1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  Cliquez avec le bouton droit sur le nœud **dépendances** dans le premier projet, puis choisissez **Ajouter une référence de projet**.
 
    ![Capture d’écran de l’élément de menu Ajouter une référence de projet](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -59,7 +59,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    ![Capture d’écran de Explorateur de solutions avec la référence de projet](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. Dans *Program.cs*, sélectionnez la `Calculator` classe et tout son code, puis appuyez sur **CTRL + X** pour la couper de Program.cs. Ensuite, dans **CalculatorLibrary**, dans *CalculatorLibrary.cs*, collez le code dans l' `CalculatorLibrary` espace de noms. Ensuite, faites de la classe Calculator `public` pour l’exposer en dehors de la bibliothèque. Le code de *CalculatorLibrary.cs* doit maintenant ressembler au code suivant :
+1. Dans *Program. cs*, sélectionnez la `Calculator` classe et tout son code, puis appuyez sur **CTRL + X** pour la couper de Program. cs. Ensuite, dans **CalculatorLibrary**, dans *CalculatorLibrary. cs*, collez le code dans l’espace de `CalculatorLibrary` noms. Ensuite, faites de la classe Calculator `public` pour l’exposer en dehors de la bibliothèque. Le code dans *CalculatorLibrary. cs* doit maintenant ressembler au code suivant :
 
    ```csharp
    using System;
@@ -101,7 +101,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     }
    ```
 
-1. Le premier projet a une référence, mais vous verrez une erreur indiquant que l’appel Calculator. nooperation ne se résout pas. Étant donné que CalculatorLibrary se trouve dans un espace de noms de différence, ajoutez l' `CalculatorLibrary` espace de noms pour une référence qualifiée complète.
+1. Le premier projet a une référence, mais vous verrez une erreur indiquant que l’appel Calculator. nooperation ne se résout pas. Étant donné que CalculatorLibrary se trouve dans un espace de noms différent, ajoutez l' `CalculatorLibrary` espace de noms pour une référence qualifiée complète.
 
    ```csharp
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -121,14 +121,14 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Référencer des bibliothèques .NET : écrire dans un journal
 
-1. Supposons que vous souhaitez maintenant ajouter un journal de toutes les opérations et l’écrire dans un fichier texte. La `Trace` classe .NET fournit cette fonctionnalité. (C’est également utile pour les techniques de débogage d’impression de base.)  La classe trace se trouve dans System. Diagnostics, et nous aurons besoin de classes System.IO comme `StreamWriter` , commencez par ajouter les directives using :
+1. Supposons que vous souhaitez maintenant ajouter un journal de toutes les opérations et l’écrire dans un fichier texte. La `Trace` classe .NET fournit cette fonctionnalité. (C’est également utile pour les techniques de débogage d’impression de base.)  La classe trace se trouve dans System. Diagnostics, et nous aurons besoin de classes System.IO comme `StreamWriter` , commencez par ajouter les directives using en haut de *CalculatorLibrary. cs*:
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. En examinant la façon dont la classe trace est utilisée, vous devez conserver une référence pour la classe, qui est associée à un FileStream. Cela signifie que la calculatrice fonctionne mieux sous la forme d’un objet. nous allons donc ajouter un constructeur.
+1. En examinant la façon dont la classe trace est utilisée, vous devez conserver une référence pour la classe, qui est associée à un FileStream. Cela signifie que la calculatrice fonctionne mieux comme un objet. nous allons donc ajouter un constructeur au début de la classe Calculator dans *CalculatorLibrary. cs*.
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
         {
    ```
 
-1. Et nous devons changer la méthode statique `DoOperation` en une méthode de membre.  Nous allons également ajouter la sortie à chaque calcul pour le journal, de sorte que l’opération de l’action ressemble au code suivant :
+1. Et que nous devons modifier la `DoOperation` méthode statique en une méthode membre, supprimez le `static` mot clé.  Nous allons également ajouter la sortie à chaque calcul pour le journal, de sorte que l’opération de l’action ressemble au code suivant :
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,13 +182,13 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     }
    ```
 
-1. À présent, dans Program.cs, l’appel statique est marqué d’un trait ondulé rouge. Pour résoudre ce problème, créez une `calculator` variable en ajoutant la ligne suivante juste avant la boucle while :
+1. À présent, dans *Program. cs*, l’appel statique est marqué d’un trait ondulé rouge. Pour résoudre ce problème, créez une `calculator` variable en ajoutant la ligne suivante juste avant la `while (!endApp)` boucle :
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   Et modifiez le site d’appel de `DoOperation` comme suit :
+   Et modifier le site d’appel pour `DoOperation` comme suit, afin que cela fasse référence à l’objet nommé `calculator` en minuscules, ce qui en fait un appel de membre, plutôt qu’un appel à une méthode statique :
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -203,9 +203,154 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     3 * 3 = 9
     ```
 
+À ce stade, *CalculatorLibrary. cs* doit ressembler à ceci :
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculator.log");
+            Trace.Listeners.Add(new TextWriterTraceListener(logFile));
+            Trace.AutoFlush = true;
+            Trace.WriteLine("Starting Calculator Log");
+            Trace.WriteLine(String.Format("Started {0}", System.DateTime.Now.ToString()));
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    Trace.WriteLine(String.Format("{0} + {1} = {2}", num1, num2, result));
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    Trace.WriteLine(String.Format("{0} - {1} = {2}", num1, num2, result));
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    Trace.WriteLine(String.Format("{0} * {1} = {2}", num1, num2, result));
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        Trace.WriteLine(String.Format("{0} / {1} = {2}", num1, num2, result));
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            return result;
+        }
+    }
+}
+```
+
+Et *Program. cs* doivent ressembler à ce qui suit :
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            return;
+        }
+    }
+}
+```
+
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Ajouter un package NuGet : écrire dans un fichier JSON
 
-1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. Pour implémenter cette fonctionnalité, vous devez référencer le package NuGet Newtonsoft.Jssur. Les packages NuGet constituent le vecteur principal de distribution des bibliothèques de classes .NET. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **références** du projet CalculatorLibrary, puis choisissez **gérer les packages NuGet**.
+1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. Pour implémenter cette fonctionnalité, vous devez référencer le package NuGet Newtonsoft.Jssur. Les packages NuGet constituent le vecteur principal de distribution des bibliothèques de classes .NET. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **dépendances** pour le projet CalculatorLibrary, puis choisissez **gérer les packages NuGet**.
 
    ![Capture d’écran de la gestion des packages NuGet dans le menu contextuel](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -219,7 +364,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    Le package est téléchargé et ajouté à votre projet et une nouvelle entrée s’affiche dans le nœud Références de **Explorateur de solutions**.
 
-1. Ajoutez une directive using pour System.IO et Newtonsoft.Jssur le package au début de *CalculatorLibrary.cs*.
+1. Ajoutez une directive using pour System.IO et Newtonsoft.Jssur le package au début de *CalculatorLibrary. cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -300,7 +445,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     }
    ```
 
-1. Et dans *Program.cs*, ajoutez un appel pour terminer à la fin.
+1. Et dans *Program. cs*, ajoutez un appel pour terminer à la fin.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -334,7 +479,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
 Le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter votre code pas à pas, afin de trouver le point exact où vous avez commis une erreur de programmation. Vous comprenez ensuite les corrections que vous devez apporter dans votre code. Visual Studio vous permet d’effectuer des modifications temporaires pour pouvoir continuer à exécuter le programme.
 
-1. Dans *Program.cs*, cliquez sur la marge à gauche du code suivant (ou ouvrez le menu contextuel et choisissez **point d’arrêt**  >  **Insérer un point d’arrêt** ou appuyez sur **F9**) :
+1. Dans *Program. cs*, cliquez sur la marge à gauche du code suivant (ou ouvrez le menu contextuel et choisissez **point d’arrêt**  >  **Insérer un point d’arrêt** ou appuyez sur **F9**) :
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -392,7 +537,7 @@ Le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter 
 
    ![Capture d’écran de la pile des appels](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   Cette vue affiche la `Calculator.DoOperation` méthode actuelle, indiquée par le pointeur jaune, et la deuxième ligne affiche la fonction qui l’a appelée, à partir de la `Main` méthode dans *Program.cs*. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. En outre, il permet d’accéder à de nombreuses fonctionnalités du débogueur, telles que **accéder au code source**, à partir du menu contextuel.
+   Cette vue affiche la `Calculator.DoOperation` méthode actuelle, indiquée par le pointeur jaune, et la deuxième ligne affiche la fonction qui l’a appelée, à partir de la `Main` méthode dans *Program. cs*. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. En outre, il permet d’accéder à de nombreuses fonctionnalités du débogueur, telles que **accéder au code source**, à partir du menu contextuel.
 
 1. Appuyez sur **F10** (ou **déboguez**  >  **pas à pas**) plusieurs fois jusqu’à ce que l’application s’arrête sur l' `switch` instruction.
 
@@ -434,6 +579,174 @@ Le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter 
 
 1. Fermez l’application correctement à l’aide de la commande’n'.
 
+## <a name="code-complete"></a>Code terminé
+
+Voici le code complet du fichier *CalculatorLibrary. cs* , une fois toutes les étapes terminées :
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+using Newtonsoft.Json;
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        JsonWriter writer;
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculatorlog.json");
+            logFile.AutoFlush = true;
+            writer = new JsonTextWriter(logFile);
+            writer.Formatting = Formatting.Indented;
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operations");
+            writer.WriteStartArray();
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operand1");
+            writer.WriteValue(num1);
+            writer.WritePropertyName("Operand2");
+            writer.WriteValue(num2);
+            writer.WritePropertyName("Operation");
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    writer.WriteValue("Add");
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    writer.WriteValue("Subtract");
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    writer.WriteValue("Multiply");
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        writer.WriteValue("Divide");
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            writer.WritePropertyName("Result");
+            writer.WriteValue(result);
+            writer.WriteEndObject();
+
+            return result;
+        }
+
+        public void Finish()
+        {
+            writer.WriteEndArray();
+            writer.WriteEndObject();
+            writer.Close();
+        }
+    }
+}
+```
+
+Et voici le code pour *Program. cs*: 
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            calculator.Finish();
+            return;
+        }
+    }
+}
+```
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, passez aux tutoriels suivants.
@@ -446,5 +759,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, 
 
 ## <a name="see-also"></a>Voir aussi
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [Apprendre à déboguer du code C# dans Visual Studio](tutorial-debugger.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [Apprendre à déboguer du code C# dans Visual Studio](tutorial-debugger.md)
