@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84a0c21bba42263e7b4dad9ad9118f462389ad6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879291"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827498"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une façon qui n’est pas prise en charge par l’élément Ruban (concepteur visuel). Pour une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).
@@ -51,8 +51,8 @@ ms.locfileid: "99879291"
 
  L'exemple de code suivant remplace la méthode `CreateRibbonExtensibilityObject` et retourne une classe XML de ruban nommée MyRibbon.
 
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
- [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Définir le comportement du ruban personnalisé
  Vous pouvez répondre aux actions de l’utilisateur, par exemple en cliquant sur un bouton du ruban, en créant des *méthodes de rappel*. Les méthodes de rappel ressemblent aux événements figurant dans les contrôles Windows Forms, mais elles sont identifiées par un attribut dans le code XML de l'élément d'interface utilisateur. Vous écrivez des méthodes dans la classe du ruban et un contrôle appelle la méthode qui porte le même nom que la valeur d'attribut. Par exemple, vous pouvez créer une méthode de rappel qui est appelée lorsqu’un utilisateur clique sur un bouton sur le ruban. Deux étapes sont nécessaires pour créer une méthode de rappel :
@@ -92,8 +92,8 @@ ms.locfileid: "99879291"
 
   Toutes les méthodes de rappel ont un paramètre <xref:Microsoft.Office.Core.IRibbonControl> qui représente le contrôle qui a appelé la méthode. Ce paramètre permet de réutiliser la même méthode de rappel pour plusieurs contrôles. L'exemple de code suivant présente une méthode de rappel **onAction** qui exécute différentes tâches en fonction du contrôle sur lequel l'utilisateur clique.
 
-  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
-  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs" id="Snippet2":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb" id="Snippet2":::
 
 ## <a name="ribbon-xml-file-reference"></a><a name="RibbonDescriptorFile"></a> Référence du fichier XML du ruban
  Vous pouvez définir votre ruban personnalisé en ajoutant des éléments et des attributs au fichier XML du ruban. Par défaut, le fichier XML du ruban contient le code XML suivant.

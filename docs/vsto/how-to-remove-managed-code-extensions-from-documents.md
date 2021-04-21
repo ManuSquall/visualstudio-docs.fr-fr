@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 129b1bda44abf7283efe1996f1898491025ee9d9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942150"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825444"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Comment : supprimer des extensions de code managé de documents
   Vous pouvez supprimer par programmation l’assembly de personnalisation d’un document ou d’un classeur qui fait partie d’une personnalisation au niveau du document pour Microsoft Office Word ou Microsoft Office Excel. Les utilisateurs peuvent ensuite ouvrir les documents et afficher le contenu, mais toute interface utilisateur personnalisée que vous ajoutez aux documents n’apparaît pas et votre code ne s’exécute pas.
@@ -41,15 +41,15 @@ ms.locfileid: "99942150"
 
 2. Ajoutez l’instruction **Imports** ou **using** suivante au début de votre fichier de code.
 
-     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
-     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet1":::
 
 3. Appelez la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> méthode statique de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe et spécifiez le chemin d’accès du document de la solution pour le paramètre.
 
      L’exemple de code suivant suppose que vous supprimez la personnalisation d’un document nommé *WordDocument1.docx* qui se trouve sur le bureau.
 
-     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
-     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet2":::
 
 4. Générez le projet et exécutez l’application sur l’ordinateur sur lequel vous souhaitez supprimer la personnalisation. Visual Studio 2010 Tools pour Office Runtime doit être installé sur l’ordinateur.
 

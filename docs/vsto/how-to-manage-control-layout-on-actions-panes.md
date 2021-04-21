@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 182dee248f161f3dde721c50ee996d6f621dd9af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918586"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827446"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Comment : gérer la disposition des contrôles dans les volets actions
   Un volet actions est ancré par défaut à droite d’un document ou d’une feuille de calcul ; Toutefois, elle peut être ancrée à gauche, en haut ou en bas. Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire du code pour empiler correctement les contrôles utilisateur dans le volet Actions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
@@ -40,27 +40,27 @@ ms.locfileid: "99918586"
 
 1. Ouvrez un projet au niveau du document pour Microsoft Office Word qui comprend un volet actions avec plusieurs contrôles utilisateur ou contrôles de volet Actions imbriqués. Pour plus d’informations, consultez [Comment : ajouter un volet actions à des documents Word ou à des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-2. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur **ThisDocument.cs** ou sur **ThisDocument. vb** , puis cliquez sur **afficher le code**.
+2. Cliquez avec le bouton droit sur **ThisDocument. cs** ou **ThisDocument. vb** dans **Explorateur de solutions** puis cliquez sur **afficher le code**.
 
 3. Dans le <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> Gestionnaire d’événements du volet Actions, vérifiez si l’orientation du volet actions est horizontale.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet30":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet30":::
 
 4. Si l’orientation est horizontale, empile les contrôles du volet d’action à partir de la gauche ; dans le cas contraire, empilez-les à partir du haut.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet31":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet31":::
 
 5. En C#, vous devez ajouter un gestionnaire d’événements pour le `ActionsPane` au <xref:Microsoft.Office.Tools.Word.Document.Startup> Gestionnaire d’événements. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet32":::
 
 6. Exécutez le projet et vérifiez que les contrôles du volet actions sont empilés de gauche à droite lorsque le volet actions est ancré en haut du document, et les contrôles sont empilés de haut en bas lorsque le volet actions est ancré à la partie droite du document.
 
 ## <a name="example"></a>Exemple
- [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
- [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet29":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet29":::
 
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :

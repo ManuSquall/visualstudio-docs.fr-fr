@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: f149758665e5d7a7cdf7f4edd5d926e1de632dca
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ac0e3bf3268029efffdd0800cf7fe133eb1553e8
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527792"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825236"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Comment : créer des éléments de dossier personnalisés par programmation
   Cet exemple crée un nouveau dossier dans Microsoft Office Outlook. Le nom de l’utilisateur qui est connecté est utilisé pour le nom du dossier.
@@ -27,7 +27,7 @@ ms.locfileid: "97527792"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Exemple
- [!code-csharp[Trin_OL_CustFolderItem#1](../vsto/codesnippet/CSharp/Trin_OL_CustFolderItem/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CustFolderItem/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des dossiers](../vsto/working-with-folders.md)

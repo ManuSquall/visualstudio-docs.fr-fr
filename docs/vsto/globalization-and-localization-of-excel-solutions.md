@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d77085808fb54cd0a0517cc6d039e2345a1872
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910303"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827979"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
   Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour obtenir des informations générales, consultez [globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md).
@@ -81,15 +81,15 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Par exemple :
 
- [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
- [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet6":::
 
  Vous avez tout intérêt à utiliser des données fortement typées à la place de littéraux de chaîne chaque fois que vous en avez la possibilité. Par exemple, au lieu de stocker une date dans un littéral de chaîne, stockez-la sous forme de <xref:System.Double>, puis convertissez-le en objet <xref:System.DateTime> pour la manipulation.
 
  L’exemple de code suivant prend une date entrée par un utilisateur dans la cellule A5, la stocke sous forme de <xref:System.Double>, puis le convertit en objet <xref:System.DateTime> pour l’afficher dans la cellule A7. La cellule A7 doit être mise en forme pour afficher une date.
 
- [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
- [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet7":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet7":::
 
 ### <a name="excel-worksheet-functions"></a>Fonctions de feuille de calcul Excel
  Les noms de fonctions de feuille de calcul sont traduits en interne pour la plupart des versions linguistiques d’Excel. Toutefois, en raison de la langue et des problèmes de COM Interop potentiels, il est recommandé d’utiliser uniquement des noms de fonctions anglais dans votre code.

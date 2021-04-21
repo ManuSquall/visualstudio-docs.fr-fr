@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ce8c334be74f2643bfc7fa263b01a74db109eb7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969150"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827745"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : importer une zone de formulaire conçue dans Outlook
   Cette procédure pas à pas montre comment concevoir une zone de formulaire dans Microsoft Office Outlook, puis importer la zone de formulaire dans un projet de complément VSTO Outlook à l’aide de l’Assistant **Nouvelle zone de formulaire** . La conception de la zone de formulaire dans Outlook vous permet d’ajouter des contrôles Outlook natifs à la zone de formulaire liée aux données Outlook. Après avoir importé la zone de formulaire, vous pouvez gérer les événements de chaque contrôle.
@@ -151,7 +151,7 @@ ms.locfileid: "99969150"
 
 7. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , dans le champ **Quelles classes de message personnalisées afficheront cette zone de formulaire ?** , tapez **IPM.Task.TaskFormRegion**, puis cliquez sur **Terminer**.
 
-     Un fichier *TaskFormRegion.cs* ou *TaskFormRegion. vb* est ajouté à votre projet.
+     Un fichier *TaskFormRegion. cs* ou *TaskFormRegion. vb* est ajouté à votre projet.
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>Gérer les événements de contrôles sur la zone de formulaire
  Une fois que la zone de formulaire se trouve dans le projet, vous pouvez ajouter du code pour gérer l’événement `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` du bouton que vous avez ajouté à la zone de formulaire dans Outlook.
@@ -160,14 +160,14 @@ ms.locfileid: "99969150"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Pour gérer les événements des contrôles dans la zone de formulaire
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *TaskFormRegion.cs* ou sur *TaskFormRegion. vb*, puis cliquez sur **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *TaskFormRegion. cs* ou *TaskFormRegion. vb*, puis cliquez sur **afficher le code**.
 
-    *TaskFormRegion.cs* ou *TaskFormRegion. vb* s’ouvre dans l’éditeur de code.
+    *TaskFormRegion. cs* ou *TaskFormRegion. vb* s’ouvre dans l’éditeur de code.
 
 2. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code remplit la zone de liste modifiable de la zone de formulaire à l’aide de la ligne d’objet de chaque tâche du dossier Tâches d’Outlook.
 
-    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet1":::
 
 3. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code effectue les tâches suivantes :
 
@@ -177,13 +177,13 @@ ms.locfileid: "99969150"
 
    - Ajoute l’objet de la tâche au champ masqué dans la zone de formulaire. Le champ masqué stocke ces valeurs dans le cadre de l’élément Outlook.
 
-     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet2":::
 
 4. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code fournit la méthode d’assistance `FindTaskBySubjectName` décrite à l’étape précédente.
 
-    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet3":::
 
 5. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code effectue les tâches suivantes :
 
@@ -193,8 +193,8 @@ ms.locfileid: "99969150"
 
    - Ajoute les valeurs `Microsoft.Office.Interop.Outlook.TaskItem.Subject` et `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` à la zone de liste des tâches dépendantes.
 
-     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet4":::
 
 6. Remplacez le gestionnaire d'événements `TaskFormRegion_FormRegionShowing` par le code suivant. Ce code effectue les tâches suivantes :
 
@@ -202,8 +202,8 @@ ms.locfileid: "99969150"
 
    - Appelle la méthode d’assistance `RefreshTaskListBox` quand la zone de formulaire s’affiche. Cela entraîne l’affichage de toutes les tâches dépendantes ajoutées à la zone de liste quand l’élément a été ouvert pour la dernière fois.
 
-     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet5":::
 
 ## <a name="test-the-outlook-form-region"></a>Tester la zone de formulaire Outlook
  Pour tester la zone de formulaire, ajoutez des tâches à la liste des tâches préalables dans la zone de formulaire. Mettez à jour l’état d’achèvement d’une tâche préalable, puis affichez l’état d’achèvement mis à jour de la tâche dans la liste des tâches préalables.

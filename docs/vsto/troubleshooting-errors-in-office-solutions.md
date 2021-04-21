@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bc1b674caf46dc84ff7bf57c983131b79cfde51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968825"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827810"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :
@@ -121,7 +121,7 @@ ms.locfileid: "99968825"
 
  Par exemple, les objets <xref:Microsoft.Office.Interop.Excel.Application> possèdent un événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> et une propriété <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Pour gérer l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, effectuez un cast de <xref:Microsoft.Office.Interop.Excel.Application> vers l'interface <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. L'exemple de code suivant montre comment procéder dans un projet au niveau du document pour Excel.
 
- [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
  Pour plus d’informations sur les interfaces d’événements dans les assemblys PIA Office, consultez [vue d’ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly](/previous-versions/office/office-12//ms247299(v=office.12))) d’Office.
 
@@ -157,18 +157,18 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="references-to-office-classes-are-not-recognized"></a>Les références aux classes Office ne sont pas reconnues
  Certains noms de classes, par exemple application, se trouvent dans plusieurs espaces de noms tels que <xref:Microsoft.Office.Interop.Word> et <xref:System.Windows.Forms> . Pour cette raison, l’instruction **Imports** / **using** en haut des modèles de projet comprend une constante qualifiante abrégée, par exemple :
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
 
  Pour cette utilisation de l’instruction **Imports** / **using** , vous devez différencier les références aux classes Office avec le qualificateur Word ou Excel, par exemple :
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet3":::
 
  Vous obtenez des erreurs si vous utilisez une déclaration non qualifiée. Par exemple :
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet4":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet4":::
 
  Même si vous avez importé l’espace de noms Word ou Excel et que vous avez accès à toutes les classes qu’il contient, vous devez qualifier complètement tous les types avec Word ou Excel pour supprimer l’ambiguïté relative aux espaces de noms.
 
