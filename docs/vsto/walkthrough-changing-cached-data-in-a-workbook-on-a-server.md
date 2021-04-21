@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 57c33dc89bdec39b62dbec6a74a152ba816dda88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f03175abb843abefe5266724890457c795369d63
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961350"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824430"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procédure pas à pas : modification des données mises en cache dans un classeur sur un serveur
   Cette procédure pas à pas montre comment modifier un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -84,9 +84,9 @@ ms.locfileid: "99961350"
 
 8. Cliquez sur **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **AdventureWorksDataSet** à **Explorateur de solutions** et ouvre le fichier de code **Class1.cs** ou **Class1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **AdventureWorksDataSet** à **Explorateur de solutions** et ouvre le fichier de code **Class1. cs** ou **Class1. vb** .
 
-9. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Class1.cs** ou **Class1. vb**, puis cliquez sur **supprimer**. Vous n’avez pas besoin de ce fichier pour cette procédure pas à pas.
+9. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Class1. cs** ou **Class1. vb**, puis cliquez sur **supprimer**. Vous n’avez pas besoin de ce fichier pour cette procédure pas à pas.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Définir un DataSet dans le projet de bibliothèque de classes
  Définissez un DataSet typé qui contient les données de la base de données AdventureWorksLT pour SQL Server 2005. Plus loin dans cette procédure pas à pas, vous allez référencer ce DataSet à partir d’un projet de classeur Excel et d’un projet d’application console.
@@ -153,7 +153,7 @@ ms.locfileid: "99961350"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Pour ajouter le DataSet aux sources de données dans le projet de classeur Excel
 
-1. Dans **Explorateur de solutions**, double-cliquez sur **Sheet1.cs** ou **Feuille1. vb** sous le projet **AdventureWorksReport** .
+1. Dans **Explorateur de solutions**, double-cliquez sur **Feuil1. cs** ou **Feuille1. vb** sous le projet **AdventureWorksReport** .
 
      Le classeur s’ouvre dans le concepteur.
 
@@ -202,12 +202,12 @@ ms.locfileid: "99961350"
 
 ### <a name="to-initialize-the-dataset-in-the-workbook"></a>Pour initialiser le jeu de données dans le classeur
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier **Sheet1.cs** ou **Feuille1. vb** , puis cliquez sur **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier **Feuille1. cs** ou **Feuille1. vb** , puis cliquez sur **afficher le code**.
 
 2. Remplacez le gestionnaire d'événements `Sheet1_Startup` par le code suivant. Ce code utilise une instance de la `ProductTableAdapter` classe qui est définie dans le projet **AdventureWorksDataSet** pour remplir le DataSet mis en cache avec des données, s’il est actuellement vide.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
-     [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  Générez et exécutez le projet de classeur Excel pour vous assurer qu’il se compile et s’exécute sans erreur. Cette opération remplit également le DataSet mis en cache et enregistre les données dans le classeur.
@@ -241,7 +241,7 @@ ms.locfileid: "99961350"
 
 5. Cliquez sur **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **DataWriter** à **Explorateur de solutions** et ouvre le fichier de code **Program.cs** ou **Module1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **DataWriter** à **Explorateur de solutions** et ouvre le fichier de code **Program. cs** ou **Module1. vb** .
 
 ## <a name="change-data-in-the-cached-dataset-by-using-the-console-application"></a>Modifier des données dans le DataSet mis en cache à l’aide de l’application console
  Utilisez la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe dans l’application console pour lire les données dans un `AdventureWorksLTDataSet` objet local, modifiez ces données, puis enregistrez-les à nouveau dans le DataSet mis en cache.
@@ -258,12 +258,12 @@ ms.locfileid: "99961350"
 
 5. Sous l’onglet **projets** , sélectionnez **AdventureWorksDataSet**, puis cliquez sur **OK**.
 
-6. Ouvrez le fichier *Program.cs* ou *Module1. vb* dans l’éditeur de code.
+6. Ouvrez le fichier *Program. cs* ou *Module1. vb* dans l’éditeur de code.
 
 7. Ajoutez le code suivant **à l’aide** de (pour C#) ou de l’instruction **Imports** (pour Visual Basic) en haut du fichier de code.
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. Ajoutez le code suivant à la méthode `Main` . Ce code déclare les objets suivants :
 
@@ -276,8 +276,8 @@ ms.locfileid: "99961350"
      > [!NOTE]
      > Le code suivant suppose que vous utilisez un classeur qui a l’extension de fichier *. xlsx* . Si le classeur de votre projet a une extension de fichier différente, modifiez le chemin d’accès si nécessaire.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
-     [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet6":::
 
 9. Ajoutez le code suivant à la `Main` méthode, après le code que vous avez ajouté à l’étape précédente. Ce code effectue les tâches suivantes :
 
@@ -289,8 +289,8 @@ ms.locfileid: "99961350"
 
    - Il enregistre les modifications apportées au jeu de données mis en cache dans le classeur.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#7)]
-     [!code-vb[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet7":::
 
 10. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **DataWriter** , pointez sur **Déboguer**, puis cliquez sur **Démarrer une nouvelle instance**.
 

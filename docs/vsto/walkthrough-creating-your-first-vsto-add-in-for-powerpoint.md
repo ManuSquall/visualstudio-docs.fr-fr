@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5adf37c6d55d4704ee370052646e620cbe716c3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966537"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824248"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procédure pas à pas : créer votre premier complément VSTO pour PowerPoint
   Cette procédure pas à pas vous montre comment créer un complément VSTO pour Microsoft Office PowerPoint. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quelles que soient les présentations ouvertes. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -82,12 +82,12 @@ ms.locfileid: "99966537"
 
     Quand l'utilisateur ajoute une nouvelle diapositive à la présentation active, ce gestionnaire d'événements ajoute une zone de texte en haut de la nouvelle diapositive, puis ajoute du texte à la zone de texte.
 
-    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code est requis pour connecter le `Application_PresentationNewSlide` Gestionnaire d’événements à l’événement [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
-    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
    Pour modifier chaque nouvelle diapositive, les exemples de code précédents utilisent les objets suivants :
 

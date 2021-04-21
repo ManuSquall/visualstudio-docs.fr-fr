@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be3b789fabf00d853d447cb3489ef07a5b494fcd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882542"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826991"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les Microsoft Office éléments Outlook qui affichent une zone de formulaire en associant la zone de formulaire à la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire à la `IPM.Note` classe de message.
@@ -87,8 +87,8 @@ ms.locfileid: "99882542"
 
  L’exemple suivant montre deux <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> attributs qui ont été appliqués à une classe de fabrique de zones de formulaire nommée `myFormRegion` . Le premier attribut associe la zone de formulaire à une classe de message standard pour un formulaire de message électronique. Le deuxième attribut associe la zone de formulaire à une classe de message personnalisée nommée `IPM.Task.Contoso` .
 
- [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs" id="Snippet1":::
 
  Les attributs doivent respecter les instructions suivantes :
 

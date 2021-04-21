@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a58c4cc53597714eb65010c2fdbb423dd20a35a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f410292fff686e7604e917e6c3fa7002c65273
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899396"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826250"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Comment : sélectionner des feuilles de calcul par programmation
   La méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> méthode sélectionne l'objet spécifié, ce qui déplace la sélection de l'utilisateur vers le nouvel objet. Utilisez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> si vous souhaitez donner le focus à l'objet sans modifier la sélection de l'utilisateur.
@@ -30,14 +30,14 @@ ms.locfileid: "99899396"
  Si vous souhaitez sélectionner une feuille de calcul existante dans un complément VSTO ou si la feuille de calcul a été créée au moment de l’exécution dans une personnalisation au niveau du document, vous devez y accéder à l’aide <xref:Microsoft.Office.Interop.Excel.Sheets> de la collection Excel du classeur Excel ; dans le cas contraire, vous pouvez accéder directement à l' <xref:Microsoft.Office.Tools.Excel.Worksheet> élément hôte.
 
 ## <a name="use-the-worksheet-host-item"></a>Utiliser l’élément hôte de feuille de calcul
- Dans une personnalisation au niveau du document, ajoutez le code suivant à *Feuil1. vb* ou *Sheet1.cs*.
+ Dans une personnalisation au niveau du document, ajoutez le code suivant à *Feuil1. vb* ou *Feuille1. cs*.
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>Pour sélectionner la première feuille de calcul d'un classeur à l'aide d'un élément hôte
 
 1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> de `Sheet1`.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
-     [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet19":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet19":::
 
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Utiliser la collection Sheets du classeur Excel
  Accédez à la feuille de calcul en utilisant la collection Excel <xref:Microsoft.Office.Interop.Excel.Sheets>.
@@ -46,8 +46,8 @@ ms.locfileid: "99899396"
 
 1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> de la collection <xref:Microsoft.Office.Interop.Excel.Sheets> pour sélectionner la première feuille de calcul du classeur actif.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
-     [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet20":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet20":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)

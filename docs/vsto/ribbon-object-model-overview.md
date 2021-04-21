@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888691"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823988"
 ---
 # <a name="ribbon-object-model-overview"></a>Vue d’ensemble du modèle objet de ruban
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution. Par exemple, vous pouvez remplir dynamiquement des contrôles de menu ou afficher et masquer des contrôles en contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant que le ruban soit chargé par l’application Office. Pour plus d’informations, consultez [définir les propriétés qui passent en lecture seule](#SettingReadOnlyProperties).
@@ -56,7 +56,7 @@ ms.locfileid: "99888691"
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**Liste déroulante**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Office**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Groupe**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Étiquette**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
@@ -111,12 +111,12 @@ ms.locfileid: "99888691"
 
  Ajoutez le code ci-dessous.
 
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb" id="Snippet1":::
 
  Dans les projets Visual C# que vous avez mis à niveau à partir de Visual Studio 2008, le constructeur apparaît dans le fichier de code du ruban.
 
- Dans Visual Basic projets, ou dans les projets Visual C# que vous avez créés dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] , le constructeur apparaît dans le fichier de code du concepteur de ruban. Ce fichier est nommé *votreélémentruban*. Designer.cs ou *votreélémentruban*. Designer. vb. Pour afficher ce fichier dans Visual Basic projets, vous devez d’abord cliquer sur le bouton **Afficher tous les fichiers** dans Explorateur de solutions.
+ Dans Visual Basic projets, ou dans les projets Visual C# que vous avez créés dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] , le constructeur apparaît dans le fichier de code du concepteur de ruban. Ce fichier est nommé *votreélémentruban*. Designer. cs ou *votreélémentruban*. Designer. vb. Pour afficher ce fichier dans Visual Basic projets, vous devez d’abord cliquer sur le bouton **Afficher tous les fichiers** dans Explorateur de solutions.
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Définir des propriétés dans la méthode CreateRibbonExtensibilityObject
  Vous pouvez définir les propriétés d’un `Ribbon` contrôle lorsque vous substituez la `CreateRibbonExtensibilityObject` méthode dans la `ThisAddin` `ThisWorkbook` classe, ou `ThisDocument` de votre projet. Pour plus d’informations sur la `CreateRibbonExtensibilityObject` méthode, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
@@ -125,8 +125,8 @@ ms.locfileid: "99888691"
 
  Ajoutez le code ci-dessous.
 
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> Propriétés qui passent en lecture seule
  Le tableau suivant indique les propriétés qui peuvent être définies avant le chargement du ruban.
@@ -150,7 +150,7 @@ ms.locfileid: "99888691"
 |**Nom**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**Stopp**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|

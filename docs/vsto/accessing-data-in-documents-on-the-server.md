@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965796"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826770"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Accéder aux données des documents sur le serveur
   Vous pouvez programmer des données dans une personnalisation au niveau du document sans avoir à utiliser le modèle objet de Microsoft Office Word ou Microsoft Office Excel. Cela signifie que vous pouvez accéder aux données contenues dans un document sur un serveur sur lequel Word ou Excel n’est pas installé. Par exemple, le code d’un serveur (par exemple, dans une [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] page) peut personnaliser les données d’un document et envoyer le document personnalisé à un utilisateur final. Lorsque l’utilisateur final ouvre le document, le code de liaison de données dans l’assembly de solution lie les données personnalisées au document. Cela est possible parce que les données du document sont séparées de l’interface utilisateur. Pour plus d’informations, consultez [données mises en cache dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md).
@@ -45,8 +45,8 @@ ms.locfileid: "99965796"
 
   L’exemple de code suivant montre comment accéder à une chaîne mise en cache dans la `Sheet1` classe d’un projet de classeur Excel. Cet exemple fait partie d’un exemple plus complet fourni pour la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> méthode.
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>Modifier des données dans le cache
  Pour modifier un objet de données mis en cache, vous devez généralement effectuer les étapes suivantes :
@@ -66,8 +66,8 @@ ms.locfileid: "99965796"
 
  L’exemple de code suivant montre comment modifier la valeur d’une chaîne mise en cache dans la `Sheet1` classe d’un projet de classeur Excel. Cet exemple fait partie d’un exemple plus complet fourni pour la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> méthode.
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>Modifier les valeurs NULL dans le cache de données
  Le cache de données ne stocke pas les objets qui ont la valeur **null** lorsque le document est enregistré et fermé. Cette limitation a plusieurs conséquences lorsque vous modifiez les données mises en cache :

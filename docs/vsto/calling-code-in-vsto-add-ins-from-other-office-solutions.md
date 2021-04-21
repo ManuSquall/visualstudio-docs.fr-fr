@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2519c9d1a22eb6f5577a258fb9b465cfd7caafc2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903805"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826978"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Appeler du code dans des compléments VSTO à partir d’autres solutions Office
   Vous pouvez exposer un objet inclus dans votre complément VSTO à d’autres solutions, notamment d’autres solutions Microsoft Office. Cette possibilité s’avère utile si votre complément VSTO propose un service que vous voulez permettre à d’autres solutions d’utiliser. Par exemple, si vous avez un complément VSTO pour Microsoft Office Excel qui effectue des calculs sur des données financières à partir d’un service Web, d’autres solutions peuvent effectuer ces calculs en appelant le complément VSTO Excel au moment de l’exécution.
@@ -78,8 +78,8 @@ ms.locfileid: "99903805"
 
    L'exemple de code suivant présente une classe `AddInUtilities` avec une méthode `ImportData` que d'autres solutions peuvent appeler. Pour voir ce code dans le contexte d’une plus grande procédure pas à pas, consultez [procédure pas à pas : appeler du code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
 ### <a name="expose-classes-to-vba"></a>Exposer des classes à VBA
  Quand vous effectuez les étapes indiquées ci-dessus, le code VBA peut uniquement appeler les méthodes que vous déclarez dans l'interface. Le code VBA ne peut pas appeler d'autres méthodes dans votre classe, notamment celles que votre classe obtient à partir des classes de base comme <xref:System.Object>.
@@ -96,8 +96,8 @@ ms.locfileid: "99903805"
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Remplacer la méthode RequestComAddInAutomationService
  L'exemple de code suivant montre comment remplacer <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans la classe `ThisAddIn` de votre complément VSTO. L’exemple suppose que vous avez défini une classe nommée `AddInUtilities` que vous voulez exposer à d’autres solutions. Pour voir ce code dans le contexte d’une plus grande procédure pas à pas, consultez [procédure pas à pas : appeler du code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
- [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
- [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
  Quand votre complément VSTO est chargé, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Le runtime assigne l’objet retourné à la propriété COMAddIn. Object d’un <xref:Microsoft.Office.Core.COMAddIn> objet qui représente votre complément VSTO. Cet objet <xref:Microsoft.Office.Core.COMAddIn> est disponible pour d'autres solutions Office et pour des solutions qui automatisent Office.
 

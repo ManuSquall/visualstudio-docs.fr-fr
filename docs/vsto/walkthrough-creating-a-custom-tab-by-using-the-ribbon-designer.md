@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962273"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824820"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban
   Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.
@@ -68,7 +68,7 @@ ms.locfileid: "99962273"
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **ActionsPaneControl**, puis cliquez sur **Ajouter**.
 
-     Le fichier **ActionsPaneControl1.cs** ou **ActionsPaneControl1. vb** s’ouvre dans le concepteur.
+     Le fichier **ActionsPaneControl1. cs** ou **ActionsPaneControl1. vb** s’ouvre dans le concepteur.
 
 3. À partir de l’onglet **contrôles communs** de la **boîte à outils**, ajoutez une étiquette à l’aire du concepteur.
 
@@ -116,22 +116,22 @@ ms.locfileid: "99962273"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Pour masquer et afficher des volets Actions à l'aide de boutons dans l'onglet personnalisé
 
-1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour *MyRibbon.cs* ou *MyRibbon. vb*, puis choisissez **afficher le code**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour *MyRibbon. cs* ou *MyRibbon. vb*, puis choisissez **afficher le code**.
 
 2. Ajoutez le code suivant en haut de la classe `MyRibbon`. Ce code crée deux objets du volet Actions.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet1":::
 
 3. Remplacez la méthode `MyRibbon_Load` par le code suivant. Ce code ajoute les objets du volet Actions à la collection <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> et masque les objets. Le code Visual C# attache également les délégués à plusieurs événements de contrôle du ruban.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet2":::
 
 4. Ajoutez les trois méthodes de gestionnaire d'événements suivantes à la classe `MyRibbon`. Ces méthodes gèrent les événements <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> des deux boutons et l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Les gestionnaires d'événements pour button1 et button2 affichent d'autres volets Actions. Le gestionnaire d'événements pour toggleButton1 affiche et masque le volet Actions actif.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>Tester l’onglet personnalisé
  Quand vous exécutez le projet, Excel démarre et l’onglet **mon onglet personnalisé** s’affiche sur le ruban. Choisissez les boutons de **mon onglet personnalisé** pour afficher et masquer les volets actions.

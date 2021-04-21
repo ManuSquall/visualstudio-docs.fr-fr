@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927663"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826367"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules d’un Microsoft Office feuille de calcul Excel aux champs de la base de données Northwind SQL Server.
@@ -51,7 +51,7 @@ ms.locfileid: "99927663"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -117,16 +117,16 @@ ms.locfileid: "99927663"
 
 ### <a name="to-initialize-the-control"></a>Pour initialiser le contrôle
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Sheet1.cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Feuille1. cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
 
 2. Ajoutez le code suivant à la `Sheet1_Startup` méthode pour définir le texte pour le b `utton` .
 
-    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet8":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet8":::
 
 3. Pour C# uniquement, ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement à la `Sheet1_Startup` méthode.
 
-    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet9":::
 
    Ajoutez maintenant le code pour gérer l' <xref:System.Windows.Forms.Control.Click> événement du bouton.
 
@@ -137,8 +137,8 @@ ms.locfileid: "99927663"
 
 1. Ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du `button` , puis ajoutez le code suivant pour valider toutes les modifications apportées dans le DataSet à la base de données.
 
-     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet10":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que les données apparaissent comme prévu et que vous pouvez manipuler les données dans l’objet de liste.
@@ -181,7 +181,7 @@ ms.locfileid: "99927663"
 
 2. Ajoutez les informations suivantes dans la ligne vide.
 
-   |EmployeeID|LastName|FirstName|Title|
+   |EmployeeID (IDEmployé)|LastName|FirstName|Intitulé|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Directeur commercial|
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e618dcd0cc699b4626f825890cf0fc8bd7ddd853
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823884"
 ---
 # <a name="late-binding-in-office-solutions"></a>Liaison tardive dans les solutions Office
   Certains types dans les modèles objet des applications Office fournissent des fonctionnalités disponibles via les fonctionnalités de liaison tardive. Par exemple, certaines méthodes et propriétés peuvent retourner différents types d’objets en fonction du contexte de l’application Office, et certains types peuvent exposer différentes méthodes ou propriétés dans différents contextes.
@@ -43,12 +43,12 @@ ms.locfileid: "99927650"
 ### <a name="examples"></a>Exemples
  L’exemple de code suivant montre comment effectuer un cast d’un objet en un type spécifique dans un projet Visual Basic dans lequel **option strict** a la valeur on. Dans ce type de projet, vous devez effectuer un cast explicite <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> de la propriété en <xref:Microsoft.Office.Interop.Excel.Range> . Cet exemple requiert un projet Excel au niveau du document avec une classe de feuille de calcul nommée `Sheet1` .
 
- [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet9":::
 
  L’exemple de code suivant montre comment effectuer un cast implicite d’un objet en un type spécifique dans un projet Visual Basic, où **option strict** est désactivé ou dans un projet Visual C# qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Dans ces types de projets, la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propriété est convertie implicitement en <xref:Microsoft.Office.Interop.Excel.Range> . Cet exemple requiert un projet Excel au niveau du document avec une classe de feuille de calcul nommée `Sheet1` .
 
- [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
- [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet10":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>Accéder aux membres qui sont uniquement disponibles via la liaison tardive
  Certaines propriétés et méthodes dans les assemblys PIA Office sont disponibles uniquement via une liaison tardive. Dans Visual Basic projets où **option strict** est désactivé ou dans les projets Visual C# qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , vous pouvez utiliser les fonctionnalités de liaison tardive dans ces langages pour accéder aux membres à liaison tardive. Dans Visual Basic projets où **option strict** a la valeur on, vous devez utiliser la réflexion pour accéder à ces membres.
@@ -56,12 +56,12 @@ ms.locfileid: "99927650"
 ### <a name="examples"></a>Exemples
  L’exemple de code suivant montre comment accéder aux membres à liaison tardive dans un projet Visual Basic, où **option strict** est désactivé ou dans un projet Visual C# qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Cet exemple accède à la propriété de **nom** à liaison tardive de la boîte de dialogue **ouvrir un fichier** dans Word. Pour utiliser cet exemple, exécutez-le à partir de la `ThisDocument` `ThisAddIn` classe ou dans un projet Word.
 
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
- [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet122":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet122":::
 
  L’exemple de code suivant montre comment utiliser la réflexion pour accomplir la même tâche dans un projet de Visual Basic où **option strict** a la valeur on.
 
- [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)

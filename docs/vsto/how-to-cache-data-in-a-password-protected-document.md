@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccdb906022d4dcfc321af294eec59afa36832773
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954031"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824183"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données au cache de données dans un document ou un classeur protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer les modifications apportées aux données mises en cache en remplaçant deux méthodes dans votre projet.
@@ -45,8 +45,8 @@ ms.locfileid: "99954031"
 ### <a name="example"></a>Exemple
  L’exemple de code suivant montre comment mettre en cache des données dans un document Word protégé par un mot de passe. Avant que le code ne supprime la protection dans la <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> méthode, il enregistre la <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> valeur actuelle, afin que le même type de protection puisse être réappliqué dans la <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> méthode.
 
- [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
- [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>Compiler le code
  Ajoutez ce code à la `ThisDocument` classe de votre projet. Ce code suppose que le mot de passe est stocké dans un champ nommé `securelyStoredPassword` .
@@ -69,8 +69,8 @@ ms.locfileid: "99954031"
 ### <a name="example"></a>Exemple
  L’exemple de code suivant montre comment mettre en cache des données dans un classeur Excel protégé par un mot de passe. Avant que le code ne supprime la protection dans la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> méthode, il enregistre les <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> valeurs actuelles et <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> , afin que le même type de protection puisse être réappliqué dans la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> méthode.
 
- [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>Compiler le code
  Ajoutez ce code à la `ThisWorkbook` classe de votre projet. Ce code suppose que le mot de passe est stocké dans un champ nommé `securelyStoredPassword` .

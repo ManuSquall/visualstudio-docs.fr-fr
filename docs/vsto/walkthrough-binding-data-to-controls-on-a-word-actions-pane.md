@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d94891520695117c7a395f81feda81e52f909fe6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906589"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824495"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Word
   Cette procédure pas à pas montre comment lier des données à des contrôles dans un volet actions dans Word. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -146,12 +146,12 @@ ms.locfileid: "99906589"
 
 1. Dans le <xref:System.Windows.Forms.UserControl.Load> Gestionnaire d’événements de la `ActionsControl` classe, ajoutez le code suivant.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet1":::
 
 2. En C#, vous devez attacher le gestionnaire d’événements à l' <xref:System.Windows.Forms.UserControl.Load> événement. Vous pouvez placer ce code dans le `ActionsControl` constructeur, après l’appel à `InitializeComponent` . Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet33":::
 
 ### <a name="to-set-data-binding-properties-of-the-controls"></a>Pour définir les propriétés de liaison de données des contrôles
 
@@ -178,43 +178,43 @@ ms.locfileid: "99906589"
 
 1. Dans la `ActionsControl` classe, créez une méthode pour mettre en forme les en-têtes de la table.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet2":::
 
 ### <a name="to-create-the-table"></a>Pour créer la table
 
 1. Dans la `ActionsControl` classe, écrivez une méthode qui créera une table si elle n’existe pas déjà, et ajoutera des données du volet actions à la table.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet3":::
 
 ### <a name="to-insert-text-into-a-word-table"></a>Pour insérer du texte dans un tableau Word
 
 1. Ajoutez le code suivant au <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements du bouton **Insérer** .
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet4":::
 
 2. En C#, vous devez créer un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du bouton.  Vous pouvez placer ce code dans le <xref:System.Windows.Forms.UserControl.Load> Gestionnaire d’événements de la `ActionsControl` classe.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet5":::
 
 ## <a name="show-the-actions-pane"></a>Afficher le volet Actions
  Le volet Actions devient visible après l’ajout de contrôles.
 
 ### <a name="to-show-the-actions-pane"></a>Pour afficher le volet Actions
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisDocument. vb** ou **ThisDocument.cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisDocument. vb** ou sur **ThisDocument. cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
 
 2. Créez une nouvelle instance du contrôle en haut de la `ThisDocument` classe afin qu’elle ressemble à l’exemple suivant.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet6":::
 
 3. Ajoutez du code au <xref:Microsoft.Office.Tools.Word.Document.Startup> Gestionnaire d’événements de `ThisDocument` afin qu’il ressemble à l’exemple suivant.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre document pour vérifier que le volet actions s’affiche lorsque le document est ouvert. Testez la relation maître/détail dans les contrôles du volet Actions et assurez-vous que les données sont renseignées dans un tableau Word quand l’utilisateur clique sur le bouton **Insérer** .

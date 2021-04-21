@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62a49919522c5d4a88b6f4b6876b567c8d275dec
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920374"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826419"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procédure pas à pas : collecter des données à l’aide d’un Windows Form
   Cette procédure pas à pas montre comment ouvrir un Windows Form à partir d’une personnalisation au niveau du document pour Microsoft Office Excel, recueillir des informations auprès de l’utilisateur et écrire ces informations dans une cellule de feuille de calcul.
@@ -41,7 +41,7 @@ ms.locfileid: "99920374"
 > [!NOTE]
 > Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -95,13 +95,13 @@ ms.locfileid: "99920374"
    > [!NOTE]
    > En C#, vous devez ajouter un gestionnaire d’événements comme indiqué dans l’événement <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet1":::
 
 3. Créez une méthode nommée `WriteStringToCell` qui écrit du texte dans une plage nommée. Cette méthode est appelée à partir du formulaire et l’entrée de l’utilisateur est passée au contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, sur la cellule **A1**.
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet2":::
 
    Ajoutez ensuite du code au formulaire pour gérer l’événement de clic du bouton.
 
@@ -115,8 +115,8 @@ ms.locfileid: "99920374"
 
 3. Ajoutez du code au gestionnaire d’événements pour prendre l’entrée de la zone de texte, l’envoyer à la fonction `WriteStringToCell`, puis fermer le formulaire.
 
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb" id="Snippet3":::
 
 ## <a name="test"></a>Test
  Vous pouvez maintenant exécuter le projet. Le Windows Form s’affiche et votre entrée apparaît dans la feuille de calcul.

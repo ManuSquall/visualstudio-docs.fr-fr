@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 18a6176c6472f1587e00364f0e0bd300611eabf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6038000dec20f9183f974ad8d187230e634d5eed
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897515"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826211"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Comment : utiliser des boîtes de dialogue intégrées dans Word par programmation
   Lorsque vous travaillez avec Microsoft Office Word, vous devez parfois afficher des boîtes de dialogue pour les entrées utilisateur. Bien que vous puissiez créer les vôtres, vous souhaiterez peut-être également utiliser les boîtes de dialogue intégrées dans Word, qui sont exposées dans la <xref:Microsoft.Office.Interop.Word.Dialogs> collection de l' <xref:Microsoft.Office.Interop.Word.Application> objet. Cela vous permet d’accéder à plus de 200 des boîtes de dialogue prédéfinies, qui sont représentées en tant qu’énumérations.
@@ -33,20 +33,20 @@ ms.locfileid: "99897515"
 
  L’exemple de code suivant montre comment afficher la boîte de dialogue **ouvrir un fichier** . Pour utiliser cet exemple, exécutez-le à partir de la `ThisDocument` `ThisAddIn` classe ou de votre projet.
 
- [!code-vb[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#100)]
- [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet100":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet100":::
 
 ### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>Accéder aux membres de la boîte de dialogue qui sont disponibles via une liaison tardive
  Certaines propriétés et méthodes des boîtes de dialogue dans Word sont disponibles uniquement via la liaison tardive. Dans Visual Basic projets où **option strict** a la valeur on, vous devez utiliser la réflexion pour accéder à ces membres. Pour plus d’informations, consultez [liaison tardive dans les solutions Office](../vsto/late-binding-in-office-solutions.md).
 
  L’exemple de code suivant montre comment utiliser la propriété **Name** de la boîte de dialogue d' **ouverture de fichier** dans Visual Basic projets où **option strict** a la valeur OFF ou dans les projets Visual C# qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] . Pour utiliser cet exemple, exécutez-le à partir de la `ThisDocument` `ThisAddIn` classe ou de votre projet.
 
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
- [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet122":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet122":::
 
  L’exemple de code suivant montre comment utiliser la réflexion pour accéder à la propriété **Name** de la boîte de dialogue d' **ouverture de fichier** dans Visual Basic projets où **option strict** a la valeur on. Pour utiliser cet exemple, exécutez-le à partir de la `ThisDocument` `ThisAddIn` classe ou de votre projet.
 
- [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : utiliser des boîtes de dialogue Word en mode masqué par programmation](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)

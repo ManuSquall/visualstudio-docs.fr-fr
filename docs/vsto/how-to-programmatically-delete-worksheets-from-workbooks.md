@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2289309932dcd1d946fc775de60a0e07892be222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3413eaf82b323bc23164687dc3ae3ac0b9d3c48
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963889"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825938"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Comment : supprimer des feuilles de calcul à partir de classeurs par programmation
   Vous pouvez supprimer toute feuille de calcul dans un classeur. Pour supprimer une feuille de calcul, utilisez l’élément hôte de feuille de calcul ou accédez à la feuille de calcul à l’aide de la collection Sheets du classeur.
@@ -45,8 +45,8 @@ ms.locfileid: "99963889"
 
 1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> de `Sheet1`.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomation#17](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet17":::
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet17":::
 
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Utiliser la collection Sheets du classeur Excel
  Accédez aux feuilles de calcul via la collection <xref:Microsoft.Office.Interop.Excel.Sheets> Microsoft Office Excel dans les cas suivants :
@@ -64,8 +64,8 @@ ms.locfileid: "99963889"
 
 1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> de la collection <xref:Microsoft.Office.Interop.Excel.Sheets>.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet18":::
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet18":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des feuilles de calcul](working-with-worksheets.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f35649db5f61cb545bb3550980b3d6b9a8742cd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48d7baf9605947818ffd79eb7312c0dbefe581ac
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966498"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824261"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : créer votre premier complément VSTO pour Project
   Cette procédure pas à pas vous montre comment créer un complément VSTO pour Microsoft Office projet. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -81,8 +81,8 @@ ms.locfileid: "99966498"
 
     Quand l’utilisateur crée un projet, ce gestionnaire d’événements ajoute une tâche au projet.
 
-    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
    Pour modifier le projet, cet exemple de code utilise les objets suivants :
 
@@ -92,7 +92,7 @@ ms.locfileid: "99966498"
 
 1. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code connecte le `Application_Newproject` Gestionnaire d’événements à l’événement NewProject.
 
-     [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
 ## <a name="test-the-project"></a>Tester le projet
  Quand vous générez et exécutez le projet, vérifiez que la nouvelle tâche apparaît dans le nouveau projet obtenu.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16f735e2902527307ac812922495a2a0cb3b377e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6bcc134096284579e1097edf0e958105f48cfcb
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966589"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824280"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Procédure pas à pas : créer votre premier complément VSTO pour Outlook
   Cette procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Outlook. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application elle-même, quel que soit l'élément Outlook ouvert. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -81,20 +81,20 @@ ms.locfileid: "99966589"
 
 1. Dans le fichier de code ThisAddIn, déclarez un champ nommé `inspectors` dans la classe `ThisAddIn` . Le champ `inspectors` conserve une référence à la collection de fenêtres Inspecteur de l'instance Outlook actuelle. Cette référence empêche le garbage collector de libérer la mémoire qui contient le gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .
 
-    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. Remplacez la méthode `ThisAddIn_Startup` par le code suivant. Ce code attache un gestionnaire d'événements à l'événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .
 
-    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb" id="Snippet2":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
 3. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Ce code définit un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .
 
     Lorsque l'utilisateur crée un message électronique, ce gestionnaire d'événements ajoute du texte à l'objet et au corps du message.
 
-    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb" id="Snippet3":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs" id="Snippet3":::
 
    Pour modifier chaque nouveau message électronique, les exemples de code précédents utilisent les objets suivants :
 

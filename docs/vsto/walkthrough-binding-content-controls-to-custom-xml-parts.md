@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e4a10949f463cc769890b828ba39de30a9b4c1c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906627"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824573"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées
   Cette procédure pas à pas montre comment lier les contrôles de contenu d'une personnalisation au niveau du document pour Word aux données XML stockées dans le document.
@@ -227,24 +227,24 @@ ms.locfileid: "99906627"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Pour ajouter une partie XML personnalisée au document
 
-1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour  **ThisDocument.cs** ou **ThisDocument. vb**, puis choisissez **afficher le code**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour  **ThisDocument. cs** ou **ThisDocument. vb**, puis choisissez **afficher le code**.
 
 2. Ajoutez les déclarations suivantes à la classe `ThisDocument`. Le code déclare plusieurs objets que vous utiliserez pour ajouter une partie XML personnalisée au document.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet1":::
 
 3. Ajoutez la méthode suivante à la classe `ThisDocument`. Cette méthode obtient le contenu du fichier de données XML qui est incorporé en tant que ressource dans l'assembly, et retourne le contenu sous la forme d'une chaîne XML.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet3":::
 
 4. Ajoutez la méthode suivante à la classe `ThisDocument`. La méthode `AddCustomXmlPart` crée une nouvelle partie XML personnalisée qui contient une chaîne XML qui est passée à la méthode.
 
      Pour vous assurer que la partie XML personnalisée n'est créée qu'une seule fois, la méthode crée cette partie uniquement si une partie XML personnalisée avec un GUID correspondant n'existe pas dans le document. La première fois que cette méthode est appelée, elle enregistre la valeur de la propriété <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> dans la chaîne `employeeXMLPartID`. La valeur de la chaîne `employeeXMLPartID` est rendue persistante dans le document, car elle a été déclarée à l'aide de l'attribut <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet4":::
 
 ## <a name="bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Lier les contrôles de contenu aux éléments de la partie XML personnalisée
  Liez chaque contrôle de contenu à un élément de la partie XML personnalisée à l’aide de la propriété **XMLMapping** de chaque contrôle de contenu.
@@ -253,8 +253,8 @@ ms.locfileid: "99906627"
 
 1. Ajoutez la méthode suivante à la classe `ThisDocument`. Cette méthode lie chaque contrôle de contenu à un élément de la partie XML personnalisée et définit le format d'affichage de date de la <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet5":::
 
 ## <a name="run-your-code-when-the-document-is-opened"></a>Exécuter votre code lorsque le document est ouvert
  Créez la partie XML personnalisée et liez les contrôles personnalisés aux données lorsque le document est ouvert.
@@ -263,8 +263,8 @@ ms.locfileid: "99906627"
 
 1. Ajoutez le code suivant à la méthode `ThisDocument_Startup` de la classe `ThisDocument`. Ce code obtient la chaîne XML à partir du fichier **employees.xml** , ajoute la chaîne XML à une nouvelle partie XML personnalisée dans le document et lie les contrôles de contenu aux éléments de la partie XML personnalisée.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>Tester le projet
  Lorsque vous ouvrez le document, les contrôles de contenu affichent les données à partir des éléments de la partie XML personnalisée. Vous pouvez cliquer sur le <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> pour sélectionner l’une des trois valeurs valides de l' `title` élément, qui sont définies dans le fichier **Employees. xsd** . Si vous modifiez les données dans l'un des contrôles de contenu, les nouvelles valeurs sont enregistrées dans la partie XML personnalisée du document.

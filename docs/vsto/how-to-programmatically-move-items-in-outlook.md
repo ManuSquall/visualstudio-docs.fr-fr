@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8e951ab393d09506ad4f2d593962ea1826eff09
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888860"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826731"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Comment : déplacer des éléments dans Outlook par programmation
   Cet exemple déplace les messages électroniques non lus de la **boîte de réception** vers un dossier nommé **test**. L’exemple déplace uniquement les messages qui contiennent le mot **test** dans le `Subject` champ.
@@ -27,7 +27,7 @@ ms.locfileid: "99888860"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Exemple
- [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :

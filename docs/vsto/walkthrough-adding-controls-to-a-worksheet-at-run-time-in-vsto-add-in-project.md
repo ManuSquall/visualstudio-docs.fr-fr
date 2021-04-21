@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 178180e8c698ca56b15e46bcbe65877d68c6b2a1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921789"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824677"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procédure pas à pas : ajout de contrôles à une feuille de calcul au moment de l’exécution dans un projet de complément VSTO
   Vous pouvez ajouter des contrôles à une feuille de calcul ouverte en utilisant un complément Excel VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d'ajouter <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> et <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul. Pour plus d’informations, consultez [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,7 +65,7 @@ ms.locfileid: "99921789"
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (concepteur visuel)**, puis cliquez sur **Ajouter**.
 
-     Un fichier nommé **Ribbon1.cs** ou **Ribbon1. vb** s’ouvre dans le concepteur de ruban et affiche un onglet et un groupe par défaut.
+     Un fichier nommé **Ribbon1. cs** ou **Ribbon1. vb** s’ouvre dans le concepteur de ruban et affiche un onglet et un groupe par défaut.
 
 3. Sous l’onglet **Contrôles de ruban Office** de la **Boîte à outils**, faites glisser un contrôle CheckBox sur **group1**.
 
@@ -105,10 +105,10 @@ ms.locfileid: "99921789"
 
      Ce code utilise la méthode `GetVstoObject` pour obtenir un élément hôte qui représente la première feuille de calcul du classeur, puis ajoute un contrôle <xref:Microsoft.Office.Tools.Excel.Controls.Button> à la cellule sélectionnée.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet2":::
 
-3. Dans **Explorateur de solutions**, sélectionnez *Ribbon1.cs* ou *Ribbon1. vb*.
+3. Dans **Explorateur de solutions**, sélectionnez *Ribbon1. cs* ou *Ribbon1. vb*.
 
 4. Dans le menu **affichage** , cliquez sur **Concepteur**.
 
@@ -118,8 +118,8 @@ ms.locfileid: "99921789"
 
      Ce code utilise la méthode `GetVstoObject` pour obtenir un élément hôte qui représente la première feuille de calcul du classeur, puis définit un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour la ou les cellules sélectionnées.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet3":::
 
 7. Dans le concepteur de ruban, double-cliquez sur **ListObject**.
 
@@ -127,31 +127,31 @@ ms.locfileid: "99921789"
 
      Ce code utilise la méthode `GetVstoObject` pour obtenir un élément hôte qui représente la première feuille de calcul du classeur, puis définit un <xref:Microsoft.Office.Tools.Excel.ListObject> pour la ou les cellules sélectionnées.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet4":::
 
 9. Ajoutez les instructions suivantes au début du fichier de code du ruban.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet1":::
 
 ## <a name="remove-controls-from-the-worksheet"></a>Supprimer des contrôles de la feuille de calcul
  Les contrôles ne sont pas conservés quand la feuille de calcul est enregistrée et fermée. Supprimez par programmation tous les contrôles Windows Forms générés avant que la feuille de calcul ne soit enregistrée. Sinon, seul le contour du contrôle apparaît quand vous rouvrez le classeur. Ajoutez du code à l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> qui supprime les contrôles Windows Forms dans la collection de contrôles de l'élément hôte généré. Pour plus d’informations, consultez [persistance des contrôles dynamiques dans les documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Pour supprimer des contrôles dans la feuille de calcul
 
-1. Dans **Explorateur de solutions**, sélectionnez *ThisAddIn.cs* ou *ThisAddIn. vb*.
+1. Dans **Explorateur de solutions**, sélectionnez *ThisAddIn. cs* ou *ThisAddIn. vb*.
 
 2. Dans le menu **Affichage** , cliquez sur **Code**.
 
 3. Ajoutez la méthode suivante à la classe `ThisAddIn`. Ce code récupère la première feuille de calcul du classeur, puis utilise la méthode `HasVstoObject` pour vérifier si la feuille de calcul possède un objet de feuille de calcul généré. Si l'objet de feuille de calcul généré possède des contrôles, le code récupère cet objet de feuille de calcul, puis effectue une itération dans la collection de contrôles, en supprimant ces derniers.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet6":::
 
 4. En C#, vous devez créer un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Vous pouvez placer ce code dans la méthode `ThisAddIn_Startup`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Remplacez la méthode `ThisAddIn_Startup` par le code suivant.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="test-the-solution"></a>Test de la solution
  Ajoutez des contrôles à une feuille de calcul en les sélectionnant à partir d’un onglet personnalisé sur le ruban. Quand vous enregistrez la feuille de calcul, ces contrôles sont supprimés.

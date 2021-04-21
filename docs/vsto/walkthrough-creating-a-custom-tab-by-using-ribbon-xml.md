@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5d7992462ac3ece9782b0168feedd87577c2d0e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920362"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826328"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procédure pas à pas : création d’un onglet personnalisé à l’aide du ruban XML
   Cette procédure pas à pas montre comment créer un onglet de ruban personnalisé à l’aide de l’élément **Ruban (XML)** .
@@ -56,7 +56,7 @@ ms.locfileid: "99920362"
 
      Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **MyRibbonAddIn** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn. cs** ou **ThisAddIn. vb** et ajoute le projet **MyRibbonAddIn** à **Explorateur de solutions**.
 
 ## <a name="create-the-vsto-add-ins-tab"></a>Créer l’onglet Compléments VSTO
  Pour créer l’onglet **compléments** , ajoutez un élément **Ruban (XML)** à votre projet. À une étape ultérieure de cette procédure pas à pas, vous ajouterez des boutons à cet onglet.
@@ -69,14 +69,14 @@ ms.locfileid: "99920362"
 
 3. Remplacez le nom du nouveau ruban par **MyRibbon**, puis cliquez sur **Ajouter**.
 
-     Le fichier **MyRibbon.cs** ou **MyRibbon. vb** s’ouvre dans le concepteur. Un fichier XML nommé **MyRibbon.xml** est également ajouté à votre projet.
+     Le fichier **MyRibbon. cs** ou **MyRibbon. vb** s’ouvre dans le concepteur. Un fichier XML nommé **MyRibbon.xml** est également ajouté à votre projet.
 
-4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisAddIn.cs** ou sur **ThisAddIn. vb**, puis cliquez sur **afficher le code**.
+4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisAddIn. cs** ou **ThisAddIn. vb**, puis cliquez sur **afficher le code**.
 
 5. Ajoutez le code suivant à la classe **ThisAddin** . Ce code substitue la méthode `CreateRibbonExtensibilityObject` et retourne la classe Ribbon XML à l'application Office.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 6. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **MyRibbonAddIn** , puis cliquez sur **générer**. Vérifiez que le projet se génère sans erreur.
 
@@ -107,22 +107,22 @@ ms.locfileid: "99920362"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Pour ajouter des méthodes de rappel pour les boutons
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **MyRibbon.cs** ou sur **MyRibbon. vb**, puis cliquez sur **ouvrir**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **MyRibbon. cs** ou **MyRibbon. vb**, puis cliquez sur **ouvrir**.
 
-2. Ajoutez le code suivant en haut du fichier **MyRibbon.cs** ou **MyRibbon. vb** . Ce code crée un alias pour l'espace de noms <xref:Microsoft.Office.Interop.Word>.
+2. Ajoutez le code suivant en haut du fichier **MyRibbon. cs** ou **MyRibbon. vb** . Ce code crée un alias pour l'espace de noms <xref:Microsoft.Office.Interop.Word>.
 
-     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
-     [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb" id="Snippet1":::
 
 3. Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le bouton **Insérer un texte** qui ajoute une chaîne au document actif à l’emplacement actuel du curseur.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet2":::
 
 4. Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le bouton **Insérer une table** qui ajoute une table au document actif à l’emplacement actuel du curseur.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="testing-the-vsto-add-in"></a>Test du complément VSTO
  Quand vous exécutez le projet, Word s’ouvre et l’onglet **compléments** s’affiche sur le ruban. Cliquez sur les boutons **Insérer du texte** et **Insérer un tableau** sous l’onglet **compléments** pour tester le code.

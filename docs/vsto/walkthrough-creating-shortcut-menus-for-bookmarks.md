@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937416"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826302"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : créer des menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour les <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Quand un utilisateur clique avec le bouton droit sur le texte d’un signet, un menu contextuel s’affiche et donne à l’utilisateur des options pour mettre en forme le texte.
@@ -92,7 +92,7 @@ ms.locfileid: "99937416"
 
 1. Ajoutez un élément **XML Ribbon** au projet. Pour plus d’informations, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. Dans **Explorateur de solutions**, sélectionnez **ThisDocument.cs** ou **ThisDocument. vb**.
+2. Dans **Explorateur de solutions**, sélectionnez **ThisDocument. cs** ou **ThisDocument. vb**.
 
 3. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
@@ -100,8 +100,8 @@ ms.locfileid: "99937416"
 
 4. Ajoutez le code suivant à la classe **ThisDocument** . Ce code remplace la méthode CreateRibbonExtensibilityObject et retourne la classe Ribbon XML à l’application Office.
 
-     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML de ruban se nomme Ribbon1.xml.
 
@@ -131,10 +131,10 @@ ms.locfileid: "99937416"
 
 9. Déclarez les variables suivantes et une variable de signet au niveau de la classe.
 
-     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet2":::
 
-10. Dans **Explorateur de solutions**, sélectionnez le fichier de code du ruban. Par défaut, le fichier de code du ruban est nommé **Ribbon1.cs** ou **Ribbon1. vb**.
+10. Dans **Explorateur de solutions**, sélectionnez le fichier de code du ruban. Par défaut, le fichier de code du ruban se nomme **Ribbon1. cs** ou **Ribbon1. vb**.
 
 11. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
@@ -142,8 +142,8 @@ ms.locfileid: "99937416"
 
 12. Dans le fichier de code du ruban, ajoutez la méthode suivante. Il s’agit d’une méthode de rappel pour les deux boutons que vous avez ajoutés au menu contextuel du document. Cette méthode détermine si ces boutons s’affichent dans le menu contextuel. Les boutons gras et italique s’affichent uniquement si vous cliquez avec le bouton droit sur le texte dans le signet.
 
-     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet5":::
 
 ## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> Mettre en forme le texte dans le signet
 
@@ -151,10 +151,10 @@ ms.locfileid: "99937416"
 
 1. Dans le fichier de code du ruban, ajoutez un `ButtonClick` Gestionnaire d’événements pour appliquer la mise en forme au signet.
 
-     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **Explorateur de solutions**, sélectionnez **ThisDocument.cs** ou **ThisDocument. vb**.
+2. **Explorateur de solutions**, sélectionnez **ThisDocument. cs** ou **ThisDocument. vb**.
 
 3. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
@@ -162,15 +162,15 @@ ms.locfileid: "99937416"
 
 4. Ajoutez le code suivant à la classe **ThisDocument** .
 
-     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet3":::
 
     > [!NOTE]
     > Vous devez écrire du code pour gérer le cas où les signets se chevauchent. Si vous ne le faites pas, par défaut, le code est appelé pour tous les signets dans la sélection.
 
 5. En C#, vous devez ajouter des gestionnaires d’événements pour les contrôles Bookmark à l' <xref:Microsoft.Office.Tools.Word.Document.Startup> événement. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Testez votre document pour vérifier que les éléments de menu gras et italique s’affichent dans le menu contextuel lorsque vous cliquez avec le bouton droit sur le texte d’un signet et que le texte est correctement mis en forme.

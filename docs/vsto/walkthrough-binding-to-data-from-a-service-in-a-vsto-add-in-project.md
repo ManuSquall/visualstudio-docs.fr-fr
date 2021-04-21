@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6993cb3eebc7641f4486bdc617ecb78e40aa05c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882399"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824526"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procédure pas à pas : liaison à des données à partir d’un service dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes dans les projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à un document Microsoft Office Word, comment lier les contrôles aux données extraites du service de contenu MSDN et comment répondre aux événements au moment de l’exécution.
@@ -45,7 +45,7 @@ ms.locfileid: "99882399"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de complément VSTO Word.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -82,28 +82,28 @@ ms.locfileid: "99882399"
 
 1. Dans la classe `ThisAddIn` , déclarez les variables de MTPS Content Service, du contrôle de contenu et de la liaison de données.
 
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet2":::
 
 2. Ajoutez la méthode suivante à la classe `ThisAddIn`. Cette méthode crée un contrôle de contenu au début du document actif.
 
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet4":::
 
 3. Ajoutez la méthode suivante à la classe `ThisAddIn`. Cette méthode initialise les objets nécessaires à la création et à l’envoi d’une demande au service Web.
 
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet6":::
 
 4. Créez un gestionnaire d’événements pour extraire le document de la Bibliothèque MSDN sur les contrôles de contenu quand un utilisateur clique sur le contrôle de contenu et liez les données au contrôle de contenu.
 
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet5":::
 
 5. Appelez les méthodes `AddRichTextControlAtRange` et `InitializeServiceObjects` à partir de la méthode `ThisAddIn_Startup` . Programmeurs C#, ajoutez un gestionnaire d’événements.
 
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet3":::
 
 ## <a name="test-the-add-in"></a>Tester le complément
  Quand vous ouvrez Word, le contrôle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> apparaît. Le texte du contrôle change quand vous cliquez dessus.

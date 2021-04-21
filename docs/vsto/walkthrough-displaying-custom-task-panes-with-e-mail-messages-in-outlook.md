@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e1092f48ad699291ccad9abcc8c834344821c060
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb1aed5ef110b726dae6e51337b0934ae0a8e69d
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942124"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824209"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procédure pas à pas : affichage de volets de tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.
@@ -133,33 +133,33 @@ ms.locfileid: "99942124"
 
 2. Ajoutez les instructions suivantes au début du fichier.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet2":::
 
 3. Ajoutez le code suivant au fichier *ThisAddIn.cs* ou *ThisAddIn.vb* , en dehors de la classe `ThisAddIn` (pour Visual C#, ajoutez ce code dans l’espace de noms `OutlookMailItemTaskPane` ). La classe `InspectorWrapper` gère une paire d’objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane> . Vous effectuez la définition de cette classe dans les étapes suivantes.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet3":::
 
 4. Ajoutez le constructeur suivant après le code ajouté à l’étape précédente. Ce constructeur crée et initialise un nouveau volet de tâches personnalisé associé à l’objet <xref:Microsoft.Office.Interop.Outlook.Inspector> qui est passé. En C#, le constructeur attache également des gestionnaires d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> de l’objet <xref:Microsoft.Office.Interop.Outlook.Inspector> et à l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> .
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet4":::
 
 5. Ajoutez la méthode suivante après le code ajouté à l’étape précédente. Il s’agit d’un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> contenu dans la classe `InspectorWrapper` . Ce code met à jour l’état du bouton bascule chaque fois que l’utilisateur ouvre ou ferme le volet des tâches personnalisé.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet5":::
 
 6. Ajoutez la méthode suivante après le code ajouté à l’étape précédente. Cette méthode est un gestionnaire d’événements pour l' <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> événement de l' <xref:Microsoft.Office.Interop.Outlook.Inspector> objet qui contient le message électronique actuel. Le gestionnaire d’événements libère des ressources lorsque le message électronique est fermé. Il supprime également le volet des tâches personnalisé actuel de la collection `CustomTaskPanes` . Cela permet d’empêcher plusieurs instances du volet des tâches personnalisé lorsque le message électronique suivant est ouvert.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet6":::
 
 7. Ajoutez le code suivant après le code ajouté à l’étape précédente. À une étape ultérieure de cette procédure, vous appellerez cette propriété à partir d’une méthode dans l’interface utilisateur du ruban personnalisée pour afficher ou masquer le volet des tâches personnalisé.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet7":::
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Initialiser et nettoyer les ressources utilisées par le complément
  Ajoutez du code à la classe `ThisAddIn` pour initialiser le complément VSTO lorsqu’il est chargé et pour nettoyer les ressources utilisées par le complément VSTO lorsqu’il est déchargé. Pour initialiser le complément VSTO, vous configurez un gestionnaire d’événements pour l' <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> événement et passez tous les messages électroniques existants à ce gestionnaire d’événements. Lorsque le complément VSTO est déchargé, détachez le gestionnaire d’événements et nettoyez les objets utilisés par le complément VSTO.
@@ -174,28 +174,28 @@ ms.locfileid: "99942124"
 
    - Le champ `inspectors` conserve une référence à la collection de fenêtres Inspecteur de l'instance Outlook actuelle. Cette référence empêche le garbage collector de libérer la mémoire qui contient le gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> , que vous allez déclarer à l’étape suivante.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet8":::
 
 3. Remplacez la méthode `ThisAddIn_Startup` par le code suivant. Ce code attache un gestionnaire d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et passe chaque objet <xref:Microsoft.Office.Interop.Outlook.Inspector> existant au gestionnaire d’événements. Si l’utilisateur charge le complément VSTO alors qu’Outlook est déjà en cours d’exécution, le complément VSTO utilise ces informations pour créer des volets des tâches personnalisés pour tous les messages électroniques déjà ouverts.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet9":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet9":::
 
 4. Remplacez la méthode `ThisAddIn_ShutDown` par le code suivant. Ce code détache le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et nettoie les objets utilisés par le complément VSTO.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet10":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet10":::
 
 5. Ajoutez le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> suivant à la classe `ThisAddIn` . Si un nouvel <xref:Microsoft.Office.Interop.Outlook.Inspector> objet contient un message électronique, la méthode crée une instance d’un nouvel `InspectorWrapper` objet pour gérer la relation entre le message électronique et le volet des tâches correspondant.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet11":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet11":::
 
 6. Ajoutez la propriété suivante à la classe `ThisAddIn` . Cette propriété expose le champ `inspectorWrappersValue` privé au code en dehors de la classe `ThisAddIn` .
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet12":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet12":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  Générez votre projet pour vous assurer qu’il est compilé sans erreur.
@@ -215,13 +215,13 @@ ms.locfileid: "99942124"
 
 2. Ajoutez les instructions suivantes au début du fichier *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* .
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb" id="Snippet14":::
 
 3. Remplacez le gestionnaire d'événements `toggleButton1_Click` par le code suivant. Lorsque l’utilisateur clique sur le bouton bascule, cette méthode masque ou affiche le volet des tâches personnalisé associé à la fenêtre d’inspecteur actuelle.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb" id="Snippet15":::
 
 ## <a name="test-the-project"></a>Tester le projet
  Lorsque vous commencez à déboguer le projet, Outlook s’ouvre et le complément VSTO est chargé. Le complément VSTO affiche une instance unique du volet des tâches personnalisé avec chaque message électronique ouvert. Créez plusieurs nouveaux messages électroniques pour tester le code.

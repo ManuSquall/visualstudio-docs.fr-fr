@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d42aa2d8594ed44e4fd4edbac8a0d64c4dc16da
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938471"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826146"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Rendre des contrôles dynamiques persistants dans des documents Office
 
@@ -57,8 +57,8 @@ Pour recréer un contrôle hôte pour Word, ou un <xref:Microsoft.Office.Tools.E
 
 Par exemple, si vous souhaitez créer un contrôle hôte <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> à partir d’un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> natif existant lors de l’ouverture du document, utilisez la méthode <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> et transmettez le <xref:Microsoft.Office.Interop.Excel.ListObject>existant. L’exemple de code suivant montre cette opération dans un projet au niveau du document pour Excel. Le code recrée un <xref:Microsoft.Office.Tools.Excel.ListObject> dynamique qui est basé sur un <xref:Microsoft.Office.Interop.Excel.ListObject> existant nommé `MyListObject` dans la classe `Sheet1` .
 
-[!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
-[!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs" id="Snippet6":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb" id="Snippet6":::
 
 ### <a name="re-create-chart"></a>Recréer le graphique
 
@@ -94,8 +94,8 @@ Cette procédure est utile lorsque vous savez que le document sera ouvert unique
 
 L’exemple de code suivant montre comment appeler la méthode `GetVstoObject` lorsque le document est ouvert.
 
-[!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
-[!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet11":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet11":::
 
 Bien que la `GetVstoObject` méthode soit principalement utilisée pour générer un nouvel élément hôte au moment de l’exécution, cette méthode efface également tous les wrappers ActiveX du document la première fois qu’elle est appelée pour un document spécifique. Pour plus d’informations sur l’utilisation de la `GetVstoObject` méthode, consultez [extension de documents Word et de classeurs Excel dans des compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
 
@@ -107,8 +107,8 @@ Votre complément VSTO peut supprimer, de manière explicite, chaque contrôle d
 
 L’exemple de code suivant montre comment supprimer tous les contrôles Windows Forms d’un document Word lorsque celui-ci est fermé.
 
-[!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
-[!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet10":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet10":::
 
 ## <a name="see-also"></a>Voir aussi
 

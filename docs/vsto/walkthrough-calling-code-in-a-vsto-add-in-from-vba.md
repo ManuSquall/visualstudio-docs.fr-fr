@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21e0928396327911ea794c6270340c6efd27a43e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882386"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824599"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA
   Cette procédure pas à pas montre comment exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office, notamment des compléments VSTO VBA (Visual Basic pour Applications) et COM.
@@ -58,7 +58,7 @@ ms.locfileid: "99882386"
 
 1. Créez un projet de complément VSTO Excel nommé **ExcelImportData** à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **ExcelImportData** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn. cs** ou **ThisAddIn. vb** et ajoute le projet **ExcelImportData** à **Explorateur de solutions**.
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Définir une classe que vous pouvez exposer à d’autres solutions Office
  L'objectif de cette procédure pas à pas est d'appeler la méthode `ImportData` d'une classe nommée `AddInUtilities` dans votre complément VSTO à partir du code VBA. Cette méthode écrit une chaîne dans la cellule A1 de la feuille de calcul active.
@@ -75,13 +75,13 @@ ms.locfileid: "99882386"
 
 3. Ajoutez les directives suivantes au début du fichier.
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
-     [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet2":::
 
 4. Remplacez la classe `AddInUtilities` par le code suivant :
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-     [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
      Ce code rend la classe `AddInUtilities` visible par COM et ajoute la méthode `ImportData` à la classe. Pour exposer l'interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , la classe `AddInUtilities` possède également l'attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> et implémente une interface visible par COM.
 
@@ -96,8 +96,8 @@ ms.locfileid: "99882386"
 
 3. Ajoutez le code suivant à la classe `ThisAddIn` .
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
-     [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
 4. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 

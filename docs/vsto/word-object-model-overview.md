@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d593185412db23fa985f7effea6e91f9b3faa6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3367c1ad557c647639b9fd2d2aacf7845e067660
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847646"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826627"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .
@@ -78,8 +78,8 @@ ms.locfileid: "99847646"
 
  Quand vous créez un projet au niveau du document, vous pouvez accéder aux membres <xref:Microsoft.Office.Tools.Word.Document> en utilisant la classe `ThisDocument` générée dans votre projet. Vous pouvez accéder aux membres de l'élément hôte <xref:Microsoft.Office.Tools.Word.Document> en utilisant les mots clés **Me** ou **this** à partir du code dans la classe `ThisDocument` ou en utilisant `Globals.ThisDocument` à partir du code situé en dehors de la classe `ThisDocument` . Pour plus d’informations, consultez [programmes personnalisations au niveau du document](../vsto/programming-document-level-customizations.md). Par exemple, pour sélectionner le premier paragraphe du document, utilisez le code suivant :
 
- [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
- [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet120":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet120":::
 
  Dans les projets de compléments VSTO, vous pouvez générer des éléments hôtes <xref:Microsoft.Office.Tools.Word.Document> au moment de l'exécution. Vous pouvez utiliser l'élément hôte généré pour ajouter des contrôles au document associé. Pour plus d’informations, consultez [extension de documents Word et de classeurs Excel dans des compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
 

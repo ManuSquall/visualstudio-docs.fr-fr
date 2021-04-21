@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80c574799029f3fe8c4769d852886a625ffd93aa
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842009"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824277"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : conception d’une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).
@@ -90,14 +90,14 @@ ms.locfileid: "99842009"
 
 8. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , effacez le **message électronique**, sélectionnez **contact**, puis cliquez sur **Terminer**.
 
-     Un fichier *MapIt.cs* ou *MapIt. vb* est ajouté à votre projet.
+     Un fichier *MapIt. cs* ou *MapIt. vb* est ajouté à votre projet.
 
 ## <a name="design-the-layout-of-the-form-region"></a>Concevoir la disposition de la zone de formulaire
  Développez visuellement des zones de formulaire à l’aide du *Concepteur de zones de formulaire*. Vous pouvez faire glisser des contrôles managés vers l'aire du Concepteur de zones de formulaire. Utilisez le concepteur et la fenêtre **Propriétés** pour ajuster la disposition et l’apparence des contrôles.
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Pour concevoir la disposition de la zone de formulaire
 
-1. Dans **Explorateur de solutions**, développez le projet **MapItAddIn** , puis double-cliquez sur *MapIt.cs* ou *MapIt. vb* pour ouvrir le concepteur de zones de formulaire.
+1. Dans **Explorateur de solutions**, développez le projet **MapItAddIn** , puis double-cliquez sur *MapIt. cs* ou *MapIt. vb* pour ouvrir le concepteur de zones de formulaire.
 
 2. Cliquez avec le bouton droit sur le concepteur, puis cliquez sur **Propriétés**.
 
@@ -116,9 +116,9 @@ ms.locfileid: "99842009"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Pour personnaliser le comportement de la zone de formulaire
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *MapIt.cs* ou *MapIt. vb*, puis cliquez sur **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *MapIt. cs* ou *MapIt. vb*, puis cliquez sur **afficher le code**.
 
-    *MapIt.cs* ou *MapIt. vb* s’ouvre dans l’éditeur de code.
+    *MapIt. cs* ou *MapIt. vb* s’ouvre dans l’éditeur de code.
 
 2. Développez la région de code de la **fabrique de zones de formulaire** .
 
@@ -126,8 +126,8 @@ ms.locfileid: "99842009"
 
 3. Ajoutez le code ci-après au gestionnaire d'événements `MapItFactory_FormRegionInitializing`. Ce gestionnaire d'événements est appelé quand l'utilisateur ouvre un élément de contact. Le code suivant détermine si l'élément de contact contient une adresse. Si l’élément de contact ne contient pas d’adresse, ce code affecte <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> à la propriété de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe la **valeur true** et la zone de formulaire n’est pas affichée. Sinon, le complément VSTO déclenche l’événement <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> et affiche la zone de formulaire.
 
-    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
 4. Ajoutez le code ci-après au gestionnaire d'événements <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Ce code effectue les tâches suivantes :
 
@@ -137,8 +137,8 @@ ms.locfileid: "99842009"
 
      Le site web Local Search apparaît dans la zone de formulaire Carte et présente chaque adresse dans la zone temporaire.
 
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet2":::
 
 ## <a name="test-the-outlook-form-region"></a>Tester la zone de formulaire Outlook
  Quand vous exécutez le projet, Visual Studio ouvre Outlook. Ouvrez un élément de contact pour afficher la zone de formulaire Carte. La zone de formulaire Carte s'affiche en tant que page dans le formulaire de tout élément de contact contenant une adresse.
@@ -157,7 +157,7 @@ ms.locfileid: "99842009"
     |------------------|-------------|
     |**Métier**|**4567 principale St. Buffalo, NY**|
     |**Page d'accueil**|**1234 nord du Saint-buffle, NY**|
-    |**Autre**|**3456 principale St. Seattle, WA**|
+    |**Autres**|**3456 principale St. Seattle, WA**|
 
 4. Enregistrez et fermez l'élément de contact.
 

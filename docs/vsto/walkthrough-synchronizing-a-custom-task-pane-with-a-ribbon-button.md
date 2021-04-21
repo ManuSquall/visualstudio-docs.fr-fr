@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e7fe64d2df3298d53f567d11fe765280843e2ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846281"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826783"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procédure pas à pas : synchroniser un volet de tâches personnalisé avec un bouton de ruban
   Cette procédure pas à pas montre comment créer un volet de tâches personnalisé que les utilisateurs peuvent masquer ou afficher en cliquant sur un bouton bascule sur le ruban. Vous devez toujours créer un élément d’interface utilisateur, comme un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet Office personnalisé. En effet, les applications Microsoft Office ne proposent aucune méthode par défaut permettant aux utilisateurs d’afficher ou de masquer des volets Office personnalisés.
@@ -64,7 +64,7 @@ ms.locfileid: "99846281"
 
 1. Créez un projet de complément Excel nommé **SynchroniserVoletOfficeEtRuban** à l’aide du modèle de projet de complément Excel. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **SynchroniserVoletOfficeEtRuban** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn. cs** ou **ThisAddIn. vb** et ajoute le projet **SynchroniserVoletOfficeEtRuban** à **Explorateur de solutions**.
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>Ajouter un bouton bascule au ruban
  L'une des règles de conception d'une application Office stipule que les utilisateurs doivent toujours avoir le contrôle de l'interface utilisateur de l'application Office. Pour permettre aux utilisateurs de contrôler le volet Office personnalisé, vous pouvez ajouter un bouton bascule au ruban permettant d’afficher et de masquer le volet Office. Pour créer un bouton bascule, ajoutez un élément **Ruban (Concepteur visuel)** au projet. Le concepteur vous permet d'ajouter et de position des contrôles, de définir les propriétés des contrôles et de gérer les événements de contrôle. Pour plus d’informations, consultez [Concepteur de ruban](../vsto/ribbon-designer.md).
@@ -113,23 +113,23 @@ ms.locfileid: "99846281"
 
 3. Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare une instance de `TaskPaneControl` en tant que membre de `ThisAddIn`.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet1":::
 
 4. Remplacez le gestionnaire d'événements `ThisAddIn_Startup` par le code suivant. Ce code ajoute l’objet `TaskPaneControl` au champ `CustomTaskPanes` , mais il n’affiche pas le volet Office personnalisé (par défaut, la propriété <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> de la classe <xref:Microsoft.Office.Tools.CustomTaskPane> a la valeur **false**). Le code Visual C# attache un gestionnaire d’événements à l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> .
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet2":::
 
 5. Ajoutez la méthode suivante à la classe `ThisAddIn`. Cette méthode gère l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Lorsque l’utilisateur ferme le volet Office en cliquant sur le bouton **Fermer** (X), cette méthode met à jour l’état du bouton bascule sur le ruban.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet3":::
 
 6. Ajoutez la propriété suivante à la classe `ThisAddIn` . Cette propriété expose l’objet privé `myCustomTaskPane1` à d’autres classes. Ultérieurement dans cette procédure, vous ajouterez du code à la classe `MyRibbon` qui utilise cette propriété.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet4":::
 
 ## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>Masquer et afficher le volet Office personnalisé à l’aide du bouton bascule
  La dernière étape consiste à ajouter du code permettant d’afficher ou masquer le volet Office personnalisé lorsque l’utilisateur clique sur le bouton bascule du ruban.
@@ -142,8 +142,8 @@ ms.locfileid: "99846281"
 
 2. Remplacez le gestionnaire d'événements `toggleButton1_Click` par le code suivant. Lorsque l’utilisateur clique sur le bouton bascule, ce code affiche ou masque le volet Office personnalisé, selon l’état du bouton bascule (activé ou désactivé).
 
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs" id="Snippet5":::
 
 ## <a name="test-the-add-in"></a>Tester le complément
  Lorsque vous exécutez le projet, Excel s’ouvre sans afficher le volet Office personnalisé. Cliquez sur le bouton bascule sur le ruban pour tester le code.

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f649fad99b8d94cc650ecda57e10b423b14194e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956592"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826432"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : modifier la mise en forme d’une feuille de calcul à l’aide
   Cette procédure pas à pas montre les principes de base de l’utilisation de cases à cocher dans une feuille de calcul Excel Microsoft Office pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour afficher le résultat sous forme d’exemple terminé, consultez l’exemple contrôles Excel dans les [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -128,22 +128,22 @@ ms.locfileid: "99956592"
 
 2. Ajoutez le code suivant au <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements de la case `applyBoldFont` à cocher :
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet7":::
 
 3. Ajoutez le code suivant au <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements de la case `applyItalicFont` à cocher :
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet8":::
 
 4. Ajoutez le code suivant au <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements de la case `applyUnderlineFont` à cocher :
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet9":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet9":::
 
 5. En C#, vous devez ajouter des gestionnaires d’événements pour les cases à cocher à l' <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement, comme indiqué ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que le texte est mis en forme correctement lorsque vous activez ou désactivez une case à cocher.

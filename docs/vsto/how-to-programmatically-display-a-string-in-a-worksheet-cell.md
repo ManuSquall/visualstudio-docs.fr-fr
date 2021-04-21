@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5a89716797ec460b461f79c94df8cea475532a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a7bc48df6e30381ff275b9f11dabe04a25d6dd7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885558"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825925"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Comment : afficher une chaîne dans une cellule de feuille de calcul par programmation
   Cet exemple montre comment afficher du texte dans une cellule par programmation. Pour afficher du texte dans une cellule, utilisez un objet de type <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou une plage Excel native.
@@ -35,8 +35,8 @@ ms.locfileid: "99885558"
 
 1. Définissez la valeur du <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur **Hello World**.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
-     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet68":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet68":::
 
 ## <a name="use-a-native-excel-range"></a>Utiliser une plage Excel Native
  Le code suivant crée une nouvelle plage par programme, puis lui assigne une valeur.
@@ -45,8 +45,8 @@ ms.locfileid: "99885558"
 
 1. Récupérez la plage à la cellule **a1** `Sheet1` et définissez la valeur sur **Hello World**.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
-     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet69":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet69":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédure pas à pas : collecter des données à l’aide d’un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

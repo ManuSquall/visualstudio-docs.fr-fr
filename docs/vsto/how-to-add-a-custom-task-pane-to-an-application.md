@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b0bac1f14994dea73526aa3684851412ad2cf1b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d85edb9773783abe6282918c432fc1a4eff83944
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910204"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826718"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Comment : ajouter un volet de tâches personnalisé à une application
   Vous pouvez ajouter un volet des tâches personnalisé aux applications répertoriées ci-dessus à l’aide du complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
@@ -44,17 +44,17 @@ ms.locfileid: "99910204"
 
 4. Ajoutez un ou plusieurs contrôles Windows Forms de la **boîte à outils** au contrôle utilisateur.
 
-5. Ouvrez le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** .
+5. Ouvrez le fichier de code **ThisAddIn. cs** ou **ThisAddIn. vb** .
 
 6. Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare des instances de `MyUserControl` et <xref:Microsoft.Office.Tools.CustomTaskPane> en tant que membres de la classe `ThisAddIn` .
 
-     [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet1":::
 
 7. Ajoutez le code ci-après au gestionnaire d'événements `ThisAddIn_Startup`. Ce code crée <xref:Microsoft.Office.Tools.CustomTaskPane> en ajoutant l'objet `MyUserControl` à la collection `CustomTaskPanes` . Le code affiche également le volet des tâches.
 
-     [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
     > [!NOTE]
     > Ce code associe votre volet des tâches personnalisé à la fenêtre active de l'application. Pour certaines applications, vous pouvez modifier ce code afin de vous assurer que le volet des tâches s'affiche avec les autres documents ou éléments de l'application. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).

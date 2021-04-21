@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b02ed8108daede030d460f80d8cdd76b82112401
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963890"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824768"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Comment : supprimer des contacts Outlook par programmation
   Cet exemple supprime un contact. L’exemple suppose qu’un contact nommé "Armando Pinto" existe dans le dossier **Contacts** .
@@ -28,8 +28,8 @@ ms.locfileid: "99963890"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Exemple
- [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)

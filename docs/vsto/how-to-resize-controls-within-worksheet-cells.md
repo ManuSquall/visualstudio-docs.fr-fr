@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b42c10fd82ec077b295a8bc683fa138c2eb095b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927819"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825743"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Comment : redimensionner des contrôles dans des cellules de feuille de calcul
   Lorsque vous redimensionnez des colonnes ou des lignes dans une feuille de calcul, tous les contrôles hôtes dans les cellules se redimensionnent automatiquement à la hauteur ou à la largeur de la cellule qui a été redimensionnée. Par défaut, les contrôles Windows Forms ne sont pas redimensionnés automatiquement.
@@ -54,8 +54,8 @@ ms.locfileid: "99927819"
 
 1. Ajoutez un contrôle à la plage a1.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet5":::
 
      Lorsque vous redimensionnez la cellule qui contient le contrôle, le contrôle est redimensionné pour s’ajuster à la cellule.
 
@@ -72,8 +72,8 @@ ms.locfileid: "99927819"
 
 1. Appelez la propriété placement du contrôle et affectez la valeur à <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> .
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)

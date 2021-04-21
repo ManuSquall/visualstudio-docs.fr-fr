@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 377c3405211c91712f8754131d8379c3dae7e820
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906556"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824547"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Excel
   Cette procédure pas à pas montre comment lier des données à des contrôles dans un volet actions dans Microsoft Office Excel. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -142,29 +142,29 @@ ms.locfileid: "99906556"
 
 2. Ajoutez le code suivant à l' <xref:System.Windows.Forms.UserControl.Load> événement du contrôle de volet Actions.
 
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet1":::
 
 3. En C#, vous devez créer un gestionnaire d’événements pour le `ActionsControl` . Vous pouvez placer ce code dans le `ActionsControl` constructeur. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet2":::
 
 ## <a name="show-the-actions-pane"></a>Afficher le volet Actions
  Le volet Actions n’est pas visible tant que vous n’ajoutez pas le contrôle au moment de l’exécution.
 
 #### <a name="to-show-the-actions-pane"></a>Pour afficher le volet Actions
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *ThisWorkbook. vb* ou *ThisWorkbook.cs*, puis cliquez sur **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *ThisWorkbook. vb* ou sur *ThisWorkbook. cs*, puis cliquez sur **afficher le code**.
 
 2. Créez une nouvelle instance du contrôle utilisateur dans la `ThisWorkbook` classe.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet3":::
 
 3. Dans le <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> Gestionnaire d’événements de `ThisWorkbook` , ajoutez le contrôle au volet Actions.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet4":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre document pour vérifier que le volet actions s’ouvre lorsque le document est ouvert et que les contrôles ont une relation maître/détail.

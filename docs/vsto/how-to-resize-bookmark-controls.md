@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55fe398b277586404c91ef7cb172f7ce3a9c98ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2b2bd963b2f0b4eb574630382930eb0805909be
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927845"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825782"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Comment : redimensionner les contrôles Bookmark
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> quand vous l’ajoutez à un document Microsoft Office Word. Vous pouvez également le redimensionner ultérieurement.
@@ -61,13 +61,13 @@ ms.locfileid: "99927845"
 
      L’exemple de code suivant ajoute cinq caractères au début d’un signet nommé `SampleBookmark`. Ce code part du principe qu’il existe au moins cinq caractères de texte avant le signet.
 
-     [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet2":::
 
      L’exemple de code suivant ajoute cinq caractères à la fin du même signet. Ce code part du principe qu’il existe au moins cinq caractères de texte après le signet.
 
-     [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]
-     [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet3":::
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>Pour redimensionner un signet dans un projet de complément VSTO au moment de l’exécution
 
@@ -75,8 +75,8 @@ ms.locfileid: "99927845"
 
      L’exemple de code suivant crée un <xref:Microsoft.Office.Tools.Word.Bookmark> qui contient le texte du premier paragraphe du document actif, puis il supprime cinq caractères au début et à la fin du <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
-     [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]
-     [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet16":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet16":::
 
 ## <a name="recreate-the-bookmark"></a>Recréer le signet
  Vous pouvez redimensionner un signet dans un projet au niveau du document en ajoutant un nouveau signet du même nom que le signet existant, mais avec une taille différente.

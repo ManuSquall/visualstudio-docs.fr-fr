@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ed0d2ae6bf66e8f7375bde72aaec085463b9ca18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f57ad0c858abb5f151e1b425224b5af34d464c0f
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906609"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824664"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.
@@ -87,18 +87,18 @@ ms.locfileid: "99906609"
 
 2. Ajoutez le code suivant au début du fichier. Ce code crée des alias pour les <xref:Microsoft.Office.Core> espaces de noms et [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet1":::
 
 3. Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) en tant que membre de `MyUserControl` . À l’étape suivante, vous allez utiliser cette [forme](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) pour ajouter une zone de texte à une diapositive de la présentation active.
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet2":::
 
 4. Remplacez le gestionnaire d'événements `monthCalendar1_DateChanged` par le code suivant. Ce code ajoute une zone de texte à la première diapositive de la présentation active, puis ajoute la date actuellement sélectionnée à la zone de texte. Ce code utilise l’objet `Globals.ThisAddIn` pour accéder au modèle objet de PowerPoint.
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet3":::
 
 5. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **MyAddIn** , puis cliquez sur **Générer**. Vérifiez que le projet se génère sans erreur.
 
@@ -113,13 +113,13 @@ ms.locfileid: "99906609"
 
 3. Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare des instances de `MyUserControl` et <xref:Microsoft.Office.Tools.CustomTaskPane> en tant que membres de la classe `ThisAddIn` .
 
-     [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
-     [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs" id="Snippet4":::
 
 4. Remplacez le gestionnaire d'événements `ThisAddIn_Startup` par le code suivant. Ce code crée <xref:Microsoft.Office.Tools.CustomTaskPane> en ajoutant l'objet `MyUserControl` à la collection `CustomTaskPanes` . Le code affiche également le volet des tâches.
 
-     [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
-     [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="test-the-add-in"></a>Tester le complément
  Quand vous exécutez le projet, PowerPoint s’ouvre et le complément VSTO affiche le volet Office personnalisé. Cliquez sur le contrôle <xref:System.Windows.Forms.MonthCalendar> pour tester le code.
