@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9afbb96cce5848894c83c8780e5855eadc0e59d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7e04c542f91b9d7675eb81e7a3178e3427c52a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836135"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828850"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Comment : vérifier l’orthographe dans les documents par programmation
   Pour vérifier l’orthographe d’un document, utilisez la <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> méthode. Cette méthode retourne une valeur booléenne qui indique si le paramètre fourni est correctement orthographié.
@@ -31,8 +31,8 @@ ms.locfileid: "99836135"
 
 1. Appelez la <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> méthode et transmettez-lui une plage de texte pour rechercher les fautes d’orthographe. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` ou `ThisAddIn` de votre projet.
 
-     [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
-     [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet113":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet113":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 34992bb4f76f68229bebbdb98265838f049dc288
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97f56ce0bd44eac71430a099b4fda9a7eddc7958
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949777"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107829006"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
 
@@ -34,15 +34,15 @@ Il existe plusieurs façons d’enregistrer Microsoft Office documents Word. Vou
 
 1. Appelez la méthode <xref:Microsoft.Office.Tools.Word.Document.Save%2A> de la classe <xref:Microsoft.Office.Tools.Word.Document> . Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` de votre projet.
 
-     [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
-     [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet7":::
 
 ### <a name="to-save-the-active-document"></a>Pour enregistrer le document actif
 
 1. Appelez la <xref:Microsoft.Office.Interop.Word._Document.Save%2A> méthode pour le document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` ou `ThisAddIn` de votre projet.
 
-    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet8":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet8":::
 
    Si vous ne savez pas si le document que vous souhaitez enregistrer est le document actif, vous pouvez y faire référence par son nom.
 
@@ -50,8 +50,8 @@ Il existe plusieurs façons d’enregistrer Microsoft Office documents Word. Vou
 
 1. Utilisez le nom du document comme argument de la <xref:Microsoft.Office.Interop.Word.Documents> collection. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` ou `ThisAddIn` de votre projet.
 
-     [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
-     [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet9":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet9":::
 
 ## <a name="save-a-document-with-a-new-name"></a>Enregistrer un document sous un nouveau nom
 
@@ -67,8 +67,8 @@ Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. 
     > [!NOTE]
     > La `SaveAs` méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un `try...catch` bloc autour de la `SaveAs` méthode ou à l’intérieur d’une méthode d’appel.
 
-     [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
-     [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet10":::
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Pour enregistrer un document natif sous un nouveau nom
 
@@ -79,8 +79,8 @@ Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. 
     > [!NOTE]
     > La <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un **bloc try... bloc catch** autour de la <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode ou à l’intérieur d’une méthode d’appel.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet10":::
 
 ## <a name="compile-the-code"></a>Compiler le code
 

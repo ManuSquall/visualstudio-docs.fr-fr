@@ -40,12 +40,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0d55daba4dee07454a31fcb6fc5fa210e8bcc34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947995"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825054"
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :
@@ -233,8 +233,8 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Contrôles de contenu de case à cocher dans les projets Word
  Word 2010 a introduit un nouveau type de contrôle de contenu représentant une case à cocher. Toutefois, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ne fournit pas de type CheckBoxContentControl correspondant que vous pouvez utiliser dans les projets Office. Pour créer un contrôle de contenu de case à cocher dans un projet [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> pour créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl>, puis passez la valeur <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> à la méthode pour spécifier un contrôle de contenu de case à cocher. L'exemple de code suivant montre comment procéder.
 
- [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
- [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb" id="Snippet800":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs" id="Snippet800":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)

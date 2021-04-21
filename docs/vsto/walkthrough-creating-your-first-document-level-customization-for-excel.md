@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9254aa5fd465c14e24133df59bbcee46f3c1acf4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966667"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826900"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
 
@@ -140,8 +140,8 @@ ms.locfileid: "99966667"
 
 2. Remplacez le gestionnaire d'événements `Sheet1_Startup` par le code suivant. Quand Feuil1 est ouvert, ce code ajoute une deuxième ligne de texte à la feuille de calcul.
 
-     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
-     [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb" id="Snippet1":::
 
 ## <a name="test-the-project"></a>Tester le projet
 

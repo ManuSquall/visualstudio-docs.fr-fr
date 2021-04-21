@@ -28,12 +28,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a902e85f8c53aa7a3d1ebe3b6480a7c68fa60601
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954291"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827901"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Comment : ajouter des contrôles de contenu à des documents Word
   Dans les projets Word au niveau du document, vous pouvez ajouter des contrôles de contenu au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément Word VSTO, vous pouvez ajouter des contrôles de contenu à un document ouvert au moment de l'exécution.
@@ -116,8 +116,8 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour ajouter un nouveau <xref:Microsoft.Office.Tools.Word.RichTextContentControl> au début du document. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `AddRichTextControlAtSelection` à partir du gestionnaire d'événements `ThisDocument_Startup` .
 
-     [!code-csharp[Trin_ContentControlReference#700](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#700)]
-     [!code-vb[Trin_ContentControlReference#700](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#700)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet700":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet700":::
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Pour ajouter un contrôle de contenu à une plage spécifique
 
@@ -125,8 +125,8 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour ajouter un nouveau <xref:Microsoft.Office.Tools.Word.RichTextContentControl> au début du document. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `AddRichTextControlAtRange` à partir du gestionnaire d'événements `ThisDocument_Startup` .
 
-     [!code-csharp[Trin_ContentControlReference#701](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#701)]
-     [!code-vb[Trin_ContentControlReference#701](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#701)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet701":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet701":::
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Pour ajouter un contrôle de contenu basé sur un contrôle de contenu natif
 
@@ -134,8 +134,8 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour créer un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> pour chaque contrôle de texte enrichi natif présent dans le document. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `CreateRichTextControlsFromNativeControls` à partir du gestionnaire d'événements `ThisDocument_Startup` .
 
-     [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
-     [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet702":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet702":::
 
 ## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Ajouter des contrôles de contenu au moment de l’exécution dans un projet de complément VSTO
  Vous pouvez ajouter des contrôles de contenu par programmation à un document ouvert au moment de l'exécution en utilisant un complément VSTO. Pour ce faire, vous devez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> basé sur un document ouvert, puis utiliser les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de cet élément hôte. Chaque méthode possède trois surcharges qui vous permettent d'ajouter un contrôle de contenu comme suit :
@@ -159,8 +159,8 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour ajouter un nouveau <xref:Microsoft.Office.Tools.Word.RichTextContentControl> au début du document actif. Pour exécuter ce code, ajoutez-le à la classe `ThisAddIn` dans votre projet, puis appelez la méthode `AddRichTextControlAtSelection` à partir du gestionnaire d'événements `ThisAddIn_Startup` .
 
-     [!code-vb[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet1":::
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Pour ajouter un contrôle de contenu à une plage spécifique
 
@@ -168,8 +168,8 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour ajouter un nouveau <xref:Microsoft.Office.Tools.Word.RichTextContentControl> au début du document actif. Pour exécuter ce code, ajoutez-le à la classe `ThisAddIn` dans votre projet, puis appelez la méthode `AddRichTextControlAtRange` à partir du gestionnaire d'événements `ThisAddIn_Startup` .
 
-     [!code-vb[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Pour ajouter un contrôle de contenu basé sur un contrôle de contenu natif
 
@@ -177,12 +177,12 @@ ms.locfileid: "99954291"
 
      L'exemple de code suivant utilise la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> pour créer un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> pour chaque contrôle de texte enrichi natif présent dans un document, une fois ce dernier ouvert. Pour exécuter ce code, ajoutez-le à la classe `ThisAddIn` dans votre projet.
 
-     [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet3":::
 
      En C#, vous devez également attacher le gestionnaire d'événements `Application_DocumentOpen` à l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-     [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)

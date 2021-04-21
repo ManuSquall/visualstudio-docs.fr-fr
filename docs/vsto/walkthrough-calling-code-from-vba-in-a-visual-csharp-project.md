@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906484"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824469"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : appel de code à partir de VBA dans un projet Visual C#
   Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.
@@ -161,15 +161,15 @@ ms.locfileid: "99906484"
 
 2. Ajoutez le code suivant à la classe `Sheet1` . La méthode `CreateVstoNamedRange` crée un nouvel objet <xref:Microsoft.Office.Tools.Excel.NamedRange> au niveau de la plage spécifiée. Cette méthode crée également un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> de <xref:Microsoft.Office.Tools.Excel.NamedRange>. Ultérieurement dans cette procédure, vous appellerez la méthode `CreateVstoNamedRange` à partir du code VBA figurant dans le document.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet2":::
 
 3. Ajoutez la méthode suivante à la classe `Sheet1`. Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet3":::
 
 4. Appliquez les attributs suivants avant la première ligne de la déclaration de la classe `Sheet1` . Ces attributs rendent la classe visible pour COM, mais ne génèrent pas d'interface de classe.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet1":::
 
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>Extraire une interface pour la classe Sheet1
  Avant d'exposer la méthode `CreateVstoNamedRange` au code VBA, vous devez créer une interface publique qui définit cette méthode et l'exposer à COM.
@@ -184,11 +184,11 @@ ms.locfileid: "99906484"
 
 4. Cliquez sur **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] génère une nouvelle interface nommée `ISheet1`et modifie la définition de la classe `Sheet1` afin d'implémenter l'interface `ISheet1` . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre également le fichier **ISheet1.cs** dans l’éditeur de code.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] génère une nouvelle interface nommée `ISheet1`et modifie la définition de la classe `Sheet1` afin d'implémenter l'interface `ISheet1` . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre également le fichier **ISheet1. cs** dans l’éditeur de code.
 
 5. Dans le fichier **ISheet1.cs** , remplacez la déclaration de l'interface `ISheet1` par le code suivant. Ce code rend publique l'interface `ISheet1` et applique l'attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> pour rendre l'interface visible par COM.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs" id="Snippet4":::
 
 6. Créez le projet.
 

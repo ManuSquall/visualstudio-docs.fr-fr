@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36d4da65a6cd39c53f1f9d8edf4f9d9b1fe46284
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937406"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826848"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données dans un projet au niveau du document. Un champ de données unique dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements de la table.
@@ -52,7 +52,7 @@ ms.locfileid: "99937406"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -128,16 +128,16 @@ ms.locfileid: "99937406"
 
 ### <a name="to-initialize-the-controls"></a>Pour initialiser les contrôles
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Sheet1.cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Feuille1. cs**, puis cliquez sur **afficher le code** dans le menu contextuel.
 
 2. Ajoutez le code suivant à la `Sheet1_Startup` méthode pour définir le texte de chaque bouton.
 
-    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet2":::
 
 3. Pour C# uniquement, ajoutez des gestionnaires d’événements pour les événements de clic de bouton à la `Sheet1_Startup` méthode.
 
-    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet3":::
 
    À présent, ajoutez du code pour gérer les <xref:System.Windows.Forms.Control.Click> événements des boutons afin que l’utilisateur puisse parcourir les enregistrements.
 
@@ -148,29 +148,29 @@ ms.locfileid: "99937406"
 
 1. Ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du `Button1` bouton, puis ajoutez le code suivant pour accéder au premier enregistrement :
 
-     [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
-     [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet4":::
 
 ### <a name="to-move-to-the-previous-record"></a>Pour passer à l’enregistrement précédent
 
 1. Ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du `Button2` bouton, puis ajoutez le code suivant pour déplacer la position d’une unité vers l’arrière :
 
-     [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet5":::
 
 ### <a name="to-move-to-the-next-record"></a>Pour passer à l’enregistrement suivant
 
 1. Ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du `Button3` bouton, puis ajoutez le code suivant pour avancer la position d’une unité :
 
-     [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet6":::
 
 ### <a name="to-move-to-the-last-record"></a>Pour accéder au dernier enregistrement
 
 1. Ajoutez un gestionnaire d’événements pour l' <xref:System.Windows.Forms.Control.Click> événement du `Button4` bouton, puis ajoutez le code suivant pour accéder au dernier enregistrement :
 
-     [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que vous pouvez parcourir les enregistrements de la base de données.

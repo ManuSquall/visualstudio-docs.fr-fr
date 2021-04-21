@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11099b0ea37856919affb927c3f118572d339af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937440"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826874"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : récupération des données mises en cache d’un classeur sur un serveur
   Cette procédure pas à pas montre comment récupérer des données d’un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -82,9 +82,9 @@ ms.locfileid: "99937440"
 
 8. Cliquez sur **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **AdventureWorksDataSet** à **Explorateur de solutions** et ouvre le fichier de code *Class1.cs* ou *Class1. vb* .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **AdventureWorksDataSet** à **Explorateur de solutions** et ouvre le fichier de code *Class1. cs* ou *Class1. vb* .
 
-9. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *Class1.cs* ou *Class1. vb*, puis cliquez sur **supprimer**. Vous n’avez pas besoin de ce fichier pour cette procédure pas à pas.
+9. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *Class1. cs* ou *Class1. vb*, puis cliquez sur **supprimer**. Vous n’avez pas besoin de ce fichier pour cette procédure pas à pas.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Définir un DataSet dans le projet de bibliothèque de classes
  Définissez un DataSet typé qui contient les données de la base de données AdventureWorksLT pour SQL Server 2005. Plus loin dans cette procédure pas à pas, vous allez référencer ce DataSet à partir d’un projet de classeur Excel et d’un projet d’application console.
@@ -149,7 +149,7 @@ ms.locfileid: "99937440"
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Ajouter le DataSet à des sources de données dans le projet de classeur Excel
  Avant de pouvoir afficher le DataSet dans le classeur Excel, vous devez d’abord ajouter le jeu de données aux sources de données dans le projet de classeur Excel.
 
-1. Dans **Explorateur de solutions**, double-cliquez sur *Sheet1.cs* ou *Feuille1. vb* sous le projet **AdventureWorksReport** .
+1. Dans **Explorateur de solutions**, double-cliquez sur *Feuil1. cs* ou *Feuille1. vb* sous le projet **AdventureWorksReport** .
 
      Le classeur s’ouvre dans le concepteur.
 
@@ -192,12 +192,12 @@ ms.locfileid: "99937440"
 ## <a name="initialize-the-dataset-in-the-workbook"></a>Initialiser le jeu de données dans le classeur
  Avant de pouvoir récupérer les données du DataSet mis en cache à l’aide de l’application console, vous devez d’abord remplir le DataSet mis en cache avec des données.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier *Sheet1.cs* ou *Feuille1. vb* , puis cliquez sur **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier *Feuille1. cs* ou *Feuille1. vb* , puis cliquez sur **afficher le code**.
 
 2. Remplacez le gestionnaire d'événements `Sheet1_Startup` par le code suivant. Ce code utilise une instance de la `ProductTableAdapter` classe qui est définie dans le projet **AdventureWorksDataSet** pour remplir le DataSet mis en cache avec des données, s’il est actuellement vide.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
-     [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Point de contrôle
  Générez et exécutez le projet de classeur Excel pour vous assurer qu’il se compile et s’exécute sans erreur. Cette opération remplit également le DataSet mis en cache et enregistre les données dans le classeur.
@@ -229,7 +229,7 @@ ms.locfileid: "99937440"
 
 5. Cliquez sur **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **DataReader** à **Explorateur de solutions** et ouvre le fichier de code *Program.cs* ou *Module1. vb* .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **DataReader** à **Explorateur de solutions** et ouvre le fichier de code *Program. cs* ou *Module1. vb* .
 
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>Récupérer des données du DataSet mis en cache à l’aide de l’application console
  Utilisez la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe dans l’application console pour lire les données dans un `AdventureWorksLTDataSet` objet local. Pour confirmer que le DataSet local a été initialisé avec les données du DataSet mis en cache, l’application affiche le nombre de lignes dans le jeu de données local.
@@ -246,12 +246,12 @@ ms.locfileid: "99937440"
 
 5. Sous l’onglet **projets** , sélectionnez **AdventureWorksDataSet**, puis cliquez sur **OK**.
 
-6. Ouvrez le fichier *Program.cs* ou *Module1. vb* dans l’éditeur de code.
+6. Ouvrez le fichier *Program. cs* ou *Module1. vb* dans l’éditeur de code.
 
 7. Ajoutez le code suivant **à l’aide** de (pour C#) ou de l’instruction **Imports** (pour Visual Basic) en haut du fichier de code.
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. Ajoutez le code suivant à la méthode `Main` . Ce code déclare les objets suivants :
 
@@ -264,8 +264,8 @@ ms.locfileid: "99937440"
      > [!NOTE]
      > Le code suivant suppose que le classeur est enregistré à l’aide de l’extension *. xlsx* . Si le classeur de votre projet a une extension différente, modifiez le chemin d’accès si nécessaire.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
-     [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet10":::
 
 9. Ajoutez le code suivant à la `Main` méthode, après le code que vous avez ajouté à l’étape précédente. Ce code effectue les tâches suivantes :
 
@@ -275,8 +275,8 @@ ms.locfileid: "99937440"
 
    - Il affiche le nombre de lignes dans le jeu de données local pour confirmer qu’il contient des données.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
-     [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet11":::
 
 10. Dans le menu **générer** , cliquez sur **générer DataReader**.
 

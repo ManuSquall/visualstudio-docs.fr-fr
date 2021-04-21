@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 245b257140cd0b1f54719ec7a132bf2297fc2dd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cf838b544ec78c8c7d6e9e2d6f1cb747e999ccd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962338"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823911"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Comment : cibler l’interface utilisateur multilingue d’Office
   L’interface utilisateur multilingue (MUI) est une fonctionnalité de Microsoft Office qui donne à l’utilisateur final la possibilité de modifier la langue de l’interface utilisateur. Par exemple, un utilisateur final travaillant avec une interface utilisateur en anglais peut modifier la langue de l’interface utilisateur en espagnol.
@@ -37,8 +37,8 @@ ms.locfileid: "99962338"
 
 1. Utilisez la <xref:System.Threading.Thread.CurrentUICulture%2A> propriété du thread actuel. Définissez la langue de vos chaînes d’interface utilisateur pour qu’elle corresponde à la langue utilisée par la version d’Office qui est actuellement exécutée sur l’ordinateur de l’utilisateur.
 
-     [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
-     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : cibler des applications Office par le biais d’assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)

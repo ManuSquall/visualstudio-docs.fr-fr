@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1c670867fae277a3c3c8290cd34d0d4be7ddf3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937392"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824963"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procédure pas à pas : programmer sur les événements d’un contrôle NamedRange
   Cette procédure pas à pas montre comment ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à une feuille de calcul Microsoft Office Excel et programmer par rapport à ses événements à l’aide des outils de développement Office dans Visual Studio.
@@ -101,16 +101,16 @@ ms.locfileid: "99937392"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Pour insérer du texte dans NamedRange2 en fonction de l’événement BeforeDoubleClick
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Sheet1.cs** , puis sélectionnez **afficher le code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1. vb** ou **Feuille1. cs** , puis sélectionnez **afficher le code**.
 
 2. Ajoutez du code pour que le `namedRange1_BeforeDoubleClick` Gestionnaire d’événements ressemble à ce qui suit :
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
 3. En C#, vous devez ajouter des gestionnaires d’événements pour la plage nommée, comme indiqué dans l' <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
 ## <a name="add-code-to-respond-to-the-change-event"></a>Ajouter du code pour répondre à l’événement de modification
 
@@ -118,8 +118,8 @@ ms.locfileid: "99937392"
 
 1. Ajoutez du code pour que le `NamedRange1_Change` Gestionnaire d’événements ressemble à ce qui suit :
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet26":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet26":::
 
     > [!NOTE]
     > Étant donné que le fait de double-cliquer sur une cellule dans une plage Excel passe en mode édition, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> événement se produit lorsque la sélection est déplacée en dehors de la plage, même si aucune modification de texte n’a eu lieu.
@@ -130,8 +130,8 @@ ms.locfileid: "99937392"
 
 1. Ajoutez du code pour que le gestionnaire d’événements **NamedRange1_SelectionChange** ressemble à ce qui suit :
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
     > Étant donné que le fait de double-cliquer sur une cellule dans une plage Excel provoque le déplacement de la sélection dans la plage, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> événement se produit avant que l' <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> événement se produise.

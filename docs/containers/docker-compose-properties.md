@@ -4,15 +4,15 @@ author: ghogen
 description: Découvrez comment modifier les propriétés de build Docker Compose pour personnaliser la façon dont Visual Studio génère et exécute une application Docker Compose.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 08/12/2019
+ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f1ebb11133c640c2e0bdcfd84660592792d4205
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068295"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825002"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -43,7 +43,7 @@ Le tableau suivant présente les propriétés MSBuild disponibles pour les proje
 |DockerComposeProjectName| dcproj | S’il est spécifié, remplace le nom de projet d’un projet dockr-compose. | « dockercompose » + hachage généré automatiquement |
 |DockerComposeProjectPath|csproj ou vbproj|Chemin d’accès relatif au fichier de projet d’ancrage-compose (dcproj). Définissez cette propriété lors de la publication du projet de service pour rechercher les paramètres de génération d’image associés stockés dans le fichier docker-compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose up` commande. Par exemple : `--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| Contrôle si l’optimisation « génération sur hôte » (débogage « mode rapide ») est activée.  Les valeurs autorisées sont **rapide** et **normale**. | Rapide |
+|DockerDevelopmentMode|dcproj| Contrôle si l’optimisation « génération sur hôte » (débogage « mode rapide ») est activée.  Les valeurs autorisées sont `Fast` et `Regular`. | `Fast` dans la configuration de débogage ou `Regular` dans toutes les autres configurations |
 |DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient.|None|
 |DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | False |
 |DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
@@ -93,9 +93,16 @@ services:
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments et DockerComposeUpArguments sont nouveaux dans Visual Studio 2019 version 16,3.
 
-## <a name="docker-compose-file-labels"></a>Étiquettes de fichier Docker Compose
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>Substitution de la configuration de Docker Compose de Visual Studio
 
-Vous pouvez également remplacer certains paramètres en plaçant un fichier nommé *docker-compose. vs. Debug. yml* (pour la configuration **Debug** ) ou *docker-compose. vs. Release. yml* (pour la configuration **Release** ) dans le même répertoire que votre fichier *docker-compose. yml* .  Dans ce fichier, vous pouvez spécifier les paramètres comme suit :
+Vous pouvez remplacer certains paramètres en plaçant un fichier nommé *docker-compose. vs. Debug. yml* (pour le mode **rapide** ) ou *docker-compose. vs. Release. yml* (pour le mode **normal** ) dans le même répertoire que votre fichier *docker-compose. yml* . 
+
+>[!TIP] 
+>Pour connaître les valeurs par défaut de l’un de ces paramètres, consultez *docker-compose. vs. Debug. g. yml* ou *docker-compose. vs. Release. g. yml*.
+
+### <a name="docker-compose-file-labels"></a>Étiquettes de fichier Docker Compose
+
+ Dans *docker-compose. vs. Debug. yml* ou *docker-compose. vs. Release. yml*, vous pouvez définir des étiquettes spécifiques au remplacement comme suit :
 
 ```yml
 services:
@@ -109,13 +116,26 @@ Utilisez des guillemets doubles autour des valeurs, comme dans l’exemple préc
 |Nom d'étiquette|Description|
 |----------|-----------|
 |com. Microsoft. VisualStudio. Debugger. arguments|Arguments passés au programme lors du démarrage du débogage. Pour les applications .NET Core, ces arguments sont généralement des chemins de recherche supplémentaires pour les packages NuGet, suivis du chemin d’accès à l’assembly de sortie du projet.|
-|com. Microsoft. VisualStudio. Debugger. killprogram|Cette commande permet d’arrêter le programme débogué qui s’exécute dans le conteneur (si nécessaire).|
 |com. Microsoft. VisualStudio. Debugger. Program|Le programme est lancé au démarrage du débogage. Pour les applications .NET Core, ce paramètre est généralement **dotnet**.|
 |com. Microsoft. VisualStudio. Debugger. WorkingDirectory|Répertoire utilisé comme répertoire de démarrage lors du démarrage du débogage. Ce paramètre est généralement */app* pour les conteneurs Linux ou *C:\app* pour les conteneurs Windows.|
+|com. Microsoft. VisualStudio. Debugger. killprogram|Cette commande permet d’arrêter le programme débogué qui s’exécute dans le conteneur (si nécessaire).|
 
-## <a name="customize-the-app-startup-process"></a>Personnaliser le processus de démarrage de l’application
+### <a name="customize-the-docker-build-process"></a>Personnaliser le processus de génération de l’ancrage
 
-Vous pouvez exécuter une commande ou un script personnalisé avant de lancer votre application en utilisant le `entrypoint` paramètre et en le rendant dépendant de la configuration. Par exemple, si vous devez configurer un certificat uniquement en mode **débogage** en exécutant `update-ca-certificates` , mais pas en mode **Release** , vous pouvez ajouter le code suivant uniquement dans *docker-compose. vs. Debug. yml*:
+Vous pouvez déclarer l’étape à générer dans votre fichier dockerfile à l’aide du `target` paramètre de la `build` propriété. Ce remplacement ne peut être utilisé que dans *docker-compose. vs. Debug. yml* ou *docker-compose. vs. Release. yml* 
+
+```yml
+services:
+  webapplication1:
+    build:
+      target: customStage
+    labels:
+      ...
+```
+
+### <a name="customize-the-app-startup-process"></a>Personnaliser le processus de démarrage de l’application
+
+Vous pouvez exécuter une commande ou un script personnalisé avant de lancer votre application à l’aide du `entrypoint` paramètre et de la rendre dépendante de `DockerDevelopmentMode` . Par exemple, si vous devez configurer un certificat uniquement en mode **rapide** en exécutant `update-ca-certificates` , mais pas en mode **normal** , vous pouvez ajouter le code suivant dans **uniquement** *docker-compose. vs. Debug. yml*:
 
 ```yml
 services:
@@ -124,8 +144,6 @@ services:
     labels:
       ...
 ```
-
-Si vous omettez *docker-compose. vs. Release. yml* ou *docker-compose. vs. Debug. yml* , Visual Studio en génère un en fonction des paramètres par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
