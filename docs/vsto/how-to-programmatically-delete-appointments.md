@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a8c86917392859afe323deb01916b2b6bf12452
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963924"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828681"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Comment : supprimer des rendez-vous par programmation
   Cet exemple supprime une instance d’un rendez-vous périodique. L’exemple part du principe qu’une instance d’un rendez-vous périodique se produit le 28 juin 2006 à 08:00.
@@ -29,8 +29,8 @@ ms.locfileid: "99963924"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Exemple
- [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)

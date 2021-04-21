@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 509378b13e48f21a1148d700addd9ac4e78985e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910298"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825691"
 ---
 # <a name="excel-object-model-overview"></a>Vue d’ensemble du modèle objet Excel
   Pour développer des solutions qui utilisent Microsoft Office Excel, vous pouvez interagir avec les objets fournis par le modèle objet Excel. Cette rubrique présente les objets les plus importants :
@@ -50,7 +50,7 @@ ms.locfileid: "99910298"
   Cette rubrique propose une vue d'ensemble succincte du modèle objet Excel. Pour obtenir des ressources qui vous permettent d’en savoir plus sur l’ensemble du modèle objet Excel, consultez [utiliser la documentation du modèle objet Excel](#ExcelOMDocumentation).
 
 ## <a name="access-objects-in-an-excel-project"></a>Accéder aux objets dans un projet Excel
- Quand vous créez un projet de complément VSTO pour Excel, Visual Studio crée automatiquement un fichier de code *ThisAddIn. vb* ou *ThisAddIn.cs* . Vous pouvez accéder à l'objet Application à l'aide de `Me.Application` ou de `this.Application`.
+ Quand vous créez un projet de complément VSTO pour Excel, Visual Studio crée automatiquement un fichier de code *ThisAddIn. vb* ou *ThisAddIn. cs* . Vous pouvez accéder à l'objet Application à l'aide de `Me.Application` ou de `this.Application`.
 
  Lorsque vous créez un projet de niveau document pour Excel, vous avez la possibilité de créer un projet Classeur Excel ou Modèle Excel. Visual Studio crée automatiquement les fichiers de code suivants dans votre nouveau projet Excel à la fois pour les projets de classeur et les projets de modèle.
 
@@ -63,8 +63,8 @@ ms.locfileid: "99910298"
 
  Vous pouvez utiliser la classe `Globals` dans votre projet pour accéder à `ThisWorkbook`, `Sheet1`, `Sheet2` ou `Sheet3` depuis l'extérieur de la classe respective. Pour plus d’informations, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md). L’exemple suivant appelle la <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> méthode `Sheet1` , que le code soit placé dans une des `Sheet` *n* classes ou dans la `ThisWorkbook` classe.
 
- [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
- [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet82":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet82":::
 
  Comme les données dans un document Excel sont hautement structurées, le modèle objet est hiérarchique et simple. Excel fournit des centaines d’objets avec lesquels vous pouvez interagir, mais vous pouvez commencer à utiliser le modèle objet en vous concentrant sur un petit sous-ensemble des objets disponibles. Ces objets incluent les quatre éléments suivants :
 
@@ -116,7 +116,7 @@ ms.locfileid: "99910298"
 
 ### <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Solutions Excel](../vsto/excel-solutions.md)|Explique comment créer des personnalisations au niveau du document et des compléments VSTO pour Microsoft Office Excel.|
 |[Utiliser des plages](../vsto/working-with-ranges.md)|Fournit des exemples montrant comment effectuer des tâches courantes avec des plages.|

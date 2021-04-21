@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dce8bb0667cecbe073c734595d341f9c7b7ccac9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940798"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826081"
 ---
 # <a name="threading-support-in-office"></a>Prise en charge des threads dans Office
   Cet article fournit des informations sur la prise en charge des threads dans le modèle objet Microsoft Office. Le modèle objet Office n’est pas thread-safe, mais il est possible d’utiliser plusieurs threads dans une solution Office. Les applications Office sont des serveurs COM (Component Object Model). COM permet aux clients d’appeler des serveurs COM sur des threads arbitraires. Pour les serveurs COM qui ne sont pas thread-safe, COM fournit un mécanisme pour sérialiser les appels simultanés afin qu’un seul thread logique s’exécute sur le serveur à tout moment. Ce mécanisme est connu sous le nom de modèle STA (Single-Threaded Apartment). Étant donné que les appels sont sérialisés, les appelants peuvent être bloqués pendant des périodes de temps, alors que le serveur est occupé ou gère d’autres appels sur un thread d’arrière-plan.
@@ -38,7 +38,7 @@ ms.locfileid: "99940798"
 
 - Accès concurrentiel
 
-- Synchronisation
+- Synchronization
 
 - Marshaling
 
@@ -65,8 +65,8 @@ ms.locfileid: "99940798"
 ## <a name="start-the-thread-correctly"></a>Démarrer le thread correctement
  Quand vous créez un thread STA, affectez à l’état de cloisonnement la valeur STA avant de démarrer le thread. L'exemple de code suivant montre comment procéder.
 
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs" id="Snippet5":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb" id="Snippet5":::
 
  Pour plus d’informations, consultez [meilleures pratiques pour le threading managé](/dotnet/standard/threading/managed-threading-best-practices).
 
