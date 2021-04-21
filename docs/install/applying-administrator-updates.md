@@ -2,31 +2,31 @@
 title: Application des mises à jour de l’administrateur à Visual Studio avec le point de terminaison Microsoft Configuration Manager
 titleSuffix: ''
 description: Découvrez comment appliquer les mises à jour de l’administrateur à Visual Studio.
-ms.date: 04/07/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4df931ee5eb5eaefdf6d918ff05df65b799bef7e
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031604"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800796"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Application des mises à jour de l’administrateur qui utilisent le point de terminaison Microsoft Configuration Manager
 
-Ce document décrit les différents types et caractéristiques des mises à jour de l’Administrateur Visual Studio. Vous trouverez ci-dessous des informations sur la manière et le moment où elles doivent être distribuées dans l’ensemble de votre organisation, sur les options de configuration disponibles et sur l’affichage des rapports et sur la résolution des problèmes. Pour plus d’informations sur les conditions préalables à l’utilisation des mises à jour de l’administrateur, consultez [activation des mises à jour](../install/enabling-administrator-updates.md)de l’administrateur.
+Ce document décrit les différents types et caractéristiques des mises à jour de l’Administrateur Visual Studio. Vous trouverez ci-dessous des informations sur la manière et le moment où elles doivent être distribuées dans l’ensemble de votre organisation, sur les options de configuration disponibles et sur l’affichage des rapports et sur la résolution des problèmes. Pour plus d’informations sur les conditions préalables à l’utilisation des mises à jour de l’administrateur, consultez [activation des mises à jour](../install/enabling-administrator-updates.md)de l’administrateur. Les mises à jour de l’administrateur supposent que Visual Studio est déjà installé sur l’ordinateur. L’application des mises à jour de l’administrateur ne lancera pas une nouvelle installation.
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>Fonctionnement des mises à jour de l’Administrateur Visual Studio 
 
-Le package de mise à jour de l’Administrateur Visual Studio publié sur Microsoft Update en vue de sa consommation par le catalogue Microsoft et WSUS contient des informations que le Configuration Manager doit être en mesure de télécharger et de distribuer la mise à jour de Visual Studio sur les ordinateurs clients. Il contient également les informations dont un administrateur a besoin pour décider quelles mises à jour distribuer au sein de l’organisation et facilite la maintenance des dispositions du réseau. Les packages de mise à jour de l’Administrateur Visual Studio ne contiennent pas suffisamment d’informations pour effectuer une nouvelle installation du produit, ni contenir aucun des binaires de produit réels publiés sur le réseau de distribution de contenu. Les mises à jour de l’Administrateur Visual Studio sont cumulatives, tout comme les mises à jour standard de Visual Studio. Vous pouvez supposer que toute mise à jour de Visual Studio avec un numéro de version de produit supérieur et une date de publication ultérieure est un sur-ensemble d’une version antérieure antérieure. 
+Le package de mise à jour de l’Administrateur Visual Studio publié sur Microsoft Update en vue de sa consommation par le catalogue Microsoft et WSUS contient des informations que le Configuration Manager doit être en mesure de télécharger et de distribuer la mise à jour de Visual Studio sur les ordinateurs clients. Il contient également les informations dont un administrateur a besoin pour décider quelles mises à jour distribuer au sein de l’organisation. Il peut également être utilisé pour faciliter la maintenance des dispositions réseau. Les packages de mise à jour de l’Administrateur Visual Studio ne contiennent pas suffisamment d’informations pour effectuer une nouvelle installation du produit, ni contenir aucun des binaires de produit réels publiés sur le réseau de distribution de contenu. Les mises à jour de l’Administrateur Visual Studio sont cumulatives, tout comme les mises à jour standard de Visual Studio. Vous pouvez supposer que toute mise à jour de Visual Studio avec un numéro de version de produit supérieur et une date de publication ultérieure est un sur-ensemble d’une version antérieure antérieure. 
 
 Les mises à jour de l’Administrateur Visual Studio s’appliquent aux versions de maintenance de Visual Studio qui sont prises en charge. Pour plus d’informations sur les lignes de base de maintenance de Visual Studio qui sont toujours prises en charge pendant un laps de temps donné, consultez [cycle de vie et maintenance du produit Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). Toutes les lignes de base de maintenance de Visual Studio prises en charge restent sécurisées.  
 
@@ -142,7 +142,7 @@ Les mises à jour administratives peuvent renvoyer les codes de retour suivants�
 | 1007 | Le Visual Studio Installer n’est pas installé. |
 | 1008 | La valeur de Registre **BaselineStickinessVersions2019** n’est pas dans un format lisible. La valeur de registre doit inclure **toutes les** versions ou des versions valides avec le numéro de build défini sur 0 explicitement, par exemple, X. Y. 0. |
 | 3010 | Le système nécessite un redémarrage.La mise à jour a peut-être été appliquée ou non. Redémarrez l’ordinateur et réessayez d’effectuer la mise à jour. |
-| Autres | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
+| Autre | Une erreur s’est produite lors de la tentative d’application de la mise à jour.La mise à jour n’est pas appliquée. |
 
 Pour obtenir une liste exhaustive des codes d’erreur du client, consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). 
 

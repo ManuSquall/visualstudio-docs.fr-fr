@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295947"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800773"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -29,9 +29,9 @@ Il est possible de mettre à jour une disposition d’installation réseau de Vi
 ## <a name="how-to-update-a-network-layout"></a>Comment mettre à jour une disposition réseau
 
 > [!IMPORTANT]
-> Ces instructions supposent que vous avez déjà créé une disposition d’installation réseau. Pour plus d’informations sur la façon de procéder, consultez la page [créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md) .
+> Ces instructions supposent que vous avez déjà créé une disposition d’installation réseau et pris des décisions sur la façon dont le client est censé obtenir les mises à jour. Pour plus d’informations sur la procédure à suivre, consultez la page [créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md) et [contrôler les mises à jour des déploiements Visual Studio](../install/controlling-updates-to-visual-studio-deployments.md) .
 
-Pour actualiser le partage d’installation réseau et inclure les dernières mises à jour, exécutez la commande `--layout` pour télécharger de manière incrémentielle les packages mis à jour.
+Pour actualiser votre partage d’installation réseau afin qu’il inclue les dernières mises à jour, exécutez le programme d’amorçage à l’aide du `--layout` paramètre pour télécharger les packages mis à jour.
 
 Si vous avez sélectionné une disposition partielle lorsque vous avez [créé la disposition du réseau](create-a-network-installation-of-visual-studio.md), ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.
 

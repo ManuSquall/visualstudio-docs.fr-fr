@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/12/2021
-ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: cdacf4bb150d4fb836b4c7088f80f63e738aea15
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104507"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800895"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Comment acheter des abonnements Visual Studio ?
 
@@ -27,6 +27,8 @@ Les abonnements Visual Studio commercialisés que vous trouverez dans le Microso
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
 Chacun de ces abonnements offre la possibilité d’effectuer un achat initial ou de renouveler un abonnement existant. Le prix des renouvellements inclut une remise significative et s’applique uniquement aux abonnements existants. Pour pouvoir renouveler des abonnements à ce tarif réduit, vous devez les renouveler avant qu’ils n’expirent. 
+
+Si vous envisagez d’effectuer un achat unique de Visual Studio sans abonnement ou l’un des avantages inclus dans un abonnement, visitez le Microsoft Store pour [Visual Studio Professional 2019](https://www.microsoft.com/p/visual-studio-professional-2019/dg7gmgf0f6q1?cid=msft_web_collection&activetab=pivot%3aoverviewtab). 
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 Avec les abonnements mensuels, vous pouvez louer Visual Studio et Azure DevOps sans contrat à long terme. La facturation est gérée par le biais de votre abonnement Microsoft Azure. Si vous n’avez pas encore d’abonnement Azure, vous pouvez en créer un gratuitement pendant votre premier achat.  
