@@ -3,16 +3,19 @@ title: Éditeur de code XAML
 description: Visite guidée de l’éditeur de code XAML dans Visual Studio
 ms.date: 06/16/2020
 ms.topic: overview
+f1_keywords:
+- VS.XamlEditor
 monikerRange: vs-2019
+ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962312"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879393"
 ---
 # <a name="xaml-code-editor"></a>Éditeur de code XAML
 
@@ -101,9 +104,9 @@ Le volet central est la partie « code » de l’éditeur de code XAML. Il com
 
 Vous pouvez utiliser des [actions rapides](../ide/quick-actions.md) pour Refactoriser, générer ou modifier du code en une seule action.
 
-Par exemple, une tâche utile que vous pouvez effectuer à l’aide d’actions rapides consiste à **Supprimer les using inutiles** du code C# dans l’onglet **MainWindow.Xaml.cs** .
+Par exemple, une tâche utile que vous pouvez effectuer à l’aide d’actions rapides consiste à **Supprimer les using inutiles** du code C# dans l’onglet **MainWindow. Xaml. cs** .
 
-Voici comment procéder :
+Voici comment faire :
 
 1. Pointez sur une instruction using, choisissez l’icône ampoule, puis choisissez **Supprimer les instructions using inutiles** dans la liste déroulante.
 
@@ -218,7 +221,7 @@ Les développeurs préfèrent souvent documenter leur code à l’aide de commen
 
 - Sélectionnez le code que vous souhaitez entourer d’un commentaire, puis appuyez sur **CTRL** + **K**, **CTRL** + **C**. Pour supprimer les marques de commentaire du code sélectionné, appuyez sur **CTRL** + **K**, **CTRL** + **U**.
 
-Pour plus d’informations sur l’utilisation de commentaires dans le code C# qui se trouve dans l’onglet **MainWindow.Xaml.cs** , consultez la page [Commentaires de documentation](/dotnet/csharp/language-reference/language-specification/documentation-comments/) .
+Pour plus d’informations sur l’utilisation de commentaires dans le code C# qui se trouve dans l’onglet **MainWindow. Xaml. cs** , consultez la page [Commentaires de documentation](/dotnet/csharp/language-reference/language-specification/documentation-comments/) .
 
 ### <a name="xaml-lightbulbs"></a>Ampoules XAML
 
@@ -270,7 +273,7 @@ Vous pouvez utiliser la boîte de dialogue [options](../ide/reference/options-di
 
 > [!NOTE]
 > Vous pouvez également utiliser les raccourcis clavier pour accéder à la boîte de dialogue Options. Voici comment : Appuyez sur **CTRL** + **Q** pour rechercher dans l’IDE, tapez **options**, puis appuyez sur **entrée**. Appuyez ensuite sur **CTRL** + **E** pour rechercher dans la boîte de dialogue Options, tapez **éditeur de texte**, appuyez sur **entrée**, tapez **XAML**, puis appuyez sur **entrée**.
->  
+>
 > Pour plus d’informations sur les raccourcis clavier, consultez la page [conseils de raccourci pour Visual Studio](../ide/productivity-shortcuts.md#code-editor) .
 
 ### <a name="universal-text-editor-options"></a>Options de l’éditeur de texte universel
@@ -281,7 +284,7 @@ Dans la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-f
 |---------|---------|
 |Général  | [Boîte de dialogue Options : éditeur de texte > tous les langages](../ide/reference/options-text-editor-all-languages.md) |
 |Barres de défilement | [Options, Éditeur de texte, Tous les langages, Barres de défilement](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
-|Onglets  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
+|Tabulations  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
 ### <a name="xaml-specific-text-editor-options"></a>Options de l’éditeur de texte spécifique à XAML
 

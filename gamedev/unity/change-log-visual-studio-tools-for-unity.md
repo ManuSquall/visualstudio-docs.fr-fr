@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683480"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879380"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
@@ -1879,9 +1879,9 @@ Publication : 28 novembre 2012
 
 - Analyse du message de la console Info, afin qu’un clic sur la liste d’erreurs vous permette d’accéder à la première StackFrame avec symboles.
 
-- Ajouter une [API](extensibility/customize-project-files-created-by-vstu.md) pour permettre à utilisateur de participer à la génération du projet.
+- Ajouter une API pour permettre à utilisateur de participer à la génération du projet.
 
-- Ajouter une [API](extensibility/share-the-unity-log-callback-with-vstu.md) pour permettre à utilisateur de participer au rappel de journal.
+- Ajouter une API pour permettre à utilisateur de participer au rappel de journal.
 
 ### <a name="bug-fixes"></a>Résolution des bogues
 
@@ -1900,7 +1900,7 @@ Publication : 28 novembre 2012
 ## <a name="10100"></a>1.0.10.0
 Publication : 9 octobre 2012
 
-### <a name="bug-fixes"></a>Résolutions de bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - Correction de l’arrière-plan de l’Explorateur de projets Unity dans Visual Studio 2010.
 
