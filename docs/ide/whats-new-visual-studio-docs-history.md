@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d29c8be82ba0461231d9cd02eb6799dd38a690ed
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031591"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913031"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -62,7 +62,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [MSB3644 : les assemblys de référence pour’frameworkVersion’sont introuvables](../msbuild/errors/msb3644.md) -Erreurs MSBuild
 - [MSB8036 : la SDK Windows’version’est introuvable](../msbuild/errors/msb8036.md) -Erreurs MSBuild
 
-### <a name="test"></a>Tester
+### <a name="test"></a>Test
 
 **Articles mis à jour**
 
@@ -148,7 +148,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Visualiser les compteurs dotnet à partir du profileur Visual Studio](../profiling/dotnet-counters-tool.md) -ajout d’un outil compteurs .net
 
-### <a name="test"></a>Tester
+### <a name="test"></a>Test
 
 **Articles mis à jour**
 
@@ -171,7 +171,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Réorganiser la table des matières pour les analyseurs .NET
 - [Migrer des analyseurs FxCop vers des analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter plus de clarté aux documents de migration pour FxCopAnalyzers vers les analyseurs
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -208,7 +208,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Mettre à jour tutorial-projects-solutions.md
   - option de menu manquant
 
-### <a name="test"></a>Tester
+### <a name="test"></a>Test
 
 **Articles mis à jour**
 
@@ -237,7 +237,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Vue d’ensemble](../code-quality/use-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -296,7 +296,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 **Articles mis à jour**
 
-- [Expérience git dans Visual Studio](./git-with-visual-studio.md)
+- [Expérience git dans Visual Studio](../version-control/git-with-visual-studio.md)
   - Mise à jour du texte de remplacement & métadonnées
   - Mises à jour du nouveau contenu de l’expérience git pour 16,8 GA
 - [Nouveautés de Visual Studio 2019](./whats-new-visual-studio-2019.md)
@@ -344,7 +344,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Mesurer les performances de l’application à partir de la ligne de commande](../profiling/profile-apps-from-command-line.md) -mise à jour du profilage à partir de la ligne de commande docs
 
-### <a name="test"></a>Tester
+### <a name="test"></a>Test
 
 **Articles mis à jour**
 
@@ -367,7 +367,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 **Articles mis à jour**
 - [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -482,7 +482,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 **Nouveaux articles**
 
-- [Nouvelle expérience git dans Visual Studio (version préliminaire)](./git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
+- [Nouvelle expérience git dans Visual Studio (version préliminaire)](../version-control/git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
 - [Conventions de mise en forme C++ EditorConfig](./cpp-editorconfig-properties.md) -nouvel article
 - [Qu’est-ce que GitHub Codespaces ? (Version préliminaire)](./codespaces/codespaces-overview.md) -Ajouter un contenu Codespaces (préversion)
 - [Comment personnaliser un codeSpace (version préliminaire)](./codespaces/customize-codespaces.md) -ajouter du contenu Codespaces (préversion)
@@ -557,7 +557,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -615,7 +615,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Utiliser des tables SQL Server et R](../rtvs/integrating-sql-server-with-r.md) -corrigées pour inclure des en-têtes de colonnes
 
-## <a name="july-2020"></a>Juillet 2020
+## <a name="july-2020"></a>Juillet 2020
 ### <a name="code-quality"></a>Qualité du code
 
 **Nouveaux articles**
@@ -683,7 +683,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Métadonnées d’élément MSBuild courantes](../msbuild/common-msbuild-item-metadata.md) -MSBuild : ajouter une table pour les métadonnées facultatives avec lien et lien ressources
 - [Filtres de solution dans MSBuild](../msbuild/solution-filters.md) -filtres de solution MSBuild
 
-### <a name="test"></a>Tester
+### <a name="test"></a>Test
 
 **Nouveaux articles**
 

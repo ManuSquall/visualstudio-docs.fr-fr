@@ -1,7 +1,7 @@
 - name: Documentation sur l’IDE Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   expanded: true
   items:
     - name: À propos de Visual Studio
@@ -709,7 +709,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d’ensemble
+                    - name: Vue d'ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
@@ -905,15 +905,8 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: Déboguer >>
   href: debugger/index.yml
-- name: Gestion de versions
-  expanded: true
-  items:
-    - name: Nouvelle expérience git dans Visual Studio
-      href: ide/git-with-visual-studio.md
-    - name: Comment Visual Studio facilite le contrôle de la source
-      href: ide/git-visual-studio-source-control.md
-    - name: Comparer git et Team Explorer côte à côte
-      href: ide/git-team-explorer-feature-comparison.md
+- name: Contrôle de version >>
+  href: version-control/index.yml
 - name: Tester >>
   displayName: Unit testing
   href: test/index.yml

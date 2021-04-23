@@ -2,7 +2,7 @@
 title: Page par défaut de l’Aide F1
 description: Page par défaut pour les demandes d’aide F1 pour Visual Studio
 ms.date: 03/25/2021
-ms.topic: troubleshooting
+ms.topic: error-reference
 ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
@@ -10,40 +10,41 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9f91a145bc0847eca4303717bbf4602b243f6a3c
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616920"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913044"
 ---
-# <a name="f1-help"></a>Aide (F1)
+# <a name="f1-help-match-not-found"></a>Aide F1 : correspondance introuvable
 
-Nous n’avons apparemment pas trouvé ce que vous recherchiez ; nous en sommes désolés. Vous pouvez nous aider à améliorer en laissant des commentaires via les boutons situés en bas de cette page, ou essayer l’une des suggestions suivantes.
+Nous n’avons apparemment pas trouvé ce que vous recherchiez ; nous en sommes désolés. 
 
-## <a name="search-for-help"></a>Rechercher de l’aide
+## <a name="now-what"></a>Et maintenant ?
 
-Si vous recherchez de l’aide via la touche F1 sur une fenêtre, un mot clé ou un nom d’API :
+- Recommencez la recherche avec ces outils. Si vous recherchez de l’aide via la touche F1 sur une fenêtre, un mot clé ou un nom d’API :
+  - Essayez de rechercher à l’aide de votre moteur de recherche préféré
+  - Essayez de rechercher sur [docs.Microsoft.com](/)
 
-- Essayez de rechercher sur [docs.Microsoft.com](/)
-- Essayez d’effectuer une recherche à l’aide d’un moteur de recherche.
+- Laissez des commentaires via les boutons en bas de cette page sur ce que vous recherchiez
 
-## <a name="get-help-for-your-programming-language"></a>Obtenir de l’aide pour votre langage de programmation ?
+- [Remapper ou désactiver la touche d’aide F1](../not-in-toc/change-f1-help-key.md)
 
-- [Guide de programmation C#](/dotnet/csharp/programming-guide/) ou [Référence du langage](/dotnet/csharp/language-reference/).
-- [Fonctionnalités de langage Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) ou [Référence du langage](/dotnet/visual-basic/language-reference/).
-- [Documentation python](https://docs.python.org/).
-- [Guide de référence du langage C/C++ et des bibliothèques standard](/cpp/cpp/c-cpp-language-and-standard-libraries).
-- [Guide F #](/dotnet/fsharp/).
-- [Documentation](https://www.typescriptlang.org/docs)d’une machine à écrire.
 
-## <a name="re-map-or-disable-the-f1-help-key"></a>Remapper ou désactiver la touche d’aide F1
+## <a name="next-steps"></a>Étapes suivantes
 
-Si vous souhaitez modifier le mappage de clé pour F1, consultez [modifier la touche d’aide F1](../not-in-toc/change-f1-help-key.md).
+Vous trouverez de la documentation supplémentaire ici ou par le biais de la table des matières : 
+- Consultez notre documentation de référence sur l' [Explorateur d’API .net](/dotnet/api/)
+- Obtenir de l’aide sur l' [éditeur de code de texte Visual Studio](../../ide/writing-code-in-the-code-and-text-editor.md)
+- Parcourir la base de connaissances pour la [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- Lire la [vue d’ensemble de Visual Studio](../../get-started/visual-studio-ide.md)
 
-## <a name="useful-links"></a>Liens utiles
+Guides de programmation :
+- [Guide de programmation C#](/dotnet/csharp/programming-guide/) ou [Référence du langage](/dotnet/csharp/language-reference/)
+- [Fonctionnalités de langage Visual Basic](/dotnet/visual-basic/programming-guide/language-features/) ou [Référence du langage](/dotnet/visual-basic/language-reference/)
+- [Documentation python](https://docs.python.org/)
+- [Informations de référence sur le langage C/C++ et les bibliothèques standard](/cpp/cpp/c-cpp-language-and-standard-libraries)
+- [Guide F #](/dotnet/fsharp/)
+- [Documentation de machine à écrire](https://www.typescriptlang.org/docs)
 
-- Recherchez la documentation de référence sur le [navigateur de l’API .NET](/dotnet/api/).
-- Pour obtenir de l’aide sur l’éditeur de texte de Visual Studio, consultez [Utiliser l’éditeur de code](../../ide/writing-code-in-the-code-and-text-editor.md).
-- Parcourez une liste d’Articles de la base de connaissances sur la page de [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
-- Pour plus d’informations sur Visual Studio, consultez [Vue d’ensemble de Visual Studio](../../get-started/visual-studio-ide.md).

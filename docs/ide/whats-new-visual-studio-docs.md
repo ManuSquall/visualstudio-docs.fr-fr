@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e7dfd0d677412ded44459c7850fa9028142c42
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031578"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913057"
 ---
 # <a name="visual-studio-docs-whats-new-for-march-2021"></a>Documentation Visual Studio : nouveautés de mars 2021
 
@@ -33,7 +33,7 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2021 m
 - [Comment : exécuter manuellement l’analyse du code hérité pour le code managé](../code-quality/how-to-run-legacy-code-analysis-manually-for-managed-code.md) -confirmer la fusion à partir de la branche de travail
 - [Activer ou installer les analyseurs .net internes](../code-quality/install-net-analyzers.md) -correctifs GitHub
 
-## <a name="containers"></a>Conteneurs
+## <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -85,9 +85,9 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2021 m
 ## <a name="ide"></a>IDE
 
 **Nouveaux articles**
-- [Comment Visual Studio rend le contrôle de code source facile](./git-visual-studio-source-control.md) à créer nouvelle rubrique de contrôle de code source Visual Studio
+- [Comment Visual Studio rend le contrôle de code source facile](../version-control/git-visual-studio-source-control.md) à créer nouvelle rubrique de contrôle de code source Visual Studio
 - [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md) -invite de commandes développeur et Developer PowerShell
-- [Comparaison côte à côte de git et Team Explorer](./git-team-explorer-feature-comparison.md) -ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
+- [Comparaison côte à côte de git et Team Explorer](../version-control/git-team-explorer-feature-comparison.md) -ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
 
 **Articles mis à jour**
 
@@ -194,7 +194,7 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2021 m
 - [Modèles de projet d’application Web python](../python/python-web-application-project-templates.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
 - [Installer les symboles de débogage pour les interpréteurs python](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) -ajoutez les 3 dernières versions de Python 2,7
 
-## <a name="test"></a>Tester
+## <a name="test"></a>Test
 
 **Nouveaux articles**
 
