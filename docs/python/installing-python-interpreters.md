@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916537"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941108"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -29,7 +29,7 @@ Vous pouvez également installer manuellement l’un des interpréteurs figurant
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio prend en charge Python version 2.7, ainsi que la version 3.5 et les versions ultérieures. Bien qu’il soit possible d’utiliser Visual Studio pour modifier le code écrit dans d’autres versions de Python, ces versions ne sont pas officiellement prises en charge et des fonctionnalités comme IntelliSense et le débogage peuvent ne pas fonctionner.
+> Visual Studio prend en charge la version 2,7 de Python, ainsi que la version 3,5 à 3,7. Bien qu’il soit possible d’utiliser Visual Studio pour modifier le code écrit dans d’autres versions de Python, ces versions ne sont pas officiellement prises en charge et des fonctionnalités comme IntelliSense et le débogage peuvent ne pas fonctionner.
 ::: moniker-end
 
 Pour **Visual Studio 2015 et versions antérieures**, vous devez installer manuellement l’un des interpréteurs.

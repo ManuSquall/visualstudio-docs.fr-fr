@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940551"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941121"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
@@ -43,6 +43,10 @@ Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code mana
 ## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Configuration requise et limitations
 
 - Pour déboguer des fichiers de vidage à partir d’ordinateurs 64 bits, Visual Studio doit s’exécuter sur un ordinateur 64 bits.
+
+::: moniker range=">= vs-2019"
+- Visual Studio peut déboguer les fichiers dump des applications gérées à partir du système d’exploitation Linux. 
+::: moniker-end
 
 - Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Il peut également déboguer des vidages d’applications gérées à partir d’appareils ARM, mais uniquement dans le débogueur natif.
 
@@ -116,6 +120,7 @@ Si Visual Studio ne peut pas trouver les fichiers dont il a besoin pour débogue
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Comment déboguer une image mémoire managée avec des analyseurs de diagnostic .NET](../debugger/how-to-debug-managed-memory-dump.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

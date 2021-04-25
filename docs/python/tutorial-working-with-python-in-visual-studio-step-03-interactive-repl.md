@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e82073b77231f84452ba51402f407904142bbf8e
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920779"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941095"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactive
 
@@ -40,7 +40,7 @@ La fenêtre **interactive** de Visual Studio pour Python offre une expérience d
 
     ![Résultats immédiats de la fenêtre interactive Python](media/vs-getting-started-python-12-interactive2.png)
 
-1. Quand vous commencez à écrire une instruction multiligne, par exemple une définition de fonction, la fenêtre **Interactive** affiche l’invite **...** de Python pour continuer les lignes, ce qui, contrairement à l’environnement en ligne de commande REPL, entraîne une mise en retrait automatique :
+1. Lorsque vous commencez à écrire une instruction multiligne, comme une définition de fonction, la fenêtre **interactive** affiche l’invite de Python **...** pour les lignes continues, qui, contrairement à la ligne de commande REPL, fournit une mise en retrait automatique. Pour ajouter une nouvelle ligne **...** , appuyez sur `Shift+Enter` :
 
     ![Fenêtre interactive Python avec poursuite de l’instruction](media/vs-getting-started-python-13-interactive3.png)
 

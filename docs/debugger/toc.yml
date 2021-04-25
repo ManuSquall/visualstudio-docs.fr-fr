@@ -688,6 +688,8 @@
       items:
         - name: Utiliser des fichiers dump
           href: using-dump-files.md
+        - name: Déboguer une image mémoire managée
+          href: how-to-debug-managed-memory-dump.md
         - name: API d'extensibilité du résumé de fichier dump
           href: dump-file-summary-extensibility-api.md
     - name: Sécurité du débogueur

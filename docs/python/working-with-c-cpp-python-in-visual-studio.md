@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df3d32bfedfc730b8fae0837ce0e48f50e6496f4
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885935"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941147"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -120,9 +120,9 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
 
 1. Définissez les propriétés spécifiques décrites dans le tableau suivant, puis sélectionnez **OK**.
 
-    | Onglet | Propriété | Valeur |
+    | Onglet | Propriété | Value |
     | --- | --- | --- |
-    | **Généralités** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
+    | **Général** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
     | | **Général**  >  **Extension cible** | **.pyd** |
     | | **Valeurs par défaut**  >  du projet **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++**  >  **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
@@ -260,7 +260,7 @@ Si vous avez effectué les étapes de la section précédente, vous avez certain
 
 1. Définissez la configuration cible sur **Release**, puis générez le projet C++ pour vérifier votre code. Si vous rencontrez des erreurs, consultez la section suivante sur la résolution des problèmes.
 
-### <a name="troubleshooting"></a>Résolution des problèmes
+### <a name="troubleshooting"></a>Dépannage
 
 La compilation du module C++ peut échouer pour les raisons suivantes :
 
@@ -399,16 +399,16 @@ Visual Studio prend en charge le débogage simultané du code Python et du code 
 
 Il existe différents autres moyens de créer des extensions Python, comme décrit dans le tableau suivant. Les deux premières entrées pour CPython et PyBind11 sont ce qui a déjà été présenté dans cet article.
 
-| Approche | Vintage | Utilisateur(s) représentatif(s) | Avantage(s) | Inconvenient(s) |
-| --- | --- | --- | --- | --- |
-| Modules d’extension C/C++ pour CPython | 1991 | bibliothèque standard | [Documentation et didacticiels complets](https://docs.python.org/3/c-api/). Contrôle total. | Compilation, portabilité, gestion des références. Niveau élevé de connaissances en C. |
-| [PyBind11](https://github.com/pybind/pybind11) (recommandé pour C++) | 2015 |  | Bibliothèque légère et à en-tête uniquement pour la création de liaisons Python de code C++ existant. Peu de dépendances. Compatibilité PyPy. | Plus récente, moins reconnue. Utilisation intensive des fonctionnalités C++11. Très peu de compilateurs pris en charge (Visual Studio est inclus). |
-| Cython (recommandé pour C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semblable à Python. Approche hautement reconnue. Performances élevées. | Compilation, nouvelle syntaxe, nouvelle chaîne d’outils. |
-| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Fonctionne avec pratiquement tous les compilateurs C++. | Suite volumineuse et complexe de bibliothèques ; contient de nombreuses solutions de contournement pour les anciens compilateurs. |
-| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Pas de compilation, large disponibilité. | Accès et mutation des structures C fastidieux et sujets aux erreurs. |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Générer des liaisons pour de nombreux langages à la fois. | Surcharge excessive si Python est la seule cible. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilité d’intégration, compatibilité PyPy. | Plus récente, moins reconnue. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similaire à cffi avec C++. | Plus récente. Risque de problèmes avec Visual Studio 2017. |
+| Approche | Vintage | Utilisateur(s) représentatif(s) | 
+| --- | --- | --- |
+| Modules d’extension C/C++ pour CPython | 1991 | bibliothèque standard | 
+| [PyBind11](https://github.com/pybind/pybind11) (recommandé pour C++) | 2015 |  |
+| Cython (recommandé pour C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | |
+| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | |
 
 ## <a name="see-also"></a>Voir aussi
 
