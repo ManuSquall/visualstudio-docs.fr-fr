@@ -3,7 +3,6 @@ title: Charge un sous-ensemble de projets
 description: En savoir plus sur le filtrage de solution et sur la façon dont il vous permet de charger rapidement un sous-ensemble de projets dans une solution.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
@@ -12,12 +11,12 @@ author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3fc64b5f0623a03443278eaa8e4ee1f47b86da38
-ms.sourcegitcommit: 30c404655fb83ea28f96ab1edb1c09b4d8d7eec4
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "108217195"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298728"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
 
@@ -30,6 +29,9 @@ Les fonctionnalités suivantes sont disponibles :
 - Quand vous rouvrez une solution, Visual Studio mémorise les projets chargés dans votre session précédente et charge uniquement ces projets.
 
 - Vous pouvez créer un fichier de filtre de solution pour enregistrer une ou plusieurs configurations de chargement de projet ou partager la configuration avec des collègues.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows.
 
 ## <a name="open-a-filtered-solution"></a>Ouvrir une solution filtrée
 
