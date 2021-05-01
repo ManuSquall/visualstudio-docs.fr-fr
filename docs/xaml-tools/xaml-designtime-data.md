@@ -1,18 +1,18 @@
 ---
 title: Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 description: Découvrez comment utiliser des données au moment du design en XAML.
-ms.date: 11/17/2020
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913070"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334939"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -68,7 +68,7 @@ Vous pouvez définir une source au moment de la conception pour les images qui s
 
 Les ListViews sont un moyen couramment utilisé pour afficher des données dans votre application de bureau. Toutefois, ils sont difficiles à visualiser sans aucune donnée. Vous pouvez utiliser cette fonctionnalité pour créer un ItemSource ou des éléments de données au moment de la conception en ligne. Le Concepteur XAML affiche ce qui se trouve dans ce tableau dans votre ListView au moment du Design.
 
-### <a name="wpf-net-core--example"></a>Exemple WPF .NET Core
+### <a name="wpf-net-core-example"></a>Exemple WPF .NET Core
 Pour utiliser le type System : String, veillez à inclure `xmlns:system="clr-namespace:System;assembly=mscorlib` dans votre en-tête XAML.
 
 ```xml
@@ -139,7 +139,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 L’avantage ici est que vous pouvez lier vos contrôles à une version statique au moment du design de votre modèle.
 
-### <a name="uwp-example"></a>Exemple UWP 
+### <a name="uwp-example"></a>Exemple UWP
 
 x :Array n’est pas pris en charge dans UWP. Par conséquent, nous pouvons utiliser à la `<d:ListView.Items>` place. Pour utiliser le type System : String, veillez à inclure `http://schemas.microsoft.com/winfx/2009/xaml` dans votre en-tête XAML.
 
@@ -192,7 +192,7 @@ Pour créer un espace de noms xmlns personnalisé dans WPF .NET Core, vous devez
 [assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
    ```
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez un problème qui n’est pas mentionné dans cette section, faites-le nous savoir en utilisant l’outil [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) .
 

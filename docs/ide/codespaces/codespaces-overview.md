@@ -3,25 +3,25 @@ title: Vue d’ensemble de GitHub Codespaces (version préliminaire)
 description: Apprenez-en davantage sur GitHub Codespaces avec Visual Studio et sur la façon dont il peut vous aider à étendre votre environnement de développement dans le Cloud.
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672785"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298741"
 ---
 # <a name="what-is-github-codespaces-preview"></a>Qu’est-ce que GitHub Codespaces ? (Préversion)
 
-> [!Important] 
-> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Nous vous encourageons à participer au [Forum](https://developercommunity.visualstudio.com/home) de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route. 
+> [!Important]
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Nous vous encourageons à participer au [Forum](https://developercommunity.visualstudio.com/home) de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route.
 
 Bienvenue dans Codespaces ! Nous sommes heureux que vous soyez ici.
 
@@ -39,9 +39,9 @@ Les fonctionnalités Codespaces de GitHub sont basées sur quelques concepts fon
 
 De nombreux développeurs essaient aujourd’hui de coder dans des configurations à distance ou des machines virtuelles configurées avec des piles de développement et d’exécution spécifiques. C’est pourquoi il est trop difficile, trop perturbatrice et, dans certains cas, il est presque impossible de configurer ces environnements de développement localement. En outre, les individus veulent essayer de nouvelles technologies ou de nouvelles infrastructures sans crainte de « dislancer » les machines dont ils ont besoin pour leur travail quotidien.
 
-Bien que l’utilisation d’environnements distants et d’outils distants permette aux développeurs, il y a souvent la surcharge liée à la gestion des ordinateurs. La configuration de l’environnement complique souvent l’intégration et le basculement de contexte. GitHub Codespaces élimine les obstacles à l’intégration rapide et au basculement de contexte en permettant à de nombreux environnements d’exister simultanément. 
+Bien que l’utilisation d’environnements distants et d’outils distants permette aux développeurs, il y a souvent la surcharge liée à la gestion des ordinateurs. La configuration de l’environnement complique souvent l’intégration et le basculement de contexte. GitHub Codespaces élimine les obstacles à l’intégration rapide et au basculement de contexte en permettant à de nombreux environnements d’exister simultanément.
 
-GitHub Codespaces fournit des solutions gérées qui vous permettent de vous concentrer sur la productivité lors de l’installation. GitHub Codespaces, de manière conceptuelle et techniquement, étend Visual Studio 2019 pour le développement à distance. 
+GitHub Codespaces fournit des solutions gérées qui vous permettent de vous concentrer sur la productivité lors de l’installation. GitHub Codespaces, de manière conceptuelle et techniquement, étend Visual Studio 2019 pour le développement à distance.
 
 ### <a name="about-codespaces"></a>À propos de codespaces
 
