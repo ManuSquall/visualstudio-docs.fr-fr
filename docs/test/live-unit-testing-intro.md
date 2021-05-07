@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c3e8220857a454dc7ab5c7cb6308650075f9577
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c4da809455a859479d0421bffaa1b257a18c4b5
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887742"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798516"
 ---
 # <a name="live-unit-testing-overview"></a>Présentation de Live Unit Testing
 
@@ -34,7 +34,7 @@ Pour en savoir plus sur Live Unit Testing :
 
 - Lire la documentation détaillée : [utilisez Live Unit testing avec l’édition Visual Studio Enterprise](live-unit-testing.md).
 
-- Lisez le [FAQ Live Unit testing](live-unit-testing-faq.md) pour découvrir les nouveautés de Live Unit testing, ainsi que les conseils et les techniques.
+- Lisez le [FAQ Live Unit testing](live-unit-testing-faq.yml) pour découvrir les nouveautés de Live Unit testing, ainsi que les conseils et les techniques.
 
 - Regardez la vidéo de Channel 9 pour une vue d’ensemble de Live Unit Testing et de ses fonctionnalités.</p>
 
@@ -43,4 +43,4 @@ Pour en savoir plus sur Live Unit Testing :
 ## <a name="related-resources"></a>Ressources associées
 
 - [Outils de test de code](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Test unitaire de votre code](unit-test-your-code.md)
+- [Tests unitaires de votre code](unit-test-your-code.md)

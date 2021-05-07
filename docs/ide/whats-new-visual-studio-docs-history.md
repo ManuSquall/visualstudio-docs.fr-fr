@@ -2,7 +2,7 @@
 title: 'Documentation Visual Studio : historique des nouveautés '
 titleSuffix: ''
 description: Historique des nouveautés de la documentation Visual Studio
-ms.date: 03/08/2021
+ms.date: 05/03/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,197 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c8be82ba0461231d9cd02eb6799dd38a690ed
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: bb78ce04f57f537a6e595fe55d41b220c4476a7b
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913031"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798243"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
-Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2021 mars (à compter du 1er juillet 2020). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2021 avril (à partir du 2020 du 1er juillet). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+
+## <a name="march-2021"></a>Mars 2021
+
+### <a name="code-quality"></a>Qualité du code
+
+**Articles mis à jour**
+
+- [Activer ou installer les analyseurs .net internes](../code-quality/install-net-analyzers.md) -correctifs GitHub
+
+### <a name="containers"></a>Containers
+
+**Articles mis à jour**
+
+- [Utiliser Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) -Bridge to Kubernetes : Use .net todo-App Sample
+- [Propriétés de génération de docker compose](../containers/docker-compose-properties.md) -ajout de ComposeProjectName
+- [Fonctionnement de Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) -Bridge to Kubernetes : Update limitations section
+- [Didacticiel : créer une application à plusieurs conteneurs avec docker compose](../containers/tutorial-multicontainer.md) -didacticiel sur les outils multiconteneur : corriger le lien vers l’image
+
+### <a name="debugger"></a>Débogueur
+
+**Articles mis à jour**
+
+- [Comment : déboguer à partir d’un projet dll dans Visual Studio (C#, C++, Visual Basic, F #)](../debugger/how-to-debug-from-a-dll-project.md) -actualiser le débogage à partir d’une dll
+- [Spécifier des fichiers de symboles (. pdb) et sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) -actualiser le débogage à partir d’une dll
+- [Assertions C/C++](../debugger/c-cpp-assertions.md) -correctifs de problèmes GitHub
+- [IDiaDataSource :: loadDataForExe](../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) -problèmes de GitHub
+- [Spécificateurs de format pour C++ dans le débogueur Visual Studio](../debugger/format-specifiers-in-cpp.md) -problèmes de GitHub
+- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md) -correctifs de problèmes GitHub
+- [Débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+- [Débogage à distance ASP.net Core sur un ordinateur IIS distant dans Visual Studio](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+- [Débogage à distance ASP.net Core sur IIS dans Azure dans Visual Studio](../debugger/remote-debugging-azure.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+
+### <a name="deployment"></a>Déploiement
+
+**Articles mis à jour**
+
+- [Comment : publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) -invite de commandes développeur et Developer PowerShell
+- [Déployer une application dans un dossier à l’aide de Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) -mises à jour de documents de débogage à distance pour IIS et Azure
+
+### <a name="extensibility"></a>Extensibilité
+
+**Articles mis à jour**
+
+- [Dictionnaire de langage visuel](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) -ajouter des parenthèses manquantes pour corriger l’erreur de rendu de l’icône
+- [Résolution des problèmes d’installation de modèles](../extensibility/troubleshooting-template-discovery.md) -invite de commandes développeur et Developer PowerShell
+
+### <a name="get-started"></a>Commencer
+
+**Articles mis à jour**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md)
+  - mettre à jour les rubriques avec une comparaison côte à côte des & git Team Explorer lien
+  - Ajouter des liens de connexion pour plus d’informations sur la section de connexion
+- [Didacticiel : prise en main de C# et ASP.net core dans Visual Studio](../get-started/csharp/tutorial-aspnet-core.md) -mettre à jour Tutorial-ASPNET-Core.MD
+
+### <a name="ide"></a>IDE
+
+**Nouveaux articles**
+- [Comment Visual Studio rend le contrôle de code source facile](../version-control/git-visual-studio-source-control.md) à créer nouvelle rubrique de contrôle de code source Visual Studio
+- [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md) -invite de commandes développeur et Developer PowerShell
+- [Comparaison côte à côte de git et Team Explorer](../version-control/git-team-explorer-feature-comparison.md) -ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
+
+**Articles mis à jour**
+
+- [Journaux générés par le système collectés par Visual Studio](./diagnostic-data-collection.md) -mettre à jour diagnostic-Data-collection.MD
+- [Programme d’amélioration des services Visual Studio](./visual-studio-experience-improvement-program.md) -mettre à jour Visual-Studio-Experience-Improvement-Program.MD
+- [Personnaliser les modèles de projet et d’élément](./customizing-project-and-item-templates.md) : ajouter des liens sur la personnalisation des modèles et l’utilisation de la ligne de commande
+- [Comment : créer des modèles de projet](./how-to-create-project-templates.md) -ajouter des liens sur la personnalisation des modèles et l’utilisation de la ligne de commande
+- [Éditeur de code F1 aide](./not-in-toc/default-f1-text-editor.md) -lier les mises à jour pour les pages par défaut F1
+- [Aide F1](./not-in-toc/default.md) -lier des mises à jour pour les pages par défaut F1
+- [Démarrage rapide : utiliser Visual Studio pour créer vos premières](./quickstart-nodejs.md) mises à jour de Node.js App-AngularJS
+- [Extraire une méthode refactorisation](./reference/extract-method.md) -mettre à jour Extract-Method.MD
+- [Page d’options concepteur XAML](./reference/xaml-designer.md) -ajouter des informations sur les options récemment ajoutées dans le concepteur XAML
+- [Nouveautés de Visual Studio 2019](./whats-new-visual-studio-2019.md)
+  - Ajouter des informations de Search Service intelligentes
+  - Ajouter un nouveau lien CSharp 9 pour voir également
+- [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md)
+  - Mettre à jour les titres des fonctionnalités et supprimer la section prérequis
+  - Mettre à jour la hiérarchie des titres
+  - Invite de commandes développeur et Developer PowerShell
+- [Se connecter à des projets dans Team Explorer](./connect-team-project.md) -mettre à jour des rubriques avec une comparaison côte à côte des liens Git & Team Explorer
+- [Expérience git dans Visual Studio](./git-with-visual-studio.md)
+  - Ajouter Azure DevOps à une instruction distante existante
+  - Ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
+  - argument-b manquant dans git-with-visual-studio.md
+- [Raccourcis clavier par défaut dans Visual Studio](./default-keyboard-shortcuts-in-visual-studio.md) -raccourci clavier ajouter des conditions de point d’arrêt définies manquantes
+- [Autorisations utilisateur et Visual Studio](./user-permissions-and-visual-studio.md) -ajouter une procédure pour définir les autorisations d’administration sur le raccourci
+- [Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio](./reference/generate-equals-gethashcode-methods.md)
+  - réduire la taille de capture d’écran et ajouter une modification mineure à une instruction
+  - Ajouter du code à associer à des captures d’écran
+- [Utiliser des expressions régulières dans Visual Studio](./using-regular-expressions-in-visual-studio.md) -corriger une expression régulière incorrecte
+- [Personnaliser les tâches de génération et de débogage pour le développement de dossiers ouverts](./customize-build-and-debug-tasks-in-visual-studio.md) -invite de commandes développeur et Developer PowerShell
+- [Guide de productivité Visual Studio pour les développeurs C#](./csharp-developer-productivity.md) -mettre à jour la liste d’extensions d’inspection du code pour VS2019
+
+### <a name="install"></a>Installer
+
+**Nouveaux articles**
+- [Application des mises à jour de l’administrateur qui utilisent Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) -création d’un nouveau contenu sur l’application des mises à jour de l’administrateur
+- [Activation des mises à jour de l’administrateur pour Visual Studio avec Microsoft Endpoint Configuration Manager](../install/enabling-administrator-updates.md) -création d’un nouveau contenu sur l’activation des mises à jour de l’administrateur
+
+**Articles mis à jour**
+
+- [Numéros de builds et dates de publication de Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Mettre à jour visual-studio-build-numbers-and-release-dates.md
+  - Ajouter des données de version 16.9.2
+  - Mises à jour patch Tuesday
+  - page mettre à jour la date des numéros de build
+  - numéros de build pour 16,9 GA et 16,10 Preview 1
+  - Mise à jour pour les nouvelles mises en production
+- [Créer une installation hors connexion de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) -modifications de document de mise à jour d’administration
+- [Installer les certificats requis pour l’installation hors connexion de Visual Studio](../install/install-certificates-for-visual-studio-offline.md) -modifications de document de mise à jour d’administration
+- [Installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md) -modifications de document de mise à jour d’administration
+- [Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) -article mis à jour.
+
+### <a name="javascript"></a>JavaScript
+
+**Articles mis à jour**
+
+- [JavaScript et la machine à écrire dans Visual Studio # requis ; titre de la page affiché dans les résultats de la recherche. Incluez la personnalisation. < 60 caractères.](../javascript/index.yml) -Mises à jour AngularJS
+- [Démarrage rapide : utiliser Visual Studio pour créer vos premières](../javascript/quickstart-vuejs-with-nodejs.md) mises à jour de Vue.js App-AngularJS
+- [Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio](../javascript/tutorial-aspnet-with-typescript.md)
+  - Mises à jour AngularJS
+  - VisualStudio-docs/issues/6457--version manquante
+- [Didacticiel : créer une Node.js et une application Express dans Visual Studio](../javascript/tutorial-nodejs.md) -mises à jour AngularJS
+- [En savoir plus sur l’utilisation de l’éditeur de code pour](../javascript/write-and-edit-code.md) les mises à jour de JavaScript-AngularJS
+- [Test unitaire JavaScript et TypeScript dans Visual Studio](../javascript/unit-testing-javascript-with-visual-studio.md)
+  - Tests unitaires pour ASP.NET Core et la machine à écrire
+  - Invite de commandes développeur et Developer PowerShell
+  - Résolution des problèmes GitHub
+- [Gérer les packages NPM dans Visual Studio](../javascript/npm-package-management.md) -correctifs de problèmes GitHub
+
+### <a name="msbuild"></a>MSBuild
+
+**Articles mis à jour**
+
+- [Comment msbuild génère des projets](../msbuild/build-process-overview.md) : corrigez le nom de l’élément incorrect.
+- [Tâche CreateCSharpManifestResourceName,](../msbuild/createcsharpmanifestresourcename-task.md) -corriger la faute de référence croisée incorrecte
+- [Guide pratique pour étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md) : corriger le retrait XML
+- [Tâche MIDL](../msbuild/midl-task.md) -mettre à jour MIDL-Task.MD
+- [Éléments de projet MSBuild communs](../msbuild/common-msbuild-project-items.md) -ajouter une table des matières dans l’article et améliorer la mise en forme
+- [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md) -ajouter une table des matières et améliorer la mise en forme
+- [Exec Task](../msbuild/exec-task.md) -ajouter un document pour le paramètre Utf8Encoding
+
+### <a name="profiling"></a>Profilage
+
+**Articles mis à jour**
+
+- [Mesurer les performances de l’application à partir de la ligne de commande](../profiling/profile-apps-from-command-line.md) -résolution des problèmes GitHub
+- [Premier aperçu des outils de profilage](../profiling/profiling-feature-tour.md) -travail de découverte pour l’outil compteurs .net
+
+### <a name="python"></a>Python
+
+**Articles mis à jour**
+
+- [Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio](../python/learn-flask-visual-studio-step-01-project-solution.md)
+  - Code et texte mis à jour sur les paramètres de requête
+  - Suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Didacticiel : prise en main de l’infrastructure Web Django dans Visual Studio](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) -suppression du contenu du modèle d’interrogation des didacticiels python de visual studio 2019
+- [Étape 5 : authentifier les utilisateurs dans Django](../python/learn-django-in-visual-studio-step-05-django-authentication.md) -suppression du contenu du modèle d’interrogation à partir des didacticiels python de Visual Studio 2019
+- [Étape 6 : utiliser le modèle de projet Web Djangos de sondage](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) -suppression du contenu du modèle de sondage à partir des didacticiels python de Visual Studio 2019
+- [Étape 4 : utiliser le modèle de projet Web complet de la fiole](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Étape 5 : utiliser le modèle de projet Web de la fiole sondages](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Modèle de projet Web Django](../python/python-django-web-application-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Modèles de projet d’application Web python](../python/python-web-application-project-templates.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Installer les symboles de débogage pour les interpréteurs python](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) -ajoutez les 3 dernières versions de Python 2,7
+
+### <a name="test"></a>Test
+
+**Nouveaux articles**
+
+- [Effectuez une mise à niveau de *. testsettings* vers *. RunSettings*](../test/migrate-testsettings-to-runsettings.md) -Add migrate to RunSettings doc
+- [Mise à niveau de MSTestV1 vers MSTestV2](../test/mstest-update-to-mstestv2.md) -add doc sur la mise à niveau de MSTestV1 vers MSTestV2
+
+**Articles mis à jour**
+
+- [Créer des stubs de méthode de test unitaire à partir de code](../test/create-unit-tests-menu.md) -VisualStudio-docs/issues/6484--Update Link
+- [Examinez d’abord les outils de test dans Visual Studio](../test/improve-code-quality.md) -VisualStudio-docs/issues/6429--mettre à jour les liens de laboratoire
+- [Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
+  - Invite de commandes développeur et Developer PowerShell
+  - Correction des fautes de frappe
+- [VSTest.Console.exe les options de ligne de commande](../test/vstest-console-options.md) -invite de commandes développeur et Developer PowerShell
 
 ## <a name="february-2021"></a>Février 2021
 
@@ -34,7 +215,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -mises à jour pour l’accessibilité
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -109,7 +290,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] validation à partir du PUBLIC PR 6214
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Nouveaux articles**
 
@@ -181,9 +362,9 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 **Articles mis à jour**
 
-- [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.md) : travail de découverte pour rechercher votre tâche de débogage et les rubriques de présentation
+- [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.yml) : travail de découverte pour rechercher votre tâche de débogage et les rubriques de présentation
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -225,11 +406,11 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Activer ou installer les analyseurs .net](../code-quality/install-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Migrer des analyseurs FxCop vers les analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Migrer de l’analyse héritée (FxCop) vers l’analyse source (analyseurs .net)](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
-- [Forum aux questions sur les analyseurs FxCop et .net hérités](../code-quality/net-analyzers-faq.md) -ajouter de la documentation pour migrer des analyseurs FxCop vers des analyseurs .net
+- [Forum aux questions sur les analyseurs FxCop et .net hérités](../code-quality/net-analyzers-faq.yml) -ajouter de la documentation pour migrer des analyseurs FxCop vers des analyseurs .net
 
 **Articles mis à jour**
 
-- [FAQ](../code-quality/analyzers-faq.md) sur l’analyse du code-ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
+- [FAQ](../code-quality/analyzers-faq.yml) sur l’analyse du code-ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [État du port de la règle FXCop](../code-quality/fxcop-rule-port-status.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Règles déconseillées](../code-quality/fxcop-unported-deprecated-rules.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Règles non portées qui peuvent être](../code-quality/fxcop-unported-rules-may-get-ported.md) ajoutées à la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
@@ -276,7 +457,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Didacticiel : prise en main de concepteur Windows Forms](../designers/walkthrough-windows-forms-designer.md) -correction de la faute
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -393,7 +574,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de Visual Studio Graphics Diagnostics](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg DX12
 - [Graphics Diagnostics Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg DX12
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -581,7 +762,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -615,7 +796,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Utiliser des tables SQL Server et R](../rtvs/integrating-sql-server-with-r.md) -corrigées pour inclure des en-têtes de colonnes
 
-## <a name="july-2020"></a>Juillet 2020
+## <a name="july-2020"></a>Juillet 2020
 ### <a name="code-quality"></a>Qualité du code
 
 **Nouveaux articles**
@@ -649,7 +830,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Journal des modifications (outils Visual Studio pour Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
 - [Journal des modifications (outils Visual Studio pour Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Nouveaux articles**
 

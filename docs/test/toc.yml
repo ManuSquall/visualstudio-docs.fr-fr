@@ -137,7 +137,7 @@
     - name: Configurer et utiliser
       href: live-unit-testing.md
     - name: Questions fréquentes (FAQ)
-      href: live-unit-testing-faq.md
+      href: live-unit-testing-faq.yml
 - name: Tests de performances web et tests de charge
   items:
     - name: "Démarrage rapide\_: Créer un projet de test de charge"

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/21/2021
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 4744f689e9b03e4a6cf8c804409abddfde16c527
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.openlocfilehash: 389eb3a578b0b025995c0cd60613d5bcce2e1a9f
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776894"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640997"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -84,7 +84,6 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > Les limitations suivantes s’appliquent à l’utilisation de groupes de Azure AD pour l’ajout d’abonnés :
 > - L’administrateur doit être membre du client AAD lors de l’ajout initial d’un groupe au portail d’administration.  Une fois le groupe ajouté, les modifications apportées à l’appartenance aux groupes ne nécessitent pas d’intervention de l’administrateur. 
 > - Les groupes doivent contenir au moins un membre.  Les groupes vides ne sont pas pris en charge.
-> - Les groupes doivent avoir moins de 1 000 utilisateurs. 
 > - Tous les utilisateurs doivent se trouver au niveau supérieur du groupe.  Les groupes imbriqués ne sont pas pris en charge.
 > - Seuls les accords approuvés sont pris en charge. (Seuls les accords qui peuvent « surattribuer » des abonnements sont approuvés.)
 > - Tous les membres du groupe doivent avoir une adresse de messagerie associée à leur compte Azure AD.

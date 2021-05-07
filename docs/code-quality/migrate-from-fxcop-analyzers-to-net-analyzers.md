@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6f9c36b1b64abe648c3aa9014c633e4e4949b1a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867865"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798256"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>Migrer des analyseurs FxCop vers les analyseurs .NET
 
@@ -49,8 +49,8 @@ Avant Visual Studio 2019 16,8 et .NET 5,0, ces analyseurs étaient fournis sous 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Analyse du code source et analyse héritée](net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
+- [Analyse du code source et analyse héritée](net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)
 - [Migrer d’une analyse existante vers les analyseurs .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
 - [Activer ou installer les analyseurs .NET](install-net-analyzers.md)
-- [FAQ sur les analyseurs .NET](net-analyzers-faq.md)
+- [FAQ sur les analyseurs .NET](net-analyzers-faq.yml)
 - [Configurer les analyseurs .NET](/dotnet/fundamentals/code-analysis/code-quality-rule-options)

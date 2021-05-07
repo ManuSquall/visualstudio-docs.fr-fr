@@ -48,6 +48,8 @@
       href: subscription-expiration.md
     - name: Modifications de niveau d’abonnement
       href: subscription-level-changes.md
+    - name: Abonnements supprimés
+      href: subscription-removed.md
     - name: Contacter votre administrateur d’abonnements
       href: contact-my-admin.md
     - name: Avantages

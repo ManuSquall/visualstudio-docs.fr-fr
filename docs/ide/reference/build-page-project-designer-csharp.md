@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836447"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798555"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -119,9 +119,9 @@ Les paramètres suivants sont utilisés pour spécifier quels avertissements son
 **Avertissements spécifiques** : traite les avertissements spécifiés comme des erreurs. Séparez les numéros des avertissements par une virgule ou un point-virgule.
 
 > [!TIP]
-> Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+> Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors).
 
-## <a name="output"></a>Output
+## <a name="output"></a>Sortie
 
 Les paramètres suivants sont utilisés pour configurer les options de sortie pour le processus de génération.
 

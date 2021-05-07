@@ -35,19 +35,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc0231b7c42dbdb4aca86040347ec5bfd57607d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0865c71d2893203ca3af925da1d76946d882c4c4
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940668"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798581"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 
 Les points d’arrêt constituent l’une des techniques de débogage les plus importantes dans la boîte à outils de votre développeur. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaiterez peut-être afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt.  Si vous essayez de résoudre un avertissement ou un problème lors de l’utilisation de points d’arrêt, consultez [résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md).
 
 > [!NOTE]
-> Si vous connaissez la tâche ou le problème que vous tentez de résoudre, mais que vous devez connaître le type de point d’arrêt à utiliser, consultez [FAQ-Rechercher votre fonctionnalité de débogage](../debugger/find-your-debugging-task.md#pause-running-code).
+> Si vous connaissez la tâche ou le problème que vous tentez de résoudre, mais que vous devez connaître le type de point d’arrêt à utiliser, consultez [FAQ-Rechercher votre fonctionnalité de débogage](../debugger/find-your-debugging-task.yml#pause-running-code).
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Définir des points d’arrêt dans le code source
 
@@ -187,13 +187,13 @@ Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée. Cela est
 
    - Utilisez le symbole «  ! » pour spécifier le module.
 
-     Exemple : `App1.dll!MethodA`
+     Exemple : `App1.dll!MethodA`
 
    - Utilisez l’opérateur de contexte en C++ natif.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     Exemple : `{MethodA, , App1.dll}+2`
+     Exemple : `{MethodA, , App1.dll}+2`
 
 1. Dans la liste déroulante **langue** , choisissez la langue de la fonction.
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a673e7467816e71b8240de9e5f68840c9188dcd
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859760"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798230"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>Migrer de l’analyse héritée (FxCop) vers l’analyse source (analyseurs .NET)
 
@@ -28,9 +28,9 @@ La plupart des règles d’analyse héritée (FxCop) ont déjà été réécrite
 
 Pour plus d’informations sur les différences entre l’analyse héritée et l’analyse de la source, consultez les rubriques suivantes :
 
-- [Analyse du code source et analyse héritée](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
+- [Analyse du code source et analyse héritée](../code-quality/net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)
 
-- [FAQ sur les analyseurs .NET](../code-quality/net-analyzers-faq.md)
+- [FAQ sur les analyseurs .NET](../code-quality/net-analyzers-faq.yml)
 
 ## <a name="migration"></a>Migration
 

@@ -415,7 +415,7 @@
         - name: Déboguer une application Azure Kubernetes en direct
           href: debug-live-azure-kubernetes.md
         - name: Questions fréquentes (FAQ) sur le débogage d’instantané
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: Dépannage du débogage d’instantané
           href: debug-live-azure-apps-troubleshooting.md
         - name: Enregistrer un débogage par voyage dans le temps d’une application de machine virtuelle Azure
@@ -949,6 +949,6 @@
 - name: Ressources
   items:
     - name: FAQ - Trouver votre fonctionnalité de débogage
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Nouveautés du débogueur dans Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md

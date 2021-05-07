@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809568"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798451"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Enregistrer et relire des applications ASP.NET en direct sur des machines virtuelles Azure à l’aide du Débogueur de capture instantanée
 
@@ -95,17 +95,17 @@ Quand un point d’ancrage est activé, il capture un instantané à chaque fois
 
 1. Cliquez sur le lien Afficher l’instantané pour ouvrir l’enregistrement de l’heure de voyage dans l’éditeur de code.
   
-   Vous pouvez exécuter chaque ligne de code enregistrée par le TTD à l’aide des boutons **Continuer** et **inverser continuer** . En outre, la barre d’outils de **débogage** peut être utilisée pour **afficher l’instruction suivante**, **pas à**pas détaillé **, pas à**pas principal **, pas à pas principal, revenir** **en**arrière **, pas** **à pas précédent**.
+   Vous pouvez exécuter chaque ligne de code enregistrée par le TTD à l’aide des boutons **Continuer** et **inverser continuer** . En outre, la barre d’outils de **débogage** peut être utilisée pour **afficher l’instruction suivante**, **pas à** pas détaillé **, pas à** pas principal **, pas à pas principal, revenir** **en** arrière **, pas** **à pas précédent**.
 
    ![Démarrer le débogage](../debugger/media/time-travel-debugging-step-commands.png)
 
-   Vous pouvez également utiliser les fenêtres **variables locales**, **espions**et **pile des appels** , ainsi que évaluer les expressions.
+   Vous pouvez également utiliser les fenêtres **variables locales**, **espions** et **pile des appels** , ainsi que évaluer les expressions.
 
    ![Inspecter les données de capture instantanée](../debugger/media/time-travel-debugging-start-debugging.png)
 
     Le site Web lui-même est toujours actif et les utilisateurs finaux ne sont pas affectés par une activité TTD suivante. Par défaut, le snappoint ne prend qu’une capture instantanée : dès que c’est fait, il se désactive. Si vous souhaitez prendre une autre capture instantanée sur le snappoint, vous pouvez le réactiver en cliquant sur **Mettre à jour la collecte**.
 
-**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
+**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.yml).
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
@@ -116,4 +116,4 @@ S’il vous est difficile de recréer un état particulier de votre application,
 Dans ce didacticiel, vous avez appris à collecter un enregistrement de temps pour les machines virtuelles Azure. Vous souhaiterez peut-être en savoir plus sur Débogueur de capture instantanée.
 
 > [!div class="nextstepaction"]
-> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.yml)

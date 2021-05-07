@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2270216e7245f20d26df580ad90dc627319adcc1
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828811"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798633"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Bien démarrer avec Live Unit Testing
 
@@ -370,4 +370,4 @@ Ceci fournit suffisamment d’informations pour un examen préliminaire du bogue
 ## <a name="see-also"></a>Voir aussi
 
 - [Live Unit Testing dans Visual Studio](live-unit-testing.md)
-- [Questions fréquentes concernant Live Unit Testing](live-unit-testing-faq.md)
+- [Questions fréquentes concernant Live Unit Testing](live-unit-testing-faq.yml)
