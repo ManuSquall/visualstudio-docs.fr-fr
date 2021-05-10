@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547490"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666794"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau
 
@@ -82,7 +82,7 @@ Toute mise à jour d’installation lancée à partir du client installera autom
 
 **Scénario 3 : le client a été installé à l’origine à partir du Web, mais ne doit recevoir des mises à jour qu’à partir d’une disposition réseau**
 
-Dans certains cas, l’ordinateur client a peut-être déjà installé Visual Studio à partir du Web, mais l’administrateur souhaite à présent que toutes les mises à jour ultérieures proviennent d’une disposition gérée. La seule méthode prise en charge pour cela consiste à créer une disposition réseau avec la version souhaitée du produit, puis sur l’ordinateur client, à exécuter le programme _d’amorçage à partir de l’emplacement_ de la disposition (par exemple, `\\network\share\vs_enterprise.exe` ). Dans l’idéal, l’installation originale du client s’est produite à l’aide du programme d’amorçage de la disposition du réseau avec le ChannelURI correctement configuré, mais l’exécution du programme d’amorçage mis à jour à partir de l’emplacement de la disposition du réseau fonctionne également. L’une de ces actions entraînerait l’incorporation, sur l’ordinateur client, d’une connexion avec cet emplacement de disposition particulier. Le seul inconvénient de ce scénario est que le « ChannelURI » dans le fichier de la disposition `response.json` doit être le même que le ChannelURI défini sur l’ordinateur du client lors de l’installation d’origine. Cette valeur a probablement été définie à l’origine sur le [canal de publication](https://aka.ms/vs/16/release/channel)Internet. 
+Dans certains cas, l’ordinateur client a peut-être déjà installé Visual Studio à partir du Web, mais l’administrateur souhaite à présent que toutes les mises à jour ultérieures proviennent d’une disposition gérée. La seule méthode prise en charge pour cela consiste à créer une disposition réseau avec la version souhaitée du produit, puis sur l’ordinateur client, à exécuter le programme _d’amorçage à partir de l’emplacement_ de la disposition (par exemple, `\\server\share\vs_enterprise.exe` ). Dans l’idéal, l’installation originale du client s’est produite à l’aide du programme d’amorçage de la disposition du réseau avec le ChannelURI correctement configuré, mais l’exécution du programme d’amorçage mis à jour à partir de l’emplacement de la disposition du réseau fonctionne également. L’une de ces actions entraînerait l’incorporation, sur l’ordinateur client, d’une connexion avec cet emplacement de disposition particulier. Le seul inconvénient de ce scénario est que le « ChannelURI » dans le fichier de la disposition `response.json` doit être le même que le ChannelURI défini sur l’ordinateur du client lors de l’installation d’origine. Cette valeur a probablement été définie à l’origine sur le [canal de publication](https://aka.ms/vs/16/release/channel)Internet. 
 
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Contrôle des notifications dans l’IDE de Visual Studio
@@ -95,11 +95,11 @@ Comme décrit plus haut, Visual Studio vérifie l’emplacement à partir duquel
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="vs-2019&quot;
 
 Comme décrit plus haut, Visual Studio vérifie l’emplacement à partir duquel il a été installé, tel qu’un partage réseau ou via Internet, pour voir si des mises à jour sont disponibles. Quand une mise à jour est disponible, Visual Studio avertit l’utilisateur par une icône de notification en bas à droite de la fenêtre.
 
-   ![Icône de notification dans l’IDE de Visual Studio](media/vs-2019/notification-bar.png "Icône de notification dans l’IDE de Visual Studio")
+   ![Icône de notification dans l’IDE de Visual Studio](media/vs-2019/notification-bar.png &quot;Icône de notification dans l’IDE de Visual Studio")
 
 ::: moniker-end
 

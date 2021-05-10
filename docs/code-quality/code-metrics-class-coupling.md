@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8320c460faf7532887364693080d38c0ff6baa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0853b807d3287eb584e76d9640ac98f930edb1a7
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860514"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666807"
 ---
 # <a name="code-metrics---class-coupling"></a>Métriques du code-couplage de classe
 
@@ -70,8 +70,6 @@ L’intérieur de la zone de maintenabilité est une règle de couplage de class
 ![Règle de couplage de classe](media/class-coupling-maintainability-area-rules.png)
 
 Cette règle émet un avertissement lorsque le couplage de classe est excessif. Pour plus d’informations, consultez [CA1506 : éviter un couplage de classe excessif](/dotnet/fundamentals/code-analysis/quality-rules/ca1506).
-
-Pour obtenir une description de cette règle, consultez le billet de blog analyse du code archivé : [métriques du code en tant que stratégie d’archivage](/archive/blogs/codeanalysis/code-metrics-as-check-in-policy) et avertissement de la description du seuil *au-dessus de 80 pour la classe et au-delà de 30 pour une méthode*.  Ces valeurs semblent anormalement élevées, mais elles fournissent au moins une limite supérieure extrême. Si vous atteignez cet avertissement, un problème est presque certainement erroné.
 
 ## <a name="citations"></a>Citations
 
