@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Gestion des abonnements dans les abonnements Visual Studio avec GitHub Enterprise
-ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
+ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757657"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109740662"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -40,8 +40,7 @@ Si votre organisation achète des abonnements Visual Studio avec des offres GitH
 
 > [!IMPORTANT]
 > Comme indiqué ci-dessus, les données, l’historique et l’ID d’abonnement de l’abonné existant sont conservés et les avantages qu’ils ont activés ne sont pas interrompus en raison de ce déplacement.  
->
-> Cette fonctionnalité est déployée en plusieurs phases et peut ne pas être disponible immédiatement sur votre ou vos accords.
+
 
 Quand vous cliquez sur le bouton **Move Now (déplacer maintenant** ), un panneau volant vous présente des recommandations sur le déplacement de vos abonnements entreprise et/ou professionnel :
 
@@ -50,8 +49,7 @@ Quand vous cliquez sur le bouton **Move Now (déplacer maintenant** ), un pannea
 
 Dans cette vignette, vous pouvez passer en revue les abonnés concernés et spécifier si vous souhaitez les notifier pour recevoir une notification par courrier électronique une fois le déplacement terminé.  Cet e-mail informe les abonnés que leurs avantages restent inchangés et les encourage à commencer à configurer une présence dans GitHub.  
 
-Après avoir cliqué sur le bouton **déplacer tous les abonnés** , vous confirmez vos sélections et attendez quelques secondes que le déplacement de l’abonnement se termine.  Le cas échéant, vous devrez effectuer ces étapes séparément pour les éditions Professional et Enterprise.  
-
+En cliquant sur le bouton **déplacer**   les abonnés, vous pouvez déplacer tous les abonnés recommandés ou choisir des personnes dans une liste.  Une fois que vous avez confirmé vos sélections, le déplacement de l’abonnement peut prendre quelques secondes. Le cas échéant, vous devrez effectuer ces étapes séparément pour les éditions Professional et Enterprise.  
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ?
 GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. À la suite d’un abonnement Visual Studio avec GitHub Enterprise Purchase, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle avec (mais distinct de) établissant un accord dans [Manage.VisualStudio.com](https://manage.visualstudio.com). La création de ce compte GitHub Enterprise peut prendre un certain temps. 
