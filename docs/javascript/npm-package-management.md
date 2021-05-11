@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2fcf1bd9e9ef5c3ff0663cf12684e6e638d1e5e4
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165811"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729284"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -62,7 +62,7 @@ Dans cette fenêtre, vous pouvez rechercher un package, spécifier des options e
 * **Version sélectionnée** : sélectionnez la version du package que vous souhaitez installer.
 * **Autres arguments npm** : spécifiez d’autres arguments npm standard. Par exemple, vous pouvez entrer une valeur de version comme `@~0.8` pour installer une version spécifique qui n’est pas disponible dans la liste des versions.
 
-Vous pouvez voir la progression de l’installation dans la sortie **NPM** dans la fenêtre **sortie** . Cette opération peut prendre un certain temps.
+Vous pouvez voir la progression de l’installation dans la sortie de **NPM** dans la fenêtre **sortie** (pour ouvrir la fenêtre, choisissez **Afficher** la  >  **sortie** ou appuyez sur **CTRL**  +  **ALT**  +  **O**). Cette opération peut prendre un certain temps.
 
 ![sortie NPM](../javascript/media/npm-output.png)
 
@@ -106,7 +106,7 @@ Cliquez avec le bouton droit sur un nœud de package ou le nœud **npm** pour ef
 
 ### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>Utilisez la commande. NPM dans la fenêtre interactive Node.js (Node.js)
 
-Vous pouvez également utiliser la commande `.npm` dans la fenêtre interactive de Node.js pour exécuter des commandes npm. Pour ouvrir la fenêtre, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions et choisissez **Ouvrir une fenêtre interactive de Node.js**.
+Vous pouvez également utiliser la commande `.npm` dans la fenêtre interactive de Node.js pour exécuter des commandes npm. Pour ouvrir la fenêtre, cliquez avec le bouton droit sur le projet dans Explorateur de solutions, puis choisissez **ouvrir Node.js fenêtre interactive** (ou appuyez sur **CTRL**  +  **K**, **N**).
 
 Dans la fenêtre, vous pouvez utiliser des commandes telles que les suivantes pour installer un package :
 
@@ -136,7 +136,7 @@ Si votre projet n’inclut pas déjà un *package.jssur* le fichier, vous pouvez
 
    NPM requiert Node.js.
 
-1. Pour ajouter le *package.jssur* le fichier, cliquez avec le bouton droit sur le projet dans Explorateur de solutions et choisissez **Ajouter**  >  **un nouvel élément**. Choisissez le **fichier de configuration NPM**, utilisez le nom par défaut, puis cliquez sur **Ajouter**.
+1. Pour ajouter le *package.jssur* le fichier, cliquez avec le bouton droit sur le projet dans Explorateur de solutions et choisissez **Ajouter**  >  un **nouvel élément** (ou appuyez sur **CTRL**  +  **MAJ**  +  **A**). Choisissez le **fichier de configuration NPM**, utilisez le nom par défaut, puis cliquez sur **Ajouter**.
 
    ![Ajouter package.jsà votre projet](../javascript/media/npm-add-package-json.png)
 

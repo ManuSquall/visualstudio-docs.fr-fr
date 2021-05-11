@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 852bfad102c4ae34bee9528009e3d4b2dd8c7384
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925722"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729297"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -75,8 +75,8 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
     Ce didacticiel a été testé avec la version 12.6.2.
 
     Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site Web [Node.js](https://nodejs.org/en/download/) pour une meilleure compatibilité avec les frameworks et les bibliothèques externes. Node.js est conçu pour les architectures 32 bits et 64 bits. Les outils de Node.js dans Visual Studio, inclus dans la charge de travail Node.js, prennent en charge les deux versions. Une seule est requise et le programme d’installation de Node.js ne prend en charge qu’une seule installation à la fois.
-    
-    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés** et définir le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
+
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour qu’il référence le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud du projet, choisissez **Propriétés** (ou appuyez sur **ALT**  +  **entrée**), puis définissez le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
 
 ## <a name="create-a-project"></a>Créer un projet
 
@@ -100,7 +100,7 @@ Commencez par créer un projet d’application web Node.js.
 
     ![Projet Node.js dans l’Explorateur de solutions](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    (1) Votre projet est mis en **gras**, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en choisissant **Propriétés**. Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
+    (1) Votre projet est mis en **gras**, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en sélectionnant **Propriétés** (ou en appuyant sur **ALT**  +  **entrée**). Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
 
     (2) Au niveau supérieur figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
 
@@ -158,7 +158,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
     Cette commande exécute la commande NPM install directement.
 
-    Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** de la fenêtre **Sortie**.
+    Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** de la fenêtre **Sortie**. (Pour ouvrir la fenêtre, choisissez **affichage**  >  **Sortie** ou appuyez sur **CTRL**  +  **ALT**  +  **O**.)
 
     Voici les modules npm tels qu’ils apparaissent dans l’Explorateur de solutions après leur installation.
 
@@ -178,7 +178,7 @@ Au cours de ces étapes, vous devez ajouter quatre nouveaux fichiers à votre pr
 
 Pour cette application simple, vous ajoutez les nouveaux fichiers projet à la racine du projet. (Dans la plupart des applications, vous ajoutez généralement les fichiers aux sous-dossiers, et vous changez ensuite les références de chemin relatives correspondantes.)
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet **NodejsWebAppBlank**, puis choisissez **Ajouter** > **Nouvel élément**.
+1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet **NodejsWebAppBlank** et choisissez **Ajouter**  >  un **nouvel élément** (ou appuyez sur **CTRL**  +  **MAJ**  +  **A**).
 
 1. Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez type de **fichier jsx de machine à écrire**, tapez le nom *app. TSX*, puis sélectionnez **Ajouter** ou **OK**.
 
@@ -471,10 +471,10 @@ Pour ce scénario, utilisez Chrome.
 
     L’application s’ouvre dans un nouvel onglet du navigateur.
 
-4. Choisissez **Déboguer**  >  **attacher au processus**.
+4. Choisissez **Déboguer**  >  **attacher au processus** (ou appuyez sur **CTRL**  +  **ALT**  +  **P**).
 
     > [!TIP]
-    > À compter de Visual Studio 2017, une fois que vous avez attaché le processus la première fois en suivant ces étapes, vous pouvez le rattacher rapidement au même processus en choisissant **Déboguer**  >  **rattacher au processus**.
+    > À compter de Visual Studio 2017, une fois que vous avez attaché le processus la première fois en suivant ces étapes, vous pouvez le rattacher rapidement au même processus en choisissant **Déboguer**  >  **rattacher au processus** (ou en appuyant sur **MAJ**  +  **ALT**  +  **P**).
 
 5. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 

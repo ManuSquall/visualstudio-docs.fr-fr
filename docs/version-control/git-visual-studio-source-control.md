@@ -7,12 +7,14 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
-ms.openlocfilehash: f6213174bbef5c4d5976e410f92b771b34ae6f23
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 982eea07b6668678669ac73678f6a0460a4ebff0
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107917789"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729236"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Comment Visual Studio facilite le contrôle de la source
 

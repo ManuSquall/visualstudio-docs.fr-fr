@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b5fb35c1cd30f872d2a58504f73596357cc60025
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145376"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729323"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -31,7 +31,7 @@ Pour voir la prise en charge des outils de profilage pour différents types d’
 
 ## <a name="measure-performance-while-debugging"></a>Mesurer les performances pendant le débogage
 
-Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. Cette fenêtre apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**. Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
+Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. Cette fenêtre apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer/fenêtres/afficher le outils de diagnostic** (ou appuyez sur **CTRL**  +  **ALT**  +  **F2**). Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
 
 ![Fenêtre Outils de diagnostic](../profiling/media/prof-tour-diagnostic-tools.png "Outils de diagnostic")
 
@@ -42,7 +42,7 @@ Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** 
 La fenêtre de **outils de diagnostic** est une méthode courante pour profiler des applications, mais pour les builds de version, vous pouvez également effectuer une analyse de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour voir la prise en charge des outils de profilage pour différents types d’applications, consultez [quel outil dois-je utiliser ?](#which-tool-should-i-use)
 
 Les outils disponibles dans la fenêtre de Outils de diagnostic ou au cours d’une session de débogage sont les suivants :
-- [Utilisation du processeur](../profiling/beginners-guide-to-performance-profiling.md)
+- [Utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md)
 - [Utilisation de la mémoire](../profiling/memory-usage.md)
 - [Conseils sur les performances](../profiling/perftips.md)
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur l’utilisation de l’outil utilisation de l’U
 
 Les outils disponibles dans le profileur de performances sont les suivants :
 
-- [Utilisation du processeur](../profiling/cpu-usage.md)
+- [Utilisation de l’UC](../profiling/cpu-usage.md)
 - [Allocation d’objets .NET](../profiling/dotnet-alloc-tool.md)
 - [Utilisation de la mémoire](../profiling/memory-usage-without-debugging2.md)
 - [Outil .NET Async](../profiling/analyze-async.md)
@@ -160,7 +160,7 @@ Pour les applications .NET Core qui utilisent ADO.NET ou Entity Framework Core, 
 
 L’outil affiche chaque requête dans un affichage de liste. Vous pouvez voir des informations telles que l’heure de début et la durée de la requête.
 
-![Allocation](./media/db-gotosource.png "Allocation")
+![Louer](./media/db-gotosource.png "Allocation")
 
 ## <a name="visualize-net-counters-net-core"></a>Visualiser les compteurs .NET (.NET Core)
 

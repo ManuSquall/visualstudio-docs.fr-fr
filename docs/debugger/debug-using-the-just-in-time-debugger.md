@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873195"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729245"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste-à-temps dans Visual Studio
 
@@ -108,7 +108,7 @@ Pour cet exemple, vous allez créer une application console C# dans Visual Studi
 
 1. Dans Visual Studio, créez une application console C# (**fichier**  >  **nouveau**  >  **projet**  >    >  **application console** Visual C#) nommée *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : création d’une application simple](../get-started/csharp/tutorial-wpf.md).
 
-1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le fichier *Program.cs* . Remplacez la méthode main () par le code suivant, qui imprime une ligne dans la console, puis lève une exception NullReferenceException :
+1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le fichier *Program. cs* . Remplacez la méthode main () par le code suivant, qui imprime une ligne dans la console, puis lève une exception NullReferenceException :
 
    ```csharp
    static void Main(string[] args)
@@ -177,7 +177,7 @@ Vous pouvez voir les messages d’erreur suivants lors du débogage juste-à-tem
 
     Le débogueur a essayé de s’attacher à un processus qui s’exécute sous un autre utilisateur.
 
-    Pour contourner ce problème, dans Visual Studio, ouvrez **Déboguer**  >  **attacher au processus** et recherchez le processus que vous souhaitez déboguer dans la liste **processus disponibles** . Si vous ne connaissez pas le nom du processus, recherchez l’ID du processus dans la boîte de dialogue **Débogueur juste-à-temps Visual Studio** . Sélectionnez le processus dans la liste **processus disponibles** , puis cliquez sur **attacher**. Sélectionnez **non** pour fermer la boîte de dialogue du débogueur juste-à-temps.
+    Pour contourner ce problème, dans Visual Studio, ouvrez **Déboguer**  >  **attacher au processus** (ou appuyez sur **CTRL**  +  **ALT**  +  **P**), puis recherchez le processus que vous souhaitez déboguer dans la liste **processus disponibles** . Si vous ne connaissez pas le nom du processus, recherchez l’ID du processus dans la boîte de dialogue **Débogueur juste-à-temps Visual Studio** . Sélectionnez le processus dans la liste **processus disponibles** , puis cliquez sur **attacher**. Sélectionnez **non** pour fermer la boîte de dialogue du débogueur juste-à-temps.
 
 - **Impossible de démarrer le débogueur, car aucun utilisateur n'est connecté.**
 

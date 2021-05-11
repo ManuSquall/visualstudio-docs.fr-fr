@@ -7,12 +7,14 @@ ms.topic: how-to
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
-ms.openlocfilehash: 6ae09069e021ee9ff5699641bbe8662bf84ad327
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 7f2f8b8bca781e53ab49d34e32a2c0d5ea846ae1
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107917950"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729335"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Comparaison côte à côte de git et Team Explorer
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd620a0c7f4860421b6f8b1a15c0b708c1ba860
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877744"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729258"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 
@@ -51,7 +51,7 @@ Vous pouvez également déboguer une application ASP.NET ou ASP.NET Core sur un 
 
 IIS Express est la valeur par défaut, et est préconfiguré. Si vous effectuez un débogage sur IIS local, assurez-vous que vous remplissez les [conditions requises pour le débogage IIS local](#iis).
 
-1. Sélectionnez le projet ASP.net dans Visual Studio **Explorateur de solutions** puis cliquez sur l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
+1. Sélectionnez le projet ASP.net dans Visual Studio **Explorateur de solutions** puis cliquez sur l’icône **Propriétés** , ou appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
 1. Sélectionnez l’onglet **Web** .
 
@@ -65,7 +65,7 @@ IIS Express est la valeur par défaut, et est préconfiguré. Si vous effectuez 
 
    ![Paramètres du débogueur ASP.NET](media/dbg-aspnet-enable-debugging2.png "Paramètres du débogueur ASP.NET")
 
-1. Utilisez **fichier**  >  **enregistrer les éléments sélectionnés** ou **CTRL** + **S** pour enregistrer les modifications.
+1. Choisissez **fichier**  >  **enregistrer les éléments sélectionnés** (ou appuyez sur **CTRL** + **S**) pour enregistrer les modifications.
 
 1. Pour déboguer l’application, dans votre projet, définissez des points d’arrêt sur du code. Dans la barre d’outils de Visual Studio, assurez-vous que la configuration est définie sur **Déboguer**, et que le navigateur souhaité s’affiche dans **IIS Express ( \<Browser name> )** ou **IIS local ( \<Browser name> )** dans le champ émulateur.
 
@@ -75,7 +75,7 @@ IIS Express est la valeur par défaut, et est préconfiguré. Si vous effectuez 
 
 IIS Express est la valeur par défaut, et est préconfiguré. Si vous effectuez un débogage sur IIS local, assurez-vous que vous remplissez les [conditions requises pour le débogage IIS local](#iis).
 
-1. Sélectionnez le projet ASP.net core dans Visual Studio **Explorateur de solutions** puis cliquez sur l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
+1. Sélectionnez le projet ASP.net core dans Visual Studio **Explorateur de solutions** puis cliquez sur l’icône **Propriétés** , ou appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
 1. Sélectionnez l’onglet **Débogage**.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aeaaff68ab0abe85838456e8c8b69e2520295689
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945030"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729271"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur IIS en important des paramètres de publication dans Visual Studio
 
@@ -70,7 +70,7 @@ Un fichier de paramètres de publication (*\* . publishsettings*) est différent
 
     Visual Studio crée le projet.
 
-1. Choisissez **générer** générer  >  la **solution** pour générer le projet.
+1. Choisissez **générer** générer  >  la **solution** (ou appuyez sur **CTRL**  +  **MAJ**  +  **B**) pour générer le projet.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Installer et configurer Web Deploy sur Windows Server
 
