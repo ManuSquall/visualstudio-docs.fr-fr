@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
-ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
+ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912566"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782606"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Prise en main de Visual Studio et Unity
 
@@ -34,7 +34,7 @@ Outils Visual Studio pour Unity est une extension gratuite qui assure la prise e
 > [!NOTE]
 > Ce guide d’installation est destiné à Visual Studio. Si vous utilisez Visual Studio Code, consultez la [documentation sur le développement Unity avec vs code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Téléchargez le programme d’installation de Visual Studio](/visualstudio/docs/install/install-visual-studio.md)ou exécutez-le s’il est déjà installé.
+1. [Téléchargez le programme d’installation de Visual Studio](/visualstudio/install/install-visual-studio.md)ou exécutez-le s’il est déjà installé.
 2. Cliquez sur **Modifier** (s’il est déjà installé) ou **Installer** (pour les nouvelles installations) sur la version souhaitée de Visual Studio.
 3. Dans l’onglet **charges de travail** , accédez à la section **jeux** et sélectionnez la charge **de travail développement de jeux avec Unity** .
 
