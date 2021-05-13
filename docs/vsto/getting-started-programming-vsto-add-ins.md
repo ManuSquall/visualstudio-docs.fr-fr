@@ -2,7 +2,7 @@
 title: Prise en main de la programmation de compléments VSTO
 description: Découvrez comment vous pouvez utiliser les compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser l’interface utilisateur de l’application.
 ms.custom: SEO-VS-2020
-ms.date: 02/02/2017
+ms.date: 04/28/2021
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -17,14 +17,17 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d7e6f891f8485d4e08734e59a11db8018eaa07b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1757dd6042536b6a042e67a8b3dcd9b12a2ea758
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860634"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848290"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Prise en main de la programmation de compléments VSTO
+> [!IMPORTANT]
+> VSTO s’appuie sur le [.NET Framework](https://docs.microsoft.com/dotnet/framework/get-started/overview). Les compléments COM peuvent également être écrits avec l' .NET Framework. Impossible de créer des compléments Office avec [.net Core et .net 5 +](https://docs.microsoft.com/dotnet/core/dotnet-five), les dernières versions de .net. Cela est dû au fait que .NET Core/. NET 5 + ne peut pas fonctionner conjointement avec .NET Framework dans le même processus et peut entraîner des échecs de chargement de complément. Vous pouvez continuer à utiliser .NET Framework pour écrire des compléments VSTO et COM pour Office. Microsoft ne mettra pas à jour VSTO ou la plateforme de complément COM pour utiliser .NET Core ou .NET 5 +. Vous pouvez tirer parti de .NET Core et de .NET 5 +, y compris ASP.NET Core, pour créer le côté serveur des [compléments Web Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
+
   Vous pouvez utiliser des compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser son interface utilisateur. Pour plus d’informations sur la façon dont les compléments VSTO sont comparés à d’autres types de solutions Office que vous pouvez créer à l’aide de Visual Studio, consultez [vue d’ensemble du développement des solutions office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
@@ -35,7 +38,7 @@ ms.locfileid: "99860634"
  Pour plus d’informations sur la création d’un projet de complément VSTO, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Pour plus d’informations sur les modèles de projet, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md).
 
 ## <a name="develop-vsto-add-in-projects"></a>Développer des projets de complément VSTO
- Quand vous créez un projet de complément VSTO, Visual Studio crée automatiquement un fichier de code *ThisAddIn. vb* (en [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) ou *ThisAddIn.cs* (en C#). Ce fichier contient la `ThisAddIn` classe, qui fournit la base de votre complément VSTO. Vous pouvez utiliser des membres de cette classe pour exécuter le code quand le complément VSTO est chargé ou déchargé, pour accéder au modèle objet de l’application hôte, et pour étendre les fonctionnalités de l’application. Pour plus d’informations, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md).
+ Quand vous créez un projet de complément VSTO, Visual Studio crée automatiquement un fichier de code *ThisAddIn. vb* (dans [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) ou *ThisAddIn. cs* (en C#). Ce fichier contient la `ThisAddIn` classe, qui fournit la base de votre complément VSTO. Vous pouvez utiliser des membres de cette classe pour exécuter le code quand le complément VSTO est chargé ou déchargé, pour accéder au modèle objet de l’application hôte, et pour étendre les fonctionnalités de l’application. Pour plus d’informations, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-applications-by-using-the-object-models"></a>Automatiser des applications à l’aide des modèles objet
  Les modèles objet des applications Microsoft Office exposent de nombreux types avec lesquels vous pouvez programmer dans un complément VSTO. Vous pouvez utiliser ces types pour automatiser l'application. Par exemple, vous pouvez créer et envoyer par programme un message électronique dans Outlook ou encore ouvrir un document et ajouter du contenu dans Word. Pour plus d’informations sur l’accès au modèle objet de l’application hôte dans le code, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md).

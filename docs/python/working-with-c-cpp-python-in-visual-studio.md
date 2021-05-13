@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 286d5f2c316379316b1a1cf55334cab39cdc247c
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 866b588b8b46477b397cda92076780d1955cfa83
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782632"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848303"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -120,12 +120,12 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     ::: moniker range=">=vs-2019"
     | Onglet | Propriété | Valeur |
     | --- | --- | --- |
-    | **Général** | **Nom de la cible** | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. Pour `python_d.exe` , ajoutez `_d` à la fin du nom. |
-    | | **Type de configuration** | **Bibliothèque dynamique (.dll)** |
-    | **Avancée** | **Extension de fichier cible** | **.pyd** |
+    | **Général** | **Général** > **Nom de la cible** | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
+    | | **Paramètres avancés** > **Extension de fichier cible** | **.pyd** |
+    | | **Valeurs par défaut du projet** > **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++** > **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
-    | **C/C++** > **Préprocesseur** | **Définitions de préprocesseur** | Le cas échéant, remplacez la valeur de **_DEBUG** par **NDEBUG** pour qu’elle corresponde à la version de non-débogage de `CPython` . (Lorsque vous utilisez `python_d.exe` , laissez ce reste inchangé.) |
-    | **C/C++** > **Génération de code** | **Bibliothèque Runtime** | **DLL multithread (/MD)** qui correspond à la version de non-débogage de `CPython` . (Lorsque vous utilisez `python_d.exe` , laissez ce reste inchangé.) |
+    | **C/C++** > **Préprocesseur** | **Définitions de préprocesseur** | **CPython uniquement** : ajoutez `Py_LIMITED_API;` (point-virgule compris) au début de la chaîne. Cette définition limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. Si vous travaillez avec PyBind11, n’ajoutez pas cette définition, car cela provoquerait des erreurs de build. |
+    | **C/C++** > **Génération de code** | **Bibliothèque Runtime** | **DLL multithread (/MD)** (Voir l’avertissement ci-dessous) |
     | **Éditeur de liens** > **Général** | **Répertoires de bibliothèques supplémentaires** | Ajoutez le dossier *libs* Python contenant des fichiers *.lib* en fonction de votre installation, par exemple `c:\Python36\libs`. (Veillez à pointer vers le dossier *libs* qui contient des fichiers *.lib*, et *non* vers le dossier *Lib* qui contient des fichiers *.py*.) |
     ::: moniker-end
     ::: moniker range="=vs-2017"
@@ -266,7 +266,7 @@ Si vous avez effectué les étapes de la section précédente, vous avez certain
 
 1. Générez le projet C++ pour vérifier votre code. Si vous rencontrez des erreurs, consultez la section suivante sur la résolution des problèmes.
 
-### <a name="troubleshooting"></a>Résolution des problèmes
+### <a name="troubleshooting"></a>Dépannage
 
 La compilation du module C++ peut échouer pour les raisons suivantes :
 
@@ -385,7 +385,7 @@ Dans la sortie, vous pouvez voir que l’extension PyBind11 n’est pas aussi ra
 
 Nous pourrions réduire davantage la surcharge en déplaçant la `for` boucle dans le code natif. Cela implique l’utilisation du [protocole Iterator](https://docs.python.org/c-api/iter.html) (ou du `py::iterable` type PyBind11's pour [le paramètre de fonction](https://pybind11.readthedocs.io/en/stable/advanced/functions.html#python-objects-as-args)) pour traiter chaque élément. La suppression des transitions répétées entre Python et C++ est un moyen efficace de réduire le temps nécessaire au traitement de la séquence.
 
-### <a name="troubleshooting"></a>Résolution des problèmes
+### <a name="troubleshooting"></a>Dépannage
 
 Si vous recevez un `ImportError` lors de la tentative d’importation de votre module, il est probable que l’un des problèmes suivants soit la cause :
 

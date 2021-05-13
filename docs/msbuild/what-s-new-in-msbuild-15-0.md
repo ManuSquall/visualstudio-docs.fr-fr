@@ -1,5 +1,5 @@
 ---
-title: Nouveautés &apos; de MSBuild 15 | Microsoft Docs
+title: Nouveautés de MSBuild 15 | Microsoft Docs
 description: Consultez les fonctionnalités modifiées, mises à jour et nouvelles de MSBuild 15, disponibles pour la kit SDK .NET Core et pour la création de projets .NET Core sur Windows, macOS et Linux.
 ms.custom: SEO-VS-2020
 ms.date: 03/01/2017
@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: a7bbf46a1677a31726bdd7f2749f5ef3006e34f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0fe78e781af4f2fafa52a230036bc20b657fd8e
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933841"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848264"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Nouveautés de MSBuild 15
 

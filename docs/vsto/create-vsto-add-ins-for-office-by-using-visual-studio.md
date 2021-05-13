@@ -3,7 +3,7 @@ title: Créer des compléments VSTO pour Office à l'aide de Visual Studio
 description: Découvrez comment vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
-ms.date: 08/14/2019
+ms.date: 04/28/2021
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,14 +13,17 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 611feb69dc4c5ebdd340a61c49e76e0d7c33e713
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 990caeec642a745bec5b6e0f2d29ff5d6213d095
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947956"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848316"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l'aide de Visual Studio
+> [!IMPORTANT]
+> VSTO s’appuie sur le [.NET Framework](https://docs.microsoft.com/dotnet/framework/get-started/overview). Les compléments COM peuvent également être écrits avec l' .NET Framework. Impossible de créer des compléments Office avec [.net Core et .net 5 +](https://docs.microsoft.com/dotnet/core/dotnet-five), les dernières versions de .net. Cela est dû au fait que .NET Core/. NET 5 + ne peut pas fonctionner conjointement avec .NET Framework dans le même processus et peut entraîner des échecs de chargement de complément. Vous pouvez continuer à utiliser .NET Framework pour écrire des compléments VSTO et COM pour Office. Microsoft ne mettra pas à jour VSTO ou la plateforme de complément COM pour utiliser .NET Core ou .NET 5 +. Vous pouvez tirer parti de .NET Core et de .NET 5 +, y compris ASP.NET Core, pour créer le côté serveur des [compléments Web Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
+
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.
 
  Les outils de développement Office fournissent des fonctionnalités qui permettent de créer des solutions Office pour répondre à différents besoins professionnels. Ces outils incluent des modèles de projet pour vous aider à créer des solutions Office à l'aide de Visual Basic ou de Visual C#, et des concepteurs visuels qui vous aident à créer des interfaces utilisateur personnalisées pour vos solutions Office.
@@ -29,7 +32,7 @@ ms.locfileid: "99947956"
 
  Pour obtenir les informations les plus récentes sur le développement Office, consultez le [Centre de développement Microsoft Office](https://developer.microsoft.com/office/docs).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Prise en main &#40;le développement Office dans Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Fournit des liens vers des informations relatives à la configuration d'un ordinateur de développement pour créer des solutions Office, à la mise en route pour créer des solutions Office et aux nouveautés du développement Office dans Visual Studio.
