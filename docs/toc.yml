@@ -16,6 +16,7 @@
   items:
     - name: Installer Visual Studio
       href: install/install-visual-studio.md
+      displayName: system requirements
     - name: Installer hors connexion
       items:
         - name: Créer une installation hors connexion de Visual Studio
@@ -268,16 +269,6 @@
         - name: Personnaliser des tâches de génération et de débogage
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-    - name: Développer avec Codespaces (préversion)
-      items:
-        - name: Vue d’ensemble
-          href: ide/codespaces/codespaces-overview.md
-        - name: Utiliser Visual Studio avec un codespace
-          href: ide/codespaces/use-visual-studio-with-codespaces.md
-        - name: Personnaliser un codespace
-          href: ide/codespaces/customize-codespaces.md
-        - name: Fonctionnalités Visual Studio prises en charge
-          href: ide/codespaces/supported-features-codespaces.md
     - name: Se connecter aux projets dans Team Explorer
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
@@ -984,7 +975,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informations de référence
+- name: Référence
   items:
     - name: Raccourcis clavier
       items:
@@ -1443,38 +1434,16 @@
       href: ide/whats-new-visual-studio-docs.md
     - name: Historique des nouveautés de la documentation
       href: ide/whats-new-visual-studio-docs-history.md
-    - name: Notes de publication et configuration requise
+    - name: Notes de publication
       items:
         - name: Fréquence des versions
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual Studio\_2017"
-          items:
-            - name: Notes de publication actuelles
-              href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: Notes de publication de la préversion
-              href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: Historique des notes de publication
-              href: /visualstudio/releasenotes/vs2017-relnotes-history/
-            - name: Code distribuable
-              href: /visualstudio/productinfo/2017-redistribution-vs/
-            - name: Compatibilité de la plateforme
-              href: /visualstudio/productinfo/vs2017-compatibility-vs/
-            - name: Configuration requise
-              href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: "Visual Studio\_2019"
-          items:
-            - name: Notes de publication actuelles
-              href: /visualstudio/releases/2019/release-notes/
-            - name: Notes de publication de la préversion
-              href: /visualstudio/releases/2019/release-notes-preview/
-            - name: Historique des notes de publication
-              href: /visualstudio/releases/2019/release-notes-history/
-            - name: Code distribuable
-              href: /visualstudio/releases/2019/redistribution/
-            - name: Compatibilité de la plateforme
-              href: /visualstudio/releases/2019/compatibility/
-            - name: Configuration requise
-              href: /visualstudio/releases/2019/system-requirements/
+        - name: Notes de Visual Studio 2019
+          href: /visualstudio/releases/2019/release-notes/
+        - name: Notes de Visual Studio 2017
+          href: /visualstudio/releasenotes/vs2017-relnotes/
+        - name: Documentation de Visual Studio 2015
+          href: vs-2015-archive.md
         - name: Termes du contrat de licence
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Cycle de vie du support et maintenance
@@ -1512,8 +1481,3 @@
       href: ide/developer-community-guidelines.md
     - name: Confidentialité des données de la communauté des développeurs
       href: ide/developer-community-privacy.md
-- name: Visual Studio 2015
-  expanded: true
-  items:
-    - name: "Documentation Visual Studio\_2015"
-      href: vs-2015-archive.md

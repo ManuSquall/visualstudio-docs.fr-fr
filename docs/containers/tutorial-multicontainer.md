@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 43684288eea2e1864bf31a8bb68bbac1b217a976
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315977"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973276"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : Créer une application multiconteneur avec Docker Compose
 
@@ -192,6 +192,8 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
 ## <a name="next-steps"></a>Étapes suivantes
 
 Examinez les options de déploiement de vos [conteneurs sur Azure](/azure/containers).
+
+Pour mieux contrôler les services qui sont démarrés au cours d’une session de débogage, Découvrez comment utiliser Docker Compose profils de lancement pour configurer les services qui s’exécutent lors du débogage. Consultez [gérer les profils de lancement pour docker compose](launch-profiles.md)
 
 ## <a name="see-also"></a>Voir aussi
   

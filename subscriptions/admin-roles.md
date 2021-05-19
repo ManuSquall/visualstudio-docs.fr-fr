@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: En savoir plus sur les rôles d’administrateur et de Super administrateur, ainsi que sur la façon d’affecter des administrateurs.
-ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.openlocfilehash: 1f107a5bcef9be61c4693549ee8e628a207cc789
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757592"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973536"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Super Admins et administrateurs pour les contrats d’abonnement Visual Studio
 
@@ -55,4 +55,4 @@ Pour affecter de nouveaux administrateurs (administrateurs) :
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrir comment [attribuer des abonnements](assign-license.md)
 - Découvrir plus d’informations sur la gamme complète des [avantages des abonnements](https://visualstudio.microsoft.com/vs/benefits/)
-- [Définir les préférences de contrat](admin-prefs.md)
+- [Définir les préférences de contrat](admin-preferences.md)

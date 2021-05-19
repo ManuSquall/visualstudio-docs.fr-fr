@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: e50935145913bcd1f3c4457f4704376a0ac0f6ef
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846714"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973237"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
@@ -89,4 +89,5 @@ Configurez votre projet en définissant les [Propriétés de build des outils de
 
 ## <a name="see-also"></a>Voir aussi
 
-[Docker Compose les propriétés de build](docker-compose-properties.md)
+- [Docker Compose les propriétés de build](docker-compose-properties.md)
+- [Gérer les profils de lancement pour Docker Compose](launch-profiles.md)

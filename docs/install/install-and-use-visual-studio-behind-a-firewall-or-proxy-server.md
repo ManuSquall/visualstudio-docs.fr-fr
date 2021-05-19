@@ -1,7 +1,7 @@
 ---
 title: Installer et utiliser derrière un pare-feu ou un serveur proxy
 description: Passez en revue les URL de domaine, les ports et les protocoles que vous voulez ajouter à une liste verte ou que vous souhaitez ouvrir si votre organisation utilise un pare-feu ou un serveur proxy
-ms.date: 06/17/2020
+ms.date: 05/07/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e30354d55d6ec7ebe70c19e07208aee99ae69109
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 7e6df4c1e05d7f20ff59eeb3869947640942cedc
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296246"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973643"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -61,11 +61,13 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 | \*.windows.net | Emplacement de connexion |
 | \*.microsoftonline.com | Emplacement de connexion |
 | \*.live.com | Emplacement de connexion |
+| github-releases.githubusercontent.com | Développement Linux |
+| az837173.vo.msecnd.net | Développement avec stockage Azure |
 | | |
 
 #### <a name="non-microsoft-domains"></a>Domaines non-Microsoft
 
-| Domaine | Installe ces charges de travail |
+| Domain | Installe ces charges de travail |
 | - | - |
 | archive.apache.org | Développement mobile avec JavaScript (Cordova) |
 | cocos2d-x.org | Développement de jeux avec C++ (Cocos) |
@@ -90,7 +92,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous utilisez Visual Studio ou des services Azure derrière un pare-feu ou un serveur proxy, Voici les URL que vous devez ajouter à une liste verte et les ports et protocoles que vous souhaitez peut-être ouvrir.
 
-| Scénario ou service | Point de terminaison DNS | Protocol<br/>/Port | Description |
+| Scénario ou service | Point de terminaison DNS | Protocole<br/>/Port | Description |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | Permet de raccourcir les URL, puis les résoudre en URL plus longues |
 | Page de démarrage | vsstartpage.blob.core.windows.net | 443 | Permet d’afficher la section Informations pour les développeurs située sur la page de démarrage (Visual Studio 2017 uniquement) |
@@ -112,14 +114,14 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Nouveau <br>Python <br> project <br>modèles | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br>Permet de résoudre les nouveaux modèles de projets Python suivants pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
 | Office Web <br>complément <br> Manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https/443 | Permet de valider les manifestes pour les compléments Office Web |
 | SharePoint et <br>Compléments Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Utilisé pour publier et tester des compléments SharePoint et Office sur SharePoint Online et Microsoft 365 |
-| Workflow Manager <br>Service de test<br> Host | | http/12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
+| Workflow Manager <br>Service de test<br> Hôte | | http/12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
 | Collectées automatiquement <br>statistiques de fiabilité <br>et autre <br>Expérience client <br>Programmes d’amélioration du produit (CEIP)<br> pour le kit de développement logiciel (SDK) et <br>pour les outils SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Utilisé pour envoyer des statistiques de fiabilité (données de blocage ou de non-réponse) de l’utilisateur à Microsoft. Les vidages sur incident/non réactif réels seront toujours téléchargés si Rapport d’erreurs Windows est activé ; seules les informations statistiques seront supprimées ; <br>Utilisé pour révéler les modèles d’utilisation de l’extension du kit de développement logiciel (SDK) Azure Tools pour Visual Studio et pour les modèles d’utilisation pour les outils SQL vers Visual Studio |
 | Visual Studio <br> Expérience client <br>Programme d’amélioration du produit (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Utilisé pour collecter les modèles d’utilisation et les journaux d’erreurs <br><br>Permet de suivre des problèmes de gel de l’interface utilisateur |
 | Création et<br>Gestion de <br>Ressources Azure | management.azure.com <br>management.core.windows.net | https/443 | Permet de créer des sites Web Azure ou d’autres ressources pour prendre en charge la publication d’applications web, des fonctions Azure ou WebJobs |
 | Outils de publication Web mis à jour <br>vérifications et extension <br>de films | marketplace.visualstudio.com | https/443 | Utilisé pour la vérification de la disponibilité des outils de publication mis à jour. Si désactivé, une extension potentielle recommandée pour la publication Web ne peut pas être affichée |
 | Azure Ressource mis à jour <br>Création des informations sur le point de terminaison | \*.blob.core.windows.net | https/443 | Permet de mettre à jour les points de terminaison utilisés pour la création des ressources Azure pour certains services Azure. Si désactivé, les derniers emplacements de points de terminaison téléchargés ou intégrés sont utilisés à la place |
 | Débogage distant et <br>Profilage à distance de <br>Sites Web Azure | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | Permet d’attacher le débogueur distant à des sites Web Azure. Si désactivé, l’attachement du débogueur distant à des sites Web Azure ne fonctionnera pas |
-| Active Directory <br>Graph | graph.windows.net | https/443 | Permet de configurer les nouvelles applications Azure Active Directory. Également utilisé par le fournisseur de services connectés à MSGraph Microsoft 365 |
+| Active Directory <br>Graph | graph.windows.net | https/443 | Permet de configurer les nouvelles applications Azure Active Directory. Également utilisé par le fournisseur de services connectés à MSGraph Microsoft 365 |
 | Azure Functions <br>Mise à jour de l’interface CLI <br>Vérification | functionscdn.azureedge.net | https/443 | Utilisé pour la vérification des versions mises à jour de l’interface CLI Azure Functions. Si désactivé, une copie mise en cache (ou la copie effectuée par le composant Azure Functions) de l’interface CLI sera utilisée à la place |
 | Cordova | npmjs.org<br>gradle.org | & http/80<br/>https/443 | Le protocole HTTP est utilisé pour les téléchargements de Gradle lors de la génération ; HTTPS est utilisé pour inclure les plug-ins Cordova aux projets |
 | Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;point de terminaison de gestion&#62;<br>Exp Cloud général <br>3. &#60;point de terminaison de graphique&#62;<br>Exp Cloud général<br>4. &#60;point de terminaison du compte de stockage&#62;<br>Nœuds de stockage <br>5. &#60;URL du portail Azure&#62;<br>Exp Cloud général <br>6. &#60;points de terminaison du coffre de clés&#62; <br>Nœuds de machine virtuelle Azure Resource Manager<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Débogage distant et traces ETW Service Fabric | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dynamique | 1. exemple : test12.eastus.cloudapp.com<br>2. récupère les abonnements et récupère/gère les ressources Azure<br>3. récupère les abonnements Azure Stack<br>4. gère les ressources de stockage (par exemple : mystorageaccount.blob.core.windows.net)<br>5. option de menu contextuel « ouvrir dans le portail » (ouvre une ressource dans le Portail Azure)<br>6. crée et utilise des coffres de clés pour le débogage de machines virtuelles (par exemple : myvault.vault.azure.net) <br><br>7. alloue dynamiquement le bloc de ports en fonction du nombre de nœuds dans le cluster et des ports disponibles. <br><br>Un bloc de ports tentera d’obtenir trois fois le nombre de nœuds avec un minimum de 10 ports.<br><br>Pour les traces de diffusion en continu, une tentative est effectuée pour obtenir le bloc de ports à partir de 810. Si un de ces blocs de ports est déjà utilisé, une tentative est alors effectuée pour obtenir le bloc suivant et ainsi de suite. (Si l’équilibreur de charge est vide, les ports à partir de 810 sont très probablement utilisés) <br><br>De même pour le débogage, quatre jeux de ces blocs de ports sont réservés : <br>- connectorPort : 30398, <br>- forwarderPort : 31398, <br>- forwarderPortx86 : 31399,<br>- fileUploadPort : 32398<br> |

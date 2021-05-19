@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b45b67f03c7f95fe12c0f4322e682588a7f50714
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: c735eea8fe3a8b62f1901f7b9c6edf50d42aaf2c
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973631"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -71,7 +71,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Dictionnaire de langage visuel](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) -ajouter des parenthèses manquantes pour corriger l’erreur de rendu de l’icône
 - [Résolution des problèmes d’installation de modèles](../extensibility/troubleshooting-template-discovery.md) -invite de commandes développeur et Developer PowerShell
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -215,7 +215,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -mises à jour pour l’accessibilité
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -290,7 +290,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] validation à partir du PUBLIC PR 6214
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Nouveaux articles**
 
@@ -362,9 +362,9 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 **Articles mis à jour**
 
-- [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.md) : travail de découverte pour rechercher votre tâche de débogage et les rubriques de présentation
+- [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.yml) : travail de découverte pour rechercher votre tâche de débogage et les rubriques de présentation
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -406,11 +406,11 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Activer ou installer les analyseurs .net](../code-quality/install-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Migrer des analyseurs FxCop vers les analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Migrer de l’analyse héritée (FxCop) vers l’analyse source (analyseurs .net)](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
-- [Forum aux questions sur les analyseurs FxCop et .net hérités](../code-quality/net-analyzers-faq.md) -ajouter de la documentation pour migrer des analyseurs FxCop vers des analyseurs .net
+- [Forum aux questions sur les analyseurs FxCop et .net hérités](../code-quality/net-analyzers-faq.yml) -ajouter de la documentation pour migrer des analyseurs FxCop vers des analyseurs .net
 
 **Articles mis à jour**
 
-- [FAQ](../code-quality/analyzers-faq.md) sur l’analyse du code-ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
+- [FAQ](../code-quality/analyzers-faq.yml) sur l’analyse du code-ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [État du port de la règle FXCop](../code-quality/fxcop-rule-port-status.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Règles déconseillées](../code-quality/fxcop-unported-deprecated-rules.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Règles non portées qui peuvent être](../code-quality/fxcop-unported-rules-may-get-ported.md) ajoutées à la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
@@ -457,7 +457,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Didacticiel : prise en main de concepteur Windows Forms](../designers/walkthrough-windows-forms-designer.md) -correction de la faute
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -574,7 +574,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de Visual Studio Graphics Diagnostics](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg DX12
 - [Graphics Diagnostics Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg DX12
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -665,10 +665,6 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Nouvelle expérience git dans Visual Studio (version préliminaire)](../version-control/git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
 - [Conventions de mise en forme C++ EditorConfig](./cpp-editorconfig-properties.md) -nouvel article
-- [Qu’est-ce que GitHub Codespaces ? (Version préliminaire)](./codespaces/codespaces-overview.md) -Ajouter un contenu Codespaces (préversion)
-- [Comment personnaliser un codeSpace (version préliminaire)](./codespaces/customize-codespaces.md) -ajouter du contenu Codespaces (préversion)
-- [Fonctionnalités Visual Studio prises en charge (](./codespaces/supported-features-codespaces.md) préversion)-ajouter un contenu Codespaces (préversion)
-- [Utilisation de Visual Studio avec un codeSpace (version préliminaire)](./codespaces/use-visual-studio-with-codespaces.md) -ajouter du contenu Codespaces (préversion)
 
 **Articles mis à jour**
 
@@ -762,7 +758,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Articles mis à jour**
 
@@ -830,7 +826,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Journal des modifications (outils Visual Studio pour Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
 - [Journal des modifications (outils Visual Studio pour Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Commencer
 
 **Nouveaux articles**
 

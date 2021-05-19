@@ -1,23 +1,23 @@
 ---
 title: Mettre à jour Visual Studio avec une disposition hors connexion minimale
 description: Découvrez comment mettre à jour Visual Studio à l’aide d’une disposition hors connexion minimale.
-ms.date: 07/21/2020
+ms.date: 05/18/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9971007ed38a1f09aa28145ead468f6e5383eeae
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935701"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973605"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
 
@@ -36,7 +36,7 @@ L’outil Configuration minimale génère une disposition adaptée spécifiqueme
 Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) et les versions ultérieures. La disposition peut être déployée sur des ordinateurs réseau/hors connexion pour mettre à jour des instances de Visual Studio. Lors de la création d’une [disposition normale](update-a-network-installation-of-visual-studio.md), tous les packages de cette version particulière sont téléchargés. La création d’une disposition normale est requise pour la réparation, la désinstallation et d’autres opérations standard sur les instances de Visual Studio. La disposition minimale télécharge uniquement les packages mis à jour. il est donc plus petit et plus facile à copier sur des ordinateurs hors connexion.
 
 ### <a name="installing-the-minimal-layout-tool"></a>Installation de l’outil de disposition minimal
- 
+
  1. Tout d’abord, téléchargez l’outil de disposition minimal situé [ici](https://aka.ms/vs/installer/minimallayout). Veillez à choisir **Enregistrer** lorsque vous y êtes invité, puis sélectionnez **exécuter**.
 
      ![Enregistrer l’outil de disposition minimal](media/save-minimal-layout.png)
@@ -54,11 +54,11 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 ```MinimalLayout.exe [command] <options>...```
 
 #### <a name="commands"></a>Commandes
-* **Aperçu**: utilisez cette commande pour afficher un aperçu du nombre de packages à télécharger et de l’espace total utilisé pour créer cette disposition. 
+* **Aperçu**: utilisez cette commande pour afficher un aperçu du nombre de packages à télécharger et de l’espace total utilisé pour créer cette disposition.
 * **Générer**: utilisez cette commande pour générer la disposition minimale pour la mise à jour de Visual Studio.
 * **Régénérer**: utilisez cette commande pour régénérer une disposition à l’aide d’un fichier réponse de disposition minimale existant. Chaque disposition minimale produit un `MinimalLayout.json` fichier réponse qui contient les paramètres d’entrée de disposition minimale d’origine. Vous pouvez utiliser la commande **régénérer** et un `MinimalLayout.json` fichier réponse pour régénérer la disposition minimale. Cela est utile si vous souhaitez créer une disposition minimale pour une nouvelle mise à jour de Visual Studio en fonction du fichier de réponse de la disposition minimale précédente.
 
-   Pour cette commande, un `MinimalLayout.json` chemin d’accès de fichier d’une disposition déjà générée est requis. 
+   Pour cette commande, un `MinimalLayout.json` chemin d’accès de fichier d’une disposition déjà générée est requis.
 
     ```cmd
     MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
@@ -69,7 +69,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 
 ::: moniker range="vs-2019"
 
-#### <a name="options"></a>Options 
+#### <a name="options"></a>Options
 
 |Options    |Description    |Obligatoire ou facultatif |Exemple |
 |:----------|:-----------|:------------|:--------------|
@@ -77,7 +77,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 |--version de paramètre &lt;&gt;|La disposition hors connexion minimale sera générée à partir de cette version.   |Obligatoire|--Paramètre 16.4.0 |
 |--version de targetVersion &lt;&gt;|La disposition en mode hors connexion minimale sera générée jusqu’à cette version, y compris.|Obligatoire|--targetVersion 16.4.4|
 |--langues    |Spécifie les langues à inclure dans la disposition hors connexion minimale. Vous pouvez spécifier plusieurs valeurs, séparées par des espaces.    |Obligatoire    |--langues en-US fr-FR |
-|-- &lt; ID ProductID&gt;    |ID du produit à partir duquel la disposition hors connexion minimale sera générée. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatoire|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--productIds &lt; un ou plusieurs ID de produit&gt;    |ID du ou des produits à partir desquels la disposition hors connexion minimale sera générée, en les séparant par des virgules. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatoire|--productIds Microsoft. VisualStudio. Product. entreprise, Microsoft. VisualStudio. Product. Professional |
 |--filePath    |Chemin d’accès au fichier de l' MinimalLayout.jsdans un fichier à partir d’une disposition déjà créée. Cette option est utilisée uniquement avec la commande régénérer.     |Requis pour la commande régénérer    |--filePath C:\VSLayout\minimalLayout.jssur <br><br> **Notez que la commande régénérer ne prend que le chemin d’une option.** |
 |--Ajouter &lt; un ou plusieurs ID de charge de travail ou de composant&gt;    |Spécifie un ou plusieurs ID de charge de travail ou de composant à ajouter. Des composants supplémentaires peuvent être ajoutés globalement à l’aide de--includeRecommended et/ou <br> –-includeOptional. Plusieurs charges de travail ou ID de composant peuvent être spécifiés, séparés par un espace.    |Facultatif    |--Ajoutez le composant Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb. GitHub. VisualStudio |
 |--includeRecommended    |Inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs.    |Facultatif    |Pour une charge de travail spécifique : <br> --Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeRecommended <br><br> À appliquer à toutes les charges de travail :--includeRecommended |
@@ -87,7 +87,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 
 ::: moniker range="vs-2017"
 
-#### <a name="options"></a>Options 
+#### <a name="options"></a>Options
 
 |Options    |Description    |Obligatoire ou facultatif |Exemple |
 |:----------|:-----------|:------------|:--------------|
@@ -95,7 +95,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 |--version de paramètre &lt;&gt;|La disposition hors connexion minimale sera générée à partir de cette version.   |Obligatoire|--Paramètre 15.0.0 |
 |--version de targetVersion &lt;&gt;|La disposition en mode hors connexion minimale sera générée jusqu’à cette version, y compris.|Obligatoire|--targetVersion 15.9.31|
 |--langues    |Spécifie les langues à inclure dans la disposition hors connexion minimale. Vous pouvez spécifier plusieurs valeurs, séparées par des espaces.    |Obligatoire    |--langues en-US fr-FR |
-|-- &lt; ID ProductID&gt;    |ID du produit à partir duquel la disposition hors connexion minimale sera générée. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatoire|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--productIds &lt; un ou plusieurs ID de produit&gt;    |ID du ou des produits à partir desquels la disposition hors connexion minimale sera générée, en les séparant par des virgules. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatoire|--productIds Microsoft. VisualStudio. Product. entreprise, Microsoft. VisualStudio. Product. Professional |
 |--filePath    |Chemin d’accès au fichier de l' MinimalLayout.jsdans un fichier à partir d’une disposition déjà créée. Cette option est utilisée uniquement avec la commande régénérer.     |Requis pour la commande régénérer    |--filePath C:\VSLayout\minimalLayout.jssur <br><br> **Notez que la commande régénérer ne prend que le chemin d’une option.** |
 |--Ajouter &lt; un ou plusieurs ID de charge de travail ou de composant&gt;    |Spécifie un ou plusieurs ID de charge de travail ou de composant à ajouter. Des composants supplémentaires peuvent être ajoutés globalement à l’aide de--includeRecommended et/ou <br> –-includeOptional. Plusieurs charges de travail ou ID de composant peuvent être spécifiés, séparés par un espace.    |Facultatif    |--Ajoutez le composant Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb. GitHub. VisualStudio |
 |--includeRecommended    |Inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs.    |Facultatif    |Pour une charge de travail spécifique : <br> --Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeRecommended <br><br> À appliquer à toutes les charges de travail :--includeRecommended |
@@ -119,16 +119,16 @@ Passons en revue quelques exemples illustrant comment prévisualiser, générer 
 - Tout d’abord, voici un exemple de la façon d’afficher un aperçu d’une disposition pour Visual Studio Enterprise versions 16.4.0 vers 16.4.4 pour l’anglais uniquement.
 
     ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
     ```
 
 - Voici comment générer cette même disposition avec une charge de travail.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
     ```
 
-- Et voici comment régénérer une disposition hors connexion minimale à l’aide d’un fichier réponse existant. 
+- Et voici comment régénérer une disposition hors connexion minimale à l’aide d’un fichier réponse existant.
 
     ```cmd
     MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
@@ -136,16 +136,16 @@ Passons en revue quelques exemples illustrant comment prévisualiser, générer 
 
 Voici quelques autres exemples d’utilisation de la commande **generate** :
 
-- Voici comment ajouter une charge de travail supplémentaire et inclure uniquement les packages recommandés. 
+- Voici comment ajouter une charge de travail supplémentaire et inclure uniquement les packages recommandés.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
     ```
 
-- Enfin, voici comment inclure plusieurs langues dans votre disposition minimale. 
+- Enfin, voici comment inclure plusieurs langues dans votre disposition minimale.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
 
 ::: moniker-end
@@ -155,16 +155,16 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
 - Tout d’abord, voici un exemple de la façon d’afficher un aperçu d’une disposition pour Visual Studio Enterprise versions 15.0.0 vers 15.9.31 pour l’anglais uniquement.
 
     ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
     ```
 
 - Voici comment générer cette même disposition avec une charge de travail.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
     ```
 
-- Et voici comment régénérer une disposition hors connexion minimale à l’aide d’un fichier réponse existant. 
+- Et voici comment régénérer une disposition hors connexion minimale à l’aide d’un fichier réponse existant.
 
     ```cmd
     MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
@@ -172,16 +172,16 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
 
 Voici quelques autres exemples d’utilisation de la commande **generate** :
 
-- Voici comment ajouter une charge de travail supplémentaire et inclure uniquement les packages recommandés. 
+- Voici comment ajouter une charge de travail supplémentaire et inclure uniquement les packages recommandés.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
     ```
 
-- Enfin, voici comment inclure plusieurs langues dans votre disposition minimale. 
+- Enfin, voici comment inclure plusieurs langues dans votre disposition minimale.
 
     ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
 
 ::: moniker-end
@@ -190,19 +190,19 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
 
 Utilisez les commandes **verify** et **Fix** pour conserver votre disposition minimale après sa création. La commande **verify** détermine s’il existe des packages endommagés ou manquants dans la disposition minimale. Si vous rencontrez des problèmes après avoir exécuté la commande **verify** , utilisez la commande **Fix** pour corriger les packages manquants ou endommagés.
 
-- Voici comment vérifier si une disposition présente des packages manquants ou endommagés : 
+- Voici comment vérifier si une disposition présente des packages manquants ou endommagés :
 
     ```cmd
-    MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
+    MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
     ```
 
 - Et voici comment corriger cette disposition :
 
     ```cmd
-    MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
+    MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
     ```
 
->[!NOTE] 
+>[!NOTE]
 > Cette disposition ne peut pas être utilisée pour réparer une installation de Visual Studio. Pour réparer une instance existante de Visual Studio, consultez [réparer Visual Studio](repair-visual-studio.md).
 >
 
@@ -220,9 +220,9 @@ Accédez au dossier et identifiez le nom de l’application du programme d’amo
 
 La mise à jour est appliquée à une instance de Visual Studio en deux étapes. Commencez par mettre à jour le Visual Studio Installer, puis mettez à jour Visual Studio.
 
-1. **Mettre à jour le Visual Studio Installer** 
+1. **Mettre à jour le Visual Studio Installer**
 
-    Exécutez la commande suivante, en remplaçant `vs_enterprise.exe`  le cas échéant par le nom correct de l’application du programme d’amorçage. 
+    Exécutez la commande suivante, en remplaçant `vs_enterprise.exe`  le cas échéant par le nom correct de l’application du programme d’amorçage.
 
     ```cmd
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc

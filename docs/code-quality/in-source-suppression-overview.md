@@ -1,6 +1,6 @@
 ---
 title: Supprimer les violations de l’analyse du code
-ms.date: 08/27/2020
+ms.date: 05/10/2021
 description: Découvrez comment supprimer les violations d’analyse du code dans Visual Studio. Comprendre comment utiliser l’attribut SuppressMessageAttribute pour la suppression en source.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,16 +16,92 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd177a96b8789760927933fad5c0320553a72f57
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859903"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973336"
 ---
 # <a name="suppress-code-analysis-violations"></a>Supprimer les violations de l’analyse du code
 
-Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique aux membres de l’équipe que le code a été révisé et que l’avertissement peut être supprimé. La suppression en source (ISS) utilise l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placé à proximité du segment de code qui a généré l’avertissement. Vous pouvez ajouter l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut au fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** pour l’ajouter automatiquement.
+Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique aux membres de l’équipe que le code a été révisé et que l’avertissement peut être supprimé. Cet article décrit les différentes façons de supprimer les violations d’analyse du code à l’aide de l’IDE de Visual Studio.
+
+::: moniker range=">=vs-2019"
+
+## <a name="suppress-violations-using-the-editorconfig-file"></a>Supprimer les violations à l’aide du fichier EditorConfig
+
+Dans un **fichier EditorConfig**, définissez la gravité sur `none` , par exemple, `dotnet_diagnostic.CA1822.severity = none` . Pour ajouter un fichier EditorConfig, consultez [Ajouter un fichier EditorConfig à un projet](../ide/create-portable-custom-editor-options.md#add-and-remove-editorconfig-files).
+
+::: moniker-end
+
+## <a name="suppress-violations-in-source-code"></a>Supprimer les violations dans le code source
+
+Vous pouvez supprimer des violations dans le code à l’aide d’une directive de préprocesseur, la [#pragma directive Warning (C#)](/dotnet/csharp/language-reference/preprocessor-directives.md#pragma-warning) ou [Disable (Visual Basic)](/dotnet/visual-basic/language-reference/directives/disable-enable.md) pour supprimer l’avertissement uniquement pour une ligne de code spécifique. Vous pouvez utiliser l' [attribut SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute).
+
+- À partir de l' **éditeur de code**
+
+  Placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**+ + **point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX**, puis choisissez dans la **source** ou **dans la source (attribut)**.
+
+  Si vous choisissez **dans la source**, vous voyez un aperçu de la directive de préprocesseur qui sera ajoutée à votre code.
+
+  ::: moniker range="vs-2017"
+  :::image type="content" source="media/suppress-diagnostic-from-editor.png" alt-text="Supprimer les diagnostics du menu actions rapides":::
+  ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="Supprimer les diagnostics du menu actions rapides":::
+
+  Si vous choisissez **dans source (attribut)**, vous voyez un aperçu de l' [attribut SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) qui sera ajouté à votre code.
+
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="Supprimer le diagnostic du menu actions rapides à l’aide de l’attribut":::
+  ::: moniker-end
+
+- À partir de la **liste d’erreurs**
+
+  Sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer**  >  **dans la source**.
+
+  - Si vous supprimez **dans la source**, la boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l' [avertissement #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# ou Visual Basic #Disable directive d' [Avertissement](/dotnet/visual-basic/language-reference/directives/directives) ajoutée au code source.
+
+    ![Aperçu de l’ajout d' #pragma avertissement dans le fichier de code](media/pragma-warning-preview.png)
+
+  Dans la boîte de dialogue **aperçu des modifications** , sélectionnez **appliquer**.
+
+  > [!NOTE]
+  > Si vous ne voyez pas l’option de menu **supprimer** dans **Explorateur de solutions**, la violation provient probablement de la génération et non de l’analyse en temps réel. Le **liste d’erreurs** affiche les diagnostics ou les violations de règle à partir de l’analyse du code en direct et de la Build. Comme les diagnostics de build peuvent être périmés, par exemple, si vous avez modifié le code pour corriger la violation mais que vous ne l’avez pas reconstruit, vous ne pouvez pas supprimer ces diagnostics du **liste d’erreurs**. Les diagnostics à partir de l’analyse en direct, ou IntelliSense, sont toujours à jour avec les sources actuelles et peuvent être supprimés du **liste d’erreurs**. Pour exclure les diagnostics de *Build* de votre sélection, basculez le filtre de source de **liste d’erreurs** de la **génération + IntelliSense** vers **IntelliSense uniquement**. Sélectionnez ensuite les diagnostics que vous souhaitez supprimer et procédez comme décrit précédemment.
+  >
+  > ![Filtre de source de Liste d’erreurs dans Visual Studio](media/error-list-filter.png)
+
+## <a name="suppress-violations-using-a-global-suppression-file"></a>Supprimer les violations à l’aide d’un fichier de suppression global
+
+Le [fichier de suppression globale](#global-level-suppressions) utilise l' [attribut SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute).
+
+- Dans le **liste d’erreurs**, sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer**  >  **dans le fichier de suppression**. La boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier de suppression globale.
+
+  ![Aperçu de l’ajout de l’attribut SuppressMessage au fichier de suppression](media/preview-changes-in-suppression-file.png)
+
+- Dans l' **éditeur de code**, placez le curseur dans la ligne de code avec la violation et appuyez sur **actions rapides et refactorisations** (ou appuyez sur **CTRL** + **point (.)**) pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX**, puis choisissez **dans le fichier de suppression**. Vous voyez un aperçu du [fichier de suppression globale](#global-level-suppressions) qui sera créé ou modifié.
+
+::: moniker range=">=vs-2019"
+
+- Dans le menu **analyser** , sélectionnez **analyser**  >  la **Build et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+
+::: moniker-end
+::: moniker range="vs-2017"
+
+- Dans le menu **analyser** , sélectionnez **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+::: moniker-end
+
+## <a name="suppress-violations-using-project-settings"></a>Supprimer les violations à l’aide des paramètres du projet
+
+Dans **Explorateur de solutions**, ouvrez les propriétés du projet (cliquez avec le bouton droit sur le projet et choisissez **Propriétés** (ou appuyez sur **Alt + Entrée**) et utilisez l’onglet **analyse du code** pour configurer les options. Par exemple, vous pouvez désactiver l’analyse du code en direct ou désactiver les analyseurs .NET.
+
+## <a name="suppress-violations-using-a-rule-set"></a>Supprimer les violations à l’aide d’un ensemble de règles
+
+Dans l' **éditeur d’ensembles de règles**, désactivez la case à cocher en regard de son nom, ou définissez **action** sur **aucun**.
+
+## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>Suppression en source et attribut SuppressMessage
+
+La suppression en source (ISS) utilise l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placé à proximité du segment de code qui a généré l’avertissement. Vous pouvez ajouter l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut au fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** pour l’ajouter automatiquement.
 
 L' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est un attribut conditionnel, qui est inclus dans les métadonnées il de votre assembly de code managé, uniquement si le CODE_ANALYSIS symbole de compilation est défini au moment de la compilation.
 
@@ -50,7 +126,7 @@ En C++/CLI, utilisez l’autorité de certification macros \_ supprimer le \_ me
 
 ::: moniker-end
 
-## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
+### <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
 
 Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
 
@@ -96,7 +172,7 @@ Les propriétés de l’attribut sont les suivantes :
 
 Quand vous voyez des avertissements dans Visual Studio, vous pouvez afficher des exemples de `SuppressMessage` en [ajoutant une suppression au fichier de suppression globale](../code-quality/use-roslyn-analyzers.md#suppress-violations). L’attribut de suppression et ses propriétés requises s’affichent dans une fenêtre d’aperçu.
 
-## <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage
+### <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage
 
 Les avertissements d’analyse du code sont supprimés au niveau auquel l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est appliqué. Par exemple, l’attribut peut être appliqué au niveau de l’assembly, du module, du type, du membre ou du paramètre. L’objectif est de coupler étroitement les informations de suppression au code où la violation se produit.
 
@@ -110,7 +186,7 @@ S’il existe des raisons de performances strictes pour réduire les métadonné
 
 Pour des raisons de maintenabilité, l’omission du nom de la règle n’est pas recommandée.
 
-## <a name="suppress-selective-violations-within-a-method-body"></a>Supprimer les violations sélectives dans un corps de méthode
+### <a name="suppress-selective-violations-within-a-method-body"></a>Supprimer les violations sélectives dans un corps de méthode
 
 Les attributs de suppression peuvent être appliqués à une méthode, mais ne peuvent pas être incorporés dans un corps de méthode. Cela signifie que toutes les violations d’une règle particulière sont supprimées si vous ajoutez l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut à la méthode.
 
@@ -151,7 +227,7 @@ public class Animal
 }
 ```
 
-## <a name="global-level-suppressions"></a>Suppressions au niveau global
+### <a name="global-level-suppressions"></a>Suppressions au niveau global
 
 L’outil d’analyse du code managé examine les `SuppressMessage` attributs qui sont appliqués au niveau de l’assembly, du module, du type, du membre ou du paramètre. Il déclenche également des violations sur les ressources et les espaces de noms. Ces violations doivent être appliquées au niveau global et sont étendues et ciblées. Par exemple, le message suivant supprime une violation d’espace de noms :
 
@@ -169,11 +245,11 @@ Les suppressions au niveau global sont le seul moyen de supprimer des messages q
 > [!NOTE]
 > `Target` contient toujours le nom complet de l’élément.
 
-### <a name="global-suppression-file"></a>Fichier de suppression globale
+#### <a name="global-suppression-file"></a>Fichier de suppression globale
 
 Le fichier de suppression globale conserve les suppressions qui sont des suppressions au niveau global ou des suppressions qui ne spécifient pas de cible. Par exemple, les suppressions pour les violations au niveau de l’assembly sont stockées dans ce fichier. En outre, certaines suppressions de ASP.NET sont stockées dans ce fichier, car les paramètres au niveau du projet ne sont pas disponibles pour le code-behind d’un formulaire. Un fichier de suppression globale est créé et ajouté à votre projet la première fois que vous sélectionnez l’option **dans le fichier de suppression du projet** de la commande **supprimer** de la fenêtre **liste d’erreurs** .
 
-### <a name="module-suppression-scope"></a>Étendue de suppression de module
+#### <a name="module-suppression-scope"></a>Étendue de suppression de module
 
 Vous pouvez supprimer les violations de qualité du code pour l’assembly entier à l’aide de la portée de **module** .
 
@@ -181,7 +257,7 @@ Par exemple, l’attribut suivant dans votre fichier projet _GlobalSuppressions_
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
-## <a name="generated-code"></a>Code généré
+### <a name="generated-code"></a>Code généré
 
 Les compilateurs de code managé et certains outils tiers génèrent du code pour faciliter le développement rapide de code. Le code généré par le compilateur qui apparaît dans les fichiers sources est généralement marqué avec l' `GeneratedCodeAttribute` attribut.
 

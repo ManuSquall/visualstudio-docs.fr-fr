@@ -1,6 +1,6 @@
 ---
 title: Configuration des analyseurs
-ms.date: 09/02/2020
+ms.date: 05/10/2021
 description: Découvrez comment personnaliser les règles de l’analyseur Roslyn. Découvrez comment ajuster les gravités de l’analyseur, supprimer les violations et désigner les fichiers comme du code généré.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 36a9f1651a4aef7742b6bf52f8691f6ae8f9c616
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684376"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973380"
 ---
 # <a name="overview"></a>Vue d’ensemble
 
@@ -42,7 +42,7 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
@@ -323,60 +323,7 @@ Par défaut, le pilote de l’analyseur exécutant des analyseurs traite les fic
 
 ## <a name="suppress-violations"></a>Supprimer les violations
 
-Il existe plusieurs façons de supprimer des violations de règle :
-
-::: moniker range=">=vs-2019"
-
-- Dans un **fichier EditorConfig**
-
-  Définissez la gravité sur `none` , par exemple, `dotnet_diagnostic.CA1822.severity = none` .
-
-- Dans le menu **analyser**
-
-  Sélectionnez **analyser**  >  la **Build et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-- Dans le menu **analyser**
-
-  Sélectionnez **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
-
-::: moniker-end
-
-- À partir de **Explorateur de solutions**
-
-  Définissez le niveau de gravité de la règle sur **aucun**.
-
-- À partir de l' **éditeur d’ensembles de règles**
-
-  Désactivez la case à cocher en regard de son nom, ou définissez **action** sur **aucun**.
-
-- À partir de l' **éditeur de code**
-
-  Placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**+ + **point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX**  >  **dans le fichier source/de suppression**.
-
-  ![Supprimer les diagnostics du menu actions rapides](media/suppress-diagnostic-from-editor.png)
-
-- À partir de la **liste d’erreurs**
-
-  Sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer**  >  **dans le fichier source/de suppression**.
-
-  - Si vous supprimez **dans la source**, la boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l' [avertissement #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# ou Visual Basic #Disable directive d' [Avertissement](/dotnet/visual-basic/language-reference/directives/directives) ajoutée au code source.
-
-    ![Aperçu de l’ajout d' #pragma avertissement dans le fichier de code](media/pragma-warning-preview.png)
-
-  - Si vous sélectionnez **dans le fichier de suppression**, la boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier de suppression globale.
-
-    ![Aperçu de l’ajout de l’attribut SuppressMessage au fichier de suppression](media/preview-changes-in-suppression-file.png)
-
-  Dans la boîte de dialogue **aperçu des modifications** , sélectionnez **appliquer**.
-
-  > [!NOTE]
-  > Si vous ne voyez pas l’option de menu **supprimer** dans **Explorateur de solutions**, la violation provient probablement de la génération et non de l’analyse en temps réel. Le **liste d’erreurs** affiche les diagnostics ou les violations de règle à partir de l’analyse du code en direct et de la Build. Comme les diagnostics de build peuvent être périmés, par exemple, si vous avez modifié le code pour corriger la violation mais que vous ne l’avez pas reconstruit, vous ne pouvez pas supprimer ces diagnostics du **liste d’erreurs**. Les diagnostics à partir de l’analyse en direct, ou IntelliSense, sont toujours à jour avec les sources actuelles et peuvent être supprimés du **liste d’erreurs**. Pour exclure les diagnostics de *Build* de votre sélection, basculez le filtre de source de **liste d’erreurs** de la **génération + IntelliSense** vers **IntelliSense uniquement**. Sélectionnez ensuite les diagnostics que vous souhaitez supprimer et procédez comme décrit précédemment.
-  >
-  > ![Filtre de source de Liste d’erreurs dans Visual Studio](media/error-list-filter.png)
+Vous pouvez supprimer les violations de règle à l’aide de différentes méthodes. Pour plus d’informations, consultez [Supprimer les violations d’analyse du code](../code-quality/in-source-suppression-overview.md).
 
 ## <a name="command-line-usage"></a>Utilisation de la ligne de commande
 

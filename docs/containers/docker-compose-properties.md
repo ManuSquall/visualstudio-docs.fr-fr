@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.openlocfilehash: b3744640aada798179c86cc60d2c8ce7b02ccfaa
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025863"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973477"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -45,7 +45,7 @@ Le tableau suivant présente les propriétés MSBuild disponibles pour les proje
 |DockerComposeProjectsToIgnore|dcproj| Spécifie les projets qui doivent être ignorés par les outils de l’ancrage-compose pendant le débogage. Cette propriété peut être utilisée pour n’importe quel projet. Les chemins d’accès aux fichiers peuvent être spécifiés de deux façons : <br> 1. relatif à dcproj. Par exemple : `<DockerComposeProjectsToIgnore>path\to\AngularProject1.csproj</DockerComposeProjectsToIgnore>`. <br> 2. chemins d’accès absolus.<br> **Remarque**: les chemins d’accès doivent être séparés par le caractère délimiteur `;` .|-|
 |DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose up` commande. Par exemple : `--timeout 500`.|-|
 |DockerDevelopmentMode| dcproj | Contrôle si le projet utilisateur est généré dans le conteneur. Valeurs autorisées de contrôle **rapide** ou **régulier** des [étapes qui sont créées](https://aka.ms/containerfastmode) dans un fichier dockerfile. La configuration de débogage est le mode rapide par défaut et le mode normal dans le cas contraire. | Rapide |
-|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient. | None |
+|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient. | Aucun |
 |DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | Faux |
 |DockerServiceName| dcproj| Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName spécifie le service auquel il est fait référence dans le fichier d’ancrage-compose.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
@@ -155,5 +155,7 @@ Pour plus d’informations sur les propriétés MSBuild en général, consultez 
 [Propriétés de build des outils de conteneur](container-msbuild-properties.md)
 
 [Paramètres de lancement des outils de conteneur](container-launch-settings.md)
+
+[Gérer les profils de lancement pour Docker Compose dans Visual Studio](launch-profiles.md)
 
 [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

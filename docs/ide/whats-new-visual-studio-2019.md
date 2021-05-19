@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: 72b97b87a7edd8fdba46b755b7253af62f6de39f
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913096"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973464"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -228,7 +228,7 @@ En attendant, voici une nouvelle fonctionnalité qui est actuellement en cours d
 
    Bien que la nouvelle expérience de contrôle de version git soit désormais activée par défaut dans Visual Studio 2019 [version 16,8](/visualstudio/releases/2019/release-notes/), nous continuons à ajouter des fonctionnalités pour améliorer l’expérience dans la version préliminaire la plus récente.
 
-   Pour plus d’informations, consultez la page [interface git dans Visual Studio](../version-control/git-with-visual-studio.md) .
+   Pour plus d’informations, consultez la page [contrôle de version dans Visual Studio](/visualstudio/version-control/) .
 
 Pour plus d’informations sur la version préliminaire &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 
