@@ -2,7 +2,7 @@
 title: Impossible de définir le point d’arrêt de données | Microsoft Docs
 description: Recherchez des explications, des solutions et des solutions de contournement pour « impossible de définir les erreurs de point d’arrêt sur variable » qui se produisent lors de l’utilisation de « arrêter lorsque la valeur change ».
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,25 +17,25 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150455"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231963"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Dépannage des erreurs de point d’arrêt de données
 Cette page vous guidera lors de la résolution des erreurs courantes rencontrées lors de l’utilisation de l’instruction « arrêter quand la valeur est modifiée »
 
 ## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnostic des erreurs « impossible de définir le point d’arrêt des données »
 > [!IMPORTANT]
-> Les points d’arrêt sur les données managées sont pris en charge dans .NET Core 3,0 et les autres. Vous pouvez télécharger la dernière version [ici](https://dotnet.microsoft.com/download).
+> Les points d’arrêt sur les données managées sont pris en charge dans .NET Core 3,0 et les 5.0.3 et .NET. Vous pouvez télécharger la dernière version [ici](https://dotnet.microsoft.com/download).
 
-Vous trouverez ci-dessous une liste des erreurs qui peuvent se produire lors de l’utilisation de points d’arrêt de données managés. Ils contiennent des explications supplémentaires sur la raison de l’erreur et des solutions possibles ou des solutions de contournement pour résoudre les erreurs.
+Vous trouverez ci-dessous une liste des erreurs qui peuvent se produire lors de l’utilisation de points d’arrêt de données managés. Ils contiennent davantage d’explications sur la raison de l’erreur et des solutions possibles ou des solutions de contournement pour résoudre l’erreur.
 
-- *«La version de .NET utilisée par le processus cible ne prend pas en charge les points d’arrêt de données. Les points d’arrêt sur variable requièrent .NET Core 3.0 + s’exécutant sur x86 ou x64.»*
+- *«La version de .NET utilisée par le processus cible ne prend pas en charge les points d’arrêt de données. Les points d’arrêt sur variable requièrent .NET Core 3. x ou .NET 5.0.3 +, s’exécutant sur x86 ou x64.»*
 
-  - La prise en charge des points d’arrêt sur les données managées a commencé dans .NET Core 3,0. Elle n’est actuellement pas prise en charge dans .NET Framework ou version de .NET Core sous 3,0. 
+  - La prise en charge des points d’arrêt sur les données managées a commencé dans .NET Core 3,0. Elle n’est actuellement pas prise en charge dans .NET Framework, les versions de .NET Core sous 3,0 ou les versions de .NET sous 5.0.3. 
     
   - **Solution**: la solution consisterait à mettre à niveau votre projet vers .net Core 3,0.
 
@@ -69,6 +69,11 @@ Vous trouverez ci-dessous une liste des erreurs qui peuvent se produire lors de 
 
   - Les points d’arrêt sur variable ne sont pris en charge que sur l’évaluateur d’expression C# non hérité. 
   - **Solution**: vous désactivez l’évaluateur d’expression C# hérité en accédant `Debug -> Options` alors à `Debugging -> General` décocher `"Use the legacy C# and VB expression evaluators"` .
+
+- *« La classe **X** a une vue personnalisée du débogueur qui bloque l’utilisation des points d’arrêt de données uniquement sur les données qui lui sont spécifiques. »*
+  
+  - Les points d’arrêt sur variable sont uniquement pris en charge sur la mémoire qui est créée par le processus cible (l’application en cours de débogage). La mémoire sur laquelle le point d’arrêt de données est défini a été marquée comme étant éventuellement la propriété d’un objet créé par un [attribut DebuggerTypeProxy](using-debuggertypeproxy-attribute.md) ou autre chose qui ne fait pas partie du processus cible.
+  - **Solution de contournement**: développez la « vue brute » du ou des objets au lieu de développer la vue DebuggerTypeProxy du ou des objets, puis définissez le point d’arrêt des données. Cela garantit que le point d’arrêt des données ne fait pas l’objet d’une mémoire appartenant à un objet créé par un attribut DebuggerTypeProxy.
 
 ## <a name="data-breakpoint-hardware-limitations"></a>Limitations matérielles des points d’arrêt de données
 
