@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9971007ed38a1f09aa28145ead468f6e5383eeae
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: f3bc253f0babbc404164a9e85fda1e54ba5f5297
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973605"
+ms.locfileid: "110188099"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
 
@@ -142,6 +142,12 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
     ```
 
+- Vous pouvez également générer une disposition hors connexion minimale qui prend en charge plusieurs produits.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+    ```
+
 - Enfin, voici comment inclure plusieurs langues dans votre disposition minimale.
 
     ```cmd
@@ -176,6 +182,12 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
 
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Vous pouvez également générer une disposition hors connexion minimale qui prend en charge plusieurs produits.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
     ```
 
 - Enfin, voici comment inclure plusieurs langues dans votre disposition minimale.

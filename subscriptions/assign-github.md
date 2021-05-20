@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Gestion des abonnements dans les abonnements Visual Studio avec GitHub Enterprise
-ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
-ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
+ms.openlocfilehash: a1ece92990bf54d85140b1d3548ebf811913fae4
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740662"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110188112"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -33,6 +33,10 @@ Pour plus d’informations sur la gestion des abonnements Visual Studio, consult
 > Si les abonnements Visual Studio avec GitHub Enterprise sont affectés par les administrateurs des abonnements Visual Studio sans achat préalable, GitHub ne sera pas informé que vous souhaitez créer un compte GitHub Enterprise.  **Un achat d’au moins un** Un abonnement Visual Studio avec GitHub Enterprise doit être effectué avant l’attribution des abonnements.
 
 ## <a name="moving-to-visual-studio-with-github-enterprise"></a>Passage à Visual Studio avec GitHub Enterprise
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEAsv]
+
 Si votre organisation achète des abonnements Visual Studio avec des offres GitHub Enterprise après avoir attribué des abonnements à des Visual Studio Enterprise et des Visual Studio Professional standard, le portail d’administration contient une fonctionnalité qui vous permet de déplacer vos abonnés existants vers le Visual Studio Enterprise correspondant avec GitHub Enterprise et/ou Visual Studio Professional avec les abonnements GitHub Enterprise.  Par exemple, les abonnés avec des abonnements Visual Studio Professional seront déplacés vers Visual Studio Professional avec des abonnements GitHub Enterprise. Dans le panneau « vue d’ensemble » de la barre de gauche, vous verrez la vignette suivante :
 
    > [!div class="mx-imgBorder"]
