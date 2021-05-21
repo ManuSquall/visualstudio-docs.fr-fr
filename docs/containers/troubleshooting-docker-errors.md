@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
+ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859526"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110235909"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Résoudre les problèmes de développement Visual Studio avec Docker
 
@@ -29,7 +29,7 @@ Le partage de fichiers doit être géré uniquement si vous utilisez Hyper-V ave
 1. Dans la zone de notification, cliquez avec le bouton droit sur **Docker pour Windows**, puis sélectionnez **Paramètres**.
 1. Sélectionnez **ressources**  >  **partage de fichiers** et partagez le dossier auquel vous devez accéder. Le partage de l’ensemble de votre lecteur système est possible, mais n’est pas recommandé.
 
-    ![lecteurs partagés](media/troubleshooting-docker-errors/docker-settings-image.png)
+    :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="Lecteurs partagés":::
 
 > [!TIP]
 > Les versions de Visual Studio ultérieures à Visual Studio 2017 version 15,6 demandent quand les **lecteurs partagés** ne sont pas configurés.
@@ -86,7 +86,7 @@ Par défaut, Dockr stocke les images dans le dossier *% ProgramData%/docker/* , 
     "graph": "D:\\mypath\\images"
 ```
 
-![Capture d’écran du partage de fichiers de l’arrimeur](media/troubleshooting-docker-errors/docker-daemon-settings.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Capture d’écran du partage de fichiers de l’arrimeur":::
 
 Cliquez sur **appliquer & redémarrer**. Les étapes suivantes modifient le fichier de configuration à *% ProgramData% \docker\config\daemon.jssur*. Les images générées précédemment ne sont pas déplacées.
 
@@ -94,7 +94,7 @@ Cliquez sur **appliquer & redémarrer**. Les étapes suivantes modifient le fich
 
 Quand vous ajoutez la prise en charge de Docker à un projet, choisissez un conteneur Windows ou Linux. Si l’hôte du serveur d’ancrage n’est pas configuré pour exécuter le même type de conteneur que la cible du projet, vous verrez probablement une erreur semblable à celle ci-dessous :
 
-![Capture d’écran de l’hôte et de l’incompatibilité de projet de l’arrimeur](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Capture d’écran de l’hôte et de l’incompatibilité de projet de l’arrimeur":::
 
 Pour résoudre ce problème :
 
