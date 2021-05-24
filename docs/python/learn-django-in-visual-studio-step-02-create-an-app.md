@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
+ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942592"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "110320470"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -48,6 +48,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 
 ![Fichiers de l’application Django dans Explorateur de solutions](media/django/step02-django-app-in-solution-explorer.png)
 
+::: moniker range="vs-2017"
 | Élément | Description |
 | --- | --- |
 | **\_\_init \_ \_ . py** | Le fichier qui identifie l’application en tant que package. |
@@ -58,6 +59,20 @@ Une application Django commence généralement par un ensemble standard de fichi
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
 | **tests.py** | Un fichier Python qui contient la structure de base des tests unitaires. |
 | **views.py** | Les affichages sont en général ce que vous appelez pages Web, qui prennent une requête HTTP et retournent une réponse HTTP. Les affichages affichent généralement en langage HTML que les navigateurs Web savent comment afficher, mais un affichage ne doit pas nécessairement être visible (par exemple, un formulaire intermédiaire). Un affichage est défini par une fonction Python dont la responsabilité est d’afficher le langage HTML à envoyer au navigateur. Le fichier *views.py* est l’emplacement par défaut dans lequel créer des affichages et contient initialement uniquement l’instruction, `from django.shortcuts import render`. |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+| Élément | Description |
+| --- | --- |
+| **\_\_init \_ \_ . py** | Le fichier qui identifie l’application en tant que package. |
+| **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont décrites dans la [documentation Django](https://docs.djangoproject.com/en/3.2/topics/migrations/). pour le moment, le dossier contient simplement un fichier *\_ \_ init \_ \_ . py* (indiquant que le dossier définit son propre package Python). |
+| **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15,7 et versions antérieures, le fichier est contenu directement sous *modèles* et étape 2-4 vous demande de créer le sous-dossier.) Les modèles sont des blocs de code HTML dans lesquels des vues peuvent ajouter des informations pour afficher dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
+| **admin.py** | Fichier python dans lequel vous étendez l’interface d’administration de l’application, qui est utilisée pour amorcer et modifier des données dans une base de données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
+| **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
+| **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, via lesquels les vues interagissent avec la base de données sous-jacente de l’application. Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
+| **tests.py** | Un fichier Python qui contient la structure de base des tests unitaires. |
+| **views.py** | Les affichages sont en général ce que vous appelez pages Web, qui prennent une requête HTTP et retournent une réponse HTTP. Les affichages affichent généralement en langage HTML que les navigateurs Web savent comment afficher, mais un affichage ne doit pas nécessairement être visible (par exemple, un formulaire intermédiaire). Un affichage est défini par une fonction Python dont la responsabilité est d’afficher le langage HTML à envoyer au navigateur. Le fichier *views.py* est l’emplacement par défaut dans lequel créer des affichages et contient initialement uniquement l’instruction, `from django.shortcuts import render`. |
+::: moniker-end
 
 Le contenu de *apps.py* se présente comme suit quand vous utilisez le nom « HelloDjangoApp » :
 
