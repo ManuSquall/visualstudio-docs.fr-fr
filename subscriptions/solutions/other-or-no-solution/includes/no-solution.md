@@ -10,16 +10,16 @@ user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
 sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
-ms.openlocfilehash: 47df65df2b139fa910843da3659d5a520e787d17
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: d26b75015c427d771ab91526802d9b58e3ddb5e8
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107589918"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349885"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>Nous sommes désolés, nous n’avons pas trouvé de solution pour vous. 
 
-Notre équipe aimerait vous aider. La prise en charge des abonnements Visual Studio fournit de l’aide pour les ventes, les abonnements, les comptes et la facturation. Créez un ticket en ligne en cliquant sur le bouton créer un ticket de support ci-dessous, et notre équipe vous rappellera dans un délai de 1 jour ouvrable. 
+Notre équipe aimerait vous aider. La prise en charge des abonnements Visual Studio fournit de l’aide pour les ventes, les abonnements, les comptes et la facturation. Créez un ticket en ligne en cliquant sur le bouton « demande en ligne » en bas de cette solution, et notre équipe vous rappellera dans un délai de 1 jour ouvrable. 
 
 ## <a name="visual-studio-ide-technical-support-resources"></a>Ressources du support technique de l’IDE Visual Studio  
 
@@ -29,7 +29,7 @@ Les problèmes ou questions techniques de l’IDE Visual Studio doivent être di
 
 - Passez en revue les didacticiels, les guides de dépannage et les ressources utiles dans [la documentation de l’IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/). 
 
-- Recherchez dans la [communauté de développeurs](https://developercommunity.visualstudio.com/) en ligne et recevez des réponses d’experts sur un forum de la communauté. Vous pouvez rechercher des mots clés et lire, voter, commenter tout sans vous connecter.  
+- Recherchez dans la [communauté de développeurs](https://developercommunity.visualstudio.com/) en ligne et recevez des réponses d’experts sur un forum de la communauté. Vous pouvez rechercher des mots clés, lire, voter et commenter tout sans vous connecter.  
 
 - Recherchez dans le Stack Overflow [public Q&un balisé avec Visual Studio](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) pour obtenir des réponses aux questions déjà posées ou pour vous inscrire à un compte et poser une nouvelle question.  
 

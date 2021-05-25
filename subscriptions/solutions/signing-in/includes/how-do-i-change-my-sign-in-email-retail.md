@@ -10,14 +10,14 @@ user.type: subscriber
 tags: sign-in
 subscription.type: retail
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 39f74d1014f3cea75b0a7f5a85e17f3694b99370
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: cbbd449b89e441e756cc49f374c98e653f52706e
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916017"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349775"
 ---
 ## <a name="how-to-change-your-sign-in-email-address-for-visual-studio-subscriptions-purchased-through-the-microsoft-store"></a>Comment modifier votre adresse de messagerie de connexion pour les abonnements Visual Studio achetés par le biais du Microsoft Store
-Si vous souhaitez modifier l’adresse de messagerie que vous utilisez pour vous connecter à vos abonnements Visual Studio et que vous avez acheté vos abonnements par le biais de la Microsoft Store, vous devez contacter l’équipe du support technique compte, abonnement et facturation de Microsoft pour modifier votre adresse e-mail de connexion. 
+Si vous souhaitez modifier l’adresse de messagerie que vous utilisez pour vous connecter à vos abonnements Visual Studio et que vous avez acheté vos abonnements par le biais du Microsoft Store, vous devez contacter l’équipe du support technique, de l’abonnement et du compte Microsoft pour modifier votre courrier électronique de connexion. 
 
-Cliquez sur « créer un ticket de support » pour obtenir de l’aide.
+Cliquez sur « demande en ligne » pour obtenir de l’aide.

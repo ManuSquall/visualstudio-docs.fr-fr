@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590205"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349901"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>Comment activer l’avantage mensuel Azure dev/test
 
@@ -30,7 +30,7 @@ Les abonnements Azure créés via l’avantage des abonnements Visual Studio peu
 
 ## <a name="azure-credit-benefit-activation-errors"></a>Erreurs d’activation des avantages de crédit Azure
 
-Si vous avez un nouvel abonnement Visual Studio et que vous recevez l’erreur « vous ne pouvez pas activer cet avantage Visual Studio plus d’une fois » lorsque vous tentez d’activer l’avantage de crédit Azure mensuel, contactez le support des abonnements Visual Studio en cliquant sur le bouton « créer un ticket de support » en bas de cette solution. 
+Si vous avez un nouvel abonnement Visual Studio et que vous recevez l’erreur « vous ne pouvez pas activer cet avantage Visual Studio plus d’une fois » lorsque vous tentez d’activer l’avantage de crédit Azure mensuel, contactez le support des abonnements Visual Studio en cliquant sur le bouton « demande en ligne » en bas de cette solution. 
 
 Si votre abonnement a été attribué pendant un certain temps, voici quelques éléments à vérifier en premier :
 - Vérifiez que vous n’avez pas déjà activé cet avantage en consultant la vignette de crédit mensuel Azure sur la [page avantages](https://my.visualstudio.com/benefits) du portail des abonnements. 
