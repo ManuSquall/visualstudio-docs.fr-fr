@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c4a6254f15a4108c525231d0e5e93c6fc71bfb3
+ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932010"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110413336"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -344,7 +344,7 @@ Output:
 
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Fonctions de MSBuild TargetFramework et TargetPlatform
 
-MSBuild définit plusieurs fonctions pour gérer les [Propriétés TargetFramework et TargetPlatform](msbuild-target-framework-and-target-platform.md).
+MSBuild 16,7 et versions ultérieures définissent plusieurs fonctions pour gérer les [Propriétés TargetFramework et TargetPlatform](msbuild-target-framework-and-target-platform.md).
 
 |Signature de fonction|Description|
 |------------------------|-----------------|
@@ -384,6 +384,39 @@ Value3 = windows
 Value4 = 7.0
 Value5 = True
 ```
+
+## <a name="msbuild-version-comparison-functions"></a>Fonctions de comparaison de version MSBuild
+
+MSBuild 16,5 et versions ultérieures définissent plusieurs fonctions pour comparer des chaînes qui représentent des versions.
+
+> [!Note]
+> Les opérateurs de comparaison dans [les conditions peuvent comparer des chaînes qui peuvent être analysées en tant qu' `System.Version` objets](#msbuild-conditions.md#Comparing-versions), mais la comparaison peut produire des résultats inattendus. Préférez les fonctions de propriété.
+
+|Signature de fonction|Description|
+|------------------------|-----------------|
+|VersionEquals (chaîne a, chaîne b)|Retourne `true` si versions `a` et `b` sont équivalentes selon les règles ci-dessous.|
+|VersionGreaterThan (chaîne a, chaîne b)|Retourne `true` si `a` la version est supérieure `b` à selon les règles ci-dessous.|
+|VersionGreaterThanOrEquals (chaîne a, chaîne b)|Retourne `true` si `a` la version est supérieure ou égale à `b` selon les règles ci-dessous.|
+|VersionLessThan (chaîne a, chaîne b)|Retourne `true` si `a` la version est inférieure `b` à selon les règles ci-dessous.|
+|VersionLessThanOrEquals (chaîne a, chaîne b)|Retourne `true` si `a` la version est inférieure ou égale à `b` selon les règles ci-dessous.|
+|VersionNotEquals (chaîne a, chaîne b)|Retourne `false` si versions `a` et `b` sont équivalentes selon les règles ci-dessous.|
+
+Dans ces méthodes, les versions sont analysées comme <xref:System.Version?displayProperty=fullName> , avec les exceptions suivantes :
+
+* Leader `v` ou `V` est ignoré, ce qui permet une comparaison avec `$(TargetFrameworkVersion)` .
+
+* Tout ce qui se trouve à partir du premier'-'ou' + 'jusqu’à la fin de la chaîne de version est ignoré. Cela permet de passer des versions sémantiques (semver), même si l’ordre n’est pas le même que semver. Au lieu de cela, les spécificateurs de préversion et les métadonnées de build n’ont pas de poids de tri. Cela peut être utile, par exemple, pour activer une fonctionnalité pour `>= x.y` et la faire démarrer `x.y.z-pre` .
+
+* Les parties non spécifiées sont identiques à des parties de valeur zéro. (`x == x.0 == x.0.0 == x.0.0.0`).
+
+* L’espace blanc n’est pas autorisé dans les composants entiers.
+
+* La version principale est valide uniquement ( `3` est égal à `3.0.0.0` )
+
+* `+` n’est pas autorisé en tant que signe positif dans les composants entiers (il est traité en tant que métadonnées semver et ignoré)
+
+> [!TIP]
+> Les comparaisons des [Propriétés TargetFramework](msbuild-target-framework-and-target-platform.md) doivent généralement utiliser [IsTargetFrameworkCompatible](#MSBuild-TargetFramework-and-TargetPlatform-functions) au lieu d’extraire et de comparer les versions. Cela permet `TargetFramework` de comparer les s qui varient dans `TargetFrameworkIdentifier` et la version.
 
 ## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
 
