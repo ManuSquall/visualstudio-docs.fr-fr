@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/18/2021
+ms.date: 05/25/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a08826c3756586cd201276354d77d5e4e30f4102
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 73ec976b14501ae8f6d5315cdcc6a80677b6762b
+ms.sourcegitcommit: 55aeafdd369bea434adaebe5f9d4631e33623545
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973409"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110399019"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.0 | Preview 1 | 25 mai 2021 | 16.11.31320.298 |
+| 16.10.0 | Libérer | 25 mai 2021 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | Le 18 mai 2021 | 16.10.31313.381 |
 | 16.9.6 | Libérer | Le 18 mai 2021 | 16.9.31313.79 |
 | 16.10.0 | Preview 3 | 11 mai, 2021 | 16.10.31306.274 |
@@ -224,7 +226,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 ::: moniker range="vs-2017"
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
