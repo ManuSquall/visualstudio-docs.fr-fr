@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8040fb8028666d0dd551369b6b7f782de09058ca
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877614"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449940"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server et que votre déploiement contient un type de fichier que Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement échouera.
@@ -132,7 +132,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
 
  Si vous utilisez IIS, vous pouvez facilement activer la compression HTTP. Toutefois, lorsque vous activez la compression HTTP, elle est activée uniquement pour certains types de fichiers, à savoir les fichiers HTML et texte. Pour activer la compression pour les assemblys (.*dll*), XML (.*XML*), les manifestes de déploiement (*. application*) et les manifestes d’application (*. manifest*), vous devez ajouter ces types de fichiers à la liste de types à compresser pour IIS. Tant que vous n’ajoutez pas les types de fichiers à votre déploiement, seuls les fichiers texte et HTML sont compressés.
 
- Pour obtenir des instructions détaillées sur les services Internet (IIS), consultez [comment spécifier des types de documents supplémentaires pour la compression http](https://support.microsoft.com/help/234497).
+ Pour obtenir des instructions détaillées sur les services Internet (IIS), consultez [comment spécifier des types de documents supplémentaires pour la compression http](/troubleshoot/iis/content-types-http-compression.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

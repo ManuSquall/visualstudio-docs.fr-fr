@@ -3,8 +3,8 @@ title: ID de composant et de charge de travail de Visual Studio Enterprise
 titleSuffix: ''
 description: Utilisez Visual Studio Enterprise ID de composant et de charge de travail pour installer Visual Studio à partir de la ligne de commande ou spécifier une dépendance dans un manifeste VSIX.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 3/2/2020
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: aa226ecd3f760672f531adf61467004cd5e1485d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: af9f8600a9d1e61739a30c03200fa9e0886ad564
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683340"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449831"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Répertoire des composants Visual Studio Enterprise
 

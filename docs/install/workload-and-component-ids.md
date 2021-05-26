@@ -3,10 +3,10 @@ title: ID de charge de travail et de composant Visual Studio
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide d’une ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2020
+ms.date: 05/24/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: be97c0c56395a9fe87633ccf48f0382b15fae560
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 0493cd72151fe8985eeeb1bb47a5af859796d1b6
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683676"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449771"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio
 
