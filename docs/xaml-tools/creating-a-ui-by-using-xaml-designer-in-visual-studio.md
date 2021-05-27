@@ -3,7 +3,7 @@ title: Vue d’ensemble du concepteur XAML
 description: En savoir plus sur l’interface utilisateur de l’espace de travail et les fonctionnalités du Concepteur XAML dans Blend pour Visual Studio qui fournit une interface visuelle pour vous aider à concevoir des applications basées sur XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
-ms.custom: contperf-fy21q4; SEO-VS-2020
+ms.custom: contperf-fy21q4, SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -14,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879354"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565230"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
