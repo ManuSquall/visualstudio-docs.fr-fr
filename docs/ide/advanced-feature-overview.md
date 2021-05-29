@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51b25ff5f5f71291bb1aa1fd006b60566a576d7f
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862081"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687602"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -82,13 +82,9 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 - Générez des applications mobiles pour iOS, Android et Windows en C# et F# à l’aide de [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- Utilisez des technologies Web standard&mdash;HTML, CSS et JavaScript&mdash;pour générer des applications mobiles pour iOS, Android et Windows à l’aide de [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
-
 - Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
-
-- Déployez, testez et déboguez des applications Android avec [l’émulateur Android](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Se connecter aux bases de données
 

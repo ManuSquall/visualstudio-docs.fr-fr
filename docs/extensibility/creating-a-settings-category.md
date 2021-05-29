@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089340"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687620"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -39,7 +39,7 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
 
 2. Ouvrez le fichier *VSPackage. resx* et ajoutez ces trois ressources de type chaîne :
 
-    |Nom|Valeur|
+    |Name|Valeur|
     |----------|-----------|
     |106|Ma catégorie|
     |107|My Settings|
@@ -118,7 +118,9 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
 
 9. Nommez le nouveau fichier de paramètres *MySettings. vssettings* , puis enregistrez-le dans un répertoire approprié. Cliquez sur **Terminer**.
 
-     La page **exportation terminée** signale que vos paramètres ont été exportés avec succès.
+   Le `.vssettings` fichier est le fichier de paramètres de Visual Studio. Le schéma du fichier est ouvert. Le plus souvent, le schéma suit une structure XML où chaque catégorie est une balise, qui peut elle-même contenir des balises de sous-catégorie. Ces balises de sous-catégorie peuvent contenir des balises de valeur de propriété. Alors que la plupart des packages utilisent la structure commune, tout package dans Visual Studio peut apporter des données XML arbitraires au fichier avec le schéma qu’il choisit.
+
+   La page **exportation terminée** signale que vos paramètres ont été exportés avec succès.
 
 10. Dans le menu **Fichier** , pointez sur **Ouvrir**, puis cliquez sur **Fichier**. Recherchez *MySettings. vssettings* et ouvrez-le.
 

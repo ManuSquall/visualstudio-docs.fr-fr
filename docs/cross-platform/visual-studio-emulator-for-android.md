@@ -13,12 +13,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 274eda05a8af5c9be4fbbf67e3e78f254d1a7902
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 005743ad730184edb8a709b4c15867f857290f9b
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867514"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687629"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 
@@ -29,6 +29,6 @@ L’émulateur Visual Studio pour Android est une application de bureau pour ém
 > - L’émulateur Visual Studio pour Android n’est pas pris en charge après Visual Studio 2015.
 > - Les images d’émulateur ultérieures à la version 6,0 d’Android ne sont pas disponibles pour l’émulateur Visual Studio pour Android.
 > - L’émulateur Google Android prend désormais en charge [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
-> - C++ pour le développement d’appareils mobiles et les Visual Studio Tools pour Apache Cordova fonctionnent avec le Émulateur Android Google. Pour plus d’informations, consultez [Exécuter votre application Apache Cordova sur Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator). (Vous n’avez plus besoin de désactiver Hyper-V comme expliqué dans cet article).
+> - C++ pour le développement d’appareils mobiles et les Visual Studio Tools pour Apache Cordova fonctionnent avec le Émulateur Android Google. Pour plus d’informations, consultez [Exécuter votre application Apache Cordova sur Android](/previous-versions/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator). (Vous n’avez plus besoin de désactiver Hyper-V comme expliqué dans cet article).
 >
 > Pour plus d’informations sur la configuration et l’utilisation de l’émulateur Google Android, consultez [émulateur Android le programme d’installation](/xamarin/android/get-started/installation/android-emulator/).

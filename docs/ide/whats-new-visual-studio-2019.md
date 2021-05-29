@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 05/25/2021
+ms.date: 05/28/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcd5ef4ee34df1a95ab494a18d8fec68499bf43
-ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
+ms.openlocfilehash: 8664606877f5393a98a78e32c6d396e1a5bcf4c1
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110395435"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687688"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -28,9 +28,6 @@ ms.locfileid: "110395435"
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-
-> [!TIP]
-> Participez à la Conférence **[Build de Microsoft](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** pour en savoir plus sur les dernières fonctionnalités de visual studio 2019, ainsi qu’un aperçu de ce qui se passe dans [Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/).
 
 Avec Visual Studio 2019, vous allez bénéficier des meilleurs outils et services pour tous les développeurs, toutes les applications et toutes les plateformes. Que vous utilisiez Visual Studio pour la première fois ou que vous l’utilisiez depuis des années, il y a beaucoup à aimer dans notre dernière version !
 
@@ -125,7 +122,7 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborer
+## <a name="collaborate"></a>Travailler en collaboration
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
@@ -233,9 +230,10 @@ En attendant, voici une nouvelle fonctionnalité qui est actuellement en cours d
 
    Pour plus d’informations, consultez la page [contrôle de version dans Visual Studio](/visualstudio/version-control/) .
 
-Pour plus d’informations sur la version préliminaire &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page **[Visual Studio Preview](https://aka.ms/vspreview/)** .
+Pour plus d’informations sur la version préliminaire de Visual Studio 2019 &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page d' **[aperçu de Visual Studio](https://aka.ms/vspreview/)** .
 
-Pour en savoir plus sur la prochaine version, consultez le billet de blog **[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** . Nous présenterons également plus d’informations sur Visual Studio 2022 dans la Conférence **[Microsoft Build](https://devblogs.microsoft.com/visualstudio/the-visual-studio-family-welcomes-you-at-microsoft-build-2021/)** , si vous souhaitez y participer.
+> [!TIP]
+> Pour en savoir plus sur la prochaine version, consultez le billet de blog **[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** .
 
 ## <a name="give-us-feedback"></a>Envoyer vos commentaires
 

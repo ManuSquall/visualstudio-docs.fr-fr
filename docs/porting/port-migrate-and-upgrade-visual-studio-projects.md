@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 85d85b378de527f1ddbfab52f4a66ae475ee766a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ca84c5954d4b6c72635ddd46733ee4d41908e5f1
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683384"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687671"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio
 
@@ -69,7 +69,7 @@ Si un type de projet ou de fichier n’est pas listé ici alors qu’il le devra
 | Visual C++ | Vous pouvez utiliser Visual Studio 2017 pour travailler sur des projets créés dans des versions antérieures de Visual Studio, jusqu’à Visual Studio 2010. À la première ouverture du projet, il est possible d’effectuer une mise à niveau vers la dernière version du compilateur et de l’ensemble d’outils, ou bien de continuer d’utiliser ceux d’origine. Si vous choisissez de rester sur les originaux, Visual Studio 2017 ne modifie pas le fichier projet et utilise l’ensemble d’outils de l’ancienne installation de Visual Studio pour générer votre projet. En conservant les options d’origine, vous pouvez toujours ouvrir le projet dans la version d’origine de Visual Studio, le cas échéant. Pour plus d’informations, consultez [Utiliser le multiciblage natif dans Visual Studio pour générer d’anciens projets](/cpp/porting/use-native-multi-targeting). |
 | Extensibilité de Visual Studio/VSIX | Un projet pour lequel le paramètre MinimumVersion est défini sur 14.0 ou moins est mis à jour pour déclarer 15.0 comme version minimale, ce qui empêche son ouverture dans les versions antérieures de Visual Studio. Pour permettre l’ouverture d’un projet dans les versions antérieures, définissez MinimumVersion sur `$(VisualStudioVersion)`. Consultez aussi [Guide pratique pour migrer les projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Vous pouvez utiliser Microsoft Test Manager ou Visual Studio 2010 SP1 et versions ultérieures pour ouvrir les environnements créés dans une de ces versions. Toutefois, dans le cas de Visual Studio 2010 SP1, pour pouvoir créer des environnements, la version de Microsoft Test Manager doit correspondre à la version de Team Foundation Server. |
-| Visual Studio Tools pour Apache Cordova | Les projets peuvent être ouverts dans Visual Studio 2017, mais ils ne sont pas rétrocompatibles. Quand vous ouvrez un projet à partir de Visual Studio 2015, vous êtes invité à autoriser que des modifications soient apportées à votre projet. Cette modification permet de mettre à niveau le projet afin qu’il utilise des ensembles d’outils au lieu d’un fichier `taco.json` pour gérer les versions de la bibliothèque Cordova, ses plateformes, ses plug-ins, ainsi que ses dépendances node/npm. Pour plus d’informations, consultez le [guide de migration](/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
+| Visual Studio Tools pour Apache Cordova | Les projets peuvent être ouverts dans Visual Studio 2017, mais ils ne sont pas rétrocompatibles. Quand vous ouvrez un projet à partir de Visual Studio 2015, vous êtes invité à autoriser que des modifications soient apportées à votre projet. Cette modification permet de mettre à niveau le projet afin qu’il utilise des ensembles d’outils au lieu d’un fichier `taco.json` pour gérer les versions de la bibliothèque Cordova, ses plateformes, ses plug-ins, ainsi que ses dépendances node/npm. Pour plus d’informations, consultez le [guide de migration](/previous-versions/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
 | Déploiement Web (wdproj) | La prise en charge des projets de déploiement Web dans Visual Studio 2012 a été supprimée avec l’ajout de la prise en charge du profil de publication. Étant donné qu’il n’y a pas d’équivalent dans Visual Studio 2017, il n’existe aucun chemin de migration automatique de ces projets. Au lieu de cela, ouvrez le fichier wdproj dans un éditeur de texte et copier-coller toutes les personnalisations dans à le fichier pubxml (profil de publication), comme décrit dans [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Vous pouvez ouvrir ce projet dans Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. |
 | Windows Presentation Foundation | Vous pouvez ouvrir ce projet dans Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 et Visual Studio 2010 SP1. |
