@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: dcf242dc09c833b091454ea1863184229e3b71c0
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: c4004bd72b269a2f7ad6ef5904f31bb742e68563
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672915"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660210"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -67,6 +67,9 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning, Accueil](_img/vs-linkedin/vs-linkedin-learning-home.png "Bienvenue dans LinkedIn Premium avec LinkedIn Learning !")
 
+> [!NOTE]
+> Cette offre n’est pas incluse dans Visual Studio Dev Essentials appartenances.
+
 ## <a name="eligibility"></a>Éligibilité
 
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -79,7 +82,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
-<sup>1</sup>  *exclut : NFR, NFR de base, Visual Studio Industry Partner, Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (le plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
+<sup>1</sup>  *exclut : Visual Studio dev Essentials, NFR, NFR de base, Visual Studio Industry Partner, Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, imagine, MVP (plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
