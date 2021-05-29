@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800773"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660219"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -64,9 +64,9 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
   ```
 
     > [!IMPORTANT]
-    > Une opération de mise à jour n’installe pas les composants facultatifs nouvellement ajoutés. Si vous avez besoin des composants facultatifs nouvellement ajoutés, supprimez les anciens composants facultatifs dans le `Layout.JSON` [fichier réponse](automated-installation-with-response-file.md) et incluez les composants dont vous avez besoin dans la section « ajouter » de `Layout.JSON` . 
+    > Une opération de mise à jour ne télécharge pas ou n’installe pas de composants facultatifs supplémentaires, que ce soit sur la disposition ou sur le client. Si vous devez ajouter ou modifier des composants facultatifs, commencez par supprimer les anciens composants facultatifs du `Layout.JSON` [fichier réponse](automated-installation-with-response-file.md) et incluez les nouveaux composants dont vous avez besoin dans la section « ajouter » de `Layout.JSON` . Ensuite, lorsque vous exécutez la commande de mise à jour sur la disposition, les composants nouvellement ajoutés sont téléchargés dans la disposition. 
     >
-    > **Solution de contournement**: exécutez une opération de modification distincte après une mise à niveau pour installer les composants manquants.
+    > Pour installer ces nouveaux composants sur l’ordinateur client, assurez-vous d’effectuer les trois étapes suivantes. Tout d’abord, vérifiez que la disposition contient les nouveaux composants, comme décrit ci-dessus. Ensuite, mettez à jour votre client vers les derniers bits dans la disposition.  Enfin, sur le client, exécutez une opération de modification qui installe les nouveaux composants (ajoutés à la disposition) sur l’ordinateur client.
 
 * Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail *de développement Web et ASP.net* .)  Les charges de travail de développement Web, Azure et & ASP.NET sont désormais incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
 
