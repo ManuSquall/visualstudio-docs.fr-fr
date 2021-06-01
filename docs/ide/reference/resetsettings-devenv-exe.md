@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957996"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724536"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Restaure les paramètres par défaut de Visual Studio et lance automatiquement l’IDE Visual Studio. Ce commutateur facultatif réinitialise les paramètres avec les valeurs d’un fichier de paramètres spécifié.
+Restaure les paramètres par défaut de Visual Studio et lance automatiquement l’IDE Visual Studio. Ce commutateur réinitialise éventuellement les paramètres dans un fichier de paramètres spécifié ( `*.vssettings` ).
 
 Les paramètres par défaut viennent du profil sélectionné quand Visual Studio a été lancé pour la première fois.
 
@@ -41,15 +41,15 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Facultatif. Chemin d’accès complet et nom du fichier de paramètres à appliquer à Visual Studio.
+  facultatif. Chemin d’accès complet et nom du `.vssettings` fichier à appliquer à Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
-  Facultatif. Spécificateur représentant une collection par défaut de paramètres à restaurer. Choisissez l’un des spécificateurs par défaut du tableau.
+  facultatif. Spécificateur représentant une collection par défaut de paramètres à restaurer. Choisissez l’un des spécificateurs par défaut du tableau.
 
   | Nom de collection par défaut | Spécificateur de collection |
   | --- | --- |
-  | **Généralités** | `General` |
+  | **Général** | `General` |
   | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
   | **Visual C #** | `CSharp` |
@@ -57,9 +57,10 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Développement Web** | `Web` |
   | **Développement web (code uniquement)** | `WebCode` |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
-Si *SettingsFile* n’est pas spécifié, l’environnement IDE s’ouvre avec les paramètres existants.
+Si *SettingsFile* n’est pas spécifié, l’environnement IDE s’ouvre avec les paramètres existants. 
+
 
 ## <a name="example"></a>Exemple
 
@@ -67,10 +68,14 @@ Le premier exemple applique les paramètres stockés dans le fichier `MySettings
 
 Le second exemple restaure le profil Visual C# par défaut.
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+Le troisième exemple ferme également Visual Studio après avoir appliqué les paramètres. Vous pouvez ajouter `/Command "File.Exit"` .
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>Voir aussi
