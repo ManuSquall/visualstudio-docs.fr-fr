@@ -1,17 +1,17 @@
 ---
-ms.date: 03/02/2021
+ms.date: 05/28/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 3c5cb8d78b254c667ecd131ef3850475a0460323
+ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750189"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748526"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -23,7 +23,7 @@ ms.locfileid: "101750189"
 
 ::: moniker range="vs-2019"
 
-[![IDE Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Capture d’écran de l’IDE de Visual Studio, qui comprend des légendes qui indiquent où se trouvent les fonctionnalités et fonctionnalités clés." lightbox="../media/vs-2019/ide-overview.png":::
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Ou
 
 ::: moniker-end
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer) (en bas à droite) vous permet de suivre des éléments de travail et de partager du code avec d’autres utilisateurs à l’aide des technologies de gestion de versions comme [Git](https://git-scm.com/) et [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview).
+- [Les modifications git](/visualstudio/version-control/) (en bas à droite) vous permettent d’effectuer le suivi des éléments de travail et de partager du code avec d’autres personnes à l’aide de technologies de contrôle de version telles que [git](https://git-scm.com/) et [GitHub](https://docs.github.com/github).
 
 ## <a name="editions"></a>Éditions
 
@@ -85,7 +85,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Refactorisation dans Visual Studio](../media/refactoring-menu.png)
 
-- [Semi](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense est un terme désignant un ensemble de fonctionnalités qui affichent des informations relatives au code directement dans l’éditeur et qui, dans certains cas, écrivent de petits bouts de code à votre place. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher ailleurs des informations sur les types. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../../ide/javascript-intellisense.md) et [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre comment IntelliSense affiche une liste des membres d’un type :
 
@@ -217,7 +217,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
+1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **CTRL** + **F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -292,7 +292,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
+1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **CTRL** + **F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -384,13 +384,13 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker-end
 
-## <a name="debug-code"></a>Déboguer du code
+## <a name="debug-code&quot;></a>Déboguer du code
 
 Quand vous écrivez du code, vous devez l’exécuter et le tester pour rechercher les bogues. Le système de débogage de Visual Studio vous permet de parcourir le code instruction par instruction et d’en examiner les variables au fur et à mesure de votre avancement. Vous pouvez définir des *points d’arrêt* qui arrêtent l’exécution du code à une ligne particulière. Vous pouvez observer la façon dont la valeur d’une variable change à mesure que le code s’exécute, et bien plus encore.
 
 Définissons un point d’arrêt pour voir la valeur de la variable `username` quand le programme est en cours.
 
-1. Recherchez la ligne de code qui indique `Console.WriteLine($"\nHello {username}!");`. Pour définir un point d’arrêt sur cette ligne de code, autrement dit, pour que l’exécution du programme soit suspendue au niveau de cette ligne, cliquez dans la bordure à l’extrême gauche de l’éditeur. Vous pouvez également cliquer n’importe où sur la ligne de code, puis appuyer sur **F9**.
+1. Recherchez la ligne de code qui indique `Console.WriteLine($&quot;\nHello {username}!");`. Pour définir un point d’arrêt sur cette ligne de code, autrement dit, pour que l’exécution du programme soit suspendue au niveau de cette ligne, cliquez dans la bordure à l’extrême gauche de l’éditeur. Vous pouvez également cliquer n’importe où sur la ligne de code, puis appuyer sur **F9**.
 
    Un cercle rouge apparaît dans la bordure à gauche, et le code est surligné en rouge.
 
@@ -418,7 +418,7 @@ Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment 
 
 ::: moniker range="vs-2017"
 
-2. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+2. Dans la  > page options **générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    Le thème de couleur de l’ensemble de l’IDE devient **Sombre**.
 
@@ -428,7 +428,7 @@ Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment 
 
 ::: moniker range=">=vs-2019"
 
-2. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+2. Dans la  > page options **générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    Le thème de couleur de l’ensemble de l’IDE devient **Sombre**.
 
