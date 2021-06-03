@@ -2,22 +2,22 @@
 title: C# IntelliSense
 description: Découvrez certaines fonctionnalités IntelliSense que vous pouvez utiliser lors du codage de votre projet C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862061"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351953"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -101,6 +101,10 @@ Pour lancer l’opération **ajouter using** , positionnez le curseur sur une r�
 ![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 
 Cliquez sur l’icône d’ampoule d’erreur, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
+
+### <a name="add-missing-using-directives-on-paste"></a>Ajouter les directives using manquantes au moment du collage
+
+IntelliSense peut ajouter automatiquement `using` des directives manquantes à votre code lorsque vous collez un type dans votre fichier de code. Cette fonctionnalité vous permet de gagner du temps en automatisant la tâche d’ajout de directives using manquantes lors du collage d’un type dans un fichier. Activez cette fonctionnalité dans **Outils**  >  **options**  >  **éditeur de texte**  >  **C#** ou **Basic**  >  **avancé** et sélectionnez **Ajouter des directives using manquantes lors du collage**.
 
 ### <a name="remove-and-sort-usings"></a>Supprimer et trier les directives using
 

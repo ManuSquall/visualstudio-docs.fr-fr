@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5160608379549abbd469bd6cf1c17e4357eac15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffef522cb85816c36bee1cb623810fb254d1ddec
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060755"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351940"
 ---
 # <a name="regpkg-utility"></a>Utilitaire RegPkg
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "105060755"
 
  L’utilitaire RegPkg.exe inscrit un VSPackage auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et le prépare au déploiement. Cet utilitaire est utilisé en arrière-plan pendant le développement VSPackage. Il s’exécute dans le cadre du processus de génération afin que vous puissiez générer et exécuter un VSPackage dans la ruche expérimentale.
 
- RegPkg peut générer des scripts de Registre système dans plusieurs formats. Vous pouvez incorporer ces scripts dans des projets de déploiement tels que des projets. msi ou des fichiers d’ensemble d’outils XML Windows Installer.
+ RegPkg peut générer des scripts de Registre système dans plusieurs formats. Vous pouvez incorporer ces scripts dans des projets de déploiement tels que des projets de .msi ou des fichiers d’ensemble d’outils XML Windows Installer.
 
  RegPkg.exe se trouve généralement dans \<*Visual Studio SDK installation path*>\VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg suit la syntaxe suivante :
 
@@ -34,9 +34,7 @@ ms.locfileid: "105060755"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root : la racine effectue l’inscription sous le spécifié
-
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] racine.
+ /root : la racine effectue l’inscription sous la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] racine spécifiée.
 
  /regfile : FileName crée un fichier. reg au lieu de mettre à jour le registre.  Ne peut pas être utilisé avec/vrgfile ou/rgsfile ou/wixfile.
 

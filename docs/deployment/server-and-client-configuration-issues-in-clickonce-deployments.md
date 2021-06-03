@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8040fb8028666d0dd551369b6b7f782de09058ca
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: 9f0361816d0621f52e9f95f4159dd0d46f4f5951
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449940"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111352005"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server et que votre déploiement contient un type de fichier que Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement échouera.
@@ -33,7 +33,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
 
  Bien que cette restriction ne soit pas à l’origine de problèmes de téléchargement des fichiers de base [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tels que les manifestes et les assemblys, cette restriction peut vous empêcher de télécharger les fichiers de données inclus dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Dans [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , vous pouvez résoudre cette erreur en supprimant le gestionnaire qui interdit le téléchargement de tels fichiers à partir du gestionnaire de configuration IIS. Pour plus d’informations, consultez la documentation du serveur IIS.
 
- Certains serveurs Web peuvent bloquer des fichiers avec des extensions telles que *. dll*, *. config* et *. mdf*. Les applications Windows incluent généralement des fichiers avec certaines de ces extensions. Si un utilisateur tente d’exécuter une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui accède à un fichier bloqué sur un serveur Web, une erreur se produit. Au lieu de débloquer toutes les extensions de fichier, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publie chaque fichier d’application avec une extension de fichier *. deploy* par défaut. Par conséquent, l’administrateur a uniquement besoin de configurer le serveur Web pour débloquer les trois extensions de fichier suivantes :
+ Certains serveurs Web peuvent bloquer des fichiers avec des extensions telles que *.dll*, *.config* et *. mdf*. Les applications Windows incluent généralement des fichiers avec certaines de ces extensions. Si un utilisateur tente d’exécuter une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui accède à un fichier bloqué sur un serveur Web, une erreur se produit. Au lieu de débloquer toutes les extensions de fichier, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publie chaque fichier d’application avec une extension de fichier *. deploy* par défaut. Par conséquent, l’administrateur a uniquement besoin de configurer le serveur Web pour débloquer les trois extensions de fichier suivantes :
 
 - *. application*
 
@@ -112,7 +112,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
  Par défaut, FrontPage Server Extensions n’est pas installé sur Windows Server. Si vous souhaitez utiliser [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour publier sur un serveur Web Windows Server qui utilise le protocole http avec FrontPage Server Extensions, vous devez d’abord installer FrontPage Server Extensions. Vous pouvez effectuer l’installation à l’aide de l’outil gérer votre administration de serveur dans Windows Server.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server : types de contenu verrouillés
- IIS sur [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] verrouille tous les types de fichiers, à l’exception de certains types de contenu connus (par exemple, *. htm*, *. html*, *. txt*, etc.). Pour permettre le déploiement d' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications à l’aide de ce serveur, vous devez modifier les paramètres IIS pour autoriser le téléchargement de fichiers de type *. application*, *. manifest* et tout autre type de fichier personnalisé utilisé par votre application.
+ IIS sur [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] verrouille tous les types de fichiers, à l’exception de certains types de contenu connus (par exemple, *.htm*, *.html*, *.txt*, etc.). Pour permettre le déploiement d' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications à l’aide de ce serveur, vous devez modifier les paramètres IIS pour autoriser le téléchargement de fichiers de type *. application*, *. manifest* et tout autre type de fichier personnalisé utilisé par votre application.
 
  Si vous déployez à l’aide d’un serveur IIS, exécutez *inetmgr.exe* et ajoutez de nouveaux types de fichiers pour la page Web par défaut :
 
@@ -130,9 +130,9 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
 ## <a name="http-compression-issues"></a>Problèmes de compression HTTP
  Avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , vous pouvez effectuer des téléchargements qui utilisent la compression http, une technologie de serveur Web qui utilise l’algorithme gzip pour compresser un flux de données avant d’envoyer le flux au client. Le client (dans ce cas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ) décompresse le flux avant de lire les fichiers.
 
- Si vous utilisez IIS, vous pouvez facilement activer la compression HTTP. Toutefois, lorsque vous activez la compression HTTP, elle est activée uniquement pour certains types de fichiers, à savoir les fichiers HTML et texte. Pour activer la compression pour les assemblys (.*dll*), XML (.*XML*), les manifestes de déploiement (*. application*) et les manifestes d’application (*. manifest*), vous devez ajouter ces types de fichiers à la liste de types à compresser pour IIS. Tant que vous n’ajoutez pas les types de fichiers à votre déploiement, seuls les fichiers texte et HTML sont compressés.
+ Si vous utilisez IIS, vous pouvez facilement activer la compression HTTP. Toutefois, lorsque vous activez la compression HTTP, elle est activée uniquement pour certains types de fichiers, à savoir les fichiers HTML et texte. Pour activer la compression des assemblys (*.dll*), XML (*.xml*), des manifestes de déploiement (*. application*) et des manifestes d’application (*. manifest*), vous devez ajouter ces types de fichiers à la liste de types à compresser pour IIS. Tant que vous n’ajoutez pas les types de fichiers à votre déploiement, seuls les fichiers texte et HTML sont compressés.
 
- Pour obtenir des instructions détaillées sur les services Internet (IIS), consultez [comment spécifier des types de documents supplémentaires pour la compression http](/troubleshoot/iis/content-types-http-compression.md).
+ Pour obtenir des instructions détaillées sur les services Internet (IIS), consultez [comment spécifier des types de documents supplémentaires pour la compression http](/troubleshoot/iis/content-types-http-compression).
 
 ## <a name="see-also"></a>Voir aussi
 - [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

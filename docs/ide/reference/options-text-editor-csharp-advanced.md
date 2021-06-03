@@ -2,22 +2,22 @@
 title: Options, Éditeur de texte, C#, Avancé
 description: Découvrez comment utiliser la page avancé de la section C# pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation du code et les commentaires de documentation XML pour C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959322"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351984"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -103,6 +103,10 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
 
+- Ajouter les directives using manquantes au moment du collage
+
+    Lorsque cette option est sélectionnée, `using` les directives sont automatiquement ajoutées à votre code lorsque vous collez un type dans un fichier.
+
 ## <a name="highlighting"></a>Mettre en surbrillance
 
 - Surligner les références jusqu’au symbole sous le curseur
@@ -129,11 +133,19 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 Activez ces cases à cocher pour afficher les lignes verticales en pointillés entre les accolades ( **{}** ) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
 
-## <a name="editor-help"></a>Aide de l'éditeur
+## <a name="comments"></a>Commentaires
+
+- Générer des commentaires de documentation XML pour ///
+
+   Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires `///`, elle insère les éléments XML pour les commentaires de documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+
 ::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>Indicateurs Inline
+
 - Indicateurs de nom de paramètre Inline 
     
-    Lorsque cette option est sélectionnée, les indicateurs de nom de paramètre sont insérés pour les littéraux, les littéraux castés et les instanciations d’objets avant chaque argument dans les appels de fonction.  
+    Lorsque cette option est sélectionnée, les indicateurs de nom de paramètre sont insérés pour les littéraux, les littéraux de Cast et les instanciations d’objets avant chaque argument dans les appels de fonction.  
     
     ![Indicateurs de nom de paramètre Inline pour CSharp](media/inline-parameter-name-hints-csharp.png)
 
@@ -142,10 +154,14 @@ Activez ces cases à cocher pour afficher les lignes verticales en pointillés e
     Quand cette option est sélectionnée, les indicateurs de type sont insérés pour les variables avec des types inférés et des types de paramètres lambda.  
     
     ![Indicateurs de type inline pour CSharp](media/inline-type-hints-csharp.png)
-::: moniker-end
-- Générer des commentaires de documentation XML pour ///
 
-   Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires `///`, elle insère les éléments XML pour les commentaires de documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+## <a name="inheritance-margin"></a>Marge d’héritage 
+
+- Quand cette option est sélectionnée, elle ajoute des icônes aux marges représentant les implémentations et les remplacements de votre code. Le fait de cliquer sur les icônes de marge d’héritage affiche les options d’héritage que vous pouvez sélectionner pour naviguer.
+
+    ![Marge d’héritage](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 
