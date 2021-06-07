@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 003205525f883b010f897e6e47d4cab92a31b8a1
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: e740ea3b7950c14bf11522c4e438a105b09eb7f6
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110018529"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433699"
 ---
-# <a name="manage-launch-profiles-for-docker-compose-preview"></a>Gérer les profils de lancement pour Docker Compose (version préliminaire)
+# <a name="manage-launch-profiles-for-docker-compose"></a>Gérer les profils de lancement pour Docker Compose
 
 Si vous avez une application qui se compose de plusieurs services et qui utilise Docker Compose, vous pouvez configurer les services qui sont exécutés et débogués en créant ou en modifiant un profil de lancement existant dans Docker Compose paramètres de lancement. Les profils de lancement vous permettent d’exécuter de manière dynamique uniquement les services importants pour votre scénario actuel. Vous pouvez créer et sélectionner des profils de lancement afin de personnaliser votre expérience de débogage et définir des actions de lancement spécifiques telles que `Browser Launch URL` . Vous aurez également la possibilité de choisir chaque service individuellement ou de choisir un profil de Docker Compose, qui examine également votre fichier compose pour déterminer le groupe de services à exécuter.
 
@@ -24,7 +24,7 @@ Pour plus d’informations sur les profils de Docker Compose, consultez [utilisa
  
 ## <a name="prerequisites"></a>Prérequis
 
-- [Visual Studio 2019 version 16,10 Preview](https://visualstudio.microsoft.com/vs/preview/) ou version ultérieure
+- [Visual Studio 2019 version 16,10](https://visualstudio.microsoft.com/vs/) ou ultérieure
 - Solution avec [orchestration de conteneur avec docker compose](tutorial-multicontainer.md)
 
 ## <a name="manage-launch-settings"></a>Gérer les paramètres de lancement

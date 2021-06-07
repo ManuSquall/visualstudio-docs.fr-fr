@@ -2,7 +2,7 @@
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 description: Affichez le journal des modifications pour Outils Visual Studio pour Unity, Windows. Consultez les modifications de version 1.0.0.0 à 4.7.0.0 et au-delà.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/2/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,71 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879380"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448309"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="41020"></a>4.10.2.0
+Publication : 25 mai, 2021
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration**
+
+  - Ajout d’un [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) diagnostic. Donnez la priorité aux calculs scalaires sur les calculs de vecteurs.
+
+- **Analyse**
+
+  - Ajout de la prise en charge de l’utilisation de symboles PDB portables pour filtrer correctement les variables locales visibles.
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Stabilité de la recherche de référence sur les ressources.
+
+  - Correction des annonces d’annonce de lecteur avec des versions Unity récentes.
+
+## <a name="41010"></a>4.10.1.0
+Publiée le 11 mai 2021
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Résolution des problèmes de stabilité avec [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) Quickfix.
+
+  - Résolution des problèmes de performances avec les threads.
+
+## <a name="41000"></a>4.10.0.0
+Publication : 13 avril 2021
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration**
+
+  - Ajout d’un [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) diagnostic. Appel d’indirection inutile pour `GameObject.gameObject` .
+
+  - Ajout d’un [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) diagnostic. `MenuItem` attribut utilisé sur une méthode non statique.
+
+  - Ajout d’un [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) diagnostic. Le message Unity doit être protégé (abonnement).
+
+  - Ajout d’un [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) diagnostic. Méthode inefficace pour définir la position et la rotation.
+
+  - Ajout d’un [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) diagnostic. Fusion de l’affectation sur les objets Unity.
+
+  - Ajout [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) d’un suppresseur pour `IDE0074` . Les objets Unity ne doivent pas utiliser l’affectation de fusion.
+
+  - Ajout de la détection de projets C# déaromatisés ciblant Unity.
+
+  - Ajout de la recherche de référence des ressources Unity dans CodeLens.
 
 ## <a name="4910"></a>4.9.1.0
 Publication : 2 mars 2021

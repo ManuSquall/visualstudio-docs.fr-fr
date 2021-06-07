@@ -8,11 +8,11 @@ ms.assetid: 2004856f-7f54-411f-9bff-2f3472c8fff2
 ms.topic: conceptual
 description: Découvrez comment demander un abonnement Visual Studio sur votre lieu de travail.
 ms.openlocfilehash: 8fc393782ca8e32cdbdc9f2f1b3a1716633d455c
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541277"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448396"
 ---
 ## <a name="how-to-request-a-visual-studio-subscription-from-your-workschool"></a>Comment demander un abonnement Visual Studio à votre entreprise/école
 De nombreuses organisations, y compris les lieux de travail et les écoles, achètent des abonnements Visual Studio via différents programmes de licence. Ces abonnements sont gérés par les administrateurs d’abonnements (administrateurs) qui peuvent attribuer des abonnements, établir des préférences et activer ou désactiver certaines fonctionnalités.  

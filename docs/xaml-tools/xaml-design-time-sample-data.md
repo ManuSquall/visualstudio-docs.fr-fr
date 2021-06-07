@@ -1,18 +1,18 @@
 ---
 title: Utiliser des exemples de données au moment du design avec les Concepteur XAML dans Visual Studio
 description: Découvrez comment utiliser des exemples de données au moment du design en XAML.
-ms.date: 05/28/2021
+ms.date: 06/01/2021
 ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: a987435d454771bdecf078e78af089405718d261
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 8303e1150db7c12c404e8f67bce52418fbd05b9d
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748083"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433790"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des exemples de données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -23,7 +23,7 @@ Certains contrôles dépendant des données, tels que ListView, ListBox ou DataG
 Les exemples de données sont destinés uniquement à la visualisation au moment du design, ce qui signifie qu’ils apparaissent uniquement dans le concepteur XAML, et non dans l’application en cours d’exécution. En tant que tel, il est appliqué à la version au moment du design de la propriété ItemsSource `d:ItemsSource` . Les exemples de données ont besoin de l’espace de noms au moment du design pour fonctionner. Pour commencer, ajoutez les lignes de code suivantes à l’en-tête de votre document XAML s’ils ne sont pas déjà présents :
 
 > [!NOTE]
-> Visitez [les propriétés au moment du design XAML](/xaml/xaml-tools/xaml/xaml-designtime-data.md) pour en savoir plus sur les propriétés au moment du design en XAML.
+> Visitez [les propriétés au moment du design XAML](../xaml-tools/xaml-designtime-data.md) pour en savoir plus sur les propriétés au moment du design en XAML.
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -93,7 +93,7 @@ Si vous rencontrez un problème qui n’est pas mentionné dans cette section ou
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Propriétés au moment du design XAML](/xaml/xaml-tools/xaml/xaml-designtime-data)
+- [Propriétés au moment du design XAML](../xaml-tools/xaml-designtime-data.md)
 - [XAML dans les applications WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML dans les applications UWP](/windows/uwp/xaml-platform/xaml-overview)
 - [XAML dans les applications Xamarin.Forms](/xamarin/xamarin-forms/xaml/)

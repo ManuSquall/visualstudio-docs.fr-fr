@@ -2,7 +2,7 @@
 title: Journal des modifications (Visual Studio Tools pour Unity, Mac) | Microsoft Docs
 description: Affichez le journal des modifications pour Outils Visual Studio pour Unity, Mac. Consultez les modifications de version 1.0.0.0 à 2.7.0.0 et au-delà.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,87 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683382"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448296"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Journal des modifications (Outils Visual Studio pour Unity, Mac)
 
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="21020"></a>2.10.2.0
+Publication : 2 juin 2021
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration**
+
+  - Ajout d’un [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) diagnostic. Donnez la priorité aux calculs scalaires sur les calculs de vecteurs.
+
+- **Analyse**
+
+  - Ajout de la prise en charge de l’utilisation de symboles PDB portables pour filtrer correctement les variables locales visibles.
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Correction des annonces d’annonce de lecteur avec des versions Unity récentes.
+
+## <a name="21010"></a>2.10.1.0
+Publiée le 11 mai 2021
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Résolution des problèmes de stabilité avec [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) Quickfix.
+
+  - Résolution des problèmes de performances avec les threads.
+
+  - Correction des erreurs et des avertissements supprimés du filtrage dans le erreurs.
+
+  - Résolution des processus d’arrière-plan Unity de filtrage.
+
+## <a name="21000"></a>2.10.0.0
+Publication : 13 avril 2021
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration**
+
+  - Ajout d’un [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) diagnostic. Appel d’indirection inutile pour `GameObject.gameObject` .
+
+  - Ajout d’un [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) diagnostic. `MenuItem` attribut utilisé sur une méthode non statique.
+
+  - Ajout d’un [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) diagnostic. Le message Unity doit être protégé (abonnement).
+
+  - Ajout d’un [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) diagnostic. Méthode inefficace pour définir la position et la rotation.
+
+  - Ajout d’un [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) diagnostic. Fusion de l’affectation sur les objets Unity.
+
+  - Ajout [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) d’un suppresseur pour `IDE0074` . Les objets Unity ne doivent pas utiliser l’affectation de fusion.
+
+## <a name="2940"></a>2.9.4.0
+Publiée le 6 avril 2021
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Résoudre les problèmes liés à l’énumération de test
+
+## <a name="2930"></a>2.9.3.0
+Publiée le 30 mars 2021
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Résoudre les problèmes liés à Test Runner 
 
 ## <a name="2920"></a>2.9.2.0
 Publication : 2 mars 2021

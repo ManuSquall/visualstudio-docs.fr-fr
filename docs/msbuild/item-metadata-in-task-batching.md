@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913880"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111395356"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 
@@ -138,9 +138,9 @@ La [tâche Message](../msbuild/message-task.md) affiche les informations suivant
 
 ## <a name="batch-one-item-at-a-time"></a>Traiter par lots un élément à la fois
 
-Le traitement par lots peut également être effectué sur les métadonnées d’éléments connus qui sont affectés à chaque élément à la création. Cela garantit que chaque élément d’une collection a des métadonnées à utiliser pour le traitement par lots. La valeur des métadonnées `Identity` est unique pour chaque élément et est utile pour diviser chaque élément d’une liste d’éléments en un lot distinct. Pour obtenir la liste complète des métadonnées d’élément connues, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).
+Le traitement par lots peut également être effectué sur les métadonnées d’éléments connus qui sont affectés à chaque élément à la création. Cela garantit que chaque élément d’une collection a des métadonnées à utiliser pour le traitement par lots. La `Identity` valeur des métadonnées est utile pour diviser chaque élément d’une liste d’éléments en un lot distinct. Pour obtenir la liste complète des métadonnées d’élément connues, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).
 
-L’exemple suivant montre comment traiter par lots chaque élément d’une liste d’éléments un à la fois. Comme la valeur des métadonnées `Identity` de chaque élément est unique, la liste d’éléments `ExampColl` est divisée en six lots, chacun contenant un élément de la liste d’éléments. La présence de `%(Identity)` dans l' `Text` attribut notifie MSBuild que le traitement par lots doit être effectué.
+L’exemple suivant montre comment traiter par lots chaque élément d’une liste d’éléments un à la fois. La `ExampColl` liste d’éléments est divisée en six lots, chacun contenant un élément de la liste d’éléments. La présence de `%(Identity)` dans l' `Text` attribut notifie MSBuild que le traitement par lots doit être effectué.
 
 ```xml
 <Project
@@ -174,6 +174,35 @@ Identity: 'Item3' -- Items in ExampColl: Item3
 Identity: 'Item4' -- Items in ExampColl: Item4
 Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
+```
+
+Toutefois, il n' `Identity` est pas garanti qu’il soit unique ; sa valeur correspond à la valeur finale évaluée de l' `Include` attribut. Par conséquent, si des `Include` attributs sont utilisés plusieurs fois, ils sont regroupés par lot. Comme le montre l’exemple suivant, cette technique exige que les `Include` attributs soient uniques pour chaque élément du groupe. Pour illustrer ce point, examinez le code suivant :
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Item Include="1">
+      <M>1</M>
+    </Item>
+    <Item Include="1">
+      <M>2</M>
+    </Item>
+    <Item Include="2">
+      <M>3</M>
+    </Item>
+  </ItemGroup>
+
+  <Target Name="Batching">
+    <Warning Text="@(Item->'%(Identity): %(M)')" Condition=" '%(Identity)' != '' "/>
+  </Target>
+</Project>
+```
+
+La sortie indique que les deux premiers éléments se trouvent dans le même lot, car l' `Include` attribut est le même pour eux :
+
+```output
+test.proj(15,5): warning : 1: 1;1: 2
+test.proj(15,5): warning : 2: 3
 ```
 
 ## <a name="filter-item-lists"></a>Filtrer des listes d’éléments

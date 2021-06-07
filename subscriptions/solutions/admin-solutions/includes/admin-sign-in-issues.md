@@ -10,11 +10,11 @@ user.type: subscriber
 tags: sign-in
 subscription.type: vl, cloud,
 ms.openlocfilehash: 39aafd757c710257cf5f8185ecc8b54eba2c4645
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915963"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448364"
 ---
 ## <a name="resolve-issues-signing-in-to-visual-studio-subscriptions-administration-portal"></a>Résoudre les problèmes de connexion au portail d’administration des abonnements Visual Studio
 Si votre entreprise ou établissement scolaire achète des abonnements via le programme de licence en volume ou le Visual Studio Marketplace, ils sont gérés par les administrateurs.  Il existe deux types : • les administrateurs (administrateurs) peuvent attribuer, modifier et supprimer des abonnements.

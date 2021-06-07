@@ -1,8 +1,8 @@
 ---
-title: 'Documentation Visual Studio : nouveautés d’avril 2021'
+title: 'Documentation Visual Studio : nouveautés de mai 2021'
 titleSuffix: ''
-description: Nouveautés de Visual Studio docs pour le 2021 avril.
-ms.date: 05/03/2021
+description: Nouveautés de Visual Studio docs pour mai 2021.
+ms.date: 06/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,24 +15,118 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 38115892acc9c27e70ad956740cee8ae9e9c66ef
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: aaba340bd6e7136f8d629077fa2daec657135e3c
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640933"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111551265"
 ---
-# <a name="visual-studio-docs-whats-new-for-april-2021"></a>Documentation Visual Studio : nouveautés d’avril 2021
+# <a name="visual-studio-docs-whats-new-for-may-2021"></a>Documentation Visual Studio : nouveautés de mai 2021
 
-Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 2021 avril. Cet article répertorie les principales modifications apportées à la documentation au cours de cette période. Pour plus d’informations sur les nouveautés des mois précédents, consultez l’article nouveautés de l' [historique](whats-new-visual-studio-docs-history.md) .
+Bienvenue dans les documents sur les nouveautés de Visual Studio pour mai 2021. Cet article répertorie les principales modifications apportées à la documentation au cours de cette période. Pour plus d’informations sur les nouveautés des mois précédents, consultez la section nouveautés de l' [historique](#whats-new-history) .
 
-## <a name="azure"></a>Azure
+## <a name="code-quality"></a>Qualité du code
+
+**Nouveaux articles**
+
+- [Métriques du code-complexité cyclomatic](../code-quality/code-metrics-cyclomatic-complexity.md) -les mises à jour des métriques du code pour la complexité cyclomatic et la profondeur d’héritage
+- [Métriques du code-profondeur de l’héritage (dit)](../code-quality/code-metrics-depth-of-inheritance.md) -mises à jour de la métrique du code pour la complexité et la profondeur d’héritage cyclomatic
+- [FAQ sur l’analyse du code](../code-quality/analyzers-faq.yml) -FAQ.MD converti en yml
+- Forum [aux questions sur les analyseurs FxCop et .net hérités](../code-quality/net-analyzers-faq.yml) -FAQ.MD convertis en yml
+
+**Articles mis à jour**
+
+- [Supprimer les violations d’analyse du code](../code-quality/in-source-suppression-overview.md) -refactorisation des documents sur la suppression des règles d’autorité de certification
+
+## <a name="containers"></a>Conteneurs
+
+**Nouveaux articles**
+
+- [Gérer les profils de lancement pour docker compose (version préliminaire)](../containers/launch-profiles.md) -outils de conteneur-Paramètres de lancement
+
+## <a name="debugger"></a>Débogueur
+
+**Nouveaux articles**
+
+- Forum [aux questions sur le débogage d’instantanés dans Visual Studio](../debugger/debug-live-azure-apps-faq.yml) -FAQ.MD converti en yml
+- [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.yml) -FAQ.MD converti en yml
+
+**Articles mis à jour**
+
+- [Dépannage des erreurs de point d’arrêt de données](../debugger/troubleshoot-data-breakpoint-errors.md) -mise à jour résolution des problèmes de point d’arrêt des données
+
+## <a name="ide"></a>IDE
+
+**Articles mis à jour**
+
+- [/ResetSettings (devenv.exe)](./reference/resetsettings-devenv-exe.md) -autres correctifs
+- [Démarrage rapide : créer votre première Node.js application avec Visual Studio](./quickstart-nodejs.md) -modifications suggérées
+
+## <a name="install"></a>Installer
+
+**Articles mis à jour**
+
+- [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md)
+  - Ajouter plusieurs exemples de produits à MinLayout docs
+  - Refléter la suppression de--productId dans VS 2017 docs et tous les exemples
+  - Refléter la suppression de l’option'--productIds’dans MinimalLayout docs
+- [Modifier les charges de travail, les composants et les modules linguistiques de Visual Studio](../install/modify-visual-studio.md) -simplifier les instructions pour les performances
+
+## <a name="msbuild"></a>MSBuild
+
+**Nouveaux articles**
+
+- [MSB8006 : la plateforme du projet’Project-Name. vcxproj’n’est pas valide.](../msbuild/errors/msb8006.md) -Mettre à jour le contenu MSB8xxx F1
+- [MSB8013 : ce projet ne contient pas la combinaison de configuration et de plateforme spécifiée.](../msbuild/errors/msb8013.md) -Mettre à jour le contenu MSB8xxx F1
+- [MSB8027 : au moins deux fichiers portant le nom filename produiront des sorties au même emplacement.](../msbuild/errors/msb8027.md) -Mettre à jour le contenu MSB8xxx F1
+- [MSB8037 : la version de SDK Windows pour les applications de bureau C++ est introuvable.](../msbuild/errors/msb8037.md) -Mettre à jour le contenu MSB8xxx F1
+- [MSB8042 : les bibliothèques ATL ou MFC avec atténuations spectre sont requises pour ce projet.](../msbuild/errors/msb8042.md) -Mettre à jour le contenu MSB8xxx F1
+- [MSB3721 : la commande’Command’s’est arrêtée avec le code’error-code'](../msbuild/errors/msb3721.md) -pages d’erreurs MSBuild
+- [MSB3821 : impossible de traiter le fichier’Path’en raison de sa présence dans Internet ou de la zone restreinte ou de la marque du Web sur le fichier](../msbuild/errors/msb3821.md) -pages d’erreur MSBuild
+
+**Articles mis à jour**
+
+- [Conditions MSBuild](../msbuild/msbuild-conditions.md) -comparaisons de versions MSBuild
+- [Fonctions de propriété](../msbuild/property-functions.md) -comparaisons de versions MSBuild
+
+## <a name="python"></a>Python
+
+**Articles mis à jour**
+
+- [Étape 2 : créer une application Django avec des affichages et des modèles de page](../python/learn-django-in-visual-studio-step-02-create-an-app.md) -informations séparées pour Visual Studio 2017 et 2019
+- [Créer une extension C++ pour Python](../python/working-with-c-cpp-python-in-visual-studio.md) -article révisé et mis à jour
+
+## <a name="test"></a>Test
+
+**Nouveaux articles**
+
+- [Live Unit testing Forum aux questions](../test/live-unit-testing-faq.yml) -FAQ.MD converti en yml
+
+## <a name="xaml-tools"></a>Outils XAML
+
+**Nouveaux articles**
+
+- [Utiliser des exemples de données au moment du design avec le concepteur XAML dans Visual Studio-ajout de la](../xaml-tools/xaml-design-time-sample-data.md) documentation des exemples de données au moment de la conception XAML
+
+## <a name="community-contributors-in-may"></a>Les contributeurs de la Communauté dans peuvent
+
+Les personnes suivantes ont participé à la documentation de Visual Studio pendant cette période. Merci ! Découvrez comment contribuer en suivant les liens sous « Être impliqué » dans la [page de destination Nouveautés](index.yml).
+
+- [7sharp9](https://github.com/7sharp9) -Dave Thomas (1)
+- [Health-Hamilton](https://github.com/heath-hamilton) -Health Hamilton (1)
+
+## <a name="whats-new-history"></a>Historique des nouveautés
+
+### <a name="april-2021"></a>Avril 2021
+
+#### <a name="azure"></a>Azure
 
 **Articles mis à jour**
 
 - [Créer et déployer dans cloud services (prise en charge étendue) dans Visual Studio](../azure/cloud-services-extended-support.md) -services Cloud (prise en charge étendue)-modifications pour GA
 
-## <a name="containers"></a>Conteneurs
+#### <a name="containers"></a>Conteneurs
 
 **Nouveaux articles**
 
@@ -43,7 +137,7 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [Propriétés de génération de docker compose](../containers/docker-compose-properties.md) -ajouts de propriétés compose
 - [Comment Visual Studio génère des applications en conteneur](../containers/container-build.md) -mise à jour pour LTS
 
-## <a name="debugger"></a>Débogueur
+#### <a name="debugger"></a>Débogueur
 
 **Nouveaux articles**
 
@@ -57,13 +151,13 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [Fichiers dump dans le débogueur Visual Studio](../debugger/using-dump-files.md) -analyseurs de vidage de mémoire vs
 - [Comment déboguer pour les débutants absolus](../debugger/debugging-absolute-beginners.md) -Guide d’ajout de VB au débutant
 
-## <a name="get-started"></a>Bien démarrer
+#### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
 - [Didacticiel : étendre une application console C# simple](../get-started/csharp/tutorial-console-part-2.md) -clarifier les étapes et ajouter le code complet pour étendre le didacticiel de trottoir
 
-## <a name="ide"></a>IDE
+#### <a name="ide"></a>IDE
 
 **Articles mis à jour**
 
@@ -71,7 +165,7 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md) -améliorations des performances du contenu
 - [Se connecter aux projets dans Team Explorer](./connect-team-project.md) -modifier la version 2019 de la page « se connecter aux projets dans Team Explorer »
 
-## <a name="install"></a>Installer
+#### <a name="install"></a>Installer
 
 **Articles mis à jour**
 
@@ -88,7 +182,7 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [Guide de l’Administrateur Visual Studio](../install/visual-studio-administrator-guide.md) -mises à jour de l’administrateur
 - [Guide Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) -mises à jour d’administration
 
-## <a name="msbuild"></a>MSBuild
+#### <a name="msbuild"></a>MSBuild
 
 **Nouveaux articles**
 
@@ -97,7 +191,7 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [MSB8041 : les bibliothèques MFC sont requises pour ce projet](../msbuild/errors/msb8041.md) -messages d’erreur C++ MSBuild
 - [MSB3277 : des conflits entre différentes versions de’assembly’qui n’ont pas pu être résolus ont été détectés](../msbuild/errors/msb3277.md) -Erreur MSBuild MSB3277
 
-## <a name="python"></a>Python
+#### <a name="python"></a>Python
 
 **Articles mis à jour**
 
@@ -105,7 +199,7 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
   - Petites mises à jour pour résoudre les problèmes de GH
   - Améliorer working-with-c-cpp-python-in-visual-studio.md
 
-## <a name="sharepoint"></a>SharePoint
+#### <a name="sharepoint"></a>SharePoint
 
 **Articles mis à jour**
 
@@ -121,14 +215,14 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - [Procédure pas à pas : créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md) -déplacement de fichiers d’exemple et mise à jour des références de code (partie 1)-6
 - [Procédure pas à pas : étendre des Explorateur de serveurs pour afficher les composants WebPart](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md) -déplacement de fichiers d’exemple et mise à jour des références de code (partie 1)-6
 
-## <a name="test"></a>Test
+#### <a name="test"></a>Test
 
 **Articles mis à jour**
 
 - [Prise en main du test unitaire](../test/getting-started-with-unit-testing.md) -ajout de VB au Guide des débutants
 - [Prise en main des](../test/live-unit-testing-start.md) exemples de fichiers en déplacement Live Unit testing et mise à jour des références de code (partie 1)-7
 
-## <a name="vsto"></a>VSTOEE
+#### <a name="vsto"></a>VSTO
 
 **Articles mis à jour**
 
@@ -226,15 +320,235 @@ Bienvenue dans la documentation sur les nouveautés de Visual Studio pour le 202
 - Guide pratique [pour ajouter des images et des illustrations Word à des documents, par programmation](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md) , et mettre à jour des références de code (partie 1)-7
 - [Comment : ajouter des lignes et des colonnes par programmation à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md) -fichiers d’exemples en cours de déplacement et mise à jour des références de code (partie 1)-7
 
-## <a name="xaml-tools"></a>Outils XAML
+#### <a name="xaml-tools"></a>Outils XAML
 
 **Articles mis à jour**
 
 - [Utiliser des données au moment du design avec les concepteur XAML dans Visual Studio](../xaml-tools/xaml-designtime-data.md) -exemple de plateformes pour les ListView ajoutée
 
-## <a name="community-contributors"></a>Contributeurs de la communauté
+### <a name="march-2021"></a>Mars 2021
 
-Les personnes suivantes ont participé à la documentation de Visual Studio pendant cette période. Merci ! Découvrez comment contribuer à la documentation de Visual Studio en suivant les instructions du [Guide du contributeur](/contribute/).
+#### <a name="code-quality"></a>Qualité du code
 
-- [Scott-Xu](https://github.com/scott-xu) -Scott Xu (1)
-- [shreyanavigyan](https://github.com/shreyanavigyan) -Shreyan Avigyan (1)
+**Articles mis à jour**
+
+- [Activer ou installer les analyseurs .net internes](../code-quality/install-net-analyzers.md) -correctifs GitHub
+
+#### <a name="containers"></a>Containers
+
+**Articles mis à jour**
+
+- [Utiliser Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) -Bridge to Kubernetes : Use .net todo-App Sample
+- [Propriétés de génération de docker compose](../containers/docker-compose-properties.md) -ajout de ComposeProjectName
+- [Fonctionnement de Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) -Bridge to Kubernetes : Update limitations section
+- [Didacticiel : créer une application à plusieurs conteneurs avec docker compose](../containers/tutorial-multicontainer.md) -didacticiel sur les outils multiconteneur : corriger le lien vers l’image
+
+#### <a name="debugger"></a>Débogueur
+
+**Articles mis à jour**
+
+- [Comment : déboguer à partir d’un projet dll dans Visual Studio (C#, C++, Visual Basic, F #)](../debugger/how-to-debug-from-a-dll-project.md) -actualiser le débogage à partir d’une dll
+- [Spécifier des fichiers de symboles (. pdb) et sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) -actualiser le débogage à partir d’une dll
+- [Assertions C/C++](../debugger/c-cpp-assertions.md) -correctifs de problèmes GitHub
+- [IDiaDataSource :: loadDataForExe](../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) -problèmes de GitHub
+- [Spécificateurs de format pour C++ dans le débogueur Visual Studio](../debugger/format-specifiers-in-cpp.md) -problèmes de GitHub
+- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md) -correctifs de problèmes GitHub
+- [Débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+- [Débogage à distance ASP.net Core sur un ordinateur IIS distant dans Visual Studio](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+- [Débogage à distance ASP.net Core sur IIS dans Azure dans Visual Studio](../debugger/remote-debugging-azure.md) -mises à jour des documents de débogage à distance pour IIS et Azure
+
+#### <a name="deployment"></a>Déploiement
+
+**Articles mis à jour**
+
+- [Comment : publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) -invite de commandes développeur et Developer PowerShell
+- [Déployer une application dans un dossier à l’aide de Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) -mises à jour de documents de débogage à distance pour IIS et Azure
+
+#### <a name="extensibility"></a>Extensibilité
+
+**Articles mis à jour**
+
+- [Dictionnaire de langage visuel](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) -ajouter des parenthèses manquantes pour corriger l’erreur de rendu de l’icône
+- [Résolution des problèmes d’installation de modèles](../extensibility/troubleshooting-template-discovery.md) -invite de commandes développeur et Developer PowerShell
+
+#### <a name="get-started"></a>Bien démarrer
+
+**Articles mis à jour**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md)
+  - mettre à jour les rubriques avec une comparaison côte à côte des & git Team Explorer lien
+  - Ajouter des liens de connexion pour plus d’informations sur la section de connexion
+- [Didacticiel : prise en main de C# et ASP.net core dans Visual Studio](../get-started/csharp/tutorial-aspnet-core.md) -mettre à jour Tutorial-ASPNET-Core.MD
+
+#### <a name="ide"></a>IDE
+
+**Nouveaux articles**
+- [Comment Visual Studio rend le contrôle de code source facile](../version-control/git-visual-studio-source-control.md) à créer nouvelle rubrique de contrôle de code source Visual Studio
+- [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md) -invite de commandes développeur et Developer PowerShell
+- [Comparaison côte à côte de git et Team Explorer](../version-control/git-team-explorer-feature-comparison.md) -ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
+
+**Articles mis à jour**
+
+- [Journaux générés par le système collectés par Visual Studio](./diagnostic-data-collection.md) -mettre à jour diagnostic-Data-collection.MD
+- [Programme d’amélioration des services Visual Studio](./visual-studio-experience-improvement-program.md) -mettre à jour Visual-Studio-Experience-Improvement-Program.MD
+- [Personnaliser les modèles de projet et d’élément](./customizing-project-and-item-templates.md) : ajouter des liens sur la personnalisation des modèles et l’utilisation de la ligne de commande
+- [Comment : créer des modèles de projet](./how-to-create-project-templates.md) -ajouter des liens sur la personnalisation des modèles et l’utilisation de la ligne de commande
+- [Éditeur de code F1 aide](./not-in-toc/default-f1-text-editor.md) -lier les mises à jour pour les pages par défaut F1
+- [Aide F1](./not-in-toc/default.md) -lier des mises à jour pour les pages par défaut F1
+- [Démarrage rapide : utiliser Visual Studio pour créer vos premières](./quickstart-nodejs.md) mises à jour de Node.js App-AngularJS
+- [Extraire une méthode refactorisation](./reference/extract-method.md) -mettre à jour Extract-Method.MD
+- [Page d’options concepteur XAML](./reference/xaml-designer.md) -ajouter des informations sur les options récemment ajoutées dans le concepteur XAML
+- [Nouveautés de Visual Studio 2019](./whats-new-visual-studio-2019.md)
+  - Ajouter des informations de Search Service intelligentes
+  - Ajouter un nouveau lien CSharp 9 pour voir également
+- [Invite de commandes développeur et Developer PowerShell](./reference/command-prompt-powershell.md)
+  - Mettre à jour les titres des fonctionnalités et supprimer la section prérequis
+  - Mettre à jour la hiérarchie des titres
+  - Invite de commandes développeur et Developer PowerShell
+- [Se connecter à des projets dans Team Explorer](./connect-team-project.md) -mettre à jour des rubriques avec une comparaison côte à côte des liens Git & Team Explorer
+- [Expérience git dans Visual Studio](./git-with-visual-studio.md)
+  - Ajouter Azure DevOps à une instruction distante existante
+  - Ajouter une nouvelle page de comparaison côte à côte de Team Explorer et de nouvelles fonctionnalités git
+  - argument-b manquant dans git-with-visual-studio.md
+- [Raccourcis clavier par défaut dans Visual Studio](./default-keyboard-shortcuts-in-visual-studio.md) -raccourci clavier ajouter des conditions de point d’arrêt définies manquantes
+- [Autorisations utilisateur et Visual Studio](./user-permissions-and-visual-studio.md) -ajouter une procédure pour définir les autorisations d’administration sur le raccourci
+- [Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio](./reference/generate-equals-gethashcode-methods.md)
+  - réduire la taille de capture d’écran et ajouter une modification mineure à une instruction
+  - Ajouter du code à associer à des captures d’écran
+- [Utiliser des expressions régulières dans Visual Studio](./using-regular-expressions-in-visual-studio.md) -corriger une expression régulière incorrecte
+- [Personnaliser les tâches de génération et de débogage pour le développement de dossiers ouverts](./customize-build-and-debug-tasks-in-visual-studio.md) -invite de commandes développeur et Developer PowerShell
+- [Guide de productivité Visual Studio pour les développeurs C#](./csharp-developer-productivity.md) -mettre à jour la liste d’extensions d’inspection du code pour VS2019
+
+#### <a name="install"></a>Installer
+
+**Nouveaux articles**
+- [Application des mises à jour de l’administrateur qui utilisent Microsoft Endpoint Configuration Manager](../install/applying-administrator-updates.md) -création d’un nouveau contenu sur l’application des mises à jour de l’administrateur
+- [Activation des mises à jour de l’administrateur pour Visual Studio avec Microsoft Endpoint Configuration Manager](../install/enabling-administrator-updates.md) -création d’un nouveau contenu sur l’activation des mises à jour de l’administrateur
+
+**Articles mis à jour**
+
+- [Numéros de builds et dates de publication de Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Mettre à jour visual-studio-build-numbers-and-release-dates.md
+  - Ajouter des données de version 16.9.2
+  - Mises à jour patch Tuesday
+  - page mettre à jour la date des numéros de build
+  - numéros de build pour 16,9 GA et 16,10 Preview 1
+  - Mise à jour pour les nouvelles mises en production
+- [Créer une installation hors connexion de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) -modifications de document de mise à jour d’administration
+- [Installer les certificats requis pour l’installation hors connexion de Visual Studio](../install/install-certificates-for-visual-studio-offline.md) -modifications de document de mise à jour d’administration
+- [Installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md) -modifications de document de mise à jour d’administration
+- [Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) -article mis à jour.
+
+#### <a name="javascript"></a>JavaScript
+
+**Articles mis à jour**
+
+- [JavaScript et la machine à écrire dans Visual Studio # requis ; titre de la page affiché dans les résultats de la recherche. Incluez la personnalisation. < 60 caractères.](../javascript/index.yml) -Mises à jour AngularJS
+- [Démarrage rapide : utiliser Visual Studio pour créer vos premières](../javascript/quickstart-vuejs-with-nodejs.md) mises à jour de Vue.js App-AngularJS
+- [Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio](../javascript/tutorial-aspnet-with-typescript.md)
+  - Mises à jour AngularJS
+  - VisualStudio-docs/issues/6457--version manquante
+- [Didacticiel : créer une Node.js et une application Express dans Visual Studio](../javascript/tutorial-nodejs.md) -mises à jour AngularJS
+- [En savoir plus sur l’utilisation de l’éditeur de code pour](../javascript/write-and-edit-code.md) les mises à jour de JavaScript-AngularJS
+- [Test unitaire JavaScript et TypeScript dans Visual Studio](../javascript/unit-testing-javascript-with-visual-studio.md)
+  - Tests unitaires pour ASP.NET Core et la machine à écrire
+  - Invite de commandes développeur et Developer PowerShell
+  - Résolution des problèmes GitHub
+- [Gérer les packages NPM dans Visual Studio](../javascript/npm-package-management.md) -correctifs de problèmes GitHub
+
+#### <a name="msbuild"></a>MSBuild
+
+**Articles mis à jour**
+
+- [Comment msbuild génère des projets](../msbuild/build-process-overview.md) : corrigez le nom de l’élément incorrect.
+- [Tâche CreateCSharpManifestResourceName,](../msbuild/createcsharpmanifestresourcename-task.md) -corriger la faute de référence croisée incorrecte
+- [Guide pratique pour étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md) : corriger le retrait XML
+- [Tâche MIDL](../msbuild/midl-task.md) -mettre à jour MIDL-Task.MD
+- [Éléments de projet MSBuild communs](../msbuild/common-msbuild-project-items.md) -ajouter une table des matières dans l’article et améliorer la mise en forme
+- [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md) -ajouter une table des matières et améliorer la mise en forme
+- [Exec Task](../msbuild/exec-task.md) -ajouter un document pour le paramètre Utf8Encoding
+
+#### <a name="profiling"></a>Profilage
+
+**Articles mis à jour**
+
+- [Mesurer les performances de l’application à partir de la ligne de commande](../profiling/profile-apps-from-command-line.md) -résolution des problèmes GitHub
+- [Premier aperçu des outils de profilage](../profiling/profiling-feature-tour.md) -travail de découverte pour l’outil compteurs .net
+
+#### <a name="python"></a>Python
+
+**Articles mis à jour**
+
+- [Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio](../python/learn-flask-visual-studio-step-01-project-solution.md)
+  - Code et texte mis à jour sur les paramètres de requête
+  - Suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Didacticiel : prise en main de l’infrastructure Web Django dans Visual Studio](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) -suppression du contenu du modèle d’interrogation des didacticiels python de visual studio 2019
+- [Étape 5 : authentifier les utilisateurs dans Django](../python/learn-django-in-visual-studio-step-05-django-authentication.md) -suppression du contenu du modèle d’interrogation à partir des didacticiels python de Visual Studio 2019
+- [Étape 6 : utiliser le modèle de projet Web Djangos de sondage](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) -suppression du contenu du modèle de sondage à partir des didacticiels python de Visual Studio 2019
+- [Étape 4 : utiliser le modèle de projet Web complet de la fiole](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Étape 5 : utiliser le modèle de projet Web de la fiole sondages](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Modèle de projet Web Django](../python/python-django-web-application-project-template.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Modèles de projet d’application Web python](../python/python-web-application-project-templates.md) -suppression du contenu du modèle d’interrogation des didacticiels python de Visual Studio 2019
+- [Installer les symboles de débogage pour les interpréteurs python](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) -ajoutez les 3 dernières versions de Python 2,7
+
+#### <a name="test"></a>Test
+
+**Nouveaux articles**
+
+- [Effectuez une mise à niveau de *. testsettings* vers *. RunSettings*](../test/migrate-testsettings-to-runsettings.md) -Add migrate to RunSettings doc
+- [Mise à niveau de MSTestV1 vers MSTestV2](../test/mstest-update-to-mstestv2.md) -add doc sur la mise à niveau de MSTestV1 vers MSTestV2
+
+**Articles mis à jour**
+
+- [Créer des stubs de méthode de test unitaire à partir de code](../test/create-unit-tests-menu.md) -VisualStudio-docs/issues/6484--Update Link
+- [Examinez d’abord les outils de test dans Visual Studio](../test/improve-code-quality.md) -VisualStudio-docs/issues/6429--mettre à jour les liens de laboratoire
+- [Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
+  - Invite de commandes développeur et Developer PowerShell
+  - Correction des fautes de frappe
+- [VSTest.Console.exe les options de ligne de commande](../test/vstest-console-options.md) -invite de commandes développeur et Developer PowerShell
+
+### <a name="february-2021"></a>Février 2021
+
+#### <a name="debugger"></a>Débogueur
+
+**Articles mis à jour**
+
+- [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -mises à jour pour l’accessibilité
+
+#### <a name="get-started"></a>Bien démarrer
+
+**Articles mis à jour**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -Update voir également des liens dans VS2017 ouvrir un projet à partir d’un référentiel
+- [Didacticiel : ouvrir un projet à partir d’un lien référentiel](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) -ajouter à la version VS2017 de la page « ouvrir un projet à partir d’un référentiel »
+
+#### <a name="ide"></a>IDE
+
+**Articles mis à jour**
+
+- [Dépanner et créer des journaux pour les problèmes MSBuild](./msbuild-logs.md) : ajouter des instructions sur l’utilisation de l’extension outils système de projet
+
+#### <a name="install"></a>Installer
+
+**Articles mis à jour**
+
+- [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md)
+  - Ajouter 2017 exemple dans le tableau d’options
+  - Ajouter des exemples pour VS2017
+
+#### <a name="msbuild"></a>MSBuild
+
+**Nouveaux articles**
+
+- [MSB3644 : les assemblys de référence pour’frameworkVersion’sont introuvables](../msbuild/errors/msb3644.md) -Erreurs MSBuild
+- [MSB8036 : la SDK Windows’version’est introuvable](../msbuild/errors/msb8036.md) -Erreurs MSBuild
+
+#### <a name="test"></a>Test
+
+**Articles mis à jour**
+
+- [Utiliser l’infrastructure de tests unitaires Microsoft pour C++ dans Visual Studio](../test/how-to-use-microsoft-test-framework-for-cpp.md) -actualisation et modification de petits contenus
+- [Écrire des tests unitaires pour des dll C++ dans Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) -actualisation et modification de petits contenus
+- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) -mises à jour pour l’accessibilité
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) -mises à jour pour l’accessibilité
+- [Isolez le code testé avec Microsoft simulations](../test/isolating-code-under-test-with-microsoft-fakes.md) : mentionnez explicitement .net 5,0 dans les documents de simulation

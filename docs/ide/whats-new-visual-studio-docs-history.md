@@ -16,11 +16,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c735eea8fe3a8b62f1901f7b9c6edf50d42aaf2c
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973631"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111516935"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -71,7 +71,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Dictionnaire de langage visuel](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) -ajouter des parenthèses manquantes pour corriger l’erreur de rendu de l’icône
 - [Résolution des problèmes d’installation de modèles](../extensibility/troubleshooting-template-discovery.md) -invite de commandes développeur et Developer PowerShell
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -215,7 +215,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -mises à jour pour l’accessibilité
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -290,7 +290,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] validation à partir du PUBLIC PR 6214
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Nouveaux articles**
 
@@ -364,7 +364,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Forum aux questions : trouvez la fonctionnalité de débogage dont vous avez besoin dans Visual Studio](../debugger/find-your-debugging-task.yml) : travail de découverte pour rechercher votre tâche de débogage et les rubriques de présentation
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -457,7 +457,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Didacticiel : prise en main de concepteur Windows Forms](../designers/walkthrough-windows-forms-designer.md) -correction de la faute
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -574,7 +574,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de Visual Studio Graphics Diagnostics](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg DX12
 - [Graphics Diagnostics Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg DX12
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -758,7 +758,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -826,7 +826,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Journal des modifications (outils Visual Studio pour Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
 - [Journal des modifications (outils Visual Studio pour Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Commencer
+### <a name="get-started"></a>Bien démarrer
 
 **Nouveaux articles**
 

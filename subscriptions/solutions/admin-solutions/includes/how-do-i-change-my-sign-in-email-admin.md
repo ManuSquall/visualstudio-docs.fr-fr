@@ -11,11 +11,11 @@ tags: sign-in
 subscription.type: vl, cloud,
 sap.id: ''
 ms.openlocfilehash: a77e01c102c99e5c92aa00107fabb3ee98b6e50d
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915945"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448395"
 ---
 ## <a name="how-to-change-sign-in-emails-for-admins-and-super-admins"></a>Procédure de modification des e-mails de connexion pour les administrateurs et les super administrateurs
 
@@ -30,7 +30,7 @@ Si vous êtes super administrateur, vous pouvez créer des administrateurs et de
 0. Cliquez sur **Enregistrer**.
 0. Sélectionnez l’entrée dans la liste des administrateurs qui affiche votre ancienne adresse e-mail de connexion.
 0. Cliquez sur **« ... »** et choisissez **supprimer** ou cliquez sur **supprimer** dans le menu en haut de la liste.
-0. Cliquez sur **Confirmer**.
+0. Cliquer sur **Confirmer**.
 
 La modification de l’adresse e-mail de connexion pour les autres est aussi simple que celle des étapes ci-dessus et en remplaçant les informations fournies dans les étapes 3 et 4.  Si vous ne souhaitez pas en faire un super administrateur, ignorez l’étape 5.
 

@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bc2ed473e25dc75d0155bc864aa02c157e3482f
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063316"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448322"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -413,7 +413,7 @@ Les éléments considérés comme des éléments marqués sont (détaillés dans
 
 - Lien de commentaires et éléments de messagerie
 
-- Texte de l’exclusion de responsabilité
+- Texte d’exclusion de responsabilité
 
 - Texte de Copyright
 
@@ -435,7 +435,7 @@ Comme indiqué ci-dessus, les packages de personnalisation sont associés à la 
 
 - Ou lorsque SelfBranded = false et qu’il existe un package de personnalisation unique défini dans le MSHA et disponible lors de l’installation du contenu
 
-Pour les vsp qui implémentent des packages de personnalisation personnalisés (contenu VSP, SelfBranded = true), vous pouvez commencer par le package de personnalisation de secours (installé avec la visionneuse d’aide) et modifier le nom du fichier selon vos besoins.  Le \<locale> fichier Branding_. MShC est un fichier zip dont l’extension de fichier est remplacée par. MShC. par conséquent, il vous suffit de remplacer l’extension. MShC par. zip et d’extraire le contenu.  Voir ci-dessous pour les éléments de package de personnalisation et modifier le cas échéant (par exemple, remplacez le logo par le logo VSP et la référence du logo dans le fichier Branding.xml, mettez à jour Branding.xml par informations spécifiques à VSP, etc.).
+Pour les vsp qui implémentent des packages de personnalisation personnalisés (contenu VSP, SelfBranded = true), vous pouvez commencer par le package de personnalisation de secours (installé avec la visionneuse d’aide) et modifier le nom du fichier selon vos besoins.  Le \<locale> fichier Branding_. MShC est un fichier zip dont l’extension de fichier est remplacée par. MShC. par conséquent, il vous suffit de changer l’extension. MShC pour .zip et extraire le contenu.  Voir ci-dessous pour les éléments de package de personnalisation et modifier le cas échéant (par exemple, remplacez le logo par le logo VSP et la référence du logo dans le fichier Branding.xml, mettez à jour Branding.xml par informations spécifiques à VSP, etc.).
 
 Une fois toutes les modifications effectuées, créez un fichier zip contenant les éléments de personnalisation souhaités et modifiez l’extension en. MShC.
 
@@ -461,17 +461,17 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | ViewColorizedText | Afficher les couleurs |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemple) |
 | VBDeclaration | Déclaration |
-| VBUsage | Usage |
+| VBUsage | Utilisation |
 | Fonctionnalités : | **Commentaires, pieds de page et logo** |
 | Utilisez : | Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo. |
 | **Element** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
-| Intellectuelle | © 2013 Microsoft Corporation. Tous droits réservés. |
+| Intellectuelle | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>Envoyer \</a> des commentaires sur cette rubrique à Microsoft. |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| Fonctionnalités : | **AVERTISSEMENT** |
+| Fonctionnalités : | **Clause d’exclusion de responsabilité** |
 | Utilisez : | Ensemble de exclusions spécifiques à la casse pour le contenu traduit par une machine. |
 | **Element** | **Valeur** |
 | MT_Editable | Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps. |
@@ -608,14 +608,14 @@ Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres gra
 |tabLeftBD.gif|Utilisé pour restituer le conteneur d’extraits de code||
 |tabRightBD.gif|Utilisé pour restituer le conteneur d’extraits de code||
 |vs_logo_bk.gif|Utilisé pour les références de logo de contraste normal, telles que définies dans la balise Branding.xml \<LogoFileName> .  Pour les produits Visual Studio, le nom du logo est vs_logo_bk.gif.||
-|vs_logo_wh.gif|Utilisé pour les références à un logo élevé normal, tel que défini dans la balise Branding.xml \<LogoFileNameHC> .  Pour les produits Visual Studio, le nom du logo est vs_logo_wh.gif.||
+|vs_logo_wh.gif|Utilisé pour les références de logo à contraste élevé, comme défini dans Branding.xml balise \<LogoFileNameHC> .  Pour les produits Visual Studio, le nom du logo est vs_logo_wh.gif.||
 |ccOff.png|Graphique de sous-titrage||
 |ccOn.png|Graphique de sous-titrage||
 |ImageSprite.png|Utilisé pour restituer la zone réductible|graphique développé ou réduit|
 
 ## <a name="deploy-a-set-of-topics"></a>Déployer un ensemble de rubriques
 
-Il s’agit d’un didacticiel simple et rapide pour la création d’un jeu de déploiement de contenu de la visionneuse d’aide composé d’un fichier MSHA et de l’ensemble de fichiers CAB ou MSHCs contenant les rubriques. Le MSHA est un fichier XML qui décrit un ensemble de fichiers CAB ou MSHC. La visionneuse d’aide peut lire le MSHA pour obtenir une liste de contenu (le. CAB ou. Fichiers MSHC) disponibles pour l’installation locale.
+Il s’agit d’un didacticiel simple et rapide pour la création d’un jeu de déploiement de contenu de la visionneuse d’aide composé d’un fichier MSHA et de l’ensemble de fichiers CAB ou MSHCs contenant les rubriques. Le MSHA est un fichier XML qui décrit un ensemble de fichiers CAB ou MSHC. La visionneuse d’aide peut lire le MSHA pour obtenir une liste de contenu (le .CAB ou. Fichiers MSHC) disponibles pour l’installation locale.
 
 Il s’agit uniquement d’une introduction qui décrit le schéma XML très élémentaire pour la visionneuse d’aide MSHA.  Voici un exemple d’implémentation en dessous de cette brève présentation et de l’exemple fichiers HelpContentSetup. MSHA.
 
@@ -650,7 +650,7 @@ Exemple de fichier fichiers HelpContentSetup. MSHA : (Remplacez « nom du jeu 
 
 1. Créer un dossier local, par exemple « C:\SampleContent »
 
-2. Pour cet exemple, nous allons utiliser des fichiers MSHC pour contenir les rubriques.  Un MSHC est un fichier zip dont l’extension de fichier est passée de. zip à. MShC.
+2. Pour cet exemple, nous allons utiliser des fichiers MSHC pour contenir les rubriques.  Un MSHC est un fichier zip dont l’extension de fichier est passée de .zip à. MShC.
 
 3. Créez le fichier fichiers HelpContentSetup. MSHA sous la forme d’un fichier texte (le bloc-notes a été utilisé pour créer le fichier) et enregistrez-le dans le dossier indiqué ci-dessus (Voir l’étape 1).
 
@@ -706,7 +706,7 @@ Cette procédure pas à pas montre comment incorporer du contenu d’aide dans u
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Vue d’ensemble**
+**Vue d'ensemble**
 
 L' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 

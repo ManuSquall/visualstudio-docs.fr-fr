@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 966b08a912a7bab59998daf39590a6fd46920eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e5689c0108231be26ddf7d598227137f7bc1f7
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969527"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433777"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compiler le code de la machine à écrire (Node.js)
 
@@ -109,13 +109,13 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
 
    Bien que l’application soit générée automatiquement lorsque vous l’exécutez, nous souhaitons examiner un problème qui se produit pendant le processus de génération :
 
-   Si vous avez généré des mappages de sources, ouvrez le dossier spécifié dans l’option *outDir* et vous trouvez le ou les \* fichiers. js générés avec le \* ou les fichiers js. map générés.
+   Si vous avez généré des mappages de sources, ouvrez le dossier spécifié dans l’option *outDir* et vous trouvez le ou les fichiers de.js générés, \* ainsi que le \* ou les fichiers js. map générés.
 
    Les fichiers de mappage source sont requis pour le [débogage](../javascript/debug-nodejs.md).
 
 ### <a name="run-the-application"></a>Exécution de l'application
 
-Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application).
+Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-app).
 
 ## <a name="automate-build-tasks"></a>Automatiser les tâches de génération
 
