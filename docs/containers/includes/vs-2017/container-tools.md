@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53bf0d559d9737494567b079621879b97a403a95
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81389955"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111564700"
 ---
 Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry (ACR), un hub d’ancrage, Azure App Service ou votre propre registre de conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
 
@@ -45,12 +45,12 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 Un *fichier Docker*, la recette permettant de créer une image Docker finale, est créé dans le projet. Consultez les [Informations de référence sur Dockerfile](https://docs.docker.com/engine/reference/builder/) pour comprendre les commandes qu’il contient.
 
 ```
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/aspnet:2.1 AS base
 WORKDIR /app
 EXPOSE 59518
 EXPOSE 44364
 
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM mcr.microsoft.com/dotnet/sdk:2.1 AS build
 WORKDIR /src
 COPY HelloDockerTools/HelloDockerTools.csproj HelloDockerTools/
 RUN dotnet restore HelloDockerTools/HelloDockerTools.csproj
