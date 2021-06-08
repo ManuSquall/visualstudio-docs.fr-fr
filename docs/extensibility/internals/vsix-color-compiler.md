@@ -10,19 +10,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060703"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588460"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
-L’outil de compilateur couleur de l’extension Visual Studio est une application console qui prend un fichier. xml représentant les couleurs des thèmes Visual Studio existants et le remplace par un fichier. pkgdef afin que ces couleurs puissent être utilisées dans Visual Studio. Étant donné qu’il est facile de comparer les différences entre les fichiers. xml, cet outil est utile pour gérer les couleurs personnalisées dans le contrôle de code source. Il peut également être raccordé à des environnements de génération afin que la sortie de la génération soit un fichier. pkgdef valide.
+L’outil de compilateur couleur de l’extension Visual Studio est une application console qui prend un fichier .xml représentant les couleurs des thèmes Visual Studio existants et le remplace par un fichier. pkgdef afin que ces couleurs puissent être utilisées dans Visual Studio. Étant donné qu’il est facile de comparer les différences entre les fichiers .xml, cet outil est utile pour gérer les couleurs personnalisées dans le contrôle de code source. Il peut également être raccordé à des environnements de génération afin que la sortie de la génération soit un fichier. pkgdef valide.
 
  **Schéma XML de thème**
 
- Un fichier Theme. XML complet se présente comme suit :
+ Un fichier de .xml de thème complet se présente comme suit :
 
 ```xml
 <Themes>
@@ -63,7 +63,7 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 |-|-|
 |Clair|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
 |Sombre|{1ded0138-47ce-435e-84ef-9ec1f439b749}|
-|Blue|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|Bleu|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 |Contraste élevé|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
  **Catégorie**
@@ -81,7 +81,7 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 |Nom|Souhaitée Nom de la catégorie|
 |GUID|Souhaitée GUID de la catégorie (doit correspondre à la mise en forme du GUID)|
 
- **Color**
+ **Couleur**
 
  L' \<Color> élément définit une couleur pour un composant ou un état d’interface utilisateur. Le schéma d’affectation de noms préféré pour une couleur est [type d’interface utilisateur] [État]. N’utilisez pas le mot « Color », car il est redondant. Une couleur doit indiquer clairement le type d’élément et les situations, ou « État », pour lesquelles la couleur sera appliquée. Une couleur ne doit pas être vide et doit contenir l’un des éléments ou les \<Background> deux \<Foreground> . Les éléments de couleur sont définis comme suit :
 
@@ -114,7 +114,7 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 
  **Ensemble**
 
- Il s’agit d’un exemple simple de fichier Theme. XML valide :
+ Voici un exemple simple de fichier de .xml de thème valide :
 
 ```xml
 <Themes>
@@ -137,7 +137,7 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 
 |**Nom du commutateur**|**Remarques**|**Obligatoire ou facultatif**|
 |-|-|-|
-|Sans nom (fichier. Xml)|Il s’agit du premier paramètre sans nom. il s’agit du chemin d’accès au fichier XML à convertir.|Obligatoire|
+|Sans nom (fichier .xml)|Il s’agit du premier paramètre sans nom. il s’agit du chemin d’accès au fichier XML à convertir.|Obligatoire|
 |Sans nom (fichier. pkgdef)|Il s’agit du deuxième paramètre sans nom et est le chemin de sortie du fichier. pkgdef généré.<br /><br /> Valeur par défaut : \<XML Filename> . pkgdef|Facultatif|
 |/noLogo|La définition de cet indicateur arrête l’impression du produit et des informations de copyright.|Facultatif|
 |/?|Imprimer les informations d’aide.|Facultatif|
@@ -154,6 +154,8 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 - Cet outil requiert l’installation de la dernière version du runtime VC + +.
 
 - Seuls les fichiers uniques sont pris en charge. La conversion en bloc via des chemins de dossiers n’est pas prise en charge.
+
+- L’outil se trouve dans `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
 
 ## <a name="sample-output"></a>Exemple de sortie
  Le fichier. pkgdef généré par l’outil est semblable aux clés ci-dessous :

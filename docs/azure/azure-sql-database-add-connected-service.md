@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9e4a695a26e17e20fbd19081b863d9f108fc16b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26a01bfe2a34422f9596710f832a1c4af699fd3b
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841196"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588486"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Ajouter une connexion à Azure SQL Database
 
-Avec Visual Studio, vous pouvez connecter les éléments suivants à la base de données SQL Azure à l’aide de la fonctionnalité **services connectés** :
+Avec Visual Studio, vous pouvez connecter l’un des éléments suivants à Azure SQL Database à l’aide de la fonctionnalité **services connectés** :
 
 - Application console .NET Framework
 - ASP.NET MVC (.NET Framework) 
@@ -52,7 +52,7 @@ La fonctionnalité de service connecté ajoute l’ensemble des références et 
 
     ![Ajouter Azure SQL Database Service](./media/azure-sql-database-add-connected-service/azure-sql-database.png)
 
-    Si vous n’êtes pas déjà connecté, connectez-vous à votre compte Azure. Si vous n’avez pas de compte Azure, vous pouvez vous inscrire pour bénéficier d’une [version d’évaluation gratuite](https://azure.microsoft.com/account/free).
+    Si vous n’êtes pas déjà connecté, connectez-vous à votre compte Azure. Si vous n’en avez pas, vous pouvez demander un [essai gratuit](https://azure.microsoft.com/account/free).
 
 1. Dans l’écran **configurer l’Azure SQL Database** , sélectionnez un Azure SQL Database existant, puis sélectionnez **suivant**.
 

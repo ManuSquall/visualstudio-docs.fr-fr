@@ -1,6 +1,6 @@
 ---
 title: Csc, tâche | Microsoft Docs
-description: Cet article décrit la tâche du CSC MSBuild, qui encapsule le compilateur C#, csc.exe et génère des fichiers. exe,. dll ou. netmodule.
+description: Cet article décrit la tâche du CSC MSBuild, qui encapsule le compilateur C#, csc.exe et produit des fichiers .exe, .dll ou. netmodule.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901350"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588473"
 ---
 # <a name="csc-task"></a>Csc (tâche)
 
@@ -50,6 +50,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 | `Deterministic` | Paramètre `Boolean` facultatif.<br/><br/> Quand la valeur est `true`, indique au compilateur de générer un assembly dont le contenu binaire est identique dans les compilations si les entrées sont identiques.<br/><br/>Pour plus d’informations, consultez [-deterministic (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Paramètre `String` facultatif.<br /><br /> Spécifie la liste d’avertissements à désactiver. Pour plus d’informations, consultez [-nowarn (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Paramètre `String` facultatif.<br /><br /> Traite les commentaires de documentation pour les diriger vers un fichier XML. Pour plus d’informations, consultez [-doc (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |
+| `EmbedAllSources` | Paramètre `Boolean` facultatif.<br /><br /> Incorporer tous les fichiers sources du PDB. Pour plus d’informations, consultez [-embed (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically) |
 | `EmitDebugInformation` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, la tâche génère des informations de débogage et les place dans un fichier de base de données du programme (.pdb). Si `false`, la tâche n’émet aucune information de débogage. La valeur par défaut est `false`. Pour plus d’informations, consultez [-debug (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `ErrorReport` | Paramètre `String` facultatif.<br /><br /> Fournit un moyen pratique de signaler une erreur interne C# à Microsoft. Ce paramètre peut avoir la valeur `prompt`, `send` ou `none`. Si le paramètre est défini sur `prompt`, vous recevez une invite lorsqu’une erreur interne du compilateur se produit. Cette invite vous permet d’envoyer un rapport de bogue par voie électronique à Microsoft. Si le paramètre est défini sur `send`, un rapport de bogue est automatiquement envoyé. Si le paramètre est défini sur `none`, l’erreur est signalée uniquement dans la sortie de texte du compilateur. La valeur par défaut est `none`. Pour plus d’informations, consultez [-errorreport (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option). |
 | `FileAlignment` | Paramètre `Int32` facultatif.<br /><br /> Spécifie la taille des sections dans le fichier de sortie. Pour plus d’informations, consultez [-filealign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option). |

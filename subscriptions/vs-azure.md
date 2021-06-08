@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 05/18/2021
+ms.date: 06/07/2021
 ms.topic: how-to
 description: Découvrez comment activer l’offre Azure DevTest pour les crédits individuels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 0888f20c80dbacad0237fdd12f987870c4834f2b
-ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
+ms.openlocfilehash: 4946efb3aa32fd7c80a2926ad2b83c15cfe92452
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110231975"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588438"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -43,7 +43,7 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 0. Ajoutez un signet à la [portail Azure](https://portal.azure.com) pour un accès facile à l’avenir.
 
 ## <a name="maintain-a-subscription-to-use-monthly-credits"></a>Conserver un abonnement pour utiliser des crédits mensuels
-Si votre abonnement Visual Studio expire ou est supprimé, tous les avantages de l’abonnement, y compris le crédit individuel mensuel de développement/test Azure, ne sont plus disponibles. Pour continuer à utiliser Azure avec un crédit mensuel, vous devez renouveler votre abonnement, acheter un nouvel abonnement ou transférer l’avantage Azure vers un abonnement actif qui comprend le crédit individuel Azure dev/test.  
+Si votre abonnement Visual Studio expire ou est supprimé, tous les avantages de l’abonnement, y compris le crédit individuel mensuel de développement/test Azure, ne sont plus disponibles. Pour continuer à utiliser Azure avec un crédit mensuel, vous devez renouveler votre abonnement, acheter un nouvel abonnement et/ou transférer vos ressources Azure vers un autre abonnement Azure qui comprend le crédit individuel Azure dev/test.  
 
 > [!IMPORTANT]
 > Vous devez transférer vos ressources vers un autre abonnement Azure avant la désactivation de votre abonnement Azure actuel, ou vous perdrez l’accès à vos données.  
@@ -72,23 +72,23 @@ Si vous avez des questions sur le transfert de ressources, sur la suppression de
 ## <a name="eligibility"></a>Éligibilité
 |                 Niveau d'abonnement / Programme                 |           Avantage           |                         Renouvelable ?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise standard               |     Crédit mensuel de 150 dollars US     |                             Yes                             |
-|              Abonnement Visual Studio Enterprise avec GitHub Enterprise               |     Crédit mensuel de 150 dollars US     |                             Yes                             |
+|              Visual Studio Enterprise standard               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|              Abonnement Visual Studio Enterprise avec GitHub Enterprise               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |               Visual Studio Enterprise mensuel               |        Non disponible        |                                                             |
-|             Visual Studio Professional standard              |     Crédit mensuel de 50 dollars US      |                             Yes
-|              Abonnement Visual Studio Professional avec GitHub Enterprise              |     Crédit mensuel de 50 dollars US     |                             Yes                             |
+|             Visual Studio Professional standard              |     Crédit mensuel de 50 dollars US      |                             Oui
+|              Abonnement Visual Studio Professional avec GitHub Enterprise              |     Crédit mensuel de 50 dollars US     |                             Oui                             |
 |              Visual Studio Professional mensuel              |        Non disponible        |                                                             |
-|                    Visual Studio Test Pro                    |     Crédit mensuel de 50 dollars US      |                             Yes                             |
-|                        Plateformes MSDN                        |     Crédit mensuel de 100 dollars US     |                             Yes                             |
-|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     Crédit mensuel de 150 dollars US     |                             Yes                             |
-|                Visual Studio Enterprise - FTE                |     Crédit mensuel de 150 dollars US     |                             Yes                             |
-|     Visual Studio Enterprise - Microsoft Partner Network     |     Crédit mensuel de 150 dollars US     |                             Yes                             |
+|                    Visual Studio Test Pro                    |     Crédit mensuel de 50 dollars US      |                             Oui                             |
+|                        Plateformes MSDN                        |     Crédit mensuel de 100 dollars US     |                             Oui                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|                Visual Studio Enterprise - FTE                |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|     Visual Studio Enterprise - Microsoft Partner Network     |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |    Visual Studio Professional - Microsoft Partner Network    |        Non disponible        |                                                             |
 |        Visual Studio Enterprise – Imagine (Standard)         |        Non disponible        |                                                             |
 |         Visual Studio Enterprise – Imagine (Premium)         |        Non disponible        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     Crédit mensuel de 150 dollars US     |                             Yes                             |
-|      Visual Studio Enterprise – MCT Software & Services      |     Crédit mensuel de 100 dollars US     |                             Yes                             |
-| Visual Studio Enterprise – MCT Software & Services Developer |     Crédit mensuel de 150 dollars US     |                             Yes                             |
+|             Visual Studio Enterprise – BizSpark              |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|      Visual Studio Enterprise – MCT Software & Services      |     Crédit mensuel de 100 dollars US     |                             Oui                             |
+| Visual Studio Enterprise – MCT Software & Services Developer |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 
 <sup>1</sup>  *inclut : non pour la revente (NFR), le MVP (Most Valuable Professional), le directeur régional (RD), le VSIP (Visual Studio Industry Partner) exclut : NFR de base*
 
