@@ -6,18 +6,18 @@ ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f1a400506f7766ba22ffbc1debde687b1709a21
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984901"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760924"
 ---
 # <a name="javascript-and-typescript-support"></a>Prise en charge de JavaScript et TypeScript
 
 Visual Studio pour Mac assure une prise en charge de JavaScript et TypeScript à travers la mise en surbrillance de la syntaxe, la mise en forme du code et IntelliSense.
 
-![Prise en charge de l’éditeur TypeScript](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![Prise en charge de l’éditeur TypeScript](/visualstudio/mac/media/tsjseditor-2019.gif)
 
 Pour plus d’informations sur l’écriture JavaScript, consultez les guides sur l’[écriture de code JavaScript](/scripting/javascript/writing-javascript-code).
 

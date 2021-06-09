@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af974731fac6842c38f2a0e4ccbc9f32748e29b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 011f04d05d468b23955527e05aebf9f6e45ce43c
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874793"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760989"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer C++ avec Visual Studio
 
@@ -54,7 +54,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 
@@ -62,7 +62,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, vous allez créer un projet d’application console C++. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -70,7 +70,7 @@ Tout d’abord, vous allez créer un projet d’application console C++. Le type
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **nouveau projet** , dans le volet gauche, développez **Visual C++** , puis choisissez **Bureau Windows**. Dans le volet central, choisissez **application console Windows**. Nommez ensuite le projet *-Démarrer-débogage*.
 
@@ -82,7 +82,7 @@ Tout d’abord, vous allez créer un projet d’application console C++. Le type
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Ouvrez Visual Studio 2019.
 
@@ -105,7 +105,7 @@ Tout d’abord, vous allez créer un projet d’application console C++. Le type
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 1. Dans *Get-Started-Debugging. cpp*, remplacez tout le code par défaut par le code suivant à la place :
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9a2d362bc9fd22f7bb1db2fa005534f2f67e3155
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616985"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760963"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -28,7 +28,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 
@@ -220,7 +220,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 1. Suivez les instructions de la [gestion des packages NPM](../javascript/npm-package-management.md#aspnet-core-projects) pour ajouter un `package.json` fichier à votre projet. Cela ajoute la prise en charge de NPM à votre projet.
 
    >[!NOTE]
-   > Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
+   > Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](/aspnet/core/client-side/libman/) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
 
 1. Dans cet exemple, ajoutez un fichier de définition de machine à écrire pour jQuery à votre projet. Incluez ce qui suit dans votre *package.js* fichier.
 

@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 06/08/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0aa395864aa05c268819e5da52d6fed80d96a56
-ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
+ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110395422"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761119"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,13 +29,18 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.1 | Libérer | 8 juin 2021 | 16.10.31402.337 |
+| 16.9.7 | Libérer | 8 juin 2021 | 16.9.31328.270 |
+| 16.7.16 | Libérer | 8 juin 2021 | 16.7.31327.30 |
+| 16.4.23| Libérer | 8 juin 2021 | 16.4.31327.141 |
+| 16.11.0 | Preview 1 | 25 mai 2021 | 16.11.31320.298 |
 | 16.10.0 | Libérer | 25 mai 2021 | 16.10.31321.278 |
 | 16.10.0 | Preview 4 | Le 18 mai 2021 | 16.10.31313.381 |
 | 16.9.6 | Libérer | Le 18 mai 2021 | 16.9.31313.79 |
-| 16.10.0 | Preview 3 | 11 mai, 2021 | 16.10.31306.274 |
-| 16.9.5 | Libérer | 11 mai, 2021 | 16.9.31229.75 |
-| 16.7.15 | Libérer | 11 mai, 2021 | 16.7.31229.181 |
-| 16.4.22| Libérer | 11 mai, 2021 | 16.4.31229.387 |
+| 16.10.0 | Preview 3 | 11 mai 2021 | 16.10.31306.274 |
+| 16.9.5 | Libérer | 11 mai 2021 | 16.9.31229.75 |
+| 16.7.15 | Libérer | 11 mai 2021 | 16.7.31229.181 |
+| 16.4.22| Libérer | 11 mai 2021 | 16.4.31229.387 |
 | 16.10.0 | Préversion 2.1 | 22 avril 2021 | 16.10.31220.234 |
 | 16.10.0 | Préversion 2 | 14 avril 2021 | 16.10.31213.239 |
 | 16.9.4 | Libérer | 13 avril 2021 | 16.9.31205.134 |
@@ -231,7 +236,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.36 | Libérer | 11 mai, 2021 | 15.9.28307.1525 |
+| 15.9.36 | Libérer | 11 mai 2021 | 15.9.28307.1525 |
 | 15.9.35 | Libérer | 13 avril 2021 | 15.9.28307.1500 |
 | 15.9.34 | Libérer | 9 mars 2021 | 15.9.28307.1440 |
 | 15.9.33 | Libérer | 10 février 2021 | 15.9.28307.1401 |

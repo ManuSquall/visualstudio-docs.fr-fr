@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 056996782d2b38adb96ee53250cc3ea0c0f75596
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683544"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761158"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C#, Visual Basic)
 
@@ -32,13 +32,13 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 1. Ouvrez Visual Studio et créez le projet.
 
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+   Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
    Dans la boîte de dialogue **nouveau projet** dans le volet gauche, développez **C#** ou **Visual Basic**, puis choisissez **.net Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Nommez ensuite le projet *MyProfilerApp*.
 
    Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
@@ -58,7 +58,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
    Visual Studio ouvre votre nouveau projet.
 
-2. Ouvrez *Program.cs* et remplacez tout le code par le code suivant :
+2. Ouvrez le *programme. cs* et remplacez tout le code par le code suivant :
 
     ```csharp
     using System;

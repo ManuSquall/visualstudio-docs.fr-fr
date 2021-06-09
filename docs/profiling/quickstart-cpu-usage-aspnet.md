@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: aa0c95e3a9f3598cd6399b565adb75faccac22a8
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683626"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761145"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET Core)
 
@@ -32,7 +32,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 1. Ouvrez Visual Studio et créez le projet.
 
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+   Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
    Dans la boîte de dialogue **nouveau projet** , dans le volet gauche, développez **Visual C#**, puis choisissez **Web**. Dans le volet central, choisissez **ASP.net application Web (.net Core)**. Nommez ensuite le projet *MyProfilingApp_MVC*.
 
@@ -41,7 +41,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
    Dans la boîte de dialogue qui s’affiche, choisissez **MVC** dans le volet central, puis cliquez sur **OK**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Dans Visual Studio 2019, choisissez **créer un nouveau projet** dans la fenêtre démarrer. Si la fenêtre démarrer n’est pas ouverte, choisissez  >  **fenêtre démarrer** le fichier, puis **créer un nouveau projet**.
 
    Tapez **application Web** dans la zone de recherche, choisissez **C#** comme langage, choisissez **ASP.net Core application Web (Model-View-Controller)**, puis cliquez sur **suivant**. Dans l’écran suivant, nommez le projet *MyProfilingApp_MVC*, puis choisissez **suivant**.
@@ -169,7 +169,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
     ```
 
     ::: moniker-end
-    ::: moniker range="vs-2019"
+    ::: moniker range=">=vs-2019"
 
     ```csharp
     public IActionResult Privacy()
@@ -215,7 +215,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
    ::: moniker range="vs-2017"
    Dans Visual Studio 2017, cliquez sur le lien à **propos** de pour exécuter le code.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Dans Visual Studio 2019, cliquez sur le lien **confidentialité** pour exécuter le code.
    ::: moniker-end
 

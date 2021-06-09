@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86b5e44f5b9e2fec07fef4e54a48ff89ebb2ff74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c68cc67d768dbe2b1c42671a02360e5cef2b56b
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861632"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760937"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C++)
 
@@ -28,18 +28,18 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 1. Ouvrez Visual Studio et créez le projet.
 
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+   Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
    Dans la boîte de dialogue **nouveau projet** dans le volet gauche, développez **Visual C++**, puis choisissez **Bureau Windows**. Dans le volet central, choisissez **application console Windows**. Nommez ensuite le projet *Diagnostics_Get_Started_Native*.
 
    Si vous ne voyez pas le modèle de projet d' **application console Windows** , choisissez le lien **ouvrir le Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** . Visual Studio Installer est lancé. Choisissez la charge **de travail développement Desktop en C++** , puis choisissez **modifier**.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
