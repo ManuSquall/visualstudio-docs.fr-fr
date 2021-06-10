@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007a7f42448ab8026d8acdc262ce5e0dcdd99b28
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912202"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877726"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
 Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer (*.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou condition préalable, qui apparaît dans la boîte de dialogue **composants requis** pour ClickOnce est un package du programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
@@ -63,20 +63,17 @@ CustomBootstrapperPackage
 Ensuite, copiez les fichiers redistribuables dans l’emplacement du dossier du programme d’amorçage. Pour plus d’informations, consultez [Comment : créer un package de programme d’amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
 ```
-*\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper*
+*\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages*
 ```
 
-ou, pour les versions antérieures de Visual Studio
+ou
 
 ```
-*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+*<VS Install Path>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages*
 ```
 
-or
-
-```
-*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
-```
+>[!NOTE]
+>Le chemin d’accès indiqué ci-dessus sous le chemin d’installation de Visual Studio fonctionne à partir de la version Visual Studio 2019 Update 7.
 
 Vous pouvez également trouver l’emplacement du dossier du programme d’amorçage à partir de la valeur de **chemin d’accès** dans la clé de Registre suivante :
 

@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a9d1fc91dcb385a9250dde3adb47c0d9553147f
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927585"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877713"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Guide pratique pour créer un package du programme d'amorçage localisé
 Après avoir créé un package du programme d’amorçage, vous pouvez créer des versions localisées du package du programme d’amorçage en créant deux fichiers supplémentaires pour chaque paramètre régional : un fichier de termes de contrat de licence logiciel (tel que *EULA. rtf*) et un manifeste de package (*package.xml*).
 
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.
 
-1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
+1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
 
 2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.
 
@@ -41,9 +41,9 @@ Après avoir créé un package du programme d’amorçage, vous pouvez créer de
 
 1. Créez un dossier nommé en fonction du nom des paramètres régionaux.
 
-     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft \\ \<BootstrapperPackageName> \\ SDKs\Windows\v7.0A\Bootstrapper\Packages*
+     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft SDKs\ClickOnce \\ \<BootstrapperPackageName> \\ Bootstrapper\Packages*
 
-     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (86) \Microsoft \\ \<BootstrapperPackageName> \\ SDKs\Windows\v7.0A\Bootstrapper\Packages*
+     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (x86) \Microsoft SDKs\ClickOnce \\ \<BootstrapperPackageName> \\ Bootstrapper\Packages*
 
      Le tableau suivant indique les noms de dossiers qui peuvent correspondre à des paramètres régionaux.
 
@@ -78,19 +78,22 @@ Après avoir créé un package du programme d’amorçage, vous pouvez créer de
 
 1. Créez un dossier nommé *fr*. Le nom du dossier doit correspondre au nom des paramètres régionaux.
 
-     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft \\ SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1*
+     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft SDKs\ClickOnce \\ Bootstrapper\Packages\DotNetFX35SP1*
 
-     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (86) \Microsoft \\ SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1*
+     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (x86) \Microsoft SDKs\ClickOnce \\ Bootstrapper\Packages\DotNetFX35SP1*
 
 2. Placez une version localisée des termes du contrat de licence logiciel dans le dossier *fr* .
 
-3. Copiez le fichier *\Program Files (x86) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* dans le dossier *fr* , puis ouvrez le fichier dans le concepteur XML.
+3. Copiez le fichier *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* dans le dossier *fr* , puis ouvrez le fichier dans le concepteur XML.
 
 4. Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes d'erreur soient en français.
 
 5. Remplacez la `<String Name="Culture">` valeur par *fr*.
 
 6. Enregistrez le fichier *package.xml* .
+
+>[!NOTE]
+> À compter de Visual Studio 2019 Update 7 Release, les packages du programme d’amorçage seront également découverts sous le chemin *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages*.
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)

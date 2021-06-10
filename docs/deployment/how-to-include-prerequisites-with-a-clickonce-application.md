@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7791308de670b209433708e69ec473780342858
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b41529182b7cca8cea8f94206601b7a818d35420
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900634"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877739"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Guide pratique pour inclure les composants requis avec une application ClickOnce
 Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Quand vous publiez une application et que vous choisissez **Télécharger les composants requis à partir de l’emplacement de mon application**, une erreur se produit lorsque les packages d’installation ne sont pas dans le dossier **Packages**.
@@ -28,6 +28,9 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 1. Dans l’Explorateur de fichiers, ouvrez le dossier **Packages**.
 
     Par défaut, le chemin d’accès est `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` .
+
+>[!NOTE]
+> À compter de Visual Studio 2019 Update 7 Release, les packages du programme d’amorçage seront également découverts sous le chemin *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages*.
 
 2. Ouvrez le dossier des composants prérequis que vous voulez ajouter, puis ouvrez le dossier de langage de votre version installée de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (par exemple, **fr** pour le français).
 
@@ -47,7 +50,7 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 
 6. Copiez le fichier dans le dossier racine du composant requis.
 
-    Par exemple, pour la condition préalable Windows Installer 4,5, copiez le fichier dans le dossier *\packages\ WindowsInstaller4_5* .
+    Par exemple, pour la condition préalable .NET Framework 4.7.2, copiez le fichier dans le dossier *\Packages\DotNetFX472* .
 
     Vous pouvez maintenant distribuer le package d'installation avec votre application.
 
