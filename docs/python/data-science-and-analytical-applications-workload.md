@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c12c8a0979ab081ea2f09faeeccdb5a8a9d2175
+ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839186"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112016305"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
@@ -37,8 +37,8 @@ La charge de travail Applications de science et analyse des données, que vous s
 Python et R sont deux des principaux langages de script utilisés pour la science des données. Ces deux langages sont faciles à apprendre et sont pris en charge par un écosystème étendu de packages. Ces packages permettent de répondre aux besoins de nombreux scénarios, comme l’acquisition de données, le nettoyage, l’apprentissage de modèle, le déploiement et le traçage. F# est également un puissant langage .NET fonctionnel qui convient pour effectuer une grande variété de tâches de traitement des données.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Python est l’un des principaux langages de script utilisés pour la science des données. Python est facile à apprendre et est pris en charge par un écosystème étendu de packages. Ces packages permettent de répondre aux besoins de nombreux scénarios, comme l’acquisition de données, le nettoyage, l’apprentissage de modèle, le déploiement et le traçage. F# est également un puissant langage .NET fonctionnel qui convient à une grande variété de tâches de traitement des données. (Pour le langage R, nous recommandons [Azure Notebooks](https://notebooks.azure.com).)
+::: moniker range=">=vs-2019"
+Python est l’un des principaux langages de script utilisés pour la science des données. Python est facile à apprendre et est pris en charge par un écosystème étendu de packages. Ces packages permettent de répondre aux besoins de nombreux scénarios, comme l’acquisition de données, le nettoyage, l’apprentissage de modèle, le déploiement et le traçage. F # est également un puissant langage .NET fonctionnel qui est adapté à une grande variété de tâches de traitement des données.)
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
@@ -48,7 +48,7 @@ Python est l’un des principaux langages de script utilisés pour la science de
 
 Par défaut, la charge de travail installe les options suivantes, que vous pouvez modifier dans la section Résumé de la charge de travail dans le programme d’installation de Visual Studio :
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 - Prise en charge du langage F# pour poste de travail
 - Python :
   - Prise en charge du langage Python
