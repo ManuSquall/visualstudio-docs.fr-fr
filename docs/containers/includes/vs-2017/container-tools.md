@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 53bf0d559d9737494567b079621879b97a403a95
-ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
+ms.openlocfilehash: 92b97cb1091722bdf0caa6e7708e015612c545ad
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111564700"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112044718"
 ---
-Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry (ACR), un hub d’ancrage, Azure App Service ou votre propre registre de conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
+Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry, sur le hub d’ancrage, les Azure App Service ou sur votre propre registre de conteneurs. Dans cet article, nous allons publier sur Container Registry.
 
 ## <a name="prerequisites"></a>Prérequis
 
