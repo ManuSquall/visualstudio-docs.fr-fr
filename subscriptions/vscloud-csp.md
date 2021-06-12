@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
-ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 09c905d113920a0bb55aed8851d3fb62c92a39bf
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104673019"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042849"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
@@ -71,7 +71,7 @@ Voici comment interpréter les différents éléments de cette feuille de calcul
 
 | Catégorie du compteur    |   Nom                 |  Unités                                |           De quoi s’agit-il ?                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
+| Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
 
 Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un client donné) chaque mois pour chaque abonnement Visual Studio. C’est pourquoi il y a deux lignes pour chaque option d’abonnement. Une ligne affiche une « Valeur minimale » de 0, ce que vous devez interpréter comme prix de base pour les unités de 1 à 5. L’autre ligne affiche une « Valeur minimale » de 5. Il s’agit de la remise de 5 % qui s’applique aux unités 6 et plus.
@@ -116,4 +116,4 @@ A : Pas pour l'instant. Vos clients peuvent profiter des [tarifs de développem
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Consultez le [Forum aux](vscloud-billing-faq.md) questions sur la facturation dans le Cloud pour obtenir des réponses aux questions de facturation courantes.
+Consultez le [Forum aux](vscloud-billing-faq.yml) questions sur la facturation dans le Cloud pour obtenir des réponses aux questions de facturation courantes.

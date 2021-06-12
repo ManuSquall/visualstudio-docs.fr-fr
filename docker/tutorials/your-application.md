@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082576"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042940"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Générer et exécuter l’exemple d’application TODO
 
@@ -30,7 +30,9 @@ Avant de pouvoir exécuter l’application, vous devez récupérer le code sourc
 
 1. Assurez-vous que Docker pour Windows ou l’édition Community de l’Ancrable est installé sur l’ordinateur local. Consultez [docker pour Windows documentation sur l’installation](https://docs.docker.com/docker-for-windows/install/). Le processus d’installation rend le fichier ZIP contenant l’exemple disponible à l’adresse localhost.
 
-1. [Téléchargez le fichier zip](https://github.com/docker/getting-started/tree/master/app). Ouvrez le fichier ZIP et veillez à extraire le contenu.
+1. Téléchargez la source de l’application à partir du référentiel d' [ancrage](https://github.com/docker/getting-started) . Vous pouvez télécharger le fichier ZIP pour référentiel. Pour télécharger le fichier ZIP, utilisez le bouton de **code** vert et choisissez **Télécharger zip**. Ouvrez le fichier ZIP et extrayez tout pour extraire la source de l’application à partir du dossier de l' *application* vers un dossier sur votre disque dur.
+
+   ![Capture d’écran montrant le bouton de code vert et l’option Télécharger ZIP](media/download-zip.png)
 
 1. Une fois l’extraction effectuée, utilisez votre éditeur de code favori pour ouvrir le projet. Si vous avez besoin d’un éditeur, vous pouvez utiliser [Visual Studio code](https://code.visualstudio.com/). Vous devez voir le `package.json` et les deux sous-répertoires ( `src` et `spec` ).
 

@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006404"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042858"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -429,7 +429,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 Chaque type shim généré contient une instance de l'interface `IShimBehavior`, via la propriété `ShimBase<T>.InstanceBehavior`. Le comportement est utilisé chaque fois qu'un client appelle un membre d'instance qui n'a pas fait l'objet d'un shim de façon explicite.
 
-Si le comportement n’a pas été défini explicitement, il utilise l’instance retournée par la propriété statique `ShimsBehaviors.Current`. Par défaut, cette propriété retourne un comportement qui lève une exception `NotImplementedException`.
+Si le comportement n’a pas été défini explicitement, il utilise l’instance retournée par la propriété statique `ShimBehaviors.Current`. Par défaut, cette propriété retourne un comportement qui lève une exception `NotImplementedException`.
 
 Ce comportement peut être modifié à tout moment en définissant la propriété `InstanceBehavior` sur toute instance de shim. Par exemple, l’extrait de code suivant remplace le shim par un comportement qui ne fait rien ou retourne la valeur par défaut du type de retour, c’est-à-dire `default(T)` :
 
@@ -437,26 +437,26 @@ Ce comportement peut être modifié à tout moment en définissant la propriét�
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
-shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
+shim.InstanceBehavior = ShimBehaviors.DefaultValue;
 ```
 
-Le comportement peut également être modifié globalement pour toutes les instances ayant fait l'objet d'un shim pour lesquelles la propriété `InstanceBehavior` n'a pas été définie explicitement en définissant la propriété statique `ShimsBehaviors.Current` :
+Le comportement peut également être modifié globalement pour toutes les instances ayant fait l'objet d'un shim pour lesquelles la propriété `InstanceBehavior` n'a pas été définie explicitement en définissant la propriété statique `ShimBehaviors.Current` :
 
 ```csharp
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
+ShimBehaviors.Current = ShimBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>Détecter les accès à l’environnement
 
-Il est possible d'associer un comportement à tous les membres, y compris les méthodes statiques, d'un type particulier en assignant le comportement `ShimsBehaviors.NotImplemented` à la propriété statique `Behavior` du type shim correspondant :
+Il est possible d'associer un comportement à tous les membres, y compris les méthodes statiques, d'un type particulier en assignant le comportement `ShimBehaviors.NotImplemented` à la propriété statique `Behavior` du type shim correspondant :
 
 ```csharp
 // unit test code
 // assigning the not implemented behavior
-ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
+ShimMyClass.Behavior = ShimBehaviors.NotImplemented;
 // shorthand
 ShimMyClass.BehaveAsNotImplemented();
 ```
@@ -526,7 +526,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Les shims ne peuvent pas être utilisés sur tous les types de la bibliothèque de classes de base .NET **mscorlib** et **System** dans .NET Framework, et dans **System. Runtime** dans .net Core ou .net 5,0.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 - [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog de Peter Provost : shims Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)

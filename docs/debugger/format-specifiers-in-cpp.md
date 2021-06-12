@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483191"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042975"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
 
@@ -104,6 +104,7 @@ Les tableaux suivants décrivent les spécificateurs de format que vous pouvez u
 |nr|Supprimer l'élément « Affichage brut »|
 |nvo|Afficher l’élément « affichage brut » pour les valeurs numériques uniquement|
 |!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<customized representation>|4|
+|traitée|Affiche des informations sur le handle Win32|0x000000000000009c| Affiche des informations utiles sur la poignée, comme l’ID de thread, etc. |
 
 ::: moniker-end
 

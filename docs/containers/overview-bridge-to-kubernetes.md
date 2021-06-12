@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
-ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
+ms.openlocfilehash: 838589e0dd81232de25b88989d621a07fb22f972
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526152"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043053"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -52,6 +52,9 @@ En outre, Bridge to Kubernetes permet de répliquer des variables d’environnem
 
 > [!NOTE]
 > Pour la durée de la connexion au cluster (15 minutes supplémentaires), Bridge to Kubernetes exécute un processus appelé *EndpointManager* avec des autorisations d’administrateur sur votre ordinateur local.
+
+> [!NOTE]
+> Vous pouvez déboguer en parallèle, avec plusieurs services, mais vous devez lancer autant d’instances de Visual Studio que de services que vous souhaitez déboguer. Assurez-vous que vos services écoutent sur des ports différents localement, puis configurez-les et déboguez-les séparément. L’isolation n’est pas prise en charge dans ce scénario.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuration supplémentaire avec KubernetesLocalProcessConfig. YAML
 

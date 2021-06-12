@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 5117ffb8731ef06f054b0ecbfc651aef2563078e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1981b3876d2e42e992ef261738da2443edfc114
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962624"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042910"
 ---
 # <a name="how-to-test-a-c-dll"></a>Comment tester une DLL C++
 
@@ -26,7 +26,7 @@ Cette rubrique crée également une solution Visual Studio unique et des projets
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Créer un projet**, tapez « test » dans la zone de recherche, puis définissez **Langage** sur C++. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
@@ -50,7 +50,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Notez les points suivants :
+     Sachez que :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 
@@ -81,7 +81,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 ## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Nouveau projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « DLL » dans la zone de recherche. Dans la liste des résultats, choisissez **Application de test unitaire (Windows universelle - C++/CX)**.
 

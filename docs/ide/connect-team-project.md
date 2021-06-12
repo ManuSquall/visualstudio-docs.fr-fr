@@ -2,17 +2,17 @@
 title: Se connecter aux projets dans Team Explorer
 description: Découvrez comment utiliser Team Explorer dans Visual Studio pour travailler avec les membres de l’équipe pour développer et gérer des projets.
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2021
+ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 78a71911bb4334e04a085d91ff51238d34981beb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 4d3d2c005f32aaebacc251414218f5ae03edf546
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216603"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043014"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 
@@ -27,7 +27,7 @@ Utilisez la fenêtre d’outil **Team Explorer** pour coordonner vos efforts de 
 Team Explorer connecte Visual Studio aux référentiels de contrôle de version Team Foundation (TFVC) et aux projets hébergés sur [Azure DevOps services](/azure/devops/user-guide/what-is-azure-devops-services) ou sur un [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true) local (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
 
 > [!IMPORTANT]
-> Avec la dernière version de Visual Studio 2019 [**version 16,8**](/visualstudio/releases/2019/release-notes/), la nouvelle expérience de contrôle de version git est désormais activée par défaut. Si vous souhaitez en savoir plus sur la façon dont elle est comparée à Team Explorer, consultez la [**comparaison côte à côte des pages git et Team Explorer**](git-team-explorer-feature-comparison.md) .
+> Avec la publication de Visual Studio 2019 [**version 16,8**](/visualstudio/releases/2019/release-notes-history), l’expérience de contrôle de version git est activée par défaut. Si vous souhaitez en savoir plus sur la façon dont elle est comparée à Team Explorer, consultez la [**comparaison côte à côte des pages git et Team Explorer**](../version-control/git-team-explorer-feature-comparison.md) .
 >
 > Toutefois, si vous préférez continuer à utiliser Team Explorer, accédez à **Outils** > **options** > **environnement** > **Aperçu fonctionnalités** , puis activez la case à cocher **nouvelle expérience utilisateur git** .
 
@@ -99,9 +99,9 @@ La façon dont vous utilisez Team Explorer pour vous connecter à un projet dép
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="vs-2017&quot;
 
-![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png "La page Team Explorer-page d’hébergement de Visual Studio.")
+![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png &quot;La page Team Explorer-page d’hébergement de Visual Studio.")
 
 > [!TIP]
 > Si vous ouvrez Visual Studio et que **Team Explorer** ne s’affiche pas, ouvrez-le en choisissant **Afficher**  >  les **Team Explorer** dans la barre de menus, ou en appuyant sur **CTRL** + **&#92;**, **CTRL** + **M**.
@@ -118,7 +118,7 @@ Pour se connecter à un projet :
 
    ![Bouton Gérer les connexions dans Team Explorer](media/team-explorer/manage-connections.png "Le bouton Team Explorer-gérer les connexions dans Visual Studio.")
 
-1. Sur la page **Se connecter**, choisissez **Gérer les connexions** > **Se connecter à un projet**.
+1. Sur la page de **connexion** , choisissez **gérer connexions** > **connexion à un projet**.
 
    ![Se connecter à un projet dans Team Explorer](media/team-explorer/connect-project.png "L’option Team Explorer-se connecter à un projet dans Visual Studio.")
 
