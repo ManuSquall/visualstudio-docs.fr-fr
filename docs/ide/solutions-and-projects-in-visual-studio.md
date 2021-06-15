@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les solutions et les projets
+title: Que sont les projets de solutions Visual Studio &amp; ?
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
@@ -22,16 +22,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878498"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066967"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>Que sont les solutions et les projets dans Visual Studio ?
 
-Cette page décrit le concept d’un *projet* et d’une *solution* dans Visual Studio. Elle aborde également brièvement la fenêtre outil Explorateur de solutions et explique comment créer un nouveau projet.
+Dans cet article, vous allez découvrir ce qu’est un *projet* et une *solution* dans Visual Studio. Elle aborde également brièvement la fenêtre outil Explorateur de solutions et explique comment créer un nouveau projet.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Projets et solutions dans Visual Studio pour Mac](/visualstudio/mac/projects-and-solutions).

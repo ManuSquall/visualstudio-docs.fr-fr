@@ -1,8 +1,8 @@
 ---
-title: Utiliser des solutions et des projets
+title: Créer des &amp; solutions utiliser des projets Visual Studio &amp;
 description: Découvrez la différence entre les solutions et les projets et comment les utiliser dans Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
@@ -16,14 +16,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956800"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066941"
 ---
-# <a name="work-with-solutions-and-projects"></a>Utiliser des solutions et des projets
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Créer, utiliser et supprimer des projets et solutions Visual Studio
+
+Dans cet article, vous allez apprendre à créer et à utiliser des projets Visual Studio à partir de zéro pour stocker les artefacts dont vous avez besoin pour générer vos applications.  Si vous n’êtes pas familiarisé avec les projets dans Visual Studio, consultez cette vue d’ensemble des [projets et des solutions](solutions-and-projects-in-visual-studio.md).  Pour savoir comment créer rapidement un projet à partir d’un modèle, consultez [créer un projet à partir d’un modèle](create-new-project.md).
 
 Les *projets* regroupent tous les éléments dont vous avez besoin pour générer votre application dans Visual Studio, tels que les fichiers de code source, les bitmaps, les icônes, et les références de composant et de service. Quand vous créez un projet, Visual Studio crée une *solution* dans laquelle est placé votre projet. Vous pouvez ensuite ajouter d’autres projets nouveaux ou existants à la solution. Les solutions peuvent également contenir des fichiers qui ne sont pas associés à un projet spécifique.
 
@@ -142,7 +144,7 @@ Pour supprimer définitivement une solution ou d’autres composants de votre sy
 
 ### <a name="permanently-delete-a-solution"></a>Pour supprimer définitivement une solution
 
-Vous pouvez accéder à l’Explorateur de fichiers dans Windows à l’aide de Explorateur de solutions dans Visual Studio. Voici comment faire.
+Vous pouvez accéder à l’Explorateur de fichiers dans Windows à l’aide de Explorateur de solutions dans Visual Studio. Voici comment procéder.
 
 1. Dans **Explorateur de solutions**, dans le menu contextuel (menu contextuel) de la solution que vous souhaitez supprimer, sélectionnez **ouvrir le dossier dans l’Explorateur de fichiers**.
 
