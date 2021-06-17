@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 1866fa7e0dfdb3a51104a64dfecd1001e646d7e1
+ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111761119"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112126591"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,9 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.0 | Préversion 2 | Le 15 juin 2021 | 16.11.31410.223 |
+| 16.10.2 | Libérer | Le 15 juin 2021 | 16.10.31410.357 |
+| 16.9.8 | Libérer | Le 15 juin 2021 | 16.9.31409.214 |
 | 16.10.1 | Libérer | 8 juin 2021 | 16.10.31402.337 |
 | 16.9.7 | Libérer | 8 juin 2021 | 16.9.31328.270 |
 | 16.7.16 | Libérer | 8 juin 2021 | 16.7.31327.30 |

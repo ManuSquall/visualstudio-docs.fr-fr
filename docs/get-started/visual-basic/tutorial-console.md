@@ -1,7 +1,7 @@
 ---
 title: 'Didacticiel : prise en main de Visual Basic'
 description: Découvrez comment créer des applications console Visual Basic dans Visual Studio, étape par étape.
-ms.custom: seodec18, get-started
+ms.custom: acquisition, seodec18, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: cc9557c4b7558488fd8757d3c50920debe134568
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295492"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112465"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, nous allons créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -45,7 +45,7 @@ Tout d’abord, nous allons créer un projet d’application Visual Basic. Le ty
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Nommez ensuite le projet *WhatIsYourName*.
 
@@ -67,7 +67,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
-1. Quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**.
+1. Quittez la boîte de dialogue **nouveau projet** et, dans la barre de menus supérieure, choisissez **Outils** > **afficher les outils et les fonctionnalités**.
 
 1. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -115,7 +115,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ## <a name="create-a-what-is-your-name-application"></a>Créer une application « Quel est votre nom »
 
-Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment procéder :
+Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment faire :
 
  ::: moniker range="vs-2017"
 
@@ -177,7 +177,7 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017 puis, dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Ouvrez Visual Studio 2017, puis dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier *CalculateThis*.
 

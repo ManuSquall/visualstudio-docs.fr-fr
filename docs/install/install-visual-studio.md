@@ -1,9 +1,9 @@
 ---
-title: Installer Visual Studio
+title: Installation de Visual Studio
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
 ms.date: 12/13/2019
-ms.custom: contperf-fy21q1
+ms.custom: acquisition
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -13,21 +13,21 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97e354dfb1208ec7306cb797049cd8ca82d0d8db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4db39c55ff669477efc833c2d482897d529b30b
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852117"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113044"
 ---
-# <a name="install-visual-studio"></a>Installer Visual Studio
+# <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -135,7 +135,7 @@ Exécutez le fichier du programme d’amorçage pour installer Visual Studio Ins
 
 ## <a name="step-4---choose-workloads"></a>Étape 4 : Choisir les charges de travail
 
-Une fois le programme d’installation installé, vous pouvez l’utiliser pour personnaliser votre installation en sélectionnant les ensembles de fonctionnalités, ou les charges de travail, que vous souhaitez. Voici comment faire.
+Une fois le programme d’installation installé, vous pouvez l’utiliser pour personnaliser votre installation en sélectionnant les ensembles de fonctionnalités, ou les charges de travail, que vous souhaitez. Voici comment procéder.
 
  ::: moniker range="vs-2017"
 

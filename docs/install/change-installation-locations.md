@@ -2,26 +2,26 @@
 title: Sélectionner les emplacements d'installation
 description: Découvrez comment réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en plaçant le cache de téléchargement, les composants partagés, les kits SDK et les outils sur d’autres lecteurs. Par exemple, déplacez des fichiers depuis le lecteur C vers le lecteur D.
 ms.date: 03/30/2019
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e9ee5972a0f1acba37a6b6b417df00a925e5558
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868632"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112489"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Sélectionner les emplacements d’installation dans Visual Studio
 
@@ -40,7 +40,7 @@ Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votr
    > [!NOTE]
    > L’emplacement d’installation de certains outils et SDK est régi par des règles différentes. Ces outils et SDK sont toujours installés sur votre lecteur système, même si vous choisissez un autre emplacement.
 
-Vous êtes prêt à commencer ? Voici comment faire.
+Vous êtes prêt à commencer ? Voici comment procéder.
 
 ::: moniker range="vs-2017"
 

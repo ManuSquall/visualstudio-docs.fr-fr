@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96269f67b11def6fa34ddd1fc7540f9a0462a73e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7a349cb79ca22869038e46d7ee27b2425119997
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876873"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113024"
 ---
 # <a name="create-sharepoint-solutions"></a>Créer des solutions SharePoint
-  Vous pouvez créer des applications SharePoint dans Visual Studio au lieu de les créer dans SharePoint Designer. Visual Studio privilégie un développement SharePoint rapide en fournissant des fonctionnalités telles que des outils de débogage avancés, IntelliSense, la saisie semi-automatique des instructions et des modèles de projet. Visual Studio tire également parti de langages et outils .NET Framework avancés. Vous pouvez développer des projets SharePoint à l'aide de Visual Basic ou de Visual C#, et vous pouvez développer des applications pour les projets SharePoint à l'aide de JavaScript.
 
- Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) et [Création d’applications pour SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+  Vous pouvez créer des applications SharePoint dans Visual Studio au lieu de les créer dans SharePoint Designer. Visual Studio privilégie un développement SharePoint rapide en fournissant des fonctionnalités telles que des outils de débogage avancés, IntelliSense, la saisie semi-automatique des instructions et des modèles de projet. Visual Studio tire également parti de langages et outils .NET Framework avancés. Vous pouvez développer des projets SharePoint à l'aide de Visual Basic ou de Visual C#, et vous pouvez développer des applications pour les projets SharePoint à l'aide de JavaScript.
 
 > [!NOTE]
 > Découvrez comment utiliser le nouveau [modèle de complément SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) pour étendre l’expérience SharePoint de vos utilisateurs. Ces compléments ont une empreinte très faible par rapport aux solutions SharePoint, et vous pouvez les créer en utilisant presque toutes les technologies de programmation web, comme HTML5, JavaScript, CSS3 et XML.

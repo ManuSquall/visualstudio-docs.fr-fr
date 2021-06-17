@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501770"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112928"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modifier les charges de travail, les composants et les modules linguistiques de Visual Studio
 

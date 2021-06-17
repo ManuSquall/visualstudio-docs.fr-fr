@@ -1,6 +1,8 @@
 ---
 title: Créer votre première application Node.js
-ms.custom: SEO-VS-2020
+ms.custom:
+- acquisition
+- SEO-VS-2020
 description: Dans ce guide de démarrage rapide, vous créez une application Node.js dans Visual Studio
 ms.date: 03/25/2021
 ms.technology: vs-javascript
@@ -14,12 +16,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8a36986842cdac85a8a3e6ab474024b8db552ee7
-ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
+ms.openlocfilehash: d9397cb121ab3aa68d368a0cc7e1ab709411f6b6
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111433712"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113163"
 ---
 # <a name="quickstart-create-your-first-nodejs-app-with-visual-studio"></a>Démarrage rapide : créer votre première Node.js application avec Visual Studio
 
@@ -129,7 +131,7 @@ Visual Studio peut vous aider à configurer votre environnement, y compris l’i
 
 1. Dans le navigateur, vérifiez que vous voyez un message « Hello World » et le numéro de port local.
 
-Félicitations ! Vous avez créé une application Node.js simple avec Visual Studio. Pour approfondir, poursuivez la section **didacticiels** de la table des matières.
+Félicitations ! Vous avez créé une application Node.js simple avec Visual Studio. Pour approfondir, poursuivez la section **didacticiels** de la table des matières.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

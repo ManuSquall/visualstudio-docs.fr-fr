@@ -3,6 +3,7 @@ title: 'Démarrage rapide : créer un service web ASP.NET Core en F#'
 description: Découvrez comment créer un service web ASP.NET Core dans Visual Studio en F#, pas à pas.
 ms.date: 08/24/2018
 ms.topic: quickstart
+ms.custom: acquisition
 author: cartermp
 ms.author: phcart
 manager: andrehal
@@ -11,12 +12,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbb85c41a01a03461bc1a73bdb58620e8a0c472f
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70180315"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113200"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Démarrage rapide : utiliser Visual Studio pour créer votre premier service Web ASP.NET Core en F\#
 
@@ -42,7 +43,7 @@ Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de proje
 
 1. Ouvrez Visual Studio.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual F#**, puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, puis **OK**.
 

@@ -4,6 +4,7 @@ description: Découvrez la différence entre les projets et les solutions et com
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
+- acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 11db2d793f284557f709a4f72362cfc89a77a059
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682599"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113033"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Présentation des projets et solutions
 
@@ -280,7 +281,7 @@ Dans le fichier *Calendar.cs*, la ligne qui contient l’attribut <xref:System.R
 
    Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
-   ![Propriétés d’un projet](media/tutorial-projects-netcore-properties.png "Boîte de dialogue Propriétés du projet dans Visual Studio.")
+   ![Propriétés du projet](media/tutorial-projects-netcore-properties.png "Boîte de dialogue Propriétés du projet dans Visual Studio.")
 
 1. Explorez d’autres onglets des pages de propriétés du projet, par exemple **Générer** et **Déboguer**. Ces onglets sont différents pour différents types de projets.
 

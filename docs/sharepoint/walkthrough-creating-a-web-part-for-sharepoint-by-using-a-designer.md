@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 066ae0ab9c23ebb1d55f6c0480d7aeed4255fb4f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 55f69875b06428c9bbe179e73dd6ea9b4ef40b8e
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217734"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112448"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -52,15 +52,21 @@ Tout d’abord, créez un projet de composant WebPart à l’aide du modèle de 
 1. Commencez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] par utiliser l’option **exécuter en tant qu’administrateur** .
 
 2. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
-
-     La boîte de dialogue **Nouveau projet** apparaît.
+::: moniker range="=vs-2017"
 
 3. Dans la boîte de dialogue **nouveau projet** , sous **Visual C#** ou **Visual Basic**, développez **Office/SharePoint**, puis choisissez la catégorie **solutions SharePoint** .
 
 4. Dans la liste des modèles, choisissez le modèle **SharePoint 2013-composant Visual Web part** , puis choisissez le bouton **OK** .
 
      L' **Assistant Personnalisation de SharePoint** s’affiche. À l’aide de cet Assistant, vous pouvez spécifier le site que vous utiliserez pour déboguer le projet et le niveau de confiance de la solution.
+::: moniker-end
+::: moniker range=">=vs-2019"
+3. Dans la boîte de dialogue **créer un nouveau projet** , sélectionnez le *projet vide SharePoint** pour la version particulière de SharePoint que vous avez installée. Par exemple, si vous avez SharePoint 2019 installer, sélectionnez le modèle **de projet sharepoint 2019-vide** .
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
 
+4. Dans la zone **nom** , entrez **TestProject1**, puis cliquez sur le bouton **créer** .
+
+::: moniker-end
 5. Dans la section **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez la case **d’option déployer en tant que solution de batterie** .
 
 6. Choisissez le bouton **Terminer** pour accepter le site SharePoint local par défaut.

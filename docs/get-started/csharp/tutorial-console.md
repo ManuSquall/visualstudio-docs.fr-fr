@@ -1,7 +1,7 @@
 ---
 title: 'Didacticiel : créer une application console C# simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
-ms.custom: seodec18, get-started
+ms.custom: acquisition, seodec18, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 12f00bedba6078fc5c471d02b92630b49dd35afa
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 7317af5667f09ff30d0f2cb54d1399da9d0358de
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295622"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113248"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -38,7 +38,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Commençons par créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -69,7 +69,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
-1. Quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**.
+1. Quittez la boîte de dialogue **nouveau projet** et, dans la barre de menus supérieure, choisissez **Outils** > **afficher les outils et les fonctionnalités**.
 
 1. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -331,7 +331,7 @@ Plutôt que de nous appuyer sur la classe `program` pour gérer tout le code, no
 
 La classe `Calculator` gérera le gros du travail de calcul et la classe `Program` gèrera l’interface utilisateur et le travail de capture d’erreur.
 
-Commençons.
+Allons-y.
 
 1. Supprimez tout ce qui se trouve dans l' `Calculator` espace de noms entre ses accolades ouvrantes et fermantes :
 

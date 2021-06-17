@@ -17,32 +17,36 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f839f4148054b4e10a7fc1703aa8f03549bdbf36
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948828"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112898"
 ---
 # <a name="develop-sharepoint-solutions"></a>Développer des solutions SharePoint
+
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour obtenir la liste des types de projets disponibles, consultez modèles de projet [et d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.
 
- Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) et [Compléments SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Pour plus d’informations sur les compléments SharePoint, consultez [créer des compléments SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Éléments d’un projet SharePoint
+
  Les nœuds sous un projet SharePoint sont appelés *éléments SharePoint*. Les éléments SharePoint peuvent contenir également un ou plusieurs sous-fichiers, appelés *fichiers d'éléments SharePoint*, tels que les fichiers de configuration [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , les formulaires .aspx, etc.
 
  Au lieu de créer des projets à l'aide de modèles de projet préremplis avec des fichiers d'éléments de projet, vous pouvez utiliser le modèle **Projet vide** pour créer un projet SharePoint vide et ajouter manuellement des éléments de projet. Les projets SharePoint peuvent également contenir un ou plusieurs fichiers de fonctionnalités (pour l'activation dans SharePoint) et un fichier de package permettant de distribuer le projet.
 
 ### <a name="special-nodes"></a>Nœuds spéciaux
+
  Chaque projet SharePoint contient deux nœuds qui ne peuvent pas être renommés, supprimés, coupés, copiés ou déplacés du projet. Il s'agit des nœuds suivants :
 
 - Fonctionnalités
-- Package
+- Paquet
 
   Ces deux nœuds apparaissent toujours dans tous les projets SharePoint même si aucune fonctionnalité ou package n'est défini pour le projet.
 
 #### <a name="features-node"></a>Nœud fonctionnalités
+
  Le nœud **Fonctionnalités** contient une ou plusieurs fonctionnalités de projet SharePoint. Une fonctionnalité est un conteneur d'extensions pour SharePoint. Une fois déployée sur un serveur SharePoint, la fonctionnalité peut être ajoutée à des définitions de site ou activée individuellement par les administrateurs SharePoint sur les sites SharePoint. Pour plus d’informations, consultez [Utilisation des fonctionnalités](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14)).
 
  Quand vous ajoutez un élément, comme un type de contenu ou une instance de liste, à un projet SharePoint, il est ajouté à une fonctionnalité dans le nœud **Fonctionnalités** . La portée de l'élément détermine s'il est ajouté à une fonctionnalité nouvelle ou existante. Si le nouvel élément a la même portée qu'une fonctionnalité existante, il est ajouté à cette fonctionnalité. Sinon, l'élément est ajouté à une nouvelle fonctionnalité.
@@ -52,11 +56,13 @@ ms.locfileid: "99948828"
  Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature *x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.
 
 #### <a name="package-node"></a>Nœud du package
- Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé package de *solution*, est. Basé sur CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le nœud **Package** contient également un fichier nommé Package.wspdef, c'est-à-dire un fichier de définition [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.
+
+ Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé package de *solution*, est .CAB à partir d’un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le nœud **Package** contient également un fichier nommé Package.wspdef, c'est-à-dire un fichier de définition [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.
 
  Vous pouvez afficher ou modifier le contenu du package dans le concepteur de packages en double-cliquant sur le nœud du package ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**. Pour plus d’informations, consultez [créer des packages de solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>Propriétés des projets et des éléments de projet SharePoint
+
  Les projets SharePoint, tout comme les autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , présentent les propriétés dans la fenêtre Propriétés et dans la page Propriétés. Les propriétés affichées dépendent du nœud sélectionné.
 
  Quand un projet, élément de projet, ou nœud de fichier d'élément de projet SharePoint est sélectionné dans l' **Explorateur de solutions**, les propriétés suivantes s'affichent dans la fenêtre ou la page Propriétés :
@@ -109,7 +115,7 @@ ms.locfileid: "99948828"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Modèles de projets et d'éléments de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Décrit le projet SharePoint et les modèles d'élément de projet disponibles dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Guide pratique pour ajouter des éléments à un projet SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Explique comment ajouter de nouveaux éléments ou des éléments existants à un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
@@ -131,6 +137,7 @@ ms.locfileid: "99948828"
 |[Boîte de dialogue Sélecteur d’URL &#40;le développement SharePoint dans Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Décrit une boîte de dialogue que vous pouvez utiliser pour ajouter des références de chemin d'accès aux ressources dans votre projet ou sur le serveur SharePoint local.|
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Prise en main &#40;le développement SharePoint dans Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Parcourir les connexions SharePoint à l’aide de Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

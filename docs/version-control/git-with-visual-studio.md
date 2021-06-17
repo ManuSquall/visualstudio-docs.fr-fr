@@ -9,12 +9,12 @@ author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 7e8f428ea82fb36abf944b06c22e73f1b9ca9fb6
+ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729310"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112126556"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -184,7 +184,7 @@ Vous pouvez également utiliser les basculements pour afficher/masquer les diff�
 
 ## <a name="personalize-your-git-settings"></a>Personnaliser vos paramètres git
 
-Pour personnaliser et personnaliser vos paramètres git au niveau du référentiel, ainsi qu’au niveau global, accédez aux   >  **paramètres** git dans la barre de menus ou aux **Outils**  >  **options**  >  **contrôle de code source** dans la barre de menus. Ensuite, choisissez les options souhaitées.
+Pour personnaliser et personnaliser vos paramètres git au niveau du référentiel, ainsi qu’au niveau global, accédez aux   >  **paramètres** git dans la barre de menus ou aux **Outils**  >  **options**  >  **contrôle de code source** dans la barre de menus. Ensuite, choisissez les [options](git-settings.md) souhaitées.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
 

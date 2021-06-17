@@ -8,16 +8,18 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: SEO-VS-2020
+ms.custom:
+- acquisition
+- SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1cefae42025407e0252b5aedc28e979e0d86debc
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939940"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113172"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
@@ -48,7 +50,7 @@ Les étapes suivantes créent un projet vide qui sert de conteneur pour l’appl
 
     ![Boîte de dialogue Nouveau projet avec le projet web Python sélectionné](media/quickstart-python-00-web-project.png)
 
-    Si vous ne voyez pas les modèles de projets Python, exécutez **Visual Studio Installer**, sélectionnez **Plus** > **Modifier**, sélectionnez la charge de travail **Développement Python**, puis choisissez **Modifier**.
+    Si vous ne voyez pas les modèles de projet Python, exécutez l’Visual Studio installer **, sélectionnez** > **modifier**, sélectionnez la charge de travail **développement python** , puis choisissez **modifier**.
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](../python/media/installation-python-workload.png)
 
@@ -64,7 +66,7 @@ Les étapes suivantes créent un projet vide qui sert de conteneur pour l’appl
 
     ![Écran Créer un projet avec le projet web Python sélectionné](media/quickstart-python-00-web-project-2019a.png)
 
-    Si vous ne voyez pas les modèles de projets Python, exécutez **Visual Studio Installer**, sélectionnez **Plus** > **Modifier**, sélectionnez la charge de travail **Développement Python**, puis choisissez **Modifier**.
+    Si vous ne voyez pas les modèles de projet Python, exécutez l’Visual Studio installer **, sélectionnez** > **modifier**, sélectionnez la charge de travail **développement python** , puis choisissez **modifier**.
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](../python/media/installation-python-workload.png)
 

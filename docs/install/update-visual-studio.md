@@ -3,7 +3,7 @@ title: Mettre à jour Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment mettre à jour Visual Studio vers la version la plus récente, étape par étape.
 ms.date: 04/06/2021
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 9244c9e234c56b058dbfe92a4ef6a10d8c9c702d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547503"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113187"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -74,7 +74,7 @@ Vous pouvez rechercher une mise à jour et ensuite installer la mise à jour à 
 
 1. Enregistrez votre travail.
 
-1. Choisissez **Aide** > **Rechercher les mises à jour**.
+1. Choisissez **aide** > **Rechercher les mises à jour**.
 
      ![Nouveau menu aide dans Visual Studio version 15,6](media/vs-help-menu-check-for-updates.png "Nouveau menu aide dans Visual Studio version 15,6")
 
@@ -277,7 +277,7 @@ Vous pouvez également choisir le paramètre **Télécharger automatiquement les
 
 Voici comment faire :
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **options**.
 
 2. Développez **Environnement**, puis choisissez **Mises à jour de produits**.
 

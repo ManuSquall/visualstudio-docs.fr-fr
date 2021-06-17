@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8664606877f5393a98a78e32c6d396e1a5bcf4c1
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: 1860c399318dbe68c55db9b07068c3dd635481c9
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687688"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113063"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mise à jour pour la [version 16,10](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la version 16,10.** Voir les [notes de publication complètes](/visualstudio/releases/2019/release-notes/) | Afficher le [plan du produit](/visualstudio/productinfo/vs-roadmap)
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)

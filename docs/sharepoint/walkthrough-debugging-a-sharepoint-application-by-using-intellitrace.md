@@ -18,20 +18,20 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf7fa6c7255e05c465d6c209db5e9581a49aee64
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952653"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112842"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : déboguer une application SharePoint à l’aide d’IntelliTrace
 
 Avec IntelliTrace, vous pouvez déboguer plus facilement des solutions SharePoint. Les débogueurs traditionnels vous offrent uniquement une capture instantanée d’une solution à l’heure actuelle. Toutefois, vous pouvez utiliser IntelliTrace pour examiner les événements passés qui se sont produits dans votre solution et le contexte dans lequel ils se sont produits et accéder au code.
 
- Cette procédure pas à pas montre comment déboguer un projet SharePoint 2010 ou SharePoint 2013 dans Visual Studio à l’aide de Microsoft Monitoring Agent pour collecter des données IntelliTrace à partir d’applications déployées. Pour analyser ces données, vous devez utiliser Visual Studio Enterprise. Ce projet incorpore un récepteur de fonctionnalité qui, lorsque la fonctionnalité est activée, ajoute une tâche à la liste des tâches et une annonce à la liste annonces. Lorsque la fonctionnalité est désactivée, la tâche est marquée comme terminée et une deuxième annonce est ajoutée à la liste des annonces. Toutefois, la procédure contient une erreur logique qui empêche le projet de s’exécuter correctement. À l’aide d’IntelliTrace, vous allez Rechercher et corriger l’erreur.
+ Cette procédure pas à pas montre comment déboguer un projet SharePoint dans Visual Studio à l’aide de Microsoft Monitoring Agent pour collecter des données IntelliTrace à partir d’applications déployées. Pour analyser ces données, vous devez utiliser Visual Studio Enterprise. Ce projet incorpore un récepteur de fonctionnalité qui, lorsque la fonctionnalité est activée, ajoute une tâche à la liste des tâches et une annonce à la liste annonces. Lorsque la fonctionnalité est désactivée, la tâche est marquée comme terminée et une deuxième annonce est ajoutée à la liste des annonces. Toutefois, la procédure contient une erreur logique qui empêche le projet de s’exécuter correctement. À l’aide d’IntelliTrace, vous allez Rechercher et corriger l’erreur.
 
- **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux solutions SharePoint 2010 et SharePoint 2013 qui ont été créées dans Visual Studio.
+ **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux solutions SharePoint qui ont été créées dans Visual Studio.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -59,7 +59,7 @@ Vous devez disposer des éléments suivants pour exécuter cette procédure pas 
 
 Tout d’abord, vous créez un projet SharePoint vide qui possède un récepteur de fonctionnalité.
 
-1. Créez un projet de solution SharePoint 2010 ou SharePoint 2013, puis nommez-le **IntelliTraceTest**.
+1. Créez un projet de solution SharePoint ciblant la version de SharePoint que vous avez installée et nommez-le **IntelliTraceTest**.
 
      L' **Assistant Personnalisation de SharePoint** s’affiche, dans lequel vous pouvez spécifier à la fois le site SharePoint pour votre projet et le niveau de confiance de la solution.
 
