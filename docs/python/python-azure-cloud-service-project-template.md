@@ -7,16 +7,17 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom: seodec18
+monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2de0f255da54d5bd8abf865f6534041d88bbbca3
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912433"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254834"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
@@ -26,7 +27,7 @@ Un [service cloud](/azure/cloud-services/) se compose d’un nombre quelconque d
 
 Cet article contient des détails sur le modèle de projet et les autres prises en charge dans Visual Studio 2017 et ultérieur (les versions antérieures sont similaires, mais présentent quelques différences). Pour plus d’informations sur l’utilisation d’Azure à partir de Python, visitez le [centre de développement Azure Python](/azure/python/).
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 1. Installez le [Kit de développement logiciel (SDK) Azure .net pour Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), qui est requis pour utiliser le modèle de service Cloud.
 1. Dans Visual Studio, sélectionnez **fichier**  >  **nouveau**  >  **projet**, puis recherchez « Azure Python » et sélectionnez **service Cloud Azure** dans la liste :
@@ -81,7 +82,7 @@ Une fois que chaque machine virtuelle s’active, il exécute le script *Configu
 
 Pour finir, les rôles de travail exécutent *LaunchWorker.ps1*, qui démarre l’exécution de votre script Python. Les rôles web initialisent IIS et commencent à prendre en charge les requêtes web.
 
-## <a name="dependencies"></a>Les dépendances
+## <a name="dependencies"></a>Dépendances
 
 Pour l’offre Services cloud, le script *ConfigureCloudService.ps1* utilise `pip` afin d’installer un ensemble de dépendances Python. Les dépendances doivent être spécifiées dans un fichier nommé *requirements.txt* (personnalisable en modifiant *ConfigureCloudService.ps1*). Le fichier est exécuté avec `pip install -r requirements.txt` dans le cadre de l’initialisation.
 
@@ -89,7 +90,7 @@ Notez que les instances de service cloud n’incluent aucun compilateur C, ce qu
 
 pip et ses dépendances, ainsi que les packages contenus dans le fichier *requirements.txt*, sont téléchargés automatiquement et peuvent être pris en compte dans l’utilisation de la bande passante facturable. Consultez [Gérer les packages nécessaires](managing-required-packages-with-requirements-txt.md) pour plus d’informations sur la gestion des fichiers *requirements.txt*.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si votre rôle web ou de travail ne se comporte pas correctement après le déploiement, vérifiez les points suivants :
 

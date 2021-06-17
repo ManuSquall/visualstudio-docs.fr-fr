@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104805989"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254847"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -31,7 +31,17 @@ Vous créez un projet à partir d’un modèle à l’aide de **fichier**  >  **
 
 ![Boîte de dialogue Nouveau projet pour les applications web](media/projects-new-project-dialog-web.png)
 
+::: moniker range="<=vs-2017"
+
 Le modèle générique **Projet web**, mentionné précédemment, propose un projet Visual Studio vide sans code et sans autre hypothèse mis à part qu’il s’agit d’un projet Python. Pour plus d’informations sur le modèle **Service cloud Azure**, consultez [Projets de service cloud Azure pour Python](python-azure-cloud-service-project-template.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Le modèle générique **Projet web**, mentionné précédemment, propose un projet Visual Studio vide sans code et sans autre hypothèse mis à part qu’il s’agit d’un projet Python.
+
+::: moniker-end
 
 Tous les autres modèles reposent sur les frameworks web Bottle, Flask ou Django et appartiennent à trois groupes généraux, comme décrit dans les sections qui suivent. Les applications créées à partir de l’un de ces modèles contiennent suffisamment de code pour exécuter et déboguer l’application localement. Chacun de ces modèles fournit également [l’objet d’application WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) nécessaire aux serveurs web de production.
 
@@ -79,7 +89,11 @@ Si vous utilisez le contrôle de code source, vous pouvez généralement ignorer
 
 Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier *requirements.txt* en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
+::: moniker range="<=vs-2017"
+
 Microsoft Azure Cloud Services *prend en charge* le fichier *requirements.txt*. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md) pour plus d’informations.
+
+::: moniker-end
 
 ## <a name="debugging"></a>Débogage
 
@@ -141,11 +155,15 @@ Pour l’instant, la méthode de création recommandée pour les applications Py
 
 Si vous disposez de paramètres pour un autre framework que vous souhaitez partager, ou si vous souhaitez demander des paramètres pour un autre framework, signalez le [problème sur GitHub](https://github.com/Microsoft/PTVS/issues).
 
+::: moniker range="<=vs-2017"
+
 ## <a name="convert-a-project-to-azure-cloud-service"></a>Convertir un projet en projet Azure Cloud Service
 
 La commande **convertir en Microsoft Azure projet de service Cloud** (image ci-dessous) ajoute un projet de service Cloud à votre solution. Ce projet comprend les paramètres de déploiement et la configuration pour les machines virtuelles et les services à utiliser. Utilisez la commande **Publier** sur le projet cloud à déployer sur Cloud Services. La commande **Publier** sur le projet Python effectue toujours le déploiement sur Sites web. Pour plus d’informations, consultez [projets de service Cloud Azure](python-azure-cloud-service-project-template.md).
 
 ![Commande Convertir en projet Microsoft Azure Cloud Service](media/template-web-convert-menu.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

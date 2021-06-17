@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881644"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254808"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -88,14 +88,13 @@ Pour tester rapidement la prise en charge de Python après avoir suivi les étap
     | **Prise en charge des modèles Cookiecutter** | Installe l’interface utilisateur graphique Cookiecutter pour découvrir des modèles, entrer des options de modèle et créer des projets et fichiers. Consultez [Utiliser l’extension Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Prise en charge de Python web** | Installe des outils pour le développement web incluant la prise en charge de l’édition de code HTML, CSS et JavaScript, ainsi que des modèles pour des projets utilisant les frameworks Bottle, Flask et Django. Consultez [Modèles de projet web Python](python-web-application-project-templates.md). |
     | **Outils de développement natifs Python** | Installe le compilateur C++ et d’autres composants nécessaires pour développer des extensions natives pour Python. Consultez [Créer une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md). Installez également la charge de travail **Développement bureautique avec C++** pour bénéficier d’une prise en charge complète. |
-    | **Outils principaux pour Azure Cloud Services** | Fournit une prise en charge supplémentaire pour le développement Azure Cloud Services en Python. Consultez [Projets Azure Cloud Service](python-azure-cloud-service-project-template.md). |
     ::: moniker-end
 
 1. Après l’installation, le programme d’installation fournit des options pour modifier, lancer, réparer ou désinstaller Visual Studio. Le bouton **Modifier** se transforme en **Mettre à jour** quand des mises à jour de Visual Studio sont disponibles pour les composants installés. (L’option **modifier** est ensuite disponible dans le menu déroulant.) Vous pouvez également lancer Visual Studio et le programme d’installation à partir du menu **Démarrer** de Windows en effectuant une recherche sur « Visual Studio ».
 
     ![Lancement, modification ou désinstallation de Visual Studio à partir du programme d’installation](media/installation-vs-launch.png)
 
-### <a name="troubleshooting"></a>Résolution des problèmes
+### <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez des problèmes lors de l’installation ou de l’exécution de Python dans Visual Studio, essayez ce qui suit :
 
@@ -105,7 +104,7 @@ Si vous rencontrez des problèmes lors de l’installation ou de l’exécution 
 
 **Exemple d’erreur** : Échec de démarrage du processus interactif : System.ComponentModel.Win32Exception (0x80004005) : Erreur inconnue (0xc0000135) sur Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
-## <a name="visual-studio-2015"></a>Visual Studio 2015
+## <a name="visual-studio-2015"></a>Visual Studio 2015
 
 1. Exécutez le programme d’installation de Visual Studio en sélectionnant **Panneau de configuration > Programmes et fonctionnalités**, **Microsoft Visual Studio 2015**, puis **Modifier**.
 

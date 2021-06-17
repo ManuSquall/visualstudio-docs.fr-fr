@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9a20ea3baee84657e26e2d98bb5726c20ceba9e
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936455"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254899"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -73,7 +73,9 @@ Visual Studio vous propose diverses méthodes pour configurer un projet Python, 
 
 ![Boîte de dialogue Nouveau projet avec les modèles Python](media/projects-new-project-dialog.png)
 
-Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2017 et ultérieur (tous les modèles ne sont pas disponibles dans toutes les versions antérieures) :
+::: moniker range="<=vs-2017"
+
+Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (tous les modèles ne sont pas disponibles dans toutes les versions antérieures) :
 
 | Modèle | Description |
 | --- | --- |
@@ -87,6 +89,24 @@ Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2017
 | **Application Windows Forms IronPython** | Une structure de projet utilisant IronPython avec l’interface utilisateur créée à partir du code avec Windows Forms. L’application s’exécute sans affichage d’une console. |
 | **Application d’arrière-plan (IoT)** | Prend en charge le déploiement de projets Python pour une exécution en tant que services d’arrière-plan sur les appareils. Visitez le [centre de développement Windows IoT](https://dev.windows.com/en-us/iot) pour plus d’informations. |
 | **Module d’extension Python** | Ce modèle s’affiche sous Visual C++ si vous avez installé les **Outils de développement natifs Python** avec la charge de travail Python dans Visual Studio 2017 ou ultérieur (consultez [Installation](installing-python-support-in-visual-studio.md)). Il fournit la structure de base pour une DLL d’extension C++, similaire à ce qui est décrit dans [Créer une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md). |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2019 (tous les modèles ne sont pas disponibles dans toutes les versions précédentes) :
+
+| Modèle | Description |
+| --- | --- |
+| [**À partir de code Python existant**](#create-project-from-existing-files) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
+| **Application Python** | Une structure de projet de base pour une nouvelle application Python avec un fichier source unique et vide. Par défaut, le projet s’exécute dans l’interpréteur de la console de l’environnement global par défaut, que vous pouvez modifier en [attribuant un autre environnement](selecting-a-python-environment-for-a-project.md). |
+| [**Projets Web**](python-web-application-project-templates.md) | Projets pour les applications web basées sur différents frameworks, notamment Bottle, Django et Flask. |
+| **Application IronPython** | Semblable au modèle Python Application (Application Python), mais utilise IronPython par défaut pour l’activation de l’interopérabilité .NET et le débogage en mode mixte avec les langages .NET. |
+| **Application WPF IronPython** | Une structure de projet utilisant IronPython avec les fichiers XAML Windows Presentation Foundation pour l’interface utilisateur de l’application. Visual Studio fournit un concepteur d’interface utilisateur XAML, code-behind peut être écrit en langage Python et l’application s’exécute sans affichage d’une console. |
+| **Page web Silverlight IronPython** | Un projet IronPython qui s’exécute dans un navigateur à l’aide de Silverlight. Le code Python de l’application est inclus dans la page web en tant que script. Une balise de script réutilisable extrait du code JavaScript qui initialise IronPython s’exécutant dans Silverlight, à partir duquel votre code Python peut interagir avec DOM. |
+| **Application Windows Forms IronPython** | Une structure de projet utilisant IronPython avec l’interface utilisateur créée à partir du code avec Windows Forms. L’application s’exécute sans affichage d’une console. |
+| **Application d’arrière-plan (IoT)** | Prend en charge le déploiement de projets Python pour une exécution en tant que services d’arrière-plan sur les appareils. Visitez le [centre de développement Windows IoT](https://dev.windows.com/en-us/iot) pour plus d’informations. |
+| **Module d’extension Python** | Ce modèle s’affiche sous Visual C++ si vous avez installé les **Outils de développement natifs Python** avec la charge de travail Python dans Visual Studio 2017 ou ultérieur (consultez [Installation](installing-python-support-in-visual-studio.md)). Il fournit la structure de base pour une DLL d’extension C++, similaire à ce qui est décrit dans [Créer une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md). |
+::: moniker-end
 
 > [!Note]
 > Python étant un langage interprété, les projets Python dans Visual Studio ne produisent aucun exécutable autonome, comme d’autres projets de langage compilé (C#, par exemple). Pour plus d’informations, consultez [Questions et réponses](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

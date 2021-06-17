@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923745"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254873"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -151,11 +151,11 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
 ::: moniker range=">=vs-2019"
 
-1. Sélectionnez **+ Ajouter un environnement** dans la fenêtre **Environnements Python** (ou dans la barre d’outils Python), qui ouvre la boîte de dialogue **Ajouter un environnement**. Dans cette boîte de dialogue, sélectionnez l’onglet **Environnement Conda** :
+1. Sélectionnez **Ajouter un environnement...** dans la fenêtre **environnements python** (ou à partir de la barre d’outils Python), qui ouvre la boîte de dialogue **Ajouter un environnement** . Dans cette boîte de dialogue, sélectionnez l’onglet **Environnement Conda** :
 
     ![Onglet Environnement Conda dans la boîte de dialogue Ajouter un environnement](media/environments/environments-conda-1-2019.png)
 
-1. Configurez les champs suivants :
+1. Configurez les champs suivants :
 
     | Champ | Description |
     | --- | --- |
@@ -231,7 +231,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
 ::: moniker range=">=vs-2019"
 
-1. Sélectionnez **+ Ajouter un environnement** dans la fenêtre **Environnements Python** (ou dans la barre d’outils Python), qui ouvre la boîte de dialogue **Ajouter un environnement**. Dans cette boîte de dialogue, sélectionnez l’onglet **Environnement existant** :
+1. Sélectionnez **Ajouter un environnement...** dans la fenêtre **environnements python** (ou à partir de la barre d’outils Python), qui ouvre la boîte de dialogue **Ajouter un environnement** . Dans cette boîte de dialogue, sélectionnez l’onglet **Environnement existant** :
 
     ![Onglet Environnement existant dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-1-2019.png)
 

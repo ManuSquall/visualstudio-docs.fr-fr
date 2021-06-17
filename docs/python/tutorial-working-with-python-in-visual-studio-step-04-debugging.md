@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839161"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254860"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
 
@@ -50,6 +50,8 @@ En plus de ses fonctionnalités de gestion de projets, de son expérience utilis
     > Pour fermer automatiquement la fenêtre sortie une fois le programme terminé, sélectionnez la commande de menu **Outils**  >  **options** , développez le nœud **python** , sélectionnez **débogage**, puis désactivez l’option **attendre l’entrée quand le processus s’arrête normalement**:
     >
     > ![Option de débogage Python permettant de fermer la fenêtre Sortie quand l’utilisateur quitte le programme normalement](media/vs-getting-started-python-22-debugging5.png)
+    >
+    > Pour plus d’informations sur le débogage, y compris les tâches telles que la définition des arguments de script et d’interpréteur, consultez [déboguer votre code python](debugging-python-in-visual-studio.md).
 
 1. Définissez un point d’arrêt sur l' `for` instruction en cliquant une fois dans la marge grise en fonction de cette ligne, ou en plaçant le signe insertion dans cette ligne et en utilisant la commande **Déboguer**  >  **basculer le point d’arrêt** (**F9**). Un point rouge apparaît dans la marge grise pour indiquer le point d’arrêt (comme indiqué par la flèche) :
 
@@ -68,7 +70,7 @@ En plus de ses fonctionnalités de gestion de projets, de son expérience utilis
     - **Interrompre tout** (**Ctrl**+**Alt**+**Pause**) interrompt un programme dont l’exécution est longue.
     - **Arrêter le débogage** (**Maj**+**F5**) arrête le programme où qu’il en soit, puis quitte le débogueur.
     - **Redémarrer** (**Ctrl**+**Maj**+**F5**) arrête le programme où qu’il en soit, puis le redémarre à partir du début dans le débogueur.
-    - **Afficher l’instruction suivante** (**Alt**+**Num** **&#42;**) passe à la ligne de code suivante à exécuter. Ceci est spécialement utile quand vous naviguez au sein de votre code pendant une session de débogage et que vous voulez retourner rapidement au point où le débogueur est en suspens.
+    - **Afficher l’instruction suivante** (**ALT** + **num** **&#42;**) bascule sur la ligne de code suivante à exécuter. Ceci est spécialement utile quand vous naviguez au sein de votre code pendant une session de débogage et que vous voulez retourner rapidement au point où le débogueur est en suspens.
     - **Pas à pas détaillé** (**F11**) exécute la ligne de code suivante, en entrant dans les fonctions appelées.
     - **Pas à pas principal** (**F10**) exécute la ligne de code suivante sans entrer dans les fonctions appelées.
     - **Pas à pas sortant** (**Shift** + **F11**) exécute le reste de la fonction active et s’interrompt dans le code appelant.

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912287"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254886"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -27,7 +27,7 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 | REPL | Description | Modification | Débogage | Images |
 | --- | --- | --- | --- | --- |
-| standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
+| Standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
 | Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non |
 | IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
 | IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte |
@@ -73,6 +73,8 @@ L’exception se produit quand des lignes de code supplémentaires sont nécessa
 
 <a name="meta-commands"></a> La fenêtre **interactive** prend également en charge plusieurs commandes meta. Toutes les métacommandes commencent par `$` ; vous pouvez taper `$help` pour obtenir la liste des métacommandes et `$help <command>` pour obtenir des détails relatifs à l’utilisation d’une commande spécifique.
 
+:::moniker range="<=vs-2017"
+
 | Métacommande | Description |
 | --- | --- |
 | `$$` | Insère un commentaire, utile pour commenter le code dans votre session. |
@@ -83,6 +85,22 @@ L’exception se produit quand des lignes de code supplémentaires sont nécessa
 | `$mod` | Remplace la portée actuelle par le nom de module spécifié. |
 | `$reset` | Réinitialise l’environnement d’exécution à l’état initial, tout en conservant l’historique. |
 | `$wait` | Respecte un temps d’attente correspondant au minimum au nombre de millisecondes spécifié. |
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+| Métacommande | Description |
+| --- | --- |
+| `$$` | Insère un commentaire, utile pour commenter le code dans votre session. |
+| `$cls`, `$clear` | Efface le contenu de la fenêtre de l’éditeur, en laissant intacts l’historique et le contexte d’exécution. |
+| `$help` | Affiche une liste de commandes ou une aide sur une commande spécifique. |
+| `$load` | Charge les commandes d’un fichier et s’exécute jusqu’à la fin. |
+| `$mod` | Remplace la portée actuelle par le nom de module spécifié. |
+| `$reset` | Réinitialise l’environnement d’exécution à l’état initial, tout en conservant l’historique. |
+| `$wait` | Respecte un temps d’attente correspondant au minimum au nombre de millisecondes spécifié. |
+
+:::moniker-end
 
 Les commandes peuvent également être étendues par les extensions Visual Studio en implémentant et en exportant `IInteractiveWindowCommand` ([exemple](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)).
 
