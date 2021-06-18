@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
-ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
+ms.openlocfilehash: b833551d00f4bd8fb158c848d3bf5b48173e563b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110660219"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306655"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -41,25 +41,25 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
 
 * Tout d’abord, voyons un exemple montrant comment créer une disposition avec une charge de travail pour l’anglais uniquement :
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Voici comment mettre à jour cette même disposition vers une version plus récente. Vous n’êtes pas obligé de spécifier les paramètres de ligne de commande supplémentaires. Les paramètres précédents étaient enregistrés et ils vont être utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * Voici comment mettre à jour votre disposition avec une version plus récente en mode sans assistance. L’opération de disposition exécute le processus d’installation dans une nouvelle fenêtre de console. La fenêtre reste ouverte pour que les utilisateurs puissent voir le résultat final, ainsi qu’un récapitulatif des erreurs qui se sont produites. Si vous effectuez une opération de disposition en mode sans assistance (par exemple, si vous avez un script qui est exécuté régulièrement pour mettre à jour votre disposition vers la version la plus récente), utilisez le paramètre `--passive` pour que le processus ferme automatiquement la fenêtre.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
 * Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail *développement Azure* .)  Désormais, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
@@ -70,7 +70,7 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
 
 * Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail *de développement Web et ASP.net* .)  Les charges de travail de développement Web, Azure et & ASP.NET sont désormais incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
@@ -98,6 +98,14 @@ Selon la configuration de votre environnement réseau, une mise à jour peut êt
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+* Les administrateurs peuvent mettre à jour les déploiements de clients de Visual Studio sans aucune intervention utilisateur avec deux commandes distinctes :
+  * Mettez tout d’abord à jour Visual Studio Installer : <br>```vs_enterprise.exe --quiet --update```
+  * Mettez ensuite à jour l’application Visual Studio proprement dite : <br>```vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 > [!NOTE]
 > Utilisez la [commande vswhere.exe](tools-for-managing-visual-studio-instances.md) pour identifier le chemin d’installation d’une instance existante de Visual Studio sur un ordinateur client.
 >
@@ -108,7 +116,7 @@ Selon la configuration de votre environnement réseau, une mise à jour peut êt
 
 Utilisez l’option `--verify` pour effectuer la vérification dans le cache hors connexion fourni. Elle contrôle si des fichiers de package sont manquants ou non valides. À la fin de la vérification, la liste des fichiers manquants et non valides est imprimée.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
@@ -126,7 +134,7 @@ Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la v
 
 Utilisez `--fix` pour effectuer la même vérification que `--verify` et pour tenter également de résoudre les problèmes identifiés. Le processus `--fix` nécessite une connexion Internet, ainsi vous devez vous assurer que votre ordinateur est connecté à Internet avant d’appeler `--fix`.
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
@@ -142,17 +150,17 @@ Quelques fichiers sont enregistrés à l’intérieur de chaque dossier GUID. Le
 
 Voici quelques exemples montrant comment utiliser l’option--clean :
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
 Vous pouvez aussi appeler le fichier vs_enterprise.exe à l’intérieur du répertoire &lt;layoutDir&gt;. Voici un exemple :
 
-```cmd
+```shell
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 

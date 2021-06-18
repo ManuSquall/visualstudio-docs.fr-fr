@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 15f54a3de7a0954238388bc5f414aa0cc971e39c
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: eeb2ee162a87b066c853d89e6920dce23a5370e0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565178"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306590"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur l’utilisation de ces listes, consultez les page
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 **Mise à jour pour la [version 16,8](/visualstudio/releases/2019/release-notes/)**
 

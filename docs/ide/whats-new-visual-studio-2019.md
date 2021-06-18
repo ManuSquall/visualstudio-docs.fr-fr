@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 05/28/2021
+ms.date: 06/17/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1860c399318dbe68c55db9b07068c3dd635481c9
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 2f571860d08d16d85e53148bc1023cb08a1c36d2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113063"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307776"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -220,20 +220,19 @@ Pour plus d’informations, consultez le billet de blog [Propriétés regroupeme
 
 ## <a name="whats-next"></a>Étapes suivantes
 
-Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Pour obtenir un enregistrement de ce que nous avons publié dans la version préliminaire jusqu’à ce jour, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview/)de la version préliminaire. Pour obtenir une liste de ce que nous envisageons de publier ensuite, consultez la feuille de [route de Visual Studio](/visualstudio/productinfo/vs-roadmap).
+Nous mettons à jour Visual Studio souvent grâce à de nouvelles fonctionnalités qui améliorent encore votre expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Pour obtenir un enregistrement de ce que nous avons publié dans la version préliminaire jusqu’à ce jour, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview/)de la version préliminaire. Pour obtenir une liste de ce que nous envisageons de publier ensuite, consultez la feuille de [route de Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-En attendant, voici une nouvelle fonctionnalité qui est actuellement en cours d’utilisation.
+En attendant, Voici les nouveautés actuellement en cours d’utilisation :
 
 - **Amélioration de l’expérience git dans Visual Studio 2019 (version préliminaire)**
 
-   Bien que la nouvelle expérience de contrôle de version git soit désormais activée par défaut dans Visual Studio 2019 [version 16,8](/visualstudio/releases/2019/release-notes/), nous continuons à ajouter des fonctionnalités pour améliorer l’expérience dans la version préliminaire la plus récente.
+   Bien que l’outil de contrôle de version git soit utilisé par défaut dans Visual Studio 2019 [version 16,8](/visualstudio/releases/2019/release-notes-history/) et versions ultérieures, nous continuons à ajouter des fonctionnalités pour améliorer l’expérience dans la toute dernière version de visual studio 2019 Preview, [version 16,11](/visualstudio/releases/2019/release-notes-preview/).
 
    Pour plus d’informations, consultez la page [contrôle de version dans Visual Studio](/visualstudio/version-control/) .
 
-Pour plus d’informations sur la version préliminaire de Visual Studio 2019 &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page d' **[aperçu de Visual Studio](https://aka.ms/vspreview/)** .
+- **La première version publique de Visual Studio 2022 (version préliminaire) est désormais disponible**
 
-> [!TIP]
-> Pour en savoir plus sur la prochaine version, consultez le billet de blog **[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** .
+    La version préliminaire publique de notre prochaine version majeure, [Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/), est désormais disponible. La nouvelle version est plus rapide, plus facile à aborder et plus légère. Et, pour la première fois, Visual Studio est 64 bits. Pour obtenir un lien de téléchargement et plus d’informations, consultez le billet de blog **[Télécharger Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/?p=232975&preview=true)** .
 
 ## <a name="give-us-feedback"></a>Envoyer vos commentaires
 

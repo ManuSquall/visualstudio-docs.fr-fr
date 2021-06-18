@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: be11db364d0505833e722d3db308b41a18ccbb9d
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682584"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308127"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -56,7 +56,7 @@ Vous pouvez utiliser les onglets pour réorganiser votre disposition de différe
 
 Dans l’onglet **Aperçu** , vous pouvez afficher les fichiers dans l’éditeur sans les ouvrir. Vous pouvez afficher un aperçu des fichiers en les sélectionnant dans **Explorateur de solutions**, pendant le débogage, lorsque vous effectuez un pas à pas détaillé dans des fichiers, avec **atteindre la définition** et lorsque vous parcourez les résultats d’une recherche. Les fichiers d'aperçu apparaissent aussi sous un onglet à droite de l'onglet de document. Le fichier s’ouvre en édition si vous le modifiez ou si vous choisissez **Ouvrir**.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 #### <a name="vertical-document-tabs"></a>Onglets de documents verticaux
 
@@ -169,7 +169,7 @@ Commencez par créer une solution de test qui comporte deux projets, chacun avec
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Créez un projet d' **application WPF** C#. Imaginez que dans ce projet, vous allez développer une interface utilisateur. Vous voulez maximiser l’espace de la fenêtre du concepteur et écarter les autres fenêtres Outil.
 

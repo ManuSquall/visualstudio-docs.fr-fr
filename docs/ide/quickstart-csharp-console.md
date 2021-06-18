@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 31759f3ae6359c9e366157012f6321c62085f8f9
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 21cab6f8fd8f4ff6a86a780774d031e60b03e780
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113214"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307997"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 
@@ -35,6 +35,12 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 ::: moniker range="vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -62,9 +68,9 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Ouvrez Visual Studio 2019.
+1. Ouvrez Visual Studio.
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -103,7 +109,7 @@ Une fois que vous avez sélectionné votre modèle de projet C# et nommé votre 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio inclut le code de « Hello World » par défaut dans votre projet.
 

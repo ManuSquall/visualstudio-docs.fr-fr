@@ -15,18 +15,18 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a377acba7b8c64503e5e5f821b5f3f833a8d73b2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867436"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308049"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article s’appliquent à .NET Framework Windows Forms et le développement WPF. Dans Visual Studio 2019 (et versions antérieures), les fonctionnalités ne sont pas prises en charge pour le développement .NET Core, pour WPF et Windows Forms.
+> Les fonctionnalités décrites dans cet article s’appliquent à .NET Framework Windows Forms et le développement WPF. Les fonctionnalités ne sont pas prises en charge pour le développement .NET Core, pour WPF et Windows Forms.
 :::moniker-end
 
 Dans le contexte de .NET Data Tools dans Visual Studio, le terme « *source de données* » fait référence aux objets .net qui se connectent à un magasin de données et mettent les données à la disposition d’une application .net. Les concepteurs Visual Studio peuvent utiliser la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires quand vous faites glisser et déposez des objets de base de données à partir de la fenêtre **sources de données** . Ce type de source de données peut être :

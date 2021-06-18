@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6de31ed1b649f226ac47161fdadfe44d434289b9
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161311"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308517"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -89,7 +89,7 @@ Vous pouvez utiliser un fichier EditorConfig pour codifier les conventions de co
 
 ::: moniker range=">=vs-2019"
 
-- Créez automatiquement un fichier *.editorconfig* à partir de vos paramètres de style de code dans **Outils** > **Options** > **Éditeur de texte** > **C#** > **Style de code**.
+- Créez automatiquement un fichier *. editorconfig* basé sur vos paramètres de style de code dans **Outils** > **options** > **éditeur de texte** > style de  > **code** C#.
 
    ![Générer un fichier .editorconfig à partir des paramètres dans VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -152,7 +152,7 @@ Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajou
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
 - [SonarLint pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)

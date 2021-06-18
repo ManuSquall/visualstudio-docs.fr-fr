@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7317af5667f09ff30d0f2cb54d1399da9d0358de
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 14128a6c5b533d1bf2fe573310c174f6b6a7f897
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113248"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308530"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -35,6 +35,12 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 ::: moniker range="vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -75,9 +81,9 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Ouvrez Visual Studio 2019.
+1. Ouvrez Visual Studio.
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -616,7 +622,7 @@ Poursuivez avec d’autres didacticiels :
 
 :::moniker-end
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 
 Passez à la deuxième partie de ce didacticiel :
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007e82ee7c1c2839ba266794432605f1f92a1669
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836486"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307789"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Récupération automatique, Environnement, boîte de dialogue Options
 
@@ -35,6 +35,12 @@ Pour accéder à cette boîte de dialogue, accédez à **Outils**  >  **options*
 :::image type="content" source="media/autorecover-options.png" alt-text="Capture d’écran de la section récupération automatique de la boîte de dialogue Options":::
 
 **Enregistrer les informations de récupération automatique toutes les [n] minutes**
+
+::: moniker range=">=vs-2022"
+
+Utilisez cette option pour personnaliser la fréquence d’enregistrement automatique d’un fichier dans l’éditeur. Pour les fichiers précédemment enregistrés, Visual Studio enregistre une copie du fichier dans ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]***. Si le fichier est nouveau et que vous ne l’avez pas encore enregistré, Visual Studio l’enregistre automatiquement à l’aide d’un nom de fichier généré de manière aléatoire.
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 

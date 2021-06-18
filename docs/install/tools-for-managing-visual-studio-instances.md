@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b6b641081c9b969cadd2c9517967adb8cc4cb1e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 914449fe1db792614af1f9ed22464cb9fdb91481
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547438"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306889"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -34,33 +34,33 @@ Les outils et utilitaires suivants vous aideront à détecter et à gérer les i
 * [**vswhere**](https://github.com/microsoft/vswhere): fichier exécutable intégré à Visual Studio ou disponible pour une distribution distincte qui vous permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur particulier.
 * [**Vssetup. PowerShell**](https://github.com/microsoft/vssetup.powershell): scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
 * [**Vs-Setup-Samples**](https://github.com/microsoft/vs-setup-samples): exemples C# et C++ qui montrent comment utiliser l’API de configuration du programme d’installation pour interroger une installation existante.
-* [**Windows Management Instrumentation (WMI)**](https://docs.microsoft.com/windows/win32/wmisdk/wmi-start-page): les informations de l’instance de Visual Studio peuvent être interrogées par le biais de la MSFT_VSInstance de la classe Visual Studio. 
+* [**Windows Management Instrumentation (WMI)**](/windows/win32/wmisdk/wmi-start-page): les informations de l’instance de Visual Studio peuvent être interrogées par le biais de la MSFT_VSInstance de la classe Visual Studio.
 * L' [**API de configuration**](<xref:Microsoft.VisualStudio.Setup.Configuration>) de l’installation fournit des interfaces pour les développeurs qui souhaitent créer leurs propres utilitaires pour interroger des instances de Visual Studio.
-* [**Inventaire logiciel des Configuration Manager de point de terminaison Microsoft**](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory): peut être utilisé pour collecter des informations sur les instances de Visual Studio sur des appareils clients. 
+* [**Inventaire logiciel des Configuration Manager de point de terminaison Microsoft**](/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory): peut être utilisé pour collecter des informations sur les instances de Visual Studio sur des appareils clients.
 
 ## <a name="using-vswhereexe"></a>Utilisation de vswhere.exe
 
 `vswhere.exe` est inclus automatiquement dans Visual Studio 2017 et versions ultérieures, ou vous pouvez le télécharger à partir de [la page des versions de vswhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les versions antérieures du produit et les versions préliminaires, et renvoie les résultats au format JSON :
 
-```cmd
+```shell
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
 
 ## <a name="using-windows-management-instrumentation-wmi"></a>Utilisation de Windows Management Instrumentation (WMI)
 
-Si l’utilitaire de détection du client Visual Studio est installé sur l’ordinateur, vous pouvez interroger les informations de l’instance Visual Studio à l’aide de WMI. L’utilitaire de détection du client Visual Studio est installé par défaut avec chaque mise à jour de Visual Studio 2017 et de Visual Studio 2019 publiée le 12 mai ou après le 2020 12 mai. Il est également disponible sur le [catalogue Microsoft Update](https://catalog.update.microsoft.com/) si vous souhaitez l’installer indépendamment.  Pour obtenir un exemple d’utilisation de l’utilitaire pour retourner les informations de l’instance de Visual Studio, ouvrez PowerShell en tant qu’administrateur sur l’ordinateur client, puis tapez la commande suivante :
+Si l’utilitaire de détection du client Visual Studio est installé sur l’ordinateur, vous pouvez interroger les informations de l’instance Visual Studio à l’aide de WMI. L’utilitaire de détection du client Visual Studio est installé par défaut avec toutes les mises à jour Visual Studio 2017, Visual Studio 2019 et Visual Studio 2022 publiées le 12 mai ou après le 2020 12 mai. Il est également disponible sur le [catalogue Microsoft Update](https://catalog.update.microsoft.com/) si vous souhaitez l’installer indépendamment.  Pour obtenir un exemple d’utilisation de l’utilitaire pour retourner les informations de l’instance de Visual Studio, ouvrez PowerShell en tant qu’administrateur sur l’ordinateur client, puis tapez la commande suivante :
 
-```cmd
+```shell
 Get-CimInstance MSFT_VSInstance
 ```
 
-## <a name="using-microsoft-endpoint-configuration-manager"></a>Utilisation des Configuration Manager de point de terminaison Microsoft 
+## <a name="using-microsoft-endpoint-configuration-manager"></a>Utilisation des Configuration Manager de point de terminaison Microsoft
 
-Les fonctionnalités d' [inventaire logiciel de Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) peuvent être utilisées pour interroger et collecter des informations sur les instances de Visual Studio sur les périphériques clients. Par exemple, la requête suivante retourne le nom complet, la version et le nom de l’appareil sur lequel Visual Studio est installé pour toutes les instances de Visual Studio 2017 et 2019 installées : 
+Les fonctionnalités d' [inventaire logiciel de Microsoft Endpoint Configuration Manager](/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) peuvent être utilisées pour interroger et collecter des informations sur les instances de Visual Studio sur les périphériques clients. Par exemple, la requête suivante retourne le nom complet, la version et le nom de l’appareil sur lequel Visual Studio est installé pour toutes les instances de Visual Studio 2017 et 2019 installées :
 
-```WQL 
+```WQL
 select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName, SMS_G_System_ADD_REMOVE_PROGRAMS.Version from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Visual Studio %[a-z]% 201[7,9]" 
-``` 
+```
 
 ::: moniker range="vs-2017"
 
@@ -81,9 +81,9 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 
 1. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
 
-1. Dans le menu principal de regedit, sélectionnez **fichier**  >  **charger la ruche...** , puis sélectionnez le fichier de Registre privé, qui est stocké dans le dossier **AppData\Local** . Par exemple :
+1. Dans le menu principal de regedit, sélectionnez **fichier**  >  **charger la ruche...** , puis sélectionnez le fichier de Registre privé, qui est stocké dans le dossier **AppData\Local** . Exemple :
 
-   ```
+   ```shell
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 

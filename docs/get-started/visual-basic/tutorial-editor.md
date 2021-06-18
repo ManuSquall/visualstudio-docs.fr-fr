@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56f6570b633941c8f7102e245b7668cd31936f83
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944535"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308361"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>En savoir plus sur l’utilisation de l’éditeur de code avec Visual Basic
 
@@ -34,6 +34,13 @@ Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio,
 
 > [!TIP]
 > Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Si vous n’avez pas encore installé Visual Studio Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
 ::: moniker-end
 

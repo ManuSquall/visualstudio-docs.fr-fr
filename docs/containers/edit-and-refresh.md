@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867631"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306382"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local
 
@@ -41,6 +41,12 @@ Pour déboguer des applications dans un conteneur d’ancrage local, les outils 
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+* [Visual Studio 2022 Preview]() avec la charge de travail de développement Web installée
+
+::: moniker-end
+
 Pour exécuter des conteneurs de l’arrimeur localement, vous devez disposer d’un client Dockr local. Vous pouvez utiliser [docker pour Windows](https://www.docker.com/get-docker), qui utilise Hyper-V et requiert Windows 10.
 
 Les conteneurs d’ancrage sont disponibles pour les projets .NET Framework et .NET Core. Examinons ces deux exemples. Tout d’abord, nous examinons une application Web .NET Core. Ensuite, nous examinons une application console .NET Framework.
@@ -62,7 +68,7 @@ Pour effectuer une itération rapide des modifications, vous pouvez démarrer vo
 
 1. Assurez-vous que l’arrimeur est configuré pour utiliser le type de conteneur (Linux ou Windows) que vous utilisez. Cliquez avec le bouton droit sur l’icône de l’ancrage dans la barre des tâches, puis choisissez **basculer vers les conteneurs Linux** ou **basculez vers les conteneurs Windows** , le cas échéant.
 
-1. (.NET Core 3 et versions ultérieures uniquement) La modification de votre code et l’actualisation du site en cours d’exécution, comme décrit dans cette section, ne sont pas activées dans les modèles par défaut de .NET Core >= 3,0. Pour l’activer, ajoutez le package NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). Dans *Startup.cs*, ajoutez un appel à la méthode d’extension dans `IMvcBuilder.AddRazorRuntimeCompilation` le code de la `ConfigureServices` méthode. Vous n’avez besoin que de cette option activée en mode débogage, donc codez-la comme suit :
+1. (.NET Core 3 et versions ultérieures uniquement) La modification de votre code et l’actualisation du site en cours d’exécution, comme décrit dans cette section, ne sont pas activées dans les modèles par défaut de .NET Core >= 3,0. Pour l’activer, ajoutez le package NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). Dans *Startup. cs*, ajoutez un appel à la méthode `IMvcBuilder.AddRazorRuntimeCompilation` d’extension au code de la `ConfigureServices` méthode. Vous n’avez besoin que de cette option activée en mode débogage, donc codez-la comme suit :
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -119,7 +125,7 @@ Vos modifications ont été appliquées !
 
 Souvent, les modifications nécessitent une inspection supplémentaire. Vous pouvez utiliser les fonctionnalités de débogage de Visual Studio pour cette tâche.
 
-1. Dans Visual Studio, ouvrez *index.cshtml.cs*.
+1. Dans Visual Studio, ouvrez *index. cshtml. cs*.
 2. Remplacez le contenu de la méthode `OnGet` par le code suivant :
 
    ```csharp
@@ -130,29 +136,29 @@ Souvent, les modifications nécessitent une inspection supplémentaire. Vous pou
 4. Pour démarrer le débogage et atteindre le point d’arrêt, appuyez sur F5.
 5. Basculez vers Visual Studio pour afficher le point d’arrêt. Inspectez les valeurs.
 
-   ![Capture d’écran montrant une partie du code pour Index.cshtml.cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint.png)
+   ![Capture d’écran montrant une partie du code pour index. cshtml. cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint.png)
 
-## <a name="create-a-net-framework-console-app"></a>Créer une application console .NET Framework
+## <a name="create-a-net-framework-console-app&quot;></a>Créer une application console .NET Framework
 
 Lorsque vous utilisez .NET Framework projets d’application console, l’option permettant d’ajouter la prise en charge de l’ancrage sans orchestration n’est pas prise en charge. Vous pouvez toujours utiliser la procédure suivante, même si vous n’utilisez qu’un seul projet d’ancrage.
 
 1. Créez un projet d’application console .NET Framework.
 1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter** la  >  **prise en charge de l’orchestration de conteneur**.  Dans la boîte de dialogue qui s’affiche, sélectionnez **docker compose**. Un fichier dockerfile est ajouté à votre projet et un projet de Docker Compose avec les fichiers de support associés est ajouté.
 
-### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
+### <a name=&quot;debug-with-breakpoints&quot;></a>Déboguer à l’aide de points d’arrêt
 
-1. Dans Explorateur de solutions, ouvrez *Program.cs*.
+1. Dans Explorateur de solutions, ouvrez *Program. cs*.
 2. Remplacez le contenu de la méthode `Main` par le code suivant :
 
    ```csharp
-       System.Console.WriteLine("Hello, world!");
+       System.Console.WriteLine(&quot;Hello, world!");
    ```
 
 3. Définissez un point d’arrêt à gauche de la ligne de code.
 4. Appuyez sur F5 pour démarrer le débogage et atteindre le point d’arrêt.
 5. Basculez vers Visual Studio pour afficher le point d’arrêt et inspecter les valeurs.
 
-   ![Capture d’écran de la fenêtre de code pour Program.cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint-console.png)
+   ![Capture d’écran de la fenêtre de code pour Program. cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Réutilisation de conteneur
 

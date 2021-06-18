@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 86310346566e8c937c2769a9fcc9f0d4e98b3ae2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683458"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308439"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 
@@ -26,7 +26,7 @@ Vous pouvez utiliser ces outils dans les configurations suivantes :
 |Type d’application|Système d'exploitation et outils|
 |-----------------|--------------------------------|
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|
-|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Applications Windows universelles|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Examiner les éléments dans l’arborescence d’éléments visuels dynamique
 
@@ -34,7 +34,7 @@ Commençons par une application WPF très simple qui présente une vue Liste et 
 
 ### <a name="create-the-project"></a>Créer le projet
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Créez une application WPF c# (**fichier** > **nouveau** > **projet**, tapez « C# WPF », choisissez le modèle de projet **application WPF** , nommez le **projet TestXAML**, puis vérifiez que **.net Core 3,1** s’affiche dans la liste déroulante **Framework cible** .
 

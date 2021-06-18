@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 42dd3c6b7301162e239bc87764056fdda2d08413
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682681"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308413"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -28,7 +28,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 
 Bien que l’application de démonstration soit Visual Basic, la plupart des fonctionnalités s’appliquent à C#, C++, F #, Python, JavaScript et à d’autres langages pris en charge par Visual Studio (F # ne prend pas en charge la fonctionnalité modifier et continuer. F# et JavaScript ne prennent pas en charge la fenêtre **Automatique**). Les captures d’écran sont en Visual Basic.
 
-Dans ce tutoriel, vous allez :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et atteindre des points d’arrêt
@@ -61,6 +61,12 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
+
+::: moniker-end
+
 Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
 ## <a name="create-a-project"></a>Création d’un projet
@@ -71,7 +77,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Nommez ensuite le projet *-Démarrer-débogage*.
 
@@ -81,9 +87,9 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Ouvrez Visual Studio 2019.
+1. Ouvrez Visual Studio.
 
    Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
@@ -106,7 +112,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 1. Dans *Program. vb*, remplacez tout le code par défaut par le code suivant à la place :
 

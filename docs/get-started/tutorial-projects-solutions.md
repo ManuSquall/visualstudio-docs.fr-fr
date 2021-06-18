@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11db2d793f284557f709a4f72362cfc89a77a059
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113033"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308400"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Présentation des projets et solutions
 
@@ -35,6 +35,12 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 ::: moniker range="vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -223,7 +229,7 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Sélectionnez le nœud **dépendances** dans le projet **QuickTest** , puis, dans le menu contextuel, cliquez avec le bouton droit, puis sélectionnez Ajouter une **référence de projet...**.
 
@@ -293,7 +299,7 @@ Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tes
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tester**  >  **exécuter tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
 

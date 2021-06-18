@@ -5,24 +5,24 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2c8510a1ba83243d2d92b538d80876a8b0f20079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a192657a46c2db15cb2d1121735905f06da478
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935652"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306668"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
-Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. Il existe deux types de mise à jour : 
+Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. Il existe deux types de mise à jour :
 
 * **Mises à jour** &mdash; de version mineures par exemple, 16,0 à 16,1 &mdash; qui incluent de nouveaux composants et fonctionnalités.  
 * **Mises à jour de maintenance**, par exemple de la 16.0.4 à la 16.0.5, qui incluent uniquement les correctifs ciblés pour les problèmes critiques.
@@ -51,7 +51,7 @@ Les administrateurs qui utilisent une installation de disposition de réseau doi
 
 Dans le cas d’une installation basée sur Internet, ajoutez `--channelUri` avec un manifeste de canal inexistant à la ligne de commande utilisée pour lancer le programme d’installation. Cette opération empêche Visual Studio d’utiliser la dernière version disponible d’une mise à jour. Voici un exemple :
 
-```cmd
+```shell
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
 
@@ -69,15 +69,27 @@ Dans le cas d’une installation basée sur Internet, exécutez la nouvelle vers
 
 1. Mettez à jour le programme d’installation de Visual Studio :
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --quiet --update
     ```
 
+::: moniker range="vs-2019"
+ 
 2. Mettez à jour l’application Visual Studio proprement dite :
-
-    ```cmd
+    ```shell
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+2. Mettez à jour l’application Visual Studio proprement dite :
+    ```shell
+    vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
+    ```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

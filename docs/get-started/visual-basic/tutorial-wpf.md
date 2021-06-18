@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 5fc5b9308c854649a4f10482a54ff395bec5d8df
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295427"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308192"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 
@@ -31,9 +31,15 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -77,9 +83,9 @@ Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différ
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Ouvrez Visual Studio 2019.
+1. Ouvrez Visual Studio.
 
 2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
 
@@ -313,7 +319,7 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 3. Générez la solution en choisissant **générer**  >  **générer la solution**.
 
-Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le fichier *. exe* que vous avez généré dans le répertoire de votre solution et de votre projet (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
+Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le *.exe* que vous avez généré dans le répertoire de votre solution et du projet (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -327,6 +333,12 @@ Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le fichi
 ::: moniker range="vs-2019"
 
 - [Nouveautés de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Conseils de productivité](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
 - [Conseils de productivité](../../ide/productivity-features.md)
 
 ::: moniker-end

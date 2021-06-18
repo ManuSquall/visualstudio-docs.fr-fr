@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 906097e0356922cdcc5afbabb1771348962ea4ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859500"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308114"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 
@@ -34,7 +34,7 @@ Pour la première fois, Windows a été refactorisé pour avoir un noyau commun 
 
 La plateforme Windows universelle est simplement un ensemble de contrats et de versions. qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation, mais une ou plusieurs familles d’appareils. Pour obtenir plus de détails, consultez [Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.
 
@@ -50,7 +50,7 @@ Voici la liste des logiciels dont vous avez besoin :
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Visual Studio 2019 prend en charge le développement UWP uniquement sur Windows 10. Pour plus d’informations, consultez [Ciblage de la plateforme ](/visualstudio/releases/2019/compatibility/) et [Configuration requise](/visualstudio/releases/2019/system-requirements/) pour Visual Studio.
 
@@ -62,7 +62,7 @@ Voici la liste des logiciels dont vous avez besoin :
 
 Après avoir installé ce logiciel, vous devez activer votre appareil Windows 10 pour le développement. Consultez [Activer votre appareil pour le développement](/windows/uwp/get-started/enable-your-device-for-development). Vous n’avez plus besoin d’une licence de développeur par appareil Windows 10.
 
-## <a name="universal-windows-apps"></a>Applications pour la plateforme Windows universelle
+## <a name="universal-windows-apps"></a>Applications Windows universelles
 
 Choisissez votre langage de développement préféré entre C#, Visual Basic, C++ ou JavaScript pour créer une application de plateforme Windows universelle pour les appareils Windows 10. Consultez [Créer votre première application](/windows/uwp/get-started/your-first-app) ou regardez la vidéo [Tools for Windows 10 Overview](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 

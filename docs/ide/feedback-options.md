@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897971"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308153"
 ---
 # <a name="visual-studio-feedback-options"></a>Options de commentaires de Visual Studio
 
@@ -28,11 +28,11 @@ Pourquoi nous envoyer des commentaires ? C’est simple : nous prenons très a
 
 ## <a name="report-a-problem"></a>Signaler un problème
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si vous rencontrez des problèmes avec Visual Studio &mdash; incidents, lenteur ou comportement inattendu &mdash; faites-le-nous savoir à l’aide de l’outil **Signaler un problème**. Dans Visual Studio, choisissez l’icône de commentaires dans le coin supérieur droit, ou choisissez **aide**  >  **Envoyer des commentaires**  >  **signaler un problème** dans la barre de menus.
 
-![Icône Envoyer des commentaires dans l’IDE Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
+![Icône Envoyer des commentaires dans l’IDE de Visual Studio](./media/vs-2019/send-feedback-icon.png)
 
 Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) , où vous pouvez vous connecter pour signaler le problème. Pour plus d’informations, consultez Guide pratique [pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
@@ -50,7 +50,7 @@ Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs]
 
 ## <a name="suggest-a-feature"></a>Suggérer une fonctionnalité
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Si vous avez une idée ou une suggestion pour améliorer Visual Studio, faites-le nous savoir en utilisant l’outil **suggérer une fonctionnalité** . Dans Visual Studio, choisissez l’icône de commentaires dans le coin supérieur droit, ou choisissez **aide**  >  **Envoyer des commentaires**  >  **suggérer une fonctionnalité** dans la barre de menus.
 

@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: ee7b5ecc023d1319f4d7551e0e7b186d76d86741
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295570"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308478"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Didacticiel : créer une application simple avec C\#
 
@@ -72,9 +72,9 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Ouvrez Visual Studio 2019.
+1. Ouvrez Visual Studio.
 
 1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
@@ -347,7 +347,7 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 1. Générez la solution en choisissant **générer**  >  **générer la solution**.
 
-Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le fichier *. exe* que vous avez généré dans le répertoire de votre solution et de votre projet (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
+Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le *.exe* que vous avez généré dans le répertoire de votre solution et du projet (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

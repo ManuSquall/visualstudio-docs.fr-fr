@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d7dfacf00dbbb37946e4eaa8f1feb89b4059103
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: e0bc092663cc0e100598f991ae1b2a18a4b94501
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112471"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306863"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -41,7 +41,7 @@ Il existe certains problèmes connus avec le programme d’installation de Visua
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Il existe certains problèmes connus avec le programme d’installation de Visual Studio que Microsoft s’emploie à résoudre. Pour savoir s’il existe une solution de contournement à votre problème, consultez la [section Problèmes connus des notes de publication](/visualstudio/releases/2019/release-notes#-known-issues).
 
@@ -71,7 +71,7 @@ Le programme d’amorçage du programme d’installation de Visual Studio est un
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Fermez le programme d’installation de Visual Studio.
 2. Supprimez le répertoire du programme d’installation de Visual Studio. En règle générale, le répertoire est `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -94,7 +94,7 @@ Dans certaines situations (fichiers endommagés, par exemple), vous devrez peut-
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#installation-logs).
 2. Ouvrez le programme d’installation de Visual Studio, puis cliquez sur **Signaler un problème** pour ouvrir l’outil Commentaires sur Visual Studio.

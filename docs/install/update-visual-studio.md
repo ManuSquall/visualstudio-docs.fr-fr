@@ -17,12 +17,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9244c9e234c56b058dbfe92a4ef6a10d8c9c702d
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: b541568da45c9bd8dda7258534193371e7e9f04b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113187"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306837"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -164,9 +164,9 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 
 ::: moniker range="vs-2019"
 
-Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
+Nous vous encourageons à effectuer une mise à jour vers la version la plus [récente](/visualstudio/releases/2019/release-notes/) de Visual Studio afin que vous obteniez toujours les fonctionnalités, les correctifs et les améliorations les plus récents.
 
-Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement. Si vous utilisez actuellement une autre version de Visual Studio, vous pouvez soit [installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md), soit [désinstaller les versions antérieures de Visual Studio](../install/uninstall-visual-studio.md).
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement. Si vous utilisez actuellement une autre version de Visual Studio, vous pouvez soit [installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md), soit [désinstaller les versions antérieures de Visual Studio](../install/uninstall-visual-studio.md).
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -287,9 +287,133 @@ Voici comment faire :
 
 ::: moniker-end
 
-## <a name="administrator-updates"></a>Mises à jour de l’administrateur 
+::: moniker range=">=vs-2022"
 
-Si vous êtes membre d’une organisation qui centralise la gestion des installations logicielles, votre administrateur d’entreprise peut mettre à jour Visual Studio sur votre ordinateur. Pour plus d’informations sur la façon de contrôler ou de configurer les types de mises à jour que votre ordinateur peut accepter, consultez [utilisation de Configuration Manager pour déployer des mises à jour de Visual Studio](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates). 
+Nous vous encourageons à effectuer une mise à jour vers la version la plus [récente](/visualstudio/releases/2022/release-notes/) de Visual Studio afin que vous obteniez toujours les fonctionnalités, les correctifs et les améliorations les plus récents.
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement. Si vous utilisez actuellement une autre version de Visual Studio, vous pouvez soit [installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md), soit [désinstaller les versions antérieures de Visual Studio](../install/uninstall-visual-studio.md).
+
+> [!IMPORTANT]
+> Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Mettre à jour Visual Studio pour Mac](/visualstudio/mac/update).
+
+Voici comment mettre à jour Visual &nbsp; Studio &nbsp; 2022.
+
+## <a name="use-the-visual-studio-installer"></a>Utiliser le programme d’installation de Visual Studio
+
+1. Recherchez le **programme d’installation de Visual Studio** sur votre ordinateur.
+
+   Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
+
+   ![Visual Studio Installer](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
+
+   Vous devrez peut-être mettre à jour le programme d’installation avant de continuer. Dans ce cas, suivez les invites.
+
+1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée.
+
+   Par exemple, si vous avez précédemment installé Visual &nbsp; Studio Community &nbsp; 2022 et qu’il y a une mise à jour pour celui-ci, un message de **mise à jour disponible** s’affiche dans le programme d’installation.
+
+     ![Sélectionnez l’édition de Visual Studio 2019 que vous souhaitez mettre à jour](media/vs-2019/vs-installer-update-visual-studio-community.png "Sélectionnez l’édition de Visual Studio 2019 que vous souhaitez mettre à jour")
+
+1. Choisissez **Mettre à jour** pour installer les mises à jour.
+
+    ![Sélectionner le bouton mettre à jour pour installer les mises à jour](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Sélectionner le bouton mettre à jour pour installer les mises à jour")
+
+1. Une fois la mise à jour effectuée, vous pouvez être amené à redémarrer votre ordinateur. Si tel est le cas, redémarrez l’ordinateur, puis démarrez Visual Studio de manière normale.
+
+   Si vous n’êtes pas invité à redémarrer l’ordinateur, choisissez **Lancer** pour démarrer Visual Studio à partir du programme d’installation.
+
+    ![Sélectionnez le bouton lancer pour démarrer Visual Studio.](media/vs-2019/choose-launch-visual-studio-community.png "Sélectionnez le bouton lancer pour démarrer Visual Studio.")
+
+## <a name="use-the-ide"></a>Utiliser l’IDE
+
+Vous pouvez rechercher une mise à jour, puis l’installer à l’aide de la barre de menus ou de la zone de recherche dans Visual Studio 2022.
+
+### <a name="open-visual-studio"></a>Ouvrez Visual Studio.
+
+1. Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2022**.
+
+    ![Ouvrir Visual Studio 2022](media/vs-2019/vs-installer-visual-studio-2019.png "Ouvrir Visual Studio 2019 à partir de Windows")
+
+1. Sous **Prise en main**, choisissez une option pour ouvrir l’IDE.
+
+    ![Ouvrez le Visual Studio Installer](media/vs2019-choose-option-from-get-started.png "Ouvrez le Visual Studio Installer")
+
+    Visual Studio s’ouvre. Dans l’IDE, un message de **mise à jour de Visual Studio 2022** s’affiche.
+
+    ![Message « Visual Studio 2019 Update » dans l’IDE](media/vs-2019/update-visual-studio-ide-message.png "Message « Visual Studio 2019 Update » dans l’IDE")
+
+1. Dans le message de **mise à jour de Visual Studio 2022** , choisissez **afficher les détails**.
+
+   ![Cliquez sur le bouton afficher les détails dans le message de mise à jour de l’IDE de Visual Studio 2019](media/vs-2019/update-visual-studio-ide-view-details.png "Cliquez sur le bouton afficher les détails dans le message de mise à jour de Visual Studio 2019")
+
+1. Dans la boîte de dialogue **Mise à jour téléchargée et prête à être installée**, sélectionnez **Mettre à jour**.
+
+     ![Choisissez le bouton mettre à jour dans la boîte de dialogue « mettre à jour téléchargé et prêt pour l’installation »](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Choisissez le bouton mettre à jour dans la boîte de dialogue « mettre à jour téléchargé et prêt pour l’installation »")
+
+   Visual Studio se met à jour, se ferme, puis se rouvre.
+
+### <a name="in-visual-studio"></a>Dans Visual Studio
+
+1. Dans la barre de menus, choisissez **Aide**, puis **Rechercher les mises à jour**.
+
+     ![Choisissez « Rechercher des mises à jour » dans le menu aide.](media/vs-2019/vs-ide-check-updates-help-menu.png "Choisissez « Rechercher des mises à jour » dans le menu aide.")
+
+    > [!NOTE]
+    > Vous pouvez également utiliser la zone de recherche de l’environnement IDE pour rechercher les mises à jour. Appuyez sur **CTRL** + **Q**, tapez « Rechercher les mises à jour », puis choisissez le résultat de la recherche correspondant à.
+
+1. Dans la boîte de dialogue **Mise à jour disponible**, choisissez **Mettre à jour**.
+
+     ![Choisissez le bouton mettre à jour dans la boîte de dialogue « mise à jour disponible »](media/vs-2019/update-visual-studio-community-from-ide.png "Choisissez le bouton mettre à jour dans la boîte de dialogue « mise à jour disponible »")
+
+   Visual Studio se met à jour, se ferme, puis se rouvre.
+
+## <a name="use-the-notifications-hub"></a>Utiliser le hub Notifications
+
+1. Dans Visual Studio, enregistrez votre travail.
+
+1. Choisissez l’icône de notification en bas à droite de l’environnement IDE de Visual Studio pour ouvrir le hub **Notifications**.
+
+   ![Icône de notification dans l’IDE de Visual Studio](media/vs-2019/notification-bar.png "Icône de notification dans l’IDE de Visual Studio")
+
+1. Dans le **hub Notifications**, choisissez la mise à jour à installer, puis **Afficher les détails**.
+
+     ![Le hub de notification dans Visual Studio 2019](media/vs-2019/notification-hub-update.png "Le hub de notification dans Visual Studio 2019")
+
+      > [!TIP]
+      > Une mise à jour pour une édition de Visual Studio 2022 est cumulative. par conséquent, choisissez toujours d’installer celle avec le numéro de version le plus récent.
+
+1. Dans la boîte de dialogue **Mise à jour disponible**, choisissez **Mettre à jour**.
+
+   Visual Studio se met à jour, se ferme, puis se rouvre.
+
+## <a name="customize-update-settings"></a>Personnaliser les paramètres de mise à jour
+
+Vous pouvez personnaliser les paramètres de mise à jour dans Visual Studio de plusieurs façons, par exemple en modifiant le mode d’installation et en sélectionnant les téléchargements automatiques.
+
+Il existe deux modes d’installation au choix :
+
+* **Installer pendant le téléchargement**
+* **Tout télécharger, puis installer**
+
+Vous pouvez également choisir le paramètre **Télécharger automatiquement les mises à jour**, qui autorise le téléchargement des mises à jour à télécharger alors que votre ordinateur est inactif.
+
+Voici comment faire :
+
+1. Dans la barre de menus, choisissez **Outils** > **options**.
+
+2. Développez **Environnement**, puis choisissez **Mises à jour de produits**.
+
+    ![Paramètres des mises à jour dans Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Choisissez le mode d’installation et les options de téléchargement automatique pour vos mises à jour de Visual Studio.
+::: moniker-end
+
+## <a name="administrator-updates"></a>Mises à jour de l’administrateur
+
+Si vous êtes membre d’une organisation qui centralise la gestion des installations logicielles, votre administrateur d’entreprise peut mettre à jour Visual Studio sur votre ordinateur. Pour plus d’informations sur la façon de contrôler ou de configurer les types de mises à jour que votre ordinateur peut accepter, consultez [utilisation de Configuration Manager pour déployer des mises à jour de Visual Studio](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

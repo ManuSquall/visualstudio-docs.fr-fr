@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaba06b2da73fc0bc80219ce58baff49a760ebc0
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: f632922078383708319e610d82a4c94a58619424
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066967"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306395"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Que sont les solutions et les projets dans Visual Studio ?
 
@@ -92,9 +92,9 @@ La barre d’outils en haut de **l’Explorateur de solutions** comprend des bou
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Capture d’écran de Explorateur de solutions avec deux projets dans Visual Studio 2019.](../ide/media/solution-explorer.png)
+![Capture d’écran de Explorateur de solutions avec deux projets dans Visual Studio.](../ide/media/solution-explorer.png)
 
 La barre d’outils en haut de **Explorateur de solutions** contient des boutons pour passer d’un affichage de solution à un affichage des dossiers, filtrer les modifications en attente, afficher tous les fichiers, réduire tous les nœuds, afficher les pages de [Propriétés](managing-project-and-solution-properties.md) , afficher un aperçu du code dans l' [éditeur de code](writing-code-in-the-code-and-text-editor.md), et bien plus encore.
 

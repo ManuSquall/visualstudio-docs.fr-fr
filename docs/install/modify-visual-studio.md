@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 638ec555a6fbef53d19a15c8a6cde26ff121aa0e
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112928"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306980"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modifier les charges de travail, les composants et les modules linguistiques de Visual Studio
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Il est facile de modifier Visual Studio afin d’inclure uniquement ce que vous voulez, quand vous le voulez. Pour cela, ouvrez Visual Studio Installer pour ajouter ou supprimer des composants et des charges de travail.
 
@@ -71,7 +71,7 @@ Pour apporter des modifications à votre installation, vous devez lancer le prog
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Recherchez le **programme d’installation de Visual Studio** sur votre ordinateur.
 
@@ -119,12 +119,11 @@ Pour apporter des modifications à votre installation, vous devez lancer le prog
 
 1. Si vous le souhaitez, choisissez l’onglet **charges de travail** , puis sélectionnez ou désélectionnez les charges de travail de votre choix.
 
-
 1. Une fois les nouvelles charges de travail installées, choisissez **lancer** à partir de la Visual Studio installer pour ouvrir Visual Studio.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  Les charges de travail contiennent les fonctionnalités dont vous avez besoin pour le langage de programmation ou la plateforme que vous utilisez. Utilisez les charges de travail pour modifier Visual Studio pour qu’il prenne en charge le travail à effectuer, au moment où vous voulez l’effectuer.
 
@@ -147,7 +146,6 @@ Pour apporter des modifications à votre installation, vous devez lancer le prog
 
 ::: moniker-end
 
-
 >[!TIP]
 > Pour plus d’informations sur le composant SQL Server Data Tools (SSDT), consultez [Télécharger et installer SSDT pour Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
@@ -156,9 +154,10 @@ Pour apporter des modifications à votre installation, vous devez lancer le prog
 Par défaut, le programme d’installation correspond à la langue du système d’exploitation lorsqu’il s’exécute pour la première fois. Toutefois, vous pouvez modifier la langue chaque fois que vous le souhaitez. 
 
 Pour cela, procédez de la façon suivante :
+
 1. Choisissez l’onglet **modules linguistiques** dans la Visual Studio installer.
-2. Sélectionnez la langue de votre choix.
-3. Suivez les invites.
+1. Sélectionnez la langue de votre choix.
+1. Suivez les invites.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

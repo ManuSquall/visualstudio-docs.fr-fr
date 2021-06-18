@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c37ccb9c6dce1f6b20b8ade317e8135462c65011
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: eef6a8bbdf5afc3aa5f36b0afdb374fd5beac471
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800866"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307490"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -31,9 +31,9 @@ Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/downloads), qui &mdash; est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents que &mdash; vous ne pourrez peut-être pas.
+Nous avons conçu Visual Studio 2019 et versions ultérieures pour fonctionner correctement dans de nombreuses configurations réseau et ordinateur. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/downloads), qui &mdash; est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents que &mdash; vous ne pourrez peut-être pas.
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
 
@@ -72,7 +72,7 @@ Après avoir téléchargé un petit programme d’amorçage, utilisez la ligne d
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Après avoir téléchargé un petit fichier de programme d’amorçage, utilisez la ligne de commande pour créer un cache local. Utilisez ensuite le cache local pour installer Visual Studio.
 
@@ -84,40 +84,60 @@ Vous devez avoir une connexion Internet pour terminer cette étape.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir le dernier programme d’amorçage pour Visual Studio 2017 version 15,9, accédez à la page [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) et téléchargez l’un des fichiers de programme d’amorçage suivants : 
+Pour obtenir le dernier programme d’amorçage pour Visual Studio 2017 version 15,9, accédez à la page [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) et téléchargez l’un des fichiers de programme d’amorçage suivants :
 
-| Édition | Nom de fichier |
-|-------------|-----------------------|
-|Visual Studio Professional 2017 version 15,9 | vs_professional.exe |
-|Visual Studio Enterprise 2017 version 15,9 | vs_enterprise.exe |
-|Visual Studio Build Tools 2017 version 15,9  | vs_buildtools.exe |
+| Édition                                      | Nom de fichier            |
+|----------------------------------------------|---------------------|
+| Visual Studio Professional 2017 version 15,9 | vs_professional.exe |
+| Visual Studio Enterprise 2017 version 15,9   | vs_enterprise.exe   |
+| Visual Studio Build Tools 2017 version 15,9  | vs_buildtools.exe   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Commencez par Télécharger le programme d’amorçage de Visual Studio 2019 à partir de la [page téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) ou de la page [versions de Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) pour la version et l’édition de Visual Studio que vous avez choisies. Votre fichier d’installation &mdash; ou programme d’amorçage &mdash; correspond à l’un des éléments suivants :
+Commencez par Télécharger le programme d’amorçage de Visual Studio 2019 à partir de la [page téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) ou de la page [versions de Visual Studio 2019](/visualstudio/releases/2019/history#installing-an-earlier-release) pour la version et l’édition de Visual Studio que vous avez choisies. Votre fichier d’installation &mdash; ou programme d’amorçage &mdash; correspond à l’un des éléments suivants :
 
-| Édition                    | Fichier                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
+| Édition                         | Fichier                                                                                                                                                                                                                               |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Outils de génération Visual Studio 2019   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Outils de génération Visual Studio 2019  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+> Les versions commercialisées de Visual Studio 2022 ne sont pas encore disponibles, les programmes d’amorçage ci-dessous concernent la version préliminaire de Visual Studio 2022.
+>Commencez par Télécharger le programme d’amorçage de Visual Studio 2022 à partir de la [page de téléchargements Visual Studio](https://aka.ms/vs2022preview).
+
+| Édition                         | Télécharger                                                            |
+|---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 professionnel | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
+| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 >[!TIP]
->Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier la version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier la version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page [numéros de build et dates de publication de Visual Studio](/visual-studio-build-numbers-and-release-dates.md) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page des [versions de Visual studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history) .
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page des [versions de Visual studio 2019](/visualstudio/releases/2019/history) .
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, reportez-vous à la page des [versions de Visual studio 2022](/visualstudio/releases/2022/history) .
 
 ::: moniker-end
 
@@ -132,25 +152,25 @@ Ouvrez une invite de commandes et utilisez les paramètres du programme d’amor
 
 - Pour le développement d’applications de bureau .NET et web .NET, exécutez :
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - Pour le développement d’applications de bureau .NET et Office, exécutez :
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - Pour le développement d’applications de bureau C++, exécutez :
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - Pour créer une disposition locale complète, en anglais uniquement, avec toutes les fonctionnalités (cela prend beaucoup de temps, &mdash; nous avons _beaucoup_ de fonctionnalités !), exécutez :
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
@@ -161,7 +181,7 @@ Ouvrez une invite de commandes et utilisez les paramètres du programme d’amor
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
    > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/).
@@ -174,13 +194,13 @@ Quand vous installez Visual Studio à partir d’un cache d’installation local
 
 Par exemple, si vous avez créé un cache d’installation local à l’aide de la commande suivante :
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 Utilisez ensuite cette commande pour exécuter l’installation :
 
-```cmd
+```shell
 c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
@@ -190,7 +210,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 > [!NOTE]
 > Si vous recevez une erreur indiquant qu’une signature n’est pas valide, vous devez [installer les certificats mis à jour](install-certificates-for-visual-studio-offline.md). Ouvrez le dossier des certificats dans votre cache hors connexion. Double-cliquez sur chacun des fichiers de certificat, puis suivez les étapes de l’Assistant du Gestionnaire de certificats. Si un mot de passe vous est demandé, n’indiquez rien.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!TIP]
 > Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le `--noweb` commutateur avec la version 16.3.5 ou ultérieure.
 
@@ -198,22 +218,22 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ### <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Langage** |
-| ----------------------- | --------------- |
-| cs-CZ | Tchèque |
-| de-DE | Allemand |
-| fr-FR | Anglais |
-| es-ES | Espagnol |
-| fr-FR | Français |
-| it-IT | Italien |
-| ja-JP | Japonais |
-| ko-KR | Coréen |
-| pl-PL | Polonais |
-| pt-br | Portugais - Brésil |
-| ru-RU | Russe |
-| tr-TR | Turc |
-| zh-CN | Chinois - simplifié |
-| zh-TW | Chinois - traditionnel |
+| **Paramètres régionaux de langue** | **Langage**          |
+|---------------------|-----------------------|
+| cs-CZ               | Tchèque                 |
+| de-DE               | Allemand                |
+| fr-FR               | Anglais               |
+| es-ES               | Espagnol               |
+| fr-FR               | Français                |
+| it-IT               | Italien               |
+| ja-JP               | Japonais              |
+| ko-KR               | Coréen                |
+| pl-PL               | Polonais                |
+| pt-br               | Portugais - Brésil   |
+| ru-RU               | Russe               |
+| tr-TR               | Turc               |
+| zh-CN               | Chinois - simplifié  |
+| zh-TW               | Chinois - traditionnel |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

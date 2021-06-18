@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a926084ccd8b1aafabb50f5a93f3f46d77bc6d4
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841894"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308465"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
@@ -37,7 +37,7 @@ La boîte à outils s’affiche conjointement avec les vues du concepteur, telle
 
 La version de .NET que cible votre projet détermine également les contrôles qui apparaissent dans la boîte à outils. Vous pouvez modifier si nécessaire la version du framework cible à partir des pages des propriétés du projet. Sélectionnez le nœud de projet dans l’**Explorateur de solutions** puis, dans la barre de menus, choisissez **Projet** > **Propriétés de nom_projet**. Sous l’onglet **Application**, utilisez le menu déroulant **Framework cible**.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![Capture d’écran de la boîte de dialogue d’application montrant les options dans la liste déroulante Framework cible.](media/vs-2019/toolbox-change-dotnet-version.png "Capture d’écran de la boîte de dialogue dans laquelle vous pouvez modifier la version .NET")
 

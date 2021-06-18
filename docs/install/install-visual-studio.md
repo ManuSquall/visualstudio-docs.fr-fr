@@ -20,18 +20,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e4db39c55ff669477efc833c2d482897d529b30b
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: b7955759c6c60e8074408cbc179f15d6a7a6e194
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113044"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307399"
 ---
 # <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2019"
 
 Bienvenue dans Visual Studio 2019 ! Dans cette version, vous pouvez facilement choisir et installer les fonctionnalités dont vous avez besoin uniquement. Et, en raison de son empreinte minimale réduite, elle s’installe rapidement avec un impact moindre sur le système.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Bienvenue dans Visual Studio 2022 ! Dans cette version, vous pouvez facilement choisir et installer les fonctionnalités dont vous avez besoin uniquement. Et, en raison de son empreinte minimale réduite, elle s’installe rapidement avec un impact moindre sur le système.
 
 ::: moniker-end
 
@@ -47,6 +53,12 @@ Découvrez une nouvelle façon d’installer Visual Studio ! Dans cette version
 ::: moniker range="vs-2019"
 
 Vous voulez en savoir plus sur les autres nouveautés de cette version ? Consultez nos [notes de publication](/visualstudio/releases/2019/release-notes/).
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Vous voulez en savoir plus sur les autres nouveautés de cette version ? Consultez nos [notes de publication](/visualstudio/releases/2022/release-notes/).
 
 ::: moniker-end
 
@@ -86,6 +98,18 @@ Avant de commencer l’installation de Visual Studio :
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+1. Vérifiez la [configuration requise](/visualstudio/releases/2022/system-requirements). Ces exigences vous aident à savoir si votre ordinateur prend en charge Visual Studio 2022.
+
+1. Appliquez les dernières mises à jour Windows Update. Ces mises à jour permettent de garantir que votre ordinateur dispose à la fois des dernières mises à jour de sécurité et des composants système obligatoires pour Visual Studio.
+
+1. Redémarrage. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
+
+1. Libérez de l’espace. Supprimez les fichiers et applications inutiles de %SystemDrive%, par exemple en exécutant l’application de nettoyage du disque.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 Pour toute question sur l’exécution de versions antérieures de Visual Studio côte à côte avec Visual Studio 2017, consultez la page [Informations sur la compatibilité de Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
@@ -95,6 +119,12 @@ Pour toute question sur l’exécution de versions antérieures de Visual Studio
 ::: moniker range="vs-2019"
 
 Pour toute question sur l’exécution de versions antérieures de Visual Studio côte à côte avec Visual Studio 2019, consultez la page [Ciblage et compatibilité de la plateforme Visual Studio 2019](/visualstudio/releases/2019/compatibility/).
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Pour toute question sur l’exécution de versions antérieures de Visual Studio côte à côte avec Visual Studio 2022, consultez la page [ciblage et compatibilité de la plateforme Visual studio 2022](/visualstudio/releases/2019/compatibility/) .
 
 ::: moniker-end
 
@@ -108,7 +138,7 @@ Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la pa
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Pour ce faire, choisissez le bouton Suivant, l’édition de Visual Studio souhaitée, **Enregistrer**, puis **Dossier ouvert**.
 
@@ -151,7 +181,7 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
  ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Recherchez la charge de travail de votre choix dans la **Visual Studio installer**.
 
@@ -178,7 +208,7 @@ Si vous ne souhaitez pas utiliser la fonctionnalité charges de travail pour per
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019-installer des composants individuels](media/vs-2019/vs-installer-individual-components.png "Installer les composants individuels de Visual Studio")
 
@@ -194,7 +224,7 @@ Par défaut, le programme d’installation essaie d’installer la langue du sys
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019-installer des modules linguistiques](media/vs-2019/vs-installer-language-packs.png "Installer les modules linguistiques de Visual Studio")
 
@@ -214,7 +244,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
@@ -243,7 +273,7 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Une fois l’installation de Visual Studio terminée, choisissez le bouton **Lancer** pour commencer le développement avec Visual Studio.
 

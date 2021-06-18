@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7554ac46d7c4171cfb71166c51689ff4ae95c0d5
-ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
+ms.openlocfilehash: fe1d1a3c5ec13995cb69fff6ba6ec74c7a6c90d9
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "110724549"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307718"
 ---
 # <a name="automate-installs-by-using-settings-in-a-response-file"></a>Automatiser les installations à l’aide des paramètres d’un fichier réponse
 
 Les administrateurs qui déploient Visual Studio peuvent spécifier un fichier réponse à l’aide du paramètre `--in`, comme dans l’exemple suivant :
 
-```cmd
+```shell
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -64,7 +64,7 @@ Le fichier `response.json` de base dans une disposition doit ressembler à l’e
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -119,7 +119,7 @@ L’exemple suivant installe Visual Studio Enterprise avec six charges de travai
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {

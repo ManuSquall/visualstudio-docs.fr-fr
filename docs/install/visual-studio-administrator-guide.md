@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: ba41c545c2af2e0490ef0410fde7849706123940
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547412"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306707"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -34,7 +34,7 @@ Ce guide de l’administrateur fournit des conseils basés sur des scénarios po
 
 Avant de déployer Visual Studio à l’échelle de votre organisation, vous avez quelques décisions à prendre et quelques tâches à effectuer :
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * Vérifiez que chaque ordinateur cible présente la [configuration minimale requise pour l’installation](/visualstudio/releases/2019/system-requirements/).
 
@@ -60,7 +60,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
   Pour les ordinateurs qui ne sont pas connectés à Internet, la création d’une disposition minimale est le moyen le plus simple et le plus rapide de mettre à jour vos instances de Visual Studio hors connexion. Pour plus d’informations, consultez [mettre à jour Visual Studio à l’aide d’une disposition hors connexion minimale](update-minimal-layout.md).
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * Déterminez les [charges de travail et les composants](workload-and-component-ids.md?view=vs-2019&preserve-view=true) dont a besoin votre entreprise.
 
@@ -78,7 +78,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez si vous souhaitez activer la stratégie de groupe et si vous voulez configurer Visual Studio pour désactiver les commentaires du client sur les ordinateurs individuels.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Étape 1 – Télécharger les fichiers du produit Visual Studio
 
