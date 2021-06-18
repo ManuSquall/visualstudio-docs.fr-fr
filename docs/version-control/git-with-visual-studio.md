@@ -2,19 +2,19 @@
 title: L’expérience git dans Visual Studio 2019
 titleSuffix: ''
 description: Découvrez comment la nouvelle expérience git intégrée dans Visual Studio 2019 peut vous aider à être plus productif.
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7e8f428ea82fb36abf944b06c22e73f1b9ca9fb6
-ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112126556"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365454"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -188,11 +188,15 @@ Pour personnaliser et personnaliser vos paramètres git au niveau du référenti
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
 
+::: moniker range="vs-2019"
+
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience d’Team Explorer complète dans Visual Studio
 
 La nouvelle expérience git est le système de contrôle de version par défaut de Visual Studio 2019 à partir de la [version 16,8](/visualstudio/releases/2019/release-notes/) . Toutefois, si vous souhaitez la désactiver, vous pouvez. Accédez à **Outils**  >  **options**  >  **environnement** en préversion  >   , puis activez la case à cocher **nouvelle expérience utilisateur git** pour revenir à Team Explorer pour git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="La section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>Étapes suivantes
 

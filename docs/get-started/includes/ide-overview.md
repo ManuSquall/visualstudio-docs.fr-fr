@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 3c5cb8d78b254c667ecd131ef3850475a0460323
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748526"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112361820"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -21,7 +21,7 @@ ms.locfileid: "110748526"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 :::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Capture d’écran de l’IDE de Visual Studio, qui comprend des légendes qui indiquent où se trouvent les fonctionnalités et fonctionnalités clés." lightbox="../media/vs-2019/ide-overview.png":::
 
@@ -51,7 +51,7 @@ Il existe trois éditions de Visual Studio : Community, Professional et Enterpr
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2019, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2019.
 
