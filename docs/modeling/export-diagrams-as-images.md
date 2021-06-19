@@ -8,23 +8,23 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df0ecb55e72683a09bb68ec61410271b8c6a8774
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5aa5a1d5d1e64dbb5fbbe5a7ab1c0bb6968351b8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935103"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388891"
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 
 Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule pour pouvoir les partager avec les parties prenantes, les utilisateurs ou les membres de l'équipe de projet qui n'utilisent pas la même version de Visual Studio.
 
-Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Copier un diagramme ou une partie d’un diagramme vers une autre application
 

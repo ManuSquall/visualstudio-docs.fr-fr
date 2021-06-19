@@ -4,17 +4,17 @@ description: Découvrez comment vous pouvez étendre votre langage spécifique �
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a4572a7210203d6c7525a278430210c954c3405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935064"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388878"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 
@@ -133,7 +133,7 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le **répertoire \\ DSL \\ \* bin** .
 
-   - Si vous avez accès au fichier VSIX DSL, vous pouvez trouver l’assembly en remplaçant l’extension de nom de fichier du fichier VSIX par « . zip ». Décompressez le fichier. zip.
+   - Si vous avez accès au fichier VSIX DSL, vous pouvez trouver l’assembly en remplaçant l’extension de nom de fichier du fichier VSIX par « .zip ». Décompressez le fichier .zip.
 
 3. Ajoutez des références aux assemblys .NET suivants :
 

@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - text templates, accessing models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cae79908e3a760c37ac590ca61f43001d384d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e21dacfe56f41f1d2c0da51659ab55203db1a0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908929"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389161"
 ---
 # <a name="access-models-from-text-templates"></a>Accéder à des modèles à partir de modèles de texte
 
@@ -102,7 +102,7 @@ Here is a list of elements in the model:
 > [!NOTE]
 > Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire les modèles qui sont liés par des références ModelBus, consultez [utilisation de Visual Studio Modelbus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Si vous souhaitez accéder à plusieurs modèles à partir du même modèle de texte, vous devez appeler le processeur de directive généré une fois pour chaque modèle. Vous devez spécifier le nom de fichier de chaque modèle dans le `requires` paramètre. Vous devez spécifier les noms que vous souhaitez utiliser pour la classe de domaine racine dans le `provides` paramètre. Vous devez spécifier des valeurs différentes pour les `provides` paramètres dans chaque appel de directive. Par exemple, supposons que vous avez trois fichiers de modèle appelés Library. xyz, School. xyz et Work. xyz. Pour y accéder à partir du même modèle de texte, vous devez écrire trois appels de directive qui ressemblent à ceux qui suivent.
+ Si vous souhaitez accéder à plusieurs modèles à partir du même modèle de texte, vous devez appeler le processeur de directive généré une fois pour chaque modèle. Vous devez spécifier le nom de fichier de chaque modèle dans le `requires` paramètre. Vous devez spécifier les noms que vous souhaitez utiliser pour la classe de domaine racine dans le `provides` paramètre. Vous devez spécifier des valeurs différentes pour les `provides` paramètres dans chaque appel de directive. Par exemple, supposons que vous avez trois fichiers de modèle appelés Library.xyz, School.xyz et Work.xyz. Pour y accéder à partir du même modèle de texte, vous devez écrire trois appels de directive qui ressemblent à ceux qui suivent.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>

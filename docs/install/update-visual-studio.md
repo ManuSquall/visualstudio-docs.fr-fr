@@ -3,7 +3,7 @@ title: Mettre à jour Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment mettre à jour Visual Studio vers la version la plus récente, étape par étape.
 ms.date: 04/06/2021
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -17,12 +17,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b541568da45c9bd8dda7258534193371e7e9f04b
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8414d745b63eb0e9145208dca97ce9f117c5cf2c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306837"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387955"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 

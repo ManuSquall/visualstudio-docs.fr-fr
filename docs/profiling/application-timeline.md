@@ -1,7 +1,7 @@
 ---
 title: Analyser la consommation des ressources dans les applications XAML
 description: Utilisez le profileur chronologie de l’application pour rechercher des problèmes de performances dans les applications XAML. Vous pouvez analyser le temps passé pour différentes tâches dans différents scénarios.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d352c118bd8b21b9dcbf62f7dd32eaf2999ed471
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901194"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388020"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 

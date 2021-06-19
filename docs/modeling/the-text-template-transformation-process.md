@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8dc827039253c21effffcc82d70b4f66ff284738
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882945"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388592"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou C#, ou vous pouvez générer un rapport HTML.
@@ -30,7 +30,7 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 |Composant|Description|Personnalisable (oui/non)|
 |-|-|-|
 |Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
-|Host|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
+|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
 |Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|
 
 ## <a name="the-engine"></a>Le moteur

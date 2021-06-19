@@ -4,17 +4,17 @@ description: Découvrez comment vous pouvez contrôler la visibilité d’une ic
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c60d66188364ddd18be1d60a92b51ee5d7a9fc8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942800"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389616"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur une forme dans un langage spécifique à un domaine (DSL). Vous pouvez faire en sorte que l’élément décoratif apparaisse et disparaisse en fonction de l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir différentes icônes qui s’affichent en fonction du sexe, du nombre d’enfants, etc. de la personne.
@@ -90,7 +90,7 @@ Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur
 
 6. Notez l’espace de noms, la classe et la méthode qui sont manquants.  Par exemple, société. FamilyTree. Person. GetDecoratorControlValue ().
 
-7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Par exemple :
+7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Exemple :
 
     ```
     namespace Company.FamilyTree

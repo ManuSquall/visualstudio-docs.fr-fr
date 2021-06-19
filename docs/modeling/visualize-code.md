@@ -8,21 +8,21 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a261589af027c76708a70631426d8033eb2ada63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90c180bf9d910227013c2e089001ce5332cd1bd3
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924231"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388345"
 ---
 # <a name="visualize-code"></a>Visualiser du code
 
-Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual Studio pour aider à comprendre le code existant et à décrire votre application. Cela vous permet de savoir visuellement comment vos changements peuvent affecter le code et vous aide à évaluer le travail et les risques qui résultent de ces modifications. Par exemple :
+Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual Studio pour aider à comprendre le code existant et à décrire votre application. Cela vous permet de savoir visuellement comment vos changements peuvent affecter le code et vous aide à évaluer le travail et les risques qui résultent de ces modifications. Exemple :
 
 - Pour comprendre les relations dans votre code, mappez visuellement ces relations.
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
 
 Ces outils vous aident également à communiquer plus facilement avec les personnes impliquées dans votre projet.
 
-Pour connaître les éditions de Visual Studio qui prennent en charge chaque fonctionnalité, consultez la page [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
+Pour connaître les éditions de Visual Studio qui prennent en charge chaque fonctionnalité, consultez la page [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
 
@@ -44,6 +44,7 @@ Pour connaître les éditions de Visual Studio qui prennent en charge chaque fon
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Installer les outils de code de l’architecture](install-architecture-tools.md)
 - [Scénario : modifier votre conception à l’aide de la visualisation et de la modélisation](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Architecture d’analyse et de modèle](../modeling/analyze-and-model-your-architecture.md)
 - [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)

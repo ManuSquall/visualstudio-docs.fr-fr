@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b3026010e37108ca1b19096d48a3c8d88ab6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935532"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389369"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personnaliser le stockage de fichiers et la sérialisation XML
 
@@ -103,7 +103,7 @@ Notez les points suivants sur le modèle sérialisé :
 
 Les monikers sont utilisés pour représenter des références croisées entre les différentes parties des fichiers de modèle et de diagramme. Ils sont également utilisés dans le `.diagram` fichier pour faire référence aux nœuds dans le fichier de modèle. Il existe deux formes de moniker :
 
-- Les *monikers d’ID* guillemets du GUID de l’élément cible. Par exemple :
+- Les *monikers d’ID* guillemets du GUID de l’élément cible. Exemple :
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -246,7 +246,7 @@ Pour effectuer les personnalisations suivantes, développez le nœud **comportem
 
 Vous pouvez remplacer des parties ou l’ensemble des algorithmes de sérialisation.
 
-Nous vous recommandons d’étudier le code dans **Dsl\Generated Code\Serializer.cs** et **SerializationHelper.cs**.
+Nous vous recommandons d’étudier le code dans **Dsl\Generated Code\Serializer.cs** et **SerializationHelper. cs**.
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>Pour personnaliser la sérialisation d’une classe particulière
 

@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90a4efea7d37b83d3d5ff7a085abcf3439d99263
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924583"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388722"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :
@@ -119,7 +119,7 @@ Some text.
 > [!NOTE]
 > Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
 
- Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Par exemple :
+ Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Exemple :
 
 ```
 <#+

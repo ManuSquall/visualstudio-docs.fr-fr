@@ -3,18 +3,18 @@ title: 'Procédure pas à pas : déboguer des modèles de texte qui accèdent �
 description: Fournit des informations sur le débogage d’un modèle de texte qui accède à un modèle.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39b1ac72210145cc1efa1c513b7f3b76d8c2e36
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924118"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388228"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous pouvez recevoir des erreurs lorsque le moteur transforme le modèle en code source ou lors de la compilation du code généré. La procédure pas à pas suivante présente certaines des opérations que vous pouvez effectuer pour déboguer un modèle de texte.

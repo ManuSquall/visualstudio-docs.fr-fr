@@ -4,17 +4,17 @@ description: Découvrez comment Domain-Specific Language Tools offre un moyen pu
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f74a08f5bc4e2a5baded0ac4830b60406289661
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eee4fe2400bac1534bdc9c208fa60d9af8d3cfd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902721"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388839"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 
@@ -50,7 +50,7 @@ Décrit comment connecter un hôte personnalisé à un processeur de directive g
 [Commande DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Décrit le fichier de commandes qui exécute l’exécutable TextTransform sur la ligne de commande pour les modèles de texte qui font référence à des langages spécifiques à un domaine.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 
 [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)\
 Fournit la syntaxe des directives de modèle de texte et des blocs de contrôle.

@@ -4,17 +4,17 @@ description: Découvrez ce que représente un modèle et comment vous pouvez gé
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9299880c2d06cf323351a234239bed71597072a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68339159ed9926490f22a82cd30ce69f45ab6a30
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902710"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388865"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.

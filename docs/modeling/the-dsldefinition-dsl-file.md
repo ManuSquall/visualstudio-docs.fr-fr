@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2e2ae6e406b8967cb7de49573ce5b26377806e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924496"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388631"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -42,7 +42,7 @@ Cette section définit chaque relation dans le modèle. La source et la cible re
 
 ### <a name="types"></a>Types
 
-Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. `DomainEnumerations` sont définis dans le modèle et génèrent des types dans DomainModel.cs. `ExternalTypes` reportez-vous aux types définis ailleurs (tels que `String` ou `Int32` ) et ne générez pas d’éléments.
+Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. `DomainEnumerations` sont définis dans le modèle et génèrent des types dans DomainModel. cs. `ExternalTypes` reportez-vous aux types définis ailleurs (tels que `String` ou `Int32` ) et ne générez pas d’éléments.
 
 ### <a name="shapes"></a>Formes
 
@@ -277,7 +277,7 @@ Chaque outil de connexion peut appeler un générateur de connexion spécifique.
 
 Aucun de ces types d'outils ne construit directement des formes ou des connecteurs. Chacun instancie une classe de domaine ou une relation de domaine ; les mappages Forme et Connecteur déterminent ensuite comment cette classe de domaine ou cette relation de domaine apparaît.
 
-## <a name="paths"></a>Chemins d'accès
+## <a name="paths"></a>Chemins
 
 Les chemins d'accès de domaine apparaissent à plusieurs emplacements dans le fichier DslDefinition.dsl. Ces chemins d'accès spécifient une série de liens d'un élément du modèle (autrement dit, une instance du langage spécifique à un domaine) à un autre. La syntaxe de chemin d'accès est simple mais détaillée.
 
@@ -467,7 +467,7 @@ Le fichier sérialisé contient :
 
 (La relation Connection possède ses propres données de classe XML, qui fournissent ses noms d'éléments et d'attributs.)
 
-Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Par exemple :
+Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Exemple :
 
 ```xml
 <component name="Component3">

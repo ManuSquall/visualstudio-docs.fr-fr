@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fa3fd0fd16f33342e362432e0193a92e0e981b04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dda7efe884a749d59e0063ef0102681a2510afb8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923999"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388059"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilisation de l'Explorateur de langage spécifique à un domaine
 L' **Explorateur DSL** affiche plusieurs types d’informations dans une arborescence. Pour plus d’informations sur la plupart des éléments de l’Explorateur DSL, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).

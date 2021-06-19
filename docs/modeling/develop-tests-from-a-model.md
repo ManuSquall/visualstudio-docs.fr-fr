@@ -6,22 +6,22 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4884ec4eb3e316e22e4ba54cd8defe71d4b8018
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dadffd0a2950d55145b24d3172564eb572f98d70
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935168"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389148"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
 
- Pour connaître les versions de Visual Studio qui prennent en charge ces fonctionnalités, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge ces fonctionnalités, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Tests système et de sous-systèmes
  Le *test du système,* également appelé *test d’acceptation*, consiste à tester si les besoins des utilisateurs sont satisfaits. Ces tests portent sur le comportement extérieurement visible du système, plutôt que sur sa conception interne.
@@ -133,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Attacher des cas de test à des éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
- Vous pouvez lier des tests à tous les types d'éléments. En voici quelques exemples :
+ Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
 
 - Lier un cas d'usage aux tests qui l'utilisent.
 

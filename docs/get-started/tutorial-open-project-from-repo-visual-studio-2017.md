@@ -1,7 +1,7 @@
 ---
 title: 'Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017'
 description: Découvrez comment ouvrir un projet dans un référentiel git ou Azure DevOps à l’aide de Visual Studio 2017.
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 01aca95bde7a20f746d4faece4090eac60b3849e
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 5543a568f7246d9600ba375d9a1cf19af4cbd2d4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542975"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389200"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017
 

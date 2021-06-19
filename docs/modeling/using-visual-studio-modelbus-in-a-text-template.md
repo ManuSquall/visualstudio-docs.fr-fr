@@ -3,17 +3,17 @@ title: Utiliser ModelBus dans un modèle de texte
 description: Découvrez comment résoudre les références aux modèles d’accès cibles si vous écrivez des modèles de texte qui lisent un modèle qui contient des références Visual Studio ModelBus.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f65ece27122949fec006d73858c8c89483441f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2afe8de66b109793a4e15e8320c3f498a08b25ec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924380"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388384"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilisation de Visual Studio ModelBus dans un modèle de texte
 

@@ -6,23 +6,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae85c7f98aab3e852a810976cc1cecbd83b65307
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924309"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388371"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 
 Visual Studio peut vous aider à maintenir la cohérence de vos logiciels avec les exigences des utilisateurs et avec l’architecture de votre système.
 
-Pour connaître les versions de Visual Studio qui prennent en charge chacune de ces fonctionnalités, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chacune de ces fonctionnalités, consultez [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="key-tasks"></a>Tâches clés
 

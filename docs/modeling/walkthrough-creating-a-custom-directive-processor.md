@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 718ca7b5abf2a7730470475caf2cdf5c200b23b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e23c8de467cc45abf6fa9f61dfb29dd6c5f1d9cc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924104"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388241"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : créer un processeur de directive personnalisé
 
@@ -659,7 +659,7 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
    | Nom | Type | Données |
    |-|-|-|
    | (Par défaut) | REG_SZ | (valeur non définie) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Si vous avez placé l'assembly dans le GAC, les valeurs doivent se présenter comme suit :
@@ -667,7 +667,7 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
    | Nom | Type | Données |
    |-|-|-|
    | (Par défaut) | REG_SZ | (valeur non définie) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. Démarrez Visual Studio.

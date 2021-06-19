@@ -2,8 +2,8 @@
 title: 'Didacticiel : prise en main de C# et ASP.NET Core'
 titleSuffix: ''
 description: Découvrez comment créer une application web ASP.NET Core dans Visual Studio avec C#, pas à pas.
-ms.custom: seodec18, get-started
-ms.date: 02/12/2021
+ms.custom: vs-acquisition, get-started
+ms.date: 06/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,46 +16,41 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 58f9604cbecdbe6414e91079a9e0e4691a32b768
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 25840b820a92925c3d7434d0c76b0138b533b2dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308543"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388111"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Bien démarrer avec C# et ASP.NET Core dans Visual Studio
 
 Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Visual Studio, vous allez créer une application web C# ASP.NET Core, y apporter des changements, explorer certaines fonctionnalités de l’environnement IDE, puis exécuter l’application.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="prerequisites"></a>Prérequis
 
-### <a name="install-visual-studio"></a>Installation de Visual Studio
+1. Installation de Visual Studio
+   ::: moniker range="vs-2017"
+   
+   Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
+   
+   ::: moniker-end
+   
+   ::: moniker range="vs-2019"
+   
+   Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+   
+   ::: moniker-end
 
-::: moniker range="vs-2017"
+   ::: moniker range="vs-2022"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
+   Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="vs-2019"
+1. Mettre à jour Visual Studio : Si vous avez déjà installé Visual Studio, assurez-vous que vous utilisez la version la plus récente. Pour plus d’informations sur la mise à jour de votre installation, consultez la page [mettre à jour Visual Studio vers la version la plus récente](../../install/update-visual-studio.md) .
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-Si vous n’avez pas encore installé Visual Studio 2022 Preview, accédez à la page [téléchargements Visual studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) pour l’installer gratuitement.
-
-::: moniker-end
-
-### <a name="update-visual-studio"></a>Mettre à jour Visual Studio 2017
-
-Si vous avez déjà installé Visual Studio, veillez à exécuter la version la plus récente. Pour plus d’informations sur la mise à jour de votre installation, consultez la page [mettre à jour Visual Studio vers la version la plus récente](../../install/update-visual-studio.md) .
-
-### <a name="choose-your-theme-optional"></a>Choisir votre thème (facultatif)
-
-Ce tutoriel contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment faire.
+1. Choisissez votre thème (facultatif)-ce didacticiel contient des captures d’écran qui utilisent le thème sombre. Vous pouvez [personnaliser la page de l’éditeur et de l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment procéder.
 
 ## <a name="create-a-project"></a>Création d’un projet
 

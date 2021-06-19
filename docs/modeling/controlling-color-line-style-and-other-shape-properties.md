@@ -3,18 +3,18 @@ title: Contrôler la couleur, le style de trait et d’autres propriétés des f
 description: Fournit des informations sur le contrôle des propriétés de forme, telles que la couleur et le style de ligne.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 836c77f3651b7686e9366fe75ea7922a248fd28f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861658"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389629"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
 

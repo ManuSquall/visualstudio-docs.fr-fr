@@ -18,23 +18,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945381"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389512"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge.
 
-Pour connaître les versions de Visual Studio qui prennent en charge chaque type de diagramme, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chaque type de diagramme, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 Pour visualiser l'architecture d'un système ou de code existant, créez les diagrammes suivants :
 

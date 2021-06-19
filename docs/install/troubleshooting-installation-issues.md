@@ -2,7 +2,7 @@
 title: Résoudre les problèmes d’installation ou de mise à niveau
 description: Parfois, des problèmes peuvent se produire. Cette page peut vous aider en cas d’échec de l’installation ou de la mise à niveau de Visual Studio.
 ms.date: 06/24/2020
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e0bc092663cc0e100598f991ae1b2a18a4b94501
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 802e4cfb78a9302bd24bca55cda1bf9eab79f9ef
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306863"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387825"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 

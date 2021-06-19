@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd0b67075a66663146d706d8f82e8c5d9f76e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 532850f8bb4ac6198481188c2a57a8db15a13873
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940538"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389278"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indiquer au débogueur le type à afficher à l’aide de l’attribut DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -49,7 +49,7 @@ Il sera judicieux de faire du proxy de type une classe privée imbriquée dans l
 
 Si <xref:System.Diagnostics.DebuggerTypeProxyAttribute> est utilisé au niveau de l'assembly, le paramètre `Target` spécifie le type que le proxy remplacera.
 
-Pour obtenir un exemple d’utilisation de cet attribut avec <xref:System.Diagnostics.DebuggerDisplayAttribute> et <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , consultez[utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+Pour obtenir un exemple d’utilisation de cet attribut avec <xref:System.Diagnostics.DebuggerDisplayAttribute> et <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , consultez [utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>Utilisation de génériques avec DebuggerTypeProxy
 

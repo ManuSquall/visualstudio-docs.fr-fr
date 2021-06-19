@@ -3,18 +3,18 @@ title: Créer un langage spécifique à un domaine basé sur Windows Forms
 description: Fournit des informations sur l’utilisation de Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a77a22b7ed888b28f12154974d735213952899c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945407"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389538"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage de Domain-Specific basé sur Windows Forms
 
@@ -141,7 +141,7 @@ L’image suivante est la définition DSL utilisée dans cette procédure pas à
 
     Laissez les paramètres par défaut pour les autres propriétés.
 
-4. Ouvrez FarmControl.cs en mode conception.
+4. Ouvrez FarmControl. cs en mode conception.
 
     Faites glisser **Farm** depuis la fenêtre sources de données vers FarmControl.
 
@@ -237,7 +237,7 @@ La solution DSL peut désormais être générée et exécutée, bien que vous pu
 
 ### <a name="make-the-properties-update-immediately"></a>Mettre immédiatement à jour les propriétés
 
-1. En mode création de FarmControl.cs, sélectionnez un champ simple, tel que nom, taille ou IsOrganic.
+1. Dans la vue conception de FarmControl. cs, sélectionnez un champ simple, tel que nom, taille ou IsOrganic.
 
 2. Dans le Fenêtre Propriétés, développez **DataBindings** et ouvrez **(avancé)**.
 
@@ -249,7 +249,7 @@ La solution DSL peut désormais être générée et exécutée, bien que vous pu
 
 ### <a name="provide-add-buttons"></a>Fournir des boutons ajouter
 
-1. En mode création de FarmControl.cs, utilisez la boîte à outils pour créer un bouton sur le formulaire.
+1. Dans la vue conception de FarmControl. cs, utilisez la boîte à outils pour créer un bouton sur le formulaire.
 
     Modifiez le nom et le texte du bouton, par exemple `New Sheep` .
 

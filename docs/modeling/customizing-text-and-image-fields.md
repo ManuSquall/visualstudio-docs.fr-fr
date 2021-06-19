@@ -4,17 +4,17 @@ description: En savoir plus sur la personnalisation des fichiers texte et image.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f52c4deda5b934a9b55c5ecfeec95ca633edf15e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935363"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389265"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 Lorsque vous définissez un élément décoratif de texte dans une forme, il est représenté par un élément TextField. Pour obtenir des exemples d’initialisation de TextFields et d’autres ShapeFields, inspectez Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.

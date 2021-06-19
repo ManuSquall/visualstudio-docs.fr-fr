@@ -1,7 +1,7 @@
 ---
 title: Déployer des applications UWP | Microsoft Docs
 description: Déployez des applications plateforme Windows universelle (UWP) à partir de Visual Studio. Spécifiez un appareil cible local ou distant pour le déploiement. Comprendre les options de déploiement.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d8819f92e19960aefc7e485acb2fb7fa827b6ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a1c1802d92beb436bbd2ac87bd1e7a39f6086f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872168"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387864"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -50,7 +50,7 @@ Le déploiement est automatique quand vous déboguez votre application à partir
 
 ## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
 
-**Conditions préalables**
+**Composants requis**
 
 Sur un appareil distant Windows 10, vous devez activer le [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 qui exécutent la mise à jour du créateur ou une version ultérieure, les outils de contrôle à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 

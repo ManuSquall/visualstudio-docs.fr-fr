@@ -8,17 +8,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8034e0d1df6410c842f7d93a4ee3023957904744
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923980"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388085"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra « \<html> ... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
@@ -33,7 +33,7 @@ Un modèle de texte contient le texte qui sera généré à partir du modèle. P
 
 - **Blocs de contrôle** : code de programme qui insère des valeurs de variables dans le texte et contrôle des parties conditionnelles ou répétées du texte.
 
-Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle, comme décrit dans [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examinez le fichier output **. txt** .
+Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle, comme décrit dans [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examinez le fichier de **.txt** de sortie.
 
 ## <a name="directives"></a>Directives
  Les directives de modèle de texte fournissent des instructions générales au moteur de création de modèles de texte concernant la manière de générer le code de transformation et le fichier de sortie.
@@ -157,7 +157,7 @@ private int Square(int i)
  Pour plus d’informations sur les blocs de contrôle, consultez [blocs de contrôle de modèle de texte](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Les blocs de fonctionnalité de classe peuvent contenir des blocs de texte
- Vous pouvez écrire une méthode qui génère du texte. Par exemple :
+ Vous pouvez écrire une méthode qui génère du texte. Exemple :
 
 ```
 List of Squares:
@@ -187,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Vous devez utiliser des noms de chemins d’accès absolus ou des noms de macros standard dans le nom du chemin d’accès. Par exemple :
+ Vous devez utiliser des noms de chemins d’accès absolus ou des noms de macros standard dans le nom du chemin d’accès. Exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>

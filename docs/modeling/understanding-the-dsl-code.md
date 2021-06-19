@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84f75298bc2854172eb7ec63bd6412e5703cfad7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924485"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388579"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 
@@ -72,7 +72,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)
 
- La relation est créée dans la méthode *Relationship* `Builder.Connect()` . La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Par exemple :
+ La relation est créée dans la méthode *Relationship* `Builder.Connect()` . La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Exemple :
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -124,7 +124,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
 - Des méthodes de gestionnaire EGP (Element Group Prototype). Ils sont nécessaires si l’utilisateur peut *fusionner* (ajouter) un autre élément sur des instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.
 
-   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. La clé publique du signataire doit être fournie à la classe
+   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. Les
 
    Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.
 

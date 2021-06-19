@@ -1,7 +1,7 @@
 ---
 title: Préparer le débogage de projets C++ | Microsoft Docs
 description: Obtenir des informations sur la préparation du débogage des types de projet de base créés par les modèles de projet Visual C++ dans Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 258671ca0426cb877d7cdf4bfc0b0f8f6095253c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683035"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387838"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Préparation du débogage : types de projets C++
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].

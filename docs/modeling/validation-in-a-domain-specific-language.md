@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6de3a8940c845b29d2d0c7454b7c585f4676dba0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924255"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388332"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.
@@ -84,7 +84,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 
     L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.
 
-   Par exemple :
+   Exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -179,7 +179,7 @@ public partial class Person
 
  L'inconvénient est que la méthode combinée est moins facile à gérer et que les contraintes doivent toutes avoir les mêmes `ValidationCategories`. Il est donc recommandé que vous conserviez chaque contrainte dans une méthode distincte si possible.
 
- **Passage des valeurs dans le cache du contexte.**  Le paramètre de contexte dispose d'un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Par exemple :
+ **Passage des valeurs dans le cache du contexte.**  Le paramètre de contexte dispose d'un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Exemple :
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -215,7 +215,7 @@ partial class MyLanguageCommandSet
 
  Pour plus d’informations, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Par exemple :
+ Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: f8b7bc48a5c409dbecbb313fd277a31ad1cec287
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884146"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389135"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 
@@ -66,7 +66,7 @@ Un modèle de texte contient une combinaison du texte que vous souhaitez génér
 
     Vous pouvez voir un message d' **avertissement de sécurité** vous demandant de confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.
 
-6. Dans **Explorateur de solutions**, développez le nœud du fichier de modèle et vous trouverez un fichier portant l’extension **. txt**. Ce fichier contient le texte généré à partir du modèle.
+6. Dans **Explorateur de solutions**, développez le nœud du fichier de modèle et vous trouverez un fichier avec l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
 
    > [!NOTE]
    > Si votre projet est un projet Visual Basic, vous devez cliquer sur **Afficher tous les fichiers** pour afficher le fichier de sortie.
@@ -125,7 +125,7 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
 Pour déboguer un modèle de texte
 
-- Insérez `debug="true"` dans la directive `template`. Par exemple :
+- Insérez `debug="true"` dans la directive `template`. Exemple :
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -274,7 +274,7 @@ Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTempla
 
 ### <a name="getting-data-from-visual-studio"></a>Obtention de données à partir de Visual Studio
 
-Pour utiliser les services fournis dans Visual Studio, définissez l' `hostSpecific` attribut et chargez l' `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating` , qui contient la `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Par exemple :
+Pour utiliser les services fournis dans Visual Studio, définissez l' `hostSpecific` attribut et chargez l' `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating` , qui contient la `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :
 
 ```src
 <#@ template hostspecific="true" language="C#" #>

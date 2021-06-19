@@ -1,7 +1,7 @@
 ---
 title: Utiliser des fichiers dump dans le débogueur | Microsoft Docs
 description: Un fichier dump est un instantané d’une application en cours d’exécution et des modules chargés. Envisagez de créer un fichier dump pour les situations où vous n’avez pas d’accès de débogage à l’application.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.openlocfilehash: 1496c50d6a4022083a5cd093a0682ef36c70bbaa
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107941121"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389226"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
@@ -95,20 +95,20 @@ Lorsque le [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visu
    - Pour définir les emplacements de chargement des symboles, sélectionnez **définir les chemins d’accès aux symboles**.
    - Pour démarrer le débogage, sélectionnez **Déboguer avec managé uniquement**, **Déboguer avec natif uniquement**, **Déboguer avec mixte** ou **Déboguer avec la mémoire managée**.
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher les fichiers. exe,. pdb et source
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher les fichiers .exe,. pdb et source
 
 Pour utiliser les fonctionnalités de débogage complètes sur un fichier dump, Visual Studio a besoin des éléments suivants :
 
-- Le fichier *. exe* pour lequel le dump a été créé, ainsi que d’autres fichiers binaires (dll, etc.) utilisés par le processus de vidage.
-- Fichiers de symboles (*. pdb*) pour le fichier *. exe* et d’autres fichiers binaires.
-- Fichiers *. exe* et *. pdb* qui correspondent exactement à la version et à la build des fichiers lors de la création du dump.
+- Le fichier *.exe* pour lequel le dump a été créé, ainsi que d’autres fichiers binaires (dll, etc.) utilisés par le processus de vidage.
+- Fichiers de symboles (*. pdb*) pour le *.exe* et d’autres fichiers binaires.
+- Les fichiers *.exe* et *. pdb* qui correspondent exactement à la version et à la build des fichiers lors de la création du dump.
 - Fichiers sources des modules appropriés. Vous pouvez utiliser le code machine des modules si vous ne trouvez pas les fichiers sources.
 
 Si le dump contient des données de tas, Visual Studio peut faire face à des binaires manquants pour certains modules, mais il doit avoir des binaires pour les modules suffisants pour générer des piles d’appels valides.
 
-### <a name="search-paths-for-exe-files"></a>Chemins de recherche des fichiers. exe
+### <a name="search-paths-for-exe-files"></a>Chemins de recherche pour les fichiers .exe
 
-Visual Studio recherche automatiquement dans ces emplacements les fichiers *. exe* qui ne sont pas inclus dans le fichier dump :
+Visual Studio recherche automatiquement ces emplacements pour les fichiers *.exe* qui ne sont pas inclus dans le fichier dump :
 
 1. Dossier qui contient le fichier dump.
 2. Le chemin d’accès du module spécifie le fichier dump, qui est le chemin d’accès du module sur l’ordinateur qui a collecté le vidage.

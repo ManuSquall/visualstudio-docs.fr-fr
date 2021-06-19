@@ -4,17 +4,17 @@ description: Découvrez que dans un langage spécifique à un domaine dans Visua
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6439a01de2a02361914ce227c43d903f1b24b405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924350"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388566"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Mettre à jour les formes et les connecteurs pour refléter le modèle
 
@@ -86,7 +86,7 @@ Si vous souhaitez que la variable de propriété soit uniquement sous contrôle 
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Utiliser OnChildConfigured pour initialiser les propriétés d’une forme
 
-Pour définir les propriétés d’une forme lorsqu’elle est créée pour la première fois, remplacez `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Par exemple :
+Pour définir les propriétés d’une forme lorsqu’elle est créée pour la première fois, remplacez `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Exemple :
 
 ```csharp
 partial class MyLanguageDiagram

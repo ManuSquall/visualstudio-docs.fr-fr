@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfa8a3cda3f6bb2f564efe745a11863cf4d0e8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04180b1fc8930b58c2d78635c794c8a614db5ed5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945303"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389382"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personnaliser et étendre un langage spécifique à un domaine
 
@@ -52,14 +52,14 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |Modifiez le nom, l’icône et la visibilité des nœuds dans l’Explorateur de modèles de votre DSL.|Consultez [Personnalisation de l’Explorateur de modèles](../modeling/customizing-the-model-explorer.md).|
 |Activer la copie, couper et coller|Définissez la propriété **activer la copie de collage** du nœud **éditeur** dans l’Explorateur DSL.|
 |Copier les liens de référence et leurs cibles chaque fois qu’un élément est copié. Par exemple, copiez les commentaires attachés à un élément.|Définissez la propriété **propager la copie** du rôle source (représenté par la ligne d’un côté de la relation de domaine dans le diagramme de définition DSL).<br /><br /> Écrivez du code pour remplacer ProcessOnCopy pour obtenir des effets plus complexes.<br /><br /> Consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
-|Supprimer, reparenter ou réassocier des éléments connexes lorsqu’un élément est supprimé.|Définissez la valeur de **suppression des propagations** d’un rôle de relation. Pour les effets plus complexes, substituez `ShouldVisitRelationship` `ShouldVisitRolePlayer` les méthodes et dans la `MyDslDeleteClosure` classe, définies dans **DomainModel.cs**.|
+|Supprimer, reparenter ou réassocier des éléments connexes lorsqu’un élément est supprimé.|Définissez la valeur de **suppression des propagations** d’un rôle de relation. Pour les effets plus complexes, substituez `ShouldVisitRelationship` `ShouldVisitRolePlayer` les méthodes et dans la `MyDslDeleteClosure` classe, définies dans **DomainModel. cs**.|
 |Conserver la disposition et l’apparence de la forme lors de la copie et du glisser-déplacer.|Ajoutez les formes et les connecteurs au copié `ElementGroupPrototype` . La méthode la plus pratique pour remplacer est `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituez `ClipboardCommandSet.ProcessOnCopy()` pour utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` voir [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
 |Créer des liens supplémentaires lors du collage|Remplacez ClipboardCommandSet. ProcessOnPasteCommand ()|
 |Activer le glisser-déplacer à partir de ce diagramme, d’autres DSL et éléments Windows|Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Autoriser le glissement d’une forme ou d’un outil sur une forme enfant, telle qu’un port, comme si elle était glissée sur le parent.|Définissez une directive de fusion d’élément sur la classe d’objet cible pour transférer l’objet déplacé vers le parent. Consultez [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md).|
 |Autoriser le glissement d’une forme ou d’un outil sur une forme et avoir des liens ou des objets supplémentaires créés. Par exemple, pour autoriser la suppression d’un commentaire sur un élément auquel il doit être lié.|Définissez une directive de fusion d’éléments sur la classe de domaine cible et définissez les liens à générer. Dans les cas complexes, vous pouvez ajouter du code personnalisé. Consultez [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md).|
-|Créez un groupe d’éléments à l’aide d’un seul outil. Par exemple, un composant avec un ensemble fixe de ports.|Substituez la méthode d’initialisation Toolbox dans ToolboxHelper.cs. Créez un prototype de groupe d’éléments (EGP) contenant les éléments et leurs liens de relation. Consultez [Personnalisation des outils et de la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluez les formes principal et port dans le EGP, ou définissez BoundsRules pour positionner les formes de port lorsque le EGP est instancié.|
+|Créez un groupe d’éléments à l’aide d’un seul outil. Par exemple, un composant avec un ensemble fixe de ports.|Substituez la méthode d’initialisation Toolbox dans ToolboxHelper. cs. Créez un prototype de groupe d’éléments (EGP) contenant les éléments et leurs liens de relation. Consultez [Personnalisation des outils et de la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluez les formes principal et port dans le EGP, ou définissez BoundsRules pour positionner les formes de port lorsque le EGP est instancié.|
 |Utilisez un outil de connexion pour instancier plusieurs types de relations.|Ajoutez des directives de connexion de lien (LCD) au générateur de connexions qui est appelé par l’outil. Les écrans LCD déterminent le type de la relation à partir des types des deux éléments. Pour que cela dépende des États des éléments, vous pouvez ajouter du code personnalisé. Consultez [Personnalisation des outils et de la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).|
 |Outils rémanents : l’utilisateur peut double-cliquer sur n’importe quel outil pour créer plusieurs formes ou connecteurs successivement.|Dans l’Explorateur DSL, sélectionnez le `Editor` nœud. Dans le Fenêtre Propriétés, Set **utilise des éléments de boîte à outils rémanents**.|
 |Définir des commandes de menu|Consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
