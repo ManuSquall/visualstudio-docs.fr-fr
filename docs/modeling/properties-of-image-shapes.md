@@ -9,17 +9,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.imageshape
 helpviewer_keywords:
 - Domain-Specific Language, image shape
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bbd2fff30ab59d14c8aa2762d8cca942063bd79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98198b1197de6f5fda6a05a5bae58378a323f718
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918348"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390553"
 ---
 # <a name="properties-of-image-shapes"></a>Propriétés des formes d'image
 
@@ -47,14 +47,14 @@ Les propriétés des formes d’image sont répertoriées dans le tableau suivan
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage|Couleur de remplissage de cette forme.|White|
+|Couleur de remplissage|Couleur de remplissage de cette forme.|Blancs|
 |Mode dégradé de remplissage|Mode de remplissage dégradé de cette forme.|Horizontal|
 |A des points de connexion par défaut|Si `True` la forme est, la forme utilise les points de connexion du haut, du bas, de gauche et de droite dans le concepteur généré.|False|
 |Couleur de contour|Couleur de contour de cette forme.|Noir|
 |Style de tiret de contour|Style de tiret de contour de cette forme (plein, tiret, point, tiret point, tiret point point ou personnalisé).|Unie|
 |Épaisseur du contour|Épaisseur de contour de cette forme.|0,03125|
 |Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à cette forme.|Noir|
-|Modificateur d'accès|Modificateur d’accès de la forme Geometry (public ou Internal).|Blockchain publique|
+|Modificateur d'accès|Modificateur d’accès de la forme Geometry (public ou Internal).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source générée à partir de cette forme.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
@@ -71,7 +71,7 @@ Les propriétés des formes d’image sont répertoriées dans le tableau suivan
 |Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour cette forme.|\<none>|
 |Texte d’info-bulle fixe|Texte utilisé pour une info-bulle fixe.|\<none>|
 |Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour cet élément.|\<none>|
-|SE conteneur|Chemin d’accès au fichier image utilisé pour cette forme.|\<none>|
+|Image|Chemin d’accès au fichier image utilisé pour cette forme.|\<none>|
 
 ## <a name="see-also"></a>Voir aussi
 

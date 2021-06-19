@@ -1,7 +1,7 @@
 ---
 title: Attacher aux processus en cours d’exécution avec le débogueur
 description: Découvrez comment attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e3836403af80d06a2ecaa7f77cb7f49f0c6f0e8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866006"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389785"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
@@ -196,7 +196,7 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Débogage à distance ASP.NET 4 ou 4,5 sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe*|Voir [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe* ou *dotnet.exe*|À compter de .NET Core 3, le processus de *w3wp.exe* est utilisé pour le [modèle d’hébergement dans l’application](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)par défaut. Pour le déploiement d’applications, consultez [publier sur IIS](/aspnet/core/host-and-deploy/iis/). Pour plus d’informations, consultez [ASP.net Core du débogage distant sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach) .|
 |Déboguer le script côté client sur un serveur IIS local, pour les types d’applications pris en charge |Utiliser l' **attachement au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|Le débogage de script doit être activé. Pour Chrome, vous devez également exécuter chrome en mode débogage ( `chrome.exe --remote-debugging-port=9222` de type à partir d’une ligne de commande) et sélectionner **JavaScript (chrome)** dans le champ **attacher à** .|
-|Déboguer une application C#, Visual Basic ou C++ sur l’ordinateur local|Utiliser le débogage standard (**F5**) ou l' **attachement au processus**|*\<appname>. exe*|Dans la plupart des scénarios, utilisez le débogage standard et non l' **attachement au processus**.|
+|Déboguer une application C#, Visual Basic ou C++ sur l’ordinateur local|Utiliser le débogage standard (**F5**) ou l' **attachement au processus**|*\<appname>.exe*|Dans la plupart des scénarios, utilisez le débogage standard et non l' **attachement au processus**.|
 |Débogage à distance d’une application de bureau Windows|outils de contrôle à distance.|N/A| Voir [Déboguer à distance une application C# ou Visual Basic](../debugger/remote-debugging-csharp.md) , ou [Déboguer à distance une application C++](../debugger/remote-debugging-cpp.md)|
 |Déboguer .NET Core sur Linux|Utiliser l' **attachement au processus**|*dotnet.exe* ou un nom de processus unique|Pour utiliser SSH, consultez [Déboguer à distance .net Core s’exécutant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Pour les applications en conteneur, consultez [attacher à un processus en cours d’exécution dans un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
 |Déboguer une application en conteneur|Utiliser l' **attachement au processus**|*dotnet.exe* ou un nom de processus unique|Consultez [attacher à un processus en cours d’exécution dans un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md)|

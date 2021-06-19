@@ -1,7 +1,7 @@
 ---
 title: Paramètres de propriété du débogueur recommandés pour C#, VB | Microsoft Docs
 description: Consultez les paramètres de propriété de génération et de compilation qui doivent être identiques pour tous les débogages managés. Les autres paramètres peuvent varier en fonction du type de projet.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3061823a97faa53680bb358475a583493be5b93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2262194dbb6a8f4b0a47b4fcfc7f9f696c60167
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893098"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390396"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Débogage managé : paramètres de propriété recommandés
 Certaines propriétés doivent être définies de la même manière pour tous les scénarios de débogage managé.

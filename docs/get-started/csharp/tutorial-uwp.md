@@ -1,8 +1,8 @@
 ---
-title: 'Créer une application UWP avec Visual Studio et C #'
+title: 'Didacticiel : créer des applications UWP avec Visual Studio & C #'
 description: Créer une application UWP dans Visual Studio avec XAML et C#
 titleSuffix: ''
-ms.custom: seodec18, get-started, SEO-VS-2020
+ms.custom: vs-acquisition, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e68039e02a6181ef7970fdc6a1b3bd6ad173093
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 2e89c58e3c0dca2b5d009a592d3f242646339f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295635"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390292"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
 
@@ -32,14 +32,14 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Créez tout d’abord un projet de plateforme Windows universelle. Le type de projet inclut tous les fichiers de modèle dont vous avez besoin au départ.
 
 ::: moniker range="vs-2017"
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Windows universel**. Dans le volet central, choisissez **Application vide (Windows universel)**. Ensuite, nommez le projet *HelloWorld* et choisissez **OK**.
 
@@ -168,7 +168,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
    ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](media/uwp-start-or-debug.png)
 
-   (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** à partir de la barre de menus ou appuyer sur F5 pour démarrer votre application.)
+   (Vous pouvez également choisir **Déboguer** > **Démarrez le débogage** à partir de la barre de menus ou appuyez sur F5 pour démarrer votre application.)
 
 1. Examinez votre application, qui apparaît vite après la disparition d’un écran de démarrage. L’application doit ressembler à ceci :
 
@@ -188,7 +188,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
    ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](media/uwp-start-or-debug.png)
 
-   (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** à partir de la barre de menus ou appuyer sur F5 pour démarrer votre application.)
+   (Vous pouvez également choisir **Déboguer** > **Démarrez le débogage** à partir de la barre de menus ou appuyez sur F5 pour démarrer votre application.)
 
 1. Examinez votre application, qui apparaît vite après la disparition d’un écran de démarrage. L’application doit ressembler à ceci :
 

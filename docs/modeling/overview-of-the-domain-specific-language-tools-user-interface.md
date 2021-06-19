@@ -7,18 +7,18 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fe826b373ba2ee468bfe511392eb5564234dc68
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959127"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390956"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez pour la première fois une solution Domain-Specific Language Tools (outils DSL) dans Visual Studio, l’interface utilisateur ressemble à l’image suivante.
@@ -27,7 +27,7 @@ Lorsque vous ouvrez pour la première fois une solution Domain-Specific Language
 
  Le tableau suivant explique comment les parties de l’interface utilisateur sont utilisées.
 
-|**Element**|**Definition**|
+|**Element**|**Définition**|
 |-|-|
 |Diagramme|Le diagramme affiche le modèle de domaine.<br /><br /> Le diagramme comporte deux parties. Une partie définit les types des éléments de vos modèles. L’autre partie définit comment vos modèles apparaissent à l’écran.|
 |Boîte à outils|Faites glisser les outils de la boîte à outils vers le diagramme pour ajouter des classes de domaine et des types de forme. Pour ajouter des connecteurs, des relations et des mappages de formes, cliquez sur l’outil, sur le nœud source du diagramme, puis sur le nœud cible.|

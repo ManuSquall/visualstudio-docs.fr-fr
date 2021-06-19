@@ -1,7 +1,7 @@
 ---
 title: Déboguer des applications multithread | Microsoft Docs
 description: Déboguez des applications multithread dans Visual Studio. Passez en revue les outils et autres articles sur le débogage des applications multithread.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5551ffd39bfe3485d0b6e31def0b3cfff9c7e3b1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873208"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389759"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 Un thread est une séquence d’instructions à laquelle le système d’exploitation accorde du temps processeur. Chaque processus exécuté dans le système d'exploitation se compose d'au moins un thread. Les processus qui comportent plusieurs threads sont appelés multithread.
@@ -102,7 +102,7 @@ Attribuez au thread un nom qui s’affiche dans la fenêtre **Threads**.
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser des points d’arrêt](../debugger/using-breakpoints.md)
-- [Thread](/dotnet/standard/threading/index)
+- [Threads](/dotnet/standard/threading/index)
 - [Multithreading dans les composants](/previous-versions/3es4b6yy(v=vs.140))
 - [Prise en charge du multithreading pour le code plus ancien](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)

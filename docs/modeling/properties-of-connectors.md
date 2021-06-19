@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, connectors
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b09ec4278dd78f797067c3acdf3152736fb395c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43f55aecf134bf8e4d043a4fc7f6ffa2201f8e95
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899848"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390813"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
 Les connecteurs représentent les relations de domaine dans un concepteur généré.
@@ -27,13 +27,13 @@ Les connecteurs représentent les relations de domaine dans un concepteur géné
 
 |Propriété|Description|Default|
 |-|-|-|
-|Color|Couleur de ce connecteur.|Noir|
+|Couleur|Couleur de ce connecteur.|Noir|
 |Style de tiret|Style de tiret pour la ligne de ce connecteur (plein, tiret, point, tiret point, tiret point point ou personnalisé).|Unie|
-|Style de fin de la source|Style de l’extrémité source de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|None|
-|Style de fin cible|Style de l’extrémité cible de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|None|
+|Style de fin de la source|Style de l’extrémité source de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Aucun|
+|Style de fin cible|Style de l’extrémité cible de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Aucun|
 |Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce connecteur.|Noir|
 |Thickness|Épaisseur de la ligne de ce connecteur, mesurée en pouces.|0,03125|
-|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Blockchain publique|
+|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de ce connecteur.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|

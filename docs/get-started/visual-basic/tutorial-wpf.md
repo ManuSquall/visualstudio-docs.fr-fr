@@ -1,7 +1,7 @@
 ---
 title: Application Hello World avec WPF dans Visual Basic
 description: Créez une application de bureau Windows .NET simple en Visual Basic avec Visual Studio à l’aide du framework d’interface utilisateur WPF (Windows Presentation Foundation).
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5fc5b9308c854649a4f10482a54ff395bec5d8df
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: e757dc25fe094b1ffa745cd43ad251abbc9448a7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308192"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390123"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 

@@ -4,17 +4,17 @@ description: Découvrez comment ajouter des gestionnaires pour les événements 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79b58ee6ebd4db3ee9727bf59b260f281ba00275
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941435"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390409"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 
@@ -130,7 +130,7 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
 
   - diagramEventArgs. Data. GetDataFormats ()-répertorie les formats dans lesquels vous pouvez décoder l’objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-  - `diagramEventArgs.Data.GetData(format)` : Décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
+  - `diagramEventArgs.Data.GetData(format)` : Décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 

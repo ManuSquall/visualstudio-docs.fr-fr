@@ -1,8 +1,8 @@
 ---
-title: Cartes de code
+title: Visualiser les dépendances avec les cartes de code
 description: Découvrez comment les cartes de code vous aident à voir comment le code s’ajuste sans lire les fichiers et les lignes de code.
 ms.custom: SEO-VS-2020
-ms.date: 05/16/2018
+ms.date: 05/16/2021
 ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
@@ -13,32 +13,31 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d33e3d882d25045802f2c015c88b87b970d9d04e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946525"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390435"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper des dépendances avec des cartes de code
 
-Vous pouvez visualiser les dépendances dans votre code en créant une carte de code. Les cartes de code vous aident à voir comment le code s’ajuste sans lire les fichiers et les lignes de code.
+Dans cet article, vous allez apprendre à visualiser les dépendances dans votre code avec des cartes de code.
+
+## <a name="what-are-code-maps"></a>Que sont les cartes de code ?
+
+Dans Visual Studio, les cartes de code vous aident à voir plus rapidement comment votre code de programme s’ajuste sans lire les fichiers et les lignes de code.  Avec ces mappages, vous pouvez voir l’organisation et les relations dans votre code, y compris sa structure et ses dépendances, comment la mettre à jour et estimer le coût des modifications proposées.
 
 ![Afficher les dépendances avec des cartes de code dans Visual Studio](../modeling/media/codemapsmainintro.png)
 
-Pour créer et modifier des cartes de code, vous avez besoin de l’édition Visual Studio Enterprise. Dans les éditions Community et Professional de Visual Studio, vous pouvez ouvrir des diagrammes qui ont été générés dans l’édition Enterprise, mais vous ne pouvez pas les modifier.
-
-> [!NOTE]
-> Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres utilisateurs de Visual Studio Professional, assurez-vous que tous les éléments de la carte (tels que les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.
-
 Vous pouvez mapper les dépendances de code dans les langages suivants :
 
-- Visual C# ou Visual Basic dans une solution ou des assemblys (*. dll* ou *. exe*)
+- Visual C# ou Visual Basic dans une solution ou des assemblys (*.dll* ou *.exe*)
 
 - Code C ou C++ natif ou managé dans des projets Visual C++, des fichiers d’en-tête (*. h* ou `#include` ) ou des fichiers binaires
 
@@ -47,21 +46,14 @@ Vous pouvez mapper les dépendances de code dans les langages suivants :
 > [!NOTE]
 > Pour les projets autres que C# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de **Explorateur de solutions**, **affichage de classes** et l' **Explorateur d’objets**.
 
-## <a name="install-code-map-and-live-dependency-validation"></a>Installer la carte de code et la validation de dépendances dynamiques
+## <a name="prerequisites"></a>Prérequis
 
-Pour créer une carte de code dans Visual Studio, commencez par installer les composants de la **carte de code** et de la **validation des dépendances dynamiques** :
+Pour créer une carte de code dans Visual Studio, commencez par [installer les composants de la **carte de code** et de la **validation de dépendances en direct**](install-architecture-tools.md)
 
-1. Ouvrez **Visual Studio installer**. Vous pouvez l’ouvrir à partir du menu Démarrer de Windows ou dans Visual Studio en sélectionnant **Outils**  >  **accéder aux outils et aux fonctionnalités**.
+Pour créer et modifier des cartes de code, vous avez besoin de l' **édition Visual Studio Enterprise**. Toutefois, dans les éditions Visual Studio Community et Professional, vous pouvez ouvrir des diagrammes qui ont été générés dans l’édition Enterprise, mais vous ne pouvez pas les modifier.
 
-1. Sélectionnez l'onglet **Composants individuels**.
-
-1. Faites défiler jusqu’à la section **outils de code** , puis sélectionnez **carte de code** et **validation de dépendances dynamiques**.
-
-   ![Cartes de code et composants de validation de dépendances dynamiques dans Visual Studio Installer](media/modeling-components.png)
-
-1. Sélectionnez **Modifier**.
-
-   Les composants de la **carte de code** et de la **validation des dépendances dynamiques** commencent à installer. Il se peut que vous soyez invité à fermer Visual Studio.
+> [!NOTE]
+> Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres utilisateurs de Visual Studio Professional, assurez-vous que tous les éléments de la carte (tels que les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.
 
 ## <a name="add-a-code-map"></a>Ajouter une carte de code
 
@@ -81,6 +73,11 @@ Pour ajouter une carte de code vide :
    Une carte vide apparaît dans le dossier **éléments de solution** de votre solution.
 
 De même, vous pouvez créer un nouveau fichier de mappage de code sans l’ajouter à votre solution en sélectionnant **architecture**  >  **nouvelle carte de code** ou **fichier**  >  **nouveau**  >  **fichier**.
+
+En savoir plus :
+- [Partager des cartes de code](share-code-maps.md)
+- [Créer des cartes de code pour C++](code-maps-for-cpp.md)
+- [Améliorer les performances de la carte de code](code-maps-performance.md)
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Générer une carte de code pour votre solution
 
@@ -154,7 +151,7 @@ Voir aussi :
 - [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - Rechercher des problèmes potentiels dans votre code en [exécutant un analyseur](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="view-specific-dependencies-in-a-code-map"></a>Afficher des dépendances spécifiques dans une carte de code
+## <a name="view-dependencies"></a>Afficher les dépendances
 
 Supposons que vous ayez une révision du code à effectuer dans certains fichiers avec des modifications en attente. Pour visualiser les dépendances dans ces modifications, vous pouvez créer une carte de code à partir de ces fichiers.
 
@@ -187,7 +184,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
    Pour afficher les membres qui figurent dans le code, mais qui n’apparaissent pas sur la carte, cliquez sur l’icône récupérer à l’icône des **enfants** récupérer les ![ enfants ](../modeling/media/dependencygraph_deletednodesicon.png) dans le coin supérieur gauche d’un groupe.
 
-6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Par exemple :
+6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Exemple :
 
     Pour un **assembly**, choisissez :
 
@@ -240,6 +237,10 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Partager des cartes de code](share-code-maps.md)
+- [Créer des cartes de code pour C++](code-maps-for-cpp.md)
+- [Améliorer les performances de la carte de code](code-maps-performance.md)
+- [Vidéo : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Vidéo : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Utiliser des cartes du code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mapper les méthodes sur la pile des appels tout en déboguant](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

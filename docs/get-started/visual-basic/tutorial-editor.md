@@ -1,7 +1,10 @@
 ---
 title: Introduction à la modification pour les développeurs Visual Basic
 description: Cette présentation de 10 minutes de l’éditeur de code de Visual Studio montre de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code Visual Basic.
-ms.custom: seodec18, get-started
+ms.custom:
+- vs-acquisition
+- seodec18
+- get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56f6570b633941c8f7102e245b7668cd31936f83
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308361"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390162"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>En savoir plus sur l’utilisation de l’éditeur de code avec Visual Basic
 

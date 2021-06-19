@@ -4,17 +4,17 @@ description: Découvrez que Visual Studio ModelBus fournit une méthode pour cr�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 350398d91d73a722956d195b300311f313ff34db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957411"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391060"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Intégrer des modèles à l’aide de Visual Studio Modelbus
 
@@ -96,7 +96,7 @@ Pour permettre à un DSL d’utiliser des références à un autre DSL, vous dev
 
 2. Dans la boîte de dialogue, sélectionnez **je souhaite activer ce modèle pour utiliser les références de bus de modèles**.
 
-3. Dans le projet DSL du DSL consommateur, ajoutez les assemblys suivants aux références du projet. Ces assemblys (fichiers. dll) se trouvent dans le répertoire ModelBusAdapter\bin \\ * du DSL exposé.
+3. Dans le projet DSL du DSL consommateur, ajoutez les assemblys suivants aux références du projet. Ces assemblys (.dll fichiers) se trouvent dans le répertoire ModelBusAdapter\bin \\ * du DSL exposé.
 
     - Assembly DSL exposé, par exemple **Fabrikam.FamilyTree.Dsl.dll**
 

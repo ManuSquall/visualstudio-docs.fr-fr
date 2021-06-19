@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b34c51744c6bab1c6021a006f7ec9b4da0f4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897860"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390969"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
@@ -86,7 +86,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Il existe également d’autres méthodes pour accéder aux liens. Par exemple :
+ Il existe également d’autres méthodes pour accéder aux liens. Exemple :
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -110,7 +110,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Accès aux informations de classe
- Vous pouvez obtenir des informations sur les classes, les relations et d’autres aspects de la définition DSL. Par exemple :
+ Vous pouvez obtenir des informations sur les classes, les relations et d’autres aspects de la définition DSL. Exemple :
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -201,13 +201,13 @@ using (Transaction t =
 
  Il existe trois façons de créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :
 
-- Définissez la propriété de l’acteur de rôle source. Par exemple :
+- Définissez la propriété de l’acteur de rôle source. Exemple :
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Définissez la propriété de l’acteur de rôle cible. Par exemple :
+- Définissez la propriété de l’acteur de rôle cible. Exemple :
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -217,7 +217,7 @@ using (Transaction t =
 
        La multiplicité de ce rôle est `0..*` donc ajoutée à la collection.
 
-- Construisez une instance de la relation explicitement. Par exemple :
+- Construisez une instance de la relation explicitement. Exemple :
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 

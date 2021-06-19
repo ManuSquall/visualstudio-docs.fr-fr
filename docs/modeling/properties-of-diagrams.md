@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
 - Domain-Specific Language, diagram
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 943b634114c28f6f914926c74861a902c663523e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a060c79866d1746135f8a29aef15ca96dd51f63
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956163"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390670"
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient le mode d’affichage des diagrammes dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.
@@ -29,13 +29,13 @@ Vous pouvez définir des propriétés qui spécifient le mode d’affichage des 
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage|Couleur de remplissage du diagramme.|White|
+|Couleur de remplissage|Couleur de remplissage du diagramme.|Blancs|
 |Couleur du texte|Couleur du texte affiché sur le diagramme.|Noir|
-|Modificateur d'accès|Modificateur d’accès de la classe (public ou Internal).|Blockchain publique|
+|Modificateur d'accès|Modificateur d’accès de la classe (public ou Internal).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code générée.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du diagramme ( `none` , `abstract` ou `sealed` ).|None|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du diagramme ( `none` , `abstract` ou `sealed` ).|Aucun|
 |Diagramme de base|Classe de base de ce diagramme.|(aucun)|
 |Nom|Nom de ce diagramme.|Nom actuel|
 |Espace de noms|Espace de noms affilié à ce diagramme.|Espace de noms actuel|

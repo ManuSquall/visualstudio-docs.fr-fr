@@ -17,23 +17,23 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bb138164cfab44778c932a4bcb93572a3053a70
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916998"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391034"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
 Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour visualiser l’architecture logique de haut niveau de votre système. Un diagramme de dépendance organise les artefacts physiques dans votre système en groupes logiques abstraits appelés *couches*. Ces couches décrivent les tâches principales que les artefacts exécutent ou les principaux composants de votre système. Chaque couche peut également contenir des couches imbriquées qui décrivent des tâches plus détaillées.
 
-Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 > [!NOTE]
 > Les diagrammes de dépendance pour les projets .NET Core sont pris en charge à partir de Visual Studio 2019 version 16,2.
