@@ -19,17 +19,17 @@ helpviewer_keywords:
 - Visual Studio ALM, graph documents
 - Visual Studio Ultimate, graph documents
 - dependency graphs, browsing
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83132cfccd0af7244cf31f502669144eb3388bd8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861932"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385550"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 
@@ -110,7 +110,7 @@ Les cartes de code affichent les types de liens suivants :
 |-|-|
 |Afficher plus d'informations sur un nœud ou un lien.|Déplacez le pointeur de la souris sur le nœud ou le lien jusqu'à ce qu'une info-bulle apparaisse.<br /><br /> L'info-bulle d'un lien global répertorie chaque dépendance qu'il représente.<br /><br /> - ou -<br /><br /> Ouvrez le menu contextuel du nœud ou du lien. Choisissez **modifier**, **Propriétés**.|
 |Afficher ou masquer le contenu d'un groupe.|-Pour développer un groupe, ouvrez le menu contextuel du nœud, puis choisissez **groupe**, **développer**.<br />     - ou -<br />     Déplacez le pointeur de la souris sur le nœud jusqu'à ce que le bouton chevron (flèche Bas) apparaisse. Cliquez sur ce bouton pour développer le groupe. Clavier : pour développer ou réduire le groupe sélectionné, appuyez sur la touche **plus** ( **+** ) ou sur la touche **moins** ( **-** ).<br />-Pour réduire un groupe, ouvrez le menu contextuel du nœud et choisissez **groupe**, **réduire**.<br />     - ou -<br />     Déplacez le pointeur de la souris sur un groupe jusqu'à ce que le bouton chevron (flèche Haut) apparaisse. Cliquez sur ce bouton pour réduire le groupe.<br />-Pour développer tous les groupes, appuyez sur **CTRL**  +  **A** pour sélectionner tous les nœuds. Ouvrez le menu contextuel de la carte, puis choisissez **groupe**, **développer**. **Remarque :**      Cette commande n’est pas disponible si le développement de tous les groupes génère une carte inutilisable ou des problèmes de mémoire. Nous vous recommandons de développer la carte uniquement au niveau de détail qui vous intéresse.<br />-Pour réduire tous les groupes, ouvrez le menu contextuel d’un nœud ou de la carte. Choisissez **groupe**, **réduire tout**.|
-|Voir la définition de code pour un espace de noms, un type ou un membre.|Ouvrez le menu contextuel du nœud et choisissez **atteindre la définition**.<br /><br /> -ou-<br /><br /> Double-cliquez sur le nœud. Pour les groupes développés, double-cliquez sur l'en-tête de groupe.<br /><br /> -ou-<br /><br /> Sélectionnez le nœud et appuyez sur **F12**.<br /><br /> Par exemple :<br /><br /> -Pour un espace de noms contenant une classe, le fichier de code de la classe s’ouvre et affiche la définition de cette classe. Dans d’autres cas, la fenêtre résultats de la **recherche de symbole** affiche une liste de fichiers de code. **Remarque :**      Lorsque vous effectuez cette tâche sur un espace de noms Visual Basic, le fichier de code derrière l’espace de noms ne s’ouvre pas. Ce problème se produit également lorsque vous effectuez cette tâche sur un groupe de nœuds sélectionnés qui incluent un espace de noms Visual Basic. Pour contourner ce problème, accédez manuellement au fichier code-behind de l'espace de noms ou omettez le nœud de l'espace de noms de votre sélection.<br />-Pour une classe ou une classe partielle, le fichier de code pour cette classe s’ouvre et affiche la définition de classe.<br />-Pour une méthode, le fichier de code de la classe parente s’ouvre pour afficher la définition de la méthode.|
+|Voir la définition de code pour un espace de noms, un type ou un membre.|Ouvrez le menu contextuel du nœud et choisissez **atteindre la définition**.<br /><br /> -ou-<br /><br /> Double-cliquez sur le nœud. Pour les groupes développés, double-cliquez sur l'en-tête de groupe.<br /><br /> -ou-<br /><br /> Sélectionnez le nœud et appuyez sur **F12**.<br /><br /> Exemple :<br /><br /> -Pour un espace de noms contenant une classe, le fichier de code de la classe s’ouvre et affiche la définition de cette classe. Dans d’autres cas, la fenêtre résultats de la **recherche de symbole** affiche une liste de fichiers de code. **Remarque :**      Lorsque vous effectuez cette tâche sur un espace de noms Visual Basic, le fichier de code derrière l’espace de noms ne s’ouvre pas. Ce problème se produit également lorsque vous effectuez cette tâche sur un groupe de nœuds sélectionnés qui incluent un espace de noms Visual Basic. Pour contourner ce problème, accédez manuellement au fichier code-behind de l'espace de noms ou omettez le nœud de l'espace de noms de votre sélection.<br />-Pour une classe ou une classe partielle, le fichier de code pour cette classe s’ouvre et affiche la définition de classe.<br />-Pour une méthode, le fichier de code de la classe parente s’ouvre pour afficher la définition de la méthode.|
 |Examiner les dépendances et les éléments qui participent à un lien global.|Sélectionnez les liens qui vous intéressent et ouvrez le menu contextuel de votre sélection. Choisissez **afficher les liens de contribution**  ou **afficher les liens de contribution sur la nouvelle carte de code**.<br /><br /> Visual Studio développe les groupes aux deux extrémités du lien et affiche uniquement les éléments et les dépendances qui participent au lien. **Remarque :**  Lorsque vous examinez les dépendances entre des éléments dans des groupes partiels, vous pouvez voir ce comportement : <ul><li>Les liens vers des éléments qui ne font pas partie de votre examen disparaissent de la carte, même si ces liens existent toujours.</li><li>Supposez que vous examinez un lien vers un élément dans un groupe partiel et que vous examinez ensuite un autre lien vers le même élément. Lors de votre second examen, le groupe partiel cible montre uniquement les éléments issus de votre premier examen. Les liens et les éléments cibles qui n’ont pas participé à votre premier examen, mais qui participent à votre deuxième examen, n’apparaissent pas.</li></ul> Pour afficher les éléments manquants d’un groupe, choisissez **réextraire** ![ les enfants réextraire les enfants icône ](../modeling/media/dependencygraph_deletednodesicon.png) (ce qui indique que tous les membres d’un groupe n’apparaissent pas sur la carte). Vous pouvez également essayer d’annuler vos actions (clavier : Appuyez sur **Ctrl + Z**) et examinez les dépendances sur un nouveau mappage.|
 |Examiner les dépendances entre plusieurs nœuds de différents groupes.|Développez les groupes pour afficher tous leurs enfants. Sélectionnez tous les nœuds qui vous intéressent, y compris leurs enfants. La carte affiche les liens entre les groupes entre les nœuds sélectionnés.<br /><br /> Pour sélectionner tous les nœuds d’un groupe, maintenez la **touche Maj** enfoncée et le bouton gauche de la souris tout en dessinant un rectangle autour de ce groupe. Pour sélectionner tous les nœuds d’une carte, appuyez sur **CTRL** + **a**. **Conseil :**  Pour afficher les liens entre les groupes à tout moment, choisissez **disposition** dans la barre d’outils de la carte, **avancé**, **Afficher tous les liens entre les groupes**.|
 |Afficher les éléments auxquels un nœud ou un lien fait référence.|Ouvrez le menu contextuel du nœud, puis choisissez **Rechercher toutes les références**. **Remarque :**  Cela s’applique uniquement lorsque l' `Reference` attribut est défini pour le nœud ou le lien dans le fichier. dgml de la carte. Pour ajouter des références à des éléments à partir de nœuds ou de liens, consultez [personnaliser les cartes de code en modifiant les fichiers dgml](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
@@ -309,7 +309,7 @@ Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dan
 
     |**To**|**Choisissez**|
     |-|-|
-    |Désactiver l'élément de code|**Disable**|
+    |Désactiver l'élément de code|**Désactiver**|
     |Supprimer l'élément de code|**Supprimer**|
     |Déplacer le style vers le haut|**Monter**|
     |Déplacer l'élément de code vers le bas|**Descendre**|

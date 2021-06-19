@@ -1,7 +1,7 @@
 ---
 title: Afficher les dll et les exécutables
-description: Affichez les dll et les exécutables (fichiers. exe) que votre application utilise dans la fenêtre modules pendant une session de débogage dans Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+description: Affichez les dll et les exécutables (fichiers .exe) que votre application utilise dans la fenêtre modules pendant une session de débogage dans Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: Visual Studio Modules window
 ms.date: 11/04/2018
 ms.topic: how-to
@@ -26,16 +26,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f82b8a5051cf1c338c4b1aab6e78209fb2bc08b0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912210"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385407"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Afficher les dll et les exécutables dans la fenêtre modules (C#, C++, Visual Basic, F #)
 
-Lors du débogage de Visual Studio, la fenêtre **modules** répertorie et affiche des informations sur les dll et les fichiers exécutables (*. exe* ) utilisés par votre application.
+Lors du débogage de Visual Studio, la fenêtre **modules** répertorie et affiche des informations sur les dll et les fichiers exécutables (fichiers *.exe* ) utilisés par votre application.
 
 > [!NOTE]
 > La fenêtre modules n’est pas disponible pour le débogage SQL ou de script.

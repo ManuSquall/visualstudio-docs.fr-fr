@@ -4,17 +4,17 @@ description: Découvrez les recommandations générales qui sont utiles si vous 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5418013898f24b15cf51926022d974d23f4a7215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f043e95ef477558028e634bf6b48aded2960ec2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966355"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386655"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 
@@ -111,7 +111,7 @@ Par exemple, dans **MyReportText.TT**:
 
 `The total is: <#= ComputeTotal() #>`
 
-Dans **MyReportText-methods.cs**:
+Dans **MyReportText-methods. cs**:
 
 `private string ComputeTotal() { ... }`
 
@@ -153,7 +153,7 @@ Démarrez chaque modèle en tant que prototype fixe.
 
 Envisagez d’utiliser des modèles typés.
 
-Bien que vous puissiez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Un DSL présente l’avantage de générer une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer en termes de modèle d’entreprise. Par exemple :
+Bien que vous puissiez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Un DSL présente l’avantage de générer une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer en termes de modèle d’entreprise. Exemple :
 
 ```
 Team Members:

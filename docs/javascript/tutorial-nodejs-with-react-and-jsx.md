@@ -1,7 +1,7 @@
 ---
 title: Créer une application Node.js et React
 description: Découvrez comment créer un projet d’application Web Node.js à partir d’un modèle Visual Studio.
-ms.custom: ''
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 9a45be2c18466754fba5469c59396f7a7791156d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729297"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386837"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -78,7 +78,7 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
     En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour qu’il référence le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud du projet, choisissez **Propriétés** (ou appuyez sur **ALT**  +  **entrée**), puis définissez le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Commencez par créer un projet d’application web Node.js.
 

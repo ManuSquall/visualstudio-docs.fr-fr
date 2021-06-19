@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f98dca6759b9e4a77e71139b6d9ec9b394d99b04
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861840"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385420"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de langage, et être accessibles par le code du programme. Toutefois, les propriétés diffèrent dans la façon dont leurs valeurs sont stockées.
@@ -49,7 +49,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 5. Double-cliquez sur le message d’erreur.
 
-     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour obtenir *YourProperty*().
+     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships. cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour obtenir *YourProperty*().
 
     > [!NOTE]
     > Ce fichier est généré à partir de DslDefinition. DSL. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquerez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode requise dans un fichier séparé.
@@ -68,7 +68,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     }  }
     ```
 
-8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une `Set` méthode. Par exemple :
+8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une `Set` méthode. Exemple :
 
     ```
     void SetAgeValue(int value)
@@ -92,7 +92,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 - Toutefois, il doit mettre à jour toutes les ressources externes, telles que le contenu d’une base de données ou d’un fichier, ou des objets en dehors du magasin. Cela permet de s’assurer qu’ils sont conservés dans synchroniser avec les valeurs du magasin.
 
-  Par exemple :
+  Exemple :
 
 ```
 void SetAgeValue(int value)

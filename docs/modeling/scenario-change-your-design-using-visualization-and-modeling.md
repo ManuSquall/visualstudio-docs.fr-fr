@@ -11,25 +11,25 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05cdd769a59c4101fbc05a7e51893752e2532f42
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938042"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385823"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio.
 Utilisez des outils tels que les cartes de code, les diagrammes de dépendance et les diagrammes de classes pour effectuer les opérations suivantes :
 
-Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 - Clarifier les besoins des utilisateurs et les processus d’entreprise.
 
@@ -112,7 +112,7 @@ Les deux équipes utilisent également la validation de dépendance pour s’ass
 - [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Certaines versions de Visual Studio prennent en charge la validation des dépendances et les versions en lecture seule des cartes de code pour la visualisation et la modélisation. Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Certaines versions de Visual Studio prennent en charge la validation des dépendances et les versions en lecture seule des cartes de code pour la visualisation et la modélisation. Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Comprendre et communiquer les informations relatives au système
 
@@ -190,7 +190,7 @@ Consultez l'article :
 
 - [Archivage contrôlé TFVC](/azure/devops/pipelines/build/triggers)
 
-- [Tâches de génération et de publication](/azure/devops/pipelines/tasks/index)
+- [Tâches de génération et de mise en production](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Conseils généraux sur la création et l’utilisation de modèles
 

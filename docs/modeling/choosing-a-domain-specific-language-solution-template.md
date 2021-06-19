@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1c638c5a45427fd474f085ff58c9d38682ee054
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861853"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385433"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Choix d'un modèle de solution de langage spécifique à un domaine
 Pour créer une solution de langage spécifique à un domaine, choisissez l’un des modèles de solution disponibles dans l’Assistant Domain-Specific Language designer. En choisissant le modèle qui ressemble le plus à la langue que vous souhaitez créer, vous pouvez réduire les modifications que vous devez apporter à la solution de démarrage.

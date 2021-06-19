@@ -4,17 +4,17 @@ description: Découvrez les réponses aux questions courantes rencontrées lors 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c65a7ba67c3972620b3d589188e233827a12ffd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934895"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387266"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Les modèles de texte dans Visual Studio fournissent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution dans le cadre de votre application et au moment de la conception pour générer une partie du code de votre projet. Cette rubrique résume les « Comment faire... ? » les plus fréquemment posées. poser.
@@ -73,14 +73,14 @@ Si vous écrivez les méthodes vous-même :
 
 ### <a name="generate-files-from-a-complex-model"></a>Générer des fichiers à partir d’un modèle complexe
 
-- Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Il est ainsi beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas besoin d’analyser le fichier ou de naviguer dans les nœuds XML. Par exemple :
+- Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Il est ainsi beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas besoin d’analyser le fichier ou de naviguer dans les nœuds XML. Exemple :
 
      `foreach (Book book in this.Library) { ... }`
 
      Pour plus d’informations, consultez [prise en main avec les langages de Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) et [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Récupérer des données à partir de Visual Studio
- Pour utiliser les services fournis dans Visual Studio, définissez l' `hostSpecific` attribut et chargez l' `EnvDTE` assembly. Par exemple :
+ Pour utiliser les services fournis dans Visual Studio, définissez l' `hostSpecific` attribut et chargez l' `EnvDTE` assembly. Exemple :
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

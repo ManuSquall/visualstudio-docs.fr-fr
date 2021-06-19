@@ -1,7 +1,7 @@
 ---
 title: Comment exécuter un programme (C#)
 description: Guide du débutant sur l’exécution d’un programme C# dans Visual Studio.
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 10/16/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e20caabb55e65801224177168f5c936f81402bbd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922836"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385225"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Comment : exécuter un programme C# dans Visual Studio
 
@@ -76,7 +76,7 @@ Si le code que vous souhaitez exécuter se trouve dans GitHub ou dans un référ
 
 Pour démarrer le programme, appuyez sur la flèche verte (bouton **Démarrer** ) de la barre d’outils principale de Visual Studio, ou appuyez sur **F5** ou sur **CTRL** + **F5** pour exécuter le programme. Quand vous utilisez le bouton **Démarrer** , il s’exécute sous le débogueur.  Visual Studio tente de générer le code dans votre projet et de l’exécuter.  Si cela fonctionne, parfait ! Mais si ce n’est pas le cas, poursuivez la lecture pour obtenir des idées sur la manière de réussir la génération.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Votre code peut contenir des erreurs, mais si le code est correct, mais dépend simplement d’autres assemblys ou packages NuGet, ou a été écrit pour cibler une version différente de .NET, vous pouvez peut-être le corriger facilement.
 

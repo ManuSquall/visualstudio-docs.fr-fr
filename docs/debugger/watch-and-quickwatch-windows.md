@@ -1,7 +1,7 @@
 ---
 title: Définir un espion sur les variables | Microsoft Docs
 description: Pendant le débogage, consultez variables et expressions dans Watch et espion Express. Watch peut afficher plusieurs variables, espion Express une seule et uniquement pendant l’arrêt.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8a0c1e9d0ee72425317f299a3e68f091cc93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 192a11a028c297dc2c642e65982a978f7b5596a7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883985"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385017"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Surveiller les variables avec les fenêtres espion et espion Express
 
@@ -70,7 +70,7 @@ int main()
 
 1. Dans la fenêtre **Espion** , sélectionnez une ligne vide, puis tapez variable `a` . Procédez de la même façon pour `b` et `c` .
 
-   ![Surveiller des variables](../debugger/media/watchvariables.png "WatchVariables")
+   ![Variables Watch](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Poursuivez le débogage en sélectionnant étape de **débogage**  >  **dans** ou en appuyant sur **F11** si nécessaire pour avancer. Les valeurs des variables dans la fenêtre **Espion** changent à mesure que vous itérez au sein de la `for` boucle.
 

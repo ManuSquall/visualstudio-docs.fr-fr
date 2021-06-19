@@ -4,17 +4,17 @@ description: Découvrez que dans le kit de développement logiciel (SDK) de visu
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9304117932b92408f12a23747253de66dfd767d1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873773"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385667"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 Dans le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez définir l’image d’arrière-plan d’un concepteur généré à l’aide de code personnalisé.
@@ -43,7 +43,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 10. Vérifiez que le fichier Dsl\Properties\Resources.resx existe et que le fichier Resources.Designer.cs se trouve en dessous.
 
-11. Si Resources.Designer.cs est manquant, cliquez sur le fichier Resources. resx dans **Explorateur de solutions**.
+11. Si Resources. Designer. cs est manquant, cliquez sur le fichier Resources. resx dans **Explorateur de solutions**.
 
 12. Dans la fenêtre **Propriétés** , définissez la propriété `Custom Tool` sur `ResXFileCodeGenerator`.
 

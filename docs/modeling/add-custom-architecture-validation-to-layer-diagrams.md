@@ -6,18 +6,18 @@ ms.topic: how-to
 titleSuffix: ''
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc00f86bafebd14177400ffa0ee596a733e9fb28
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919314"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384627"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
@@ -33,7 +33,7 @@ Vous pouvez empaqueter votre extension de validation de couche dans une extensio
 > [!WARNING]
 > Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Consultez [spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -110,7 +110,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 6. Revenez au projet de validation de couche et ajoutez les références de projet suivantes :
 
-    |**Référence**|**Ce que cela vous permet de faire**|
+    |**Informations de référence**|**Ce que cela vous permet de faire**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Lire le graphique d’architecture|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Lire le code DOM associé aux couches|

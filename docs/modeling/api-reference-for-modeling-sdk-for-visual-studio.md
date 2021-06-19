@@ -4,17 +4,17 @@ description: Découvrez comment le kit de développement logiciel (SDK) de visua
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9603ace5751443c04d0a7503a43e08c044269817
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861909"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385459"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Référence des API pour le Kit de développement logiciel de modélisation pour Visual Studio
 
@@ -22,7 +22,7 @@ Le kit de développement logiciel (SDK) de visualisation et de modélisation de 
 
 Cette section contient des documents de référence pour les espaces de noms dont le nom commence par « Microsoft. VisualStudio. Modeling ».
 
-|Espace de noms|Content|
+|Espace de noms|Contenu|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Les classes telles que ModelElement, qui est la classe de base de toutes les classes de domaine que vous définissez dans une solution DSL.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Les classes qui font partie d’une définition DSL.|

@@ -4,17 +4,17 @@ description: En savoir plus sur les propriétés associées à un rôle de domai
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 670704a86f0c149d26c7c869259c0f2f6bb75881
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941305"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385146"
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
 Les propriétés du tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).

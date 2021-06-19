@@ -1,7 +1,7 @@
 ---
 title: Activer et désactiver modifier & continuer | Microsoft Docs
 description: Découvrez comment désactiver et activer modifier & continuer dans les options Visual Studio au moment du Design. Modifier &amp; Continuer ne fonctionne que dans les versions Debug.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -27,12 +27,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 51ff58b02e4ea0a197b6a13f12487226269413ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 261963cbc1aee63374d6a9c147f42678208c39ec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884375"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384705"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Comment : activer et désactiver modifier & Continuer (C#, VB, C++)
 

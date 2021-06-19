@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61994a25b5fa862a2014e2dd5b57a0c47130e6ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c171bda2670b698297dd876a8a4403a91cd4af7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882984"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386486"
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
 Vous pouvez ajouter des couloirs à un diagramme. Les couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,13 +27,13 @@ Vous pouvez ajouter des couloirs à un diagramme. Les couloirs divisent un diagr
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage du corps|Couleur de remplissage du corps du couloir.|White|
+|Couleur de remplissage du corps|Couleur de remplissage du corps du couloir.|Blancs|
 |Couleur de remplissage d’en-tête|Couleur de remplissage de l’en-tête du couloir.|DarkGray|
 |Couleur du séparateur|Couleur de la ligne de séparation.|LightGray|
 |Style de ligne de séparateur|Style de la ligne de séparation ( `Solid` , `Dash` , `Dot` , `DashDot` , `DashDotDot` ou `Custom` ).|`Dash`|
 |Épaisseur du séparateur|Épaisseur de la ligne de séparation, en pouces.|0,03125|
 |Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce couloir.|Noir|
-|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Blockchain publique|
+|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code générée à partir de ce couloir.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|

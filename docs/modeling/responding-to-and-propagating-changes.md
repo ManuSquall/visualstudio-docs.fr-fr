@@ -6,23 +6,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6fc8345ca90414f410dde9a089d9529ed19536b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937938"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387578"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Répondre aux modifications et les propager
 
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification à d’autres parties du modèle, ou à des ressources externes telles que des fichiers, des bases de données ou d’autres composants.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 
 À titre indicatif, envisagez ces techniques dans l’ordre suivant :
 

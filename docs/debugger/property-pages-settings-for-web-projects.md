@@ -1,7 +1,7 @@
 ---
 title: Paramètres de propriété pour les projets Web | Microsoft Docs
 description: Savoir comment modifier les paramètres de propriété pour une configuration de débogage de site Web dans la boîte de dialogue pages de propriétés de Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e90b5843731a274bd5cb0913b5e498ce48b067
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e8a99e2c42ff14aba4bb31f087e55a0f1ebf3ae
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908384"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386512"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Paramètres des pages de propriétés pour les projets Web
 Vous pouvez modifier les paramètres de propriété de configuration Debug d’un site web dans la boîte de dialogue **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.

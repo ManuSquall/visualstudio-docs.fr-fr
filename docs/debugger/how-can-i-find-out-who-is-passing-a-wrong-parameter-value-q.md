@@ -1,7 +1,7 @@
 ---
 title: Savoir qui transmet une valeur de paramètre incorrecte | Microsoft Docs
 description: Vous pouvez déterminer quel code appelle votre fonction et en passant une valeur de paramètre incorrecte. Apprenez à utiliser un point d’arrêt conditionnel pour effectuer cette opération.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4b3c41b46817d15a13626983ccf55ffa9acc5f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b2f747e2f92b7817530fe12e14f8f95a9bfbe791
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155178"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386915"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?
 ## <a name="problem-description"></a>Description du problème

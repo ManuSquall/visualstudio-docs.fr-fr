@@ -1,7 +1,7 @@
 ---
 title: 'Didacticiel : déboguer du code C++'
 description: Découvrez les fonctionnalités du débogueur Visual Studio et comment démarrer le débogueur, parcourir le code et inspecter les données dans une application C++.
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment,  get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd02bbd2264720a5443807fb431b4dafa2a0a578
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8abb517103254aa1e0c89a02b0dc81b38af3ecee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306434"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385251"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer C++ avec Visual Studio
 

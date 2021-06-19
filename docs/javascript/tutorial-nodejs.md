@@ -2,6 +2,7 @@
 title: Créer une application Node.js et Express
 description: Dans ce didacticiel, vous allez apprendre à créer une application Node.js simple à l’aide de l’infrastructure d’application Web Express dans Visual Studio.
 ms.date: 03/25/2021
+ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2bca688977187071b5530911f9aa975e10ceef99
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: d4ea086d20f5a1000067343ac7571a9a8f8309db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306525"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386811"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 

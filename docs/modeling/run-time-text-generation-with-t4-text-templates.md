@@ -12,17 +12,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937951"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387552"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 
@@ -109,7 +109,7 @@ Le paramètre Language dépend de la langue de votre projet.
 
 ### <a name="plain-content"></a>Contenu brut
 
-Modifiez le fichier **. TT** pour qu’il contienne le texte que vous souhaitez que votre application génère. Par exemple :
+Modifiez le fichier **. TT** pour qu’il contienne le texte que vous souhaitez que votre application génère. Exemple :
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Code du programme incorporé
 
-Vous pouvez insérer du code de programme entre `<#` et `#>` . Par exemple :
+Vous pouvez insérer du code de programme entre `<#` et `#>` . Exemple :
 
 ```csharp
 <table>
@@ -184,7 +184,7 @@ Vous pouvez définir un point d’arrêt dans un modèle de texte. Si vous déma
 
 En général, un modèle doit importer des données à partir d’autres parties de l’application. Pour faciliter cette opération, le code généré par le modèle est une classe partielle. Vous pouvez créer une autre partie de la même classe dans un autre fichier de votre projet. Ce fichier peut inclure un constructeur avec des paramètres, des propriétés et des fonctions accessibles à la fois par le code incorporé dans le modèle et par le reste de l’application.
 
-Par exemple, vous pouvez créer un fichier distinct **MyWebPageCode.cs**:
+Par exemple, vous pouvez créer un fichier distinct **MyWebPageCode. cs**:
 
 ```csharp
 partial class MyWebPage
@@ -338,7 +338,7 @@ begin 1
 end 1
 ```
 
-**MyProgram.cs :**
+**MyProgram. cs :**
 
 ```csharp
 ...

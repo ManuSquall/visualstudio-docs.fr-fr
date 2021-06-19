@@ -4,7 +4,7 @@ description: Apprenez à utiliser l’éditeur de code dans Visual Studio pour a
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom:
-- acquisition
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce515baca11a33d0eb02f54973faab11783e4c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 0ce656c43dd04ab91bd3fd34dcd01dbad27cc644
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307971"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386447"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 

@@ -1,7 +1,7 @@
 ---
 title: Préparer le débogage des applications Windows Forms | Microsoft Docs
 description: Suivez les étapes de préparation pour déboguer des applications Windows Forms, qui sont créées par le modèle de projet Windows Forms dans Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: c2181fe0b0189b0c0472f4d7cadd6a7c8e172a9b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684144"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387747"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
 

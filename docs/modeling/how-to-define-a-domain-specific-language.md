@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51717e4bdbf12478e22bb825a9c84cfc82815f98
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903932"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387357"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous devez créer une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -306,7 +306,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une solution
 
         Pour créer une nouvelle icône, ouvrez Dsl\Resources dans **Explorateur de solutions**. Copiez et collez l'un des fichiers BMP d'outil d'élément existants. Renommez la copie collée, puis double-cliquez dessus pour la modifier.
 
-        Revenez au diagramme de définition DSL, sélectionnez l’outil, puis dans la fenêtre Propriétés cliquez sur **[...]** dans l' **icône de boîte à outils**. Dans la boîte de dialogue **Sélectionner une image bitmap** , sélectionnez votre. Fichier BMP dans le menu déroulant.
+        Revenez au diagramme de définition DSL, sélectionnez l’outil, puis dans la fenêtre Propriétés cliquez sur **[...]** dans l' **icône de boîte à outils**. Dans la boîte de dialogue **Sélectionner une image bitmap** , sélectionnez votre fichier .BMP dans le menu déroulant.
 
    Pour plus d’informations, consultez [Propriétés des formes géométriques](../modeling/properties-of-geometry-shapes.md) et [Propriétés des formes d’image](../modeling/properties-of-image-shapes.md).
 
@@ -384,7 +384,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une solution
 
      Pour créer une nouvelle icône, ouvrez Dsl\Resources dans **Explorateur de solutions**. Copiez et collez l'un des fichiers BMP d'outil d'élément existants. Renommez la copie collée, puis double-cliquez dessus pour la modifier.
 
-     Revenez au diagramme de définition DSL, sélectionnez l’outil, puis dans la fenêtre Propriétés cliquez sur **[...]** dans l' **icône de boîte à outils**. Dans la boîte de dialogue **Sélectionner une image bitmap** , sélectionnez votre. Fichier BMP dans le menu déroulant.
+     Revenez au diagramme de définition DSL, sélectionnez l’outil, puis dans la fenêtre Propriétés cliquez sur **[...]** dans l' **icône de boîte à outils**. Dans la boîte de dialogue **Sélectionner une image bitmap** , sélectionnez votre fichier .BMP dans le menu déroulant.
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Pour tester un connecteur et une relation de référence
 

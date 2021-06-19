@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités avancées
 description: Découvrez les fonctionnalités avancées qui peuvent être plus adaptées aux développeurs expérimentés ou aux développeurs qui connaissent déjà Visual Studio.
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 843c6f66b833c8f68dad8722c6d32a1975d07913
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113005"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386194"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 

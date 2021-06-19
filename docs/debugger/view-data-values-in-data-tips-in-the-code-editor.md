@@ -1,7 +1,7 @@
 ---
 title: Afficher les valeurs des variables dans les DataTips | Microsoft Docs
 description: Utilisez les DataTips pour afficher facilement des informations sur les variables, y compris les tableaux et les structures, pendant le débogage. Vous pouvez également modifier les valeurs.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904918"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386473"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans les DataTips dans l’éditeur de code
 

@@ -1,7 +1,7 @@
 ---
 title: Créer votre première application console avec Visual Basic
 description: Découvrez comment créer une simple application console Hello World dans Visual Studio, en Visual Basic, pas à pas.
-ms.custom: acquisition, seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7272e02ebfba084bdbe311d10b69d7b41fade0e1
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 658faaf5b044f1c4fed70fa62f205c2fa025f640
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307906"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386239"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 

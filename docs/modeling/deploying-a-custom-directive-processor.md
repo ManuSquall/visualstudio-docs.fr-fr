@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30233bf34f523ef53d95cef153fd604cef0b6447
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935337"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384900"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -187,7 +187,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 |Nom|Type|Données|
 |-|-|-|
 |(Par défaut)|REG_SZ|(valeur non définie)|
-|Class|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\<le nom de votre assembly\>**|
 
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
@@ -195,7 +195,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 |Nom|Type|Données|
 |-|-|-|
 |(Par défaut)|REG_SZ|(valeur non définie)|
-|Class|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>Voir aussi

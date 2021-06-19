@@ -4,17 +4,17 @@ description: Découvrez un schéma de modélisation pour diviser l’application
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0bfc178c2aea86a04123815ae946226691477
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54275c55d3d7a80dc2df1721585bc6c39ba8b06e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899801"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385485"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 
@@ -24,7 +24,7 @@ Pour démarrer rapidement un projet ou un sous-projet, il est utile de disposer 
 
 Cette rubrique part du principe que votre projet est suffisamment grand pour nécessiter la participation de plusieurs membres d'équipe et qu'il peut même comporter plusieurs équipes. Le code et les modèles du projet sont stockés dans un système de contrôle de code source tel que [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Au moins quelques membres de l'équipe utilisent Visual Studio pour développer des modèles et les autres membres de l'équipe peuvent visualiser ces modèles à l'aide d'autres versions de Visual Studio.
 
-Pour connaître les versions de Visual Studio qui prennent en charge chaque outil et chaque fonctionnalité de modélisation, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chaque outil et chaque fonctionnalité de modélisation, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Structure de la solution
 
@@ -111,4 +111,3 @@ Par exemple, si vous utilisez fréquemment des solutions qui ont des couches Pr�
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-- [Guide des outils d'architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)

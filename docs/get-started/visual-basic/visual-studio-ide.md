@@ -4,6 +4,7 @@ description: Apprenez à utiliser Visual Studio pour modifier, déboguer et gén
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682975"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386629"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -89,7 +90,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ::: moniker-end
 
-- [Semi](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense est un terme désignant un ensemble de fonctionnalités qui affichent des informations relatives au code directement dans l’éditeur et qui, dans certains cas, écrivent de petits bouts de code à votre place. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher ailleurs des informations sur les types. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../../ide/javascript-intellisense.md) et [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre comment IntelliSense affiche une liste des membres d’un type :
 
@@ -281,7 +282,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 ::: moniker range="vs-2017"
 
-1. Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Nouveau Projet**.
+1. Dans la barre de menus de Visual Studio, choisissez **fichier** > **nouveau projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/file-new-project-menu.png)
 
@@ -432,7 +433,7 @@ Tout d’abord, renommons la variable `name` :
 
    La variable est renommée dans tout le projet, ce qui, dans notre cas, représente uniquement deux emplacements.
 
-4. À présent, examinons IntelliSense. Sous la ligne indiquant `Console.WriteLine("Hello " + username + "!")`, tapez le fragment de code suivant :
+4. À présent, examinons IntelliSense. Sous la ligne indiquant `Console.WriteLine("Hello &quot; + username + &quot;!")`, tapez le fragment de code suivant :
 
     ```vb
    Dim now = Date.
@@ -481,13 +482,13 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker-end
 
-## <a name="debug-code"></a>Déboguer du code
+## <a name="debug-code&quot;></a>Déboguer du code
 
 Quand vous écrivez du code, vous devez l’exécuter et le tester pour rechercher les bogues. Le système de débogage de Visual Studio vous permet de parcourir le code instruction par instruction et d’en examiner les variables au fur et à mesure de votre avancement. Vous pouvez définir des *points d’arrêt* qui arrêtent l’exécution du code à une ligne particulière. Vous pouvez observer la façon dont la valeur d’une variable change à mesure que le code s’exécute, et bien plus encore.
 
 Définissons un point d’arrêt pour voir la valeur de la variable `username` quand le programme est en cours.
 
-1. Recherchez la ligne de code qui indique `Console.WriteLine("Hello " + username + "!")`. Pour définir un point d’arrêt sur cette ligne de code, autrement dit, pour que l’exécution du programme soit suspendue au niveau de cette ligne, cliquez dans la bordure à l’extrême gauche de l’éditeur. Vous pouvez également cliquer n’importe où sur la ligne de code, puis appuyer sur **F9**.
+1. Recherchez la ligne de code qui indique `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")`. Pour définir un point d’arrêt sur cette ligne de code, autrement dit, pour que l’exécution du programme soit suspendue au niveau de cette ligne, cliquez dans la bordure à l’extrême gauche de l’éditeur. Vous pouvez également cliquer n’importe où sur la ligne de code, puis appuyer sur **F9**.
 
    Un cercle rouge apparaît dans la bordure à gauche, et le code est surligné en rouge.
 

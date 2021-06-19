@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9da8272f115efe4c6708bcc4d5cd0203697bfdd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43d6cf5410aed3d79814d5304705a424bcc71e89
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908891"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387448"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
@@ -28,7 +28,7 @@ Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires 
 > [!NOTE]
 > Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Consultez [spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -89,7 +89,7 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
 
 5. Revenez au projet de gestionnaire de mouvements ou de commandes et ajoutez les références de projet suivantes :
 
-   |**Référence**|**Ce que cela vous permet de faire**|
+   |**Informations de référence**|**Ce que cela vous permet de faire**|
    |-|-|
    |Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Créer et modifier des couches|
    |Microsoft.VisualStudio.Uml.Interfaces|Créer et modifier des couches|
@@ -248,7 +248,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
 
      **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.
 
-- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Par exemple :
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

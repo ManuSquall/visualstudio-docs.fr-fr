@@ -4,6 +4,7 @@ description: Découvrez comment créer une solution et un projet dans Visual Stu
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f27973fcfb76d019cff31787b117f05f8266ad8
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308179"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384731"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Découvrir les projets et les solutions avec Visual Basic
 

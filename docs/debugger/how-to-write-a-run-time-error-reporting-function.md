@@ -1,7 +1,7 @@
 ---
 title: Écrire une fonction de création de rapports d’erreurs au moment de l’exécution | Microsoft Docs
 description: Consultez des exemples d’écriture d’une fonction personnalisée de création de rapports d’erreurs au moment de l’exécution dans Visual Studio. Elle doit avoir la même déclaration que _CrtDbgReportW et retourner la valeur 1.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f5234cb0184de14f7506fd540004a200a65a4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ff82afdfda8af746533f07f21d330c359a1618c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925354"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385135"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Guide pratique pour écrire une fonction de création de rapports d’erreurs d’exécution (C++)
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.

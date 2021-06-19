@@ -1,7 +1,7 @@
 ---
 title: Déboguer un formulaire Web | Microsoft Docs
 description: Suivez une procédure pas à pas pour voir comment déboguer une application Web ASP.NET (Web Form), notamment comment définir des points d’arrêt et examiner des variables.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 476d36a8ea303f2dd6062eaf0a597c47df580ff7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18347b7ba9ff52778b5acef685acd8f1ee400793
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884167"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385204"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Elle vous explique également comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans la fenêtre **Espion**.

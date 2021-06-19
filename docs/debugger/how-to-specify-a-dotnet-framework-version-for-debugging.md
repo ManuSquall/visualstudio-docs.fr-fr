@@ -1,7 +1,7 @@
 ---
 title: Spécifier une version de .NET Framework pour le débogage | Microsoft Docs
 description: Spécifiez une version plus ancienne de .NET Framework pour le débogage. Le débogueur Visual Studio prend en charge le débogage des versions antérieures de .NET Framework ainsi que la version actuelle.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 197cd51d31729119d48e255d038ad2e53f17a891
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83b30067530b9a48769879f3a222fee2afa725c0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908370"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384666"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Spécifier une ancienne version de .NET Framework pour le débogage (C#, Visual Basic, F #)
 

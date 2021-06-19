@@ -1,7 +1,7 @@
 ---
 title: Débogage d’applications Web-Erreurs et résolution des problèmes
 description: Recherchez des liens vers des pages de référence pour vous aider à déboguer des applications Web, telles qu’une page de dépannage et des pages qui décrivent chaque erreur que vous pouvez rencontrer.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cce4bcbf946dad69fc3e11a7b54365fc549c699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7b77afecaaadd65e203bda52dfc9cb92bef52ff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872298"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387708"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.

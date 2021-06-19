@@ -1,7 +1,7 @@
 ---
 title: 'Démarrage rapide : visite guidée de l’IDE de Visual Studio'
 description: Découvrez quelques-unes des fenêtres, des menus et d’autres fonctionnalités de l’interface utilisateur de l’environnement de développement intégré (IDE) de Visual Studio.
-ms.custom: acquisition
+ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f10c3fcca5d87f8371d1373314406cf4aa47ec3
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e3a0c62c1ec13ba6fec464a2903512b2acf33ad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113224"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386291"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 

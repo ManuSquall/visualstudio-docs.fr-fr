@@ -1,7 +1,7 @@
 ---
 title: Graphics Diagnostics | Microsoft Docs
 description: Visual Studio Graphics Diagnostics est un ensemble d’outils pour la journalisation et l’analyse de l’activité Direct3D. Utilisez-les pour résoudre les problèmes de rendu et de performances.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 679b9464ef10f121bbe38f486291b135872fb36b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6b769131831a0f1f94aa4fcc8e94a9a88bf9890
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861489"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386122"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
 >[!NOTE]
@@ -68,7 +68,7 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
 
 ## <a name="related-sections"></a>Sections connexes
 
-| Titre | Description |
+| Intitulé | Description |
 | - | - |
 | [Visite guidée des fonctionnalités du débogueur](../debugger-feature-tour.md) | Présente la fonctionnalité de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Graphiques et jeux DirectX](/windows/win32/directx) | Fournit des articles ayant trait aux technologies graphiques DirectX. |

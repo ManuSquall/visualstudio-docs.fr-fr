@@ -1,7 +1,7 @@
 ---
 title: Revenir à la fonction qui a appelé MFC en cas d’arrêt | Microsoft Docs
 description: Découvrez comment revenir à la fonction qui a appelé MFC en cas d’arrêt de l’exécution dans le débogueur Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b3849653161278dc0f6e9e06a1baca2e8b6e62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31bbb064aad5a43738b2f345cf31a20767c55e69
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904243"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384679"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Comment : retourner à la fonction qui a appelé l'application MFC en cas d'arrêt
 

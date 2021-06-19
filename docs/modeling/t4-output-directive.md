@@ -4,17 +4,17 @@ description: Découvrez que dans les modèles de texte Visual Studio, la directi
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e7c255d767e9b35764e03a76f9cda516dbe606
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8105edc57e68aa7cedcb612ec4f6bcd0ef367d2f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899605"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386109"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
@@ -24,7 +24,7 @@ Dans les modèles de texte Visual Studio, la `output` directive est utilisée po
 
  `<#@output extension=".cs"#>`
 
- Ensuite, Visual Studio génère un fichier nommé **MyTemplate.cs**
+ Ensuite, Visual Studio génère un fichier nommé **MyTemplate. cs**
 
  La directive `output` n'est pas obligatoire dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, votre application obtient la chaîne générée en appelant `TextTransform()`. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -52,7 +52,7 @@ Dans les modèles de texte Visual Studio, la `output` directive est utilisée po
  Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
- Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Par exemple :
+ Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
 
  `<#@ output encoding="utf-8"#>`
 

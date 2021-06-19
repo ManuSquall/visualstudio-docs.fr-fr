@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b197fd52972162acbc6e7d6882507f943b2a560c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c9e4454071002e3bce8478bc825ecfddc17620f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935350"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385771"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans des modèles de texte. Pour déboguer un modèle de texte au moment de la conception, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans Explorateur de solutions. Pour déboguer un modèle de texte au moment de l’exécution, déboguez simplement l’application à laquelle il appartient.

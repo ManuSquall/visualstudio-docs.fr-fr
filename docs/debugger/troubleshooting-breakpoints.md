@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes de points d’arrêt dans le débogueur | Microsoft Docs
 description: Si un point d’arrêt est désactivé ou n’a pas pu être défini, il est affiché sous la forme d’un cercle vide. Consultez cette page pour obtenir des informations sur les problèmes qui peuvent se produire lors de la définition de points d’arrêt.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7d2d15e9cb04b541fba3d68607fb250054b707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0801a687529b5e0f8cdf34030460f0b5fe45bc91
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870426"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386382"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio
 

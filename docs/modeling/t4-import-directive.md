@@ -4,17 +4,17 @@ description: Découvrez que dans un modèle de texte T4 Visual Studio, la direct
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9eb50261b346d8751a76817d97d59a798d17236
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0d441ec5a62dfa5266a17a06ac8fe33941136c6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899663"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386317"
 ---
 # <a name="t4-import-directive"></a>Directive d'importation T4
 

@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.port
 helpviewer_keywords:
 - Domain-Specific Language, port shape
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b505278ef62a7e0ded42f407e1c38083fa7c6d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5994d2629a49757980695ca99a6d12ae21160a6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883010"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386525"
 ---
 # <a name="properties-of-port-shapes"></a>Propriétés des formes de port
 Vous pouvez utiliser des formes port pour représenter des classes de domaine dans le concepteur généré.
@@ -29,7 +29,7 @@ Vous pouvez utiliser des formes port pour représenter des classes de domaine da
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage|Couleur de remplissage de cette forme.|White|
+|Couleur de remplissage|Couleur de remplissage de cette forme.|Blancs|
 |Mode dégradé de remplissage|Mode de remplissage dégradé de cette forme.|Horizontal|
 |Géométrie|Géométrie de cette forme (Rectangle, Rectangle arrondi, ellipse ou cercle).|Rectangle|
 |A des points de connexion par défaut|Si `True` la forme est, la forme utilise les points de connexion du haut, du bas, de gauche et de droite dans le concepteur généré.|False|
@@ -37,7 +37,7 @@ Vous pouvez utiliser des formes port pour représenter des classes de domaine da
 |Style de tiret de contour|Style de tiret de contour de cette forme (plein, tiret, point, tiret point, tiret point point ou personnalisé).|Unie|
 |Épaisseur du contour|Épaisseur de contour de cette forme.|0,03125|
 |Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à cette forme.|Noir|
-|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Blockchain publique|
+|Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source générée à partir de cette forme.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md)|False|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|

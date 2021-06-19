@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 546636ec3de4656bf0f6480dfaa5141d38e963d6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862009"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384913"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -153,7 +153,7 @@ Vous devez fournir du code pour conserver la valeur et l’état de votre propri
 
 3. Sélectionnez le modèle **fichier de code** , définissez le **nom** sur `NamespaceTrackingProperty.cs` , puis cliquez sur **OK**.
 
-     Le fichier NamespaceTrackingProperty.cs est créé et ouvert pour modification.
+     Le fichier NamespaceTrackingProperty. cs est créé et ouvert pour modification.
 
 4. Dans le dossier, créez les fichiers de code suivants : `ExampleModel.cs,``HelperClasses.cs` , `Serialization.cs` et `TypeDescriptor.cs` .
 
@@ -161,9 +161,9 @@ Vous devez fournir du code pour conserver la valeur et l’état de votre propri
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>Ajouter des classes d’assistance pour prendre en charge les propriétés de suivi
 
-Dans le fichier HelperClasses.cs, ajoutez les `TrackingHelper` `CriticalException` classes et comme suit. Vous allez référencer ces classes plus loin dans cette procédure pas à pas.
+Dans le fichier HelperClasses. cs, ajoutez les `TrackingHelper` `CriticalException` classes et comme suit. Vous allez référencer ces classes plus loin dans cette procédure pas à pas.
 
-1. Ajoutez le code suivant au fichier HelperClasses.cs.
+1. Ajoutez le code suivant au fichier HelperClasses. cs.
 
     ```csharp
     using System;
@@ -249,7 +249,7 @@ La définition de cette méthode crée le descripteur de propriété de suivi po
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Pour modifier le descripteur de type pour la classe de domaine ExampleModel
 
-1. Ajoutez le code suivant au fichier TypeDescriptor.cs.
+1. Ajoutez le code suivant au fichier TypeDescriptor. cs.
 
     ```csharp
     using System;
@@ -311,7 +311,7 @@ La définition de cette méthode crée le descripteur de propriété de suivi po
 
 Le code généré définit un fournisseur de description de type pour la classe de domaine ExampleElement ; Toutefois, vous devez ajouter du code pour indiquer à la solution DSL d’utiliser ce fournisseur de description de type.
 
-1. Ajoutez le code suivant au fichier Package.cs.
+1. Ajoutez le code suivant au fichier Package. cs.
 
     ```csharp
     using System.ComponentModel;
@@ -349,7 +349,7 @@ En outre, ajoutez une `OnDefaultNamespaceChanged` méthode à `ExampleModel` et 
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Pour modifier le gestionnaire de propriétés pour la propriété suivie
 
-1. Ajoutez le code suivant au fichier ExampleModel.cs.
+1. Ajoutez le code suivant au fichier ExampleModel. cs.
 
     ```csharp
     using System.Linq;
@@ -425,7 +425,7 @@ Ajoutez également un stockage pour les méthodes, et pour obtenir et définir, 
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Pour ajouter la méthode pour le descripteur de type personnalisé
 
-1. Ajoutez le code suivant au fichier NamespaceTrackingProperty.cs.
+1. Ajoutez le code suivant au fichier NamespaceTrackingProperty. cs.
 
     ```csharp
     using System;
@@ -592,7 +592,7 @@ Ajoutez du code pour prendre en charge le comportement de rechargement personnal
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Pour ajouter du code afin de prendre en charge le comportement de publication personnalisé
 
-1. Ajoutez le code suivant au fichier Serialization.cs.
+1. Ajoutez le code suivant au fichier Serialization. cs.
 
     ```csharp
     using System;

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b578c949b3b5121eb90b2c034766ea15ae6d096
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963300"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386564"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 
@@ -141,7 +141,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
 2. Recherchez l'attribut `ProvideMenuResource`.
 
-3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :
+3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,7 +161,7 @@ La classe de jeu de commandes est dérivée de <xref:Microsoft.VisualStudio.Mode
 
 2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs` .
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
 
      `namespace Company.Language1 /* Make sure this is correct */`
 

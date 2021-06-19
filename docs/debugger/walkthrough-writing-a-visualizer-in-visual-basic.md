@@ -1,7 +1,7 @@
 ---
 title: Écrire un visualiseur dans Visual Basic | Microsoft Docs
 description: Suivez une procédure pas à pas pour créer un visualiseur simple dans Visual Basic. Vous créez également un atelier de test pour tester votre visualiseur.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d730fe6fef116577f26acabd72440950a6e192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1a4fc7d6f33d1bdfd469ec352674b08dd2495e6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884050"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385004"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : écriture d'un visualiseur en Visual Basic
 
@@ -233,7 +233,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L'application console démarre. Le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations. Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 

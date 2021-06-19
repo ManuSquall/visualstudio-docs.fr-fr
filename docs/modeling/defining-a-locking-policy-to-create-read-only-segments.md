@@ -4,17 +4,17 @@ description: Découvrez comment vous pouvez définir une stratégie pour un prog
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bb8e05ffc030716f32ab7e79233ca9e02ef2e11
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385784"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité du kit de développement logiciel (SDK) de visualisation et de modélisation de Visual Studio permet à un programme de verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il puisse être lu mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, pour qu’un utilisateur puisse demander aux collègues d’annoter et de passer en revue un modèle DSL, mais peut les empêcher de modifier l’original.
@@ -79,7 +79,7 @@ partition.SetLocks(Locks.Delete);
 
 |Valeur|Cela signifie que si `IsLocked(Value)` a la valeur true|
 |-|-|
-|None|Aucune restriction.|
+|Aucun|Aucune restriction.|
 |Propriété|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable à `ModelElement` .|
 |Déplacer|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Ces méthodes sont appelées lorsqu’un appel est effectué à `SetLocks()` sur un magasin, une partition ou un ModelElement. Dans chaque méthode, vous disposez d’un ensemble de verrous proposés. Vous pouvez retourner l’ensemble proposé, ou vous pouvez ajouter et soustraire des verrous.
 
- Par exemple :
+ Exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

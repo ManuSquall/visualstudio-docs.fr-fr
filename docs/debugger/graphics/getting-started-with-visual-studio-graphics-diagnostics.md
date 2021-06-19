@@ -1,7 +1,7 @@
 ---
 title: Prise en main de Graphics Diagnostics | Microsoft Docs
 description: Préparez-vous à utiliser Graphics Diagnostics pour la première fois, puis capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -9,17 +9,17 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1559854c1b293c33c16cfab6e638a33908c2eb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70512b4df3be7f11973af244c336b22c59c90f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881293"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387604"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
@@ -95,4 +95,4 @@ Assurez-vous que vous pouvez générer et exécuter l’application avant de pou
  Pour en savoir plus sur l’utilisation conjointe des outils Graphics Analyzer, consultez les [exemples](graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Graphiques Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)
+- [Graphismes Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

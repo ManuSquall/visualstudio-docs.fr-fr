@@ -4,17 +4,17 @@ description: Découvrez qu’un modèle de texte T4 de Visual Studio commence g�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb5a216aa9a43581327b04d4b6b56f49f9b2bae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622a6392df2608048a3ac24fda0f4dffc8e43dd4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924647"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386135"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -98,7 +98,7 @@ Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host
 
 Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
+Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -136,7 +136,7 @@ Valeurs valides :
 
 L' `language` attribut spécifie le langage ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
-Par exemple :
+Exemple :
 
 ```vb
 <#@ template language="VB" #>

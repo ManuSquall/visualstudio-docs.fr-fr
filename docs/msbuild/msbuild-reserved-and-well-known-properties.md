@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2edfd4b9391beed5c379817c55871759ff02eec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897744"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384926"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriétés réservées et connues de MSBuild
 
@@ -71,7 +71,10 @@ Le tableau de cette section présente les propriétés prédéfinies de MSBuild.
 | `MSBuildThisFileName` | Réservé | Partie du nom de fichier de `MSBuildThisFileFullPath`, sans l'extension de nom de fichier. | `ConsoleApp1` |
 | `MSBuildToolsPath` | Réservé | Chemin d’installation de la version MSBuild associée à la valeur de `MSBuildToolsVersion` .<br /><br /> N'incluez pas la barre oblique inverse finale dans le chemin.<br /><br /> Cette propriété ne peut pas être remplacée. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
 | `MSBuildToolsVersion` | Réservé | Version de l’ensemble d’outils MSBuild utilisé pour générer le projet.<br /><br /> Remarque : un ensemble d’outils MSBuild se compose des tâches, des cibles et des outils utilisés pour générer une application. Les outils incluent des compilateurs tels que *csc.exe* et *vbc.exe*. Pour plus d’informations, consultez ensemble d’outils [(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)et [configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md). | `Current` |
-| `MSBuildVersion` | Réservé | Version de MSBuild utilisée pour générer le projet. <br /><br/> Cette propriété ne peut pas être substituée, sinon le message d’erreur `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` est retourné. | 16.7.0 |
+| `MSBuildVersion` | Réservé | Version de MSBuild utilisée pour générer le projet. <br /><br/> Cette propriété ne peut pas être substituée, sinon le message d’erreur `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` est retourné. | 16.11.0 |
+| `MSBuildAssemblyVersion` | Réservé | Version des assemblys MSBuild utilisée pour générer le projet. | 16,0 |
+| `MSBuildFileVersion` | Réservé | Version 4 du composant des assemblys MSBuild utilisée pour générer le projet. | 16.11.0.30701 |
+| `MSBuildSemanticVersion` | Réservé | Version semver 2,0 complète des assemblys MSBuild utilisés pour générer le projet. | 16.11.0-Preview-21302-05 + 5e37cc992 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Noms en conflit avec des éléments MSBuild
 
@@ -80,7 +83,7 @@ En plus des éléments ci-dessus, les noms correspondant à des éléments de la
 * VisualStudioProject
 * Cible
 * PropertyGroup
-* Output
+* Sortie
 * ItemGroup
 * UsingTask
 * ProjectExtensions

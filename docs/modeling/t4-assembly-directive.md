@@ -4,17 +4,17 @@ description: Découvrez que dans un modèle de texte au moment de la conception 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b5a7fe2308884d4837a068770af67435ada70e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899680"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386356"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 
@@ -38,7 +38,7 @@ Dans un modèle de texte au moment de la conception de Visual Studio, la `assemb
 
 - Chemin d’accès absolu de l’assembly
 
-  Vous pouvez utiliser la `$(variableName)` syntaxe pour référencer des variables Visual Studio telles que `$(SolutionDir)` et `%VariableName%` pour référencer des variables d’environnement. Par exemple :
+  Vous pouvez utiliser la `$(variableName)` syntaxe pour référencer des variables Visual Studio telles que `$(SolutionDir)` et `%VariableName%` pour référencer des variables d’environnement. Exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
