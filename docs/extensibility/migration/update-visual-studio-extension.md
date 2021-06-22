@@ -9,14 +9,19 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514c9654a741e4e1e565f0cb2becdbe3157fab0c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
+ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308738"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112424651"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Mettre à jour une extension Visual Studio pour Visual Studio 2022
+
+> [!IMPORTANT]
+> Les conseils de ce guide sont destinés à guider les développeurs dans la migration des extensions qui nécessitent des modifications majeures pour fonctionner à la fois dans Visual Studio 2019 et 2022. Dans ce cas, il est recommandé d’avoir deux projets VSIX et la compilation conditionnelle.
+> De nombreuses extensions pourront fonctionner à la fois dans Visual Studio 2019 et 2022 avec des modifications mineures qui ne nécessitent pas les conseils sur la modernisation de votre extension dans ce guide.
+> Essayez votre extension dans Visual Studio 2022 et évaluez l’option qui convient le mieux à votre extension.
 
 Vous pouvez mettre à jour votre extension de façon à ce qu’elle fonctionne avec Visual Studio 2022 Preview en suivant ce guide. Visual Studio 2022 Preview est une application 64 bits et présente des modifications avec rupture dans le kit de développement logiciel (SDK) VS. Ce guide vous guide tout au long des étapes requises pour faire fonctionner votre extension avec la version préliminaire actuelle de Visual Studio 2022. votre extension peut donc être prête à être installée par les utilisateurs avant que Visual Studio 2022 n’atteigne la disponibilité générale.
 
