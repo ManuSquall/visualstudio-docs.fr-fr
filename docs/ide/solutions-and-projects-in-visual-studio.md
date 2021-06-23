@@ -1,5 +1,5 @@
 ---
-title: Que sont les projets de solutions Visual Studio &amp; ?
+title: Que sont les solutions Visual Studio & les projets ?
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f632922078383708319e610d82a4c94a58619424
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 61cc760eb34df7f643bbdc16607f2316e92785bf
+ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306395"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112500888"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Que sont les solutions et les projets dans Visual Studio ?
 
