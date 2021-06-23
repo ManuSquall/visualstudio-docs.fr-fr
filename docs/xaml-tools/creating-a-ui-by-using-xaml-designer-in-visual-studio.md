@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du concepteur XAML
+title: Créer des interfaces utilisateur avec Visual Studio Concepteur XAML
 description: En savoir plus sur l’interface utilisateur de l’espace de travail et les fonctionnalités du Concepteur XAML dans Blend pour Visual Studio qui fournit une interface visuelle pour vous aider à concevoir des applications basées sur XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565230"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550686"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
