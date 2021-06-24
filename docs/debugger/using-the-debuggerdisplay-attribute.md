@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: edb257f6e5e0b74ef7f60a8447b7c89053a04e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9579e4969cb53ed2f1bcf749e8114386af85d0
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896486"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602144"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquez au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
@@ -96,11 +96,11 @@ public sealed class MyClass
 Le suffixe « , NQ » indique à l’évaluateur d’expression de supprimer les guillemets lors de l’affichage de la valeur finale (NQ = no Quotations).
 
 ## <a name="example"></a>Exemple
-L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :
+L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowsable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :
 
 |**Nom**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
-|Clé|"trois"|objet {string}|
+|Clé :|"trois"|objet {string}|
 |Valeur|3|objet {int}|
 
 ```csharp

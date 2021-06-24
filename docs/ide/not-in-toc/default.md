@@ -12,26 +12,25 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: cc15c7ac377899ddb8660782e6015cfc975aa8dc
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7e8051c058018a3c433972cfdf19bb091685a482
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390566"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602163"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Oups ! Aucune `F1` aide correspondante n’a été trouvée
-
-Désolé, Il semble que nous n’ayons pas trouvé ce que vous recherchiez. 
 
 :::image type="content" source="../media/search-error-page-sm.png" alt-text="Désolé... nous n’avons pas trouvé de correspondance" border="false":::
 
 ## <a name="now-what"></a>Et maintenant ?
 
+Désolé, Il semble que nous n’ayons pas trouvé ce que vous recherchiez. 
+
 **Vous recherchez de `F1` l’aide sur une fenêtre, un mot clé ou un nom d’API ?**
 - Essayez votre moteur de recherche préféré **[recommandé]**
 - Utilisez la barre d’outils [docs.Microsoft.com](/) pour rechercher 
-- Consultez notre documentation de référence sur l' [Explorateur d’API .net](/dotnet/api/)
-- Obtenir de l’aide sur l' [éditeur de code de texte](../../ide/writing-code-in-the-code-and-text-editor.md)
+- Recherchez dans le navigateur de l' [API .net](/dotnet/api/) ou lisez notre présentation de l' [éditeur de code texte](../../ide/writing-code-in-the-code-and-text-editor.md)
 - Parcourir la base de connaissances pour la [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
 
 

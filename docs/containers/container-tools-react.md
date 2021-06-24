@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684339"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602031"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -25,16 +25,16 @@ Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail **Développement web**, **Azure Tools** et/ou la charge de travail **Développement multiplateforme .NET Core**
 * Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
-* [Node.JS](https://nodejs.org/en/download/)
-* Pour les conteneurs Windows, Windows 10 version 1903 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
+* [Node.js](https://nodejs.org/en/download/)
+* Pour les conteneurs Windows, Windows 10 version 1809 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
 * [Outils de développement .net core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1) pour le développement avec .net Core 3,1.
 * Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
-* [Node.JS](https://nodejs.org/en/download/)
-* Pour les conteneurs Windows, Windows 10 version 1903 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
+* [Node.js](https://nodejs.org/en/download/)
+* Pour les conteneurs Windows, Windows 10 version 1809 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Installation et configuration
@@ -49,7 +49,7 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
    ![Capture d’écran du nouveau projet React.js](media/container-tools-react/vs-2017/new-react-project.png)
 
-1. Cliquez avec le bouton de droite sur le nœud du projet, puis choisissez **Ajouter** > **Support Docker** pour ajouter un fichier Dockerfile à votre projet.
+1. Cliquez avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter** > la **prise en charge** de l’ancrage pour ajouter un fichier dockerfile à votre projet.
 
    ![Ajouter la prise en charge Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
@@ -66,7 +66,7 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
    ![Capture d’écran de la création d’un projet de React.js-écran d’informations supplémentaires](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
-1. Cliquez avec le bouton de droite sur le nœud du projet, puis choisissez **Ajouter** > **Support Docker** pour ajouter un fichier Dockerfile à votre projet.
+1. Cliquez avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter** > la **prise en charge** de l’ancrage pour ajouter un fichier dockerfile à votre projet.
 
    ![Ajouter la prise en charge Docker](media/container-tools-react/vs-2017/add-docker-support.png)
 
@@ -91,14 +91,14 @@ Le *Dockerfile* doit ressembler à ceci :
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
@@ -135,26 +135,26 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
    1. Ajoutez les lignes suivantes avant `FROM … base`
 
       ```Dockerfile
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Ajoutez la ligne suivante avant et après `FROM … build`
+   2. Ajoutez la ligne suivante avant et après `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. Le fichier dockerfile complet doit maintenant ressembler à ceci :
+   3. Le fichier dockerfile complet doit maintenant ressembler à ceci :
 
       ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       RUN mkdir -p C:\nodejsfolder
       WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
@@ -162,13 +162,13 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
@@ -186,7 +186,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
       ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
-   1. Mettez à jour le fichier. dockerignore en supprimant le `**/bin` .
+   4. Mettez à jour le fichier. dockerignore en supprimant le `**/bin` .
 
 ## <a name="debug"></a>Débogage
 
@@ -207,12 +207,12 @@ Essayez d’accéder à la page *Compteur* et de tester le code côté client po
 
 Ouvrez la **Console du Gestionnaire de package** à partir du menu **Outils**> Gestionnaire de package NuGet, **Console du Gestionnaire de package**.
 
-L’image Docker obtenue de l’application est marquée avec la balise *dev*. L’image est basée sur la balise *3,1-Server-1903* de l’image de base *dotnet/Core/ASPNET* . Exécutez la commande `docker images` dans la fenêtre **Console du Gestionnaire de package**. Les images sur la machine s’affichent :
+L’image Docker obtenue de l’application est marquée avec la balise *dev*. L’image est basée sur la balise *3,1* de l’image de base *dotnet/Core/ASPNET* . Exécutez la commande `docker images` dans la fenêtre **Console du Gestionnaire de package**. Les images sur la machine s’affichent :
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
 webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
-mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1                 e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -242,7 +242,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -272,7 +272,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/container-tools-react/vs-2019/azure-container-registry-details.png)

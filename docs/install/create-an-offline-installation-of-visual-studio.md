@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eef6a8bbdf5afc3aa5f36b0afdb374fd5beac471
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307490"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602202"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -184,7 +184,7 @@ Ouvrez une invite de commandes et utilisez les paramètres du programme d’amor
 ::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/).
+   > Une mise en page complète de Visual Studio nécessite un minimum de 41 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/).
 
 ::: moniker-end
 
