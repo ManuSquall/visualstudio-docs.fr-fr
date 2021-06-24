@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
+ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841677"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112574111"
 ---
 # <a name="use-bind-mounts"></a>Utiliser des montages de liaison
 
@@ -49,14 +49,15 @@ Pour exécuter votre conteneur pour prendre en charge un flux de travail de dév
 
     ```bash
     docker run -dp 3000:3000 \
-        -w /app -v ${PWD}:/app \
+        -w /app \
+        -v "%cd%:/app" \
         node:12-alpine \
         sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000` -identique à avant. Exécuter en mode détaché (arrière-plan) et créer un mappage de port
     - `-w /app` -définit le répertoire de travail ou le répertoire actif à partir duquel la commande s’exécutera
-    - `-v ${PWD}:/app` -bind monter le répertoire actif à partir de l’hôte dans le conteneur dans le `/app` Répertoire
+    - `-v "%cd%:/app"` -bind monter le répertoire actif à partir de l’hôte dans le conteneur dans le `/app` Répertoire
     - `node:12-alpine` -l’image à utiliser. Notez qu’il s’agit de l’image de base de votre application à partir de fichier dockerfile
     - `sh -c "yarn install && yarn run dev"` -la commande. Nous démarrons un shell à l’aide `sh` de (Alpine n’a pas `bash` ) et en exécutant `yarn install` pour installer *toutes les* dépendances, puis en cours d’exécution `yarn run dev` . Si vous regardez dans le `package.json` , nous voyons que le script est en cours de `dev` démarrage `nodemon` .
 
