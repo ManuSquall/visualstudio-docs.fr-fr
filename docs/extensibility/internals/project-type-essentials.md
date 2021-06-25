@@ -3,7 +3,7 @@ title: Type de projet Essentials | Microsoft Docs
 description: En savoir plus sur le moment où vous devez créer un type de projet et le moment où vous pouvez étendre un type de projet existant à l’aide des sous-types de projet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed1c1098fe13cd19ce686782e18b190f455f8c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 051e7b76edd4559914307459fdcbdf1b7c0b600e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064291"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903554"
 ---
 # <a name="project-type-essentials"></a>Éléments fondamentaux sur le type de projet
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comprend plusieurs types de projets pour les langages tels que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet également de créer vos propres types de projets.
@@ -56,7 +56,7 @@ ms.locfileid: "105064291"
 
 - Pour les développeurs C++, les classes de la bibliothèque HierUtil fonctionnent de la même manière. Pour plus d’informations, consultez [not in Build : utilisation des classes de projet HierUtil7 pour implémenter un type de projet (C++)](/previous-versions/bb166212(v=vs.100)).
 
-- Les types de projet peuvent prendre en charge des données autres que des fichiers de code source classiques qui sont générés dans un assembly. exe ou. dll. Par exemple, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] les projets de base de données contiennent des références à des fichiers de script et de requête stockés sur disque et ajoutent des commandes à **Explorateur de solutions** pour exécuter les scripts et les requêtes sur une base de données, mais les projets ne prennent pas en charge le comportement de génération. Pour plus d’informations, consultez [ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).
+- Les types de projet peuvent prendre en charge des données autres que des fichiers de code source classiques qui sont générés dans un assembly .exe ou .dll. Par exemple, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] les projets de base de données contiennent des références à des fichiers de script et de requête stockés sur disque et ajoutent des commandes à **Explorateur de solutions** pour exécuter les scripts et les requêtes sur une base de données, mais les projets ne prennent pas en charge le comportement de génération. Pour plus d’informations, consultez [ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).
 
 - Un type de projet n’a pas besoin d’utiliser de fichiers. Par exemple, un type de projet peut stocker toutes ses données dans une base de données. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] donne aux types de projets un contrôle total sur la façon dont ils rendent les données persistantes pour les projets et les éléments de projet. Pour plus d’informations, consultez [décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md).
 

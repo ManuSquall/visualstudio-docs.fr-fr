@@ -3,7 +3,7 @@ title: Types d’événements pris en charge | Microsoft Docs
 description: Découvrez les types d’événements pris en charge par le débogage Visual Studio, y compris les événements asynchrones, les événements synchrones et les événements d’arrêt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 883c9fd51cc4dfc4f2cc2f996d24c0722478505f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fff86a142f541c1b17012b6190dd68e8d5628a3c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079408"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902902"
 ---
 # <a name="supported-event-types"></a>Types d’événements pris en charge
 Le débogage Visual Studio prend actuellement en charge les types d’événements suivants :
@@ -47,7 +47,7 @@ Le débogage Visual Studio prend actuellement en charge les types d’événemen
   > [!NOTE]
   > Les événements d’arrêt asynchrones ne sont pas pris en charge. L’envoi d’un événement d’arrêt asynchrone est une erreur.
 
-## <a name="discussion"></a>Discussions
+## <a name="discussion"></a>Discussion
  L’implémentation réelle des événements dépend de la conception de votre. Le type de chaque événement envoyé est déterminé par ses attributs, qui sont définis quand vous concevez le DE. Par exemple, un DE peut envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) en tant qu’événement asynchrone, tandis qu’un autre peut l’envoyer en tant qu’événement d’arrêt.
 
  Le tableau suivant spécifie les paramètres de programme et de thread requis pour les événements, ainsi que les types d’événements. Tout événement peut être synchrone. Aucun événement ne doit être synchrone.

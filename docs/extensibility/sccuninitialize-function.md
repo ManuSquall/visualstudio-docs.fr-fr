@@ -2,7 +2,7 @@
 description: Cette fonction nettoie toutes les allocations ou les connexions ouvertes créées par un appel précédent à SccInitialize en préparation de l’arrêt du plug-in de contrôle de code source.
 title: SccUninitialize fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccUninitialize
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d387167e2032cbb253e86f8d67da38f99fc1076
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d46aedd3e962d0684689ff29a34061b777fe08e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063771"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904072"
 ---
 # <a name="sccuninitialize-function"></a>Fonction SccUninitialize
 Cette fonction nettoie toutes les allocations ou les connexions ouvertes créées par un appel précédent à [SccInitialize](../extensibility/sccinitialize-function.md) en préparation de l’arrêt du plug-in de contrôle de code source.
@@ -43,7 +43,7 @@ dans Pointeur vers la structure de contexte du plug-in de contrôle de code sour
 |-----------|-----------------|
 |SCC_OK|Le nettoyage s’est terminé correctement.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le plug-in de contrôle de code source est responsable de la préparation de l’arrêt et de la libération de mémoire allouée par le plug-in pour la structure de contexte. La fonction est appelée une fois pour chaque instance donnée d’un plug-in. Un appel à [SccInitialize](../extensibility/sccinitialize-function.md) précède cet appel. Aucun projet ne peut encore être ouvert au moment de l’appel à `SccUninitialize` .
 
 ## <a name="see-also"></a>Voir aussi

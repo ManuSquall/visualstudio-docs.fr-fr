@@ -2,7 +2,7 @@
 description: Cette fonction invite l’utilisateur à fournir des options avancées pour une commande donnée.
 title: SccGetCommandOptions fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7972d874668649b8bb86adc15008880c5fc4152e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068373"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903929"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions fonction)
 Cette fonction invite l’utilisateur à fournir des options avancées pour une commande donnée.
@@ -51,7 +51,7 @@ dans Commande pour laquelle des options avancées sont demandées (consultez le 
 
 dans Structure de l’option (peut également être `NULL` ).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -64,7 +64,7 @@ dans Structure de l’option (peut également être `NULL` ).
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE appelle cette fonction pour la première fois avec `ppvOptions` = `NULL` pour déterminer si le plug-in de contrôle de code source prend en charge la fonctionnalité options avancées pour la commande spécifiée. Si le plug-in prend en charge la fonctionnalité de cette commande, l’IDE rappelle cette fonction lorsque l’utilisateur demande des options avancées (généralement implémentées comme un bouton **avancé** dans une boîte de dialogue) et fournit un pointeur non null pour `ppvOptions` ce point vers un `NULL` pointeur. Le plug-in stocke toutes les options avancées spécifiées par l’utilisateur dans une structure privée et retourne un pointeur vers cette structure dans `ppvOptions` . Cette structure est ensuite transmise à toutes les autres fonctions d’API de plug-in de contrôle de code source qui doivent en être informées, y compris les appels suivants à la `SccGetCommandOptions` fonction.
 
  Un exemple peut aider à clarifier cette situation.

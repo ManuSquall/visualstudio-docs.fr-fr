@@ -3,7 +3,7 @@ title: Modes opérationnels | Microsoft Docs
 description: Découvrez les trois modes dans lesquels l’IDE peut fonctionner, en mode Design, en mode exécution et en mode arrêt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563db644069731c5d74088dadf296933c36b0cc1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 559df92545f4c14eb0575e7ef758e73028349b76
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067840"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899106"
 ---
 # <a name="operational-modes"></a>Modes de fonctionnement
 L’IDE peut fonctionner dans trois modes, comme suit :

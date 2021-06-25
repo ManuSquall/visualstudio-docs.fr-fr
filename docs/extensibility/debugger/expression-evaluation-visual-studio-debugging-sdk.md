@@ -3,7 +3,7 @@ title: Évaluation d’expression (kit de développement logiciel (SDK) de débo
 description: En mode arrêt, l’IDE évalue les expressions qui impliquent des variables de programme. Découvrez comment le moteur de débogage analyse et évalue une expression.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf213c30ef26490b44579d83c68b2640360584a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096796"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904511"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation d’expression (kit de développement logiciel (SDK) de débogage Visual Studio)
 En mode arrêt, l’IDE doit évaluer des expressions simples impliquant plusieurs variables de programme. Pour effectuer son évaluation, le moteur de débogage (DE) doit analyser et évaluer une expression entrée dans l’une des fenêtres de l’IDE.

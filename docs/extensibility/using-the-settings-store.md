@@ -3,7 +3,7 @@ title: Utilisation de la Banque de paramètres | Microsoft Docs
 description: Apprenez à lire des données dans le magasin des paramètres de configuration, qui sont des paramètres Visual Studio et VSPackage en lecture seule.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4d7fff5bc3eeeb3b4515e2e47027f5b88fb7807d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060183"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898381"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de banques de paramètres :
@@ -56,7 +56,7 @@ Il existe deux types de banques de paramètres :
 
     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>Est une classe d’assistance managée sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.
 
-3. À présent, déterminez si Windows Phone outils sont installés. Le code doit ressembler à ceci :
+3. À présent, déterminez si Windows Phone outils sont installés. Le code doit se présenter comme ceci :
 
    ```
    private void MenuItemCallback(object sender, EventArgs e)

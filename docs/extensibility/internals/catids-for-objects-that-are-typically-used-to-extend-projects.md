@@ -3,7 +3,7 @@ title: CATID des objets utilisés en général pour étendre des projets
 description: Découvrez les CATID des objets utilisés pour étendre des objets Automation Project et ProjectItem pour les projets Visual Basic, Visual C# et Visual C++.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSPackages, CATIDs
 - GUIDs, VSPackages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276e7f146858c2de166c0ba20063a0bf4d8b88a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: abc0df47c243cff4bf80ab18b15f1cbaa9526cdd
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086090"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898669"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID des objets qui sont généralement utilisés pour étendre des projets
 Le tableau suivant répertorie les CATID utilisés pour étendre `Project` et des `ProjectItem` objets Automation pour les [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projets, et [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Ces CATID sont définis dans *VSLangProj. olb*.

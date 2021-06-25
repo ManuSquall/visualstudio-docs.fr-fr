@@ -3,7 +3,7 @@ title: GUID et ID des barres d’outils de Visual Studio | Microsoft Docs
 description: Affichez une liste de valeurs GUID et ID pour les barres d’outils et les groupes qu’ils contiennent, qui sont inclus dans l’environnement de développement intégré (IDE) de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3d2ba6c92a2913ec63a59751a4181454aa67fa67
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082073"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898108"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID des barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses dans l’environnement de développement intégré (IDE) de Visual Studio et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers *. vsct* installés dans le cadre du kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [commandes, menus et groupes définis par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,7 +56,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |Add, commande|IDM_VS_TOOL_ADDCOMMAND|
 |Indéfini|IDM_VS_TOOL_UNDEFINED|
 |schéma XML|IDM_VS_TOOL_SCHEMA|
-|Données XML|IDM_VS_TOOL_DATA|
+|données XML|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Groupes sur les barres d’outils de l’IDE
  Pour ajouter un bouton à une barre d’outils standard, définissez l’un des groupes suivants en tant que parent. Les groupes sont triés par barre d’outils parente.

@@ -3,7 +3,7 @@ title: Utilitaire CreateExpInstance | Microsoft Docs
 description: Découvrez l’utilitaire CreateExpInstance qui vous permet de créer, réinitialiser ou supprimer une instance expérimentale de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cce9bc25cb2ed820d3291ab65d94a868bb401ec9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056985"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898134"
 ---
 # <a name="createexpinstance-utility"></a>Utilitaire CreateExpInstance
 Utilisez l’utilitaire **CreateExpInstance** pour créer, réinitialiser ou supprimer une instance expérimentale de Visual Studio. Vous pouvez utiliser l’instance expérimentale pour déboguer et tester des extensions Visual Studio sans modifier le produit sous-jacent.
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/RootSuffix** Suffixe à ajouter au nom du répertoire de l’instance expérimentale.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Quand vous travaillez sur une extension Visual Studio, vous pouvez appuyer sur F5 pour ouvrir l’instance expérimentale par défaut et installer l’extension actuelle. Si aucune instance expérimentale n’est disponible, Visual Studio en crée une qui a les paramètres par défaut.
 
  L’emplacement par défaut de l’instance expérimentale dépend du numéro de version de Visual Studio. Par exemple, pour Visual Studio 2015, l’emplacement est *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\*. Tous les fichiers de l’emplacement du répertoire sont considérés comme faisant partie de cette instance. Les instances expérimentales supplémentaires ne seront pas chargées par Visual Studio, sauf si le nom du répertoire est remplacé par l’emplacement par défaut.

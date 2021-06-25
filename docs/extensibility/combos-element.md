@@ -3,7 +3,7 @@ title: Élément combos | Microsoft Docs
 description: L’élément combos regroupe les éléments de liste déroulante qui définissent les commandes qui s’affichent dans une zone de liste modifiable. Cet article contient un exemple.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9135e2f863f3ab277e6c7408579d7ef8242bce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c293fa827187461c5a6b84333c503a2f5cc231
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089717"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903916"
 ---
 # <a name="combos-element"></a>Élément combos
 Groupe les éléments de l' [élément de liste déroulante](../extensibility/combo-element.md) .

@@ -3,7 +3,7 @@ title: Propriétés et méthodes étendues par les sous-types de projet | Micros
 description: Découvrez les fonctionnalités améliorées ou modifiées des sous-types de projet, qui vous permettent de personnaliser le comportement des systèmes de projet de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32c489ba2907cabff47b916039f96754d403455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ddcf020cf0b3e3e4f0f4a7c61ff1f15ce9ded5e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064239"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903539"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriétés et méthodes étendues par les sous-types de projets
 Un sous-type de projet a beaucoup de puissance pour influencer le comportement du projet, car il est construit comme un agrégateur d’un projet de base. Cette section résume certaines des fonctionnalités qui peuvent être améliorées ou modifiées par les sous-types de projet.

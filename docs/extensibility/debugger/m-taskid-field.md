@@ -2,7 +2,7 @@
 description: Champ de stockage pour la propriété System.Threading.Tasks.Task.Id.
 title: Champ m_taskId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_taskId field, Task class [.NET Framework debug engines]
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1683adef2cdd4da35d44beef1a0acfda85b9f6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3fd901a69df7bd90636b39bd88d607bea62776fc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054775"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902655"
 ---
 # <a name="m_taskid-field"></a>champ m_taskId
 Champ de stockage de la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propriété.

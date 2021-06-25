@@ -2,7 +2,7 @@
 description: Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification.
 title: SccGet fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 805c19b0c326e8389b4e1905edf370ad042aac92
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060339"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904550"
 ---
 # <a name="sccget-function"></a>SccGet fonction)
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués en lecture seule.
@@ -61,7 +61,7 @@ dans Indicateurs de commande ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -76,7 +76,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_I_OPERATIONCANCELED|Opération annulée avant la fin.|
 |SCC_E_NOTAUTHORIZED|L'utilisateur n'est pas autorisé à effectuer cette opération.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à récupérer. Si l’IDE passe l’indicateur `SCC_GET_ALL` , cela signifie que les éléments de `lpFileNames` ne sont pas des fichiers mais des répertoires, et que tous les fichiers sous contrôle de code source dans les répertoires spécifiés doivent être récupérés.
 
  L' `SCC_GET_ALL` indicateur peut être combiné avec l' `SCC_GET_RECURSIVE` indicateur pour récupérer également tous les fichiers dans les répertoires et les sous-répertoires spécifiés.

@@ -2,7 +2,7 @@
 description: Stocke les informations relatives à l’état actuel de l’objet System. Threading. Tasks. Task.
 title: Champ m_stateFlags | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df101d0c75ad7bd2a12393c4440c7dcd5484656
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bf584511bc2f0ee43429abe83dea3d7a45259d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059663"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898911"
 ---
 # <a name="m_stateflags-field"></a>champ m_stateFlags
 Stocke les informations sur l’état actuel de l' <xref:System.Threading.Tasks.Task> objet.

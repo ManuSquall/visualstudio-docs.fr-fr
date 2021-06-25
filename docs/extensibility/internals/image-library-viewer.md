@@ -3,19 +3,19 @@ title: Visionneuse de bibliothèque d’images | Microsoft Docs
 description: En savoir plus sur l’outil visionneuse d’images Visual Studio qui charge et recherche des manifestes d’image, ce qui vous permet d’afficher et de manipuler des attributs d’image.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02e7c5d5ed45b7a6c19c248e949e667ec0a1bdc0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085973"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898708"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil visionneuse d’images Visual Studio peut charger et Rechercher des manifestes d’image, ce qui permet à l’utilisateur de les manipuler de la même façon que dans Visual Studio. L’utilisateur peut modifier l’arrière-plan, les tailles, les PPP, le contraste élevé et d’autres paramètres. L’outil affiche également les informations de chargement pour chaque manifeste d’image et affiche des informations sur la source de chaque image dans le manifeste de l’image. Cet outil est utile pour :
@@ -173,7 +173,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 ## <a name="how-to-use-the-tool"></a>Comment utiliser l’outil
  **Validation d’un manifeste d’image personnalisé**
 
- Pour créer un manifeste personnalisé, nous vous recommandons d’utiliser l’outil ManifestFromResources pour générer automatiquement le manifeste. Pour valider le manifeste personnalisé, lancez la visionneuse de la bibliothèque d’images et sélectionnez fichier > définir les chemins... pour ouvrir la boîte de dialogue Rechercher dans les répertoires. L’outil utilisera les répertoires de recherche pour charger des manifestes d’images, mais il l’utilisera également pour rechercher les fichiers. dll qui contiennent les images dans un manifeste, par conséquent, veillez à inclure les répertoires de manifeste et de DLL dans cette boîte de dialogue.
+ Pour créer un manifeste personnalisé, nous vous recommandons d’utiliser l’outil ManifestFromResources pour générer automatiquement le manifeste. Pour valider le manifeste personnalisé, lancez la visionneuse de la bibliothèque d’images et sélectionnez fichier > définir les chemins... pour ouvrir la boîte de dialogue Rechercher dans les répertoires. L’outil utilisera les répertoires de recherche pour charger des manifestes d’images, mais il l’utilisera également pour rechercher les fichiers de .dll qui contiennent les images dans un manifeste. Veillez donc à inclure les répertoires de manifeste et de DLL dans cette boîte de dialogue.
 
  ![Visionneuse de bibliothèque d’images - Rechercher](../../extensibility/internals/media/image-library-viewer-search.png "Visionneuse de bibliothèque d’images - Rechercher")
 
@@ -217,7 +217,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 
  ![Visionneuse de bibliothèque d’images - ID de filtre](../../extensibility/internals/media/image-library-viewer-filter-id.png "Visionneuse de bibliothèque d’images - ID de filtre")
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 - Par défaut, l’outil extraira plusieurs manifestes d’image présents dans le répertoire d’installation de Visual Studio. Le seul qui a des monikers pouvant être consommés publiquement est le manifeste **Microsoft. VisualStudio. ImageCatalog** . GUID : ae27a6b0-E345-4288-96df-5eaf394ee369 (ne **pas** substituer ce GUID dans un manifeste personnalisé) type : KnownMonikers
 

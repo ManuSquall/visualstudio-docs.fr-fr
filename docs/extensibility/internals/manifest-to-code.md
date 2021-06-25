@@ -3,19 +3,19 @@ title: Manifest to Code | Microsoft Docs
 description: Découvrez comment utiliser le manifeste à partir de l’outil de code qui utilise un fichier. imagemanifest pour l’utiliser avec le service d’images Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e63349b27ec8ea5617f6d1836ce9ece3251662d3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095158"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903163"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 L’outil Manifest to Code est une application console qui accepte un fichier. imagemanifest pour le service d’images Visual Studio et génère un ou des fichiers de wrapper pour référencer les valeurs du manifeste d’image dans les fichiers C++, C#, VB ou. vsct pour les extensions Visual Studio. Cet outil génère des fichiers wrapper qui peuvent être utilisés pour demander directement des images du service d’images Visual Studio, ou pour transmettre les valeurs de manifeste via des API si le code ne gère pas sa propre interface utilisateur et son propre rendu.
@@ -47,7 +47,7 @@ L’outil Manifest to Code est une application console qui accepte un fichier. i
 
 - ManifestToCode/manifest : D:\MyManifest.imagemanifest/Language : VSCT/imageIdClass : MyImageIds
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 - Nous vous recommandons d’utiliser cet outil avec les manifestes d’image générés par l’outil Manifest from Resources.
 

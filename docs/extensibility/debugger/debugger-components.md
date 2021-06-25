@@ -3,7 +3,7 @@ title: Composants du débogueur | Microsoft Docs
 description: En savoir plus sur les éléments qui composent une session de débogage, qui est gérée par le débogueur Visual Studio, implémentée en tant que VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c558d20d24acd65ece4c4df43eb8f474c20447
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c246bc00ee4f6fcead8404b3174da39f7b5ca2d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094950"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903981"
 ---
 # <a name="debugger-components"></a>Composants du débogueur
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur est implémenté en tant que VSPackage et gère l’intégralité de la session de débogage. La session de débogage comprend les éléments suivants :
@@ -40,7 +40,7 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur est i
 
   ![Vue d'ensemble du débogage de composants](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Package de débogage](../../extensibility/debugger/debug-package.md) Décrit le package de débogage, qui s’exécute dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interpréteur de commandes et gère l’ensemble de l’interface utilisateur.
 
  [Gestionnaire de débogage de processus](../../extensibility/debugger/process-debug-manager.md) Fournit une vue d’ensemble des fonctionnalités de PDM, qui est le gestionnaire des processus qui peuvent être débogués.

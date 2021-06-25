@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Découvrez comment mettre à jour votre modèle de projet et d’élément personnalisé à partir de versions précédentes du kit de développement logiciel (SDK) Visual Studio pour les utiliser avec Visual Studio 2017 et versions ultérieures.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: leslierichardson95
 ms.author: lerich
@@ -12,16 +12,16 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d07af0a00ab840df8a9af437bcddc427f606948
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060274"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903058"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mettre à niveau un Modèles de projet et d’élément pour Visual Studio personnalisé 2017
 
-À compter de Visual Studio 2017, Visual Studio Découvre les modèles de projet et d’élément qui ont été installés par un fichier. VSIX ou un fichier. msi de la même façon que les versions précédentes de Visual Studio. Si vous possédez des extensions qui utilisent des modèles de projet ou d’élément personnalisés, vous devez mettre à jour vos extensions. Cet article explique ce que vous devez faire.
+À compter de Visual Studio 2017, Visual Studio Découvre les modèles de projet et d’élément qui ont été installés par un. VSIX ou un .msi d’une manière différente des versions précédentes de Visual Studio. Si vous possédez des extensions qui utilisent des modèles de projet ou d’élément personnalisés, vous devez mettre à jour vos extensions. Cet article explique ce que vous devez faire.
 
 Cette modification affecte uniquement Visual Studio 2017. Elle n’affecte pas les versions précédentes de Visual Studio.
 
@@ -31,7 +31,7 @@ Si vous souhaitez créer un modèle de projet ou d’élément dans le cadre d�
 
 Dans les versions précédentes de Visual Studio, **devenv/setup** ou **devenv/installvstemplates** a analysé le disque local pour trouver des modèles de projet et d’élément. À compter de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement par défaut au niveau de l’utilisateur est **%USERPROFILE%\Documents \\<Visual Studio version \> \Templates \\**. Cet emplacement est utilisé pour les modèles générés par la commande exporter des modèles de **projet**  >  **.** .. si l’option **importer automatiquement le modèle dans Visual Studio** est sélectionnée dans l’Assistant.
 
-Pour les autres emplacements (non-utilisateur), vous devez inclure un fichier manifeste (. vstman) qui spécifie l’emplacement et d’autres caractéristiques du modèle. Le fichier. vstman est généré avec le fichier. vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un. vsix, vous pouvez le faire en recompilant l’extension dans Visual Studio 2017. Toutefois, si vous utilisez un fichier. msi, vous devez apporter les modifications manuellement. Pour obtenir une liste de ce que vous devez faire pour apporter ces modifications, consultez  **mises à niveau pour les extensions installées avec un. MSI** plus loin dans cette page.
+Pour les autres emplacements (non-utilisateur), vous devez inclure un fichier manifeste (. vstman) qui spécifie l’emplacement et d’autres caractéristiques du modèle. Le fichier. vstman est généré avec le fichier. vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un. vsix, vous pouvez le faire en recompilant l’extension dans Visual Studio 2017. Toutefois, si vous utilisez un .msi, vous devez apporter les modifications manuellement. Pour obtenir une liste de ce que vous devez faire pour apporter ces modifications, consultez  **mises à niveau pour les extensions installées avec un .MSI** plus loin dans cette page.
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Comment mettre à jour une extension VSIX avec des modèles de projet ou d’élément
 
@@ -178,7 +178,7 @@ Nous présentons les points de différence entre les versions Visual Studio 2015
 
  Pour plus d’informations sur les différents éléments du fichier. vstman, consultez [Référence du schéma du manifeste de modèle Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Mises à niveau pour les extensions installées avec un. PORTION
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Mises à niveau pour les extensions installées avec un .MSI
 
 Certaines extensions MSI déploient des modèles dans des emplacements de modèles communs, tels que les répertoires suivants :
 

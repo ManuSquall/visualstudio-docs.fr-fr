@@ -2,7 +2,7 @@
 description: Cette fonction obtient les informations d’état d’un ensemble de fichiers sélectionnés sous contrôle de code source.
 title: SccQueryInfo fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 369bbd8d783e5d33ea1519b7ad8a4a37476dc62b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073896"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904137"
 ---
 # <a name="sccqueryinfo-function"></a>Fonction SccQueryInfo
 Cette fonction obtient les informations d’état d’un ensemble de fichiers sélectionnés sous contrôle de code source.
@@ -61,7 +61,7 @@ dans Tableau de noms des fichiers à interroger.
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous le contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si `lpFileName` est une chaîne vide, il n’existe actuellement aucune information d’État à mettre à jour. Dans le cas contraire, il s’agit du nom de chemin d’accès complet du fichier pour lequel les informations d’État ont peut-être changé.
 
  Le tableau de retour peut être un masque de `SCC_STATUS_xxxx` bits de bits. Pour plus d’informations, consultez [code d’État du fichier](../extensibility/file-status-code-enumerator.md). Un système de contrôle de code source ne prend peut-être pas en charge tous les types de bits. Par exemple, si `SCC_STATUS_OUTOFDATE` n’est pas proposé, le bit n’est pas défini.

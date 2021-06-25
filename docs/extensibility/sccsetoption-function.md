@@ -2,7 +2,7 @@
 description: Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
 title: SccSetOption fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 031de256b231bbd95e7535af80448db5140cba7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 18e33cbb8dbee9b332456826ed33e46e4d2e76de
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090146"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904098"
 ---
 # <a name="sccsetoption-function"></a>Fonction SccSetOption
 Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
@@ -55,7 +55,7 @@ dans Paramètres de l’option.
 |SCC_I_SHARESUBPROJOK|Retourné si `nOption` a `SCC_OPT_SHARESUBPROJ` la valeur et que le plug-in de contrôle de code source permet à l’IDE de définir le dossier de destination.|
 |SCC_E_OPNOTSUPPORTED|L’option n’a pas été définie et ne doit pas être fiable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE appelle cette fonction pour contrôler le comportement du plug-in de contrôle de code source. Le premier paramètre, `nOption` , indique la valeur qui est définie, tandis que la seconde, `dwVal` , indique que faire avec cette valeur. Le plug-in stocke ces informations associées à un `pvContext``,` , de sorte que l’IDE doit appeler cette fonction après l’appel de [SccInitialize](../extensibility/sccinitialize-function.md) (mais pas nécessairement après chaque appel à [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Résumé des options et de leurs valeurs :

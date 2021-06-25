@@ -3,7 +3,7 @@ title: Boutons de la fenêtre Propriétés | Microsoft Docs
 description: En savoir plus sur les boutons affichés par défaut dans la barre d’outils de la Fenêtre Propriétés et sur l’implémentation des boutons.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88eacbdbcc50dc843769cdcf4701ba1a2bfe895a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a9c45d6cf0f271683c3c708bd71ef46377a5c5ca
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061067"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903448"
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
 Selon le langage de développement et le type de produit, certains boutons s’affichent par défaut dans la barre d’outils de la fenêtre **Propriétés** . Dans tous les cas, les boutons **classer**, classer par **alphabet**, **Propriétés** et **pages de propriétés** s’affichent. En Visual C# et Visual Basic, le bouton **événements** s’affiche également. Dans certains projets Visual C++, les boutons **VC + +** et les **remplacements VC** s’affichent. Des boutons supplémentaires peuvent s’afficher pour d’autres types de projets. Pour plus d’informations sur les boutons de la fenêtre **Propriétés** , consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).

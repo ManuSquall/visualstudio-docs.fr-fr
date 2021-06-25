@@ -3,7 +3,7 @@ title: Exposition d’objets Project | Microsoft Docs
 description: Apprenez à exposer des objets pour des types de projets personnalisés dans Visual Studio en fournissant des objets Automation qui autorisent l’accès au projet à l’aide d’interfaces d’automatisation.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0ad045cb2cc46577c06d65e3ac1236228c870a9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c3e89b4c80d64bedb77e68c648ba993794f8b658
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069684"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898290"
 ---
 # <a name="expose-project-objects"></a>Exposer des objets de projet
 

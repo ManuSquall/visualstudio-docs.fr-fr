@@ -3,7 +3,7 @@ title: LPTEXTOUTPROC | Microsoft Docs
 description: En savoir plus sur le pointeur de fonction LPTEXTOUTPROC. L’IDE de Visual Studio implémente la fonction d’affichage de l’erreur et de l’État.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e014d72fb3ae2b691f4a6eed28f14ff21656ef64
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c313375efe8afd17dd5d76f55de4cdaf016bab40
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073181"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903097"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -63,7 +63,7 @@ Type de message. Le tableau suivant répertorie les valeurs prises en charge pou
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indique à l’IDE à propos d’un fichier après qu’il a été récupéré à partir du contrôle de version. Le `display_string` paramètre est casté en une structure [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) , qui est fournie par le plug-in de contrôle de code source.|
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indique à l’IDE l’état actuel d’une opération d’arrière-plan. Le `display_string` paramètre est casté en une structure [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) , qui est fournie par le plug-in de contrôle de code source.|
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
 
 |Valeur|Description|
 |-----------|-----------------|

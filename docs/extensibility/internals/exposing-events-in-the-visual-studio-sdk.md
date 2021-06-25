@@ -3,7 +3,7 @@ title: Exposition des événements dans le kit de développement logiciel (SDK) 
 description: En savoir plus sur les méthodes et les entrées de Registre du kit de développement logiciel Visual Studio qui exposent des événements pour les projets et les éléments de projet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 99298329b969df3b9d7dbb46a3f4b9e7d4ed7091
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069801"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898329"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exposer des événements dans le kit de développement logiciel Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet d’utiliser l’automatisation pour les événements source. Nous vous recommandons d’utiliser des événements source pour les projets et les éléments de projet.

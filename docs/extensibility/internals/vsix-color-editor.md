@@ -3,28 +3,28 @@ title: Éditeur de couleurs VSIX | Microsoft Docs
 description: Découvrez l’outil Éditeur de couleurs de l’extension Visual Studio, qui permet de créer et de modifier des couleurs personnalisées pour Visual Studio et de générer des clés de ressources de thème.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6ff388119d829c2e5994c0fa78d01958326bc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95fec01beabb66180089a75e772b40788a1f7f0d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069281"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898938"
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleur VSIX
-L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et de modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs puissent être utilisées dans le code. Cet outil est utile pour créer des couleurs pour une extension Visual Studio qui les prend en charge. Cet outil peut ouvrir les fichiers. pkgdef et. Xml. Les thèmes Visual Studio (fichiers. vstheme) peuvent être utilisés avec l’éditeur de couleurs de l’extension Visual Studio en remplaçant l’extension de fichier par. Xml. En outre, les fichiers. vstheme peuvent être importés dans un fichier. XML actuel.
+L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et de modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs puissent être utilisées dans le code. Cet outil est utile pour créer des couleurs pour une extension Visual Studio qui les prend en charge. Cet outil peut ouvrir les fichiers. pkgdef et .xml. Les thèmes Visual Studio (fichiers. vstheme) peuvent être utilisés avec l’éditeur de couleurs des extensions Visual Studio en remplaçant l’extension de fichier par .xml. En outre, les fichiers. vstheme peuvent être importés dans un fichier de .xml actif.
 
  ![Sélecteur de couleurs VSIX - Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "Sélecteur de couleurs VSIX - Hero")
 
  **Fichiers de définition du package**
 
- Les fichiers de définition de package (. pkgdef) sont les fichiers qui définissent des thèmes. Les couleurs elles-mêmes sont stockées dans des fichiers Theme Color. xml, qui sont compilés dans un fichier. pkgdef. Les fichiers. pkgdef sont déployés dans des emplacements Visual Studio pouvant faire l’objet d’une recherche, traités au moment de l’exécution et fusionnés pour définir des thèmes.
+ Les fichiers de définition de package (. pkgdef) sont les fichiers qui définissent des thèmes. Les couleurs elles-mêmes sont stockées dans des fichiers de .xml de couleur de thème, qui sont compilés dans un fichier. pkgdef. Les fichiers. pkgdef sont déployés dans des emplacements Visual Studio pouvant faire l’objet d’une recherche, traités au moment de l’exécution et fusionnés pour définir des thèmes.
 
  **Jetons de couleur**
 
@@ -103,7 +103,7 @@ L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et 
 
   **Étape 3 : utilisez l’éditeur de couleurs pour créer de nouveaux jetons de couleur.**
 
-  Lancez l’éditeur de couleurs et ouvrez ou créez un nouveau fichier de thème personnalisé Colors. Xml. Sélectionnez **modifier > nouvelle couleur** dans le menu. Cela ouvre une boîte de dialogue permettant de spécifier la catégorie et un ou plusieurs noms pour les entrées de couleur de cette catégorie :
+  Lancez l’éditeur de couleurs et ouvrez ou créez des couleurs de thème personnalisées .xml fichier. Sélectionnez **modifier > nouvelle couleur** dans le menu. Cela ouvre une boîte de dialogue permettant de spécifier la catégorie et un ou plusieurs noms pour les entrées de couleur de cette catégorie :
 
   ![Sélecteur de couleurs VSIX - Nouvelle couleur](../../extensibility/internals/media/vsix-color-editor-new-color.png "Sélecteur de couleurs VSIX - Nouvelle couleur")
 
@@ -129,7 +129,7 @@ L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et 
 
   Lorsque vous entrez des valeurs pour contraste élevé, entrez des noms de couleurs système Windows valides. N’entrez pas de valeurs ARVB codées en dur. Vous pouvez afficher une liste de noms de couleurs système valides en sélectionnant « arrière-plan : système » ou « premier plan : système » dans les menus déroulants de la valeur de couleur. Lorsque vous créez des éléments qui ont des composants de texte, utilisez la paire de couleurs du système d’arrière-plan/texte correcte, sinon le texte peut être illisible.
 
-  Lorsque vous avez fini de créer, de définir et de modifier les jetons de couleur, enregistrez-les au format. XML ou. pkgdef souhaité. Les jetons de couleur qui ne sont ni un arrière-plan ni un jeu de premier plan sont enregistrés sous forme de couleurs vides au format. xml, mais ignorés au format. pkgdef. Une boîte de dialogue vous avertit de la perte potentielle de couleurs si vous tentez d’enregistrer des couleurs vides dans un fichier. pkgdef.
+  Lorsque vous avez fini de créer, de définir et de modifier les jetons de couleur, enregistrez-les au format .xml ou. pkgdef souhaité. Les jetons de couleur qui ne sont ni un arrière-plan ni un jeu de premier plan sont enregistrés sous forme de couleurs vides au format .xml, mais ignorés au format. pkgdef. Une boîte de dialogue vous avertit de la perte potentielle de couleurs si vous tentez d’enregistrer des couleurs vides dans un fichier. pkgdef.
 
   **Étape 4 : utiliser les couleurs dans une extension Visual Studio.**
 
@@ -189,13 +189,13 @@ namespace MyCustomColors
 
  Pour rendre les modifications permanentes, régénérez et redéployez l’extension Visual Studio après avoir ajouté les nouvelles couleurs au fichier. pkgdef et écrit le code qui utilisera ces couleurs. La reconstruction de l’extension Visual Studio permet de fusionner les valeurs de Registre pour les nouvelles couleurs dans le reste des thèmes. Ensuite, redémarrez Visual Studio, affichez l’interface utilisateur et vérifiez que les nouvelles couleurs s’affichent comme prévu.
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
  Cet outil est destiné à la création de couleurs personnalisées pour les thèmes Visual Studio préexistants, ou pour la modification des couleurs d’un thème Visual Studio personnalisé. Pour créer des thèmes Visual Studio personnalisés complets, téléchargez l’extension de l' [éditeur de thème de couleurs Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) à partir de la Galerie d’extensions Visual Studio.
 
 ## <a name="sample-output"></a>Exemple de sortie
  **Sortie de couleur XML**
 
- Le fichier. XML généré par l’outil est semblable à ce qui suit :
+ Le fichier .xml généré par l’outil est semblable à ce qui suit :
 
 ```xml
 <Themes>

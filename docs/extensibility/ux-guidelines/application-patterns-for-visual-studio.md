@@ -3,19 +3,19 @@ title: Modèles d’application pour Visual Studio | Microsoft Docs
 description: Découvrez la différence entre les fenêtres de document, les fenêtres outil et les boîtes de dialogue non modales, y compris les modèles d’utilisation de fenêtre pour les nouvelles fonctionnalités de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2726c7096bbf4606fbab2c32b01ffd197549e13c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060235"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899184"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interactions entre les fenêtres
@@ -36,7 +36,7 @@ Réfléchissez bien au type de conteneur dont vous avez besoin. Les considérati
 |-|---------------------|-----------------|---------------------|
 | **Position** | Toujours positionné dans le même document et n’est pas ancré autour des bords de l’IDE. Elle peut être « extraite » pour qu’elle flotte séparément de l’interpréteur de commandes principal. | Généralement, les onglets sont ancrés autour des bords de l’IDE, mais ils peuvent être personnalisés pour être flottants, masqués automatiquement (désépinglés) ou ancrés dans le même document.|Grande fenêtre flottante distincte de l’IDE. |
 | **Valider le modèle** | *Validation différée*<br /><br /> Pour enregistrer les données dans un document, l’utilisateur doit émettre la commande **fichier &gt; Enregistrer**, **Enregistrer sous** ou **enregistrer tout** . Une fenêtre de document a le concept de données qui est « modifié », puis validé sur l’une des commandes d’enregistrement. Lors de la fermeture d’une fenêtre de document, tout le contenu est enregistré sur le disque ou perdu. | *Validation immédiate*<br /><br /> Il n’existe aucun modèle d’enregistrement. Pour les fenêtres outil de l’inspecteur qui aident à modifier un fichier, le fichier doit être ouvert dans l’éditeur ou le concepteur actif, et l’éditeur ou le concepteur est propriétaire de l’enregistrement. | *Validation différée ou immédiate*<br /><br /> La plupart du temps, une boîte de dialogue non modale nécessite une action pour valider les modifications et permet une opération d’annulation, qui annule toutes les modifications apportées dans la session de dialogue.  Cela fait la différence entre une boîte de dialogue non modale et une fenêtre outil dans laquelle les fenêtres outil disposent toujours d’un modèle de validation immédiate. |
-| **Visibility** | *Ouvrir/créer (fichier) et fermer*<br /><br /> Pour ouvrir une fenêtre de document, vous pouvez ouvrir un document existant ou utiliser un modèle pour créer un nouveau document. Il n’y a aucune \<specific editor> commande « ouvrir ». | *Masquer et afficher*<br /><br /> Les fenêtres outil à instance unique peuvent être masquées ou affichées. Le contenu et les États au sein de la fenêtre outil sont rendus persistants en vue ou masqués. Les fenêtres outil multi-instances peuvent être fermées et masquées. Quand une fenêtre outil à instances multiples est fermée, le contenu et l’état de la fenêtre outil sont ignorés. | *Lancé à partir d’une commande*<br /><br /> Les boîtes de dialogue sont lancées à partir d’une commande basée sur des tâches. |
+| **Visibilité** | *Ouvrir/créer (fichier) et fermer*<br /><br /> Pour ouvrir une fenêtre de document, vous pouvez ouvrir un document existant ou utiliser un modèle pour créer un nouveau document. Il n’y a aucune \<specific editor> commande « ouvrir ». | *Masquer et afficher*<br /><br /> Les fenêtres outil à instance unique peuvent être masquées ou affichées. Le contenu et les États au sein de la fenêtre outil sont rendus persistants en vue ou masqués. Les fenêtres outil multi-instances peuvent être fermées et masquées. Quand une fenêtre outil à instances multiples est fermée, le contenu et l’état de la fenêtre outil sont ignorés. | *Lancé à partir d’une commande*<br /><br /> Les boîtes de dialogue sont lancées à partir d’une commande basée sur des tâches. |
 | **Instances** | *Multi-instance*<br /><br /> Plusieurs éditeurs peuvent être ouverts en même temps et en modifiant différents fichiers, tandis que certains éditeurs autorisent également l’ouverture du même fichier dans plusieurs éditeurs (à l’aide de la commande **fenêtre &gt; nouvelle fenêtre** ).<br /><br /> Un seul éditeur peut modifier un ou plusieurs fichiers en même temps (Concepteur de projets). | *Une seule ou plusieurs instances*<br /><br /> Le contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou le focus ou le contexte Push vers d’autres fenêtres (Liste des tâches, Explorateur de solutions).<br /><br /> Les fenêtres outil à instance unique et à instances multiples doivent être associées à la fenêtre de document active, à moins qu’il y ait une raison impérieuse de ne pas les utiliser. | *Instance unique* |
 | **Exemples** | **Éditeurs de texte**, comme l’éditeur de code<br /><br /> Des **aires de conception**, comme un concepteur de formulaires ou une surface de modélisation<br /><br /> **Contrôler les dispositions similaires aux boîtes de dialogue**, comme le concepteur de manifeste | L' **Explorateur de solutions** fournit une solution et des projets contenus dans la solution.<br /><br /> L' **Explorateur de serveurs** fournit une vue hiérarchique des serveurs et des connexions de données que l’utilisateur choisit d’ouvrir dans la fenêtre. L’ouverture d’un objet à partir de la hiérarchie de la base de données, comme une requête, ouvre une fenêtre de document et permet à l’utilisateur de modifier la requête.<br /><br /> L' **Explorateur de propriétés** affiche les propriétés de l’objet sélectionné dans une fenêtre de document ou dans une autre fenêtre outil. Les propriétés sont présentées dans une vue de grille hiérarchique ou dans des contrôles de type dialogue complexes et permettent à l’utilisateur de définir les valeurs de ces propriétés. | |
 
@@ -117,7 +117,7 @@ Voici des exemples de fenêtres d’outils de liste navigable : Explorateur de 
 
 | Fenêtre outil | Fonction |
 | --- | --- |
-| Help | Une fenêtre qui permet aux utilisateurs d’accéder à différentes méthodes d’obtention d’aide, à partir de la section « Comment faire ? » vidéos sur les forums MSDN. |
+| Aide | Une fenêtre qui permet aux utilisateurs d’accéder à différentes méthodes d’obtention d’aide, à partir de la section « Comment faire ? » vidéos sur les forums MSDN. |
 | Aide dynamique | Fenêtre outil qui affiche des liens vers les rubriques d’aide applicables à la sélection actuelle. |
 | Explorateur d'objets | Un jeu de frames à deux colonnes avec une liste de composants d’objets hiérarchiques dans le volet gauche et les propriétés et méthodes de l’objet dans la colonne de droite. |
 

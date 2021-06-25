@@ -3,7 +3,7 @@ title: Commutateurs de Command-Line devenv pour le développement VSPackage | Mi
 description: Découvrez comment les développeurs peuvent automatiser des tâches à partir de la ligne de commande lors de l’exécution de devenv.exe, le fichier qui démarre l’IDE de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - /Setup command line switch
 - /ResetSkipPkgs command line switch
@@ -20,12 +20,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cca255390d9f5637f0bf4f5b24f2d0fd6b4e83
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ea08b4714a79e09fce5933b67997a032532481f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091264"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904241"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande devenv pour le développement VSPackage
 

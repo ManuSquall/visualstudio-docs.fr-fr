@@ -3,7 +3,7 @@ title: Modèles de prise en charge de site Web | Microsoft Docs
 description: En savoir plus sur les modèles de prise en charge de site Web. Les modèles de projet et d’élément de site Web Visual Studio fournissent des stubs d’élément et de projet de site Web réutilisables et personnalisables.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a1bd391d13a6d650cb4d23ce78789a66ef50c2e3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069093"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898890"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Les modèles de projet et d’élément de site Web fournissent un projet de site Web réutilisable et personnalisable et des stubs d’élément qui accélèrent le processus de développement en éliminant le besoin de créer de nouveaux projets et éléments de site Web à partir de zéro. Pour plus d’informations sur les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de modèles de projet et d’élément](../../ide/creating-project-and-item-templates.md).

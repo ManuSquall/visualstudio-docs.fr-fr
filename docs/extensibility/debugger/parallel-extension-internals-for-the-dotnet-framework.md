@@ -3,7 +3,7 @@ title: Éléments internes de l’extension parallèle pour le .NET Framework | 
 description: Ces ressources décrivent les types internes, les méthodes et les champs de classes utilisés pour implémenter un débogueur personnalisé pour les extensions parallèles au .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
@@ -12,17 +12,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aec52f354043dabb3bf816bbd35352f0c3a28bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 858bf85e65cd761e7f881856286578495db6143a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067827"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903006"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Éléments internes de l’extension parallèle pour le .NET Framework
 Cette section décrit les types, méthodes et champs internes des classes qui vous permettent d’implémenter un débogueur personnalisé pour les extensions parallèles au .NET Framework.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md) Décrit les membres de données internes de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe.
 
  [TaskScheduler (classe](../../extensibility/debugger/taskscheduler-class-internal-members.md) ) Décrit les membres de données internes de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe.

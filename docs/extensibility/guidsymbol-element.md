@@ -3,7 +3,7 @@ title: Élément GuidSymbol | Microsoft Docs
 description: 'L’élément GuidSymbol contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c30c7a48b03b5deed3267e106e926d3cb5114c1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057453"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902759"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans l' `GuidSymbol` élément. L' `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans l' `value` attribut.
@@ -40,7 +40,7 @@ L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
 |Attribut|Description|
 |---------------|-----------------|
 |name|Obligatoire. Nom du symbole GUID.|
-|value|Obligatoire. GUID du symbole GUID.|
+|valeur|Obligatoire. GUID du symbole GUID.|
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -54,7 +54,7 @@ L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
 |-------------|-----------------|
 |[Élément Symbols](../extensibility/symbols-element.md)|Regroupe les `GuidSymbol` éléments dans un fichier *. vsct* .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En règle générale, un fichier *. vsct* contient trois `GuidSymbol` éléments dans sa `Symbols` section, l’un pour le package lui-même, l’autre pour le jeu de commandes (la collection de menus, les groupes et les commandes que le package rend disponibles) et l’autre pour les bitmaps qui fournissent des icônes pour les boutons et autres composants visuels. Chaque `IDSymbol` élément d’un `GuidSymbol` élément donné doit avoir un unique `value` . Toutefois, les `IDSymbol` éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils aient des parents différents.
 
 ## <a name="see-also"></a>Voir aussi

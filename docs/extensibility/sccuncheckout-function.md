@@ -2,7 +2,7 @@
 description: Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu du ou des fichiers sélectionnés à l’état antérieur à l’extraction.
 title: SccUncheckout fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccUncheckout
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3a382a112b5a11acc36c52735c949ebef71052ec
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090159"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904085"
 ---
 # <a name="sccuncheckout-function"></a>Fonction SccUncheckout
 Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu du ou des fichiers sélectionnés à l’état antérieur à l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.
@@ -75,7 +75,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert à partir du contrôle de code source.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Après cette opération, les `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` indicateurs et seront tous deux désactivés pour les fichiers sur lesquels l’extraction d’annulation a été effectuée.
 
 ## <a name="see-also"></a>Voir aussi

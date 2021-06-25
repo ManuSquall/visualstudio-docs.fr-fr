@@ -3,7 +3,7 @@ title: Pages de propriétés | Microsoft Docs
 description: En savoir plus sur l’utilisation des pages de propriétés pour votre nouveau type de projet dans le kit de développement logiciel (SDK) Visual Studio, qui permet aux utilisateurs d’afficher et de modifier les propriétés d’un projet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3e36960b35119434e56f075f622ae2513454dd6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88ebf99ef2361a232c4a5c4c02b9a140155d66e9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061015"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903409"
 ---
 # <a name="property-pages"></a>Pages de propriétés
 Les utilisateurs peuvent afficher et modifier les propriétés dépendantes et indépendantes de la configuration de projet à l’aide des pages de propriétés. Le bouton **pages de propriétés** est activé dans la fenêtre **Propriétés** ou dans la barre d’outils Explorateur de solutions pour les objets qui fournissent une vue de page de propriétés de l’objet sélectionné. Les pages de propriétés sont créées par l’environnement et sont disponibles pour les solutions et les projets. Toutefois, elles peuvent également être mises à disposition pour les éléments de projet qui utilisent des propriétés dépendantes de la configuration. Cette fonctionnalité peut être utilisée lorsque des fichiers dans un projet requièrent des paramètres de commutateur de compilateur différents pour une génération correcte.

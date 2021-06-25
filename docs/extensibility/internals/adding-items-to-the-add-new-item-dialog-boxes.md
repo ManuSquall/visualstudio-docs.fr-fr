@@ -3,7 +3,7 @@ title: Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément 
 description: Découvrez comment ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément dans Visual Studio, afin de pouvoir afficher des modèles et des éléments de projet à utiliser dans vos projets.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574cc5384018d14fdc05a834876002bbcbdbaaf7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70bc1a0c4d90d8cab0b2193550773745fc2dd47e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079096"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904407"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément
 Le processus d’ajout d’éléments à la boîte de dialogue **Ajouter un nouvel élément** démarre avec les clés de registre. Comme indiqué dans les entrées de Registre suivantes, la section **AddItemTemplates** contient le chemin d’accès et le nom du répertoire dans lequel les éléments rendus disponibles dans la boîte de dialogue **Ajouter un nouvel élément** sont placés.

@@ -3,7 +3,7 @@ title: Étendre les propriétés, Liste des tâches, sortie, fenêtres d’optio
 description: Découvrez comment intégrer des informations sur votre fenêtre outil dans Visual Studio dans une nouvelle page d’options et un nouveau paramètre dans la page Propriétés.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties pane
 - task list
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3334ba3694ee3c1354c152b013c38472e4b90b72
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070139"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903279"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres propriétés, Liste des tâches, sortie et options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur votre fenêtre outil dans une nouvelle page d' **options** et un nouveau paramètre dans la page **Propriétés** , et comment écrire dans les fenêtres de **liste des tâches** et de **sortie** .
@@ -69,7 +69,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     using System;
     ```
 
-2. Ajoutez une référence publique à TodoWindow et faites en sorte que le constructeur TodoWindowControl prenne un paramètre TodoWindow. Le code doit ressembler à ceci :
+2. Ajoutez une référence publique à TodoWindow et faites en sorte que le constructeur TodoWindowControl prenne un paramètre TodoWindow. Le code doit se présenter comme ceci :
 
     ```csharp
     public TodoWindow parent;
@@ -81,7 +81,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-3. Dans *TodoWindow. cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit ressembler à ceci :
+3. Dans *TodoWindow. cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit se présenter comme ceci :
 
     ```csharp
     public TodoWindow() : base(null)
@@ -418,7 +418,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-3. Ajoutez ensuite une référence privée à `TodoTaskProvider` et une `CreateProvider()` méthode à la `TodoWindowControl` classe. Le code doit ressembler à ceci :
+3. Ajoutez ensuite une référence privée à `TodoTaskProvider` et une `CreateProvider()` méthode à la `TodoWindowControl` classe. Le code doit se présenter comme ceci :
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;

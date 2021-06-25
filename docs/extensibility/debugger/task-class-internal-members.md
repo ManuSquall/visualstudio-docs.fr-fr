@@ -3,7 +3,7 @@ title: Classe de tâche-membres internes | Microsoft Docs
 description: Découvrez les membres internes de la classe System. Threading. Tasks. Task qui vous aideront à implémenter un débogueur personnalisé.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa57329b3f321d2703683639644783be60d651f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 37691714d0168594b61a1a3849f7b65264e9999e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079369"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902889"
 ---
 # <a name="task-class---internal-members"></a>Classe de tâche-membres internes
 Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez l' <xref:System.Threading.Tasks.Task> article de référence.
@@ -66,7 +66,7 @@ Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indique que l’exécution de la tâche s’est terminée avec succès.|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indique que la tâche a terminé l’exécution de son délégué et qu’elle attend implicitement la fin des tâches enfants attachées.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les méthodes internes suivantes sont utiles à un moteur du débogueur, car elles marquent l’entrée pour <xref:System.Threading.Tasks.Task> l’exécution du code :
 
 - `Execute`

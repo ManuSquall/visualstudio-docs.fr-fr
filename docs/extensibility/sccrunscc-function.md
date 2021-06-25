@@ -2,7 +2,7 @@
 description: Cette fonction appelle l’outil d’administration du contrôle de code source.
 title: SccRunScc fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e78e58eafebd06d1ce7c710a31ce295b49f26340
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c865931ed52601761f0bd519bf360d584d49ec04
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073818"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904111"
 ---
 # <a name="sccrunscc-function"></a>Fonction SccRunScc
 Cette fonction appelle l’outil d’administration du contrôle de code source.
@@ -64,7 +64,7 @@ dans Tableau de noms de fichiers sélectionnés.
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction permet à l’appelant d’accéder à la gamme complète des fonctionnalités du système de contrôle de code source via un outil d’administration externe. Si le système de contrôle de code source n’a pas d’interface utilisateur, le plug-in de contrôle de code source peut implémenter une interface pour exécuter les fonctions d’administration nécessaires.
 
  Cette fonction est appelée avec un nombre et un tableau de noms de fichiers pour les fichiers actuellement sélectionnés. Si l’outil d’administration le prend en charge, la liste des fichiers peut être utilisée pour présélectionner des fichiers dans l’interface d’administration. dans le cas contraire, la liste peut être ignorée.
