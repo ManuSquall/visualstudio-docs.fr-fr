@@ -3,7 +3,7 @@ title: Ajout d’une commande à la barre d’outils Explorateur de solutions | 
 description: Découvrez comment ajouter un bouton qui exécute une commande à la barre d’outils Explorateur de solutions dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf6ffcded95d142578ed118ab26b57914eb36c37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0aa75bd1a229be147e3462845a61266a650e072e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060092"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900237"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Ajouter une commande à la barre d’outils Explorateur de solutions
 Cette procédure pas à pas montre comment ajouter un bouton à la barre d’outils **Explorateur de solutions** .

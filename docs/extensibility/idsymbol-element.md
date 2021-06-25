@@ -3,7 +3,7 @@ title: Élément IDSymbol | Microsoft Docs
 description: 'L’élément IDSymbol contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59089ab981bc97100386b3e1907ef903ede3bd0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5158b16fb2d12a7d1a93c0296126e915a138269
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069840"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904940"
 ---
 # <a name="idsymbol-element"></a>Élément IDSymbol
 L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Le GUID provient de l' `GuidSymbol` élément parent. L' `IDSymbol` élément a un `name` attribut qui fournit un nom convivial pour l’ID, qui est contenu dans l' `value` attribut.
@@ -37,7 +37,7 @@ L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 |Attribut|Description|
 |---------------|-----------------|
 |name|Obligatoire. Nom du symbole d’ID.|
-|value|Obligatoire. Valeur d’ID numérique du symbole d’ID.|
+|valeur|Obligatoire. Valeur d’ID numérique du symbole d’ID.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -48,7 +48,7 @@ L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 |-------------|-----------------|
 |[Élément GuidSymbol](../extensibility/guidsymbol-element.md)|Contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Groupe les éléments `IDSymbol`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Chaque `IDSymbol` élément d’un `GuidSymbol` élément donné doit avoir un unique `value` . Toutefois, les `IDSymbol` éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils aient des parents différents.
 
 ## <a name="see-also"></a>Voir aussi

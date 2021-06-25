@@ -3,7 +3,7 @@ title: Liaison de raccourcis clavier à des éléments de menu | Microsoft Docs
 description: Découvrez comment mapper un raccourci clavier dans Visual Studio à un bouton personnalisé, à un élément de menu ou à une commande de barre d’outils pour l’éditeur par défaut ou un éditeur personnalisé.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88cc7d91ee8cd24daae278efdbfd35271412af40
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6a9591a7412b0bcaf506483a16a6660790df5f40
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097303"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900432"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier à des éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez simplement une entrée au fichier *. vsct* pour le package. Cette rubrique explique comment mapper un raccourci clavier à un bouton personnalisé, à un élément de menu ou à une commande de barre d’outils, et comment appliquer le mappage du clavier dans l’éditeur par défaut ou le limiter à un éditeur personnalisé.

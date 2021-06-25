@@ -3,7 +3,7 @@ title: Modification du texte d’une commande de menu | Microsoft Docs
 description: Découvrez comment modifier l’étiquette de texte d’une commande de menu à l’aide du service IMenuCommandService en examinant cet exemple de code.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - menus, changing text
 - text, menus
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 541acf1bcf448541fe6c440eb2aada687cfbe0e9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068061"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904989"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modifier le texte d’une commande de menu
 Les étapes suivantes montrent comment modifier l’étiquette de texte d’une commande de menu à l’aide du <xref:System.ComponentModel.Design.IMenuCommandService> service.

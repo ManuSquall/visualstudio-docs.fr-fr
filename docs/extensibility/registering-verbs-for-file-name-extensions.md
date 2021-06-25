@@ -3,7 +3,7 @@ title: Inscription de verbes pour les extensions de nom de fichier | Microsoft D
 description: Découvrez comment inscrire un verbe qui est associé à un identificateur programmatique pour une extension de nom de fichier à l’aide d’une clé de Shell.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c223dea7e265d8d040d502c99ded09380e89690f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068477"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901225"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Verbes Register pour les extensions de nom de fichier
 L’Association d’une extension de nom de fichier à une application a généralement une action préférée qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action par défaut est liée à un verbe, par exemple Open, qui correspond à l’action.
@@ -33,11 +33,11 @@ L’Association d’une extension de nom de fichier à une application a génér
 
 - Lire
 
-- Imprimer
+- Impression
 
-- PRÉVERSION
+- Préversion
 
-  Dans la mesure du possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe Edit uniquement s’il existe une différence nette entre l’ouverture du fichier et la modification du fichier. Par exemple, l’ouverture d’un fichier *. htm* l’affiche dans le navigateur, tandis que la modification d’un fichier *. htm* démarre un éditeur HTML. Les verbes standard sont localisés avec les paramètres régionaux du système d’exploitation.
+  Dans la mesure du possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe Edit uniquement s’il existe une différence nette entre l’ouverture du fichier et la modification du fichier. Par exemple, l’ouverture d’un fichier *.htm* l’affiche dans le navigateur, tandis que la modification d’un fichier *.htm* démarre un éditeur HTML. Les verbes standard sont localisés avec les paramètres régionaux du système d’exploitation.
 
 > [!NOTE]
 > Lors de l’inscription des verbes standard, ne définissez pas la valeur par défaut de la clé ouverte. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne pour les verbes standard.

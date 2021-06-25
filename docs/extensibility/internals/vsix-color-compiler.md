@@ -3,19 +3,19 @@ title: Compilateur de couleur VSIX | Microsoft Docs
 description: Découvrez l’outil de compilateur couleur de l’extension Visual Studio, qui est une application console qui remplace les couleurs des thèmes Visual Studio par un fichier. pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: 2f7277299d3cedd2ea0db49a44109d8a0441ebd0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588460"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901758"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
 L’outil de compilateur couleur de l’extension Visual Studio est une application console qui prend un fichier .xml représentant les couleurs des thèmes Visual Studio existants et le remplace par un fichier. pkgdef afin que ces couleurs puissent être utilisées dans Visual Studio. Étant donné qu’il est facile de comparer les différences entre les fichiers .xml, cet outil est utile pour gérer les couleurs personnalisées dans le contrôle de code source. Il peut également être raccordé à des environnements de génération afin que la sortie de la génération soit un fichier. pkgdef valide.
@@ -149,7 +149,7 @@ L’outil de compilateur couleur de l’extension Visual Studio est une applicat
 
 - VsixColorCompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 - Cet outil requiert l’installation de la dernière version du runtime VC + +.
 

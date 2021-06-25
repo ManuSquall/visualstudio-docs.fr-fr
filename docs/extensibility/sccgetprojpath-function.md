@@ -2,7 +2,7 @@
 description: Cette fonction invite l’utilisateur à entrer un chemin d’accès au projet, qui est une chaîne qui est significative uniquement pour le plug-in de contrôle de code source.
 title: SccGetProjPath fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 93266464249b8de037a618bab55ede31988384cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063966"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901069"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath fonction)
 Cette fonction invite l’utilisateur à entrer un chemin d’accès au projet, qui est une chaîne qui est significative uniquement pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :
@@ -79,15 +79,15 @@ dans Si c’est `TRUE` le cas, le plug-in de contrôle de code source peut deman
 
 |Entrant|Interprétation|
 |--------------|--------------------|
-|TRUE|L’utilisateur peut créer un nouveau projet.|
+|true|L’utilisateur peut créer un nouveau projet.|
 |FALSE|L’utilisateur ne peut pas créer un nouveau projet.|
 
 |Sortant|Interprétation|
 |--------------|--------------------|
-|TRUE|Un nouveau projet a été créé.|
+|true|Un nouveau projet a été créé.|
 |FALSE|Un projet existant a été sélectionné.|
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -98,7 +98,7 @@ dans Si c’est `TRUE` le cas, le plug-in de contrôle de code source peut deman
 |SCC_E_CONNECTIONFAILURE|Un problème est survenu lors de la tentative de connexion au système de contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’objectif de cette fonction est que l’IDE obtienne les paramètres `lpProjName` et `lpAuxProjPath` . Une fois que le plug-in de contrôle de code source demande ces informations à l’utilisateur, il transmet ces deux chaînes à l’IDE. L’IDE conserve ces chaînes dans son fichier solution et les transmet à [SccOpenProject](../extensibility/sccopenproject-function.md) chaque fois que l’utilisateur ouvre ce projet. Ces chaînes permettent au plug-in de suivre les informations associées à un projet.
 
  Lorsque la fonction est appelée pour la première fois, la `lpAuxProjPath` valeur est une chaîne vide. `lProjName` peut également être vide ou contenir le nom du projet IDE, que le plug-in de contrôle de code source peut utiliser ou ignorer. Quand la fonction retourne avec succès, le plug-in retourne les deux chaînes correspondantes. L’IDE n’émet aucune hypothèse sur ces chaînes, ne les utilise pas et n’autorise pas l’utilisateur à les modifier. Si l’utilisateur souhaite modifier les paramètres, l’environnement de développement intégré (IDE) rappellera les `SccGetProjPath` mêmes valeurs qu’il avait reçues l’heure précédente. Cela donne au plug-in un contrôle total sur ces deux chaînes.

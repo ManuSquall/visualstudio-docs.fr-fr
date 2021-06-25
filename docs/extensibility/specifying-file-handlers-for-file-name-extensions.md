@@ -3,7 +3,7 @@ title: Spécification de gestionnaires de fichiers pour les extensions de nom de
 description: Découvrez comment déterminer quelle application gère une extension de fichier dans le kit de développement logiciel (SDK) Visual Studio à l’aide de OpenWithList et OpenWithProgids.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ab370b4be8c12ad0df0c4822bcc7b487fb4aa21
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089964"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899444"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
 Il existe plusieurs façons de déterminer l’application qui gère un fichier qui a une extension de fichier particulière. Les verbes OpenWithList et OpenWithProgids sont deux façons de spécifier des gestionnaires de fichiers sous l’entrée de Registre pour l’extension de fichier.

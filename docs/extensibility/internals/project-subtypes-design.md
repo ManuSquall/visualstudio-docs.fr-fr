@@ -3,7 +3,7 @@ title: Conception des sous-types de projet | Microsoft Docs
 description: Découvrez comment les sous-types de projet permettent aux VSPackages d’étendre des projets basés sur le Microsoft Build Engine (MSBuild).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfc689705d4d42016f184a25b70564591aa5c04d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c04c8e681646aed6816c645defe7ffd87ac7033c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064499"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899691"
 ---
 # <a name="project-subtypes-design"></a>Conception de sous-types de projets
 

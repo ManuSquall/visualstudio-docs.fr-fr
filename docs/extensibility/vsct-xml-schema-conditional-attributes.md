@@ -3,7 +3,7 @@ title: Attributs conditionnels de schéma XML VSCT | Microsoft Docs
 description: Découvrez comment appliquer des attributs conditionnels à des listes et éléments de schéma XML VSCT. Les attributs ont la valeur true ou false, contrôlant la sortie obtenue.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bc1bcb9d80474b467e90de6262e797087589065
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e91207016ed6e1baab80b323680d10a40e0331d8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062354"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905252"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Attributs conditionnels du schéma XML VSCT
 Vous pouvez appliquer des attributs conditionnels à toutes les listes et éléments. Les opérateurs logiques et les expressions d’expansion de symboles prennent la valeur true ou false. Si la valeur est true, la liste ou l’élément associé est inclus dans la sortie obtenue.
@@ -38,7 +38,7 @@ Vous pouvez appliquer des attributs conditionnels à toutes les listes et élém
 |!|Opérateur NOT logique|
 |\<, >, \<=, >=, ==, !=|Opérateurs relationnels et opérateurs d'égalité|
 |et|Boolean|
-|or|Boolean|
+|ou|Boolean|
 
 ## <a name="examples"></a>Exemples
 

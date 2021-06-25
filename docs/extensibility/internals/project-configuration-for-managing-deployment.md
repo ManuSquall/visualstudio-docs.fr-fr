@@ -3,7 +3,7 @@ title: Configuration de projet pour la gestion du déploiement | Microsoft Docs
 description: En savoir plus sur le déploiement à l’emplacement prévu pour le débogage et l’installation, et les deux façons dont Visual Studio prend en charge les projets qui prennent en charge le déploiement.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589403f126a4fd614911c1deb99e9acd32d1ec7d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3c6077665ccc3bbe5f87b91a1d2fc5636e08539d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074416"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899899"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuration de projet pour la gestion du déploiement
 Le déploiement est l’action de déplacer physiquement les éléments de sortie d’un processus de génération vers l’emplacement prévu pour le débogage et l’installation. Par exemple, une application Web peut être générée sur un ordinateur local, puis placée sur le serveur.

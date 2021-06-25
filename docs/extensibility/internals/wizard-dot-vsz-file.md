@@ -3,7 +3,7 @@ title: Assistant (. Vsz) | Microsoft Docs
 description: En savoir plus sur les fichiers. vsz que l’IDE utilise pour démarrer les assistants. Les fichiers contiennent des informations sur l’Assistant à appeler et les éléments à passer à l’Assistant.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -14,18 +14,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de687dae79fa1613090fb400f73ab658ee5d66cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074234"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900652"
 ---
 # <a name="wizard-vsz-file"></a>Fichier Assistant (.Vsz)
 
 L’environnement de développement intégré (IDE) utilise des fichiers. vsz pour démarrer les assistants. Ces fichiers. vsz contiennent des informations que l’IDE utilise pour déterminer l’Assistant à appeler et les informations à passer à l’Assistant.
 
-Un fichier. vsz est une version d’un fichier texte au format. ini qui n’a pas de section. Les informations connues de l’IDE sont stockées au début du fichier. Cela fournit un lien entre l’Assistant appelé par l’IDE et les paramètres figurant dans le fichier. vsz à passer à l’IDE. Le reste du fichier fournit des paramètres qui sont spécifiques à l’Assistant et qui doivent être collectés par l’IDE et transmis à l’Assistant spécifique.
+Un fichier. vsz est une version d’un fichier texte au format .ini qui n’a aucune section. Les informations connues de l’IDE sont stockées au début du fichier. Cela fournit un lien entre l’Assistant appelé par l’IDE et les paramètres figurant dans le fichier. vsz à passer à l’IDE. Le reste du fichier fournit des paramètres qui sont spécifiques à l’Assistant et qui doivent être collectés par l’IDE et transmis à l’Assistant spécifique.
 
 L’exemple suivant montre le contenu d’un fichier. vsz.
 

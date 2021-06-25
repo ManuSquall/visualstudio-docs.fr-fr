@@ -3,7 +3,7 @@ title: Élément parent | Microsoft Docs
 description: L’élément parent spécifie qu’un élément est un parent d’un bouton, d’une zone de liste déroulante, d’un menu ou d’un groupe.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ac914fd3245982af89facb97ff2d528b410da99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3dbf7202ac7fb94762ea132a2620625fae97ddfb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090380"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901550"
 ---
 # <a name="parent-element"></a>Élément parent
 Le parent d’un bouton ou d’une zone de liste déroulante ne peut être qu’un groupe. Le parent d’un menu ou d’un groupe peut être n’importe quel autre menu ou groupe. Dans un [élément commandplacement ayant](../extensibility/commandplacement-element.md), cet élément est obligatoire. dans toutes les autres instances, il est facultatif. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.
@@ -40,7 +40,7 @@ Le parent d’un bouton ou d’une zone de liste déroulante ne peut être qu’
 |id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|
 
 ### <a name="child-elements"></a>Éléments enfants
- None
+ Aucun
 
 ### <a name="parent-elements"></a>Éléments parents
 

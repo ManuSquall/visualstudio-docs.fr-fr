@@ -3,7 +3,7 @@ title: POPLISTFUNC | Microsoft Docs
 description: En savoir plus sur la fonction de rappel POPLISTFUNC, qui est utilisée par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou de répertoires.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b52ed40397793b44f8a9c7ed9c36aa5996ae0176
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090237"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900380"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Ce rappel est fourni à l' [SccPopulateList](../extensibility/sccpopulatelist-function.md) par l’IDE et est utilisé par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou de répertoires (également fournis à la `SccPopulateList` fonction).
@@ -47,14 +47,14 @@ typedef BOOL (*POPLISTFUNC) (
 
  lpFileName chemin d’accès complet du répertoire du nom de fichier à ajouter ou supprimer de la liste.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
 
 |Valeur|Description|
 |-----------|-----------------|
 |`TRUE`|Le plug-in peut continuer à appeler cette fonction.|
 |`FALSE`|Il y a eu un problème au niveau de l’IDE (par exemple, une situation de mémoire insuffisante). Le plug-in doit arrêter l’opération.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour chaque fichier que le plug-in de contrôle de code source souhaite ajouter ou supprimer dans la liste de fichiers, il appelle cette fonction, en passant le `lpFileName` . L' `fAddRemove` indicateur indique un nouveau fichier à ajouter à la liste ou un ancien fichier à supprimer. Le `nStatus` paramètre indique l’état du fichier. Lorsque le plug-in SCC a terminé d’ajouter et de supprimer des fichiers, il retourne à partir de l’appel [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 > [!NOTE]

@@ -2,7 +2,7 @@
 description: Cette fonction affiche les différences entre le répertoire local actuel sur le disque client et le projet correspondant sous contrôle de code source.
 title: SccDirDiff fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDirDiff
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 974d0aa22ff3940472be34b691a61632dc742223
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e938cdaedf8541d787673371cfce3d07e005711f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073974"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904641"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff fonction)
 Cette fonction affiche les différences entre le répertoire local actuel sur le disque client et le projet correspondant sous contrôle de code source.
@@ -56,7 +56,7 @@ dans Indicateurs de commande (consultez la section Notes).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -70,7 +70,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
 |SCC_E_FILENOTEXIST|Le répertoire local est introuvable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction est utilisée pour indiquer au plug-in de contrôle de code source qu’il doit afficher à l’utilisateur une liste des modifications apportées à un répertoire spécifié. Le plug-in ouvre sa propre fenêtre, dans un format de son choix, pour afficher les différences entre l’annuaire de l’utilisateur sur le disque et le projet correspondant sous contrôle de version.
 
  Si un plug-in prend en charge la comparaison des répertoires, il doit prendre en charge la comparaison des répertoires sur la base du nom de fichier, même si les options de différence rapide ne sont pas prises en charge.

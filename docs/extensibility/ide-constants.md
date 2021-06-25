@@ -3,7 +3,7 @@ title: Constantes IDE | Microsoft Docs
 description: La classe VSConstants fournit des constantes spécifiques à l’environnement de développement intégré (IDE) qui ont été précédemment définies uniquement dans les fichiers d’en-tête.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66daa52bc5769a9f8b599a52953a6bc898d2cf20
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 802de0fd29d909320040667f972de422595bdd4f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069866"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904966"
 ---
 # <a name="ide-constants"></a>Constantes IDE
 

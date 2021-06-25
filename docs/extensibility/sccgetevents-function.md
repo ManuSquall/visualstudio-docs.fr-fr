@@ -2,7 +2,7 @@
 description: Cette fonction récupère un événement d’État mis en file d’attente.
 title: SccGetEvents fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072986"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901056"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents fonction)
 Cette fonction récupère un événement d’État mis en file d’attente.
@@ -51,7 +51,7 @@ dans Structure de contexte du plug-in de contrôle de code source.
 
 [in, out] Retourne le nombre d’entrées restantes dans la file d’attente après cet appel. Si ce nombre est élevé, l’appelant peut décider d’appeler le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) pour récupérer toutes les informations en même temps.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -60,7 +60,7 @@ dans Structure de contexte du plug-in de contrôle de code source.
 |SCC_E_OPNOTSUPPORTED|Cette fonction n'est pas prise en charge.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction est appelée pendant un traitement inactif pour voir si des mises à jour d’État ont été effectuées pour des fichiers sous contrôle de code source. Le plug-in de contrôle de code source conserve l’état de tous les fichiers qu’il connaît, et chaque fois qu’un changement d’État est signalé par le plug-in, l’État et le fichier associé sont stockés dans une file d’attente. Lorsque `SccGetEvents` est appelé, l’élément supérieur de la file d’attente est récupéré et retourné. Cette fonction est contournée pour retourner uniquement les informations précédemment mises en cache et doit avoir un délai très court (autrement dit, aucune lecture du disque ou demander l’État au système de contrôle de code source). Sinon, les performances de l’IDE peuvent commencer à se dégrader.
 
  S’il n’existe aucune mise à jour d’État pour le rapport, le plug-in de contrôle de code source stocke une chaîne vide dans la mémoire tampon vers laquelle pointe `lpFileName` . Dans le cas contraire, le plug-in stocke le nom de chemin d’accès complet du fichier pour lequel les informations d’État ont été modifiées et retourne le code d’état approprié (l’une des valeurs détaillées dans le [code d’État du fichier](../extensibility/file-status-code-enumerator.md)).

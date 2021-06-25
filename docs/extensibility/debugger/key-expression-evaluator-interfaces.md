@@ -3,7 +3,7 @@ title: Interfaces d’évaluateur d’expression clés | Microsoft Docs
 description: En savoir plus sur les interfaces que vous devez connaître lorsque vous écrivez un évaluateur d’expression, ainsi que le contexte d’évaluation.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3d4ddf94219e389ca327fbe8f8c78604c0221f5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: abfa4018e763bbbac5ff788f401d0ceb76eb97a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059728"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901264"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces d’évaluateur d’expression clés
 > [!IMPORTANT]

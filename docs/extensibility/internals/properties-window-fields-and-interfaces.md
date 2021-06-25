@@ -3,7 +3,7 @@ title: Champs et interfaces de la fenêtre Propriétés | Microsoft Docs
 description: En savoir plus sur la sélection qui détermine quelles informations sont affichées dans le Fenêtre Propriétés en fonction de la fenêtre qui a le focus dans l’IDE de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f445d31fe995321ad6ec334a5b6eb93570b8875
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7a74e82480d1a4c71179c0e0b0671bac4ae97191
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061028"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899626"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Champs et interfaces de la fenêtre Propriétés
 Le modèle de sélection permettant de déterminer les informations qui s’affichent dans la fenêtre **Propriétés** est basé sur la fenêtre qui a le focus dans l’IDE. Chaque fenêtre et objet dans la fenêtre sélectionnée peut faire l’objet d’un push de l’objet de contexte de sélection dans le contexte de sélection global. L’environnement met à jour le contexte de sélection global avec les valeurs d’un frame de fenêtre lorsque cette fenêtre a le focus. Lorsque le focus change, le contexte de sélection est donc sélectionné.

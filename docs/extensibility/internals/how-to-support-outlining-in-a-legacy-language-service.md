@@ -3,7 +3,7 @@ title: 'Comment : prendre en charge le mode plan dans un service de langage hé
 description: Découvrez comment prendre en charge le mode plan, le développement ou la réduction de différentes zones de texte, dans un service de langage hérité.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 028d1a9aae21aae8c6368e4eea3820aabd200be6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078683"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901797"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Comment : prendre en charge le mode plan dans un service de langage hérité
 Le mode plan est utilisé pour développer ou réduire différentes zones de texte. La façon dont le mode plan est utilisé peut être définie différemment selon les différentes langues. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).

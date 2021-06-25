@@ -3,7 +3,7 @@ title: Fournir la prise en charge du texte masqué dans le service de langage h�
 description: Apprenez à fournir une prise en charge du texte masqué dans un service de langage hérité en ajoutant des zones de texte masquées, contrôlées par l’éditeur ou contrôlées par le client.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bb6d9c3c4f01c0e84c6ab437e352a86bf00448f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 31c62f50cfff8662c543d24dceabdb429a9b9b05
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078732"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901784"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge du texte masqué dans un service de langage hérité
 Vous pouvez créer des zones de texte masqué en plus des régions de plan. Les zones de texte masquées peuvent être contrôlées par le client ou par l’éditeur et utilisées pour masquer complètement une région de texte. L’éditeur affiche une zone masquée sous forme de lignes horizontales. Par exemple, l’affichage **script uniquement** dans l’éditeur HTML.

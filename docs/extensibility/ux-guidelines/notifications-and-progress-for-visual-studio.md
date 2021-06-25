@@ -3,19 +3,19 @@ title: Notifications et progression pour Visual Studio | Microsoft Docs
 description: Découvrez les différentes façons d’informer les utilisateurs de ce qui se passe dans Visual Studio en ce qui concerne leurs tâches de développement logiciel.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b273c1ee2ee83c713500d972ecab27a67b3145
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 994a315d04b06d1998a8c8e0c4291b6a4c54cb61
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068542"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902239"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifications et progression pour Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Systèmes de notification
@@ -151,7 +151,7 @@ ms.locfileid: "105068542"
 
 #### <a name="determinate-progress"></a>Terminer la progression
 
-|Type de progression|Quand et comment utiliser|Notes|
+|Type de progression|Quand et comment utiliser|Remarques|
 |-------------------|-------------------------|-----------|
 |Barre de progression (arrêt)|Durée attendue de >5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**N'** incorporez pas de texte dans l’animation.|
 |Barre d'informations|Messagerie associée à l’interface utilisateur contextuelle. Consultez [barres](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Peut inclure une description textuelle des détails du processus.|**N’utilisez pas** plusieurs barres quand vous devez indiquer plusieurs processus. Utilisez à la place des barres de progression empilées.|
@@ -161,7 +161,7 @@ ms.locfileid: "105068542"
 
 #### <a name="indeterminate-progress"></a>Progression indéterminée
 
-|Type de progression|Quand et comment utiliser|Notes|
+|Type de progression|Quand et comment utiliser|Remarques|
 |-------------------|-------------------------|-----------|
 |Barre de progression (indéterminé)|Durée attendue de >5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**N'** incorporez pas de texte dans l’animation.|
 |Ants (points horizontaux animés)|Aller-retour au serveur.<br /><br /> Point près du contexte placé au-dessus du conteneur parent.|**N'** utilisez pas si le parent n’est pas apparenté à l’ensemble du conteneur.|
@@ -411,7 +411,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 }
 ```
 
-### <a name="placement"></a>Placement
+### <a name="placement"></a>Sélection élective
  Les barres peuvent être affichés à un ou plusieurs des emplacements suivants :
 
 - Fenêtres d’outil

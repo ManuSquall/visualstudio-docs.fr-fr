@@ -1,9 +1,9 @@
 ---
-title: La structure du fichier [Content_types]. Xml | Microsoft Docs
+title: La structure du fichier de .xml [Content_types] | Microsoft Docs
 description: En savoir plus sur la structure du fichier de types de contenu, qui contient des informations sur les genres de contenu dans un package VSIX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - content_types
 - content types
@@ -15,18 +15,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dea58176269536ae7f0e5857c938c60f76c5c6b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96d4d0eeea34300894674a2105d080e8a6abb607
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055893"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900419"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Structure du fichier [Content_types].xml
-Contient des informations sur les genres de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types]. xml pour installer le package, mais il n’installe pas le fichier lui-même.
+Contient des informations sur les genres de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types] .xml pour installer le package, mais il n’installe pas le fichier lui-même.
 
 > [!NOTE]
-> Bien que cette rubrique s’applique uniquement aux fichiers [Content_Type]. XML utilisés dans les packages VSIX, le type de fichier [Content_Types]. xml fait partie de la norme *OPC (Open Packaging Conventions)* . Pour plus d’informations, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) sur le site Web MSDN.
+> Bien que cette rubrique s’applique uniquement aux fichiers de .xml [Content_Type] utilisés dans les packages VSIX, le type de fichier de l' .xml [Content_Types] fait partie de la norme *OPC (Open Packaging Conventions)* . Pour plus d’informations, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) sur le site Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
  Les sections suivantes décrivent l’élément racine et ses attributs et éléments enfants.
@@ -41,7 +41,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Xmlns`|(Obligatoire.) Emplacement du schéma utilisé pour ce fichier [Content_Types]. Xml.|
+|`Xmlns`|(Obligatoire.) Emplacement du schéma utilisé pour ce fichier [Content_Types] .xml.|
 
 ### <a name="attribute-name-attribute"></a>{Nom de l’attribut} Attribut
 
@@ -86,7 +86,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 ## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
- Le fichier [Content_Types]. XML suivant décrit un package VSIX classique.
+ Le fichier [Content_Types] .xml suivant décrit un package VSIX classique.
 
 ### <a name="code"></a>Code
 

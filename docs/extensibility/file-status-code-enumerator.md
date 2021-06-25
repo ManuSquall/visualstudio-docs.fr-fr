@@ -3,7 +3,7 @@ title: Énumérateur de code d’état de fichier | Microsoft Docs
 description: L’énumérateur SccStatus contient des valeurs constantes qui spécifient l’état d’un fichier dans le système de contrôle de code source et qui est utilisé par SccQueryInfo et POPLISTFUNC.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074949"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900965"
 ---
 # <a name="file-status-code-enumerator"></a>Énumérateur de code d’état de fichier
 L' `SccStatus` énumérateur contient des valeurs constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle de code source. Cette énumération est utilisée par [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et la `POPLISTFUNC` fonction de rappel (pour plus d’informations, consultez [POPLISTFUNC](../extensibility/poplistfunc.md) ).

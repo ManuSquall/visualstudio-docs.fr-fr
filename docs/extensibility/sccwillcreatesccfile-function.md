@@ -2,7 +2,7 @@
 description: Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
 title: SccWillCreateSccFile fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063719"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900445"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Fonction SccWillCreateSccFile
 Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
@@ -60,7 +60,7 @@ dans Tableau de noms de fichiers qualifiés complets à vérifier (le tableau do
 |SCC_E_INVALIDFILEPATH|L’un des chemins d’accès dans le tableau n’est pas valide.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction est appelée avec une liste de fichiers pour déterminer si le plug-in de contrôle de code source assure la prise en charge dans le fichier MSSCCPRJ. Fichier SCC pour chaque fichier donné (pour plus d’informations sur le fichier MSSCCPRJ. Fichier SCC, consultez [Mssccprj. Fichier SCC](../extensibility/mssccprj-scc-file.md)). Les plug-ins de contrôle de code source peuvent déclarer s’ils ont la possibilité de créer MSSCCPRJ. Fichiers SCC en déclarant `SCC_CAP_SCCFILE` pendant l’initialisation. Le plug-in retourne `TRUE` ou `FALSE` par fichier dans le `pbSccFiles` tableau pour indiquer les fichiers spécifiés qui ont Mssccprj. Prise en charge de SCC. Si le plug-in retourne un code de réussite de la fonction, les valeurs du tableau de retour sont honorées. En cas d’échec, le tableau est ignoré.
 
 ## <a name="see-also"></a>Voir aussi

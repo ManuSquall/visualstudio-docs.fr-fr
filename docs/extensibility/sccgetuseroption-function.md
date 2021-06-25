@@ -2,7 +2,7 @@
 description: Cette fonction récupère une variété d’options spécifiques à l’utilisateur.
 title: SccGetUserOption fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetUserOption
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 262a15069f840c048f574396d5a7ec076760d77e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 622abc04609edf410214af6b8acf795f969e2fbc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063953"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901108"
 ---
 # <a name="sccgetuseroption-function"></a>Fonction SccGetUserOption
 Cette fonction récupère une variété d’options spécifiques à l’utilisateur.
@@ -55,7 +55,7 @@ dans Option à récupérer (consultez la section Notes pour connaître les optio
 |SCC_E_OPNOTSUPPORTED|L’option n’est pas prise en charge.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette commande prend en charge les options suivantes :
 
 |User (option)|Description|

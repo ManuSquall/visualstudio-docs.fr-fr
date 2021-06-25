@@ -3,7 +3,7 @@ title: Composants de base du modèle de projet | Microsoft Docs
 description: Cet article contient des descriptions des interfaces et des services identifiés dans le modèle de projet Core, ainsi que des interfaces et des services associés aux objets.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae01d149611afe5bf75a6952f19baff7d70f6210
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88dc53378e7e06d0a7d4ad362f7bb3876e186c80
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062809"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899704"
 ---
 # <a name="project-model-core-components"></a>Principaux composants d’un modèle de projet
 Les tableaux suivants s’étendent sur le modèle de projet. Les tableaux présentent de brèves descriptions des interfaces et des services identifiés dans le modèle, ainsi que les interfaces et les services associés à des objets spécifiques. En outre, les tables détaillent les autres interfaces facultatives lors de la création et de la maintenance du projet en fonction des exigences de votre type de projet spécifique.

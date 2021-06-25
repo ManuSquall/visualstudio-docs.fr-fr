@@ -2,7 +2,7 @@
 description: Cette fonction affiche (ou vérifie éventuellement uniquement) les différences entre le fichier actif (sur le disque local) et sa dernière version archivée dans le système de contrôle de code source.
 title: SccDiff fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 484d8b5e988ede9b50099e3c0376f2c3afce8317
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073987"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904654"
 ---
 # <a name="sccdiff-function"></a>SccDiff fonction)
 Cette fonction affiche (ou vérifie éventuellement uniquement) les différences entre le fichier actif (sur le disque local) et sa dernière version archivée dans le système de contrôle de code source.
@@ -56,7 +56,7 @@ dans Indicateurs de commande. Pour plus de détails, consultez la section Notes.
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -70,7 +70,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_NONSPECIFICERROR|Échec non spécifique ; la différence de fichier n’a pas été obtenue.|
 |SCC_E_FILENOTEXIST|Le fichier local est introuvable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction remplit deux fonctions différentes. Par défaut, il affiche la liste des modifications apportées à un fichier. Le plug-in de contrôle de code source ouvre sa propre fenêtre, dans le format qu’il choisit, pour afficher les différences entre le fichier de l’utilisateur sur le disque et la dernière version du fichier sous contrôle de code source.
 
  L’IDE peut également simplement avoir besoin de déterminer si un fichier a été modifié. Par exemple, l’IDE peut avoir besoin de déterminer s’il est possible d’extraire en toute sécurité un fichier sans en informer l’utilisateur. Dans ce cas, l’IDE passe l' `SCC_DIFF_CONTENTS` indicateur. Le plug-in de contrôle de code source doit vérifier le fichier sur le disque, octet par octet, par rapport au fichier sous contrôle de code source et retourner une valeur indiquant si les deux fichiers sont différents sans afficher d’éléments à l’utilisateur.

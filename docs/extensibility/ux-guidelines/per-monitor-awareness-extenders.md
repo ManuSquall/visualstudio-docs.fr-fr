@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de la sensibilisation par moniteur pour les extendeurs Visual Studio
+title: Prise en charge de la prise en charge des Per-Monitor pour les extendeurs Visual Studio
 titleSuffix: ''
 description: En savoir plus sur la nouvelle prise en charge de l’extendeur pour la détection par moniteur disponible dans Visual Studio 2019.
 ms.date: 04/10/2019
@@ -10,18 +10,18 @@ author: rub8n
 ms.author: rurios
 manager: anthc
 monikerRange: vs-2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - CPP
-ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90ec038e8f27407ba08633bacbb5576bee2a7883
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69585370"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902044"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge de la sensibilisation par moniteur pour les extendeurs Visual Studio
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge de la prise en charge des Per-Monitor pour les extendeurs Visual Studio
 
 Les versions antérieures à Visual Studio 2019 avaient un contexte de reconnaissance PPP défini sur la prise en charge du système, plutôt que sur la prise en charge de la résolution par moniteur (PMA). L’exécution dans la reconnaissance du système a entraîné une dégradation de l’expérience visuelle (par exemple, des polices ou des icônes floues) à chaque fois que Visual Studio devait effectuer un rendu sur des moniteurs avec des facteurs d’échelle différents ou à distance sur des ordinateurs avec différentes configurations d’affichage (par exemple, une mise à l’échelle de Windows).
 
@@ -72,7 +72,7 @@ Il est recommandé de valider les scénarios courants suivants :
 
   Ce scénario permet de vérifier que l’interface utilisateur répond au changement de PPP Windows dynamique.
 
-Un bon test préliminaire indiquant si votre interface utilisateur peut rencontrer des problèmes est que le code utilise les classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*ou *vsui :: CDpiHelper* . Ces anciennes classes DpiHelper prennent uniquement en charge la prise en charge DPI du système et ne fonctionnent pas toujours correctement lorsque le processus est AVM.
+Un bon test préliminaire indiquant si votre interface utilisateur peut rencontrer des problèmes est que le code utilise les classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper* ou *vsui :: CDpiHelper* . Ces anciennes classes DpiHelper prennent uniquement en charge la prise en charge DPI du système et ne fonctionnent pas toujours correctement lorsque le processus est AVM.
 
 L’utilisation classique de ces DpiHelpers se présente comme suit :
 

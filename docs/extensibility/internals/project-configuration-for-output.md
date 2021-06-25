@@ -3,7 +3,7 @@ title: Configuration du projet pour la sortie | Microsoft Docs
 description: Découvrez les processus de génération que chaque configuration peut prendre en charge, ainsi que les interfaces et les méthodes par lesquelles les éléments de sortie peuvent être mis à disposition.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
@@ -12,22 +12,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e37999ad9f3bada375c1897207e1e4c15546e8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b718e70bac0d9e09936daf743420acc04a1c4ad
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082008"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899873"
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
-Chaque configuration peut prendre en charge un ensemble de processus de génération qui génèrent des éléments de sortie tels que des fichiers exécutables ou des fichiers de ressources. Ces éléments de sortie sont privés pour l’utilisateur et peuvent être placés dans des groupes qui lient des types de sortie associés tels que des fichiers exécutables (. exe,. dll,. lib) et des fichiers sources (fichiers. idl,. h).
+Chaque configuration peut prendre en charge un ensemble de processus de génération qui génèrent des éléments de sortie tels que des fichiers exécutables ou des fichiers de ressources. Ces éléments de sortie sont privés pour l’utilisateur et peuvent être placés dans des groupes qui lient des types de sortie associés tels que des fichiers exécutables (.exe, .dll,. lib) et des fichiers sources (fichiers. idl,. h).
 
  Les éléments de sortie peuvent être mis à disposition via les <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> méthodes et sont énumérés avec les <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> méthodes. Lorsque vous souhaitez regrouper des éléments de sortie, votre projet doit également implémenter l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interface.
 
  La construction développée par l’implémentation de `IVsOutputGroup` permet aux projets de regrouper les sorties en fonction de leur utilisation. Par exemple, une DLL peut être regroupée avec sa base de données de programme (PDB).
 
 > [!NOTE]
-> Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « générer des informations de débogage » est spécifiée lors de la génération du fichier. dll ou. exe. Le fichier. pdb est généralement généré uniquement pour la configuration du projet de débogage.
+> Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « générer des informations de débogage » est spécifiée lors de la génération du .dll ou .exe. Le fichier. pdb est généralement généré uniquement pour la configuration du projet de débogage.
 
  Le projet doit retourner le même nombre de groupes pour chaque configuration qu’il prend en charge, même si le nombre de sorties contenues dans un groupe peut varier de la configuration à la configuration. Par exemple, la DLL de Project Matt peut inclure des mattd.dll et matted. pdb dans la configuration Debug, mais incluez uniquement matt.dll dans la configuration de la vente au détail.
 

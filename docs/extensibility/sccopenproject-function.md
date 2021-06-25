@@ -2,7 +2,7 @@
 description: Cette fonction ouvre un projet de contrôle de code source existant ou en crée un.
 title: SccOpenProject fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1326319b483aa707b77e0d7142d816b01fc7d3b1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063758"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902395"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
 Cette fonction ouvre un projet de contrôle de code source existant ou en crée un.
@@ -92,7 +92,7 @@ dans Signale si un nouveau projet doit être créé si le projet est inconnu du 
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECFICERROR|Une défaillance non spécifique ; le système de contrôle de code source n’a pas été initialisé.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE peut passer un nom d’utilisateur ( `lpUser` ), ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passé, ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur à se connecter et retourne le nom valide dans `lpUser` lorsqu’il reçoit une connexion valide, `.` car le plug-in peut changer la chaîne SCC_USER_SIZE de nom d’utilisateur `SCC_USER_LEN` .
 
 > [!NOTE]

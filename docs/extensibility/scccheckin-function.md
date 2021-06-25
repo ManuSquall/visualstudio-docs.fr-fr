@@ -2,7 +2,7 @@
 description: Cette fonction Archive les fichiers précédemment extraits dans le système de contrôle de code source, en stockant les modifications et en créant une nouvelle version.
 title: SccCheckin fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d324c03096df5178decd6f6954928df3f2c6b9aa
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060430"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904745"
 ---
 # <a name="scccheckin-function"></a>SccCheckin fonction)
 Cette fonction Archive les fichiers précédemment extraits dans le système de contrôle de code source, en stockant les modifications et en créant une nouvelle version. Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à archiver.
@@ -66,7 +66,7 @@ dans Indicateurs de commande, 0 ou `SCC_KEEP_CHECKEDOUT` .
 
 dans Options spécifiques au plug-in SCC.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -84,7 +84,7 @@ dans Options spécifiques au plug-in SCC.
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|
 |SCC_E_FILENOTEXIST|Fichier local introuvable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le commentaire s’applique à tous les fichiers en cours d’archivage. L’argument de commentaire peut être une `null` chaîne, auquel cas le plug-in de contrôle de code source peut inviter l’utilisateur à entrer une chaîne de commentaire pour chaque fichier.
 
  L' `fOptions` argument peut recevoir une valeur de l' `SCC_KEEP_CHECKEDOUT` indicateur pour indiquer l’intention de l’utilisateur de vérifier le fichier et de le récupérer.

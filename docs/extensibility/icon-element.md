@@ -3,7 +3,7 @@ title: Icon, élément | Microsoft Docs
 description: En savoir plus sur l’élément Icon, qui représente les icônes utilisées dans les extensions de l’IDE Visual Studio, qui incluent des attributs pour l’image bitmap utilisée et l’emplacement dans la bande bitmap.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7ad5bfdf000232ef92a9e9a27b12152df36a4335
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082138"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900822"
 ---
 # <a name="icon-element"></a>Icon, élément
 L’attribut Guid de la balise Icon est le GUID d’une image bitmap définie. L' `id` attribut sélectionne l’emplacement dans la bande bitmap. Cet élément est facultatif. Si cet élément n’est pas inclus, la valeur de **guidOfficeIcon : msotcidNoIcon** sera implicite.

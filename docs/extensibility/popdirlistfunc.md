@@ -3,7 +3,7 @@ title: POPDIRLISTFUNC | Microsoft Docs
 description: En savoir plus sur la fonction de rappel POPDIRLISTFUNC, qui est passée aux répertoires de mise à jour pour déterminer ceux qui sont sous contrôle de code source.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090250"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900393"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Il s’agit d’une fonction de rappel donnée à la fonction [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) pour mettre à jour une collection de répertoires et (éventuellement) des noms de fichiers pour déterminer ceux qui sont sous contrôle de code source.
@@ -49,7 +49,7 @@ dans Valeur utilisateur donnée à [SccPopulateDirList](../extensibility/sccpopu
 
 dans Chemin d’accès local complet à un répertoire ou à un nom de fichier qui est sous le contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’IDE retourne un code d’erreur approprié :
 
 |Valeur|Description|
@@ -58,7 +58,7 @@ dans Chemin d’accès local complet à un répertoire ou à un nom de fichier q
 |SCC_I_OPERATIONCANCELED|Arrêter le traitement.|
 |SCC_E_xxx|Toute erreur de contrôle de code source appropriée doit arrêter le traitement.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si le `fOptions` paramètre de la `SccPopulateDirList` fonction contient l' `SCC_PDL_INCLUDEFILES` indicateur, la liste peut contenir des noms de fichiers, ainsi que des noms de répertoires.
 
 ## <a name="see-also"></a>Voir aussi

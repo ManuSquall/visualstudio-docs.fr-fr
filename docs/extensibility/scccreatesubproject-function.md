@@ -2,7 +2,7 @@
 description: Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l’argument lpParentProjPath.
 title: SccCreateSubProject fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a6df7a801d282113b530f24472419a9735256702
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074000"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904680"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject fonction)
 Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l' `lpParentProjPath` argument.
@@ -66,7 +66,7 @@ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la mar
 
 [in, out] Chaîne de sortie identifiant le chemin d’accès du sous-projet (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -83,7 +83,7 @@ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la mar
 |SCC_E_CONNECTIONFAILURE|Un problème est survenu lors de la connexion du plug-in de contrôle de code source.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si un sous-projet portant le même nom existe déjà, la fonction peut modifier le nom par défaut pour en créer un unique, par exemple en lui ajoutant « _ \<number> ». L’appelant doit être prêt à accepter les modifications apportées à `lpUser` , `lpSubProjPath` et `lpAuxProjPath` . Les `lpSubProjPath` `lpAuxProjPath` arguments et sont ensuite utilisés dans un appel à [SccOpenProject](../extensibility/sccopenproject-function.md). Elles ne doivent pas être modifiées par l’appelant lors du retour. Ces chaînes permettent au plug-in de contrôle de code source de suivre les informations qu’il doit associer à un projet. L’IDE de l’appelant n’affichera pas ces deux paramètres lors du retour, car le plug-in peut utiliser une chaîne mise en forme qui peut ne pas convenir à l’affichage. La fonction retourne un code de réussite ou d’échec et, en cas de réussite, remplit la variable `lpSubProjPath` avec le chemin d’accès complet du projet au nouveau projet.
 
  Cette fonction est similaire à [SccGetProjPath](../extensibility/sccgetprojpath-function.md), à ceci près qu’elle crée un projet en mode silencieux plutôt que d’inviter l’utilisateur à en sélectionner une. Lorsque la `SccCreateSubProject` fonction est appelée, `lpParentProjName` et ne sont `lpAuxProjPath` pas vides et correspondent à un projet valide. Ces chaînes sont généralement reçues par l’IDE à partir d’un appel précédent à la `SccGetProjPath` fonction ou à [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).

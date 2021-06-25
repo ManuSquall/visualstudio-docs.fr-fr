@@ -3,7 +3,7 @@ title: Indicateurs utilisé par des commandes spécifiques | Microsoft Docs
 description: En savoir plus sur les indicateurs utilisés par l’API de plug-in de contrôle de code source, organisés par la fonction qui les utilise.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41f070d61e547724b3067a9f4a1980d658fc30be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: be5915d96b574336d7091239275a2aaef456a7f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097290"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899365"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs utilisé par des commandes spécifiques
 Le comportement d’un certain nombre de fonctions dans l’API de plug-in de contrôle de code source peut être modifié en définissant un ou plusieurs bits dans une valeur unique. Ces valeurs sont appelées indicateurs. Les différents indicateurs utilisés par l’API de plug-in de contrôle de code source sont détaillés ici, regroupés par la fonction qui les utilise.

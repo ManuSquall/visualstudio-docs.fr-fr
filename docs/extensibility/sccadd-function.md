@@ -2,7 +2,7 @@
 description: Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.
 title: SccAdd fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c577bd865a7534a5c4e13253e921ef188e7f0ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f73a91f7f801ca89a633f1722e0c4d1183fb3dc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085687"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904849"
 ---
 # <a name="sccadd-function"></a>SccAdd fonction)
 Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.
@@ -66,7 +66,7 @@ dans Tableau d’indicateurs de commande, fourni pour chaque fichier.
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -82,7 +82,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|
 |SCC_E_FILENOTEXIST|Fichier local introuvable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les options habituelles `fOptions` sont remplacées ici par un tableau, `pfOptions` , avec une `LONG` spécification d’option par fichier. Cela est dû au fait que le type de fichier peut varier d’un fichier à un fichier.
 
 > [!NOTE]

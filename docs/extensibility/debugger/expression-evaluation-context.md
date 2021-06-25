@@ -3,7 +3,7 @@ title: Contexte d’évaluation de l’expression | Microsoft Docs
 description: En savoir plus sur le contexte d’évaluation d’expression, qui représente un contexte pour l’évaluation d’expression et existe lorsqu’un programme s’est arrêté à un point d’arrêt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 249510349d831f4f00578e36200f0d236d83ef59
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 73eeafb95c7e4d52f69109c5eb7c06eb48bd8d88
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096835"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901212"
 ---
 # <a name="expression-evaluation-context"></a>Contexte d’évaluation de l’expression
 Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cadre du débogage, un **contexte d’évaluation d’expression**:

@@ -3,7 +3,7 @@ title: Button, élément | Microsoft Docs
 description: 'L’élément Button définit un élément avec lequel l’utilisateur peut interagir. Les boutons peuvent être des types différents : Button, MenuButton et SplitDropDown.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec0640313195d6a15599d1a765081557c0c1a75a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 630d848c40b13a929c3dd91b47e1c35529efaa50
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068141"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901745"
 ---
 # <a name="button-element"></a>Button, élément
 Définit un élément avec lequel l’utilisateur peut interagir. Les boutons peuvent être de différents types : Button, MenuButton et SplitDropDown.

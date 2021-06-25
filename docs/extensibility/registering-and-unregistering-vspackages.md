@@ -3,7 +3,7 @@ title: Inscription et annulation de l’inscription de VSPackages | Microsoft Do
 description: En savoir plus sur l’inscription et l’annulation de l’inscription de vos VSPackages, y compris les attributs que vous utilisez et le fichier. pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5238ef7d544bcdeb3dd68a4741791262aaa77c0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48067ed883a44870b3b753cb5e3d6943eca91ca5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056543"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900302"
 ---
 # <a name="register-and-unregister-vspackages"></a>Inscrire et désinscrire des VSPackages
 Vous utilisez des attributs pour inscrire un VSPackage, mais

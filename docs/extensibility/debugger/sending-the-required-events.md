@@ -3,7 +3,7 @@ title: Envoi des événements requis | Microsoft Docs
 description: En savoir plus sur les événements ordonnés qui sont requis lors de la création d’un moteur de débogage et de son attachement à un programme dans le débogage Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53f4d7a89b1f5902f576490d827148e9fb816bf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b04ca7ed68b975bc68fa509cdc75dc507b9603d6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070373"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902265"
 ---
 # <a name="send-the-required-events"></a>Envoyer les événements requis
 Utilisez cette procédure pour envoyer les événements requis.

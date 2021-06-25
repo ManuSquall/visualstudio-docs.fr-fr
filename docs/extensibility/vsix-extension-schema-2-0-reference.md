@@ -3,7 +3,7 @@ title: Informations de référence sur le schéma d’extension VSIX 2,0 | Micro
 description: Le schéma d’extension VSIX 2,0 définit le format de fichier d’un fichier manifeste de déploiement VSIX, qui décrit le contenu d’un package VSIX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 66393bbe6383fcc6cae942a3d7e86f1d701a9634
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062289"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905239"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informations de référence sur le schéma d’extension VSIX 2,0
 Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2,0 de ce schéma prend en charge l’ajout de types et d’attributs personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et les attributs XML qu’il ne comprend pas.
@@ -61,9 +61,9 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 
 - `<MoreInfo>` -Cet élément facultatif est une URL vers une page en ligne qui contient une description complète de ce package. Le protocole doit être spécifié en tant que http.
 
-- `<License>` -Cet élément facultatif est un chemin d’accès relatif à un fichier de licence (. txt,. rtf) contenu dans le package.
+- `<License>` -Cet élément facultatif est un chemin d’accès relatif à un fichier de licence (.txt,. rtf) contenu dans le package.
 
-- `<ReleaseNotes>` -Cet élément facultatif est soit un chemin d’accès relatif à un fichier de notes de publication contenu dans le package (. txt,. rtf), soit une URL vers un site Web qui affiche les notes de publication.
+- `<ReleaseNotes>` -Cet élément facultatif est soit un chemin d’accès relatif à un fichier de notes de publication contenu dans le package (.txt,. rtf), soit une URL vers un site Web qui affiche les notes de publication.
 
 - `<Icon>` -Cet élément facultatif est un chemin d’accès relatif à un fichier image (png, BMP, JPEG, ICO) contenu dans le package. L’image de l’icône doit être de 32x32 pixels (ou sera réduite à cette taille) et apparaîtra dans l’interface utilisateur de ListView. Si aucun `Icon` élément n’est spécifié, l’interface utilisateur utilise une valeur par défaut.
 

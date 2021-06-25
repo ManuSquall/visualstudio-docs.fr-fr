@@ -3,7 +3,7 @@ title: Extension du Fenêtre Sortie | Microsoft Docs
 description: Découvrez comment étendre la fenêtre de sortie dans le kit de développement logiciel (SDK) Visual Studio et créer et gérer vos propres volets personnalisés.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 402c53691525530171edafd6a0751dfc72c9798d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075032"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900211"
 ---
 # <a name="extend-the-output-window"></a>Étendre la fenêtre sortie
 La fenêtre **sortie** est un ensemble de volets de texte en lecture/écriture. Visual Studio contient les volets intégrés suivants : la **génération**, dans laquelle les projets communiquent des messages sur les builds, et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages relatifs à l’IDE. Les projets obtiennent une référence au volet de **génération** automatiquement via les <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface, et Visual Studio offre un accès direct au volet **général** par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.

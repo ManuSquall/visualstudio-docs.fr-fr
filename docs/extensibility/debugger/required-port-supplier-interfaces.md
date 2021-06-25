@@ -3,7 +3,7 @@ title: Interfaces du fournisseur de port requises | Microsoft Docs
 description: En savoir plus sur les interfaces qu’un fournisseur de port doit exécuter. Un fournisseur de port fournit des ports et les implémente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5755ce47a2b76c9a0d38b1f7eed3b38d64c876
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96cf70302839a9de3c5fb0fec01136d9700ee17e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070607"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902369"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces du fournisseur de port requises
 Un fournisseur de ports doit implémenter l’interface [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)

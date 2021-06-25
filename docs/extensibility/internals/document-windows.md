@@ -3,7 +3,7 @@ title: Fenêtres de document | Microsoft Docs
 description: Découvrez les fenêtres de document dans Visual Studio, notamment comment les implémenter et comment la table de document en cours d’exécution (RDT) effectue le suivi de leur état.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79706c98e98be55e69aaeeed7320c8b13bfd2a9c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: df7a797c0b4587698197412f49eef6bfab183a7a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061275"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899912"
 ---
 # <a name="document-windows"></a>Fenêtres de document
 Dans Visual Studio, une *fenêtre de document* est une fenêtre enfant encadrée qui est associée à une fenêtre d’interface multidocument (MDI, multiple-document interface). Les fenêtres de document sont généralement utilisées pour l’affichage et la modification du code source ou du texte, mais elles peuvent également héberger d’autres types fonctionnels. Fenêtres de document :

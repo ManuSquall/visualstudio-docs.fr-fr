@@ -2,7 +2,7 @@
 description: Cette fonction renomme un fichier dans le système de contrôle de code source.
 title: SccRename fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d42e796f1ec2176e9de79ca392aab070581324
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fb3fa392cd4ed31d907fe5913f8d7965a20df05b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073831"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900458"
 ---
 # <a name="sccrename-function"></a>Fonction SccRename
 Cette fonction renomme un fichier dans le système de contrôle de code source.
@@ -65,7 +65,7 @@ dans Nom de fichier complet du fichier renommé.
 |SCC_E_OPNOTPERFORMED|L’opération n’a pas été effectuée.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction peut être utilisée pour renommer un fichier ou le déplacer d’un emplacement à un autre dans le système de contrôle de code source. Le plug-in de contrôle de code source ne doit pas tenter d’accéder au fichier sur le disque. Il incombe à l’IDE de renommer le fichier local.
 
 ## <a name="see-also"></a>Voir aussi

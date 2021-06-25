@@ -3,7 +3,7 @@ title: Implémentation d’un Service1 de langage hérité | Microsoft Docs
 description: Découvrez comment implémenter un service de langage hérité qui prend en charge les fonctionnalités du service de langage étendu, à l’aide de Managed package Framework (MPF). Partie 1 sur 2.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e3f11a9ea60595b2372921702282c2bb4d8dcd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34be4e54fbce413fe5ba916892216a9234d4ba93
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085908"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901147"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Implémentation d’un service de langage hérité 1
 Vous pouvez utiliser des classes dans Managed package Framework (MPF) pour implémenter un service de langage hérité qui prend en charge un large éventail de fonctionnalités, telles que la mise en surbrillance de la syntaxe, la correspondance des accolades et la saisie semi-automatique IntelliSense.

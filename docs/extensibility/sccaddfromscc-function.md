@@ -2,7 +2,7 @@
 description: Cette fonction permet à l’utilisateur de rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis de faire de ces fichiers une partie du projet actuel.
 title: SccAddFromScc fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48560f135d73c4e53ba132845f4c768cdf4ac982
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085674"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904874"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc fonction)
 Cette fonction permet à l’utilisateur de rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis de faire de ces fichiers une partie du projet actuel. Par exemple, cette fonction peut obtenir un fichier d’en-tête commun dans le projet actif sans copier le fichier. Le tableau de retour des fichiers, `lplpFileNames` , contient la liste des fichiers que l’utilisateur souhaite ajouter au projet IDE.
@@ -60,7 +60,7 @@ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut u
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée sans effet.|
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE appelle cette fonction. Si le plug-in de contrôle de code source prend en charge la spécification d’un dossier de destination local, l’IDE passe `lpnFiles` à 1 et transmet le nom du dossier local dans `lplpFileNames` .
 
  Lorsque l’appel à la `SccAddFromScc` fonction retourne, le plug-in a affecté des valeurs à `lpnFiles` et `lplpFileNames` , en allouant la mémoire pour le tableau de noms de fichiers si nécessaire (Notez que cette allocation remplace le pointeur dans `lplpFileNames` ). Le plug-in de contrôle de code source est chargé de placer tous les fichiers dans le répertoire de l’utilisateur ou dans le dossier de désignation spécifié. L’IDE ajoute ensuite les fichiers au projet IDE.
