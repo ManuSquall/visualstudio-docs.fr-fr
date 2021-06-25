@@ -3,7 +3,7 @@ title: Énumérateur de code de commande | Microsoft Docs
 description: L’énumérateur de code de commande est utilisé dans les options de SccGetCommandOptions et SccPopulateListto pour indiquer la commande pour laquelle les options sont spécifiées.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2df7ca11d5e93a3ae43d2a6bd1d7ccf8dfe5aa6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b97d5083c4f262ae2d86aeef5ee2627fdc854bcb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089704"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901381"
 ---
 # <a name="command-code-enumerator"></a>Énumérateur de code de commande
 Cet énumérateur est utilisé dans les options pour [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) et [SccPopulateList](../extensibility/sccpopulatelist-function.md)pour indiquer la commande pour laquelle les options sont spécifiées.

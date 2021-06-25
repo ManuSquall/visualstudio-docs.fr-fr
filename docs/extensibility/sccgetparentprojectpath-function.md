@@ -2,7 +2,7 @@
 description: Cette fonction détermine le chemin d’accès au projet parent d’un projet spécifié.
 title: SccGetParentProjectPath fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetParentProjectPath
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 13a0a77808004c7bc8f408bbf34a3ed4f0715b36
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063979"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900133"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath fonction)
 Cette fonction détermine le chemin d’accès au projet parent d’un projet spécifié. Cette fonction est appelée lorsque l’utilisateur ajoute un projet Visual Studio au contrôle de code source.
@@ -61,7 +61,7 @@ dans Chaîne identifiant le chemin d’accès au projet (jusqu’à SCC_PRJPATH_
 
 [in, out] Chaîne de sortie identifiant le chemin d’accès au projet parent (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -77,7 +77,7 @@ dans Chaîne identifiant le chemin d’accès au projet (jusqu’à SCC_PRJPATH_
 |SCC_E_CONNECTIONFAILURE|Problème de connexion au magasin.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction retourne un code de réussite ou d’échec et, en cas de réussite, remplit la variable `lpParentProjPath` avec le chemin d’accès complet au projet spécifié.
 
  Cette fonction retourne le chemin d’accès au projet parent d’un projet existant. Pour le projet racine, la fonction retourne le chemin d’accès du projet qui a été passé (autrement dit, le même chemin d’accès au projet racine). Notez qu’un chemin d’accès de projet est une chaîne qui est significative uniquement pour le plug-in de contrôle de code source.

@@ -3,7 +3,7 @@ title: Implémentation d’un Service2 de langage hérité | Microsoft Docs
 description: Découvrez comment implémenter un service de langage hérité qui prend en charge les fonctionnalités du service de langage étendu, à l’aide de Managed package Framework (MPF). Partie 2 sur 2.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdb0d05faaa139b808d8d117125c5208da470e9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fca2548ddb0c8281241b14de0ec470cfe22db1a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085817"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900120"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implémentation d’un service de langage hérité 2
 Pour implémenter un service de langage à l’aide de Managed package Framework (MPF), vous devez dériver une classe de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes et propriétés abstraites suivantes :

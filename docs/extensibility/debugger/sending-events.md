@@ -3,7 +3,7 @@ title: Envoi d’événements | Microsoft Docs
 description: Découvrez comment le débogueur et le moteur de débogage utilisent un modèle d’événement basé sur DCOM. Les événements sont envoyés en tant qu’objets COM.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 135dd0278ee765ef88ae6cef39675a2fa92236d7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6e9af2618150df522a459e47f312c1dc1e6a220c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070387"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902252"
 ---
 # <a name="send-events"></a>Envoyer des événements
 Le mécanisme de communication entre le débogueur et le moteur de débogage (DE) est un modèle d’événement basé sur DCOM. Les événements sont envoyés en tant qu’objets COM, et chaque événement possède des paramètres qui spécifient les éléments suivants :
@@ -32,7 +32,7 @@ Le mécanisme de communication entre le débogueur et le moteur de débogage (DE
 
   Tous les événements de débogage sont envoyés à l’aide de la méthode [IDebugEventCallback2 :: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Sources d’événements](../../extensibility/debugger/event-sources-visual-studio-sdk.md) Explique les deux sources d’événements : le moteur de débogage (DE) et le gestionnaire de débogage de session (SDM).
 
  [Types d’événements pris en charge](../../extensibility/debugger/supported-event-types.md) Décrit les types d’événements actuellement pris en charge : asynchrone et synchrone.

@@ -3,19 +3,19 @@ title: Outils d’évaluation pour Visual Studio | Microsoft Docs
 description: Utilisez cette liste de vérification pour évaluer la qualité de l’expérience utilisateur pour les détails visuels et d’interaction pour les nouvelles fonctionnalités que vous concevez pour Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f23521763e73ef65b9c5a2f17acb54b85b71d63
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: baee9f3e2eaefcd659f8428bd566711949d0fe90
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089886"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900757"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Outils d’évaluation pour Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Liste de vérification de l’artisan pour Visual Studio

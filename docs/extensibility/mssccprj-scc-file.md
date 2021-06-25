@@ -3,7 +3,7 @@ title: Mssccprj. Fichier SCC | Microsoft Docs
 description: En savoir plus sur le MSSCCPRJ. Fichier SCC, qui est un fichier local côté client utilisé par le plug-in de contrôle de code source, qui fonctionne avec le kit de développement logiciel (SDK) Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945d1a4d1acde0ac3fef9918123f963cf27127f1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e006e4462522f4c464f40e0656dcef4d32c85fb7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090549"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899249"
 ---
 # <a name="mssccprjscc-file"></a>Mssccprj. Fichier SCC
 Quand vous placez une solution ou un projet Visual Studio sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations clés. Les informations proviennent du plug-in de contrôle de code source sous la forme de chaînes. Ces chaînes, « AuxPath » et « ProjName », sont opaques dans l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes la première fois en appelant [SccGetProjPath](../extensibility/sccgetprojpath-function.md), puis les enregistre dans le fichier de projet ou de solution pour les appels ultérieurs à [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’ils sont incorporés dans les fichiers de projet et de solution, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mises à jour quand un utilisateur branche, duplique ou copie des fichiers solution et projet qui sont dans le contrôle de version. Pour vous assurer que les fichiers de la solution et du projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont censées être opaques, il n’est pas toujours évident de savoir comment elles doivent être mises à jour.

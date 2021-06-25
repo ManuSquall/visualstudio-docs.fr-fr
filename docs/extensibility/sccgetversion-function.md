@@ -2,7 +2,7 @@
 description: Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de code source pris en charge par le plug-in de contrôle de code source.
 title: SccGetVersion fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetVersion
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42273951768591dc89f4c9e4b9a27de1d646e209
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f49d33ebe70390a364d0ae8336e7f69549b6876f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063810"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901082"
 ---
 # <a name="sccgetversion-function"></a>Fonction SccGetVersion
 Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de code source pris en charge par le plug-in de contrôle de code source.
@@ -37,10 +37,10 @@ LONG SccGetVersion(void);
 
 |WORD|Description|
 |----------|-----------------|
-|HIWORD|Version principale|
+|HIWORD|Version majeure|
 |LOWORD|Version mineure|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Par exemple, si un plug-in de contrôle de code source prend en charge la version 1,3 de l’API de plug-in de contrôle de code source, cette fonction retourne 0x0103.
 
 ## <a name="see-also"></a>Voir aussi

@@ -3,19 +3,19 @@ title: Menus et commandes pour Visual Studio | Microsoft Docs
 description: Découvrez comment les barres de commandes offrent une certaine flexibilité dans l’interface utilisateur lorsque vous créez de nouvelles fonctionnalités pour Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1061de343ae24dce163dd0a7665d58ec7aac3a3a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ef66123e1a4d62f89fc1c69b81bcb780d0b294f0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068386"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902096"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes pour Visual Studio
 ## <a name="command-usage"></a>Utilisation de la commande
@@ -77,7 +77,7 @@ ms.locfileid: "105068386"
 
 ##### <a name="core-menus"></a>Menus principaux
 
-- File
+- Fichier
 
 - Modifier
 
@@ -87,7 +87,7 @@ ms.locfileid: "105068386"
 
 - Fenêtre
 
-- Help
+- Aide
 
 ##### <a name="project-specific-menus"></a>Menus spécifiques au projet
 

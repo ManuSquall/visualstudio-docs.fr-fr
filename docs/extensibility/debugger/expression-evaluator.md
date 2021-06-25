@@ -3,7 +3,7 @@ title: Évaluateur d’expression | Microsoft Docs
 description: En savoir plus sur les évaluateurs d’expression, qui examinent la syntaxe d’un langage pour analyser et évaluer des variables et des expressions au moment de l’exécution en mode arrêt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 998f361d8008257cb8f4a888b4d4fbb985c9c977
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055022"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900978"
 ---
 # <a name="expression-evaluator"></a>Évaluateur d’expression
 Les évaluateurs d’expression (EE) examinent la syntaxe d’un langage pour analyser et évaluer des variables et des expressions au moment de l’exécution, ce qui leur permet d’être affichées par l’utilisateur lorsque l’IDE est en mode arrêt.

@@ -2,7 +2,7 @@
 description: Cette fonction met à jour une liste de fichiers pour une commande de contrôle de code source particulière et fournit l’état du contrôle de code source sur tous les fichiers donnés.
 title: SccPopulateList fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae531b4be3406c38180183037695a2320b372b14
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b386c576b48e14b6118f62d451c42ac20f048b45
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056530"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902343"
 ---
 # <a name="sccpopulatelist-function"></a>Fonction SccPopulateList
 Cette fonction met à jour une liste de fichiers pour une commande de contrôle de code source particulière et fournit l’état du contrôle de code source sur tous les fichiers donnés.
@@ -79,8 +79,8 @@ dans Indicateurs de commande (consultez la section « indicateur PopulateList 
 |SCC_OK|Réussite.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
- Cette fonction examine la liste des fichiers pour déterminer son état actuel. Elle utilise la `pfnPopulate` fonction de rappel pour notifier l’appelant lorsqu’un fichier ne correspond pas aux critères de `nCommand` . Par exemple, si la commande est `SCC_COMMAND_CHECKIN` et qu’un fichier de la liste n’est pas extrait, le rappel est utilisé pour informer l’appelant. Parfois, le plug-in de contrôle de code source peut trouver d’autres fichiers qui peuvent faire partie de la commande et les ajouter. Cela permet, par exemple, à un utilisateur de Visual Basic d’extraire un fichier. bmp utilisé par son projet, mais qui n’apparaît pas dans le fichier de projet Visual Basic. Un utilisateur choisit la commande **obtenir** dans l’IDE. L’IDE affiche une liste de tous les fichiers qu’il estime que l’utilisateur peut obtenir, mais avant l’affichage de la liste, la `SccPopulateList` fonction est appelée pour s’assurer que la liste à afficher est à jour.
+## <a name="remarks"></a>Remarques
+ Cette fonction examine la liste des fichiers pour déterminer son état actuel. Elle utilise la `pfnPopulate` fonction de rappel pour notifier l’appelant lorsqu’un fichier ne correspond pas aux critères de `nCommand` . Par exemple, si la commande est `SCC_COMMAND_CHECKIN` et qu’un fichier de la liste n’est pas extrait, le rappel est utilisé pour informer l’appelant. Parfois, le plug-in de contrôle de code source peut trouver d’autres fichiers qui peuvent faire partie de la commande et les ajouter. Cela permet, par exemple, à un utilisateur de Visual Basic d’extraire un fichier .bmp utilisé par son projet, mais qui n’apparaît pas dans le fichier de projet Visual Basic. Un utilisateur choisit la commande **obtenir** dans l’IDE. L’IDE affiche une liste de tous les fichiers qu’il estime que l’utilisateur peut obtenir, mais avant l’affichage de la liste, la `SccPopulateList` fonction est appelée pour s’assurer que la liste à afficher est à jour.
 
 ## <a name="example"></a>Exemple
  L’IDE génère une liste de fichiers que l’utilisateur peut obtenir. Avant d’afficher cette liste, elle appelle la `SccPopulateList` fonction, donnant au plug-in de contrôle de code source la possibilité d’ajouter et de supprimer des fichiers dans la liste. Le plug-in modifie la liste en appelant la fonction de rappel donnée (pour plus d’informations, consultez [POPLISTFUNC](../extensibility/poplistfunc.md) ).

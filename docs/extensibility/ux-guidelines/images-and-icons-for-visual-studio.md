@@ -2,19 +2,19 @@
 title: Images et icônes pour Visual Studio | Microsoft Docs
 description: Découvrez les concepts de conception utilisés pour créer les images et les icônes de Visual Studio.
 ms.date: 04/26/2017
-ms.topic: overview
+ms.topic: reference
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 141e388e6877efe2b14c6f652b38b876bafe197f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 36b77dc79574b1741c8feaded65104810e58c2fb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069073"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898790"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Utilisation d’images dans Visual Studio
@@ -259,11 +259,11 @@ ms.locfileid: "105069073"
 ### <a name="base-palette"></a>Palette de base
  Toutes les icônes standard contiennent trois couleurs de base. Les icônes ne contiennent pas de dégradés ou de ombres portées, avec une ou deux exceptions pour les icônes d’outils 3D.
 
-|Usage|Nom|Valeur (thème clair)|Echantillon|Exemple|
+|Utilisation|Nom|Valeur (thème clair)|Echantillon|Exemple|
 |-----------|----------|---------------------------|------------|-------------|
 |Arrière-plan/sombre|VS BG|424242/66, 66, 66|![Échantillon 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemple de palette de base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Premier plan/clair|VS FG|F0EFF1/240 239 241|![Échantillon F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
-|Contour|Différences par rapport à|F6F6F6/246 246 246|![Échantillon F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||
+|Plan|Différences par rapport à|F6F6F6/246 246 246|![Échantillon F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||
 
  Outre les couleurs de base, chaque icône peut contenir une couleur supplémentaire à partir de la palette étendue.
 
@@ -272,7 +272,7 @@ ms.locfileid: "105069073"
 #### <a name="action-modifiers"></a>Modificateurs d’action
  Les quatre couleurs ci-dessous indiquent les types d’actions requis par les modificateurs d’action :
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |Positif|CONTRE-action en vert|388A34/56138, 52|![Échantillon 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Négatif|CONTRE-action rouge|A1260D/161, 38, 13|![Échantillon A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -315,14 +315,14 @@ ms.locfileid: "105069073"
 
 #### <a name="folder"></a>Dossier
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
 |-----------|----------|--------------------------|------------|-------------|
 |Dossiers|Dossier|DCB67A/220 182 122|![Échantillon DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icône de couleur de dossier](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Langages Visual Studio
  Chacun des langages ou plateformes courants disponibles dans Visual Studio est associé à une couleur. Ces couleurs sont utilisées sur l’icône de base, ou sur les modificateurs de langue qui s’affichent dans le coin supérieur droit d’une icône composée.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML HTML WPF Blue|0095D7/0149 215|![Échantillon 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|RPC violet|9B4F96/155, 79150|![Échantillon 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -347,7 +347,7 @@ ms.locfileid: "105069073"
 #### <a name="intellisense"></a>IntelliSense
  Les icônes IntelliSense utilisent une palette de couleurs exclusives. Ces couleurs permettent aux utilisateurs de faire rapidement la distinction entre les différents éléments de la liste contextuelle IntelliSense.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |Classe, événement|Action VS orange|C27D1A/194125, 26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Méthode d’extension, méthode, module, délégué|VS action Violette|652D90/101, 45144|![Échantillon 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -368,7 +368,7 @@ ms.locfileid: "105069073"
 ### <a name="notifications"></a>Notifications
  Les notifications dans Visual Studio sont utilisées pour indiquer l’État. La palette de notifications utilise les quatre couleurs suivantes, ainsi que les options de remplissage de premier plan noir ou blanc, pour définir des notifications avec les niveaux d’état suivants.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |État : neutre|Bleu de notification (VS Blue)|1BA1E2/27 161 226|![Échantillon 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |État : positif|Vert de notification (VS vert)|339933/51153, 51|![Échantillon 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|

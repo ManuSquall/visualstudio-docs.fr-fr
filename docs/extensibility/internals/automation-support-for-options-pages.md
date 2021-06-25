@@ -3,7 +3,7 @@ title: Prise en charge d’Automation pour les pages d’options | Microsoft Doc
 description: Découvrez comment rendre disponibles les pages d’options Outils personnalisées dans les VSPackages dans le modèle Automation de Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b587af698cf7f044c02baab1a8207be1457d6cfd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a4f6b33b7a5e17c610831db5d4387065915ea00
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086220"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901654"
 ---
 # <a name="automation-support-for-options-pages"></a>Prise en charge d’Automation pour les pages d’options
 Les VSPackages peuvent fournir des boîtes de dialogue **options** personnalisées au menu **Outils** (pages **Options des outils** ) dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et peuvent les mettre à la disposition du modèle Automation.

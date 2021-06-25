@@ -3,19 +3,19 @@ title: Modèles composites pour Visual Studio | Microsoft Docs
 description: En savoir plus sur les modèles composites importants pour la cohérence dans Visual Studio. Les modèles composites combinent les éléments d’interaction et de conception.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b8b84baa7be7449b8edb6241e415fc90c9acd594
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090055"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901420"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants dans Visual Studio en ce qui concerne la cohérence :
@@ -295,7 +295,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
  Une fois qu’une fenêtre est active, son focus est indiqué en fonction des modèles de sélection décrits dans cette section des instructions.
 
-#### <a name="context"></a>Context
+#### <a name="context"></a>Contexte
  Visual Studio a été conçu pour conserver un concept solide de contexte, en gardant le suivi de l’emplacement de travail de l’utilisateur. Une seule fenêtre est active, qu’il s’agisse d’un outil ou d’une fenêtre de document. Toutefois, la fenêtre de document en haut conserve toujours une sélection latente. Même si le focus peut se trouver dans une fenêtre outil, la fenêtre de document qui était active affiche une sélection, même dans un état inactif. Cela permet de conserver le contexte de l’utilisateur dans le document qu’il a modifié, en les signalant que Visual Studio a conservé son état afin qu’il puisse retourner et basculer en toute transparence entre les fenêtres outil et les fenêtres de document.
 
 ### <a name="text-selection"></a>Sélection de texte
@@ -395,7 +395,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de la sélection d’objets graphiques
  Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour du cadre englobant de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et aux métriques de bord à l’aide de l’API **GetSystemMetrics** .
 
-| State | Apparence | Détails visuels |
+| État | Apparence | Détails visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Default | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Sélection principale** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -484,7 +484,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 |Boîte de dialogue|Emplacement de la boîte de dialogue, si elle a été déplacée<br /><br /> Affichage que l’utilisateur a utilisé en dernier dans la boîte de dialogue|Quand la boîte de dialogue se ferme<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre dans **HKEY_CURRENT_USER**|
 |Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> En cas de modification du mode Visual Studio<br /><br /> À la fin de la session Visual Studio|Fichier d' **options utilisateur (. suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
 |Document|Sélection actuelle dans le document<br /><br /> Vue du document<br /><br /> Les derniers emplacements visités par l’utilisateur|Lors de l’enregistrement du document|Fichier d' **options utilisateur (. suo)** pour le projet|
-|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
+|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Composants<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
 |Solution|Références aux projets<br /><br /> Références aux fichiers|Lors de l’enregistrement du projet ou de la solution|Fichier **solution (. sln)**|
 |Paramètres dans **outils > options**|Personnalisations du clavier<br /><br /> Personnalisations de la barre d’outils<br /><br /> Modèles de couleurs|Quand la boîte de dialogue **outils > options** se ferme<br /><br /> À la fin de la session Visual Studio|Registre dans **HKEY_CURRENT_USER**|
 

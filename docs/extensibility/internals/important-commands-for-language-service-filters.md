@@ -3,7 +3,7 @@ title: Commandes importantes pour les filtres du service de langage | Microsoft 
 description: En savoir plus sur les commandes importantes que vous devez prendre en charge lors de la création d’un filtre de service de langage complet dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d27f1c3057266d1b167999f3178a3e554a78ddb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8dd5f65248411a7ea6b892d5b4c800718456339f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069554"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899054"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importantes pour les filtres du service de langage
 Si vous souhaitez créer un filtre de service de langage complet, envisagez de gérer les commandes suivantes. La liste complète des identificateurs de commande est définie dans l' <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> énumération pour le code managé et le fichier d’en-tête Stdidcmd. h pour le code non managé [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Le fichier Stdidcmd. h se trouve dans le *chemin d’installation du kit de développement logiciel (SDK) Visual Studio*\VisualStudioIntegration\Common\Inc.
