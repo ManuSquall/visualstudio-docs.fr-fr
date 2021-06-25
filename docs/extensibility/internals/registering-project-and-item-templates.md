@@ -3,7 +3,7 @@ title: Inscription de modèles de projet et d’élément | Microsoft Docs
 description: Découvrez comment Visual Studio utilise les informations d’inscription de vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue Ajouter un nouveau projet et ajouter un nouvel élément.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6f4abe3a8632f4fe9208922aee1ccd92da3dab5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b60022c6adf65d0b0d60d32b4ad7ae72067726d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062692"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905629"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 Les types de projets doivent inscrire les répertoires dans lesquels se trouvent les modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue **Ajouter un nouveau projet** et **Ajouter un nouvel élément** .
@@ -43,7 +43,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 |----------|----------|-----------------|
 |@|REG_SZ|Nom par défaut des projets de ce type.|
 |DisplayName|REG_SZ|ID de ressource du nom à récupérer à partir de la DLL satellite inscrite sous packages.|
-|Package|REG_SZ|ID de classe du package enregistré sous packages.|
+|Paquet|REG_SZ|ID de classe du package enregistré sous packages.|
 |ProjectTemplatesDir|REG_SZ|Chemin d’accès par défaut des fichiers de modèles de projet. Les fichiers de modèles de projet sont affichés par le nouveau modèle de **projet** .|
 
 ### <a name="registering-item-templates"></a>Inscription des modèles d’élément

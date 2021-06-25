@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Découvrez les interfaces associées au contrôle de code source dans le kit de développement logiciel (SDK) Visual Studio. Le package implémente certaines interfaces et utilise d’autres pour le contrôle de code source.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f35a11c801a8535c2b903909e2514b9879d3347c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6385307c91541204d58228b489160888f79dec85
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095028"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903331"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 

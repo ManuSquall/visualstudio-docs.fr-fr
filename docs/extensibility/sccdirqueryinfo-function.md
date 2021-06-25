@@ -2,7 +2,7 @@
 description: Cette fonction examine une liste de répertoires complets pour leur état actuel.
 title: SccDirQueryInfo fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDirQueryInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9a3e65fa03c7fc2b6a8ce83ba2bb39250547aadb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060326"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904615"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo fonction)
 Cette fonction examine une liste de répertoires complets pour leur état actuel.
@@ -51,7 +51,7 @@ dans Tableau de chemins d’accès qualifiés complets des répertoires à inter
 
 [in, out] Structure de tableau pour que le plug-in de contrôle de code source retourne les indicateurs d’État (pour plus d’informations, consultez le [code d’État du répertoire](../extensibility/directory-status-code-enumerator.md) ).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -61,7 +61,7 @@ dans Tableau de chemins d’accès qualifiés complets des répertoires à inter
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La fonction remplit le tableau de retour avec un masque de bits de la `SCC_DIRSTATUS` famille (voir [code d’État du répertoire](../extensibility/directory-status-code-enumerator.md)), une entrée pour chaque répertoire donné. Le tableau d’État est alloué par l’appelant.
 
  L’IDE utilise cette fonction avant qu’un répertoire ne soit renommé afin de vérifier si le répertoire est sous contrôle de code source en interrogeant s’il possède un projet correspondant. Si le répertoire n’est pas sous contrôle de code source, l’IDE peut fournir l’avertissement approprié à l’utilisateur.

@@ -3,7 +3,7 @@ title: Implémentation de GetMethodProperty | Microsoft Docs
 description: Découvrez comment Visual Studio obtient des informations sur la méthode actuelle sur le frame de pile à l’aide du GetDebugProperty du moteur de débogage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0a52174e05d7203d5bc35e43df8886e23ea7296
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ab7b0ba5e51ba8ea47b473934e825b82dec320c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059822"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903292"
 ---
 # <a name="implement-getmethodproperty"></a>Implémenter GetMethodProperty
 > [!IMPORTANT]

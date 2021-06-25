@@ -3,19 +3,19 @@ title: Informations de référence sur le schéma du manifeste de modèle Visual
 description: Cette référence de schéma décrit le format des fichiers manifeste de modèle Visual Studio qui sont générés pour les modèles de projet ou d’élément Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 259d2dd050f4681053f331bfd4ec39dd7b214059
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062497"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905382"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence de schéma du manifeste de modèle Visual Studio
 Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*. vstman*) qui sont générés pour les modèles de projet ou d’élément Visual Studio. Le schéma décrit également l’emplacement et d’autres informations pertinentes sur le modèle.
@@ -51,7 +51,7 @@ Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*.
 
 ### <a name="child-elements"></a>Éléments enfants
 
-- **RelativePathOnDisk**: chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également le placement du modèle dans l’arborescence du modèle affichée dans la boîte de dialogue **nouveau projet** ou **nouvel élément** . Pour les modèles déployés en tant que répertoire et fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déployés en tant que fichier *. zip* , ce chemin d’accès doit être le chemin d’accès au fichier *. zip* .
+- **RelativePathOnDisk**: chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également le placement du modèle dans l’arborescence du modèle affichée dans la boîte de dialogue **nouveau projet** ou **nouvel élément** . Pour les modèles déployés en tant que répertoire et fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déployés en tant que *.zip* fichier, ce chemin d’accès doit être le chemin d’accès au fichier *.zip* .
 
 - * * VSTemplateHeader : élément [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) qui décrit l’en-tête.
 

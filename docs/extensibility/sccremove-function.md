@@ -2,7 +2,7 @@
 description: Cette fonction supprime les fichiers du système de contrôle de code source.
 title: SccRemove fonction) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccRemove
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80daf83458c9e05ef0a081348080579e7fafef4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4a608b3556040033d9f51535ad29d0abf5d4e35
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073870"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904124"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
 Cette fonction supprime les fichiers du système de contrôle de code source.
@@ -80,7 +80,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_NONSPECIFICERROR|Échec non spécifique ; le fichier n’a pas été supprimé.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas du disque dur local de l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi

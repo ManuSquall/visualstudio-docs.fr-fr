@@ -3,19 +3,19 @@ title: Couleurs et styles pour Visual Studio | Microsoft Docs
 description: Découvrez comment l’expérience utilisateur de Visual Studio utilise la couleur comme un outil de communication, plutôt que pour des raisons purement esthétiques.
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 307a4013c06258524c60619c6eff40e4d64740b6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089912"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904485"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -309,11 +309,11 @@ Exemples de la surface de l’éditeur dans le thème bleu :
 
 De nombreux éléments d’interface utilisateur communs ont déjà des couleurs de contraste élevé définies. Vous pouvez référencer ces modèles d’utilisation lorsque vous choisissez vos propres noms de couleurs système, afin que vos éléments d’interface utilisateur soient cohérents avec des composants similaires.
 
-| Couleur système | Usage |
+| Couleur système | Utilisation |
 | --- | --- |
 | LégendeActive | -L’IDE actif et les glyphes de boutons de fenêtre volés au survol et à la pression<br />-Arrière-plan de la barre de titre pour les fenêtres de l’IDE et les fenêtres à Raft<br />-Arrière-plan de la barre d’État par défaut |
 | TexteLégendeActive | -IDE actif et fenêtres avec des rafts pour le premier plan de la barre de titre (texte et glyphes)<br />-Arrière-plan et bordure des boutons de la fenêtre active au pointage et appuyez sur |
-| Control | -Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivés du contrôle de recherche, y compris le bouton de liste déroulante<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil |
+| Contrôler | -Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivés du contrôle de recherche, y compris le bouton de liste déroulante<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil |
 | ControlDark | -Arrière-plan IDE<br />-Menus et séparateurs de barre de commandes<br />-Bordure de barre de commandes<br />-Shadows de menu<br />-Onglet de fenêtre outil bordure et séparateur par défaut<br />-Arrière-plan du bouton de dépassement de capacité de document<br />: Bordure du glyphe cible de l’ancrage |
 | ContrôleFoncéFoncé |-Inactif, fenêtre d’onglet de document sélectionnée |
 | ContrôleClair |-Masquer automatiquement la bordure de l’onglet<br />-Zone de liste déroulante et bordure de liste déroulante<br />-Arrière-plan et bordure de la cible d’ancrage |
@@ -363,7 +363,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
  Le service spécifié dans le registre doit fournir une implémentation de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) pour la catégorie correspondante.
 
@@ -376,7 +376,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
 Le service spécifié dans le registre doit fournir une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pour le groupe correspondant.
 

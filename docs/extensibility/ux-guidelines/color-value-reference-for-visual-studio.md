@@ -5,16 +5,16 @@ keywords: couleur, code hexadécimal, teinte, interface utilisateur à thème, t
 author: brickgeorge
 ms.author: madsk
 ms.date: 08/04/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jmartens
-ms.openlocfilehash: c3867bc6fd489642bfa856caed434312a9d2d571
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 720eae847a9569a270cfa138ee25e5b4a12b980e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953147"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905525"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 
@@ -96,7 +96,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 |**Premier plan : survol**| ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "Échantillon de #FF1E1E1E")<br />`#FF1E1E1E` | ![Échantillon de #FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "Échantillon de #FFF1F1F1")<br />`#FFF1F1F1` | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "Échantillon de #FF1E1E1E")<br />`#FF1E1E1E` | ![Échantillon HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "Échantillon HighlightText")<br />`HighlightText` |
 |**Contexte**| ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "Échantillon de #FFEEEEF2")<br />`#FFEEEEF2` | ![Échantillon de #FF292929](../../extensibility/ux-guidelines/media/292929.png "Échantillon de #FF292929")<br />`#FF292929` | ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "Échantillon de #FFEEEEF2")<br />`#FFEEEEF2` | ![Échantillon de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "Échantillon de contrôle")<br />`Control` |
 |**Arrière-plan : pointage**| ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "Échantillon de #FFC9DEF5")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "Échantillon de #FF3E3E40")<br />`#FF3E3E40` | ![Échantillon de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "Échantillon de #FFFFFCF4")<br />`#FFFFFCF4` | ![Échantillon de surbrillance](../../extensibility/ux-guidelines/media/HCHighlight.png "Échantillon de surbrillance")<br />`Highlight` |
-|**Border**| None | None | None | None |
+|**Border**| Aucune | Aucune | Aucune | Aucune |
 |**Bordure : survol**| ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "Échantillon de #FFC9DEF5")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "Échantillon de #FF3E3E40")<br />`#FF3E3E40` | ![Échantillon de #FFE5C365](../../extensibility/ux-guidelines/media/E5C365.png "# #FFE5C365 échantillon")<br />`#FFE5C365` | ![Échantillon WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "Échantillon WindowFrame")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Groupe de catégories
@@ -170,7 +170,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 > [!NOTE]
 > **Les échantillons de contraste élevé sont présentés à des fins de comparaison uniquement.** Utilisez le nom de la couleur système pour contraste élevé interface utilisateur et n’utilisez pas de pipette ou de sélecteur de couleurs sur ces nuances. Les nuanciers contraste élevé de cette rubrique reflètent le thème contraste élevé #1 dans Windows. Les couleurs s’affichent différemment dans d’autres thèmes de contraste élevé.
 
-### <a name="content"></a>Content
+### <a name="content"></a>Contenu
 
 | | Thème clair | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
@@ -199,7 +199,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 > [!NOTE]
 > **Les échantillons de contraste élevé sont présentés à des fins de comparaison uniquement.** Utilisez le nom de la couleur système pour contraste élevé interface utilisateur et n’utilisez pas de pipette ou de sélecteur de couleurs sur ces nuances. Les nuanciers contraste élevé de cette rubrique reflètent le thème contraste élevé #1 dans Windows. Les couleurs s’affichent différemment dans d’autres thèmes de contraste élevé.
 
-### <a name="body"></a>body
+### <a name="body"></a>Corps
 
 | | Thème clair | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
@@ -224,7 +224,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 > [!NOTE]
 > **Les échantillons de contraste élevé sont présentés à des fins de comparaison uniquement.** Utilisez le nom de la couleur système pour contraste élevé interface utilisateur et n’utilisez pas de pipette ou de sélecteur de couleurs sur ces nuances. Les nuanciers contraste élevé de cette rubrique reflètent le thème contraste élevé #1 dans Windows. Les couleurs s’affichent différemment dans d’autres thèmes de contraste élevé.
 
-### <a name="body"></a>body
+### <a name="body"></a>Corps
 
 | | Thème clair | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
@@ -253,7 +253,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 > [!NOTE]
 > **Les échantillons de contraste élevé sont présentés à des fins de comparaison uniquement.** Utilisez le nom de la couleur système pour contraste élevé interface utilisateur et n’utilisez pas de pipette ou de sélecteur de couleurs sur ces nuances. Les nuanciers contraste élevé de cette rubrique reflètent le thème contraste élevé #1 dans Windows. Les couleurs s’affichent différemment dans d’autres thèmes de contraste élevé.
 
-### <a name="body"></a>body
+### <a name="body"></a>Corps
 
 | | Thème clair | Thème foncé | Thème bleu | Contraste élevé |
 | --- | :---: | :---: | :---: | :---: |
@@ -551,7 +551,7 @@ Lorsque vous utilisez ce guide de référence, rappelez-vous :
 
 ## <a name="color-swatches-by-function"></a>Échantillons de couleurs par fonction
 
-| Léger | Foncé | Blue | Utilisé pour... |
+| Léger | Foncé | Bleu | Utilisé pour... |
 | :---: | :---: | :---: | --- |
 | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "Échantillon de #FFC9DEF5")<br />`#FFC9DEF5` | ![Échantillon de #FF2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "Échantillon de #FF2D2D30")<br />`#FF2D2D30` | ![Échantillon de #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "Échantillon de #FFFDF4BF")<br />`#FFFDF4BF` | Boutons d’action, éléments de zone de liste déroulante, boutons de barre de commandes, boutons déroulants et éléments de menu : arrière-plan |
 | ![Échantillon de #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "Échantillon de #FFCCCEDB")<br />`#FFCCCEDB` | ![Échantillon de #FF3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "Échantillon de #FF3F3F46")<br />`#FF3F3F46` | ![Échantillon de #FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "Échantillon de #FF465A7D")<br />`#FF465A7D` | Masquer automatiquement la bordure de l’onglet |

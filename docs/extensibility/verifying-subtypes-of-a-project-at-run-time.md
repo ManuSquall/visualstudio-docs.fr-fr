@@ -3,7 +3,7 @@ title: Vérification des sous-types d’un projet au moment de l’exécution | 
 description: Découvrez comment faire en sorte que votre VSPackage vérifie la présence d’un sous-type de projet personnalisé spécifié dont il dépend.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project subtypes
 - check subtypes
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52d3297ce4903cb8f8e7cb2f9ab5169d21ac94e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 621a40e1857d7c78ec4c5be08a3b7c3808a0d48b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062601"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905471"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>Vérifier les sous-types d’un projet au moment de l’exécution
 Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure une logique pour rechercher ce sous-type afin qu’il puisse échouer correctement si le sous-type n’est pas présent. La procédure suivante montre comment vérifier la présence d’un sous-type spécifié.

@@ -3,7 +3,7 @@ title: Référence du kit de développement logiciel Visual Studio | Microsoft D
 description: Ces articles contiennent des informations sur les espaces de noms Visual Studio, les espaces de noms associés et d’autres domaines intéressants pour les développeurs qui utilisent le kit de développement logiciel (SDK) Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
@@ -13,18 +13,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07a1148911347d4ff8bdb94e1de4625877872d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72ee3a1567f2f0c3de3a266af04e20d1354b96a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062536"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905395"
 ---
 # <a name="visual-studio-sdk-reference"></a>Référence du kit de développement logiciel Visual Studio
 
 Cette section contient des informations sur les espaces de noms Visual Studio, les espaces de noms associés et d’autres domaines intéressants pour les développeurs qui utilisent le kit de développement logiciel (SDK) Visual Studio.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop> Interfaces d’interopérabilité héritées utilisées pour l’éditeur et les services de langage.
 

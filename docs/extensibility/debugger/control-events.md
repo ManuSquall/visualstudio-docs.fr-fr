@@ -3,7 +3,7 @@ title: Événements de contrôle | Microsoft Docs
 description: En savoir plus sur l’envoi d’événements pendant l’exécution contrôlée de votre programme à l’aide de l’interface IDebugEvent2.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeee5ed91eca7666d08dfd08ec02b850a7739db9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cb7249ece3ab38ff6f378f3c48ce36a995677604
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085531"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905694"
 ---
 # <a name="control-events"></a>Événements de contrôle
 Vous devez envoyer des événements pendant l’exécution contrôlée de votre programme. Tous les événements sont envoyés à l’aide de l’interface [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) et ont des attributs qui nécessitent que vous implémentiez la méthode [IDebugEvent2 :: GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) .

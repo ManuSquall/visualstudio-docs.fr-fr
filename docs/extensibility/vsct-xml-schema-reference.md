@@ -3,7 +3,7 @@ title: Informations de référence sur le schéma XML VSCT | Microsoft Docs
 description: Les Articles de référence de schéma XML VSCT décrivent les éléments de schéma du compilateur de table de commandes, avec des attributs et des éléments enfants autorisés pour chacun.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f24d11c9458b56b5b66de495a18ec75491d3ac0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7d82cda9c91642b094deea50eda02676f9bb73f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062302"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905226"
 ---
 # <a name="vsct-xml-schema-reference"></a>Référence du schéma XML VSCT
 Fournit un tableau des éléments de schéma du compilateur de table de commandes, avec les éléments enfants et les attributs autorisés pour chacun.
