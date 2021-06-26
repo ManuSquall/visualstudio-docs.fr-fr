@@ -10,12 +10,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
+ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296012"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112975675"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur
 
@@ -68,11 +68,16 @@ En cliquant sur **réentrer vos informations d’identification** , vous ouvrez 
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Comment refuser l’utilisation d’un locataire Azure Active Directory spécifique dans Visual Studio
 
-Visual Studio 2019 version 16,6 offre la flexibilité nécessaire pour filtrer les locataires spécifiques, ce qui les masque à partir de Visual Studio. Le filtrage élimine la nécessité de s’authentifier auprès de ce locataire, mais cela signifie également que vous ne pourrez pas accéder aux ressources associées. 
+Visual Studio 2019 version 16,6 offre la possibilité de filtrer les locataires individuellement ou globalement, en les hidding à partir de Visual Studio. Le filtrage élimine la nécessité de s’authentifier auprès de ce locataire, mais cela signifie également que vous ne pourrez pas accéder aux ressources associées.
 
 Cette fonctionnalité est utile lorsque vous avez plusieurs locataires, mais que vous souhaitez optimiser votre environnement de développement en ciblant un sous-ensemble spécifique. Cela peut également vous aider dans les cas où vous ne pouvez pas valider une stratégie d’autorité de certification/MFA particulière, car vous pouvez filtrer le locataire incriminé. 
 
-### <a name="how-to-filter-out-a-tenant"></a>Comment filtrer un locataire
+### <a name="how-to-filter-out-all-tenants"></a>Comment filtrer tous les locataires
+Pour filtrer globalement tous les locataires, ouvrez la boîte de dialogue Paramètres du compte **(fichier > paramètres du compte...)** et décochez la case **authentifier sur tous les annuaires Azure active** .
+
+Désélectionnez cette option pour vous assurer que vous vous authentifierez uniquement avec le locataire par défaut du compte. Cela signifie également que vous ne pouvez pas accéder à des ressources associées à d’autres locataires. votre compte peut être un invité sur.
+
+### <a name="how-to-filter-out-individual-tenants"></a>Comment filtrer les clients individuels
 Pour filtrer les locataires associés à votre compte Visual Studio, ouvrez la boîte de dialogue Paramètres du compte **(fichier > paramètres de compte...)** , puis cliquez sur **appliquer le filtre**. 
 </br>
 </br>

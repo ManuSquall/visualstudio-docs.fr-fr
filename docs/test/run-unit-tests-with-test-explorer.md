@@ -3,19 +3,17 @@ title: Exécuter des tests unitaires avec l'Explorateur de tests
 description: Découvrez comment exécuter des tests avec l’Explorateur de tests dans Visual Studio. Cette rubrique explique comment activer les séries de tests automatiques après la génération, afficher les résultats des tests, regrouper et filtrer la liste de tests, créer des sélections et utiliser des raccourcis de test.
 ms.date: 07/14/2020
 ms.topic: how-to
-f1_keywords:
-- vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26dbed25f42f40614597075ad26c855398b56025
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836330"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925122"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -62,7 +60,7 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ### <a name="run-tests"></a>Exécuter les tests
 
 ::: moniker range="vs-2017"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez **exécuter tout** (ou appuyez sur **CTRL** + **R**, **V**).
 
@@ -75,7 +73,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez l’icône **exécuter tout** (ou appuyez sur **CTRL** + **R**, **V**).
 
@@ -205,7 +203,7 @@ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécute
 
 **Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel (clic droit), choisissez **Ajouter à la playlist**, puis la playlist à laquelle vous souhaitez ajouter les tests.
 
-**Pour ouvrir une sélection**, choisissez **Test** > **Sélection** dans le menu Visual Studio, puis choisissez une sélection dans la liste de sélections récemment utilisées ou choisissez **Ouvrir la sélection** pour spécifier le nom et l’emplacement de la sélection.
+**Pour ouvrir une sélection**, choisissez **tester** > la **sélection** dans le menu Visual Studio, puis choisissez une sélection dans la liste des sélections récemment utilisées ou choisissez **ouvrir la sélection** pour spécifier le nom et l’emplacement de la sélection.
 
 Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![Capture d’écran du bouton bascule d’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests Visual Studio.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 ::: moniker-end
@@ -389,7 +387,7 @@ L’Explorateur de tests peut émettre un signal sonore lorsqu’une série de t
 ::: moniker-end
 ## <a name="see-also"></a>Voir aussi
 
-- [Test unitaire de votre code](../test/unit-test-your-code.md)
+- [Tests unitaires de votre code](../test/unit-test-your-code.md)
 - [Déboguer des tests unitaires avec l’Explorateur de tests](../test/debug-unit-tests-with-test-explorer.md)
 - [Exécuter un test unitaire comme processus 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Questions fréquentes (FAQ) sur l’Explorateur de tests](test-explorer-faq.md)

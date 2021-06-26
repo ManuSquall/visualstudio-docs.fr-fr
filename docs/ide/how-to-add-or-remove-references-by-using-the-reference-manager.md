@@ -4,8 +4,6 @@ description: Découvrez comment utiliser la boîte de dialogue Gestionnaire de r
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
-f1_keywords:
-- VS.ReferenceManager
 helpviewer_keywords:
 - C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 552ec8364bb58b72199bacecca99283303eb174c
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893358"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924914"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -191,11 +189,11 @@ Un projet peut référencer un composant qui cible une version différente du fr
 
 Vous ne pouvez pas accéder à un kit SDK et l’ajouter à votre projet. Vous pouvez uniquement rechercher un fichier (par exemple un assembly ou un fichier *.winmd*) et l’ajouter à votre projet.
 
-Lors d’une référence de fichier à un WinMD, la disposition attendue est que les fichiers *\<FileName> . WinMD*, *\<FileName> . dll* et *\<FileName> . pri* sont placés les uns à côté des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
+Lors d’une référence de fichier à un WinMD, la disposition attendue est que les fichiers *\<FileName> . WinMD*, *\<FileName>.dll* et *\<FileName> . pri* sont placés les uns à côté des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
 
-- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les *\<FileName> . dll* et *\<FileName> . winmd* portant le même nom seront copiés et des erreurs d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
+- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les *\<FileName>.dll* et *\<FileName> . winmd* portant le même nom seront copiés, et des erreurs d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
 
-- **Consommation de contrôles** : au minimum, un contrôle XAML se compose d’un fichier *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* et *\<ImageName>.jpg*. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls les fichiers *\<FileName> . winmd*, *\<FileName> . dll* et *\<FileName> . pri* sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources *\<XamlName> . Xaml* et *\<ImageName> . jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
+- **Consommation de contrôles** : au minimum, un contrôle XAML se compose d’un fichier *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* et *\<ImageName>.jpg*. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls les fichiers *\<FileName> . winmd*, *\<FileName>.dll* et *\<FileName> . pri* sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources *\<XamlName> . xaml* et *\<ImageName>.jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
 
     ```xml
     <PropertyGroup>

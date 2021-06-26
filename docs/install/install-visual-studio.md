@@ -5,8 +5,6 @@ description: Découvrez comment installer Visual Studio, étape par étape.
 ms.date: 12/13/2019
 ms.custom: vs-acquisition
 ms.topic: conceptual
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - install Visual Studio
 - dev15
@@ -20,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 692989d5bf8979752757fb5630a78d55426f85b9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7bf44f9333a65ea821c0cd9936ee1f3fa051d4fe
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387071"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925083"
 ---
 # <a name="install-visual-studio"></a>Installation de Visual Studio
 
