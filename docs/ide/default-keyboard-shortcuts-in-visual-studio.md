@@ -2,7 +2,7 @@
 title: Raccourcis clavier par défaut
 description: Découvrez les raccourcis clavier par défaut dans Visual Studio qui vous permettent d’accéder à diverses commandes et fenêtres.
 ms.custom: SEO-VS-2020
-ms.date: 05/21/2021
+ms.date: 06/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74ed04faaaf4626e63be7393a650b1bea225f3
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110328690"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038640"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -28,11 +28,171 @@ Pour accéder à diverses [commandes](reference/visual-studio-commands.md) et fe
 
 Pour obtenir la liste des raccourcis clavier courants et d'autres informations sur la productivité, consultez :
 
-- [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Conseils d’utilisation du clavier](../ide/productivity-shortcuts.md)
 - [Conseils de productivité](../ide/productivity-features.md).
 
 Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Comment : utiliser le clavier en mode exclusif](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+
+
+
+## <a name="most-popular-keyboard-shortcuts"></a>Raccourcis clavier les plus populaires
+
+Tous les raccourcis de cette section s’appliquent globalement sauf indication contraire. Le contexte *Global* signifie que le raccourci s’applique dans n’importe quelle fenêtre Outil dans Visual Studio.
+
+> [!NOTE]
+> Vous pouvez [rechercher le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**.
+
+
+#### <a name="build-popular-shortcuts"></a>Build : raccourcis populaires
+
+|Commandes|Raccourcis clavier |
+|--------------| - |
+|Build.BuildSolution|**Ctrl + Maj + B** |
+|Build.Cancel|**CTRL + ATTN** |
+|Build.Compile|**Ctrl+F7** |
+|Build.RunCodeAnalysisonSolution|**Alt+F11**|
+
+#### <a name="debug-popular-shortcuts"></a>Débogage : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|Debug.BreakatFunction|**CTRL + B**|
+|Debug.BreakAll|**Ctrl + Alt + Attn**|
+|Debug.DeleteAllBreakpoints|**CTRL + MAJ + F9**|
+|Debug.Exceptions|**Ctrl + Alt + E**|
+|Debug.QuickWatch|**Ctrl + Alt + Q**<br /><br />ou **MAJ + F9**|
+|Debug.Restart|**Ctrl+Maj+F5**|
+|Debug.RunToCursor|**Ctrl + F10**|
+|Debug.SetNextStatement|**Ctrl+Maj+F10**|
+|Debug.Start|**F5**|
+|Debug.StartWithoutDebugging|**CTRL + F5**|
+|Debug.StepInto|**F11**|
+|Debug.StepOut|**Maj + F11**|
+|Debug.StepOver|**F10**|
+|Debug.StopDebugging|**Maj + F5**|
+|Debug.ToggleBreakpoint|**F9**|
+
+#### <a name="edit-popular-shortcuts"></a>Modifier : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|Edit.BreakLine|**Entrée** [éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **MAJ + entrée** [éditeur de texte]|
+|Edit.CollapseToDefinitions|**Ctrl + M**, **Ctrl + O** [éditeur de texte]|
+|Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [éditeur de texte]|
+|Edit.CompleteWord|**Alt + flèche droite** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **Ctrl + barre d’espace** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K**, **W** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, CTRL + W** [Concepteur de flux de travail]|
+|Edit.Copy|**Ctrl + C**<br /><br />ou **Ctrl + Inser**|
+|Edit.Cut|**Ctrl+X**<br /><br />ou **MAJ + SUPPR**|
+|Edit.Delete|**Supprimer** [Team Explorer]<br /><br />ou **MAJ + SUPPR** [diagramme de séquence, diagramme d’activités UML, diagramme de couche]<br /><br />ou **Ctrl + Suppr** [diagramme de classes]|
+|Edit.Find|**Ctrl + F**|
+|Edit.FindAllReferences|**Maj + F12**|
+|Edit.FindinFiles|**Ctrl + Maj + F**|
+|Edit.FindNext|**F3**|
+|Edit.FindNextSelected|**CTRL + F3**|
+|Edit.FormatDocument|**CTRL + K, Ctrl + D** [éditeur de texte]|
+|Edit.FormatSelection|**CTRL + K, Ctrl + F** [éditeur de texte]|
+|Edit.GoTo|**CTRL + G**|
+|Edit.GoToDeclaration|**Ctrl + F12**|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**Ctrl+D**|
+|Edit.GoToNextLocation|**F8**|
+|Edit.InsertSnippet|**CTRL + K**, **CTRL + X**|
+|Edit.InsertTab|**Onglet** [Concepteur de rapports, Concepteur Windows Forms, éditeur de texte]|
+|Edit.LineCut|**Ctrl + L** [éditeur de texte]|
+|Edit.LineDownExtendColumn|**Maj + Alt + flèche bas** [éditeur de texte]|
+|Edit.LineOpenAbove|**Ctrl + Entrée** [éditeur de texte]|
+|Edit.ListMembers|**Ctrl + J** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K, Ctrl + L** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, L** [Concepteur de flux de travail]|
+|Edit.NavigateTo|**CTRL +,**|
+|Edit.OpenFile|**Ctrl + Maj + G**|
+|Edit.OvertypeMode|**Insérer** [éditeur de texte]|
+|Edit.ParameterInfo|**Ctrl + Maj + barre d’espace** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K, Ctrl + P** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, P** [Concepteur de flux de travail]|
+|Edit.Paste|**Ctrl+V**<br /><br />ou **Maj + Inser**|
+|Edit.PeekDefinition|**ALT + F12** [éditeur de texte]|
+|Edit.Redo|**CTRL + Y**<br /><br />ou **Maj + Alt + Retour arrière**<br /><br />ou **Ctrl + Maj + Z**|
+|Edit.Replace|**Ctrl + H**|
+|Edit.SelectAll|**Ctrl+A**|
+|Edit.SelectCurrentWord|**CTRL + W** [éditeur de texte]|
+|Edit.SelectionCancel|**Échap** [éditeur de texte, concepteur de rapports, concepteur de paramètres, Concepteur Windows Forms, éditeur de ressources managées]|
+|Edit.SurroundWith|**Ctrl + K, CTRL + S**|
+|Edit.TabLeft|**MAJ + TAB** [éditeur de texte, concepteur de rapports, éditeur de Windows Forms]|
+|Edit.ToggleAllOutlining|**Ctrl + M, Ctrl + L** [éditeur de texte]|
+|Edit.ToggleBookmark|**CTRL + k, CTRL + k** [éditeur de texte]|
+|Edit.ToggleCompletionMode|**Ctrl + Alt + espace** [éditeur de texte]|
+|Edit.ToggleOutliningExpansion|**CTRL + m, CTRL + m** [éditeur de texte]|
+|Edit.UncommentSelection|**CTRL + K, Ctrl + U** [éditeur de texte]|
+|Edit.Undo|**Ctrl+Z**<br /><br />ou **Alt + Retour arrière**|
+|Edit.WordDeleteToEnd|**Ctrl + Suppr** [éditeur de texte]|
+|Edit.WordDeleteToStart|**Ctrl + Retour arrière** [éditeur de texte]|
+
+#### <a name="file-popular-shortcuts"></a>Fichier : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|File.Exit|**ALT + F4**|
+|File.NewFile|**Ctrl + N**|
+|File.NewProject|**Ctrl + Maj + N**|
+|File.NewWebSite|**Maj+Alt+N**|
+|File.OpenFile|**Ctrl+O**|
+|File.OpenProject|**Ctrl + Maj + O**|
+|File.OpenWebSite|**Maj+Alt+O**|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**Ctrl + Maj + S**|
+|File.SaveSelectedItems|**Ctrl+S**|
+|File.ViewinBrowser|**Ctrl + Maj + W**|
+
+#### <a name="project-popular-shortcuts"></a>Projet : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|Project.AddExistingItem|**Maj + Alt + A**|
+|Project.AddNewItem|**Ctrl + Maj + A**|
+
+#### <a name="refactor-popular-shortcuts"></a>Refactoriser : raccourcis populaires
+
+|Commande|Raccourci clavier [contextes spéciaux]|
+|-------------| - |
+|Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
+
+#### <a name="tools-popular-shortcuts"></a>Outils : raccourcis populaires
+
+|Commande|Raccourci clavier [contextes spéciaux]|
+|-------------| - |
+|Tools.AttachtoProcess|**Ctrl + Alt + P**|
+
+#### <a name="view-popular-shortcuts"></a>Affichage : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|View.ClassView|**Ctrl + Maj + C**|
+|View.EditLabel|**F2**|
+|View.ErrorList|**Ctrl + \\ , Ctrl + E**<br /><br />ou **CTRL + \\ , E**|
+|View.NavigateBackward|**Ctrl +-**|
+|View.NavigateForward|**Ctrl + Maj +-**|
+|View.ObjectBrowser|**Ctrl + Alt + J**|
+|View.Output|**Ctrl + Alt + O**|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer]|
+|View.ServerExplorer|**Ctrl + Alt + S**|
+|View.ShowSmartTag|**Ctrl +.**<br /><br />ou **Maj + Alt + F10** [mode Design de l’éditeur HTML]|
+|View.SolutionExplorer|**CTRL + ALT + L**|
+|View.TfsTeamExplorer|**Ctrl + \\ , Ctrl + M**|
+|View.Toolbox|**CTRL + ALT + X**|
+|View.ViewCode|**Entrée** [diagramme de classes]<br /><br />ou **F7** [Concepteur de paramètres]|
+|View.ViewDesigner|**MAJ + F7** [vue source de l’éditeur HTML]|
+
+#### <a name="window-popular-shortcuts"></a>Fenêtre : raccourcis populaires
+
+|Commandes|Raccourcis clavier [contextes spéciaux]|
+|--------------| - |
+|Window.ActivateDocumentWindow|**Échap**|
+|Window.CloseDocumentWindow|**CTRL + F4**|
+|Window.NextDocumentWindow|**Ctrl + F6**|
+|Window.NextDocumentWindowNav|**CTRL + TAB**|
+|Window.NextSplitPane|**F6**|
+
+
+## <a name="global-shortcuts"></a>Raccourcis globaux
+
+Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utiliser lors de n’importe quelle fenêtre de Visual Studio est active.
 
 - [Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Modifier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -59,10 +219,6 @@ Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez 
 - [Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Microsoft Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Concentrateur de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
-
-## <a name="global-shortcuts"></a>Raccourcis globaux
-
-Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utiliser lors de n’importe quelle fenêtre de Visual Studio est active.
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> Analyse
 
@@ -466,7 +622,12 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl + num \* , Ctrl + R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl + num \* , Ctrl + D**|
 
-## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+## <a name="context-specific-shortcuts"></a>Raccourcis spécifiques au contexte
+
+
+### <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -481,7 +642,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.EntityDataModelBrowser|**CTRL + 1**|
 |View.EntityDataModelMappingDetails|**CTRL + 2**|
 
-## <a name="class-diagram"></a>Diagramme de classes
+### <a name="class-diagram"></a>Diagramme de classes
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -493,7 +657,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.RemovefromDiagram|**Supprimer**|
 |View.ViewCode|**Entrée**|
 
-## <a name="coded-ui-test-editor"></a>Éditeur de test codé de l'interface utilisateur
+### <a name="coded-ui-test-editor"></a>Éditeur de test codé de l'interface utilisateur
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -504,14 +671,20 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Maj + T**|
 
-## <a name="dataset-editor"></a>Éditeur DataSet
+### <a name="dataset-editor"></a>Éditeur DataSet
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Insérer**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl + L**|
 
-## <a name="difference-viewer"></a>Visionneuse de différences
+### <a name="difference-viewer"></a>Visionneuse de différences
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -527,7 +700,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |EditorContextMenus.CodeWindow.AddComment|**CTRL+Maj+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl + Maj + P**|
 
-## <a name="dom-explorer"></a>Explorateur DOM
+### <a name="dom-explorer"></a>Explorateur DOM
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -535,13 +711,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |DOMExplorer.SelectElement|**CTRL + B**|
 |DOMExplorer.ShowLayout|**Ctrl + Maj + I**|
 
-## <a name="f-interactive"></a>F# interactif
+### <a name="f-interactive"></a>F# interactif
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL + ATTN**|
 
-## <a name="graph-document-editor"></a>Éditeur de document de graphique
+### <a name="graph-document-editor"></a>Éditeur de document de graphique
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -553,11 +735,14 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Supprimer**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-## <a name="graphics-diagnostics"></a>Graphics Diagnostics
+### <a name="graphics-diagnostics"></a>Graphics Diagnostics
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|None|
+|Debug.Graphics.CaptureFrame|Aucun|
 |Graphics.MovePixelSelectionDown|**Maj+Alt+Bas**|
 |Graphics.MovePixelSelectionLeft|**Maj + Alt + flèche gauche**|
 |Graphics.MovePixelSelectionRight|**Maj + Alt + flèche droite**|
@@ -567,13 +752,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Graphics.ZoomIn|**Maj + Alt + =**|
 |Graphics.ZoomOut|**Maj + Alt +-**|
 
-## <a name="html-editor"></a>Éditeur HTML
+### <a name="html-editor"></a>Éditeur HTML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
-## <a name="html-editor-design-view"></a>Éditeur HTML en mode Design
+### <a name="html-editor-design-view"></a>Éditeur HTML en mode Design
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -596,7 +787,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.ViewMarkup|**Maj+F7**|
 |Window.PreviousTab|**Ctrl+Pg préc**|
 
-## <a name="html-editor-source-view"></a>Éditeur HTML en mode Source
+### <a name="html-editor-source-view"></a>Éditeur HTML en mode Source
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -606,13 +800,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.ViewDesigner|**Maj+F7**|
 |Window.PreviousTab|**Ctrl+Pg préc**|
 
-## <a name="layer-diagram"></a>Diagramme de couche
+### <a name="layer-diagram"></a>Diagramme de couche
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.Delete|**Maj + Suppr**|
 
-## <a name="managed-resources-editor"></a>Éditeur de ressources managées
+### <a name="managed-resources-editor"></a>Éditeur de ressources managées
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -627,7 +827,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Resources.Other|**Ctrl + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-## <a name="merge-editor-window"></a>Fenêtre de l’éditeur de fusion
+### <a name="merge-editor-window"></a>Fenêtre de l’éditeur de fusion
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -635,7 +838,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparaison de schémas
+### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparaison de schémas
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -646,7 +852,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |SQL.SSDTSchemaCompareStop|**Alt + Attn**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Maj+Alt+U**|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Concepteur de tables
+### <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Concepteur de tables
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -657,7 +866,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |SQL.Rename|**F2**<br /><br /> ou<br /><br /> **Ctrl+R, R**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Maj+Alt+Pg suiv**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL
+### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -678,7 +890,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Maj+Alt+Pg suiv**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -693,13 +908,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Maj+Alt+Pg suiv**|
 
-## <a name="page-inspector"></a>Inspecteur de page
+### <a name="page-inspector"></a>Inspecteur de page
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-## <a name="query-designer"></a>Concepteur de requêtes
+### <a name="query-designer"></a>Concepteur de requêtes
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -712,7 +933,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
 
-## <a name="query-results"></a>Résultats de la requête
+### <a name="query-results"></a>Résultats de la requête
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -720,7 +944,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |SQL.QueryResultsRefresh|**Maj+Alt+R**|
 |SQL.QueryResultsStop|**Alt + Attn**|
 
-## <a name="report-designer"></a>Concepteur de rapports
+### <a name="report-designer"></a>Concepteur de rapports
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -746,14 +973,20 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.TabLeft|**Maj + Tab**|
 |View.ReportData|**CTRL + ALT + D**|
 
-## <a name="sequence-diagram"></a>Diagramme de séquence
+### <a name="sequence-diagram"></a>Diagramme de séquence
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Maj+Suppr**|
 
-## <a name="settings-designer"></a>Concepteur de paramètres
+### <a name="settings-designer"></a>Concepteur de paramètres
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -762,13 +995,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.SelectionCancel|**Échap**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Explorateur de solutions
+### <a name="solution-explorer"></a>Explorateur de solutions
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
-## <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer"></a>Team Explorer
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
@@ -793,13 +1032,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Maj+Alt+L**|
 |View.Refresh|**F5**|
 
-## <a name="test-explorer"></a>Explorateur de tests
+### <a name="test-explorer"></a>Explorateur de tests
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>Éditeur de texte
+### <a name="text-editor"></a>Éditeur de texte
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 | Commandes | Raccourcis clavier |
 | - | - |
@@ -918,38 +1163,56 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+Pg préc** |
 
-## <a name="uml-activity-diagram"></a>Diagramme d'activités UML
+### <a name="uml-activity-diagram"></a>Diagramme d'activités UML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.Delete|**Maj+Suppr**|
 
-## <a name="uml-class-diagram"></a>Diagramme de classes UML
+### <a name="uml-class-diagram"></a>Diagramme de classes UML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-## <a name="uml-component-diagram"></a>Diagramme de composant UML
+### <a name="uml-component-diagram"></a>Diagramme de composant UML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-## <a name="uml-use-case-diagram"></a>Diagramme de cas d'usage UML
+### <a name="uml-use-case-diagram"></a>Diagramme de cas d'usage UML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-## <a name="vc-accelerator-editor"></a>Éditeur d'accélérateurs VC
+### <a name="vc-accelerator-editor"></a>Éditeur d'accélérateurs VC
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |Edit.NewAccelerator|**Insérer**|
 |Edit.NextKeyTyped|**CTRL + W**|
 
-## <a name="vc-dialog-editor"></a>Éditeur de boîtes de dialogue VC
+### <a name="vc-dialog-editor"></a>Éditeur de boîtes de dialogue VC
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -983,7 +1246,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**CTRL + G**|
 
-## <a name="vc-image-editor"></a>Éditeur d'images VC
+### <a name="vc-image-editor"></a>Éditeur d'images VC
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1025,13 +1291,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Image.ZoomIn|**Ctrl + Maj +.**<br /><br /> ou<br /><br /> **Ctrl + flèche haut**|
 |Image.ZoomOut|**Ctrl + Maj +,**<br /><br /> ou<br /><br /> **Ctrl + flèche bas**|
 
-## <a name="vc-string-editor"></a>Éditeur de chaînes VC
+### <a name="vc-string-editor"></a>Éditeur de chaînes VC
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.NewString|**Insérer**|
 
-## <a name="view-designer"></a>Concepteur de vue
+### <a name="view-designer"></a>Concepteur de vue
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1044,13 +1316,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**Ctrl + 3**|
 
-## <a name="visual-studio"></a>Visual Studio
+### <a name="visual-studio"></a>Visual Studio
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL + 1**|
 
-## <a name="windows-forms-designer"></a>Concepteur Windows Forms
+### <a name="windows-forms-designer"></a>Concepteur Windows Forms
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1079,7 +1357,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.SizeControlUp|**Ctrl + Maj + haut**|
 |Edit.TabLeft|**Maj + Tab**|
 
-## <a name="work-item-editor"></a>Éditeur d'élément de travail
+### <a name="work-item-editor"></a>Éditeur d'élément de travail
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1087,7 +1368,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Maj+Alt+L**|
 
-## <a name="work-item-query-view"></a>Affichage des requêtes d'élément de travail
+### <a name="work-item-query-view"></a>Affichage des requêtes d'élément de travail
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1098,7 +1382,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Team.Refresh|**F5**|
 |Window.Toggle|**Maj+Alt+V**|
 
-## <a name="work-item-results-view"></a>Affichage des résultats des éléments de travail
+### <a name="work-item-results-view"></a>Affichage des résultats des éléments de travail
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1111,7 +1398,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Team.Refresh|**F5**|
 |Window.Toggle|**Maj+Alt+V**|
 
-## <a name="workflow-designer"></a>Concepteur de flux de travail
+### <a name="workflow-designer"></a>Concepteur de flux de travail
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1139,7 +1429,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl + num-**|
 
-## <a name="xaml-ui-designer"></a>Concepteur XAML
+### <a name="xaml-ui-designer"></a>Concepteur XAML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1161,14 +1454,20 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.EdgeRightMoveRight|**Ctrl + Maj + Alt +.**|
 |View.ShowPropertyMarkerMenu|**Ctrl + barre d’espace**|
 
-## <a name="xml-text-editor"></a>Éditeur XML (Texte)
+### <a name="xml-text-editor"></a>Éditeur XML (Texte)
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt + F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-## <a name="xml-schema-designer"></a>Concepteur de schémas XML
+### <a name="xml-schema-designer"></a>Concepteur de schémas XML
+
+Les raccourcis spécifiques à ce contexte sont les suivants :
+
 
 |Commandes|Raccourcis clavier|
 |--------------| - |

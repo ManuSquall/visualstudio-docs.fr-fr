@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221247"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038601"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
@@ -35,7 +35,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 - Le contexte dans lequel vous êtes au moment de choisir le raccourci. Par exemple, le raccourci **F2** appelle la commande `Edit.EditCell` si vous utilisez le **concepteur de paramètres** et invoque la commande `File.Rename` si vous utilisez **Team Explorer**.
 
-Indépendamment des paramètres, de la personnalisation et du contexte, vous pouvez toujours rechercher et changer un raccourci clavier dans la boîte de dialogue **Options**. Vous pouvez également rechercher les raccourcis clavier par défaut pour plusieurs dizaines de commandes dans [Raccourcis clavier populaires](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md). Pour obtenir la liste complète des raccourcis par défaut (en fonction des paramètres de **Développement général**), consultez [Tous les raccourcis clavier](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Indépendamment des paramètres, de la personnalisation et du contexte, vous pouvez toujours rechercher et changer un raccourci clavier dans la boîte de dialogue **Options**. Vous pouvez également rechercher les raccourcis clavier par défaut pour plusieurs dizaines de commandes dans [Raccourcis clavier populaires](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts). Pour obtenir la liste complète des raccourcis par défaut (en fonction des paramètres de **Développement général**), consultez [Tous les raccourcis clavier](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Si un raccourci est affecté à une commande du contexte *global* et à aucun autre contexte, ce raccourci appelle toujours cette commande. Mais un raccourci peut être affecté à une commande du contexte global et à une commande différente dans un contexte spécifique. Si vous utilisez un raccourci lorsque vous êtes dans le contexte spécifique, ce raccourci appelle la commande pour ce contexte spécifique, et non le contexte global.
 

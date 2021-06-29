@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6de31ed1b649f226ac47161fdadfe44d434289b9
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 09a33db9df8e1309792cd6a3722bb82333348d84
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308517"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038653"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -64,7 +64,7 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 > [!NOTE]
 > Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes ci-dessus, restaurez vos combinaisons de touches aux valeurs par défaut de Visual Studio en accédant à **Outils**  >  **importation et exportation de paramètres**  >  **Réinitialiser tous les paramètres** ou **Outils**  >  **options**  >    >  **Réinitialiser** le clavier.
 
-Pour plus d’informations sur les raccourcis clavier et les commandes, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md) et [Raccourcis clavier populaires](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
+Pour plus d’informations sur les raccourcis clavier et les commandes, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md) et [Raccourcis clavier populaires](default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="navigate-quickly-to-files-or-types"></a>Accéder rapidement aux fichiers ou aux types
 
@@ -182,7 +182,7 @@ Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rec
 
 Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code sensibles au contexte](/visualstudio/intellicode/intellicode-visual-studio) au lieu d’une simple une liste alphabétique. Vous pouvez également entraîner un [modèle IntelliSense personnalisé](/visualstudio/intellicode/custom-model-faq) en vous basant sur vos propres bibliothèques spécifiques à un domaine.
 
-## <a name="unit-testing"></a>Test des unités
+## <a name="unit-testing"></a>Effectuer des tests unitaires
 
 À partir de Visual Studio 2017, les améliorations de l’expérience de test sont nombreuses. Vous pouvez tester avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
 
