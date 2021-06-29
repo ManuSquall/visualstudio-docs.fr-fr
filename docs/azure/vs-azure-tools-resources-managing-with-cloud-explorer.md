@@ -7,14 +7,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 532195bad81fc9162b854493d5aca9bb2fa7f600
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08ccab99df40247390894aa53d5073a3aff0c561
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843941"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997655"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gérer les ressources associées à vos comptes Azure dans Visual Studio Cloud Explorer
+
+::: moniker range=">=vs-2022"
+> [!Important]
+> Cloud Explorer a été mis hors service dans Visual Studio 2022. Au lieu de cela, vous pouvez utiliser les alternatives suivantes :
+> - Utilisez [Explorateur stockage Microsoft Azure](/azure/vs-azure-tools-storage-manage-with-storage-explorer) est une application autonome et gratuite de Microsoft. Vous pouvez l’utiliser pour travailler visuellement avec les données du stockage Azure sur Windows, macOS et Linux.
+> - La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) vous donne un accès direct à partir d’une ligne de commande avec des privilèges élevés au serveur App Service et à son système de fichiers. Il s’agit d’un outil précieux pour le débogage, qui autorise en outre les opérations CLI, comme l’installation de packages.
+>
+> Si nécessaire, vous pouvez utiliser le portail Azure ou continuer à utiliser le nœud Azure de Explorateur de serveurs dans les versions précédentes de Visual Studio.
+>
+> Pour plus d’informations sur Visual Studio 2022, consultez nos [notes de publication](/visualstudio/releases/2022/release-notes-preview/).
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Cloud Explorer vous permet de visualiser vos groupes de ressources et vos ressources Azure, d’inspecter leurs propriétés et d’exécuter des actions de diagnostic de développeur essentielles à partir de Visual Studio.
 
@@ -104,3 +118,5 @@ Pour rechercher des ressources portant un nom spécifique dans vos abonnements d
   ![Trouver des ressources dans Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
 Lorsque vous entrez des caractères dans la zone de **recherche** , seules les ressources qui correspondent à ces caractères apparaissent dans l’arborescence des ressources.
+
+::: moniker-end
