@@ -1,17 +1,17 @@
 ---
-ms.date: 05/28/2021
+ms.date: 06/29/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 128a09500aaa326fad717efcade9040496452963
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
+ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112361820"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113113664"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -29,7 +29,7 @@ ms.locfileid: "112361820"
 
 Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Outil principales dont vous êtes susceptible de vous servir :
 
-- L’[Explorateur de solutions](../../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../tutorial-projects-solutions.md).
+- L’[Explorateur de solutions](../../ide/use-solution-explorer.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../../ide/use-solution-explorer.md).
 
 - La [fenêtre de l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pouvez modifier le code ou concevoir une interface utilisateur telle qu’une fenêtre avec des boutons et des zones de texte.
 
