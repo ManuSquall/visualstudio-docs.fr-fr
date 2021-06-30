@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
-ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
+ms.openlocfilehash: 23c4fcc02f94f5987ccbfd6c445188990db43de0
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "113038640"
+ms.locfileid: "113046077"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -32,8 +32,6 @@ Pour obtenir la liste des raccourcis clavier courants et d'autres informations s
 - [Conseils de productivité](../ide/productivity-features.md).
 
 Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Comment : utiliser le clavier en mode exclusif](../ide/reference/how-to-use-the-keyboard-exclusively.md).
-
-
 
 ## <a name="most-popular-keyboard-shortcuts"></a>Raccourcis clavier les plus populaires
 

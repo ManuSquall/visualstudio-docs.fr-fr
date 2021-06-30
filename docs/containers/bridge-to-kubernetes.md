@@ -1,31 +1,40 @@
 ---
-title: Utiliser Bridge to Kubernetes avec Visual Studio
-titleSuffix: ''
+title: 'Didacticiel : connecter des machines de développement avec Bridge à Kubernetes'
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: Découvrez comment utiliser Bridge pour Kubernetes avec Visual Studio pour connecter votre ordinateur de développement à un cluster Kubernetes
+ms.topic: tutorial
+description: Connectez votre ordinateur de développement à un cluster Kubernetes avec Bridge to Kubernetes avec Visual Studio.
 keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Dockr, Kubernetes, Azure, containers
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635035"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046116"
 ---
-# <a name="use-bridge-to-kubernetes"></a>Utiliser Bridge pour Kubernetes
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>Didacticiel : utiliser Bridge pour Kubernetes pour connecter vos clusters et vos ordinateurs de développement
 
-Vous pouvez utiliser Bridge to Kubernetes pour rediriger le trafic entre votre cluster Kubernetes et le code qui s’exécute sur votre ordinateur de développement. Ce guide fournit également un script pour le déploiement d’un exemple d’application volumineux avec plusieurs microservices sur un cluster Kubernetes.
+Dans ce didacticiel, vous allez apprendre à utiliser Bridge to Kubernetes pour rediriger le trafic entre votre cluster Kubernetes et le code qui s’exécute sur votre ordinateur de développement. 
 
-## <a name="before-you-begin"></a>Avant de commencer
+Ce guide fournit également un script pour le déploiement d’un exemple d’application volumineux avec plusieurs microservices sur un cluster Kubernetes.
 
-Ce guide utilise l' [exemple d’application todo][todo-app-github] pour illustrer la connexion de votre ordinateur de développement à un cluster Kubernetes. Si vous disposez déjà de votre propre application s’exécutant sur un cluster Kubernetes, vous pouvez toujours suivre les étapes ci-dessous et utiliser les noms de vos propres services.
+En savoir plus sur Bridge to Kubernetes avec l’article [How Bridge to Kubernetes Works](overview-bridge-to-kubernetes.md).
 
-Cet exemple illustre la façon dont Bridge to Kubernetes peut être utilisé pour développer une version de microservice d’une application TODO simple sur un cluster Kubernetes. Cet exemple, à l’aide de Visual Studio, a été adapté à partir du code fourni par [TodoMVC](http://todomvc.com). Ces étapes doivent fonctionner avec n’importe quel cluster Kubernetes.
+## <a name="prerequisites"></a>Prérequis
+
+- Un cluster Kubernetes
+- [Visual Studio 2019][visual-studio] version 16,7 Preview 4 ou une version ultérieure s’exécutant sur Windows 10.
+- [Extension de pont vers Kubernetes installée][btk-extension]
+
+## <a name="about-the-data"></a>À propos des données
+
+Ce didacticiel utilise Bridge to Kubernetes pour développer une version de microservice d’un exemple d’application TODO simple sur un cluster Kubernetes. Cet [exemple d’application todo][todo-app-github], à l’aide de Visual Studio, a été adapté à partir du code fourni par [TodoMVC](http://todomvc.com). 
+
+ Ces étapes doivent fonctionner avec n’importe quel cluster Kubernetes. Par conséquent, si vous avez déjà votre propre application en cours d’exécution sur un cluster Kubernetes, vous pouvez toujours suivre les étapes ci-dessous et utiliser les noms de vos propres services.
 
 L’exemple d’application TODO est constitué d’un serveur frontal et d’un backend qui fournit un stockage persistant. Cet exemple étendu ajoute un composant de statistiques et décompose l’application en plusieurs microservices, en particulier :
 
@@ -37,15 +46,10 @@ L’exemple d’application TODO est constitué d’un serveur frontal et d’un
 
 En tout, cette application TODO étendue est composée de six composants reliés entre eux.
 
-### <a name="prerequisites"></a>Prérequis
-
-- un cluster Kubernetes
-- [Visual Studio 2019][visual-studio] version 16,7 Preview 4 ou une version ultérieure s’exécutant sur Windows 10.
-- [Extension de pont vers Kubernetes installée][btk-extension].
 
 ## <a name="check-the-cluster"></a>Vérifier le cluster
 
-Ouvrez une invite de commandes et vérifiez que kubectl est installé et sur le chemin d’accès, que le cluster que vous souhaitez utiliser est disponible et prêt, puis définissez le contexte sur ce cluster.
+Ouvrez une invite de commandes et vérifiez que l' `kubectl` est installé et sur le chemin d’accès, le cluster que vous souhaitez utiliser est disponible et prêt, puis définissez le contexte sur ce cluster.
 
 ```cmd
 kubectl cluster-info

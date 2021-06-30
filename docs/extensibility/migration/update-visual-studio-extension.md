@@ -9,12 +9,12 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
-ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
+ms.openlocfilehash: 512e9a71cde5ca29c737c1623aa0c8f9c37dd60d
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "112424651"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046129"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Mettre à jour une extension Visual Studio pour Visual Studio 2022
 
@@ -25,7 +25,7 @@ ms.locfileid: "112424651"
 
 Vous pouvez mettre à jour votre extension de façon à ce qu’elle fonctionne avec Visual Studio 2022 Preview en suivant ce guide. Visual Studio 2022 Preview est une application 64 bits et présente des modifications avec rupture dans le kit de développement logiciel (SDK) VS. Ce guide vous guide tout au long des étapes requises pour faire fonctionner votre extension avec la version préliminaire actuelle de Visual Studio 2022. votre extension peut donc être prête à être installée par les utilisateurs avant que Visual Studio 2022 n’atteigne la disponibilité générale.
 
-## <a name="installing"></a>En cours d'installation
+## <a name="installing"></a>Installation
 
 Installez Visual Studio 2022 Preview dans [Visual studio 2022 Preview downloads](https://visualstudio.microsoft.com/vs/preview/vs2022)(en anglais).
 
@@ -105,7 +105,7 @@ Avant d’ajouter la prise en charge de Visual Studio 2022 à votre extension, n
    >-<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop.8.0" />
-   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" >Version="..." />
+   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" Version="..." />
    >```
 
    Veillez à sélectionner les versions de package qui correspondent à la version minimale de Visual Studio que vous ciblez.
@@ -309,7 +309,7 @@ Vous pouvez partager votre extension sur un réseau local ou tout autre moyen. S
 
 ### <a name="other-considerations"></a>Autres considérations
 
-#### <a name="dependencies"></a>Dépendances
+#### <a name="dependencies"></a>Les dépendances
 
 Si votre extension VSIX spécifie un autre VSIX en tant que dépendance par le biais de l' `<dependency>` élément, chaque extension VSIX référencée doit être installée dans les mêmes cibles et architectures de produit que votre extension VSIX. Si un VSIX dépendant ne prend pas en charge l’installation ciblée de Visual Studio, votre extension VSIX échoue. Il est OK que le VSIX dépendant prenne en charge plus de cibles et d’architectures que la vôtre, juste au moins. Cette restriction signifie que l’approche de déploiement et de distribution d’un VSIX avec des dépendances doit refléter celle de leurs dépendants.
 
