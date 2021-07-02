@@ -1,6 +1,6 @@
 ---
 title: 'Procédure pas à pas : création d’un SDK à l’aide de C++ | Microsoft Docs'
-description: Découvrez comment créer un kit de développement logiciel (SDK) de bibliothèque mathématique C++ natif, empaqueter le kit de développement logiciel (SDK) en tant qu’extension Visual Studio, puis l’utiliser pour créer une application à l’aide de cette procédure pas à pas.
+description: découvrez comment créer un kit de développement logiciel (sdk) de bibliothèque mathématique C++ natif, empaqueter le kit de développement logiciel (sdk) en tant qu’Extension Visual Studio, puis l’utiliser pour créer une application à l’aide de cette procédure pas à pas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,30 +10,30 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743759896bf1de104825825d450be081ab2cc666
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 6a52322e575dc201a6bf1648af93d813828e0b17
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217422"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113223005"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procédure pas à pas : création d’un SDK à l’aide de C++
-Cette procédure pas à pas montre comment créer un kit de développement logiciel (SDK) de bibliothèque mathématique C++ natif, empaqueter le kit de développement logiciel (SDK) en tant qu’extension Visual Studio (VSIX), puis l’utiliser pour créer une application. La procédure pas à pas est divisée en étapes :
+cette procédure pas à pas montre comment créer un kit de développement logiciel (sdk) de bibliothèque mathématique C++ natif, empaqueter le kit de développement logiciel (sdk) en tant qu’Extension de Visual Studio (VSIX), puis l’utiliser pour créer une application. La procédure pas à pas est divisée en étapes :
 
-- [Pour créer les bibliothèques natives et Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [pour créer les bibliothèques natives et Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
 - [Pour créer le projet d’extension NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
 - [Pour créer un exemple d’application qui utilise la bibliothèque de classes](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Prérequis
- Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).
+ Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> Pour créer les bibliothèques natives et Windows Runtime
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>pour créer les bibliothèques natives et Windows Runtime
 
-1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
+1. dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **Project**.
 
-2. Dans la liste des modèles, développez **Visual C++**  >  **Windows Universal**, puis sélectionnez le modèle **dll (applications universelles Windows)** . Dans la zone **nom** , spécifiez `NativeMath` , puis choisissez le bouton **OK** .
+2. dans la liste des modèles, développez **Visual C++**  >  **Windows universel**, puis sélectionnez le modèle **DLL (Windows universal apps)** . Dans la zone **nom** , spécifiez `NativeMath` , puis choisissez le bouton **OK** .
 
 3. Mettez à jour *NativeMath. h* pour qu’il corresponde au code suivant.
 
@@ -43,9 +43,9 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
      :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
-5. Dans **Explorateur de solutions**, ouvrez le menu contextuel de la **solution’NativeMath'**, puis choisissez **Ajouter**  >  **un nouveau projet**.
+5. dans **Explorateur de solutions**, ouvrez le menu contextuel de la **Solution’NativeMath'**, puis choisissez **ajouter**  >  **un nouveau Project**.
 
-6. Dans la liste des modèles, développez **Visual C++**, puis sélectionnez le modèle de **composant Windows Runtime** . Dans la zone **nom** , spécifiez `NativeMathWRT` , puis choisissez le bouton **OK** .
+6. dans la liste des modèles, développez **Visual C++**, puis sélectionnez le modèle de **composant Windows Runtime** . Dans la zone **nom** , spécifiez `NativeMathWRT` , puis choisissez le bouton **OK** .
 
 7. Mettez à jour *Class1. h* pour qu’il corresponde à ce code :
 
@@ -59,16 +59,31 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 ## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Pour créer le projet d’extension NativeMathVSIX
 
-1. Dans **Explorateur de solutions**, ouvrez le menu contextuel de la **solution’NativeMath'**, puis choisissez **Ajouter**  >  **un nouveau projet**.
+1. dans **Explorateur de solutions**, ouvrez le menu contextuel de la **Solution’NativeMath'**, puis choisissez **ajouter**  >  **un nouveau Project**.
 
-2. Dans la liste des modèles, développez extensibilité **Visual C#**  >  , puis sélectionnez **projet VSIX**. Dans la zone **nom** , spécifiez **NativeMathVSIX**, puis choisissez le bouton **OK** .
+2. dans la liste des modèles, développez extensibilité **Visual C#**  >  , puis sélectionnez **Project VSIX**. Dans la zone **nom** , spécifiez **NativeMathVSIX**, puis choisissez le bouton **OK** .
 
 3. Dans **Explorateur de solutions**, ouvrez le menu contextuel de **source. extension. vsixmanifest**, puis choisissez **afficher le code**.
 
 4. Utilisez le code XML suivant pour remplacer le XML existant.
 
-    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
-
+    ```xml
+    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+      <Metadata>
+        <Identity Id="NativeMathVSIX..c6b3cae1-e7e2-4e71-90f6-21017ea0dff7" Version="1.0" Language="en-US" Publisher="MyName" />
+        <DisplayName>Native Math SDK</DisplayName>
+        <Description>Native Math Library w/ Windows Runtime Additions</Description>
+      </Metadata>
+      <Installation Scope="Global" AllUsers="true">
+        <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.0" SdkName="NativeMathSDK" SdkVersion="1.0" />
+      </Installation>
+      <Dependencies>
+      </Dependencies>
+      <Assets>
+        <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+      </Assets>
+    </PackageManifest>
+    ```
 
 5. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **NativeMathVSIX** , puis choisissez **Ajouter**  >  **un nouvel élément**.
 
@@ -125,7 +140,7 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
     </Project>
     ```
 
-12. Dans la barre de menus, choisissez **Afficher** les  >  **autres** fenêtres  >  **Propriétés** Windows (clavier : Appuyez sur la touche **F4** ).
+12. dans la barre de menus, choisissez **afficher**  >  **autres Windows**  >  **fenêtre propriétés** (clavier : appuyez sur la touche **F4** ).
 
 13. Dans **Explorateur de solutions**, sélectionnez le fichier **NativeMathWRT. winmd** . Dans la fenêtre **Propriétés** , affectez à la propriété **action de génération** la valeur **contenu**, puis remplacez la propriété **inclure dans VSIX** par **true**.
 
@@ -155,17 +170,17 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 ## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 
-1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
+1. dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **Project**.
 
-2. Dans la liste des modèles, développez **Visual C++**  >  **Windows Universal** , puis sélectionnez **application vide**. Dans la zone **nom** , spécifiez **NativeMathSDKSample**, puis choisissez le bouton **OK** .
+2. dans la liste des modèles, développez **Visual C++**  >  **Windows universel** , puis sélectionnez **application vide**. Dans la zone **nom** , spécifiez **NativeMathSDKSample**, puis choisissez le bouton **OK** .
 
 3. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **NativeMathSDKSample** , puis choisissez **Ajouter** une  >  **référence**.
 
-4. Dans la boîte de dialogue **Ajouter une référence** , dans la liste des types de référence, développez **Windows universel**, puis sélectionnez **Extensions**. Enfin, activez la case à cocher **Kit de développement logiciel (SDK) Math natif** , puis choisissez le bouton **OK** .
+4. dans la boîte de dialogue **ajouter une référence** , dans la liste des types de référence, développez **Universal Windows**, puis sélectionnez **Extensions**. Enfin, activez la case à cocher **Kit de développement logiciel (SDK) Math natif** , puis choisissez le bouton **OK** .
 
 5. Affichez les propriétés du projet pour NativeMathSDKSample.
 
-    Les propriétés que vous avez définies dans *NativeMathSDK. props* ont été appliquées lorsque vous avez ajouté la référence. Vous pouvez vérifier que les propriétés ont été appliquées en examinant la propriété **Répertoires VC + +** des **Propriétés de configuration** du projet.
+    Les propriétés que vous avez définies dans *NativeMathSDK. props* ont été appliquées lorsque vous avez ajouté la référence. vous pouvez vérifier que les propriétés ont été appliquées en examinant la propriété **VC++ directories** des **propriétés de Configuration** du projet.
 
 6. Dans **Explorateur de solutions**, ouvrez **MainPage. Xaml**, puis utilisez le code XAML suivant pour remplacer son contenu :
 

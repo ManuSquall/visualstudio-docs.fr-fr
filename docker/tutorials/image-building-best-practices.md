@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f669baf6f3275f54c7e4a6ff2b31f9c260b2bb9
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837955"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222667"
 ---
 # <a name="image-layering"></a>Superposition d’images
 
@@ -178,9 +177,9 @@ COPY --from=build /app/target/file.war /usr/local/tomcat/webapps
 
 Cet exemple utilise une étape (appelée `build` ) pour effectuer la génération Java en cours à l’aide de Maven. La deuxième étape (à partir de `FROM tomcat` ) copie les fichiers de l' `build` étape. L’image finale est uniquement la dernière étape en cours de création (qui peut être remplacée à l’aide de l' `--target` indicateur).
 
-### <a name="react-example"></a>Exemple de réaction
+### <a name="react-example"></a>exemple de React
 
-Lors de la génération d’applications REACT, vous avez besoin d’un environnement de nœud pour compiler le code JS (généralement JSX), les feuilles de style SASS, etc. en HTML, JS et CSS statiques. Si vous n’êtes pas en cours de rendu côté serveur, vous n’avez même pas besoin d’un environnement de nœud pour la génération de production. Pourquoi ne pas envoyer les ressources statiques dans un conteneur Nginx statique ?
+lors de la génération d’applications React, vous avez besoin d’un environnement de nœud pour compiler le code JS (généralement JSX), les feuilles de style SASS, etc. en HTML, JS et CSS statiques. Si vous n’êtes pas en cours de rendu côté serveur, vous n’avez même pas besoin d’un environnement de nœud pour la génération de production. Pourquoi ne pas envoyer les ressources statiques dans un conteneur Nginx statique ?
 
 ```dockerfile
 FROM node:12 AS build

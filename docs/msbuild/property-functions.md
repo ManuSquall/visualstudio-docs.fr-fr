@@ -1,6 +1,6 @@
 ---
 title: Fonctions de propriétés | Microsoft Docs
-description: Découvrez comment utiliser les fonctions de propriété, qui sont des appels à .NET Framework méthodes qui apparaissent dans les définitions de propriété MSBuild.
+description: découvrez comment utiliser les fonctions de propriété, qui sont des appels à .NET Framework méthodes qui apparaissent dans MSBuild définitions de propriétés.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
@@ -12,22 +12,22 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4a6254f15a4108c525231d0e5e93c6fc71bfb3
-ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
+ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110413336"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222952"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
-Les fonctions de propriété sont des appels à .NET Framework méthodes qui s’affichent dans les définitions de propriété MSBuild. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.
+les fonctions de propriété sont des appels à .NET Framework méthodes qui apparaissent dans MSBuild définitions de propriétés. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.
 
 Sans utiliser de tâches MSBuild, vous pouvez lire l'heure système, comparer des chaînes, établir des correspondances avec des expressions régulières et effectuer d'autres actions dans votre script de génération. MSBuild tente de convertir les chaînes en nombres et les nombres en chaînes, et d'effectuer les autres conversions nécessaires.
 
 Les valeurs de chaîne retournées à partir de fonctions de propriété ont des [caractères spéciaux](msbuild-special-characters.md) d’échappement. Si vous souhaitez que la valeur soit traitée comme si elle avait été placée directement dans le fichier projet, utilisez `$([MSBuild]::Unescape())` pour éliminer les caractères spéciaux d’échappement.
 
-Les fonctions de propriété sont disponibles avec .NET Framework 4 et versions ultérieures.
+les fonctions de propriété sont disponibles avec .NET Framework 4 et versions ultérieures.
 
 ## <a name="property-function-syntax"></a>Syntaxe des fonctions de propriété
 
@@ -231,7 +231,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-La `GetPathOfFileAbove` fonction de propriété dans MSBuild retourne le chemin d’accès du fichier spécifié, s’il se trouve dans la structure de répertoires au-dessus du répertoire actif. Sur le plan fonctionnel, elle revient à appeler
+la `GetPathOfFileAbove` fonction de propriété dans MSBuild retourne le chemin d’accès du fichier spécifié, s’il se trouve dans la structure de répertoires au-dessus du répertoire actif. Sur le plan fonctionnel, elle revient à appeler
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -265,7 +265,7 @@ Le syntaxe de cette fonction de propriété est :
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Le système d’exploitation Windows 64 bits gère une clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** qui présente une **HKEY_LOCAL_MACHINE\SOFTWARE** vue de registre pour les applications 32 bits.
+le système d’exploitation Windows 64 bits gère une clé de registre **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** qui présente une **HKEY_LOCAL_MACHINE\SOFTWARE** vue de registre pour les applications 32 bits.
 
 Par défaut, une application 32 bits s'exécutant sur WOW64 accède à la vue de Registre 32 bits et une application 64 bits accède à la vue de Registre 64 bits.
 
@@ -342,9 +342,11 @@ Output:
 -->
 ```
 
-## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Fonctions de MSBuild TargetFramework et TargetPlatform
+<a name="TargetFramework"></a>
 
-MSBuild 16,7 et versions ultérieures définissent plusieurs fonctions pour gérer les [Propriétés TargetFramework et TargetPlatform](msbuild-target-framework-and-target-platform.md).
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild Fonctions TargetFramework et TargetPlatform
+
+MSBuild 16,7 et versions ultérieures définissent plusieurs fonctions pour gérer les [propriétés TargetFramework et TargetPlatform](msbuild-target-framework-and-target-platform.md).
 
 |Signature de fonction|Description|
 |------------------------|-----------------|
@@ -385,12 +387,12 @@ Value4 = 7.0
 Value5 = True
 ```
 
-## <a name="msbuild-version-comparison-functions"></a>Fonctions de comparaison de version MSBuild
+## <a name="msbuild-version-comparison-functions"></a>fonctions de comparaison de version MSBuild
 
 MSBuild 16,5 et versions ultérieures définissent plusieurs fonctions pour comparer des chaînes qui représentent des versions.
 
 > [!Note]
-> Les opérateurs de comparaison dans [les conditions peuvent comparer des chaînes qui peuvent être analysées en tant qu' `System.Version` objets](#msbuild-conditions.md#Comparing-versions), mais la comparaison peut produire des résultats inattendus. Préférez les fonctions de propriété.
+> Les opérateurs de comparaison dans [les conditions peuvent comparer des chaînes qui peuvent être analysées en tant qu' `System.Version` objets](msbuild-conditions.md#comparing-versions), mais la comparaison peut produire des résultats inattendus. Préférez les fonctions de propriété.
 
 |Signature de fonction|Description|
 |------------------------|-----------------|
@@ -416,14 +418,14 @@ Dans ces méthodes, les versions sont analysées comme <xref:System.Version?disp
 * `+` n’est pas autorisé en tant que signe positif dans les composants entiers (il est traité en tant que métadonnées semver et ignoré)
 
 > [!TIP]
-> Les comparaisons des [Propriétés TargetFramework](msbuild-target-framework-and-target-platform.md) doivent généralement utiliser [IsTargetFrameworkCompatible](#MSBuild-TargetFramework-and-TargetPlatform-functions) au lieu d’extraire et de comparer les versions. Cela permet `TargetFramework` de comparer les s qui varient dans `TargetFrameworkIdentifier` et la version.
+> Les comparaisons des [Propriétés TargetFramework](msbuild-target-framework-and-target-platform.md) doivent généralement utiliser [IsTargetFrameworkCompatible](#TargetFramework) au lieu d’extraire et de comparer les versions. Cela permet `TargetFramework` de comparer les s qui varient dans `TargetFrameworkIdentifier` et la version.
 
-## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
+## <a name="msbuild-condition-functions"></a>fonctions de condition de MSBuild
 
-Les fonctions `Exists` et ne `HasTrailingSlash` sont pas des fonctions de propriété. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
+Les fonctions `Exists` et ne `HasTrailingSlash` sont pas des fonctions de propriété. Elles peuvent être utilisées avec l' `Condition` attribut. consultez [MSBuild conditions](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [MSBuild (propriétés)](../msbuild/msbuild-properties.md)
 
-- [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)
+- [présentation de MSBuild](../msbuild/msbuild.md)

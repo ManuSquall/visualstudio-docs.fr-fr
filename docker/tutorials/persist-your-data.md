@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9408e099caaef097be3fc4eea26cee2b1889e8e
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841768"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222901"
 ---
 # <a name="persist-your-data"></a> Rendre vos données persistantes
 
@@ -36,9 +35,9 @@ Pour voir cela en action, vous allez démarrer deux conteneurs et créer un fich
 
     Si vous êtes curieux de connaître la commande, vous démarrez un interpréteur de commandes bash et appelez deux commandes (pourquoi il a le `&&` ). La première partie sélectionne un nombre aléatoire unique et l’écrit dans `/data.txt` . La deuxième commande surveille simplement un fichier pour que le conteneur reste en cours d’exécution.
 
-1. Valider vous pouvez voir la sortie à l’aide `exec` de pour accéder au conteneur. Pour ce faire, ouvrez l’extension de VS Code et cliquez sur l’option **attacher l’interpréteur** de commandes. Cela permet `exec` d’ouvrir un interpréteur de commandes dans le conteneur au sein du terminal vs code.
+1. Valider vous pouvez voir la sortie à l’aide `exec` de pour accéder au conteneur. pour ce faire, ouvrez l’extension de VS Code et cliquez sur l’option **attacher l’interpréteur** de commandes. cela permet `exec` d’ouvrir un interpréteur de commandes dans le conteneur au sein du terminal VS Code.
 
-    ![VS Code ouvrir l’interface CLI dans le conteneur Ubuntu](media/attach_shell.png)
+    ![VS Code ouvrir l’interface CLI dans le conteneur ubuntu](media/attach_shell.png)
 
     Vous verrez un terminal qui exécute un shell dans le conteneur Ubuntu. Exécutez la commande suivante pour afficher le contenu du `/data.txt` fichier. Fermez ce terminal ultérieurement.
 

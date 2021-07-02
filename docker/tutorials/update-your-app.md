@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 43034ff2e65564cc8af2710b796b76996f21f4c8
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841742"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222771"
 ---
 # <a name="update-the-app"></a>Mettre à jour l’application
 
@@ -80,11 +79,11 @@ Pour supprimer un conteneur, vous devez d’abord l’arrêter. Une fois qu’el
     ```
 
 > [!TIP]
-> Vous pouvez arrêter et supprimer un conteneur dans une seule commande en ajoutant l’indicateur « force » à la `docker rm` commande. Par exemple : `docker rm -f <the-container-id>`
+> Vous pouvez arrêter et supprimer un conteneur dans une seule commande en ajoutant l’indicateur « force » à la `docker rm` commande. Par exemple : `docker rm -f <the-container-id>`
 
 ### <a name="remove-a-container-using-the-docker-view"></a>Supprimer un conteneur à l’aide de la vue Dockr
 
-Si vous ouvrez l’extension VS Code, vous pouvez supprimer un conteneur en deux clics. Il est certainement beaucoup plus facile d’avoir à Rechercher l’ID de conteneur et à le supprimer.
+si vous ouvrez l’Extension VS Code, vous pouvez supprimer un conteneur en deux clics. Il est certainement beaucoup plus facile d’avoir à Rechercher l’ID de conteneur et à le supprimer.
 
 1. Une fois l’extension ouverte, accédez au conteneur et cliquez avec le bouton droit.
 

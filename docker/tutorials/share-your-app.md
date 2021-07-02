@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d64d10c7abefc14f31c39c3b8397e95cec67e9f4
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061782"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222784"
 ---
 # <a name="share-your-app"></a>Partager votre application
 
@@ -64,7 +63,7 @@ Si vous regardez sur le côté droit de la page, vous verrez une section intitul
     docker push <username>/getting-started
     ```
 
-    Au lieu de la ligne de commande, vous pouvez également cliquer avec le bouton droit sur la balise image dans la section **images** de la vue dockr, puis choisir **Envoyer...**, puis **connecter le registre...** , puis **ancrer Hub**.
+    au lieu de la ligne de commande, vous pouvez également cliquer avec le bouton droit sur la balise image dans la section **Images** de la vue dockr, puis choisir **envoyer...**, puis choisir **Connecter registre...** , puis **ancrer Hub**.
 
 ## <a name="run-the-image-on-a-new-instance"></a>Exécuter l’image sur une nouvelle instance
 

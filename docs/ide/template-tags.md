@@ -13,18 +13,18 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: a5f8c3f6e96e8e593fe74fd58b3e8bafab0ad88e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac4757464d720ca50632833b3911f0d594e1becb
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950612"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222979"
 ---
 # <a name="add-tags-to-project-templates"></a>Ajouter des balises à des modèles de projet
 
 À compter de [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version 16.1 préversion 2, vous pouvez ajouter des balises de langage, de plateforme et de type de projet à vos modèles de projet. 
 
-Les balises sont utilisées à deux emplacements dans la boîte de dialogue **nouveau projet** :
+les balises sont utilisées à deux emplacements dans la boîte de dialogue **nouveau Project** :
 
 - Les balises s’affichent sous la description du modèle.
 
@@ -93,7 +93,7 @@ Visual Studio propose une liste de balises intégrées. Lorsque vous ajoutez une
 
 La liste suivante présente les balises intégrées qui sont disponibles dans Visual Studio. Les valeurs correspondantes sont affichées entre parenthèses.
 
-| Balise de langue | Balise Platform | Étiquette de type de projet |
+| Balise de langue | Balise Platform | balise de type Project |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -123,7 +123,7 @@ L’exemple suivant montre les métadonnées d’un modèle de projet pour une a
         <Description>A basic template</Description>
         <Icon>TemplateIcon.ico</Icon>
         <ProjectType>csharp</ProjectType>
-        <LanguageTag>C#</LanguageTag>
+        <LanguageTag>csharp</LanguageTag>
         <PlatformTag>windows</PlatformTag>
         <PlatformTag>linux</PlatformTag>
         <PlatformTag>My Platform</PlatformTag>
@@ -147,7 +147,7 @@ L’exemple suivant montre les métadonnées d’un modèle de projet pour une a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Créer des modèles de projet et d’élément](creating-project-and-item-templates.md)
 - [Personnaliser des modèles de projet et d’élément](customizing-project-and-item-templates.md)
 - [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

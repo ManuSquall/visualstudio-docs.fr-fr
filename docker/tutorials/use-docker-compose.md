@@ -5,28 +5,27 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 645d168aefe05040193d564d5c158acfb6688c11
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082563"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222745"
 ---
 # <a name="use-docker-compose"></a>Utiliser Docker Compose
 
 [Docker compose](https://docs.docker.com/compose/) est un outil qui a été développé pour aider à définir et partager des applications à plusieurs conteneurs. Avec compose, vous pouvez créer un fichier baYAML pour définir les services et avec une seule commande, peut faire tourner tout le contenu vers le haut ou le déchirer.
 
-Le principal avantage de l’utilisation de compose est que vous pouvez *définir la pile* de votre application dans un fichier, la garder à la racine de votre projet référentiel (elle est maintenant contrôlée par la version) et permettre facilement à quelqu’un d’autre de contribuer à votre projet. Une personne aurait uniquement besoin de cloner votre référentiel et de démarrer l’application compose. En fait, vous pouvez voir un certain nombre de projets sur GitHub/GitLab.
+Le principal avantage de l’utilisation de compose est que vous pouvez *définir la pile* de votre application dans un fichier, la garder à la racine de votre projet référentiel (elle est maintenant contrôlée par la version) et permettre facilement à quelqu’un d’autre de contribuer à votre projet. Une personne aurait uniquement besoin de cloner votre référentiel et de démarrer l’application compose. en fait, vous pouvez voir un certain nombre de projets sur GitHub/GitLab.
 
 Alors, comment commencer ?
 
 ## <a name="install-docker-compose"></a>Installer Docker Compose
 
-Si vous avez installé le Bureau de l’amarrage pour Windows ou Mac, vous avez déjà Docker Compose ! Les instances de lecture avec l’arrimeur disposent déjà d’Docker Compose également installées. Si vous utilisez un ordinateur Linux, vous devez installer Docker Compose en suivant [les instructions fournies ici](https://docs.docker.com/compose/install/).
+si vous avez installé le bureau de l’amarrage pour Windows ou Mac, vous avez déjà Docker Compose ! Les instances de lecture avec l’arrimeur disposent déjà d’Docker Compose également installées. Si vous utilisez un ordinateur Linux, vous devez installer Docker Compose en suivant [les instructions fournies ici](https://docs.docker.com/compose/install/).
 
 Après l’installation, vous devez être en mesure d’exécuter les éléments suivants et d’afficher les informations de version.
 
@@ -243,7 +242,7 @@ Maintenant que vous disposez du `docker-compose.yml` fichier, vous pouvez le dé
 
 1. Tout d’abord, assurez-vous qu’aucune autre copie de l’application et de la base de données n’est en cours d’exécution ( `docker ps` et `docker rm -f <ids>` ).
 
-1. Démarrez la pile d’applications à l’aide de la `docker-compose up` commande. Ajoutez l' `-d` indicateur pour tout exécuter en arrière-plan. Vous pouvez également cliquer avec le bouton droit sur votre fichier compose et sélectionner l’option **composer** pour la barre latérale du vs code. 
+1. Démarrez la pile d’applications à l’aide de la `docker-compose up` commande. Ajoutez l' `-d` indicateur pour tout exécuter en arrière-plan. vous pouvez également cliquer avec le bouton droit sur votre fichier compose et sélectionner l’option **composer** pour la barre latérale du VS Code. 
 
     ```bash
     docker-compose up -d
@@ -280,7 +279,7 @@ Maintenant que vous disposez du `docker-compose.yml` fichier, vous pouvez le dé
 
 ## <a name="see-the-app-stack-in-the-docker-extension"></a>Consultez la pile d’applications dans l’extension de l’amarrage
 
-Si vous examinez l’extension de l’ancrage, vous pouvez modifier les options de regroupement à l’aide des options « roue dentée » et « Group by ». Dans ce cas, vous souhaitez voir les conteneurs regroupés par nom de projet compose :
+Si vous examinez l’extension de l’ancrage, vous pouvez modifier les options de regroupement à l’aide des options « roue dentée » et « Group by ». dans ce cas, vous souhaitez voir les conteneurs regroupés par compose Project nom :
 
 ![Extension VS avec compose](media/vs-app-project-collapsed.png)
 
@@ -290,7 +289,7 @@ Si vous désactivez le réseau, vous verrez les deux conteneurs que vous avez d�
 
 ## <a name="tear-it-all-down"></a>Détacher tout
 
-Lorsque vous êtes prêt à le détacher, exécutez simplement `docker-compose down` , ou cliquez avec le bouton droit sur l’application dans la liste des conteneurs de l’extension vs code ancrage et sélectionnez **composer**. Les conteneurs s’arrêtent et le réseau est supprimé.
+lorsque vous êtes prêt à le détacher, exécutez simplement `docker-compose down` , ou cliquez avec le bouton droit sur l’application dans la liste des conteneurs de l’extension VS Code ancrage et sélectionnez **composer**. Les conteneurs s’arrêtent et le réseau est supprimé.
 
 > [!WARNING]
 > **Suppression de volumes** Par défaut, les volumes nommés dans votre fichier compose ne sont pas supprimés lors de l’exécution de `docker-compose down` . Si vous souhaitez supprimer les volumes, vous devez ajouter l' `--volumes` indicateur.

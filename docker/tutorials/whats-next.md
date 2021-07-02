@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e777d80f44c9a11e4d2a893c968d33e348ca442a
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841651"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222693"
 ---
 # <a name="whats-next"></a>Étapes suivantes
 
@@ -35,10 +34,10 @@ Si vous débutez avec le paysage de conteneur et le développement d’applicati
 
 ## <a name="working-with-docker-in-vs-code"></a>Utilisation de l’amarrage dans VS Code
 
-En savoir plus sur l’utilisation de l’extension VS Code docker :
+en savoir plus sur l’utilisation de l’extension VS Code docker :
 
-- [Vue d’ensemble de VS Code ancrage](https://code.visualstudio.com/docs/containers/overview)
-- [Bien démarrer avec Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
+- [VS Code Vue d’ensemble de l’extension dockr](https://code.visualstudio.com/docs/containers/overview)
+- [Prise en main de Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [Bien démarrer avec Python](https://code.visualstudio.com/docs/containers/quickstart-python)
 - [Bien démarrer avec .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
 - [Déboguer des applications en conteneur](https://code.visualstudio.com/docs/containers/debug-common)

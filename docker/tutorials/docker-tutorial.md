@@ -1,21 +1,20 @@
 ---
-title: Didacticiel de l’arrimeur-prise en main de l’arrimeur
+title: 'Didacticiel : prise en main des & de l’arrimeur Visual Studio Code'
 description: Didacticiel en plusieurs étapes qui aborde les principes de base de l’utilisation de l’arrimeur avec Visual Studio Code.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
-ms.topic: conceptual
+ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75a51f478e4e58700f6025dd6a87fcc38439ed87
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837968"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222654"
 ---
 # <a name="tutorial-get-started-with-docker"></a>Tutoriel : Prise en main de Docker
 
@@ -45,7 +44,7 @@ Vous remarquerez que quelques indicateurs sont utilisés. Voici quelques informa
 
 ## <a name="the-vs-code-extension"></a>Extension VS Code
 
-Avant d’aller plus loin, nous voulons mettre en surbrillance l’extension de VS Code d’ancrage, qui vous donne un aperçu rapide des conteneurs en cours d’exécution sur votre machine. Il vous offre un accès rapide aux journaux de conteneur, vous permet d’obtenir un shell à l’intérieur du conteneur et vous permet de gérer facilement le cycle de vie des conteneurs (arrêter, supprimer, etc.).
+avant d’aller plus loin, nous voulons mettre en surbrillance l’Extension de VS Code d’ancrage, qui vous donne un aperçu rapide des conteneurs en cours d’exécution sur votre machine. Il vous offre un accès rapide aux journaux de conteneur, vous permet d’obtenir un shell à l’intérieur du conteneur et vous permet de gérer facilement le cycle de vie des conteneurs (arrêter, supprimer, etc.).
 
 Pour accéder à l’extension, suivez les instructions [ici](https://code.visualstudio.com/docs/containers/overview). Utilisez l’icône d’ancrage à gauche pour ouvrir la vue de l’ancrage. Si vous ouvrez l’extension maintenant, vous verrez ce didacticiel s’exécuter ! Le nom du conteneur ( `angry_taussig` ci-dessous) est un nom créé de manière aléatoire. Par conséquent, vous aurez probablement un nom différent.
 

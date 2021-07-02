@@ -1,6 +1,6 @@
 ---
 title: Raccourcis clavier par défaut
-description: Découvrez les raccourcis clavier par défaut dans Visual Studio qui vous permettent d’accéder à diverses commandes et fenêtres.
+description: en savoir plus sur les raccourcis clavier par défaut dans Visual Studio qui vous permettent d’accéder à diverses commandes et fenêtres.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2021
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c4fcc02f94f5987ccbfd6c445188990db43de0
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: 182102d4de3a2acbec8be82f69650c708817e54c
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046077"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222966"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -31,8 +31,14 @@ Pour obtenir la liste des raccourcis clavier courants et d'autres informations s
 - [Conseils d’utilisation du clavier](../ide/productivity-shortcuts.md)
 - [Conseils de productivité](../ide/productivity-features.md).
 
-Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Comment : utiliser le clavier en mode exclusif](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [comment : utiliser le clavier en mode exclusif](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
+<!---## Printable shortcut cheatsheet
+
+Download and print our Visual Studio shortcut cheatsheet.
+
+[ ![Visual Studio Cheatsheet.](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet.png)](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet-extended.png#lightbox)
+-->
 ## <a name="most-popular-keyboard-shortcuts"></a>Raccourcis clavier les plus populaires
 
 Tous les raccourcis de cette section s’appliquent globalement sauf indication contraire. Le contexte *Global* signifie que le raccourci s’applique dans n’importe quelle fenêtre Outil dans Visual Studio.
@@ -74,7 +80,7 @@ Tous les raccourcis de cette section s’appliquent globalement sauf indication 
 
 |Commandes|Raccourcis clavier [contextes spéciaux]|
 |--------------| - |
-|Edit.BreakLine|**Entrée** [éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **MAJ + entrée** [éditeur de texte]|
+|Edit.BreakLine|**entrée** [éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **MAJ + entrée** [éditeur de texte]|
 |Edit.CollapseToDefinitions|**Ctrl + M**, **Ctrl + O** [éditeur de texte]|
 |Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [éditeur de texte]|
 |Edit.CompleteWord|**Alt + flèche droite** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **Ctrl + barre d’espace** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K**, **W** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, CTRL + W** [Concepteur de flux de travail]|
@@ -94,7 +100,7 @@ Tous les raccourcis de cette section s’appliquent globalement sauf indication 
 |Edit.GoToFindCombo|**Ctrl+D**|
 |Edit.GoToNextLocation|**F8**|
 |Edit.InsertSnippet|**CTRL + K**, **CTRL + X**|
-|Edit.InsertTab|**Onglet** [Concepteur de rapports, Concepteur Windows Forms, éditeur de texte]|
+|Edit.InsertTab|**onglet** [Concepteur de rapports, Concepteur Windows Forms, éditeur de texte]|
 |Edit.LineCut|**Ctrl + L** [éditeur de texte]|
 |Edit.LineDownExtendColumn|**Maj + Alt + flèche bas** [éditeur de texte]|
 |Edit.LineOpenAbove|**Ctrl + Entrée** [éditeur de texte]|
@@ -109,9 +115,9 @@ Tous les raccourcis de cette section s’appliquent globalement sauf indication 
 |Edit.Replace|**Ctrl + H**|
 |Edit.SelectAll|**Ctrl+A**|
 |Edit.SelectCurrentWord|**CTRL + W** [éditeur de texte]|
-|Edit.SelectionCancel|**Échap** [éditeur de texte, concepteur de rapports, concepteur de paramètres, Concepteur Windows Forms, éditeur de ressources managées]|
+|Edit.SelectionCancel|**échap** [éditeur de texte, Concepteur de rapports, concepteur de Paramètres, Concepteur Windows Forms, éditeur de ressources managées]|
 |Edit.SurroundWith|**Ctrl + K, CTRL + S**|
-|Edit.TabLeft|**MAJ + TAB** [éditeur de texte, concepteur de rapports, éditeur de Windows Forms]|
+|Edit.TabLeft|**maj + Tab** [éditeur de texte, Concepteur de rapports, éditeur de Windows Forms]|
 |Edit.ToggleAllOutlining|**Ctrl + M, Ctrl + L** [éditeur de texte]|
 |Edit.ToggleBookmark|**CTRL + k, CTRL + k** [éditeur de texte]|
 |Edit.ToggleCompletionMode|**Ctrl + Alt + espace** [éditeur de texte]|
@@ -137,7 +143,7 @@ Tous les raccourcis de cette section s’appliquent globalement sauf indication 
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl + Maj + W**|
 
-#### <a name="project-popular-shortcuts"></a>Projet : raccourcis populaires
+#### <a name="project-popular-shortcuts"></a>Project : raccourcis populaires
 
 |Commandes|Raccourcis clavier [contextes spéciaux]|
 |--------------| - |
@@ -174,7 +180,7 @@ Tous les raccourcis de cette section s’appliquent globalement sauf indication 
 |View.SolutionExplorer|**CTRL + ALT + L**|
 |View.TfsTeamExplorer|**Ctrl + \\ , Ctrl + M**|
 |View.Toolbox|**CTRL + ALT + X**|
-|View.ViewCode|**Entrée** [diagramme de classes]<br /><br />ou **F7** [Concepteur de paramètres]|
+|View.ViewCode|**Entrée** [diagramme de classes]<br /><br />ou **F7** [Paramètres Designer]|
 |View.ViewDesigner|**MAJ + F7** [vue source de l’éditeur HTML]|
 
 #### <a name="window-popular-shortcuts"></a>Fenêtre : raccourcis populaires
@@ -453,7 +459,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Project.Publishselectedfiles|**Alt+;**, puis **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+;**, puis **Alt+R**|
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menus contextuels projet et solution
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Project et menus contextuels de solution
 
 |Commandes|Raccourcis clavier|
 |--------------| - |

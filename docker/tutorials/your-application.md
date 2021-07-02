@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042940"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222810"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Générer et exécuter l’exemple d’application TODO
 
@@ -28,15 +27,15 @@ Pour le reste de ce didacticiel, vous utiliserez un gestionnaire de liste de tâ
 
 Avant de pouvoir exécuter l’application, vous devez récupérer le code source de l’application sur votre ordinateur. Pour les projets réels, vous allez généralement cloner le référentiel. Toutefois, pour ce didacticiel, nous avons créé un fichier ZIP contenant l’application.
 
-1. Assurez-vous que Docker pour Windows ou l’édition Community de l’Ancrable est installé sur l’ordinateur local. Consultez [docker pour Windows documentation sur l’installation](https://docs.docker.com/docker-for-windows/install/). Le processus d’installation rend le fichier ZIP contenant l’exemple disponible à l’adresse localhost.
+1. assurez-vous que Docker pour Windows ou l’édition Community installée sur l’ordinateur local. consultez [Docker pour Windows documentation sur l’installation](https://docs.docker.com/docker-for-windows/install/). Le processus d’installation rend le fichier ZIP contenant l’exemple disponible à l’adresse localhost.
 
 1. Téléchargez la source de l’application à partir du référentiel d' [ancrage](https://github.com/docker/getting-started) . Vous pouvez télécharger le fichier ZIP pour référentiel. Pour télécharger le fichier ZIP, utilisez le bouton de **code** vert et choisissez **Télécharger zip**. Ouvrez le fichier ZIP et extrayez tout pour extraire la source de l’application à partir du dossier de l' *application* vers un dossier sur votre disque dur.
 
    ![Capture d’écran montrant le bouton de code vert et l’option Télécharger ZIP](media/download-zip.png)
 
-1. Une fois l’extraction effectuée, utilisez votre éditeur de code favori pour ouvrir le projet. Si vous avez besoin d’un éditeur, vous pouvez utiliser [Visual Studio code](https://code.visualstudio.com/). Vous devez voir le `package.json` et les deux sous-répertoires ( `src` et `spec` ).
+1. Une fois l’extraction effectuée, utilisez votre éditeur de code favori pour ouvrir le projet. si vous avez besoin d’un éditeur, vous pouvez utiliser [Visual Studio Code](https://code.visualstudio.com/). Vous devez voir le `package.json` et les deux sous-répertoires ( `src` et `spec` ).
 
-    ![Capture d’écran de Visual Studio Code ouverts avec l’application chargée](media/ide-screenshot.png)
+    ![capture d’écran de Visual Studio Code ouverts avec l’application chargée](media/ide-screenshot.png)
 
 ## <a name="building-the-apps-container-image"></a>Génération de l’image conteneur de l’application
 
@@ -91,7 +90,7 @@ Maintenant que vous avez une image, exécutez l’application ! Pour ce faire, 
 
 À ce stade, vous devez avoir un gestionnaire de liste de tâches en cours d’exécution avec quelques éléments que vous avez créés par vous-même ! À présent, nous allons apporter quelques modifications et apprendre à gérer vos conteneurs.
 
-Si vous examinez rapidement l’extension VS Code, vous devriez voir vos deux conteneurs s’exécuter maintenant (ce didacticiel et votre nouveau conteneur d’application lancé) !
+si vous examinez rapidement l’extension VS Code, vous devriez voir vos deux conteneurs s’exécuter maintenant (ce didacticiel et votre nouveau conteneur d’application lancé) !
 
 ![Extension d’ancrage avec didacticiel et conteneurs d’applications exécutant](media/vs-two-containers.png)
 

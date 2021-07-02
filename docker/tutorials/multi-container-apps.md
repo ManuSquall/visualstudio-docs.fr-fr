@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d23d1f5d94729741630ee76263fd5b32041e9cfd
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841781"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222914"
 ---
 # <a name="multi-container-apps"></a>Application à plusieurs conteneurs
 
@@ -144,13 +143,13 @@ L’application todo prend en charge le paramètre de quelques variables d’env
 - `MYSQL_DB` -la base de données à utiliser une fois connecté
 
 > [!WARNING]
-> **Définition des paramètres de connexion via des variables d’environnement** Bien que l’utilisation de variables d’environnement pour définir les paramètres de connexion soit généralement possible pour le développement, elle est fortement déconseillée lors de l’exécution d’applications en production. Pour comprendre pourquoi, découvrez [pourquoi vous ne devez pas utiliser de variables d’environnement pour les données secrètes](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
+> **définition des Paramètres de connexion via des Variables d’environnement** Bien que l’utilisation de variables d’environnement pour définir les paramètres de connexion soit généralement possible pour le développement, elle est fortement déconseillée lors de l’exécution d’applications en production. Pour comprendre pourquoi, découvrez [pourquoi vous ne devez pas utiliser de variables d’environnement pour les données secrètes](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
 > Un mécanisme plus sécurisé consiste à utiliser la prise en charge du secret fournie par votre infrastructure d’orchestration de conteneur. Dans la plupart des cas, ces secrets sont montés en tant que fichiers dans le conteneur en cours d’exécution. Vous verrez de nombreuses applications (y compris l’image MySQL et l’application TODO) prennent également en charge les variables env avec un `_FILE` suffixe pour pointer vers un fichier contenant le fichier.
 > Par exemple, la définition `MYSQL_PASSWORD_FILE` de la fonction var fait en sorte que l’application utilise le contenu du fichier référencé comme mot de passe de connexion. La station d’accueil ne fait rien pour prendre en charge ces variables env. Votre application doit savoir comment rechercher la variable et obtenir le contenu du fichier.
 
 Tout comme expliqué, commencez votre conteneur de développement !
 
-1. Spécifiez chacune des variables d’environnement ci-dessus et connectez le conteneur à votre réseau d’applications (en remplaçant les ` \ ` caractères par `` ` `` dans Windows PowerShell).
+1. Spécifiez chacune des variables d’environnement ci-dessus et connectez le conteneur à votre réseau d’applications (remplacez les ` \ ` caractères par `` ` `` dans Windows PowerShell).
 
     ```bash hl_lines="3 4 5 6 7"
     docker run -dp 3000:3000 \
@@ -179,7 +178,7 @@ Tout comme expliqué, commencez votre conteneur de développement !
 
 1. Ouvrez l’application dans votre navigateur et ajoutez quelques éléments à votre liste TODO.
 
-1. Connectez-vous à la base de données MySQL et prouvez que les éléments sont écrits dans la base de données. N’oubliez pas que le mot de passe est **secret**.
+1. Connecter à la base de données MySQL et prouver que les éléments sont écrits dans la base de données. N’oubliez pas que le mot de passe est **secret**.
 
     ```bash
     docker exec -ti <mysql-container-id> mysql -p todos
