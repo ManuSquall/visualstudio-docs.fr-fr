@@ -13,7 +13,7 @@
             - name: Vue d’ensemble
               href: vscloud-overview.md
             - name: FAQ sur la facturation
-              href: vscloud-billing-faq.md
+              href: vscloud-billing-faq.yml
             - name: Achat pour fournisseurs de services de chiffrement
               href: vscloud-csp.md
         - name: Microsoft Partner Network
@@ -56,16 +56,22 @@
       items:
         - name: À propos des avantages
           href: about-benefits.md
+        - name: Offres de développement/test Azure
+          items:
+            - name: Pour les individus (crédits)
+              items:
+                - name: Crédit individuel Azure DevTest
+                  href: vs-azure.md
+            - name: Pour les organisations
+              items:
+                - name: Azure DevTest - Paiement à l’utilisation
+                  href: vs-azure-payg.md
+                - name: Azure EA DevTest
+                  href: azure-ea-devtest.md
         - name: Outils
           items:
-            - name: Crédit individuel Azure DevTest
-              href: vs-azure.md
             - name: Azure DevOps
               href: vs-azure-devops.md
-            - name: Azure DevTest - Paiement à l’utilisation
-              href: vs-azure-payg.md
-            - name: Azure EA DevTest
-              href: azure-ea-devtest.md
             - name: CAST Highlight
               href: vs-cast.md
             - name: CloudPilot

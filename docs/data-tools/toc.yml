@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Séparer des DataSets et des TableAdapters en différents projets
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Contrôles
+    - name: Commandes
       items:
         - name: Lier des contrôles à des sources de données
           href: bind-controls-to-data-in-visual-studio.md
@@ -209,8 +209,6 @@
           href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
     - name: Mettre à jour des fichiers .mdf
       href: upgrade-dot-mdf-files.md
-    - name: Résoudre des erreurs d’accès aux données
-      href: additional-resources-for-troubleshooting-data-access-errors.md
 - name: Informations de référence
   items:
     - name: Concepteur O/R (Linq to SQL)

@@ -22,6 +22,8 @@
       href: debugging-or-disabling-project-code-in-xaml-designer.md
     - name: Données au moment du design XAML
       href: xaml-designtime-data.md
+    - name: Exemples de données au moment du design XAML
+      href: xaml-design-time-sample-data.md
     - name: Blend pour Visual Studio
       items:
         - name: Vue d'ensemble
