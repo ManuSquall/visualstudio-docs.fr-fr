@@ -1,22 +1,22 @@
 ### YamlMime:Landing
-title: Documentation sur la gestion de version de Visual Studio
-summary: Partagez votre code à partir de Visual Studio 2019 en utilisant des technologies de gestion de version telles que git et GitHub.
+title: documentation sur la gestion de version Visual Studio
+summary: partagez votre code à partir de Visual Studio 2019 à l’aide de technologies de contrôle de version telles que Git et GitHub.
 metadata:
-  title: Contrôle de version dans Visual Studio
-  description: Les technologies de gestion de version, telles que git et GitHub, sont disponibles directement dans Visual Studio. Vous pouvez les utiliser pour partager et gérer votre code sans quitter votre code base.
+  title: Contrôle de version & contrôle de code source avec git dans Visual Studio
+  description: Utilisez les technologies de gestion de version dans Visual Studio. vous pouvez partager, intégrer et gérer vos versions de code dans Git & GitHub sans quitter votre code base.
   ms.topic: landing-page
-  ms.date: 04/20/2021
+  ms.date: 07/02/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 385457bbeb63054a5f72a5055c55dedfeb9f9b1c
-  ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
+  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/16/2021
-  ms.locfileid: "112126513"
+  ms.lasthandoff: 07/03/2021
+  ms.locfileid: "113280399"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: git-settings.md
   - linkListType: concept
     links:
-    - text: Comment Visual Studio facilite le contrôle de la source
+    - text: comment Visual Studio facilite le contrôle de la source
       url: git-visual-studio-source-control.md
 - title: Bien démarrer
   linkLists:
@@ -44,7 +44,7 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Productivité améliorée avec git dans Visual Studio (version préliminaire)
+    - text: productivité améliorée avec Git en Visual Studio (version préliminaire)
       url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
     - text: Notes de publication de Visual Studio 2019
       url: /visualstudio/releases/2019/release-notes/

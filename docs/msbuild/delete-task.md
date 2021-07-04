@@ -1,6 +1,6 @@
 ---
 title: Delete, tâche | Microsoft Docs
-description: En savoir plus sur les paramètres et les considérations relatives à l’utilisation de la tâche de suppression MSBuild pour supprimer les fichiers spécifiés.
+description: en savoir plus sur les paramètres et les considérations relatives à l’utilisation de la tâche de suppression MSBuild pour supprimer les fichiers spécifiés.
 ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877341"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280430"
 ---
 # <a name="delete-task"></a>Delete (tâche)
 
@@ -50,7 +50,7 @@ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramèt
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant supprime le fichier *MyApp. pdb* lorsque vous générez la `DeleteDebugSymbolFile` cible.
+L’exemple suivant supprime le fichier *ConsoleApp1. pdb* lorsque vous générez la `DeleteDebugSymbolFile` cible.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

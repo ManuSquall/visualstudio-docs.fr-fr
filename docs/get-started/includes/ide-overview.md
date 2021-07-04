@@ -1,17 +1,17 @@
 ---
-ms.date: 06/29/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 452549030d77b90049b12716087544bdd1288a3f
-ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113113664"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113280167"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -23,13 +23,13 @@ ms.locfileid: "113113664"
 
 ::: moniker range=">=vs-2019"
 
-:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Capture d’écran de l’IDE de Visual Studio, qui comprend des légendes qui indiquent où se trouvent les fonctionnalités et fonctionnalités clés." lightbox="../media/vs-2019/ide-overview.png":::
+:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="capture d’écran de l’IDE Visual Studio, qui comprend des légendes qui indiquent où se trouvent les fonctionnalités et fonctionnalités clés." lightbox="../media/vs-2019/ide-overview.png":::
 
 ::: moniker-end
 
 Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Outil principales dont vous êtes susceptible de vous servir :
 
-- L’[Explorateur de solutions](../../ide/use-solution-explorer.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../../ide/use-solution-explorer.md).
+- L’[Explorateur de solutions](../../ide/use-solution-explorer.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../../ide/solutions-and-projects-in-visual-studio.md).
 
 - La [fenêtre de l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pouvez modifier le code ou concevoir une interface utilisateur telle qu’une fenêtre avec des boutons et des zones de texte.
 
@@ -47,7 +47,7 @@ Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Ou
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2017, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2017.
 
-Il existe trois éditions de Visual Studio : Community, Professional et Enterprise. Consultez [comparer les éditions de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+il existe trois éditions de Visual Studio : Community, Professional et Enterprise. consultez [comparer les éditions Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Il existe trois éditions de Visual Studio : Community, Professional et Enterpr
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2019, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2019.
 
-Il existe trois éditions de Visual Studio 2019 : Community, Professional et Enterprise. Consultez [comparer les éditions de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+il existe trois éditions de Visual Studio 2019 : Community, Professional et Enterprise. consultez [comparer les éditions Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
 - [Recherche Visual Studio](../../ide/visual-studio-search.md)
 
-   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La recherche Visual Studio (**CTRL** + **Q**) est un excellent moyen de trouver rapidement les fonctionnalités et le code de l’IDE à un seul endroit.
+   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. Visual Studio search (**Ctrl** + **Q**) est un excellent moyen de trouver rapidement les fonctionnalités et le code de l’IDE à un seul endroit.
 
    ::: moniker range="vs-2017"
 
@@ -107,7 +107,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Zone de recherche dans Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
-    Pour plus d’informations et de conseils sur la productivité, consultez [comment utiliser la recherche Visual Studio](../../ide/visual-studio-search.md).
+    pour plus d’informations et pour obtenir des conseils sur la productivité, consultez [utilisation de Visual Studio search](../../ide/visual-studio-search.md).
 
    ::: moniker-end
 
@@ -167,11 +167,11 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet**.
+1. dans la barre de menus, choisissez **fichier** > **nouveau** > **Project**.
 
    ![Fichier > Nouveau projet sur la barre de menus](../media/file-new-project-menu.png)
 
-   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   la boîte **de dialogue nouveau Project** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
 1. Choisissez la catégorie de modèle **.NET Core** sous **Visual C#**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
@@ -237,23 +237,23 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Choisissez **créer un nouveau projet**.
 
-    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019.":::
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="capture d’écran de la fenêtre « créer un nouveau projet » dans Visual Studio 2019.":::
 
    La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base requis pour un type de projet donné.
 
-1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats du modèle en choisissant **C#** dans la liste déroulante **tous les langages** , **Windows** dans la liste **toutes les plateformes** et la **console** dans la liste tous les **types de projets** .
+1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. vous pouvez filtrer davantage les résultats du modèle en choisissant **C#** dans la liste déroulante **tous les langages** , **Windows** dans la liste **toutes les plateformes** , et dans la **Console** de la liste tous les **types de projets** .
 
     Sélectionnez le modèle **application console** , puis cliquez sur **suivant**.
 
-    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019, où vous sélectionnez le modèle souhaité.":::
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019, dans laquelle vous sélectionnez le modèle souhaité.":::
 
-1. Dans la fenêtre **configurer votre nouveau projet** , entrez **HelloWorld** dans la zone **nom du projet** , modifiez éventuellement l’emplacement du répertoire pour vos fichiers projet (les paramètres régionaux par défaut sont `C:\Users\<name>\source\repos` ), puis cliquez sur **suivant**.
+1. dans la fenêtre **configurer votre nouveau projet** , entrez **HelloWorld** dans la zone nom de l' **Project** , modifiez éventuellement l’emplacement du répertoire pour vos fichiers projet (les paramètres régionaux par défaut sont `C:\Users\<name>\source\repos` ), puis cliquez sur **suivant**.
 
-    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Capture d’écran de la fenêtre « configurer votre nouveau projet » dans Visual Studio 2019, où vous entrez le nom du projet.":::
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="capture d’écran de la fenêtre « configurer votre nouveau projet » dans Visual Studio 2019, où vous entrez le nom du projet.":::
 
 1. Dans la fenêtre **informations supplémentaires** , vérifiez que **.net Core 3,1** s’affiche dans le menu déroulant **Framework cible** , puis cliquez sur **créer**.
 
-    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Capture d’écran de la fenêtre « informations supplémentaires » dans Visual Studio 2019, où vous sélectionnez la version de .NET Core Framework que vous souhaitez.":::
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="capture d’écran de la fenêtre « informations supplémentaires » dans Visual Studio 2019, où vous sélectionnez la version de .net Core Framework que vous souhaitez.":::
 
    Visual Studio crée le projet. Il s’agit d’une application « Hello world » simple, qui appelle la méthode <xref:System.Console.WriteLine?displayProperty=nameWithType> pour afficher la chaîne littérale « Hello World! » dans la fenêtre de console (sortie du programme).
 
@@ -273,7 +273,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
-   ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant la sortie’Hello Word ! ' et’Appuyez sur une touche pour fermer cette fenêtre'.](../media/vs-2019/overview-console-window.png)
+   ![capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant la sortie’Hello Word ! ' et’Appuyez sur une touche pour fermer cette fenêtre'.](../media/vs-2019/overview-console-window.png)
 
 1. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
 
@@ -298,7 +298,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Entrez votre nom dans la fenêtre de console et appuyez sur **Entrée**.
 
-   ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! '.](../media/vs-2019/overview-console-input.png)
+   ![capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! '.](../media/vs-2019/overview-console-input.png)
 
 1. Appuyez sur une touche pour fermer la fenêtre de console et arrêter le programme en cours d’exécution.
 
@@ -380,7 +380,7 @@ Tout d’abord, renommons la variable `name` :
 
 10. Réexécutez le programme en appuyant sur **CTRL** + **F5**. La sortie ressemble à ceci :
 
-    ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! Jour de l’année : 43.](../media/vs-2019/overview-console-final.png)
+    ![capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! Jour de l’année : 43.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

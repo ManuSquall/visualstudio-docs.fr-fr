@@ -1,8 +1,10 @@
 ---
 title: En savoir plus sur la fenêtre outil Explorateur de solutions
-description: Découvrez comment vous pouvez utiliser la fenêtre outil Explorateur de solutions dans Visual Studio pour créer des & gérer vos fichiers, projets et solutions.
+description: découvrez comment vous pouvez utiliser la fenêtre outil Explorateur de solutions dans Visual Studio pour créer & gérer vos fichiers, projets et solutions.
 ms.date: 06/29/2021
 ms.topic: conceptual
+f1_keywords:
+- vs.addnewitem
 helpviewer_keywords:
 - solution explorer [Visual Studio]
 author: TerryGLee
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 005e6fd3e49d3a3ab739740d2aaa1dd77df5e5df
-ms.sourcegitcommit: 3d0f4930e0ccf49f89bbcfe12a949fbbf37aae07
+ms.openlocfilehash: fbbae8b974a7e88abffd9a12eb253dfea6c7165b
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113131498"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280494"
 ---
 # <a name="how-to-use-solution-explorer"></a>Comment utiliser Explorateur de solutions
 
@@ -26,9 +28,9 @@ Vous pouvez utiliser la fenêtre outil Explorateur de solutions pour créer & g�
 
 ## <a name="solution-explorer-tool-window"></a>Explorateur de solutions fenêtre outil
 
-Pour commencer, jetons un coup d’œil au Explorateur de solutions fenêtre outil dans l' [IDE de Visual Studio](../get-started/visual-studio-ide.md), avec une solution de console C# ouverte qui comporte deux projets.
+pour commencer, jetons un coup d’œil à la fenêtre outil Explorateur de solutions dans l' [IDE Visual Studio](../get-started/visual-studio-ide.md), avec une Solution de console C# ouverte qui comporte deux projets.
 
-[![Fenêtre outil Explorateur de solutions dans Visual Studio.](media/solution-explorer-tool-window.png)](media/solution-explorer-tool-window.png#lightbox)
+[![La fenêtre outil Explorateur de solutions dans Visual Studio.](media/solution-explorer-tool-window.png)](media/solution-explorer-tool-window.png#lightbox)
 
 La fenêtre outil contient les éléments d’interface utilisateur suivants :
 
@@ -36,13 +38,13 @@ La fenêtre outil contient les éléments d’interface utilisateur suivants :
 - **Barre de recherche**, dans laquelle vous pouvez rechercher des fichiers et des types de fichiers spécifiques
 - **Fenêtre principale**, dans laquelle vous pouvez afficher et gérer vos fichiers, projets, & solutions
 - **Nœud** de la solution, où vous pouvez gérer vos solutions
-- **Nœud de projet**, où vous pouvez gérer vos projets
+- **nœud Project**, où vous pouvez gérer vos projets
 - **Nœud dépendances**, dans lequel vous pouvez gérer votre solution & les dépendances du projet
 - **Nœud de programme**, dans lequel vous pouvez afficher, modifier et gérer votre programme ou votre application (application)
-- **[Onglet modifications git](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)**, dans lequel vous pouvez utiliser Git & GitHub dans Visual Studio pour collaborer sur des projets avec votre équipe
+- **[onglet modifications git](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)**, dans lequel vous pouvez utiliser git & GitHub dans Visual Studio pour collaborer sur des projets avec votre équipe
 
 > [!TIP]
-> Si vous ne voyez pas la fenêtre outil Explorateur de solutions, vous pouvez l’ouvrir à partir de la barre de menus de Visual Studio à l’aide de l’option **Afficher** le  >  **Explorateur de solutions** ou en appuyant sur **CTRL** + **ALT** + **L**.
+> si vous ne voyez pas la fenêtre outil Explorateur de solutions, vous pouvez l’ouvrir à partir de la barre de menus Visual Studio à l’aide de l’option **afficher** le  >  **Explorateur de solutions**, ou en appuyant sur **Ctrl** + **Alt** + **L**.
 
 ## <a name="solution-explorer-menu-bar"></a>Barre de menus Explorateur de solutions
 

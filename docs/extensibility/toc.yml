@@ -9,6 +9,20 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: "Créer votre première extension\_: Hello World"
       href: extensibility-hello-world.md
+    - name: mettre à jour les extensions pour Visual Studio 2022 (version préliminaire)
+      items:
+        - name: Mettre à jour une extension
+          href: migration/update-visual-studio-extension.md
+        - name: "Exemple\_: ImageOptimizer"
+          href: migration/samples.md
+        - name: Ciblage des versions précédentes
+          href: migration/target-previous-versions.md
+        - name: Liste des API de rupture
+          href: migration/breaking-api-list.md
+        - name: Liste d’API supprimée
+          href: migration/removed-api-list.md
+        - name: Assembly PIA migré
+          href: migration/migrated-assemblies.md
     - name: "Nouveautés du kit SDK Visual Studio\_2019"
       items:
         - name: "Nouveautés du kit SDK Visual Studio\_2019"

@@ -16,12 +16,9 @@ f1_keywords:
 - SolutionItemsProject
 - VS.SolutionExplorer
 - VS.SolutionExplorer.Selection
-- vs.addnewitem
 - vs.addnewsolutionitem
-- VS.ReferenceManager
 - vs.debug.watch
 - VS.ErrorList
-- vs.about
 - vs.unittesting.testexplorer.overview
 - vs.gotoline
 - vs.toolbox
@@ -29,12 +26,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9130665e4456dfc34d91eeafc6e2b917154ceb80
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 980da41ea60a4627b08488318095e46e9d5a2cbc
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925174"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280435"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Oups ! Aucune `F1` aide correspondante n’a été trouvée
 
@@ -48,7 +45,7 @@ Désolé, Il semble que nous n’ayons pas trouvé ce que vous recherchiez.
 - Essayez votre moteur de recherche préféré **[recommandé]**
 - Utilisez la barre d’outils [docs.Microsoft.com](/) pour rechercher 
 - Recherchez dans le navigateur de l' [API .net](/dotnet/api/) ou lisez notre présentation de l' [éditeur de code texte](../../ide/writing-code-in-the-code-and-text-editor.md)
-- Parcourir la base de connaissances pour la [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- parcourir la Base de connaissances pour [Visual Studio la résolution des problèmes](/troubleshoot/visualstudio/welcome-visual-studio/)
 
 
 **Vous n’avez pas eu le moyen de cliquer ?** [Remapper ou désactiver la `F1` touche d’aide](../not-in-toc/change-f1-help-key.md)

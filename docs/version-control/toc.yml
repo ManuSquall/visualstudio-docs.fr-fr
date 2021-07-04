@@ -1,10 +1,12 @@
 - name: Documentation sur la gestion de version
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: Expérience git dans Visual Studio
       href: git-with-visual-studio.md
-    - name: Comment Visual Studio facilite le contrôle de la source
+    - name: Paramètres et préférences git
+      href: git-settings.md
+    - name: comment Visual Studio facilite le contrôle de la source
       href: git-visual-studio-source-control.md
 - name: Bien démarrer
   items:
@@ -14,7 +16,7 @@
       href: git-team-explorer-feature-comparison.md
 - name: Nouveautés
   items:
-    - name: Productivité améliorée avec git dans Visual Studio (version préliminaire)
+    - name: productivité améliorée avec Git en Visual Studio (version préliminaire)
       href: 'https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/'
     - name: "Notes de publication de Visual Studio\_2019"
       href: /visualstudio/releases/2019/release-notes/

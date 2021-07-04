@@ -12,6 +12,7 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
     - MSDNSTART
+    - vs.about
 highlightedContent:
   items:
     - title: Configuration et installation
@@ -20,7 +21,7 @@ highlightedContent:
     - title: Bienvenue dans l’IDE Visual Studio
       itemType: overview
       url: ../get-started/visual-studio-ide.md
-    - title: Version préliminaire de Visual Studio 2022
+    - title: Visual Studio version préliminaire 2022
       itemType: whats-new
       url: /visualstudio/releases/2022/release-notes-preview
     - title: Améliorer vos compétences Visual Studio
