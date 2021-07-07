@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: documentation sur la gestion de version Visual Studio
-summary: partagez votre code à partir de Visual Studio 2019 à l’aide de technologies de contrôle de version telles que Git et GitHub.
+summary: partagez votre code à partir de Visual Studio à l’aide de technologies de contrôle de version telles que Git et GitHub.
 metadata:
   title: Contrôle de version & contrôle de code source avec git dans Visual Studio
   description: Utilisez les technologies de gestion de version dans Visual Studio. vous pouvez partager, intégrer et gérer vos versions de code dans Git & GitHub sans quitter votre code base.
@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
-  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+  ms.openlocfilehash: 8143a897914a0b9c2ca3adcdc5093c89852a2f53
+  ms.sourcegitcommit: 4b19d18874a5d3c3dbea67a8e478dc7d3a813769
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/03/2021
-  ms.locfileid: "113280399"
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113363987"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -44,7 +44,9 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: productivité améliorée avec Git en Visual Studio (version préliminaire)
+    - text: Productivité améliorée avec git dans Visual Studio
       url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
+    - text: notes de publication de Visual Studio 2022 (version préliminaire)
+      url: /visualstudio/releases/2022/release-notes-preview/
     - text: Notes de publication de Visual Studio 2019
       url: /visualstudio/releases/2019/release-notes/

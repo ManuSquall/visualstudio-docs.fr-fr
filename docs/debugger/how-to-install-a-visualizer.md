@@ -2,7 +2,7 @@
 title: Installer un visualiseur | Microsoft Docs
 description: Découvrez comment installer un visualiseur afin qu’il soit disponible pour le débogage à l’aide de Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904272"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298255"
 ---
 # <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.
@@ -33,11 +33,14 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 > Dans les applications UWP, seuls les visualiseurs de texte, HTML, XML et JSON standard sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Pour installer un visualiseur pour Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>pour installer un visualiseur pour Visual Studio 2019
 
 1. Recherchez la DLL qui contient le visualiseur que vous avez généré.
 
-   En règle générale, il est préférable que la DLL côté débogueur et la DLL côté programme débogué spécifient **Any CPU** comme plateforme cible. La DLL côté débogueur doit être **Any CPU** ou **32 bits**. La plateforme cible de la DLL côté programme débogué doit correspondre au processus débogué.
+   En règle générale, il est préférable que la DLL côté débogueur et la DLL côté programme débogué spécifient **Any CPU** comme plateforme cible. La DLL côté débogueur doit être **Any CPU** ou **32 bits**. La plateforme cible de la DLL côté programme débogué doit correspondre au processus du programme débogué.
+
+   >[!NOTE]
+   > le visualiseur côté débogueur est chargé dans le processus de Visual Studio. il doit donc s’agir d’une .NET Framework DLL. le côté programme débogué peut être .NET Framework ou .NET Standard selon le processus qui est débogué dans Visual Studio.
 
 2. Copiez la dll [côté débogueur](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (et toutes les dll dont elle dépend) à l’un des emplacements suivants :
 
@@ -63,14 +66,14 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 4. Redémarrez la session de débogage.
 
 > [!NOTE]
-> La procédure est différente dans Visual Studio 2017 et les versions antérieures. Consultez la [version précédente](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) de cet article.
+> la procédure est différente dans Visual Studio 2017 et les versions antérieures. Consultez la [version précédente](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) de cet article.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Pour installer un visualiseur pour Visual Studio 2017 et versions antérieures
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>pour installer un visualiseur pour Visual Studio 2017 et versions antérieures
 
 > [!IMPORTANT]
-> Seuls les visualiseurs .NET Framework sont pris en charge dans Visual Studio 2017 et versions antérieures.
+> seuls les visualiseurs .NET Framework sont pris en charge dans Visual Studio 2017 et les versions antérieures.
 
 1. Recherchez la DLL qui contient le visualiseur que vous avez créé.
 

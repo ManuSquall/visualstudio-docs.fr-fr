@@ -1,8 +1,8 @@
 ---
 title: Tester et déboguer un visualiseur | Microsoft Docs
-description: Tester et déboguer un visualiseur en l’exécutant à partir d’un pilote de test (hôte de développement du visualiseur) ou en installant dans Visual Studio et en l’appelant à partir d’une fenêtre du débogueur.
+description: tester et déboguer un visualiseur en l’exécutant à partir d’un pilote de test (hôte de développement du visualiseur) ou en installant dans Visual Studio et en l’appelant à partir d’une fenêtre du débogueur.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,19 +19,22 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c97c0ee72a3d29052d98d8a37cdc746c26d27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa97453d08650b78a02eda873a01afe9e376caec
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923284"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298242"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.
 
-Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Dans ce cas, vous devrez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s’exécute dans la première instance du débogueur.
+Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) dans ce cas, vous devrez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s’exécute dans la première instance du débogueur.
 
 Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dernier à partir d'un pilote de test. Les API du visualiseur facilitent la création de ce type de pilote appelé *hôte de développement de visualiseur*.
+
+>[!NOTE]
+> actuellement, le pilote de test est pris en charge uniquement lors de l’appel du visualiseur à partir d’une application .NET Framework.
 
 ### <a name="to-create-a-visualizer-development-host"></a>Pour créer un hôte de développement de visualiseur
 
