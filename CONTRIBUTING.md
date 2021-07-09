@@ -32,7 +32,7 @@ Suivez les instructions contenues dans le guide des contributeurs pour [modifier
 
 ### <a name="larger-edits"></a>Modifications plus importantes
 
-Passez en revue les instructions figurant dans le guide des contributeurs pour effectuer des[demandes de tirage (pull requests)](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing).
+Passez en revue les instructions figurant dans le guide des contributeurs pour effectuer des [demandes de tirage (pull requests)](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing).
 
 **REMARQUE**
 
