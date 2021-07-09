@@ -1,5 +1,5 @@
 ---
-title: Déployer votre application Visual Studio dans un dossier, IIS, Azure ou une autre destination
+title: déployer votre application Visual Studio dans un dossier, IIS, Azure ou une autre destination
 titleSuffix: ''
 description: En savoir plus sur les options de publication pour votre application à l’aide de l’outil de publication.
 ms.custom:
@@ -7,6 +7,8 @@ ms.custom:
 - contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
+f1_keywords:
+- vs.publish
 dev_langs:
 - FSharp
 - VB
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0a8e8a313e351d175822e2427378fb89703444
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 099bd2c6cc47895c913b3f852835d2fd09d0f9c3
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879226"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549483"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
@@ -31,7 +33,7 @@ En déployant une application, un service ou un composant, vous le distribuez po
 Obtenir de l’aide pour votre tâche de déploiement :
 
 - Vous n’êtes pas sûr de l’option de déploiement à choisir ? [Quelles sont les options de publication qui me conviennent ?](#what-publishing-options-are-right-for-me)
-- Pour obtenir de l’aide sur les problèmes de déploiement de Azure App Service ou IIS, consultez [résoudre les problèmes de ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- pour obtenir de l’aide sur les problèmes de déploiement de Azure App Service ou iis, consultez [résoudre les problèmes de ASP.NET Core sur Azure App Service et iis](/aspnet/core/test/troubleshoot-azure-iis).
 - Pour obtenir de l’aide sur la configuration des paramètres de déploiement .NET, consultez [configurer les paramètres de déploiement .net](#configure-net-deployment-settings).
 - Pour effectuer un déploiement vers une nouvelle cible, si vous avez déjà créé un profil de publication, sélectionnez **nouveau** dans la fenêtre **publier** pour un profil configuré.
 
@@ -75,7 +77,7 @@ Pour une présentation rapide des options de déploiement d’applications plus 
 
 Lorsque vous choisissez Azure, vous pouvez choisir entre les éléments suivants :
 
-- [Azure App service](#azure-app-service) s’exécutant sur Windows, Linux ou en tant qu’image de l’arrimeur
+- [Azure App Service](#azure-app-service) s’exécutant sur Windows, Linux ou en tant qu’image de l’arrimeur
 - Une image d’ancrage déployée sur [Azure Container Registry](#azure-container-registry)
 - Une [machine virtuelle Azure](#azure-virtual-machine)
 
@@ -98,9 +100,9 @@ Vous déterminez la puissance de calcul d’un service d’applications en chois
 
 Pour plus d’informations sur la publication sur App Service, consultez :
 - [Démarrage rapide-publier sur Azure App Service](quickstart-deploy-to-azure.md)
-- [Démarrage rapide : publiez des ASP.net Core sur Linux](quickstart-deploy-to-linux.md).
-- [Publier une application ASP.NET Core sur Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Résolvez les problèmes de ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- [démarrage rapide : publiez des ASP.NET Core sur Linux](quickstart-deploy-to-linux.md).
+- [publier une application ASP.NET Core sur Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+- [résolvez les problèmes de ASP.NET Core sur Azure App Service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
 
@@ -113,7 +115,7 @@ Pour plus d’informations sur la publication sur App Service, consultez :
 
 Pour plus d'informations :
 
-- [Déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
+- [déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
 
 ### <a name="azure-virtual-machine"></a>Machine virtuelle Azure
 
@@ -142,16 +144,16 @@ Si votre application utilise la station d’accueil, vous pouvez publier votre a
 
 Pour plus d’informations, consultez les rubriques suivantes :
 
-- [Déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
+- [déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
 - [Déployer sur Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Dossier
 
 Le déploiement sur le système de fichiers consiste à copier les fichiers de votre application dans un dossier spécifique sur votre ordinateur. Le déploiement dans un dossier est le plus souvent utilisé à des fins de test, ou pour déployer l’application en vue d’une utilisation par un nombre limité de personnes si l’ordinateur exécute également un serveur. Si le dossier cible est partagé sur un réseau, le déploiement sur le système de fichiers permet de mettre les fichiers de l’application web à la disposition d’autres utilisateurs qui peuvent ensuite la déployer sur des serveurs spécifiques.
 ::: moniker range=">=vs-2019"
-À compter de Visual Studio 2019 16,8, la cible de dossier offre la possibilité de publier une application Windows .net à l’aide de ClickOnce.
+à compter de Visual Studio 2019 16,8, la cible de dossier offre la possibilité de publier une application .net Windows à l’aide de ClickOnce.
 
-Si vous souhaitez publier une application Windows .NET Core 3,1, ou une version plus récente, avec ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+si vous souhaitez publier un .net Core 3,1, ou une version plus récente, Windows application avec ClickOnce, consultez [déployer une application .net Windows à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
 ::: moniker-end
 Les ordinateurs locaux qui exécutent un serveur peuvent rendre votre application disponible sur Internet ou un intranet en fonction de sa configuration et des réseaux auxquels il est connecté. (Si vous connectez un ordinateur directement à Internet, veillez particulièrement à le protéger contre les menaces de sécurité externes.) Étant donné que vous gérez ces machines, vous contrôlez entièrement les configurations logicielles et matérielles.
 
@@ -161,14 +163,14 @@ Si, pour une raison quelconque (par exemple, l’accès à la machine), vous n�
 
 - Vous avez besoin de déployer l’application uniquement sur un partage de fichiers à partir duquel d’autres utilisateurs la déploieront sur différents serveurs.
 ::: moniker range=">=vs-2019"
-- Vous souhaitez déployer une application Windows .NET à l’aide de ClickOnce
+- vous souhaitez déployer une Application .net Windows à l’aide de ClickOnce
 ::: moniker-end
 - Vous avez besoin d’un déploiement de test local uniquement.
 - Vous voulez examiner et éventuellement modifier les fichiers d’application indépendamment avant de les envoyer vers une autre cible de déploiement.
 
 Pour plus d’informations, consultez [démarrage rapide-déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
 ::: moniker range=">=vs-2019"
-Pour plus d’informations sur le déploiement d’une application Windows .NET à l’aide de ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+pour plus d’informations sur le déploiement d’une application .net Windows à l’aide de ClickOnce, consultez [déployer une application .net Windows à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
 ::: moniker-end
 
 Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez les rubriques suivantes :
@@ -181,14 +183,14 @@ Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez le
 
 Un serveur FTP/FTPS vous permet de déployer votre application sur un serveur autre que Azure. Elle peut effectuer le déploiement sur un système de fichiers ou tout autre serveur (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services cloud. Elle peut fonctionner avec Web Deploy (fichiers ou. ZIP) et FTP.
 
-Lorsque vous choisissez un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+lors du choix d’un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
 - Si vous souhaitez précompiler durant la publication.
 - Si vous souhaitez exclure des fichiers dans le dossier App_Data issu du déploiement.
 
-Vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
+vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
 
 ### <a name="when-to-choose-ftpftps-server-deployment"></a>Quand choisir le déploiement du serveur FTP/FTPS
 
@@ -200,14 +202,14 @@ Vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans
 
 Un serveur Web IIS vous permet de déployer votre application sur un serveur Web autre qu’Azure. Il peut être déployé sur un serveur IIS (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services Cloud. Il peut fonctionner avec Web Deploy ou un package Web Deploy.
 
-Lorsque vous choisissez un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur cible ou l’emplacement, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+lors du choix d’un serveur web IIS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur cible ou l’emplacement, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
 - Si vous souhaitez précompiler durant la publication.
 - Si vous souhaitez exclure des fichiers dans le dossier App_Data issu du déploiement.
 
-Vous pouvez créer un nombre quelconque de profils de déploiement de serveur Web IIS dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
+vous pouvez créer autant de profils de déploiement de serveur web IIS que vous le souhaitez dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
 
 ### <a name="when-to-choose-web-server-iis-deployment"></a>Quand choisir le déploiement de serveur Web (IIS)
 
@@ -217,7 +219,7 @@ Vous pouvez créer un nombre quelconque de profils de déploiement de serveur We
 
 Pour plus d’informations, consultez [démarrage rapide-déployer sur un site Web](quickstart-deploy-to-a-web-site.md).
 
-Pour obtenir de l’aide sur la résolution des ASP.NET Core sur IIS, consultez [résoudre les problèmes ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+pour obtenir de l’aide sur la résolution des ASP.NET Core sur iis, consultez [résoudre les problèmes ASP.NET Core sur Azure App Service et iis](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Profil d’importation
 
@@ -248,7 +250,7 @@ Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez le
 Tutoriels :
 
 - [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [publier une application ASP.NET core dans Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Déploiement dans Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Déployer des applications UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publier une application Node.js sur Azure à l’aide de Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

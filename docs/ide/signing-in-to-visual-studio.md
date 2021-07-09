@@ -1,6 +1,6 @@
 ---
 title: Se connecter
-description: Découvrez comment vous connecter à Visual Studio.
+description: connectez-vous à Visual Studio pour prolonger la période d’évaluation de Visual Studio, déverrouiller Visual Studio et bien plus encore
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222992"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549470"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>connectez-vous à Visual Studio sur Windows
+# <a name="sign-in-to-visual-studio-on-windows"></a>connectez-vous à Visual Studio sur Windows 
 
-Bien que vous n’ayez pas à vous connecter, il existe de nombreux avantages. quand vous vous connectez, vous pouvez personnaliser, optimiser et enrichir votre expérience Visual Studio. 
+Bien que vous n’ayez pas à vous connecter, il existe de nombreux avantages. dans cet article, vous apprendrez à vous [connecter](#how-to-sign-in), à [mettre à jour votre profil](#update-your-profile)et à tirer parti de votre expérience de Visual Studio. 
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Se connecter à Visual Studio pour Mac](/visualstudio/mac/signing-in).
@@ -31,8 +31,6 @@ Bien que vous n’ayez pas à vous connecter, il existe de nombreux avantages. q
 > l’utilisation de Visual Studio 2017 pour accéder aux ressources configurées pour l’accès conditionnel peut déclencher une dégradation de l’authentification, ce qui invite à réauthentifier plusieurs fois au sein de la même session de Visual Studio. 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>Avantages
 
 Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 
@@ -75,6 +73,6 @@ si vous choisissez de ne pas vous connecter lors de la première ouverture de Vi
 
 1. Quand vous avez terminé, choisissez **Enregistrer les modifications**.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Pour obtenir de l’aide, consultez la page support de l' [abonnement](https://visualstudio.microsoft.com/subscriptions/support/) .

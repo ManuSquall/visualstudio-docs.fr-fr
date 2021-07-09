@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c7fa8eaa5a735f05b338101a1aefe0601e9915
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: a6ce1a6d9f2f8a36d892d484cf9353e1312758b4
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298277"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549509"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
 
@@ -180,7 +180,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
     choisissez **fichier**  >  **nouveau**  >  **Project**. Dans la liste déroulante langue, choisissez **C#**. dans la zone de recherche, tapez **console app**, puis choisissez application **console (.NET Framework)** ou **Application console** pour .net. Cliquez sur **Suivant**. Dans la boîte de dialogue qui s’affiche, tapez le nom `MyTestConsole` , puis cliquez sur **créer**.
 
     > [!NOTE]
-    > si vous souhaitez tester facilement le visualiseur à l’aide d’un atelier de test, créez une application console .NET Framework. Vous pouvez créer une application console .NET à la place, mais l’atelier de test décrit ultérieurement n’est pas encore pris en charge pour .NET. vous devrez donc installer le visualiseur pour le tester. Pour ce scénario, commencez par créer l’application console ici, puis suivez les étapes décrites dans [Ajouter un objet de données côté débogué](#add-a-debuggee-side-data-object).
+    > si vous souhaitez tester facilement le visualiseur à l’aide d’un atelier de test, créez une application console .NET Framework. Vous pouvez créer une application console .NET à la place, mais l’atelier de test décrit ultérieurement n’est pas encore pris en charge pour .NET. vous devrez donc installer le visualiseur pour le tester. Pour une application console .NET, commencez par créer l’application console ici, ajoutez la DLL requise et les références de projet, puis suivez les étapes décrites dans [Ajouter un objet de données côté débogué](#add-a-debuggee-side-data-object).
     ::: moniker-end
     ::: moniker range="vs-2017"
     dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **Project**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
@@ -247,7 +247,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
 Dans cette section, vous passez de l' `System.String` objet de données à un objet de données personnalisé.  
 
-1. choisissez **fichier**  >  **nouveau**  >  **Project**. Dans la liste déroulante langue, choisissez **C#**. dans la zone de recherche, tapez **bibliothèque** de classes, puis sélectionnez **bibliothèque de classes (.NET Framework)** ou **bibliothèque de classes** pour .NET Standard.
+1. Dans Explorateur de solutions, cliquez avec le bouton droit sur la solution, choisissez **Ajouter**, puis cliquez sur **nouveau Project**. Dans la liste déroulante langue, choisissez **C#**. dans la zone de recherche, tapez **bibliothèque** de classes, puis sélectionnez **bibliothèque de classes (.NET Framework)** ou **bibliothèque de classes** pour .NET Standard.
 
    >[!NOTE]
    >si vous utilisez une application de console de test .NET Framework, veillez à créer un projet de bibliothèque de classes .NET Framework.
@@ -255,6 +255,10 @@ Dans cette section, vous passez de l' `System.String` objet de données à un ob
 1. Cliquez sur **Suivant**. Dans la boîte de dialogue qui s’affiche, tapez le nom `MyDataObject` , puis cliquez sur **créer**.
 
 1. (.NET Standard bibliothèque de classes uniquement) dans Explorateur de solutions, cliquez avec le bouton droit sur le projet, puis choisissez **modifier le fichier Project**. Remplacez la `<TargetFramework>` valeur par `netstandard2.0` .
+
+   ```xml
+   <TargetFramework>netstandard2.0</TargetFramework>
+   ```
 
 1. À l’intérieur de l' `MyDataObject` espace de noms, remplacez le code par défaut par le code suivant.
 
@@ -321,7 +325,7 @@ Dans cette section, vous passez de l' `System.String` objet de données à un ob
    }
    ```
 
-   Le débogueur a besoin d’une référence au visualiseur. Une façon de maintenir la référence consiste à conserver le code précédent en place.
+   L’application console a besoin d’une référence d’exécution au visualiseur. Vous pouvez conserver la référence en conservant le code précédent au lieu de le commenter.
 
 1. pour une application console .NET Framework, vous pouvez exécuter l’atelier de test (appuyez sur **F5**) ou suivre les instructions de la rubrique [comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 

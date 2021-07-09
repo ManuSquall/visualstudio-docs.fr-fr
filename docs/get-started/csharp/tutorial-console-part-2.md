@@ -1,14 +1,14 @@
 ---
 title: 'Didacticiel : étendre une application console C# simple'
-description: Découvrez comment développer une application console C# dans Visual Studio, étape par étape.
+description: découvrez comment développer une application console C# dans Visual Studio, pas à pas.
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,30 +16,30 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390175"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549496"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Didacticiel : étendre une application console C# simple
 
-Dans ce didacticiel, vous allez apprendre à utiliser Visual Studio pour étendre l’application console que vous avez créée dans la première partie. Vous apprendrez quelques-unes des fonctionnalités de Visual Studio dont vous aurez besoin pour le développement quotidien, telles que la gestion de plusieurs projets et le référencement de packages tiers.
+dans ce didacticiel, vous allez apprendre à utiliser Visual Studio pour étendre l’application console que vous avez créée dans la première partie. vous découvrirez certaines des fonctionnalités de Visual Studio dont vous aurez besoin pour le développement quotidien, telles que la gestion de plusieurs projets et le référencement de packages tiers.
 
-Si vous venez de terminer la [première partie](tutorial-console.md) de cette série, vous disposez déjà de l’application console Calculator.  Pour ignorer la partie 1, vous pouvez commencer par ouvrir le projet à partir d’un référentiel GitHub. L’application Calculatrice C# se trouve dans le [référentiel vs-Tutorial-Samples](https://github.com/MicrosoftDocs/vs-tutorial-samples). vous pouvez donc simplement suivre les étapes du [Didacticiel : ouvrir un projet à partir d’un référentiel](../tutorial-open-project-from-repo.md) pour commencer.
+Si vous venez de terminer la [première partie](tutorial-console.md) de cette série, vous disposez déjà de l’application console Calculator.  pour ignorer la partie 1, vous pouvez commencer par ouvrir le projet à partir d’un GitHub référentiel. L’application Calculatrice C# se trouve dans le [référentiel vs-Tutorial-Samples](https://github.com/MicrosoftDocs/vs-tutorial-samples). vous pouvez donc simplement suivre les étapes du [Didacticiel : ouvrir un projet à partir d’un référentiel](../tutorial-open-project-from-repo.md) pour commencer.
 
 ## <a name="add-a-new-project"></a>Ajouter un nouveau projet
 
 Le code réel implique de nombreux projets qui fonctionnent ensemble dans une solution. À présent, nous allons ajouter un autre projet à l’application Calculatrice. Il s’agit d’une bibliothèque de classes qui fournit certaines fonctions de calculatrice.
 
-1. Dans Visual Studio, vous pouvez utiliser le **fichier** de commandes de menu de niveau supérieur  >  **Ajouter**  >  un **nouveau projet** pour ajouter un nouveau projet, mais vous pouvez également cliquer avec le bouton droit sur le nom de projet existant (appelé « nœud de projet ») et ouvrir le menu contextuel du projet (ou menu contextuel). Ce menu contextuel contient de nombreuses façons d’ajouter des fonctionnalités à vos projets. Cliquez avec le bouton droit sur le nœud de votre projet dans **Explorateur de solutions**, puis choisissez **Ajouter**  >  **un nouveau projet**.
+1. dans Visual Studio, vous pouvez utiliser le **fichier** de commandes de menu de niveau supérieur  >  **ajouter**  >  un **nouveau Project** pour ajouter un nouveau projet, mais vous pouvez également cliquer avec le bouton droit sur le nom de projet existant (appelé « nœud de projet ») et ouvrir le menu contextuel du projet (ou menu contextuel). Ce menu contextuel contient de nombreuses façons d’ajouter des fonctionnalités à vos projets. cliquez avec le bouton droit sur le nœud de votre projet dans **Explorateur de solutions**, puis choisissez **ajouter**  >  **un nouveau Project**.
 
 1. Choisissez la bibliothèque de classes de modèles de projet C# **(.NET standard)**.
 
    ![Capture d’écran de la sélection du modèle de projet de bibliothèque de classes](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Tapez le nom du projet **CalculatorLibrary**, puis choisissez **créer**. Là encore, choisissez .NET 3,1 quand vous y êtes invité. Visual Studio crée le projet et l’ajoute à la solution.
+1. Tapez le nom du projet **CalculatorLibrary**, puis choisissez **créer**. Là encore, choisissez .NET 3,1 quand vous y êtes invité. Visual Studio crée le nouveau projet et l’ajoute à la solution.
 
    ![Capture d’écran de Explorateur de solutions avec le projet de bibliothèque de classes CalculatorLibrary ajouté](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
@@ -47,9 +47,9 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    Vous pouvez être invité à indiquer si vous souhaitez renommer toutes les références à `Class1` dans le fichier. Peu importe la façon dont vous répondez, puisque vous allez remplacer le code dans une étape ultérieure.
 
-1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  Cliquez avec le bouton droit sur le nœud **dépendances** dans le premier projet, puis choisissez **Ajouter une référence de projet**.
+1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  cliquez avec le bouton droit sur le nœud **dépendances** dans le premier projet, puis choisissez **ajouter une référence de Project**.
 
-   ![Capture d’écran de l’élément de menu Ajouter une référence de projet](media/vs-2019/calculator2-add-project-reference-dark.png)
+   ![capture d’écran de l’élément de menu ajouter Project référence](media/vs-2019/calculator2-add-project-reference-dark.png)
 
    La boîte de dialogue **Gestionnaire de références** s’affiche. Cette boîte de dialogue vous permet d’ajouter des références à d’autres projets, ainsi que des assemblys et des DLL COM dont vos projets ont besoin.
 
@@ -348,19 +348,19 @@ namespace CalculatorProgram
 }
 ```
 
-## <a name="add-a-nuget-package-write-to-a-json-file"></a>Ajouter un package NuGet : écrire dans un fichier JSON
+## <a name="add-a-nuget-package-write-to-a-json-file"></a>ajouter un Package de NuGet : écrire dans un fichier JSON
 
-1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. Pour implémenter cette fonctionnalité, vous devez référencer le package NuGet Newtonsoft.Jssur. Les packages NuGet constituent le vecteur principal de distribution des bibliothèques de classes .NET. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **dépendances** pour le projet CalculatorLibrary, puis choisissez **gérer les packages NuGet**.
+1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. pour implémenter cette fonctionnalité, nous devons référencer le package NuGet Newtonsoft.Js. les packages de NuGet constituent le vecteur principal de distribution des bibliothèques de classes .net. dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **dépendances** pour le projet CalculatorLibrary, puis choisissez **gérer les Packages de NuGet**.
 
-   ![Capture d’écran de la gestion des packages NuGet dans le menu contextuel](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
+   ![capture d’écran de la gestion des Packages de NuGet dans le menu contextuel](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
-   Le gestionnaire de package NuGet s’ouvre.
+   le Gestionnaire de package NuGet s’ouvre.
 
    ![Capture d’écran du Gestionnaire de package NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
 1. Recherchez Newtonsoft.Jssur le package, puis choisissez **installer**.
 
-   ![Capture d’écran des informations du package NuGet Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
+   ![capture d’écran de Newtonsoft NuGet informations sur le package](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
    Le package est téléchargé et ajouté à votre projet et une nouvelle entrée s’affiche dans le nœud Références de **Explorateur de solutions**.
 
@@ -477,7 +477,7 @@ namespace CalculatorProgram
 
 ## <a name="debug-set-and-hit-a-breakpoint"></a>Débogage : définir et atteindre un point d’arrêt
 
-Le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter votre code pas à pas, afin de trouver le point exact où vous avez commis une erreur de programmation. Vous comprenez ensuite les corrections que vous devez apporter dans votre code. Visual Studio vous permet d’effectuer des modifications temporaires pour pouvoir continuer à exécuter le programme.
+le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter votre code pas à pas, afin de trouver le point exact où vous avez fait une erreur de programmation. Vous comprenez ensuite les corrections que vous devez apporter dans votre code. Visual Studio vous permet d’effectuer des modifications temporaires pour pouvoir continuer à exécuter le programme.
 
 1. Dans *Program. cs*, cliquez sur la marge à gauche du code suivant (ou ouvrez le menu contextuel et choisissez **point d’arrêt**  >  **Insérer un point d’arrêt** ou appuyez sur **F9**) :
 
@@ -755,7 +755,7 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, 
 > [Continuer avec d’autres tutoriels C#](/dotnet/csharp/tutorials/)
 
 > [!div class="nextstepaction"]
-> [Continuer avec l’IDE de Visual Studio vue d’ensemble](/../visual-studio-ide.md)
+> [continuer avec Visual Studio vue d’ensemble de l’IDE](/../visual-studio-ide.md)
 
 ## <a name="see-also"></a>Voir aussi
 
